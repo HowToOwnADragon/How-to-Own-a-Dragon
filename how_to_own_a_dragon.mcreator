@@ -53,8 +53,8 @@
       "registry_name": "the_hidden_world",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/resources/data/how_to_own_a_dragon/dimension/the_hidden_world.json"
         ]
       },
@@ -89,10 +89,10 @@
       "registry_name": "portal_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/portal_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/portal_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java"
         ]
       },
       "path": "~/The Hidden World"
@@ -106,11 +106,11 @@
       "registry_name": "night_fury",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/night_fury_biome_modifier.json"
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/night_fury_biome_modifier.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java"
         ]
       },
       "path": "~/Dragons/NightFury"
@@ -214,10 +214,15 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
+      "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
+      "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "item_group.how_to_own_a_dragon.items": "Items",
+      "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
-      "block.how_to_own_a_dragon.portal_block": "Portal Block"
+      "block.how_to_own_a_dragon.portal_block": "Portal Block",
+      "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
     }
   },
   "foldersRoot": {
