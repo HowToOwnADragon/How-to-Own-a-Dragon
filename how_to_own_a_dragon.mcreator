@@ -60,24 +60,6 @@
       "path": "~/Dragons/NightFury"
     },
     {
-      "name": "NightFury",
-      "type": "animatedentity",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "night_fury",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/night_fury_biome_modifier.json"
-        ]
-      },
-      "path": "~/Dragons/NightFury"
-    },
-    {
       "name": "TheHiddenWorld",
       "type": "dimension",
       "sortid": 6,
@@ -129,6 +111,24 @@
         ]
       },
       "path": "~/The Hidden World"
+    },
+    {
+      "name": "NightFury",
+      "type": "animatedentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/night_fury_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dragons/NightFury"
     }
   ],
   "variable_elements": [],

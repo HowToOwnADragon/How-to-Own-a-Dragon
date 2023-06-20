@@ -52,7 +52,6 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.procedures.NightFuryLightningProcedure;
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 public class NightFuryEntity extends Monster implements GeoEntity {
@@ -111,11 +110,6 @@ public class NightFuryEntity extends Monster implements GeoEntity {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(HowToOwnADragonModItems.NIGHT_FURY_SCALES.get()));
 	}
 
 	@Override
@@ -224,30 +218,27 @@ public class NightFuryEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.5);
-		builder = builder.add(Attributes.MAX_HEALTH, 20);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.5);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround() && !this.isVehicle()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("runwalk"));
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.nightfury.runwalk"));
 			}
 			if (this.isSprinting()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("runwalk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.nightfury.runwalk"));
 			}
 			if (!this.isOnGround()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("flying"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.nightfury.flying"));
 			}
-			if (this.isVehicle() && event.isMoving()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("runwalk"));
-			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("runwalk"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.nightfury.runwalk"));
 		}
 		return PlayState.STOP;
 	}
