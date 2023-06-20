@@ -1,21 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "NightFuryScales",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "night_fury_scales",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_scales.json",
-          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryScalesItem.java"
-        ]
-      },
-      "path": "~/Items/Scales"
-    },
-    {
       "name": "Items",
       "type": "tab",
       "sortid": 2,
@@ -68,8 +53,8 @@
       "registry_name": "the_hidden_world",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
           "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
+          "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
           "src/main/resources/data/how_to_own_a_dragon/dimension/the_hidden_world.json"
         ]
       },
@@ -131,23 +116,6 @@
       "path": "~/Dragons/NightFury"
     },
     {
-      "name": "EntranceInsideHiddenWorld",
-      "type": "structure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "entrance_inside_hidden_world",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entrance_inside_hidden_world_biome_modifier.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entrance_inside_hidden_world.json",
-          "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceInsideHiddenWorldFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entrance_inside_hidden_world.json"
-        ]
-      },
-      "path": "~/The Hidden World"
-    },
-    {
       "name": "TheHiddenWorldPlayerEntersDimension",
       "type": "procedure",
       "sortid": 11,
@@ -182,6 +150,56 @@
         ]
       },
       "path": "~/The Hidden World"
+    },
+    {
+      "name": "EntranceInsideHiddenWorld",
+      "type": "structure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entrance_inside_hidden_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entrance_inside_hidden_world_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entrance_inside_hidden_world.json",
+          "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceInsideHiddenWorldFeature.java",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entrance_inside_hidden_world.json"
+        ]
+      },
+      "path": "~/The Hidden World"
+    },
+    {
+      "name": "NightFuryArmor",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_boots.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryArmorItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_chestplate.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_leggings.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_helmet.json"
+        ]
+      },
+      "path": "~/Armor/Scale"
+    },
+    {
+      "name": "NightFuryScale",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_scale",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryScaleItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_scale.json"
+        ]
+      },
+      "path": "~/Items/Scales"
     }
   ],
   "variable_elements": [
@@ -197,7 +215,6 @@
     "en_us": {
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
-      "item.how_to_own_a_dragon.night_fury_scales": "Night Fury Scales",
       "item_group.how_to_own_a_dragon.items": "Items",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.portal_block": "Portal Block"
@@ -207,8 +224,22 @@
     "name": "~",
     "children": [
       {
-        "name": "The Hidden World",
-        "children": []
+        "name": "Items",
+        "children": [
+          {
+            "name": "Scales",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "Scale",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Dragons",
@@ -220,24 +251,7 @@
         ]
       },
       {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Scales",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Tools_Weapons",
-        "children": []
-      },
-      {
-        "name": "Armor",
-        "children": []
-      },
-      {
-        "name": "Achievements",
         "children": []
       },
       {
@@ -245,15 +259,23 @@
         "children": []
       },
       {
+        "name": "Gamerule",
+        "children": []
+      },
+      {
+        "name": "The Hidden World",
+        "children": []
+      },
+      {
         "name": "GUI",
         "children": []
       },
       {
-        "name": "Commands",
+        "name": "Achievements",
         "children": []
       },
       {
-        "name": "Gamerule",
+        "name": "Commands",
         "children": []
       }
     ]
