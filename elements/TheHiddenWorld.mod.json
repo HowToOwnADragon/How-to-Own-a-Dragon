@@ -4,15 +4,15 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "deep_ocean"
+        "value": "mushroom_field_shore"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.AIR"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.AIR"
     },
     "canRespawnHere": false,
     "hasFog": false,

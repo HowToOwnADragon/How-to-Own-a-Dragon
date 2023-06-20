@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "how_to_own_a_dragon:entranceinhw",
+  "step": "surface_structures"
+}

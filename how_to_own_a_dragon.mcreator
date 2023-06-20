@@ -151,23 +151,6 @@
       "path": "~/The Hidden World"
     },
     {
-      "name": "EntranceInsideHiddenWorld",
-      "type": "structure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "entrance_inside_hidden_world",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entrance_inside_hidden_world_biome_modifier.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entrance_inside_hidden_world.json",
-          "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceInsideHiddenWorldFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entrance_inside_hidden_world.json"
-        ]
-      },
-      "path": "~/The Hidden World"
-    },
-    {
       "name": "NightFuryArmor",
       "type": "armor",
       "sortid": 12,
@@ -199,6 +182,23 @@
         ]
       },
       "path": "~/Items/Scales"
+    },
+    {
+      "name": "Entranceinhw",
+      "type": "structure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entranceinhw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceinhwFeature.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entranceinhw_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entranceinhw.json"
+        ]
+      },
+      "path": "~/The Hidden World"
     }
   ],
   "variable_elements": [

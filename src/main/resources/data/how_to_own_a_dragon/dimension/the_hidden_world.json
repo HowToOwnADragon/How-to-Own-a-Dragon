@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "deep_ocean",
+          "biome": "mushroom_fields",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -27,16 +27,10 @@
       "aquifers_enabled": true,
       "ore_veins_enabled": true,
       "default_block": {
-        "Name": "minecraft:water",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:air"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:air"
       },
       "spawn_target": [],
       "noise": {
@@ -386,7 +380,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "deep_ocean"
+                "mushroom_fields"
               ]
             },
             "then_run": {
@@ -420,7 +414,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
+                              "Name": "minecraft:mycelium",
                               "Properties": {
                                 "snowy": "false"
                               }
