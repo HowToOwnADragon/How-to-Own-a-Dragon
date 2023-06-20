@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="MIT License"
+
+[[mods]]
+modId="how_to_own_a_dragon"
+version="1.0.0"
+displayName="How to Own a Dragon"
+credits="Made with MCreator, Blockbench and a lot of people"
+displayURL="https://mcreator.net"
+authors="MeAlam, Justindraak1"
+
+[[dependencies.how_to_own_a_dragon]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.how_to_own_a_dragon]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.how_to_own_a_dragon]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
