@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Items",
+    "icon": {
+      "value": "CUSTOM:NightFuryScales"
+    },
+    "showSearch": false
+  }
+}

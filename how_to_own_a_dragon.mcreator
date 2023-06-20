@@ -1,9 +1,52 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "NightFuryScales",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_scales",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_scales.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryScalesItem.java"
+        ]
+      },
+      "path": "~/Items/Scales"
+    },
+    {
+      "name": "Items",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "items",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "Dragons",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragons",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item_group.how_to_own_a_dragon.dragons": "Dragons",
+      "item.how_to_own_a_dragon.night_fury_scales": "Night Fury Scales",
+      "item_group.how_to_own_a_dragon.items": "Items"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -23,7 +66,12 @@
       },
       {
         "name": "Items",
-        "children": []
+        "children": [
+          {
+            "name": "Scales",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Tools_Weapons",
