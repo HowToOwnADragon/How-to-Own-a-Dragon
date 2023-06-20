@@ -106,10 +106,9 @@
       "registry_name": "night_fury",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/night_fury_biome_modifier.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java"
         ]
       },

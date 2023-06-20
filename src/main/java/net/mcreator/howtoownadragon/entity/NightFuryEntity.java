@@ -15,7 +15,6 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -29,7 +28,6 @@ import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
@@ -41,7 +39,6 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.Difficulty;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
@@ -73,6 +70,7 @@ public class NightFuryEntity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -122,6 +120,11 @@ public class NightFuryEntity extends Monster implements GeoEntity {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -223,8 +226,6 @@ public class NightFuryEntity extends Monster implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(HowToOwnADragonModEntities.NIGHT_FURY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
