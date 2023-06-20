@@ -6,7 +6,7 @@
   "spawners": {
     "type": "how_to_own_a_dragon:night_fury",
     "weight": 100,
-    "minCount": 1,
-    "maxCount": 1
+    "minCount": 4,
+    "maxCount": 4
   }
 }
