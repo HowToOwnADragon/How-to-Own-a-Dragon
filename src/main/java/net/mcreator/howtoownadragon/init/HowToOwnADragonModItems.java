@@ -7,6 +7,7 @@ package net.mcreator.howtoownadragon.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
@@ -15,5 +16,6 @@ import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, HowToOwnADragonMod.MODID);
+	public static final RegistryObject<Item> NIGHT_FURY_SPAWN_EGG = REGISTRY.register("night_fury_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.NIGHT_FURY, -16777216, -13421773, new Item.Properties()));
 	public static final RegistryObject<Item> NIGHT_FURY_SCALES = REGISTRY.register("night_fury_scales", () -> new NightFuryScalesItem());
 }

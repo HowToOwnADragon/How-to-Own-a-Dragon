@@ -3,6 +3,7 @@
     {
       "name": "NightFuryScales",
       "type": "item",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "night_fury_scales",
@@ -37,15 +38,55 @@
         "files": []
       },
       "path": "~/Creative Tabs"
+    },
+    {
+      "name": "NightFuryLightning",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_lightning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NightFuryLightningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/NightFury"
+    },
+    {
+      "name": "NightFury",
+      "type": "animatedentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/night_fury_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dragons/NightFury"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "item.how_to_own_a_dragon.night_fury_scales": "Night Fury Scales",
-      "item_group.how_to_own_a_dragon.items": "Items"
+      "item_group.how_to_own_a_dragon.items": "Items",
+      "entity.how_to_own_a_dragon.night_fury": "Night Fury"
     }
   },
   "foldersRoot": {

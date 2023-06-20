@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "how_to_own_a_dragon:night_fury",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

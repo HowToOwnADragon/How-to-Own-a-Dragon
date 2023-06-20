@@ -32,6 +32,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,6 +53,7 @@ public class HowToOwnADragonMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		HowToOwnADragonModItems.REGISTRY.register(bus);
+		HowToOwnADragonModEntities.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}
