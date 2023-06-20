@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nightfuryscale",
+    "texture": "nightfuryscales",
     "customModelName": "Normal",
-    "name": "Night Fury Scales",
+    "name": "Night Fury Scale",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Dragons"
     },
     "stackSize": 64,
     "enchantability": 0,

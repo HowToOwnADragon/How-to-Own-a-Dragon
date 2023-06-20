@@ -1,33 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "NightFuryScales",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "night_fury_scales",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_scales.json",
-          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryScalesItem.java"
-        ]
-      },
-      "path": "~/Items/Scales"
-    },
-    {
-      "name": "Items",
-      "type": "tab",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "items",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Creative Tabs"
-    },
-    {
       "name": "Dragons",
       "type": "tab",
       "sortid": 1,
@@ -129,6 +102,51 @@
         ]
       },
       "path": "~/Dragons/NightFury"
+    },
+    {
+      "name": "NightFuryScale",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_scale",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryScaleItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_scale.json"
+        ]
+      },
+      "path": "~/Items/Scales"
+    },
+    {
+      "name": "Items",
+      "type": "tab",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "items",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "NightFuryArmor",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_helmet.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_leggings.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_chestplate.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/NightFuryArmorItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_boots.json"
+        ]
+      },
+      "path": "~/Armor/Scale"
     }
   ],
   "variable_elements": [],
@@ -136,11 +154,15 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
+      "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
-      "item.how_to_own_a_dragon.night_fury_scales": "Night Fury Scales",
+      "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "item_group.how_to_own_a_dragon.items": "Items",
+      "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
-      "block.how_to_own_a_dragon.portal_block": "Portal Block"
+      "block.how_to_own_a_dragon.portal_block": "Portal Block",
+      "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
     }
   },
   "foldersRoot": {
@@ -174,7 +196,12 @@
       },
       {
         "name": "Armor",
-        "children": []
+        "children": [
+          {
+            "name": "Scale",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Achievements",
