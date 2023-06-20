@@ -21,6 +21,9 @@
     "sleepResult": "DENY",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": true,
+    "onPlayerEntersDimension": {
+      "name": "TheHiddenWorldPlayerEntersDimension"
+    },
     "portalFrame": {
       "value": ""
     },

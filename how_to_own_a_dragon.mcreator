@@ -68,8 +68,8 @@
       "registry_name": "the_hidden_world",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/resources/data/how_to_own_a_dragon/dimension/the_hidden_world.json"
         ]
       },
@@ -129,9 +129,69 @@
         ]
       },
       "path": "~/Dragons/NightFury"
+    },
+    {
+      "name": "EntranceInsideHiddenWorld",
+      "type": "structure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entrance_inside_hidden_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entrance_inside_hidden_world_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entrance_inside_hidden_world.json",
+          "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceInsideHiddenWorldFeature.java",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entrance_inside_hidden_world.json"
+        ]
+      },
+      "path": "~/The Hidden World"
+    },
+    {
+      "name": "TheHiddenWorldPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_hidden_world_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TheHiddenWorldPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/The Hidden World"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "HasplayerenteredHWbefore",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
