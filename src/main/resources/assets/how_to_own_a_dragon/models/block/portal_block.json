@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "how_to_own_a_dragon:block/temporarly",
+    "up": "how_to_own_a_dragon:block/temporarly",
+    "north": "how_to_own_a_dragon:block/temporarly",
+    "east": "how_to_own_a_dragon:block/temporarly",
+    "south": "how_to_own_a_dragon:block/temporarly",
+    "west": "how_to_own_a_dragon:block/temporarly",
+    "particle": "how_to_own_a_dragon:block/temporarly"
+  },
+  "render_type": "solid"
+}

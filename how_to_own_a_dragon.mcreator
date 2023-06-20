@@ -76,6 +76,59 @@
         ]
       },
       "path": "~/Dragons/NightFury"
+    },
+    {
+      "name": "TheHiddenWorld",
+      "type": "dimension",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_hidden_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
+          "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
+          "src/main/resources/data/how_to_own_a_dragon/dimension/the_hidden_world.json"
+        ]
+      },
+      "path": "~/The Hidden World"
+    },
+    {
+      "name": "PortalBlockTp",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_tp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PortalBlockTpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/The Hidden World"
+    },
+    {
+      "name": "PortalBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/portal_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/portal_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json"
+        ]
+      },
+      "path": "~/The Hidden World"
     }
   ],
   "variable_elements": [],
@@ -86,7 +139,8 @@
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "item.how_to_own_a_dragon.night_fury_scales": "Night Fury Scales",
       "item_group.how_to_own_a_dragon.items": "Items",
-      "entity.how_to_own_a_dragon.night_fury": "Night Fury"
+      "entity.how_to_own_a_dragon.night_fury": "Night Fury",
+      "block.how_to_own_a_dragon.portal_block": "Portal Block"
     }
   },
   "foldersRoot": {

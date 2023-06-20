@@ -33,6 +33,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,6 +53,7 @@ public class HowToOwnADragonMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		HowToOwnADragonModBlocks.REGISTRY.register(bus);
 		HowToOwnADragonModItems.REGISTRY.register(bus);
 		HowToOwnADragonModEntities.REGISTRY.register(bus);
 
