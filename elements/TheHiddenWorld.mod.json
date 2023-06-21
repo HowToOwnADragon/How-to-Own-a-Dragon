@@ -4,12 +4,12 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "mushroom_field_shore"
+        "value": "CUSTOM:FireRealm"
       }
     ],
-    "worldGenType": "Normal world gen",
+    "worldGenType": "Nether like gen",
     "mainFillerBlock": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:CustomBlackstone"
     },
     "fluidBlock": {
       "value": "Blocks.AIR"

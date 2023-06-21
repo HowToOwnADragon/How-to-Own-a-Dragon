@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:air"
+    "how_to_own_a_dragon:custom_blackstone",
+    "minecraft:netherrack"
   ]
 }

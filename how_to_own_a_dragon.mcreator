@@ -199,6 +199,37 @@
         ]
       },
       "path": "~/The Hidden World"
+    },
+    {
+      "name": "FireRealm",
+      "type": "biome",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_realm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/fire_realm.json"
+        ]
+      },
+      "path": "~/The Hidden World"
+    },
+    {
+      "name": "CustomBlackstone",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_blackstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/custom_blackstone.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/custom_blackstone.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/CustomBlackstoneBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/custom_blackstone.json"
+        ]
+      },
+      "path": "~/The Hidden World"
     }
   ],
   "variable_elements": [
@@ -215,12 +246,14 @@
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
-      "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
-      "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+      "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
+      "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
+      "block.how_to_own_a_dragon.portal_block": "Portal Block",
+      "block.how_to_own_a_dragon.custom_blackstone": "Custom Blackstone",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
     }
   },
