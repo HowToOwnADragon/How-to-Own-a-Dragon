@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Custom Blackstone",
+    "name": "Dark Stone",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -42,13 +42,13 @@
     "creativeTab": {
       "value": "CUSTOM:Items"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:CustomBlackstone"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""

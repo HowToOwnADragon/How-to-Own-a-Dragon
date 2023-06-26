@@ -4,15 +4,15 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "deep_ocean"
+        "value": "CUSTOM:FireRealm"
       }
     ],
-    "worldGenType": "Normal world gen",
+    "worldGenType": "Nether like gen",
     "mainFillerBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "CUSTOM:DarkStone"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.AIR"
     },
     "canRespawnHere": false,
     "hasFog": false,
