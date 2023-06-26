@@ -24,7 +24,7 @@ public class TheHiddenWorldPlayerEntersDimensionProcedure {
 		if (entity == null)
 			return;
 		if (HowToOwnADragonModVariables.WorldVariables.get(world).HasplayerenteredHWbefore == false) {
-			HowToOwnADragonMod.queueServerWork(1, () -> {
+			HowToOwnADragonMod.queueServerWork(2, () -> {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("how_to_own_a_dragon", "hw_entrance_in_hw"));
 					if (template != null) {

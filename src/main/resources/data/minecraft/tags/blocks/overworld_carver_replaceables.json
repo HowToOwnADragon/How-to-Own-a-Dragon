@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "how_to_own_a_dragon:custom_blackstone",
-    "minecraft:netherrack"
+    "minecraft:water",
+    "minecraft:stone",
+    "minecraft:grass_block"
   ]
 }

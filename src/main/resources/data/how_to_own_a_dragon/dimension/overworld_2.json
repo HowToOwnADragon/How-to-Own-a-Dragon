@@ -1,12 +1,12 @@
 {
-  "type": "how_to_own_a_dragon:the_hidden_world",
+  "type": "how_to_own_a_dragon:overworld_2",
   "generator": {
     "type": "minecraft:noise",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "deep_ocean",
+          "biome": "how_to_own_a_dragon:plains",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -20,17 +20,14 @@
       ]
     },
     "settings": {
-      "name": "how_to_own_a_dragon:the_hidden_world",
+      "name": "how_to_own_a_dragon:overworld_2",
       "sea_level": 63,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,
       "ore_veins_enabled": true,
       "default_block": {
-        "Name": "minecraft:water",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:stone"
       },
       "default_fluid": {
         "Name": "minecraft:water",
@@ -386,7 +383,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "deep_ocean"
+                "how_to_own_a_dragon:plains"
               ]
             },
             "then_run": {
@@ -430,7 +427,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "minecraft:stone"
                           }
                         }
                       ]
@@ -448,7 +445,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "minecraft:stone"
                       }
                     }
                   }

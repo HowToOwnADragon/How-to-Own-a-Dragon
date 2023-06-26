@@ -4,25 +4,25 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "deep_ocean"
+        "value": "CUSTOM:Plains"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.WATER"
     },
-    "canRespawnHere": false,
+    "canRespawnHere": true,
     "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "DENY",
-    "hasSkyLight": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "onPlayerEntersDimension": {
-      "name": "TheHiddenWorldPlayerEntersDimension"
+      "name": "Overworld2setspawn"
     },
     "portalFrame": {
       "value": ""
@@ -35,7 +35,7 @@
       "value": "block.portal.ambient"
     },
     "enableIgniter": true,
-    "igniterName": "The Hidden World Portal Igniter",
+    "igniterName": "Overworld 2 Portal Igniter",
     "igniterTab": {
       "value": "TOOLS"
     },

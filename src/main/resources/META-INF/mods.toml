@@ -4,11 +4,12 @@ license="MIT License"
 
 [[mods]]
 modId="how_to_own_a_dragon"
-version="1.0.0"
+version="0.0.1"
 displayName="How to Own a Dragon"
 credits="Made with MCreator, Blockbench and a lot of people"
 displayURL="https://mcreator.net"
 authors="MeAlam, Justindraak1"
+description="Welcome to the Dragon world, we are trying to make this mod as canon as possible to the original HTTYD Movies and series"
 
 [[dependencies.how_to_own_a_dragon]]
     modId="minecraft"
@@ -18,12 +19,6 @@ authors="MeAlam, Justindraak1"
     side="BOTH"
 
 
-[[dependencies.how_to_own_a_dragon]]
-    modId="mcreator_link"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.how_to_own_a_dragon]]
     modId="geckolib"

@@ -1,12 +1,3 @@
-task mcreatorLink(type: DefaultTask) {
-  ant.mkdir(dir: 'lib/');
-  ant.get(src: 'https://mcreator.net/link/download/dev_1.19.4', dest: 'lib/mcreator_link.jar', skipexisting: 'true');
-}
-
-compileJava.dependsOn mcreatorLink
-
-dependencies { implementation files("lib/mcreator_link.jar") }
-
 repositories {
   maven {
       url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
