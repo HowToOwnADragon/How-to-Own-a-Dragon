@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:water",
+    "how_to_own_a_dragon:dark_stone",
+    "minecraft:netherrack",
     "minecraft:stone",
     "minecraft:grass_block"
   ]

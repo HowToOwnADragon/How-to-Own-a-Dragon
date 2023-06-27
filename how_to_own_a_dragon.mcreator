@@ -215,23 +215,6 @@
       "path": "~/The Hidden World"
     },
     {
-      "name": "CustomBlackstone",
-      "type": "block",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_blackstone",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/CustomBlackstoneBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/custom_blackstone.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/custom_blackstone.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/custom_blackstone.json"
-        ]
-      },
-      "path": "~/The Hidden World"
-    },
-    {
       "name": "Overworld2setspawn",
       "type": "procedure",
       "sortid": 16,
@@ -329,6 +312,23 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "DarkStone",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/DarkStoneBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dark_stone.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dark_stone.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dark_stone.json"
+        ]
+      },
+      "path": "~/The Hidden World/Blocks"
     }
   ],
   "variable_elements": [
@@ -342,7 +342,6 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
@@ -354,7 +353,6 @@
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
-      "block.how_to_own_a_dragon.custom_blackstone": "Custom Blackstone",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
     }
   },
@@ -402,7 +400,25 @@
       },
       {
         "name": "The Hidden World",
-        "children": []
+        "children": [
+          {
+            "name": "Blocks",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Overworld2.0",
+        "children": [
+          {
+            "name": "CustomBiomes2",
+            "children": []
+          },
+          {
+            "name": "VanillaBiomes2",
+            "children": []
+          }
+        ]
       },
       {
         "name": "GUI",
@@ -415,19 +431,6 @@
       {
         "name": "Commands",
         "children": []
-      },
-      {
-        "name": "Overworld2.0",
-        "children": [
-          {
-            "name": "VanillaBiomes2",
-            "children": []
-          },
-          {
-            "name": "CustomBiomes2",
-            "children": []
-          }
-        ]
       }
     ]
   },

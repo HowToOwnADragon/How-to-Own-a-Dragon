@@ -1,5 +1,5 @@
 {
-  "parent": "how_to_own_a_dragon:block/custom_blackstone",
+  "parent": "how_to_own_a_dragon:block/dark_stone",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,5 +1,4 @@
 {
-  "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
   "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
   "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
   "item_group.how_to_own_a_dragon.dragons": "Dragons",
@@ -11,6 +10,5 @@
   "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
   "biome.how_to_own_a_dragon.plains": "Plains",
   "block.how_to_own_a_dragon.portal_block": "Portal Block",
-  "block.how_to_own_a_dragon.custom_blackstone": "Custom Blackstone",
   "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
 }
