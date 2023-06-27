@@ -1,14 +1,20 @@
 {
+  "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
   "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
   "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
   "item_group.how_to_own_a_dragon.dragons": "Dragons",
+  "item_group.how_to_own_a_dragon.tools": "Tools",
   "item_group.how_to_own_a_dragon.items": "Items",
   "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
+  "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
   "entity.how_to_own_a_dragon.night_fury": "Night Fury",
   "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+  "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
   "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
   "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
+  "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
   "biome.how_to_own_a_dragon.plains": "Plains",
   "block.how_to_own_a_dragon.portal_block": "Portal Block",
-  "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
+  "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
+  "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe"
 }

@@ -1,0 +1,31 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "gronckle_iron_sword",
+    "customModelName": "Normal",
+    "name": "Gronckle Iron Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tools"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 10.0,
+    "attackSpeed": 1.6,
+    "enchantability": 16,
+    "damageVsEntity": 7.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:GronckleIron"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

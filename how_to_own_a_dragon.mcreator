@@ -314,6 +314,149 @@
         ]
       },
       "path": "~/The Hidden World/Blocks"
+    },
+    {
+      "name": "GronckleIron",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "GronckleIronSword",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronSwordItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_sword.json"
+        ]
+      },
+      "path": "~/Tools_Weapons/Gronckle iron Tools"
+    },
+    {
+      "name": "Tools",
+      "type": "tab",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tools",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "GronckleIronPickaxe",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronPickaxeItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_pickaxe.json"
+        ]
+      },
+      "path": "~/Tools_Weapons/Gronckle iron Tools"
+    },
+    {
+      "name": "GronckleIronShovel",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronShovelItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_shovel.json"
+        ]
+      },
+      "path": "~/Tools_Weapons/Gronckle iron Tools"
+    },
+    {
+      "name": "GronckleIronAxe",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronAxeItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_axe.json"
+        ]
+      },
+      "path": "~/Tools_Weapons/Gronckle iron Tools"
+    },
+    {
+      "name": "GronckleIronSwordRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_pickaxe.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronAxeRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_axe.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronShovelRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
     }
   ],
   "variable_elements": [
@@ -327,18 +470,24 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
+      "item_group.how_to_own_a_dragon.tools": "Tools",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
+      "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
+      "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
-      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
+      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
+      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe"
     }
   },
   "foldersRoot": {
@@ -373,7 +522,12 @@
       },
       {
         "name": "Tools_Weapons",
-        "children": []
+        "children": [
+          {
+            "name": "Gronckle iron Tools",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Creative Tabs",
@@ -413,6 +567,15 @@
           },
           {
             "name": "CustomBiomes2",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipe",
+        "children": [
+          {
+            "name": "Gronckle Iron",
             "children": []
           }
         ]

@@ -1,0 +1,31 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "grockle_iron_shovel",
+    "customModelName": "Normal",
+    "name": "Gronckle Iron Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tools"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 3,
+    "efficiency": 10.0,
+    "attackSpeed": 1.1,
+    "enchantability": 16,
+    "damageVsEntity": 4.0,
+    "usageCount": 2000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:GronckleIron"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
