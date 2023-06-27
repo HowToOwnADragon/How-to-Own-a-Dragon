@@ -480,7 +480,7 @@
       "type": "block",
       "sortid": 33,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "deep_iron_rod",
       "metadata": {
         "files": [

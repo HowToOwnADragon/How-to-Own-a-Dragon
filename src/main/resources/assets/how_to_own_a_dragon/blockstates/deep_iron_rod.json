@@ -1,7 +1,36 @@
 {
   "variants": {
-    "": {
+    "facing=down": {
+      "model": "how_to_own_a_dragon:block/deep_iron_rod",
+      "x": 180
+  
+    },
+    "facing=east": {
+      "model": "how_to_own_a_dragon:block/deep_iron_rod",
+      "x": 90,
+      "y": 90
+    },
+    
+    "facing=north": {
+      "model": "how_to_own_a_dragon:block/deep_iron_rod",
+      "x": 90
+    },
+
+    "facing=south": {
+      "model": "how_to_own_a_dragon:block/deep_iron_rod",
+      "x": 90,
+      "y": 180
+  
+    },
+    "facing=up": {
       "model": "how_to_own_a_dragon:block/deep_iron_rod"
+
+    },
+    "facing=west": {
+      "model": "how_to_own_a_dragon:block/deep_iron_rod",
+      "x": 90,
+      "y": 270
+    
     }
   }
 }
