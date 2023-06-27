@@ -314,6 +314,21 @@
         ]
       },
       "path": "~/Overworld2.0/VanillaBiomes2"
+    },
+    {
+      "name": "GronckleIron",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -327,6 +342,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",

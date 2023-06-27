@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
+import net.mcreator.howtoownadragon.item.GronckleIronItem;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModItems {
@@ -27,6 +28,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> NIGHT_FURY_ARMOR_LEGGINGS = REGISTRY.register("night_fury_armor_leggings", () -> new NightFuryArmorItem.Leggings());
 	public static final RegistryObject<Item> NIGHT_FURY_ARMOR_BOOTS = REGISTRY.register("night_fury_armor_boots", () -> new NightFuryArmorItem.Boots());
 	public static final RegistryObject<Item> CUSTOM_BLACKSTONE = block(HowToOwnADragonModBlocks.CUSTOM_BLACKSTONE);
+	public static final RegistryObject<Item> GRONCKLE_IRON = REGISTRY.register("gronckle_iron", () -> new GronckleIronItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
