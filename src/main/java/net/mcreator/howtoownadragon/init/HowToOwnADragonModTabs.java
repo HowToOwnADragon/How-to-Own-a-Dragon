@@ -35,8 +35,8 @@ public class HowToOwnADragonModTabs {
 		event.registerCreativeModeTab(new ResourceLocation("how_to_own_a_dragon", "items"),
 				builder -> builder.title(Component.translatable("item_group.how_to_own_a_dragon.items")).icon(() -> new ItemStack(HowToOwnADragonModItems.NIGHT_FURY_SCALE.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(HowToOwnADragonModBlocks.PORTAL_BLOCK.get().asItem());
-					tabData.accept(HowToOwnADragonModBlocks.DARK_STONE.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_IRON.get());
+					tabData.accept(HowToOwnADragonModBlocks.DARK_STONE.get().asItem());
 				})
 
 		);
