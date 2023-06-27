@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "how_to_own_a_dragon:block/deep_iron_rod_bottom",
+    "up": "how_to_own_a_dragon:block/deep_iron_rod_top",
+    "north": "how_to_own_a_dragon:block/deep_iron_rod",
+    "east": "how_to_own_a_dragon:block/deep_iron_rod",
+    "south": "how_to_own_a_dragon:block/deep_iron_rod",
+    "west": "how_to_own_a_dragon:block/deep_iron_rod",
+    "particle": "how_to_own_a_dragon:block/deep_iron_rod_bottom"
+  },
+  "render_type": "solid"
+}

@@ -457,6 +457,40 @@
         ]
       },
       "path": "~/The Hidden World/Blocks"
+    },
+    {
+      "name": "DeepIronBlock",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronBlockBlock.java"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronRod",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_rod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_rod.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronRodBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_rod.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_rod.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
     }
   ],
   "variable_elements": [
@@ -471,8 +505,10 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
+      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
+      "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "item_group.how_to_own_a_dragon.items": "Items",
@@ -499,6 +535,10 @@
         "children": [
           {
             "name": "Scales",
+            "children": []
+          },
+          {
+            "name": "Deep Iron",
             "children": []
           }
         ]
