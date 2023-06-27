@@ -273,12 +273,7 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/Overworld2enterProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Overworld2.0"
     },
