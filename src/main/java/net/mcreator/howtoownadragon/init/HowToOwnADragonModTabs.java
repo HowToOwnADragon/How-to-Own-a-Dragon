@@ -43,6 +43,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_SLAB.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_DOOR.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.DEEP_IRON_INGOT.get());
+					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SCALE.get());
 				})
 
 		);

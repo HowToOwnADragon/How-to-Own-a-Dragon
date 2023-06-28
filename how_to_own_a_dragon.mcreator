@@ -836,6 +836,21 @@
         ]
       },
       "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "GronckleScale",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_scale",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleScaleItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_scale.json"
+        ]
+      },
+      "path": "~/Items/Scales"
     }
   ],
   "variable_elements": [
@@ -866,6 +881,7 @@
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
+      "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.plains": "Plains",
