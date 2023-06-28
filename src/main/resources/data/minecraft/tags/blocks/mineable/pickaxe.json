@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "how_to_own_a_dragon:deep_iron_block",
-    "how_to_own_a_dragon:deep_iron_rod"
+    "how_to_own_a_dragon:deep_iron_rod",
+    "how_to_own_a_dragon:deep_iron_stairs",
+    "how_to_own_a_dragon:deep_iron_slab",
+    "how_to_own_a_dragon:deep_iron_door"
   ]
 }

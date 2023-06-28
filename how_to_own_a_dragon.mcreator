@@ -486,6 +486,153 @@
         ]
       },
       "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronStairs",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs_outer.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_stairs.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_stairs.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronStairsBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs_inner.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronSlab",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab_full.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronSlabBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab_top.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_slab.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_slab.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronDoor",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_right_open.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_right.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronDoorBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_left_open.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_right.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_left_open.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_left.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_left.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_door.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_door.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_right_open.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronIngot",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/DeepIronIngotItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_ingot.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronIngotRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "DeepIronBlockRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_block_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "DeepIronSlabRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "DeepIronDoorRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_door_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "DeepIronStairsRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
     }
   ],
   "variable_elements": [
@@ -500,26 +647,30 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
-      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
+      "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
+      "entity.how_to_own_a_dragon.night_fury": "Night Fury",
+      "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
+      "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
+      "biome.how_to_own_a_dragon.plains": "Plains",
+      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
+      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "item_group.how_to_own_a_dragon.items": "Items",
-      "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
-      "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
-      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
+      "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",
       "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
-      "biome.how_to_own_a_dragon.plains": "Plains",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
-      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
-      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe"
+      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
     }
   },
   "foldersRoot": {
@@ -534,7 +685,12 @@
           },
           {
             "name": "Deep Iron",
-            "children": []
+            "children": [
+              {
+                "name": "Recipes",
+                "children": []
+              }
+            ]
           }
         ]
       },

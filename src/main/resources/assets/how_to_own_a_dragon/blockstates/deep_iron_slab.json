@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "how_to_own_a_dragon:block/deep_iron_slab"
+    },
+    "type=top": {
+      "model": "how_to_own_a_dragon:block/deep_iron_slab_top"
+    },
+    "type=double": {
+      "model": "how_to_own_a_dragon:block/deep_iron_slab_full"
+    }
+  }
+}

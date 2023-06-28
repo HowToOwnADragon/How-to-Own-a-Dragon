@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "how_to_own_a_dragon:block/deep_iron_door_bottom"
+  },
+  "render_type": "solid"
+}

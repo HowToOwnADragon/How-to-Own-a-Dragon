@@ -39,6 +39,10 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.DARK_STONE.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_BLOCK.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_ROD.get().asItem());
+					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_STAIRS.get().asItem());
+					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_SLAB.get().asItem());
+					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_DOOR.get().asItem());
+					tabData.accept(HowToOwnADragonModItems.DEEP_IRON_INGOT.get());
 				})
 
 		);

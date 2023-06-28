@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "how_to_own_a_dragon:block/deep_iron_block",
+    "top": "how_to_own_a_dragon:block/deep_iron_block",
+    "side": "how_to_own_a_dragon:block/deep_iron_block"
+  },
+  "render_type": "solid"
+}

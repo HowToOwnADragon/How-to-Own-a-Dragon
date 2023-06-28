@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DeepIronDoor"
+    },
+    "name": "deep_iron_door_recipe",
+    "namespace": "mod"
+  }
+}
