@@ -704,6 +704,120 @@
         ]
       },
       "path": "~/Achievements"
+    },
+    {
+      "name": "TpToOverworld2",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_overworld_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TpToOverworld2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Teleport between dimensions"
+    },
+    {
+      "name": "TpToHw",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_hw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TpToHwProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Teleport between dimensions"
+    },
+    {
+      "name": "TpToNether",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_nether",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TpToNetherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Teleport between dimensions"
+    },
+    {
+      "name": "TpToVanillaOverworld",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_vanilla_overworld",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TpToVanillaOverworldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Teleport between dimensions"
+    },
+    {
+      "name": "TpToEnd",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_end",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TpToEndProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Teleport between dimensions"
+    },
+    {
+      "name": "Dimensionswap",
+      "type": "command",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimensionswap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/command/DimensionswapCommand.java"
+        ]
+      },
+      "path": "~/Commands/Teleport between dimensions"
     }
   ],
   "variable_elements": [
@@ -831,7 +945,12 @@
       },
       {
         "name": "Commands",
-        "children": []
+        "children": [
+          {
+            "name": "Teleport between dimensions",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Overworld2.0",
