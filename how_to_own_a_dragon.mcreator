@@ -851,6 +851,40 @@
         ]
       },
       "path": "~/Items/Scales"
+    },
+    {
+      "name": "DeepIronWall",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_wall_post.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_wall_inventory.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_wall.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_wall.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_wall.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_wall_side_tall.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronWallBlock.java"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
+    },
+    {
+      "name": "DeepIronWallRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_wall_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_wall_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
     }
   ],
   "variable_elements": [
@@ -871,6 +905,7 @@
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
+      "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
       "advancements.hidden_world_root.descr": "What is this place?",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
