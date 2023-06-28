@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "how_to_own_a_dragon:dragon_symbol"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_the_world.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_the_world.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcome_to_the_world": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "how_to_own_a_dragon:overworld_2"
+      }
+    }
+  },
+  "parent": "minecraft:story/root"
+}

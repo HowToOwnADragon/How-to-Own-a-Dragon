@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "how_to_own_a_dragon:dark_stone"
+    },
+    "title": {
+      "translate": "advancements.enter_hidden_world.title"
+    },
+    "description": {
+      "translate": "advancements.enter_hidden_world.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "enter_hidden_world": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "how_to_own_a_dragon:the_hidden_world"
+      }
+    }
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}

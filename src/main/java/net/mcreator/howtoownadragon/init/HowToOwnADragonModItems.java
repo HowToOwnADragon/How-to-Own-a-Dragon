@@ -21,6 +21,7 @@ import net.mcreator.howtoownadragon.item.GronckleIronShovelItem;
 import net.mcreator.howtoownadragon.item.GronckleIronPickaxeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronItem;
 import net.mcreator.howtoownadragon.item.GronckleIronAxeItem;
+import net.mcreator.howtoownadragon.item.DragonSymbolItem;
 import net.mcreator.howtoownadragon.item.DeepIronIngotItem;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -45,6 +46,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> DEEP_IRON_SLAB = block(HowToOwnADragonModBlocks.DEEP_IRON_SLAB);
 	public static final RegistryObject<Item> DEEP_IRON_DOOR = doubleBlock(HowToOwnADragonModBlocks.DEEP_IRON_DOOR);
 	public static final RegistryObject<Item> DEEP_IRON_INGOT = REGISTRY.register("deep_iron_ingot", () -> new DeepIronIngotItem());
+	public static final RegistryObject<Item> DRAGON_SYMBOL = REGISTRY.register("dragon_symbol", () -> new DragonSymbolItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

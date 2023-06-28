@@ -647,6 +647,63 @@
         ]
       },
       "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "HiddenWorldRoot",
+      "type": "achievement",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hidden_world_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/hidden_world_root.json"
+        ]
+      },
+      "path": "~/Achievements/Hidden World"
+    },
+    {
+      "name": "EnterHiddenWorld",
+      "type": "achievement",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enter_hidden_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/enter_hidden_world.json"
+        ]
+      },
+      "path": "~/Achievements/Hidden World"
+    },
+    {
+      "name": "DragonSymbol",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_symbol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_symbol.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/DragonSymbolItem.java"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "WelcomeToTheWorld",
+      "type": "achievement",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "welcome_to_the_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/welcome_to_the_world.json"
+        ]
+      },
+      "path": "~/Achievements"
     }
   ],
   "variable_elements": [
@@ -663,16 +720,23 @@
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
+      "advancements.hidden_world_root.title": "Hidden World",
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
+      "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
+      "advancements.enter_hidden_world.descr": "Enter the Hidden World",
+      "advancements.hidden_world_root.descr": "What is this place?",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
+      "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
+      "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "item_group.how_to_own_a_dragon.items": "Items",
@@ -758,7 +822,12 @@
       },
       {
         "name": "Achievements",
-        "children": []
+        "children": [
+          {
+            "name": "Hidden World",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Commands",
