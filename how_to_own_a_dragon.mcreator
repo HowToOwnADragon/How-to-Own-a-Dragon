@@ -818,6 +818,24 @@
         ]
       },
       "path": "~/Commands/Teleport between dimensions"
+    },
+    {
+      "name": "Gronckle",
+      "type": "animatedentity",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
     }
   ],
   "variable_elements": [
@@ -841,12 +859,14 @@
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
       "advancements.hidden_world_root.descr": "What is this place?",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
+      "entity.how_to_own_a_dragon.gronckle": "Gronckle",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
+      "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
@@ -900,6 +920,10 @@
         "children": [
           {
             "name": "NightFury",
+            "children": []
+          },
+          {
+            "name": "Gronckle",
             "children": []
           }
         ]
