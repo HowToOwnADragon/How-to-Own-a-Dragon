@@ -4,5 +4,5 @@
     "bottom": "how_to_own_a_dragon:block/deep_iron_door_bottom",
     "top": "how_to_own_a_dragon:block/deep_iron_door_top"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

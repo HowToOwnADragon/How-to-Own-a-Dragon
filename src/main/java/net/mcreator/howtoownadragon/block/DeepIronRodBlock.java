@@ -15,7 +15,6 @@ import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
-import net.minecraft.world.level.block.LightningRodBlock;
 
 public class DeepIronRodBlock extends LightningRodBlock {
 	public DeepIronRodBlock() {

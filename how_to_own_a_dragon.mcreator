@@ -633,6 +633,20 @@
         ]
       },
       "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "DeepIronRodRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_rod_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron/Recipes"
     }
   ],
   "variable_elements": [
