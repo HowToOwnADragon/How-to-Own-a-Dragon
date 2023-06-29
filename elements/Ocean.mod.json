@@ -28,6 +28,10 @@
       "value": -12618012,
       "falpha": 0.0
     },
+    "waterFogColor": {
+      "value": -16448205,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },
@@ -52,24 +56,24 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.15,
-      "max": 0.2
+      "min": 0.3,
+      "max": 0.8
     },
     "genHumidity": {
-      "min": -0.5,
-      "max": 0.5
+      "min": 0.5,
+      "max": 1.0
     },
     "genContinentalness": {
-      "min": -0.4,
-      "max": -0.19
+      "min": -1.0,
+      "max": -0.3
     },
     "genErosion": {
-      "min": -0.5,
-      "max": 0.5
+      "min": 0.0,
+      "max": 0.1
     },
     "genWeirdness": {
-      "min": -1.0,
-      "max": 1.0
+      "min": -0.5,
+      "max": 0.5
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",

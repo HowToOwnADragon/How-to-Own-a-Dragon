@@ -18,7 +18,7 @@
     "welcome_to_the_world": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "to": "how_to_own_a_dragon:overworld_2"
+        "to": "minecraft:overworld"
       }
     }
   },

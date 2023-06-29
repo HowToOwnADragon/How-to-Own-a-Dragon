@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:Ocean"
       }
     ],
     "worldGenType": "Normal world gen",
