@@ -53,8 +53,8 @@
       "registry_name": "the_hidden_world",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/resources/data/how_to_own_a_dragon/dimension/the_hidden_world.json"
         ]
       },
@@ -89,10 +89,10 @@
       "registry_name": "portal_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/portal_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/portal_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java"
         ]
       },
       "path": "~/The Hidden World"
@@ -106,9 +106,9 @@
       "registry_name": "night_fury",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java"
         ]
       },
@@ -159,11 +159,11 @@
       "registry_name": "night_fury_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_helmet.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_leggings.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_chestplate.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_boots.json",
           "src/main/java/net/mcreator/howtoownadragon/item/NightFuryArmorItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_boots.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_chestplate.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_leggings.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_helmet.json"
         ]
       },
       "path": "~/Armor/Scale"
@@ -193,8 +193,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceinhwFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw.json",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entranceinhw_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entranceinhw.json"
         ]
       },
@@ -255,9 +255,9 @@
       "registry_name": "overworld_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/dimension_type/overworld_2.json",
+          "src/main/resources/data/how_to_own_a_dragon/dimension/overworld_2.json",
           "src/main/java/net/mcreator/howtoownadragon/world/dimension/Overworld2Dimension.java",
-          "src/main/resources/data/how_to_own_a_dragon/dimension/overworld_2.json"
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/overworld_2.json"
         ]
       },
       "path": "~/Overworld2.0"
@@ -287,8 +287,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/plains_tree.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/plains_tree.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/plains.json"
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/plains.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/plains_tree.json"
         ]
       },
       "path": "~/Overworld2.0/VanillaBiomes2"
@@ -359,8 +359,8 @@
       "registry_name": "gronckle_iron_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronShovelItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_shovel.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_shovel.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronShovelItem.java"
         ]
       },
       "path": "~/Tools_Weapons/Gronckle iron Tools"
@@ -374,8 +374,8 @@
       "registry_name": "gronckle_iron_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronAxeItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_axe.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_axe.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronAxeItem.java"
         ]
       },
       "path": "~/Tools_Weapons/Gronckle iron Tools"
@@ -445,10 +445,10 @@
       "registry_name": "dark_stone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dark_stone.json",
           "src/main/java/net/mcreator/howtoownadragon/block/DarkStoneBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/dark_stone.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/dark_stone.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dark_stone.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dark_stone.json"
         ]
       },
       "path": "~/The Hidden World/Blocks"
@@ -828,11 +828,11 @@
       "registry_name": "gronckle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json"
         ]
       },
       "path": "~/Dragons/Gronckle"
@@ -857,7 +857,7 @@
       "type": "block",
       "sortid": 57,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "deep_iron_wall",
       "metadata": {
         "files": [
@@ -885,6 +885,20 @@
         ]
       },
       "path": "~/Items/Deep Iron/Recipes"
+    },
+    {
+      "name": "Walls",
+      "type": "tag",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walls",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/walls.json"
+        ]
+      },
+      "path": "~/Items/Deep Iron"
     }
   ],
   "variable_elements": [
