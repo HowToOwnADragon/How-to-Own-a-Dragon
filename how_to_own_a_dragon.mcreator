@@ -286,8 +286,6 @@
       "registry_name": "plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/plains_tree.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/plains_tree.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/plains.json"
         ]
       },
@@ -899,6 +897,20 @@
         ]
       },
       "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "Ocean",
+      "type": "biome",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/ocean.json"
+        ]
+      },
+      "path": "~/Overworld2.0/VanillaBiomes2"
     }
   ],
   "variable_elements": [
@@ -933,6 +945,7 @@
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
+      "biome.how_to_own_a_dragon.ocean": "Ocean",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",

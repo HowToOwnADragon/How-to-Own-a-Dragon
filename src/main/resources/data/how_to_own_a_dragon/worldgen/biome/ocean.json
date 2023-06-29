@@ -1,12 +1,12 @@
 {
   "has_precipitation": true,
-  "temperature": 0.8,
-  "downfall": 0.4,
+  "temperature": 0.5,
+  "downfall": 0.5,
   "effects": {
-    "foliage_color": -8934609,
-    "grass_color": -7226023,
-    "sky_color": -8673281,
-    "fog_color": -8673281,
+    "foliage_color": -9328819,
+    "grass_color": -7423631,
+    "sky_color": -8674049,
+    "fog_color": -8674049,
     "water_color": -12618012,
     "water_fog_color": 329011
   },
@@ -58,8 +58,6 @@
     [],
     [],
     [],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    []
   ]
 }
