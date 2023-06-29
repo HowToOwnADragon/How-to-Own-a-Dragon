@@ -19,7 +19,6 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
@@ -40,7 +39,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
@@ -145,15 +143,6 @@ public class GronckleEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.getDirectEntity() instanceof AbstractArrow)
-			return false;
-		if (source.is(DamageTypes.FALL))
-			return false;
-		return super.hurt(source, amount);
-	}
-
-	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
@@ -236,7 +225,7 @@ public class GronckleEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.nightfury.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.idle"));
 		}
 		return PlayState.STOP;
 	}
