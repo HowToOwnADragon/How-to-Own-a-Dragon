@@ -13,11 +13,13 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.GronckleEntity;
 
 import javax.annotation.Nullable;
@@ -65,10 +67,10 @@ public class GronckleStoneTameProcedure {
 								ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
-							if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-								_toTame.tame(_owner);
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.HEART, x, y, z, 5, 3, 3, 3, 1);
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.TAMING_EFFECT.get(), 100, 1, false, false));
 						}
 					}
 				}

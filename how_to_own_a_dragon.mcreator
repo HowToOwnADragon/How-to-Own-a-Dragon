@@ -987,6 +987,44 @@
         ]
       },
       "path": "~/Procedure/Taming"
+    },
+    {
+      "name": "TamingEffect",
+      "type": "potioneffect",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taming_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/potion/TamingEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Procedure/Taming"
+    },
+    {
+      "name": "RightClickToTame",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_to_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RightClickToTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Taming"
     }
   ],
   "variable_elements": [
@@ -1000,6 +1038,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "effect.how_to_own_a_dragon.taming_effect": "Taming",
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
