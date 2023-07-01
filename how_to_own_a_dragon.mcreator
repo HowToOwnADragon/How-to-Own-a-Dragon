@@ -911,6 +911,82 @@
         ]
       },
       "path": "~/Overworld2.0/VanillaBiomes2"
+    },
+    {
+      "name": "KickWhenNotTamed",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kick_when_not_tamed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/KickWhenNotTamedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "GronckleStoneTame",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_stone_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleStoneTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Taming"
     }
   ],
   "variable_elements": [
@@ -981,6 +1057,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Eel",
+            "children": []
           }
         ]
       },
@@ -1072,6 +1152,15 @@
         "children": [
           {
             "name": "Gronckle Iron",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Procedure",
+        "children": [
+          {
+            "name": "Taming",
             "children": []
           }
         ]
