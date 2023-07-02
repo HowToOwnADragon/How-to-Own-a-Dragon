@@ -286,8 +286,6 @@
       "registry_name": "plains",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/plains_tree.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/plains_tree.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/plains.json"
         ]
       },
@@ -899,6 +897,505 @@
         ]
       },
       "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "Ocean",
+      "type": "biome",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/ocean.json"
+        ]
+      },
+      "path": "~/Overworld2.0/VanillaBiomes2"
+    },
+    {
+      "name": "GronckleStoneTame",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_stone_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleStoneTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "WhenNotTamedKick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_not_tamed_kick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WhenNotTamedKickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "GrockleCodTame",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grockle_cod_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrockleCodTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleSalmonTame",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_salmon_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleSalmonTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleGraniteTame",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_granite_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleGraniteTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleCobbleTame",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_cobble_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleCobbleTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleDioriteTame",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_diorite_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleDioriteTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleDeepslateTame",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_deepslate_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleDeepslateTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleAndesiteTame",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_andesite_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleAndesiteTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleCobbleDeepslateTame",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_cobble_deepslate_tame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleCobbleDeepslateTameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/TamingGronckle"
+    },
+    {
+      "name": "GronckleGUI",
+      "type": "gui",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/GronckleGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/GronckleGUIScreen.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "OpenGronckleGUI",
+      "type": "keybind",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/OpenGronckleGUIMessage.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "GronckleGUIOpening",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_gui_opening",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleGUIOpeningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
     }
   ],
   "variable_elements": [
@@ -932,7 +1429,10 @@
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
+      "key.how_to_own_a_dragon.open_gronckle_gui": "Open Dragon Inventory",
+      "gui.how_to_own_a_dragon.gronckle_gui.label_gronckle": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
+      "biome.how_to_own_a_dragon.ocean": "Ocean",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -968,6 +1468,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Eel",
+            "children": []
           }
         ]
       },
@@ -989,7 +1493,12 @@
           },
           {
             "name": "Gronckle",
-            "children": []
+            "children": [
+              {
+                "name": "TamingGronckle",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -1062,6 +1571,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Procedure",
+        "children": []
       }
     ]
   },
@@ -1072,9 +1585,10 @@
     "description": "Welcome to the Dragon world, we are trying to make this mod as canon as possible to the original HTTYD Movies and series",
     "author": "MeAlam, Justindraak1",
     "websiteURL": "https://mcreator.net",
-    "license": "MIT License",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
