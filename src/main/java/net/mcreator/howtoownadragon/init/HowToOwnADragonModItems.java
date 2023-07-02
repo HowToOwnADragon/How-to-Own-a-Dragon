@@ -51,6 +51,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> GRONCKLE_SCALE = REGISTRY.register("gronckle_scale", () -> new GronckleScaleItem());
 	public static final RegistryObject<Item> DEEP_IRON_WALL = block(HowToOwnADragonModBlocks.DEEP_IRON_WALL);
 	public static final RegistryObject<Item> GRONCKLE_SPAWN_EGG = REGISTRY.register("gronckle_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE, -2534144, -7128576, new Item.Properties()));
+	public static final RegistryObject<Item> REAPER_PORTAL = block(HowToOwnADragonModBlocks.REAPER_PORTAL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

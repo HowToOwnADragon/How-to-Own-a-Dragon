@@ -1,0 +1,43 @@
+{
+  "_fv": 43,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:FireRealm"
+      }
+    ],
+    "worldGenType": "End like gen",
+    "mainFillerBlock": {
+      "value": "Blocks.AIR"
+    },
+    "fluidBlock": {
+      "value": "Blocks.AIR"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": ""
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "enableIgniter": true,
+    "igniterName": "The Reaper Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false
+  }
+}
