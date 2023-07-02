@@ -889,11 +889,11 @@
       "registry_name": "gronckle",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle"
@@ -969,8 +969,20 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
