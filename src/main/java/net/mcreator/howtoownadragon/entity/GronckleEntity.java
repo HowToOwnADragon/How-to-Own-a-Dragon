@@ -54,7 +54,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.howtoownadragon.procedures.KickWhenNotTamedProcedure;
+import net.mcreator.howtoownadragon.procedures.WhenNotTamedKickProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
@@ -187,7 +187,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		KickWhenNotTamedProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		WhenNotTamedKickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

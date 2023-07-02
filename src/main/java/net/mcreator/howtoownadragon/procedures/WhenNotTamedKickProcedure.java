@@ -12,7 +12,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
-public class KickWhenNotTamedProcedure {
+public class WhenNotTamedKickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;

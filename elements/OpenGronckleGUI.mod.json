@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "E",
+    "keyBindingName": "Open Dragon Inventory",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Test"
+    }
+  }
+}

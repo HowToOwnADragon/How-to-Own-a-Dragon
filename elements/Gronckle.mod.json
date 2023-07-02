@@ -100,7 +100,7 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "KickWhenNotTamed"
+      "name": "WhenNotTamedKick"
     },
     "hasAI": true,
     "aiBase": "(none)",

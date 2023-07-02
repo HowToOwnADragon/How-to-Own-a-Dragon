@@ -5,9 +5,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
@@ -23,7 +23,7 @@ import net.mcreator.howtoownadragon.entity.GronckleEntity;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class GronckleStoneTameProcedure {
+public class GrockleCodTameProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -51,10 +51,10 @@ public class GronckleStoneTameProcedure {
 						return false;
 					}
 				}.checkGamemode(sourceentity)) {
-					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
 						if (Math.random() < 0.7) {
 							if (sourceentity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+								ItemStack _stktoremove = new ItemStack(Items.COD);
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
 							if (world instanceof ServerLevel _level)
@@ -62,7 +62,7 @@ public class GronckleStoneTameProcedure {
 						}
 						if (Math.random() >= 0.7) {
 							if (sourceentity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+								ItemStack _stktoremove = new ItemStack(Items.COD);
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
 							if (world instanceof ServerLevel _level)
