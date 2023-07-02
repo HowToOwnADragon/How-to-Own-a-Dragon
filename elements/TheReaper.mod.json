@@ -4,10 +4,10 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:FireRealm"
+        "value": "plains"
       }
     ],
-    "worldGenType": "End like gen",
+    "worldGenType": "Normal world gen",
     "mainFillerBlock": {
       "value": "Blocks.AIR"
     },

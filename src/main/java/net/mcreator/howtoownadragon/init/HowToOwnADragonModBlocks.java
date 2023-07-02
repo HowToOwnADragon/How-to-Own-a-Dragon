@@ -10,7 +10,10 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.howtoownadragon.block.SlowingBlockBlock;
 import net.mcreator.howtoownadragon.block.ReaperPortalBlock;
+import net.mcreator.howtoownadragon.block.ReaperBearTrapBlock;
+import net.mcreator.howtoownadragon.block.ReaperArrowTrapBlock;
 import net.mcreator.howtoownadragon.block.PortalBlockBlock;
 import net.mcreator.howtoownadragon.block.DeepIronWallBlock;
 import net.mcreator.howtoownadragon.block.DeepIronStairsBlock;
@@ -32,4 +35,7 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> DEEP_IRON_DOOR = REGISTRY.register("deep_iron_door", () -> new DeepIronDoorBlock());
 	public static final RegistryObject<Block> DEEP_IRON_WALL = REGISTRY.register("deep_iron_wall", () -> new DeepIronWallBlock());
 	public static final RegistryObject<Block> REAPER_PORTAL = REGISTRY.register("reaper_portal", () -> new ReaperPortalBlock());
+	public static final RegistryObject<Block> REAPER_BEAR_TRAP = REGISTRY.register("reaper_bear_trap", () -> new ReaperBearTrapBlock());
+	public static final RegistryObject<Block> REAPER_ARROW_TRAP = REGISTRY.register("reaper_arrow_trap", () -> new ReaperArrowTrapBlock());
+	public static final RegistryObject<Block> SLOWING_BLOCK = REGISTRY.register("slowing_block", () -> new SlowingBlockBlock());
 }

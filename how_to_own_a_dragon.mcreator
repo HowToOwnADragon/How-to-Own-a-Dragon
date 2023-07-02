@@ -889,11 +889,11 @@
       "registry_name": "gronckle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json"
         ]
       },
       "path": "~/Dragons/Gronckle"
@@ -969,20 +969,8 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
@@ -1368,22 +1356,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1402,6 +1374,131 @@
           "src/main/java/net/mcreator/howtoownadragon/block/ReaperPortalBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_portal.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_portal.json"
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "ReaperBearTrap",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_bear_trap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/ReaperBearTrapBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_bear_trap.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_bear_trap.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_bear_trap.json"
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "ReaperBearTrapEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_bear_trap_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperBearTrapEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "ReaperArrowTrapEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_arrow_trap_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperArrowTrapEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "ReaperArrowTrap",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_arrow_trap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_arrow_trap.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/ReaperArrowTrapBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_arrow_trap.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_arrow_trap.json"
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "HitByArrow",
+      "type": "potioneffect",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hit_by_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/potion/HitByArrowMobEffect.java"
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "SlowingBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slowing_block_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SlowingBlockEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "SlowingBlock",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slowing_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/SlowingBlockBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/slowing_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/slowing_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/slowing_block.json"
         ]
       },
       "path": "~/ReaperShip"
@@ -1437,12 +1534,14 @@
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
+      "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.gronckle_gui.label_gronckle": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.ocean": "Ocean",
       "biome.how_to_own_a_dragon.plains": "Plains",
+      "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
@@ -1450,6 +1549,8 @@
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+      "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
+      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
       "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",

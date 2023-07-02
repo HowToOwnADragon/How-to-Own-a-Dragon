@@ -44,6 +44,8 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_DOOR.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.DEEP_IRON_INGOT.get());
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_WALL.get().asItem());
+					tabData.accept(HowToOwnADragonModBlocks.REAPER_BEAR_TRAP.get().asItem());
+					tabData.accept(HowToOwnADragonModBlocks.SLOWING_BLOCK.get().asItem());
 				})
 
 		);

@@ -11,11 +11,11 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.procedures.ReaperPortalEntityWalksOnTheBlockProcedure;
+import net.mcreator.howtoownadragon.procedures.SlowingBlockEntityWalksOnTheBlockProcedure;
 
-public class ReaperPortalBlock extends Block {
-	public ReaperPortalBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(-1, 3600000).noLootTable());
+public class SlowingBlockBlock extends Block {
+	public SlowingBlockBlock() {
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).noLootTable());
 	}
 
 	@Override
@@ -26,6 +26,6 @@ public class ReaperPortalBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		ReaperPortalEntityWalksOnTheBlockProcedure.execute(entity);
+		SlowingBlockEntityWalksOnTheBlockProcedure.execute(entity);
 	}
 }
