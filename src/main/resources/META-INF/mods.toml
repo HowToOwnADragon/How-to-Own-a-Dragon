@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[45,)"
-license="MIT License"
+license="All Rights Reserved"
 
 [[mods]]
 modId="how_to_own_a_dragon"
@@ -8,6 +8,7 @@ version="0.0.1"
 displayName="How to Own a Dragon"
 credits="Made with MCreator, Blockbench and a lot of people"
 displayURL="https://mcreator.net"
+logoFile="logo.png"
 authors="MeAlam, Justindraak1"
 description="Welcome to the Dragon world, we are trying to make this mod as canon as possible to the original HTTYD Movies and series"
 

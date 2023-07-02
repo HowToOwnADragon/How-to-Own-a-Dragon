@@ -889,11 +889,11 @@
       "registry_name": "gronckle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json"
         ]
       },
       "path": "~/Dragons/Gronckle"
@@ -969,20 +969,8 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
@@ -1324,78 +1312,18 @@
       "path": "~/Dragons/Gronckle"
     },
     {
-      "name": "Test",
-      "type": "procedure",
+      "name": "Dragon",
+      "type": "tag",
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test",
+      "registry_name": "dragon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TestProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon.json"
         ]
       },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
-      "name": "OpenGronckleGUI",
-      "type": "keybind",
-      "sortid": 76,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_gronckle_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/network/OpenGronckleGUIMessage.java"
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
-      "name": "GronckleGUIOpening",
-      "type": "procedure",
-      "sortid": 77,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_gui_opening",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleGUIOpeningProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
+      "path": "~/Dragons"
     }
   ],
   "variable_elements": [
@@ -1429,7 +1357,6 @@
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
-      "key.how_to_own_a_dragon.open_gronckle_gui": "Open Dragon Inventory",
       "gui.how_to_own_a_dragon.gronckle_gui.label_gronckle": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.ocean": "Ocean",
