@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 4,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,9 +12,6 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:DeepIronIngot"
       },
       {
@@ -27,7 +24,7 @@
         "value": "CUSTOM:DeepIronIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DeepIronIngot"
       },
       {
         "value": ""
@@ -36,13 +33,16 @@
         "value": "CUSTOM:DeepIronIngot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DeepIronIngot"
+      },
+      {
+        "value": "CUSTOM:DeepIronIngot"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DeepIronRod"
+      "value": "CUSTOM:DeepIronStairs"
     },
-    "name": "deep_iron_rod_recipe",
+    "name": "deep_iron_stairs_recipe_left",
     "namespace": "mod"
   }
 }

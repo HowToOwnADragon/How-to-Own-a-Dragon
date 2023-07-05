@@ -9,40 +9,40 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "BUILDING",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:DeepIronIngot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:DeepIronIngot"
       },
       {
-        "value": "Blocks.COBBLED_DEEPSLATE"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:DeepIronIngot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DeepIronIngot"
+      "value": "CUSTOM:DeepIronRod"
     },
-    "name": "deep_iron_ingot_recipe",
+    "name": "deep_iron_rod_recipe_left",
     "namespace": "mod"
   }
 }

@@ -379,20 +379,6 @@
       "path": "~/Tools_Weapons/Gronckle iron Tools"
     },
     {
-      "name": "GronckleIronSwordRecipe",
-      "type": "recipe",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_sword_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword.json"
-        ]
-      },
-      "path": "~/Recipe/Gronckle Iron"
-    },
-    {
       "name": "GronckleIronPickaxeRecipe",
       "type": "recipe",
       "sortid": 28,
@@ -402,34 +388,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_pickaxe.json"
-        ]
-      },
-      "path": "~/Recipe/Gronckle Iron"
-    },
-    {
-      "name": "GronckleIronAxeRecipe",
-      "type": "recipe",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_axe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_axe.json"
-        ]
-      },
-      "path": "~/Recipe/Gronckle Iron"
-    },
-    {
-      "name": "GronckleIronShovelRecipe",
-      "type": "recipe",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_shovel_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel.json"
         ]
       },
       "path": "~/Recipe/Gronckle Iron"
@@ -574,7 +532,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_ingot_recipe.json"
         ]
       },
-      "path": "~/Items/Deep Iron/Recipes"
+      "path": "~/Recipe/Deep Iron"
     },
     {
       "name": "DeepIronBlockRecipe",
@@ -588,63 +546,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_block_recipe.json"
         ]
       },
-      "path": "~/Items/Deep Iron/Recipes"
-    },
-    {
-      "name": "DeepIronSlabRecipe",
-      "type": "recipe",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deep_iron_slab_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe.json"
-        ]
-      },
-      "path": "~/Items/Deep Iron/Recipes"
-    },
-    {
-      "name": "DeepIronDoorRecipe",
-      "type": "recipe",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deep_iron_door_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_door_recipe.json"
-        ]
-      },
-      "path": "~/Items/Deep Iron/Recipes"
-    },
-    {
-      "name": "DeepIronStairsRecipe",
-      "type": "recipe",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deep_iron_stairs_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_stairs_recipe.json"
-        ]
-      },
-      "path": "~/Items/Deep Iron/Recipes"
-    },
-    {
-      "name": "DeepIronRodRecipe",
-      "type": "recipe",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deep_iron_rod_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe.json"
-        ]
-      },
-      "path": "~/Items/Deep Iron/Recipes"
+      "path": "~/Recipe/Deep Iron"
     },
     {
       "name": "HiddenWorldRoot",
@@ -851,20 +753,6 @@
         ]
       },
       "path": "~/Items/Deep Iron"
-    },
-    {
-      "name": "DeepIronWallRecipe",
-      "type": "recipe",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deep_iron_wall_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_wall_recipe.json"
-        ]
-      },
-      "path": "~/Items/Deep Iron/Recipes"
     },
     {
       "name": "Walls",
@@ -1637,6 +1525,286 @@
         ]
       },
       "path": "~/Dragons"
+    },
+    {
+      "name": "DeepIronRodRecipeMiddle",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_rod_recipe_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe_middle.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronRodRecipeLeft",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_rod_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronRodRecipeRight",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_rod_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronWallRecipeTop",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_wall_recipe_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_wall_recipe_top.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronWallRecipeBottem",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_wall_recipe_bottem",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_wall_recipe_bottem.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronDoorRecipeRight",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_door_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_door_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronDoorRecipeLeft",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_door_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_door_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronSlabRecipeBottem",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_slab_recipe_bottem",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe_bottem.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronSlabRecipeMiddle",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_slab_recipe_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe_middle.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronSlabRecipeTop",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_slab_recipe_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe_top.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepIronStairsRecipeLeft",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_iron_stairs_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_stairs_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "DeepironStairsRecipeRight",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepiron_stairs_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/deepiron_stairs_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Deep Iron"
+    },
+    {
+      "name": "GronckleIronSwordRecipeMiddle",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_sword_recipe_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_middle.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronSwordRecipeLeft",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_sword_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronSwordRecipeRight",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_sword_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronAxeRecipeRight",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_axe_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_axe_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronAxeRecipeLeft",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_axe_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_axe_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronShovelRecipeMiddle",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_shovel_recipe_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_middle.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronShovelRecipeLeft",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_shovel_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronShovelRecipeRight",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_shovel_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
     }
   ],
   "variable_elements": [
@@ -1711,12 +1879,7 @@
           },
           {
             "name": "Deep Iron",
-            "children": [
-              {
-                "name": "Recipes",
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "name": "Eel",
@@ -1821,6 +1984,10 @@
         "children": [
           {
             "name": "Gronckle Iron",
+            "children": []
+          },
+          {
+            "name": "Deep Iron",
             "children": []
           }
         ]

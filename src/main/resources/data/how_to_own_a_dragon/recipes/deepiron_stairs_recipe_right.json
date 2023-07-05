@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "4": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "5": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "6": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "7": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "8": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "how_to_own_a_dragon:deep_iron_stairs",
+    "count": 4
+  }
+}

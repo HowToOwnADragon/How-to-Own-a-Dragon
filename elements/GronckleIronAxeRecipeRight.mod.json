@@ -3,46 +3,46 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 6,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "MISC",
+    "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:DeepIronIngot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:DeepIronIngot"
+        "value": "CUSTOM:GronckleIron"
       },
       {
-        "value": "CUSTOM:DeepIronIngot"
-      },
-      {
-        "value": "CUSTOM:DeepIronIngot"
-      },
-      {
-        "value": "CUSTOM:DeepIronIngot"
-      },
-      {
-        "value": "CUSTOM:DeepIronIngot"
+        "value": "CUSTOM:GronckleIron"
       },
       {
         "value": ""
       },
       {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:GronckleIron"
+      },
+      {
         "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DeepIronWall"
+      "value": "CUSTOM:GronckleIronAxe"
     },
-    "name": "deep_iron_wall_recipe",
+    "name": "gronckle_iron_axe_recipe_right",
     "namespace": "mod"
   }
 }
