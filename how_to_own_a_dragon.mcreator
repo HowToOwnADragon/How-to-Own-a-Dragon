@@ -1805,6 +1805,20 @@
         ]
       },
       "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "PickingUpDragonEye",
+      "type": "achievement",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "picking_up_dragon_eye",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/picking_up_dragon_eye.json"
+        ]
+      },
+      "path": "~/Achievements"
     }
   ],
   "variable_elements": [
@@ -1819,44 +1833,26 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
-      "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
-      "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "advancements.hidden_world_root.title": "Hidden World",
       "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
-      "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
-      "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
-      "advancements.enter_hidden_world.descr": "Enter the Hidden World",
+      "advancements.picking_up_dragon_eye.descr": "This changes everything!",
       "advancements.hidden_world_root.descr": "What is this place?",
-      "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
-      "entity.how_to_own_a_dragon.gronckle": "Gronckle",
-      "item.how_to_own_a_dragon.dragon_eye": "Dragon Eye",
       "key.categories.htoad": "How to Own a Dragon",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
-      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
-      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
-      "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
-      "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
-      "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
-      "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
-      "gui.how_to_own_a_dragon.gronckle_gui.label_gronckle": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.ocean": "Ocean",
-      "biome.how_to_own_a_dragon.plains": "Plains",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
-      "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
-      "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
-      "item_group.how_to_own_a_dragon.tools": "Tools",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
-      "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
+      "advancements.picking_up_dragon_eye.title": "Information?!",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
@@ -1864,7 +1860,27 @@
       "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
-      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet"
+      "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
+      "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
+      "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
+      "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
+      "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
+      "advancements.enter_hidden_world.descr": "Enter the Hidden World",
+      "item.how_to_own_a_dragon.dragon_eye": "Dragon Eye",
+      "entity.how_to_own_a_dragon.gronckle": "Gronckle",
+      "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
+      "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
+      "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
+      "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
+      "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
+      "gui.how_to_own_a_dragon.gronckle_gui.label_gronckle": "Gronckle",
+      "biome.how_to_own_a_dragon.plains": "Plains",
+      "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
+      "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
+      "item_group.how_to_own_a_dragon.tools": "Tools",
+      "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow"
     }
   },
   "foldersRoot": {

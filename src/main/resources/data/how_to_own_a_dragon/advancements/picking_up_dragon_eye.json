@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "picking_up_dragon_eye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "how_to_own_a_dragon:dragon_eye"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}
