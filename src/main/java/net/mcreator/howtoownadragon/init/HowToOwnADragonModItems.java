@@ -23,6 +23,7 @@ import net.mcreator.howtoownadragon.item.GronckleIronPickaxeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronItem;
 import net.mcreator.howtoownadragon.item.GronckleIronAxeItem;
 import net.mcreator.howtoownadragon.item.DragonSymbolItem;
+import net.mcreator.howtoownadragon.item.DragonEyeItem;
 import net.mcreator.howtoownadragon.item.DeepIronIngotItem;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -55,6 +56,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> REAPER_BEAR_TRAP = block(HowToOwnADragonModBlocks.REAPER_BEAR_TRAP);
 	public static final RegistryObject<Item> REAPER_ARROW_TRAP = block(HowToOwnADragonModBlocks.REAPER_ARROW_TRAP);
 	public static final RegistryObject<Item> SLOWING_BLOCK = block(HowToOwnADragonModBlocks.SLOWING_BLOCK);
+	public static final RegistryObject<Item> DRAGON_EYE = REGISTRY.register("dragon_eye", () -> new DragonEyeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

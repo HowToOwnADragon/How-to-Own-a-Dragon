@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Items"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {

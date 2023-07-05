@@ -1396,26 +1396,6 @@
       "path": "~/ReaperShip"
     },
     {
-      "name": "ReaperBearTrapEntityWalksOnTheBlock",
-      "type": "procedure",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reaper_bear_trap_entity_walks_on_the_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperBearTrapEntityWalksOnTheBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure"
-    },
-    {
       "name": "ReaperArrowTrapEntityWalksOnTheBlock",
       "type": "procedure",
       "sortid": 81,
@@ -1502,6 +1482,41 @@
         ]
       },
       "path": "~/ReaperShip"
+    },
+    {
+      "name": "ReaperBearTrapEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_bear_trap_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperBearTrapEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "DragonEye",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/DragonEyeItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_eye.json"
+        ]
+      },
+      "path": "~/Items/DragonEye"
     }
   ],
   "variable_elements": [
@@ -1528,6 +1543,7 @@
       "advancements.hidden_world_root.descr": "What is this place?",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "entity.how_to_own_a_dragon.gronckle": "Gronckle",
+      "item.how_to_own_a_dragon.dragon_eye": "Dragon Eye",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
@@ -1581,6 +1597,10 @@
           },
           {
             "name": "Eel",
+            "children": []
+          },
+          {
+            "name": "DragonEye",
             "children": []
           }
         ]
