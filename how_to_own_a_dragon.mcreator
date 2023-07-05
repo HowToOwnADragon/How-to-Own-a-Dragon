@@ -889,11 +889,11 @@
       "registry_name": "gronckle",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle"
@@ -969,8 +969,20 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1393,7 +1405,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_bear_trap.json"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "ReaperArrowTrapEntityWalksOnTheBlock",
@@ -1413,7 +1425,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "ReaperArrowTrap",
@@ -1430,7 +1442,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_arrow_trap.json"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "HitByArrow",
@@ -1444,7 +1456,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/HitByArrowMobEffect.java"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "SlowingBlockEntityWalksOnTheBlock",
@@ -1464,7 +1476,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "SlowingBlock",
@@ -1481,7 +1493,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/slowing_block.json"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "ReaperBearTrapEntityWalksOnTheBlock",
@@ -1501,7 +1513,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/ReaperShip/Traps"
     },
     {
       "name": "DragonEye",
@@ -1517,6 +1529,114 @@
         ]
       },
       "path": "~/Items/DragonEye"
+    },
+    {
+      "name": "FlyUp",
+      "type": "keybind",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/FlyUpMessage.java"
+        ]
+      },
+      "path": "~/Procedure/Flying"
+    },
+    {
+      "name": "FlyDown",
+      "type": "keybind",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/FlyDownMessage.java"
+        ]
+      },
+      "path": "~/Procedure/Flying"
+    },
+    {
+      "name": "FlyUpOnKeyPressed",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_up_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyUpOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Flying"
+    },
+    {
+      "name": "FlyUpOnKeyReleased",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_up_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyUpOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Flying"
+    },
+    {
+      "name": "FlyDownOnKeyPressed",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_down_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyDownOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Flying"
+    },
+    {
+      "name": "FlyingTickUpdate",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyingTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons"
     }
   ],
   "variable_elements": [
@@ -1544,6 +1664,7 @@
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "entity.how_to_own_a_dragon.gronckle": "Gronckle",
       "item.how_to_own_a_dragon.dragon_eye": "Dragon Eye",
+      "key.categories.htoad": "How to Own a Dragon",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
@@ -1557,10 +1678,12 @@
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.ocean": "Ocean",
       "biome.how_to_own_a_dragon.plains": "Plains",
+      "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
+      "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
@@ -1704,11 +1827,21 @@
       },
       {
         "name": "Procedure",
-        "children": []
+        "children": [
+          {
+            "name": "Flying",
+            "children": []
+          }
+        ]
       },
       {
         "name": "ReaperShip",
-        "children": []
+        "children": [
+          {
+            "name": "Traps",
+            "children": []
+          }
+        ]
       }
     ]
   },
