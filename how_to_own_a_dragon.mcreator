@@ -1819,6 +1819,121 @@
         ]
       },
       "path": "~/Achievements"
+    },
+    {
+      "name": "DragonProofMetal",
+      "type": "item",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_proof_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_proof_metal.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/DragonProofMetalItem.java"
+        ]
+      },
+      "path": "~/Items/DragonProof"
+    },
+    {
+      "name": "DragonProofMetalBars",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_proof_metal_bars",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/DragonProofMetalBarsBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_proof_metal_bars.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside_alt.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dragon_proof_metal_bars.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_post.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side_alt.json"
+        ]
+      },
+      "path": "~/Items/DragonProof"
+    },
+    {
+      "name": "DragonProofMetalRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_proof_metal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/dragon_proof_metal_recipe.json"
+        ]
+      },
+      "path": "~/Recipe/DragonProof"
+    },
+    {
+      "name": "DragonProofBarsRecipeTop",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_proof_bars_recipe_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/dragon_proof_bars_recipe_top.json"
+        ]
+      },
+      "path": "~/Recipe/DragonProof"
+    },
+    {
+      "name": "DragonProofBarsRecipeBottem",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_proof_bars_recipe_bottem",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/dragon_proof_bars_recipe_bottem.json"
+        ]
+      },
+      "path": "~/Recipe/DragonProof"
+    },
+    {
+      "name": "ReaperSpikeTrap",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_spike_trap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/ReaperSpikeTrapBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_spike_trap.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_spike_trap.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spike_trap.json"
+        ]
+      },
+      "path": "~/ReaperShip/Traps"
+    },
+    {
+      "name": "ReaperSpikeTrapProcedure",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_spike_trap_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperSpikeTrapProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ReaperShip/Traps"
     }
   ],
   "variable_elements": [
@@ -1833,8 +1948,8 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
-      "advancements.hidden_world_root.title": "Hidden World",
       "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
+      "advancements.hidden_world_root.title": "Hidden World",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This changes everything!",
@@ -1845,6 +1960,7 @@
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.ocean": "Ocean",
+      "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
@@ -1859,6 +1975,7 @@
       "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",
       "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
+      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Arrow Trap",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -1880,7 +1997,8 @@
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "item_group.how_to_own_a_dragon.tools": "Tools",
-      "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow"
+      "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
+      "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars"
     }
   },
   "foldersRoot": {
@@ -1903,6 +2021,10 @@
           },
           {
             "name": "DragonEye",
+            "children": []
+          },
+          {
+            "name": "DragonProof",
             "children": []
           }
         ]
@@ -2004,6 +2126,10 @@
           },
           {
             "name": "Deep Iron",
+            "children": []
+          },
+          {
+            "name": "DragonProof",
             "children": []
           }
         ]

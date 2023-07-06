@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "1": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "2": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "3": {
+      "item": "how_to_own_a_dragon:deep_iron_ingot"
+    },
+    "4": {
+      "item": "minecraft:diamond"
+    },
+    "5": {
+      "item": "how_to_own_a_dragon:gronckle_iron"
+    },
+    "6": {
+      "item": "how_to_own_a_dragon:gronckle_iron"
+    },
+    "7": {
+      "item": "how_to_own_a_dragon:gronckle_iron"
+    },
+    "8": {
+      "item": "how_to_own_a_dragon:gronckle_iron"
+    }
+  },
+  "result": {
+    "item": "how_to_own_a_dragon:dragon_proof_metal",
+    "count": 1
+  }
+}

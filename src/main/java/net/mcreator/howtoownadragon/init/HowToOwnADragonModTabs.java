@@ -46,6 +46,8 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_WALL.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.SLOWING_BLOCK.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.DRAGON_EYE.get());
+					tabData.accept(HowToOwnADragonModItems.DRAGON_PROOF_METAL.get());
+					tabData.accept(HowToOwnADragonModBlocks.DRAGON_PROOF_METAL_BARS.get().asItem());
 				})
 
 		);

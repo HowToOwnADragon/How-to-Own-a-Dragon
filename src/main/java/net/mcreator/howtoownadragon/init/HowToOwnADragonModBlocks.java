@@ -11,10 +11,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.howtoownadragon.block.SlowingBlockBlock;
+import net.mcreator.howtoownadragon.block.ReaperSpikeTrapBlock;
 import net.mcreator.howtoownadragon.block.ReaperPortalBlock;
 import net.mcreator.howtoownadragon.block.ReaperBearTrapBlock;
 import net.mcreator.howtoownadragon.block.ReaperArrowTrapBlock;
 import net.mcreator.howtoownadragon.block.PortalBlockBlock;
+import net.mcreator.howtoownadragon.block.DragonProofMetalBarsBlock;
 import net.mcreator.howtoownadragon.block.DeepIronWallBlock;
 import net.mcreator.howtoownadragon.block.DeepIronStairsBlock;
 import net.mcreator.howtoownadragon.block.DeepIronSlabBlock;
@@ -38,4 +40,6 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> REAPER_BEAR_TRAP = REGISTRY.register("reaper_bear_trap", () -> new ReaperBearTrapBlock());
 	public static final RegistryObject<Block> REAPER_ARROW_TRAP = REGISTRY.register("reaper_arrow_trap", () -> new ReaperArrowTrapBlock());
 	public static final RegistryObject<Block> SLOWING_BLOCK = REGISTRY.register("slowing_block", () -> new SlowingBlockBlock());
+	public static final RegistryObject<Block> DRAGON_PROOF_METAL_BARS = REGISTRY.register("dragon_proof_metal_bars", () -> new DragonProofMetalBarsBlock());
+	public static final RegistryObject<Block> REAPER_SPIKE_TRAP = REGISTRY.register("reaper_spike_trap", () -> new ReaperSpikeTrapBlock());
 }

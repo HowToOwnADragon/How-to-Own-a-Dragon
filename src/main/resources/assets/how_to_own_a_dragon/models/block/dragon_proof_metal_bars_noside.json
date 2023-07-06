@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "pane": "how_to_own_a_dragon:block/dragonproofbars"
+  },
+  "render_type": "cutout_mipped"
+}
