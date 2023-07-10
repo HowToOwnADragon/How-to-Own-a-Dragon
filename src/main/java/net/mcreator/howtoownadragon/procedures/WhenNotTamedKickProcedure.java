@@ -10,8 +10,11 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -36,7 +39,7 @@ public class WhenNotTamedKickProcedure {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(10, () -> {
-			if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && entity.isVehicle()) {
+			if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && entity.isVehicle() && entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:dragon")))) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"tp @p ~ ~ ~");

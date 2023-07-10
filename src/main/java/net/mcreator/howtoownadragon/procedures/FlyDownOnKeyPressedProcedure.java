@@ -9,7 +9,7 @@ public class FlyDownOnKeyPressedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:dragon"))) == true) {
+		if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:dragon"))) == true) {
 			(entity.getVehicle()).getPersistentData().putDouble("VerticalMovement", (-1));
 		}
 	}
