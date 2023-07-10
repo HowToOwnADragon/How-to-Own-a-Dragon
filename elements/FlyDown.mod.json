@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "LCONTROL",
+    "triggerKey": "Z",
     "keyBindingName": "Fly Down",
     "keyBindingCategoryKey": "htoad",
     "onKeyPressed": {
