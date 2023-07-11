@@ -1,7 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside_alt",
   "textures": {
-    "pane": "how_to_own_a_dragon:block/dragonproofmetalbars2"
+    "pane": "how_to_own_a_dragon:block/rustydragonproofmetalbars"
   },
   "render_type": "cutout_mipped"
 }

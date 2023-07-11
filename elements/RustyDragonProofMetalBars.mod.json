@@ -2,25 +2,26 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "spruce_planks",
+    "texture": "rustydragonproofmetalbars",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Pane",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Reaper Spike Trap",
+    "name": "Rusty Dragon Proof Metal Bars",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -52,9 +53,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +80,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -97,7 +98,7 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
@@ -117,9 +118,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityWalksOn": {
-      "name": "ReaperSpikeTrapProcedure"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

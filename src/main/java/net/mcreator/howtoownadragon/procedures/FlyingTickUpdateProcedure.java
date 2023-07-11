@@ -8,9 +8,9 @@ public class FlyingTickUpdateProcedure {
 		if (entity == null)
 			return;
 		if (entity.getPersistentData().getDouble("VerticalMovement") == 1) {
-			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.3, (entity.getDeltaMovement().z())));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.2, (entity.getDeltaMovement().z())));
 		} else if (entity.getPersistentData().getDouble("VerticalMovement") == -1) {
-			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.3), (entity.getDeltaMovement().z())));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.2), (entity.getDeltaMovement().z())));
 		}
 	}
 }

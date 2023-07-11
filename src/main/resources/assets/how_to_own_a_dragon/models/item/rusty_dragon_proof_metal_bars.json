@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "how_to_own_a_dragon:block/dragonproofmetalbars2"
+    "layer0": "how_to_own_a_dragon:block/rustydragonproofmetalbars"
   },
   "render_type": "cutout_mipped"
 }

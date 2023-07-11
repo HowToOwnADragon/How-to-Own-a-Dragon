@@ -27,7 +27,7 @@
   "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",
   "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
   "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
-  "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Arrow Trap",
+  "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
   "block.how_to_own_a_dragon.portal_block": "Portal Block",
   "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
   "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -50,5 +50,6 @@
   "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
   "item_group.how_to_own_a_dragon.tools": "Tools",
   "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
-  "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars"
+  "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
+  "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars"
 }

@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.howtoownadragon.block.SlowingBlockBlock;
+import net.mcreator.howtoownadragon.block.RustyDragonProofMetalBarsBlock;
 import net.mcreator.howtoownadragon.block.ReaperSpikeTrapBlock;
 import net.mcreator.howtoownadragon.block.ReaperPortalBlock;
 import net.mcreator.howtoownadragon.block.ReaperBearTrapBlock;
@@ -42,4 +43,5 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> SLOWING_BLOCK = REGISTRY.register("slowing_block", () -> new SlowingBlockBlock());
 	public static final RegistryObject<Block> DRAGON_PROOF_METAL_BARS = REGISTRY.register("dragon_proof_metal_bars", () -> new DragonProofMetalBarsBlock());
 	public static final RegistryObject<Block> REAPER_SPIKE_TRAP = REGISTRY.register("reaper_spike_trap", () -> new ReaperSpikeTrapBlock());
+	public static final RegistryObject<Block> RUSTY_DRAGON_PROOF_METAL_BARS = REGISTRY.register("rusty_dragon_proof_metal_bars", () -> new RustyDragonProofMetalBarsBlock());
 }

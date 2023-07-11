@@ -61,6 +61,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> DRAGON_PROOF_METAL = REGISTRY.register("dragon_proof_metal", () -> new DragonProofMetalItem());
 	public static final RegistryObject<Item> DRAGON_PROOF_METAL_BARS = block(HowToOwnADragonModBlocks.DRAGON_PROOF_METAL_BARS);
 	public static final RegistryObject<Item> REAPER_SPIKE_TRAP = block(HowToOwnADragonModBlocks.REAPER_SPIKE_TRAP);
+	public static final RegistryObject<Item> RUSTY_DRAGON_PROOF_METAL_BARS = block(HowToOwnADragonModBlocks.RUSTY_DRAGON_PROOF_METAL_BARS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
