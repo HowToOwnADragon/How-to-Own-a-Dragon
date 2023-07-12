@@ -52,7 +52,7 @@ public class GronckleStoneTameProcedure {
 					}
 				}.checkGamemode(sourceentity)) {
 					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
-						if (Math.random() < 0.7) {
+						if (Math.random() < 2) {
 							if (sourceentity instanceof Player _player) {
 								ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -60,7 +60,7 @@ public class GronckleStoneTameProcedure {
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 5, 3, 3, 3, 1);
 						}
-						if (Math.random() >= 0.7) {
+						if (Math.random() >= 2) {
 							if (sourceentity instanceof Player _player) {
 								ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
