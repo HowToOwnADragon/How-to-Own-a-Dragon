@@ -37,6 +37,7 @@ import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -77,8 +78,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.GronckleGUIMenu;
+import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingTickUpdateProcedure;
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -142,7 +143,8 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(4, new FloatGoal(this));
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = GronckleEntity.this.getRandom();
@@ -152,16 +154,12 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
+		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 0.8));
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(HowToOwnADragonModItems.GRONCKLE_SCALE.get()));
 	}
 
 	@Override
@@ -177,6 +175,12 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
 		return false;
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		GronckleDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(9) {
@@ -376,8 +380,11 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && !this.isVehicle()) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround() && !this.isVehicle()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.walk"));
+			}
+			if (this.isDeadOrDying()) {
+				return event.setAndContinue(RawAnimation.begin().thenPlay("animation.gronckle.death"));
 			}
 			if (this.isShiftKeyDown()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sneak"));
@@ -385,8 +392,11 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 			if (this.isSprinting()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sprint"));
 			}
+			if (!this.isOnGround()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.flight"));
+			}
 			if (this.isVehicle() && event.isMoving()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sprint"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.idle"));
 		}
