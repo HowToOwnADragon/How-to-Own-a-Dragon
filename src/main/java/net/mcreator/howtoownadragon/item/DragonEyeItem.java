@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DragonEyeItem extends Item {
 	public DragonEyeItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
