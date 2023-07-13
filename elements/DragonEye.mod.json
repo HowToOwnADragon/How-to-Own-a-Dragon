@@ -5,8 +5,8 @@
     "renderType": 0,
     "texture": "dragon_eye_v2",
     "customModelName": "Tool",
-    "name": "Dragon Eye",
-    "rarity": "COMMON",
+    "name": "§oDragon Eye",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Items"
     },
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "What could this be used for?"
+      "§8§o§kddd§r§8§oWhat could this be used for?§r§8§o§kddd"
     ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",

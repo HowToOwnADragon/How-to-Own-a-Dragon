@@ -21,6 +21,12 @@
     "sleepResult": "ALLOW",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "TheReaperPlayerEntersDimension"
+    },
+    "onPlayerLeavesDimension": {
+      "name": "TheReaperPlayerLeavesDimension"
+    },
     "portalFrame": {
       "value": ""
     },

@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DragonEyeItem extends Item {
 	public DragonEyeItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override
@@ -27,6 +27,6 @@ public class DragonEyeItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("What could this be used for?"));
+		list.add(Component.literal("\u00A78\u00A7o\u00A7kddd\u00A7r\u00A78\u00A7oWhat could this be used for?\u00A7r\u00A78\u00A7o\u00A7kddd"));
 	}
 }
