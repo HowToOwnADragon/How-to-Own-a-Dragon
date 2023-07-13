@@ -2050,6 +2050,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2074,6 +2090,23 @@
         ]
       },
       "path": "~/ReaperShip"
+    },
+    {
+      "name": "ReaperInsidePrototype2",
+      "type": "structure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_inside_prototype_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/features/ReaperInsidePrototype2Feature.java",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/reaper_inside_prototype_2.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/reaper_inside_prototype_2_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/reaper_inside_prototype_2.json"
+        ]
+      },
+      "path": "~/ReaperShip"
     }
   ],
   "variable_elements": [
@@ -2088,8 +2121,8 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
-      "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
       "advancements.hidden_world_root.title": "Hidden World",
+      "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This changes everything!",

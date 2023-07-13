@@ -54,7 +54,7 @@ public class TheReaperDimension {
 		}
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("how_to_own_a_dragon:the_reaper"))) {
 
-			TheReaperPlayerEntersDimensionProcedure.execute(entity);
+			TheReaperPlayerEntersDimensionProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }
