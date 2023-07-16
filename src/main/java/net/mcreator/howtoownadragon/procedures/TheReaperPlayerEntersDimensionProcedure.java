@@ -30,7 +30,7 @@ public class TheReaperPlayerEntersDimensionProcedure {
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"tp @p ~10.5 300 ~2.5");
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("how_to_own_a_dragon", "reaper_inside_prototype_3"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("how_to_own_a_dragon", "reaper_inside_prototype_4"));
 			if (template != null) {
 				template.placeInWorld(_serverworld, BlockPos.containing(x, 200, z), BlockPos.containing(x, 200, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}

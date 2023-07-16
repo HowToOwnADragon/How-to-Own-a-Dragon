@@ -2,8 +2,8 @@
   "_fv": 43,
   "_type": "structure",
   "definition": {
-    "structure": "reaper_inside_prototype_3",
-    "randomlyRotateStructure": true,
+    "structure": "reaper_inside_prototype_4",
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 1,
     "minCountPerChunk": 1,
