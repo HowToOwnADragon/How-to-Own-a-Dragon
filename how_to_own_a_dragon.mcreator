@@ -2109,21 +2109,76 @@
       "path": "~/ReaperShip"
     },
     {
-      "name": "ReaperOutsidePrototype",
-      "type": "structure",
+      "name": "WhereDoesReaperSpawn",
+      "type": "procedure",
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "reaper_outside_prototype",
+      "registry_name": "where_does_reaper_spawn",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/reaper_outside_prototype_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/world/features/ReaperOutsidePrototypeFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/reaper_outside_prototype.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/reaper_outside_prototype.json"
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WhereDoesReaperSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/ReaperShip"
+    },
+    {
+      "name": "ReaperSpawning",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_spawning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperSpawningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReaperShip"
+    },
+    {
+      "name": "GrantWelcome",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grant_welcome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrantWelcomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements"
     }
   ],
   "variable_elements": [
@@ -2132,6 +2187,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "SpawnReaper1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [],

@@ -54,6 +54,7 @@ public class HowToOwnADragonModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "how_to_own_a_dragon_worldvars";
 		public boolean HasplayerenteredHWbefore = false;
+		public double SpawnReaper1 = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -63,11 +64,13 @@ public class HowToOwnADragonModVariables {
 
 		public void read(CompoundTag nbt) {
 			HasplayerenteredHWbefore = nbt.getBoolean("HasplayerenteredHWbefore");
+			SpawnReaper1 = nbt.getDouble("SpawnReaper1");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("HasplayerenteredHWbefore", HasplayerenteredHWbefore);
+			nbt.putDouble("SpawnReaper1", SpawnReaper1);
 			return nbt;
 		}
 

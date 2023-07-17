@@ -16,10 +16,7 @@
   },
   "criteria": {
     "welcome_to_the_world": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "minecraft:overworld"
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "parent": "minecraft:story/root"

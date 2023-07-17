@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.Mod;
 
 import net.minecraft.world.level.levelgen.feature.Feature;
 
-import net.mcreator.howtoownadragon.world.features.ReaperOutsidePrototypeFeature;
 import net.mcreator.howtoownadragon.world.features.ReaperInsidePrototype2Feature;
 import net.mcreator.howtoownadragon.world.features.EntranceinhwFeature;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -21,5 +20,4 @@ public class HowToOwnADragonModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, HowToOwnADragonMod.MODID);
 	public static final RegistryObject<Feature<?>> ENTRANCEINHW = REGISTRY.register("entranceinhw", EntranceinhwFeature::new);
 	public static final RegistryObject<Feature<?>> REAPER_INSIDE_PROTOTYPE_2 = REGISTRY.register("reaper_inside_prototype_2", ReaperInsidePrototype2Feature::new);
-	public static final RegistryObject<Feature<?>> REAPER_OUTSIDE_PROTOTYPE = REGISTRY.register("reaper_outside_prototype", ReaperOutsidePrototypeFeature::new);
 }
