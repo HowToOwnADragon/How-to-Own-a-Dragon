@@ -769,24 +769,6 @@
       "path": "~/Items/Deep Iron"
     },
     {
-      "name": "Gronckle",
-      "type": "animatedentity",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_biome_modifier.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleRenderer.java"
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
       "name": "Ocean",
       "type": "biome",
       "sortid": 61,
@@ -1195,21 +1177,6 @@
         ]
       },
       "path": "~/Dragons/Gronckle/TamingGronckle"
-    },
-    {
-      "name": "GronckleGUI",
-      "type": "gui",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/GronckleGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/GronckleGUIScreen.java"
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
     },
     {
       "name": "Dragon",
@@ -2179,6 +2146,91 @@
         ]
       },
       "path": "~/Achievements"
+    },
+    {
+      "name": "Meatlug",
+      "type": "animatedentity",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/MeatlugModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/MeatlugRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlug_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/MeatlugEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "GronckleBlueYellow",
+      "type": "animatedentity",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_blue_yellow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_biome_modifier.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "GroncklePink",
+      "type": "animatedentity",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_pink",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_pink_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GroncklePinkRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GroncklePinkEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GroncklePinkModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_pink_spawn_egg.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "GronckleOrangeRed",
+      "type": "animatedentity",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_orange_red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleOrangeRedRenderer.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_biome_modifier.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleOrangeRedModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleOrangeRedEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "Gronckles",
+      "type": "tag",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckles.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
     }
   ],
   "variable_elements": [
@@ -2199,8 +2251,8 @@
   "language_map": {
     "en_us": {
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
-      "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
       "advancements.hidden_world_root.title": "Hidden World",
+      "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This changes everything!",
@@ -2209,16 +2261,20 @@
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
+      "entity.how_to_own_a_dragon.gronckle_pink": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "biome.how_to_own_a_dragon.ocean": "Ocean",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
+      "item.how_to_own_a_dragon.gronckle_orange_red_spawn_egg": "Gronckle Spawn Egg",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
+      "item.how_to_own_a_dragon.meatlug_spawn_egg": "Gronckle Spawn Egg",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
+      "entity.how_to_own_a_dragon.meatlug": "Gronckle",
       "advancements.picking_up_dragon_eye.title": "Information?!",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
@@ -2228,6 +2284,7 @@
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "item.how_to_own_a_dragon.gronckle_spawning_egg": "Gronckle",
+      "item.how_to_own_a_dragon.gronckle_pink_spawn_egg": "Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -2235,20 +2292,20 @@
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
+      "item.how_to_own_a_dragon.gronckle_blue_yellow_spawn_egg": "Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
-      "entity.how_to_own_a_dragon.gronckle": "Gronckle",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
-      "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle Spawn Egg",
-      "gui.how_to_own_a_dragon.gronckle_gui.label_gronckle": "Gronckle",
+      "entity.how_to_own_a_dragon.gronckle_blue_yellow": "Gronckle",
       "biome.how_to_own_a_dragon.plains": "Plains",
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "item_group.how_to_own_a_dragon.tools": "Tools",
+      "entity.how_to_own_a_dragon.gronckle_orange_red": "Gronckle",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
       "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars"

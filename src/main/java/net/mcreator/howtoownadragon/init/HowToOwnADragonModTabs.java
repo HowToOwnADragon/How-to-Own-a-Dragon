@@ -19,13 +19,6 @@ public class HowToOwnADragonModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
-		if (tabData.getTab() == CreativeModeTabs.COMBAT) {
-			tabData.accept(HowToOwnADragonModItems.NIGHT_FURY_ARMOR_HELMET.get());
-			tabData.accept(HowToOwnADragonModItems.NIGHT_FURY_ARMOR_CHESTPLATE.get());
-			tabData.accept(HowToOwnADragonModItems.NIGHT_FURY_ARMOR_LEGGINGS.get());
-			tabData.accept(HowToOwnADragonModItems.NIGHT_FURY_ARMOR_BOOTS.get());
-		}
-
 		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 		}
 	}
@@ -34,7 +27,6 @@ public class HowToOwnADragonModTabs {
 	public static void buildTabContentsModded(CreativeModeTabEvent.Register event) {
 		event.registerCreativeModeTab(new ResourceLocation("how_to_own_a_dragon", "items"),
 				builder -> builder.title(Component.translatable("item_group.how_to_own_a_dragon.items")).icon(() -> new ItemStack(HowToOwnADragonModItems.NIGHT_FURY_SCALE.get())).displayItems((parameters, tabData) -> {
-					tabData.accept(HowToOwnADragonModBlocks.PORTAL_BLOCK.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_IRON.get());
 					tabData.accept(HowToOwnADragonModBlocks.DARK_STONE.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.DEEP_IRON_BLOCK.get().asItem());
@@ -53,7 +45,6 @@ public class HowToOwnADragonModTabs {
 		);
 		event.registerCreativeModeTab(new ResourceLocation("how_to_own_a_dragon", "dragons"),
 				builder -> builder.title(Component.translatable("item_group.how_to_own_a_dragon.dragons")).icon(() -> new ItemStack(Items.ENDERMAN_SPAWN_EGG)).displayItems((parameters, tabData) -> {
-					tabData.accept(HowToOwnADragonModItems.NIGHT_FURY_SCALE.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SCALE.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SPAWNING_EGG.get());
 				})
