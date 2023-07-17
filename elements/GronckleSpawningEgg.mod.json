@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dragon_symbol",
+    "texture": "gronckleegg",
     "customModelName": "Normal",
     "name": "Gronckle",
     "rarity": "UNCOMMON",

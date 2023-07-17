@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "nightfury_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "No creative tab entry"
     },
     "armorTextureFile": "nightfury_layer_1",
     "helmetName": "Night Fury Scale Helmet",

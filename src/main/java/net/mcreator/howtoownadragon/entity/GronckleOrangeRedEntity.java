@@ -1,112 +1,39 @@
 
 package net.mcreator.howtoownadragon.entity;
 
-import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animatable.GeoEntity;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
-import net.minecraftforge.items.wrapper.EntityArmorInvWrapper;
-import net.minecraftforge.items.wrapper.CombinedInvWrapper;
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.SpawnEggItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.animal.Sheep;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.Pose;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.Difficulty;
-import net.minecraft.util.RandomSource;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.nbt.Tag;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.howtoownadragon.world.inventory.GronckleGUIMenu;
-import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
-import net.mcreator.howtoownadragon.procedures.FlyingTickUpdateProcedure;
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 
 import javax.annotation.Nullable;
-import javax.annotation.Nonnull;
 
-import java.util.List;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animation.AnimationState;
 
-import io.netty.buffer.Unpooled;
-
-public class GronckleEntity extends TamableAnimal implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(GronckleEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(GronckleEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(GronckleEntity.class, EntityDataSerializers.STRING);
+public class GronckleOrangeRedEntity extends TamableAnimal implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(GronckleOrangeRedEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(GronckleOrangeRedEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(GronckleOrangeRedEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public GronckleEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(HowToOwnADragonModEntities.GRONCKLE.get(), world);
+	public GronckleOrangeRedEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED.get(), world);
 	}
 
-	public GronckleEntity(EntityType<GronckleEntity> type, Level world) {
+	public GronckleOrangeRedEntity(EntityType<GronckleOrangeRedEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -115,7 +42,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "mygronckle");
+		this.entityData.define(TEXTURE, "orangered");
 	}
 
 	public void setTexture(String texture) {
@@ -139,22 +66,26 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
+
 		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Sheep.class, true, false));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(4, new FloatGoal(this));
 		this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 0.8, 20) {
+
 			@Override
 			protected Vec3 getPosition() {
-				RandomSource random = GronckleEntity.this.getRandom();
-				double dir_x = GronckleEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_y = GronckleEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_z = GronckleEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
+				RandomSource random = GronckleOrangeRedEntity.this.getRandom();
+				double dir_x = GronckleOrangeRedEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_y = GronckleOrangeRedEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_z = GronckleOrangeRedEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
+
 		});
 		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 0.8));
+
 	}
 
 	@Override
@@ -174,6 +105,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
+
 		return false;
 	}
 
@@ -183,74 +115,11 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 		GronckleDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
-	private final ItemStackHandler inventory = new ItemStackHandler(9) {
-		@Override
-		public int getSlotLimit(int slot) {
-			return 64;
-		}
-	};
-	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));
-
-	@Override
-	public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> capability, @Nullable Direction side) {
-		if (this.isAlive() && capability == ForgeCapabilities.ITEM_HANDLER && side == null)
-			return LazyOptional.of(() -> combined).cast();
-		return super.getCapability(capability, side);
-	}
-
-	@Override
-	protected void dropEquipment() {
-		super.dropEquipment();
-		for (int i = 0; i < inventory.getSlots(); ++i) {
-			ItemStack itemstack = inventory.getStackInSlot(i);
-			if (!itemstack.isEmpty() && !EnchantmentHelper.hasVanishingCurse(itemstack)) {
-				this.spawnAtLocation(itemstack);
-			}
-		}
-	}
-
-	@Override
-	public void addAdditionalSaveData(CompoundTag compound) {
-		super.addAdditionalSaveData(compound);
-		compound.put("InventoryCustom", inventory.serializeNBT());
-	}
-
-	@Override
-	public void readAdditionalSaveData(CompoundTag compound) {
-		super.readAdditionalSaveData(compound);
-		Tag inventoryCustom = compound.get("InventoryCustom");
-		if (inventoryCustom instanceof CompoundTag inventoryTag)
-			inventory.deserializeNBT(inventoryTag);
-	}
-
 	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-		if (sourceentity.isSecondaryUseActive()) {
-			if (sourceentity instanceof ServerPlayer serverPlayer) {
-				NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("Gronckle");
-					}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-						packetBuffer.writeBlockPos(sourceentity.blockPosition());
-						packetBuffer.writeByte(0);
-						packetBuffer.writeVarInt(GronckleEntity.this.getId());
-						return new GronckleGUIMenu(id, inventory, packetBuffer);
-					}
-				}, buf -> {
-					buf.writeBlockPos(sourceentity.blockPosition());
-					buf.writeByte(0);
-					buf.writeVarInt(this.getId());
-				});
-			}
-			return InteractionResult.sidedSuccess(this.level.isClientSide());
-		}
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
 			retval = super.mobInteract(sourceentity, hand);
@@ -279,6 +148,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 				} else {
 					this.level.broadcastEntityEvent(this, (byte) 6);
 				}
+
 				this.setPersistenceRequired();
 				retval = InteractionResult.sidedSuccess(this.level.isClientSide());
 			} else {
@@ -287,7 +157,9 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 					this.setPersistenceRequired();
 			}
 		}
+
 		sourceentity.startRiding(this);
+
 		return retval;
 	}
 
@@ -305,7 +177,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		GronckleEntity retval = HowToOwnADragonModEntities.GRONCKLE.get().create(serverWorld);
+		GronckleOrangeRedEntity retval = HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}
@@ -326,12 +198,17 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 			this.yBodyRot = entity.getYRot();
 			this.yHeadRot = entity.getYRot();
 			this.maxUpStep = 1.0F;
+
 			if (entity instanceof LivingEntity passenger) {
 				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
+
 				float forward = passenger.zza;
+
 				float strafe = passenger.xxa;
+
 				super.travel(new Vec3(strafe, 0, forward));
 			}
+
 			double d1 = this.getX() - this.xo;
 			double d0 = this.getZ() - this.zo;
 			float f1 = (float) Math.sqrt(d1 * d1 + d0 * d0) * 4;
@@ -343,6 +220,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 			return;
 		}
 		this.maxUpStep = 0.5F;
+
 		super.travel(dir);
 	}
 
@@ -363,8 +241,9 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(HowToOwnADragonModEntities.GRONCKLE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
+
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -374,7 +253,9 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+
 		return builder;
 	}
 
@@ -432,6 +313,7 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 			this.lastloop = false;
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
 			event.getController().forceAnimationReset();
+
 			return PlayState.STOP;
 		}
 		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
@@ -453,8 +335,9 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(GronckleEntity.RemovalReason.KILLED);
+			this.remove(GronckleOrangeRedEntity.RemovalReason.KILLED);
 			this.dropExperience();
+
 		}
 	}
 
@@ -477,4 +360,5 @@ public class GronckleEntity extends TamableAnimal implements GeoEntity {
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
 	}
+
 }
