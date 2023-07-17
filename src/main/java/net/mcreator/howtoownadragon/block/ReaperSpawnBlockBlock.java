@@ -10,16 +10,18 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.procedures.ReaperSpikeTrapProcedureProcedure;
+import net.mcreator.howtoownadragon.procedures.ReaperSpawnBlockUpdateTickProcedure;
 
 import java.util.List;
 import java.util.Collections;
 
-public class ReaperSpikeTrapBlock extends Block {
-	public ReaperSpikeTrapBlock() {
+public class ReaperSpawnBlockBlock extends Block {
+	public ReaperSpawnBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f));
 	}
 
@@ -37,8 +39,17 @@ public class ReaperSpikeTrapBlock extends Block {
 	}
 
 	@Override
-	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
-		super.stepOn(world, pos, blockstate, entity);
-		ReaperSpikeTrapProcedureProcedure.execute(entity);
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		ReaperSpawnBlockUpdateTickProcedure.execute(world, x, y, z);
+	}
+
+	@Override
+	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
+		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
+		ReaperSpawnBlockUpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }
