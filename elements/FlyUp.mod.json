@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "X",
+    "triggerKey": "SPACE",
     "keyBindingName": "Fly Up",
     "keyBindingCategoryKey": "htoad",
     "onKeyPressed": {

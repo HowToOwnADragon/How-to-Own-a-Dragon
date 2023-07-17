@@ -59,7 +59,7 @@ public class GronckleSalmonTameProcedure {
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 5, 3, 3, 3, 1);
+								_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 30, 3, 3, 3, 1);
 						}
 						if (Math.random() >= 0.7) {
 							if (sourceentity instanceof Player _player) {
@@ -67,7 +67,7 @@ public class GronckleSalmonTameProcedure {
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.HEART, x, y, z, 5, 3, 3, 3, 1);
+								_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 							if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 								_toTame.tame(_owner);
 						}
@@ -87,7 +87,7 @@ public class GronckleSalmonTameProcedure {
 					if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 						_toTame.tame(_owner);
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 5, 3, 3, 3, 1);
+						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 				}
 			}
 		}

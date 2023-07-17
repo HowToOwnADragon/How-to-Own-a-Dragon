@@ -8,10 +8,19 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:Gronckle"
+        "value": "CUSTOM:NightFury"
       },
       {
-        "value": "CUSTOM:NightFury"
+        "value": "CUSTOM:GronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRed"
+      },
+      {
+        "value": "CUSTOM:GroncklePink"
+      },
+      {
+        "value": "CUSTOM:Meatlug"
       }
     ],
     "biomes": [],

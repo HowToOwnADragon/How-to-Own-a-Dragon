@@ -17,7 +17,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 		if (Math.random() * 10 <= 3) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GronckleBlueYellowEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW.get(), _level);
-				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
 				entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -28,7 +28,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 		} else if (Math.random() * 10 > 3 || Math.random() * 10 <= 6) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GronckleOrangeRedEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED.get(), _level);
-				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
 				entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -39,7 +39,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 		} else if (Math.random() * 10 > 6 || Math.random() * 10 <= 9) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GroncklePinkEntity(HowToOwnADragonModEntities.GRONCKLE_PINK.get(), _level);
-				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
 				entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -50,7 +50,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 		} else if (Math.random() * 10 > 9 || Math.random() * 10 <= 10) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MeatlugEntity(HowToOwnADragonModEntities.MEATLUG.get(), _level);
-				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
 				entityToSpawn.setDeltaMovement(0, 0, 0);

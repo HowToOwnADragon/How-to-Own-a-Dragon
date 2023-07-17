@@ -5,7 +5,7 @@
     "structure": "empty_reaper",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 10000,
+    "spawnProbability": 100,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
