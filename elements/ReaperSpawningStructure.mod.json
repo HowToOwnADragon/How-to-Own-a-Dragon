@@ -1,0 +1,25 @@
+{
+  "_fv": 43,
+  "_type": "structure",
+  "definition": {
+    "structure": "empty_reaper",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 1000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "onStructureGenerated": {
+      "name": "ReaperSpawningStructureOnStructureInstanceGenerated"
+    }
+  }
+}
