@@ -251,7 +251,7 @@
       "type": "dimension",
       "sortid": 17,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "overworld_2",
       "metadata": {
         "files": [
