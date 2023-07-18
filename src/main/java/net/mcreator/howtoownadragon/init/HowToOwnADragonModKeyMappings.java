@@ -21,7 +21,7 @@ import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class HowToOwnADragonModKeyMappings {
-	public static final KeyMapping FLY_UP = new KeyMapping("key.how_to_own_a_dragon.fly_up", GLFW.GLFW_KEY_X, "key.categories.htoad") {
+	public static final KeyMapping FLY_UP = new KeyMapping("key.how_to_own_a_dragon.fly_up", GLFW.GLFW_KEY_SPACE, "key.categories.htoad") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -39,7 +39,7 @@ public class HowToOwnADragonModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping FLY_DOWN = new KeyMapping("key.how_to_own_a_dragon.fly_down", GLFW.GLFW_KEY_Z, "key.categories.htoad") {
+	public static final KeyMapping FLY_DOWN = new KeyMapping("key.how_to_own_a_dragon.fly_down", GLFW.GLFW_KEY_LEFT_CONTROL, "key.categories.htoad") {
 		private boolean isDownOld = false;
 
 		@Override

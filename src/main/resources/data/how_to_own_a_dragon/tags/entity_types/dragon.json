@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "how_to_own_a_dragon:gronckle",
-    "how_to_own_a_dragon:night_fury"
+    "how_to_own_a_dragon:gronckle_blue_yellow",
+    "how_to_own_a_dragon:night_fury",
+    "how_to_own_a_dragon:meatlug",
+    "how_to_own_a_dragon:gronckle_pink",
+    "how_to_own_a_dragon:gronckle_orange_red"
   ]
 }

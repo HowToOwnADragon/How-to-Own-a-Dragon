@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class MeatlugRenderer extends GeoEntityRenderer<MeatlugEntity> {
 	public MeatlugRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new MeatlugModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 1f;
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class ReaperInsidePrototype2Feature extends Feature<NoneFeatureConfigurat
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("how_to_own_a_dragon", "reaper_inside_prototype_4"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("how_to_own_a_dragon", "reaper_inside_prototype_5"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;

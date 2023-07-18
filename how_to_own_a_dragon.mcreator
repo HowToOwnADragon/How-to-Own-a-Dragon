@@ -2048,54 +2048,6 @@
       "path": "~/ReaperShip"
     },
     {
-      "name": "WhereDoesReaperSpawn",
-      "type": "procedure",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "where_does_reaper_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/WhereDoesReaperSpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReaperShip"
-    },
-    {
-      "name": "ReaperSpawning",
-      "type": "procedure",
-      "sortid": 131,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reaper_spawning",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperSpawningProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReaperShip"
-    },
-    {
       "name": "GrantWelcome",
       "type": "procedure",
       "sortid": 132,
@@ -2203,6 +2155,104 @@
         ]
       },
       "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "EmptyReaper",
+      "type": "structure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_reaper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/empty_reaper_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/empty_reaper.json",
+          "src/main/java/net/mcreator/howtoownadragon/world/features/EmptyReaperFeature.java",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/empty_reaper.json"
+        ]
+      },
+      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+    },
+    {
+      "name": "ReaperSpawnBlock",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_spawn_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_spawn_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/ReaperSpawnBlockBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spawn_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_spawn_block.json"
+        ]
+      },
+      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+    },
+    {
+      "name": "EmptyReaperOnStructureInstanceGenerated",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_reaper_on_structure_instance_generated",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/EmptyReaperOnStructureInstanceGeneratedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+    },
+    {
+      "name": "ReaperSpawnBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_spawn_block_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReaperSpawnBlockUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
     }
   ],
   "variable_elements": [
@@ -2235,6 +2285,7 @@
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "entity.how_to_own_a_dragon.gronckle_pink": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
+      "biome.how_to_own_a_dragon.ocean": "Ocean",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "item.how_to_own_a_dragon.gronckle_orange_red_spawn_egg": "Gronckle Spawn Egg",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
@@ -2272,6 +2323,8 @@
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "entity.how_to_own_a_dragon.gronckle_blue_yellow": "Gronckle",
+      "biome.how_to_own_a_dragon.plains": "Plains",
+      "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "item_group.how_to_own_a_dragon.tools": "Tools",
@@ -2285,12 +2338,25 @@
     "name": "~",
     "children": [
       {
-        "name": "Items",
+        "name": "Armor",
         "children": [
           {
-            "name": "Scales",
+            "name": "Scale",
             "children": []
-          },
+          }
+        ]
+      },
+      {
+        "name": "Overworld2.0",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": [
           {
             "name": "Deep Iron",
             "children": []
@@ -2300,20 +2366,15 @@
             "children": []
           },
           {
-            "name": "DragonEye",
+            "name": "Scales",
             "children": []
           },
           {
             "name": "DragonProof",
             "children": []
-          }
-        ]
-      },
-      {
-        "name": "Armor",
-        "children": [
+          },
           {
-            "name": "Scale",
+            "name": "DragonEye",
             "children": []
           }
         ]
@@ -2354,6 +2415,15 @@
         "children": []
       },
       {
+        "name": "Procedure",
+        "children": [
+          {
+            "name": "Flying",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "The Hidden World",
         "children": [
           {
@@ -2363,8 +2433,34 @@
         ]
       },
       {
-        "name": "GUI",
-        "children": []
+        "name": "ReaperShip",
+        "children": [
+          {
+            "name": "REAPERSPAWNINGMECHANISM",
+            "children": []
+          },
+          {
+            "name": "Traps",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipe",
+        "children": [
+          {
+            "name": "Deep Iron",
+            "children": []
+          },
+          {
+            "name": "Gronckle Iron",
+            "children": []
+          },
+          {
+            "name": "DragonProof",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Achievements",
@@ -2380,45 +2476,6 @@
         "children": [
           {
             "name": "Teleport between dimensions",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Overworld2.0",
-        "children": []
-      },
-      {
-        "name": "Recipe",
-        "children": [
-          {
-            "name": "Gronckle Iron",
-            "children": []
-          },
-          {
-            "name": "Deep Iron",
-            "children": []
-          },
-          {
-            "name": "DragonProof",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Procedure",
-        "children": [
-          {
-            "name": "Flying",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "ReaperShip",
-        "children": [
-          {
-            "name": "Traps",
             "children": []
           }
         ]

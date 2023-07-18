@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class GroncklePinkRenderer extends GeoEntityRenderer<GroncklePinkEntity> {
 	public GroncklePinkRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new GroncklePinkModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 1f;
 	}
 
 	@Override

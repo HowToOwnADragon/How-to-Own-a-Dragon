@@ -63,7 +63,7 @@
     },
     "settings": {
       "name": "how_to_own_a_dragon:overworld_2",
-      "sea_level": 63,
+      "sea_level": 150,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,

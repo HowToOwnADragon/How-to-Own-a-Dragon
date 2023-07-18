@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "how_to_own_a_dragon:block/spruce_planks",
+    "up": "how_to_own_a_dragon:block/spruce_planks",
+    "north": "how_to_own_a_dragon:block/spruce_planks",
+    "east": "how_to_own_a_dragon:block/spruce_planks",
+    "south": "how_to_own_a_dragon:block/spruce_planks",
+    "west": "how_to_own_a_dragon:block/spruce_planks",
+    "particle": "how_to_own_a_dragon:block/spruce_planks"
+  },
+  "render_type": "solid"
+}

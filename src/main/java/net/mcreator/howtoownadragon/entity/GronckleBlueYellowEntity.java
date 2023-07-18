@@ -139,6 +139,11 @@ public class GronckleBlueYellowEntity extends TamableAnimal implements GeoEntity
 	}
 
 	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 1;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}

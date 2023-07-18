@@ -68,6 +68,7 @@ public class HowToOwnADragonModItems {
 			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW, -6999808, -7986432, new Item.Properties()));
 	public static final RegistryObject<Item> GRONCKLE_PINK_SPAWN_EGG = REGISTRY.register("gronckle_pink_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_PINK, -6999808, -7986432, new Item.Properties()));
 	public static final RegistryObject<Item> GRONCKLE_ORANGE_RED_SPAWN_EGG = REGISTRY.register("gronckle_orange_red_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED, -6999808, -7986432, new Item.Properties()));
+	public static final RegistryObject<Item> REAPER_SPAWN_BLOCK = block(HowToOwnADragonModBlocks.REAPER_SPAWN_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
