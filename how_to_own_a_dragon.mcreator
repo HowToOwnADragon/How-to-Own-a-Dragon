@@ -255,9 +255,9 @@
       "registry_name": "overworld_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/dimension/overworld_2.json",
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/overworld_2.json",
           "src/main/java/net/mcreator/howtoownadragon/world/dimension/Overworld2Dimension.java",
-          "src/main/resources/data/how_to_own_a_dragon/dimension_type/overworld_2.json"
+          "src/main/resources/data/how_to_own_a_dragon/dimension/overworld_2.json"
         ]
       },
       "path": "~/Overworld2.0"
@@ -273,23 +273,14 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/Overworld2enterProcedure.java"
         ],
-        "dependencies": []
-      },
-      "path": "~/Overworld2.0"
-    },
-    {
-      "name": "Plains",
-      "type": "biome",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plains",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/plains.json"
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
-      "path": "~/Overworld2.0/VanillaBiomes2"
+      "path": "~/Overworld2.0"
     },
     {
       "name": "GronckleIron",
@@ -767,20 +758,6 @@
         ]
       },
       "path": "~/Items/Deep Iron"
-    },
-    {
-      "name": "Ocean",
-      "type": "biome",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ocean",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/biome/ocean.json"
-        ]
-      },
-      "path": "~/Overworld2.0/VanillaBiomes2"
     },
     {
       "name": "GronckleStoneTame",
@@ -2297,6 +2274,26 @@
         ]
       },
       "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+    },
+    {
+      "name": "ByeDrowned",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bye_drowned",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ByeDrownedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure"
     }
   ],
   "variable_elements": [
@@ -2329,7 +2326,6 @@
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "entity.how_to_own_a_dragon.gronckle_pink": "Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
-      "biome.how_to_own_a_dragon.ocean": "Ocean",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "item.how_to_own_a_dragon.gronckle_orange_red_spawn_egg": "Gronckle Spawn Egg",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
@@ -2367,7 +2363,6 @@
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
       "entity.how_to_own_a_dragon.gronckle_blue_yellow": "Gronckle",
-      "biome.how_to_own_a_dragon.plains": "Plains",
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -2483,16 +2478,7 @@
       },
       {
         "name": "Overworld2.0",
-        "children": [
-          {
-            "name": "VanillaBiomes2",
-            "children": []
-          },
-          {
-            "name": "CustomBiomes2",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Recipe",
