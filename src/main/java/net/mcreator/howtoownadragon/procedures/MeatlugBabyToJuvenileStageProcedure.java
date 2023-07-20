@@ -5,7 +5,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
@@ -22,18 +25,10 @@ public class MeatlugBabyToJuvenileStageProcedure {
 			_toTame.tame(_owner);
 		HowToOwnADragonMod.queueServerWork(10000, () -> {
 			if (Mth.nextInt(RandomSource.create(), 1, 10) <= 2) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new JuvenileMeatlugEntity(HowToOwnADragonModEntities.JUVENILE_MEATLUG.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
+				while (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.ABSORPTION))) {
+					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 9999999, 1));
 				}
-				if (!entity.level.isClientSide())
-					entity.discard();
 			} else {
 				HowToOwnADragonMod.queueServerWork(10000, () -> {
 					if (Mth.nextInt(RandomSource.create(), 3, 10) <= 4) {
