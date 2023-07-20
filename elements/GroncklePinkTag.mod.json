@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:GroncklePink"
+      },
+      {
+        "value": "CUSTOM:AdolecsentGroncklePink"
+      },
+      {
+        "value": "CUSTOM:BabyGroncklePink"
+      },
+      {
+        "value": "CUSTOM:JuvenileGroncklePink"
+      }
+    ],
+    "biomes": [],
+    "name": "gronckle_pink_tag",
+    "namespace": "mod"
+  }
+}

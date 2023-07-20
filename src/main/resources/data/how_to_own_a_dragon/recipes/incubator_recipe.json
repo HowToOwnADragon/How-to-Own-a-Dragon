@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:hay_block"
+    },
+    "1": {
+      "item": "minecraft:hay_block"
+    },
+    "2": {
+      "item": "minecraft:hay_block"
+    },
+    "3": {
+      "item": "minecraft:hay_block"
+    },
+    "4": {
+      "item": "minecraft:lava_bucket"
+    },
+    "5": {
+      "item": "minecraft:hay_block"
+    },
+    "6": {
+      "item": "minecraft:hay_block"
+    },
+    "7": {
+      "item": "minecraft:hay_block"
+    },
+    "8": {
+      "item": "minecraft:hay_block"
+    }
+  },
+  "result": {
+    "item": "how_to_own_a_dragon:incubator",
+    "count": 1
+  }
+}

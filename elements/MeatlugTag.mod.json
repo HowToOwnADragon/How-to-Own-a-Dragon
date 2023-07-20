@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Meatlug"
+      },
+      {
+        "value": "CUSTOM:AdolescentMeatlug"
+      },
+      {
+        "value": "CUSTOM:BabyMeatlug"
+      },
+      {
+        "value": "CUSTOM:JuvenileMeatlug"
+      }
+    ],
+    "biomes": [],
+    "name": "meatlug_tag",
+    "namespace": "mod"
+  }
+}

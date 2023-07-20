@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "how_to_own_a_dragon:block/reaper_portal",
+    "up": "how_to_own_a_dragon:block/reaper_portal",
+    "north": "how_to_own_a_dragon:block/reaper_portal",
+    "east": "how_to_own_a_dragon:block/reaper_portal",
+    "south": "how_to_own_a_dragon:block/reaper_portal",
+    "west": "how_to_own_a_dragon:block/reaper_portal",
+    "particle": "how_to_own_a_dragon:block/reaper_portal"
+  },
+  "render_type": "solid"
+}

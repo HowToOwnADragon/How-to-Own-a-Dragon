@@ -40,6 +40,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.DRAGON_EYE.get());
 					tabData.accept(HowToOwnADragonModItems.DRAGON_PROOF_METAL.get());
 					tabData.accept(HowToOwnADragonModBlocks.DRAGON_PROOF_METAL_BARS.get().asItem());
+					tabData.accept(HowToOwnADragonModBlocks.INCUBATOR.get().asItem());
 				})
 
 		);

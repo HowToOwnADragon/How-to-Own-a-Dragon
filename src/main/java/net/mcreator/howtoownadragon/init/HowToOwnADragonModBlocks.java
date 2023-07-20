@@ -18,6 +18,7 @@ import net.mcreator.howtoownadragon.block.ReaperPortalBlock;
 import net.mcreator.howtoownadragon.block.ReaperBearTrapBlock;
 import net.mcreator.howtoownadragon.block.ReaperArrowTrapBlock;
 import net.mcreator.howtoownadragon.block.PortalBlockBlock;
+import net.mcreator.howtoownadragon.block.IncubatorBlock;
 import net.mcreator.howtoownadragon.block.DragonProofMetalBarsBlock;
 import net.mcreator.howtoownadragon.block.DeepIronWallBlock;
 import net.mcreator.howtoownadragon.block.DeepIronStairsBlock;
@@ -46,4 +47,5 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> REAPER_SPIKE_TRAP = REGISTRY.register("reaper_spike_trap", () -> new ReaperSpikeTrapBlock());
 	public static final RegistryObject<Block> RUSTY_DRAGON_PROOF_METAL_BARS = REGISTRY.register("rusty_dragon_proof_metal_bars", () -> new RustyDragonProofMetalBarsBlock());
 	public static final RegistryObject<Block> REAPER_SPAWN_BLOCK = REGISTRY.register("reaper_spawn_block", () -> new ReaperSpawnBlockBlock());
+	public static final RegistryObject<Block> INCUBATOR = REGISTRY.register("incubator", () -> new IncubatorBlock());
 }

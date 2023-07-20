@@ -32,10 +32,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMenus;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModFeatures;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlocks;
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -58,10 +60,12 @@ public class HowToOwnADragonMod {
 		HowToOwnADragonModBlocks.REGISTRY.register(bus);
 		HowToOwnADragonModItems.REGISTRY.register(bus);
 		HowToOwnADragonModEntities.REGISTRY.register(bus);
-
+		HowToOwnADragonModBlockEntities.REGISTRY.register(bus);
 		HowToOwnADragonModFeatures.REGISTRY.register(bus);
 
 		HowToOwnADragonModMobEffects.REGISTRY.register(bus);
+
+		HowToOwnADragonModMenus.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

@@ -15,6 +15,45 @@
       },
       {
         "value": "CUSTOM:GroncklePink"
+      },
+      {
+        "value": "CUSTOM:AdolecsentGronckleOrangeRed"
+      },
+      {
+        "value": "CUSTOM:AdolecsentGroncklePink"
+      },
+      {
+        "value": "CUSTOM:AdolescentGronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:AdolescentMeatlug"
+      },
+      {
+        "value": "CUSTOM:BabyGronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:BabyGronckleOrangeRed"
+      },
+      {
+        "value": "CUSTOM:BabyGroncklePink"
+      },
+      {
+        "value": "CUSTOM:BabyMeatlug"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleOrangeRed"
+      },
+      {
+        "value": "CUSTOM:JuvenileGroncklePink"
+      },
+      {
+        "value": "CUSTOM:JuvenileMeatlug"
+      },
+      {
+        "value": "CUSTOM:Meatlug"
       }
     ],
     "biomes": [],

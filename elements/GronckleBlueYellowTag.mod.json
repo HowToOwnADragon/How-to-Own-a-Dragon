@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:GronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:AdolescentGronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:BabyGronckleBlueYellow"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleBlueYellow"
+      }
+    ],
+    "biomes": [],
+    "name": "gronckle_blue_yellow_tag",
+    "namespace": "mod"
+  }
+}
