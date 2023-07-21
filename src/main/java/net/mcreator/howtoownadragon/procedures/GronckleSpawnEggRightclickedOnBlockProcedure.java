@@ -25,7 +25,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				_level.addFreshEntity(entityToSpawn);
 			}
-		} else if (Math.random() * 10 > 3 || Math.random() * 10 <= 6) {
+		} else if (Math.random() * 10 > 3 && Math.random() * 10 <= 6) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GronckleOrangeRedEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED.get(), _level);
 				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
@@ -36,7 +36,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				_level.addFreshEntity(entityToSpawn);
 			}
-		} else if (Math.random() * 10 > 6 || Math.random() * 10 <= 9) {
+		} else if (Math.random() * 10 > 6 && Math.random() * 10 <= 9) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GroncklePinkEntity(HowToOwnADragonModEntities.GRONCKLE_PINK.get(), _level);
 				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
@@ -47,7 +47,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				_level.addFreshEntity(entityToSpawn);
 			}
-		} else if (Math.random() * 10 > 9 || Math.random() * 10 <= 10) {
+		} else if (Math.random() * 10 > 9 && Math.random() * 10 <= 10) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MeatlugEntity(HowToOwnADragonModEntities.MEATLUG.get(), _level);
 				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
