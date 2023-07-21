@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Gronckle",
+    "mobName": "Baby Gronckle",
     "mobLabel": "",
     "mobModelTexture": "babymeatlug.png",
     "mobModelGlowTexture": "",
@@ -103,7 +103,7 @@
       "name": "GronckleDiesNotGrown"
     },
     "onInitialSpawn": {
-      "name": "GronckleBabyToJuvenile"
+      "name": "GronckleGrowingTickRate"
     },
     "hasAI": true,
     "aiBase": "(none)",
