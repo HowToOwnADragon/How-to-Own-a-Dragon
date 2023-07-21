@@ -30,7 +30,7 @@ import net.mcreator.howtoownadragon.entity.AdolecsentGronckleOrangeRedEntity;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class JuvenileStoneGrowingUpProcedure {
+public class JuvenileDeepslateGrowUpProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -45,10 +45,10 @@ public class JuvenileStoneGrowingUpProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof JuvenileMeatlugEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get()) && entity instanceof JuvenileMeatlugEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -66,10 +66,10 @@ public class JuvenileStoneGrowingUpProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof JuvenileGroncklePinkEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get()) && entity instanceof JuvenileGroncklePinkEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -87,10 +87,10 @@ public class JuvenileStoneGrowingUpProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof JuvenileGronckleOrangeRedEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get()) && entity instanceof JuvenileGronckleOrangeRedEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -108,10 +108,10 @@ public class JuvenileStoneGrowingUpProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof JuvenileGronckleBlueYellowEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get()) && entity instanceof JuvenileGronckleBlueYellowEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)

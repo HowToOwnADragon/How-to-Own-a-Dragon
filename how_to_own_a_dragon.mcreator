@@ -2118,11 +2118,11 @@
       "registry_name": "gronckle_blue_yellow",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_biome_modifier.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowEntity.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_spawn_egg.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/Entity"
@@ -3593,6 +3593,126 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+    },
+    {
+      "name": "JuvenileCobblestoneGrowUp",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_cobblestone_grow_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileCobblestoneGrowUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+    },
+    {
+      "name": "JuvenileDeepslateGrowUp",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_deepslate_grow_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileDeepslateGrowUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+    },
+    {
+      "name": "JuvenileCobbledDeepslateGrowUp",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_cobbled_deepslate_grow_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileCobbledDeepslateGrowUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
     }
   ],
   "variable_elements": [
