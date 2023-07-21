@@ -3120,7 +3120,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "JuvenileStoneGrowingUp",
@@ -3160,7 +3160,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
     },
     {
       "name": "AdolescentStoneGrowingUp",
@@ -3200,7 +3200,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
     },
     {
       "name": "TameGrownUpWhenSpawned",
@@ -3272,7 +3272,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyDeepslateGrowing",
@@ -3312,7 +3312,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyCobbledDeepslateGrowing",
@@ -3352,7 +3352,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyDioriteGrowing",
@@ -3392,7 +3392,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyGraniteGrowing",
@@ -3432,7 +3432,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyAndesiteGrowing",
@@ -3472,7 +3472,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyIronGrowing",
@@ -3512,7 +3512,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabyLavaGrowing",
@@ -3552,7 +3552,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     },
     {
       "name": "BabySandstoneGrowing",
@@ -3592,7 +3592,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
     }
   ],
   "variable_elements": [
@@ -3778,7 +3778,20 @@
               },
               {
                 "name": "GrowingStages",
-                "children": []
+                "children": [
+                  {
+                    "name": "Baby",
+                    "children": []
+                  },
+                  {
+                    "name": "Juvenile",
+                    "children": []
+                  },
+                  {
+                    "name": "Adolescent",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Effects",
