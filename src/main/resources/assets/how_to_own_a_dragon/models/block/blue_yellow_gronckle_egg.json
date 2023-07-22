@@ -1,0 +1,9 @@
+{
+  "parent": "how_to_own_a_dragon:custom/gronckleegg",
+  "textures": {
+    "all": "how_to_own_a_dragon:block/gronckleegg",
+    "particle": "how_to_own_a_dragon:block/gronckleegg",
+    "1": "how_to_own_a_dragon:block/gronckleegg"
+  },
+  "render_type": "solid"
+}
