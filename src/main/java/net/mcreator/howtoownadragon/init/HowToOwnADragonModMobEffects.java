@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.mcreator.howtoownadragon.potion.StoneGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.SandStoneGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.IronIngotGrowingMobEffect;
+import net.mcreator.howtoownadragon.potion.InLoveMobEffect;
 import net.mcreator.howtoownadragon.potion.HitByArrowMobEffect;
 import net.mcreator.howtoownadragon.potion.GraniteGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.DioriteGrowingMobEffect;
@@ -36,4 +37,5 @@ public class HowToOwnADragonModMobEffects {
 	public static final RegistryObject<MobEffect> BUCKET_OF_LAVA_GROWING = REGISTRY.register("bucket_of_lava_growing", () -> new BucketOfLavaGrowingMobEffect());
 	public static final RegistryObject<MobEffect> IRON_INGOT_GROWING = REGISTRY.register("iron_ingot_growing", () -> new IronIngotGrowingMobEffect());
 	public static final RegistryObject<MobEffect> SAND_STONE_GROWING = REGISTRY.register("sand_stone_growing", () -> new SandStoneGrowingMobEffect());
+	public static final RegistryObject<MobEffect> IN_LOVE = REGISTRY.register("in_love", () -> new InLoveMobEffect());
 }

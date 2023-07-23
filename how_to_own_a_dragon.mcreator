@@ -4383,15 +4383,29 @@
       "path": "~/Dragons/Gronckle/Breeding/Eggs"
     },
     {
-      "name": "GronckleBlueYellowOrangeRed",
-      "type": "procedure",
-      "sortid": 230,
+      "name": "InLove",
+      "type": "potioneffect",
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gronckle_blue_yellow_orange_red",
+      "registry_name": "in_love",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowOrangeRedProcedure.java"
+          "src/main/java/net/mcreator/howtoownadragon/potion/InLoveMobEffect.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding"
+    },
+    {
+      "name": "GronckleBlueYellowLove",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_blue_yellow_love",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowLoveProcedure.java"
         ],
         "dependencies": [
           {
@@ -4401,21 +4415,37 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/Dragons/Gronckle/Breeding"
     },
     {
-      "name": "GronckleBlueYellowOrangeRed2",
+      "name": "GronckleOrangeRedLove",
       "type": "procedure",
-      "sortid": 231,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gronckle_blue_yellow_orange_red_2",
+      "registry_name": "gronckle_orange_red_love",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowOrangeRed2Procedure.java"
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleOrangeRedLoveProcedure.java"
         ],
         "dependencies": [
           {
@@ -4425,10 +4455,142 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/Dragons/Gronckle/Breeding"
+    },
+    {
+      "name": "GroncklePingLove",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_ping_love",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GroncklePingLoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding"
+    },
+    {
+      "name": "MeatlugLove",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug_love",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugLoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding"
+    },
+    {
+      "name": "MeatlugAndMeatlug",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug_and_meatlug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugAndMeatlugProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
     }
   ],
   "variable_elements": [
@@ -4451,13 +4613,13 @@
       "entity.how_to_own_a_dragon.adolecsent_gronckle_pink": "Adolescent Gronckle",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This changes everything!",
-      "entity.how_to_own_a_dragon.juvenile_gronckle_orange_red": "Juvenile Gronckle",
       "advancements.hidden_world_root.descr": "What is this place?",
+      "entity.how_to_own_a_dragon.juvenile_gronckle_orange_red": "Juvenile Gronckle",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "item.how_to_own_a_dragon.baby_gronckle_pink_spawn_egg": "Baby Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
-      "entity.how_to_own_a_dragon.baby_meatlug": "Baby Gronckle",
       "item.how_to_own_a_dragon.baby_meatlug_spawn_egg": "Baby Gronckle Spawn Egg",
+      "entity.how_to_own_a_dragon.baby_meatlug": "Baby Gronckle",
       "entity.how_to_own_a_dragon.adolecsent_gronckle_orange_red": "Adolescent Gronckle",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
@@ -4472,8 +4634,8 @@
       "entity.how_to_own_a_dragon.meatlug": "Gronckle",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.adolescent_meatlug": "Adolescent Gronckle",
-      "effect.how_to_own_a_dragon.stone_growing": "Growing",
       "item.how_to_own_a_dragon.juvenile_gronckle_orange_red_spawn_egg": "Juvenile Gronckle Spawn Egg",
+      "effect.how_to_own_a_dragon.stone_growing": "Growing",
       "item.how_to_own_a_dragon.juvenile_gronckle_pink_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "effect.how_to_own_a_dragon.andesite_growing": "Growing",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
@@ -4526,6 +4688,7 @@
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "item.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.orange_red_gronckle_egg": "Gronckle Egg",
+      "effect.how_to_own_a_dragon.in_love": "Love",
       "entity.how_to_own_a_dragon.juvenile_meatlug": "Juvenile Gronckle",
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
@@ -4613,6 +4776,10 @@
                 "children": [
                   {
                     "name": "Eggs",
+                    "children": []
+                  },
+                  {
+                    "name": "Cross-Breeding",
                     "children": []
                   }
                 ]

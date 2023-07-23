@@ -6,31 +6,36 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
 
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.GronckleOrangeRedEntity;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class GronckleBlueYellowOrangeRed2Procedure {
+public class GronckleOrangeRedLoveProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
 			return;
-		execute(event, event.getTarget(), event.getEntity());
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getTarget(), event.getEntity());
 	}
 
-	public static void execute(Entity entity, Entity sourceentity) {
-		execute(null, entity, sourceentity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
+		execute(null, world, x, y, z, entity, sourceentity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof GronckleOrangeRedEntity && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()
@@ -39,8 +44,14 @@ public class GronckleBlueYellowOrangeRed2Procedure {
 				ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof Animal)
-				((Animal) entity).setInLoveTime(600);
+			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IN_LOVE.get(), 600, 1, false, false));
+			while (entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(HowToOwnADragonModMobEffects.IN_LOVE.get())) {
+				HowToOwnADragonMod.queueServerWork(20, () -> {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.HEART, x, y, z, 25, 3, 3, 3, 1);
+				});
+			}
 		}
 	}
 }
