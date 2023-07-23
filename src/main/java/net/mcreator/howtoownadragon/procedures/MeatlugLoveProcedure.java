@@ -18,7 +18,6 @@ import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.MeatlugEntity;
-import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
 
@@ -38,20 +37,16 @@ public class MeatlugLoveProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof MeatlugEntity && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()
-				&& (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
+		if (entity instanceof MeatlugEntity && (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)
+				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
 			if (sourceentity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IN_LOVE.get(), 600, 1, false, false));
-			while (entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(HowToOwnADragonModMobEffects.IN_LOVE.get())) {
-				HowToOwnADragonMod.queueServerWork(20, () -> {
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 25, 3, 3, 3, 1);
-				});
-			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 		}
 	}
 }
