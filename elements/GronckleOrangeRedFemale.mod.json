@@ -1,0 +1,186 @@
+{
+  "_fv": 43,
+  "_type": "animatedentity",
+  "definition": {
+    "mobName": "Gronckle",
+    "mobLabel": "Female",
+    "mobModelTexture": "gronckleorangered.png",
+    "mobModelGlowTexture": "",
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
+    "modelWidth": 2.0,
+    "modelHeight": 2.0,
+    "modelShadowSize": 1.0,
+    "mountedYOffset": 1.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -6999808,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -7986432,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "followRange": 16,
+    "health": 10,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "deathTime": 20,
+    "lerp": 4,
+    "disableCollisions": false,
+    "ridable": true,
+    "canControlForward": true,
+    "canControlStrafe": true,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "entity.generic.hurt"
+    },
+    "deathSound": {
+      "value": "entity.generic.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "whenMobDies": {
+      "name": "GronckleDies"
+    },
+    "onMobTickUpdate": {
+      "name": "FlyingTickUpdate"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"176\" y=\"33\"><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.STONE#0</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.COBBLESTONE</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.DEEPSLATE</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.COBBLED_DEEPSLATE</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.STONE#1</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.STONE#5</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">0</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Blocks.STONE#3</field></block></value><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntitySheep</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "gronckle.geo.json",
+    "groupName": "",
+    "animation1": "animation.gronckle.idle",
+    "animation2": "animation.gronckle.walk",
+    "animation3": "animation.gronckle.death",
+    "animation4": "animation.gronckle.walk",
+    "animation5": "",
+    "animation6": "animation.gronckle.sneak",
+    "animation7": "animation.gronckle.sprint",
+    "animation8": "animation.gronckle.flight",
+    "animation9": "animation.gronckle.sprint",
+    "animation10": "",
+    "enable2": true,
+    "enable3": true,
+    "enable4": true,
+    "enable5": false,
+    "enable6": true,
+    "enable7": true,
+    "enable8": true,
+    "enable9": true,
+    "enable10": false,
+    "breedable": true,
+    "tameable": true,
+    "disableDeathRotation": false,
+    "headMovement": false,
+    "eyeHeight": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "height": 1.0,
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      },
+      {
+        "value": "snowy_tundra"
+      },
+      {
+        "value": "mutated_plains"
+      },
+      {
+        "value": "mutated_extreme_hills_with_trees"
+      },
+      {
+        "value": "smaller_extreme_hills"
+      },
+      {
+        "value": "snowy_mountains"
+      },
+      {
+        "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "mutated_taiga"
+      },
+      {
+        "value": "stony_peaks"
+      },
+      {
+        "value": "stone_beach"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

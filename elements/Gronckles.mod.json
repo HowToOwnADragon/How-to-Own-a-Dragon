@@ -8,52 +8,100 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:GronckleBlueYellow"
+        "value": "CUSTOM:AdolescentGronckleBlueYellowFemale"
       },
       {
-        "value": "CUSTOM:GronckleOrangeRed"
+        "value": "CUSTOM:AdolescentGronckleBlueYellowMale"
       },
       {
-        "value": "CUSTOM:GroncklePink"
+        "value": "CUSTOM:AdolescentGronckleOrangeRedFemale"
       },
       {
-        "value": "CUSTOM:AdolecsentGronckleOrangeRed"
+        "value": "CUSTOM:AdolescentGronckleOrangeRedMale"
       },
       {
-        "value": "CUSTOM:AdolecsentGroncklePink"
+        "value": "CUSTOM:AdolescentGroncklePinkFemale"
       },
       {
-        "value": "CUSTOM:AdolescentGronckleBlueYellow"
+        "value": "CUSTOM:AdolescentGroncklePinkMale"
       },
       {
-        "value": "CUSTOM:AdolescentMeatlug"
+        "value": "CUSTOM:AdolescentMeatlugFemale"
       },
       {
-        "value": "CUSTOM:BabyGronckleBlueYellow"
+        "value": "CUSTOM:AdolescentMeatlugMale"
       },
       {
-        "value": "CUSTOM:BabyGronckleOrangeRed"
+        "value": "CUSTOM:BabyGronckleBlueYellowFemale"
       },
       {
-        "value": "CUSTOM:BabyGroncklePink"
+        "value": "CUSTOM:BabyGronckleBlueYellowMale"
       },
       {
-        "value": "CUSTOM:BabyMeatlug"
+        "value": "CUSTOM:BabyGronckleOrangeRedFemale"
       },
       {
-        "value": "CUSTOM:JuvenileGronckleBlueYellow"
+        "value": "CUSTOM:BabyGronckleOrangeRedMale"
       },
       {
-        "value": "CUSTOM:JuvenileGronckleOrangeRed"
+        "value": "CUSTOM:BabyGroncklePinkFemale"
       },
       {
-        "value": "CUSTOM:JuvenileGroncklePink"
+        "value": "CUSTOM:BabyGroncklePinkMale"
       },
       {
-        "value": "CUSTOM:JuvenileMeatlug"
+        "value": "CUSTOM:BabyMeatlugFemale"
       },
       {
-        "value": "CUSTOM:Meatlug"
+        "value": "CUSTOM:BabyMeatlugMale"
+      },
+      {
+        "value": "CUSTOM:GronckleBlueYellowFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleBlueYellowMale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedMale"
+      },
+      {
+        "value": "CUSTOM:GroncklePinkFemale"
+      },
+      {
+        "value": "CUSTOM:GroncklePinkMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleBlueYellowFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleBlueYellowMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleOrangeRedFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleOrangeRedMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGroncklePinkFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGroncklePinkMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileMeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileMeatlugMale"
+      },
+      {
+        "value": "CUSTOM:MeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:MeatlugMale"
       }
     ],
     "biomes": [],

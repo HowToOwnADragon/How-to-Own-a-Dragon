@@ -13,6 +13,8 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -22,10 +24,14 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.BabyMeatlugEntity;
-import net.mcreator.howtoownadragon.entity.BabyGroncklePinkEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleOrangeRedEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleBlueYellowEntity;
+import net.mcreator.howtoownadragon.entity.MeatlugMaleEntity;
+import net.mcreator.howtoownadragon.entity.MeatlugFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GroncklePinkMaleEntity;
+import net.mcreator.howtoownadragon.entity.GroncklePinkFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleOrangeRedMaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleOrangeRedFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
 
 import javax.annotation.Nullable;
 
@@ -56,48 +62,100 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 			}
 		}.checkGamemode(sourceentity)) {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_pink_tag")))) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyGroncklePinkEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
+				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new GroncklePinkFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_PINK_FEMALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new GroncklePinkMaleEntity(HowToOwnADragonModEntities.GRONCKLE_PINK_MALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				}
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_blue_yellow_tag")))) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyGronckleBlueYellowEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
+				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new GronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new GronckleBlueYellowFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_FEMALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				}
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_orange_red_tag")))) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyGronckleOrangeRedEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
+				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new GronckleOrangeRedFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_FEMALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new GronckleOrangeRedMaleEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_MALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				}
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:meatlug_tag")))) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyMeatlugEntity(HowToOwnADragonModEntities.BABY_MEATLUG.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
+				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new MeatlugMaleEntity(HowToOwnADragonModEntities.MEATLUG_MALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = new MeatlugFemaleEntity(HowToOwnADragonModEntities.MEATLUG_FEMALE.get(), _level);
+						entityToSpawn.moveTo(x, y, z, 0, 0);
+						entityToSpawn.setYBodyRot(0);
+						entityToSpawn.setYHeadRot(0);
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+						if (entityToSpawn instanceof Mob _mobToSpawn)
+							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				}
 			}
 		}

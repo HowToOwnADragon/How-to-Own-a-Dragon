@@ -8,16 +8,28 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:GronckleOrangeRed"
+        "value": "CUSTOM:AdolescentGronckleOrangeRedFemale"
       },
       {
-        "value": "CUSTOM:AdolecsentGronckleOrangeRed"
+        "value": "CUSTOM:AdolescentGronckleOrangeRedMale"
       },
       {
-        "value": "CUSTOM:BabyGronckleOrangeRed"
+        "value": "CUSTOM:BabyGronckleOrangeRedFemale"
       },
       {
-        "value": "CUSTOM:JuvenileGronckleOrangeRed"
+        "value": "CUSTOM:BabyGronckleOrangeRedMale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleOrangeRedFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleOrangeRedMale"
       }
     ],
     "biomes": [],

@@ -1,9 +1,13 @@
 {
   "replace": false,
   "values": [
-    "how_to_own_a_dragon:adolescent_gronckle_blue_yellow",
-    "how_to_own_a_dragon:baby_gronckle_blue_yellow",
-    "how_to_own_a_dragon:gronckle_blue_yellow",
-    "how_to_own_a_dragon:juvenile_gronckle_blue_yellow"
+    "how_to_own_a_dragon:juvenile_gronckle_blue_yellow_female",
+    "how_to_own_a_dragon:adolescent_gronckle_blue_yellow_male",
+    "how_to_own_a_dragon:adolescent_gronckle_blue_yellow_female",
+    "how_to_own_a_dragon:juvenile_gronckle_blue_yellow_male",
+    "how_to_own_a_dragon:baby_gronckle_blue_yellow_female",
+    "how_to_own_a_dragon:gronckle_blue_yellow_male",
+    "how_to_own_a_dragon:baby_gronckle_blue_yellow_male",
+    "how_to_own_a_dragon:gronckle_blue_yellow_female"
   ]
 }

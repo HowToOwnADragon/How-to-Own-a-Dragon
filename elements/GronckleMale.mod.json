@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:GronckleBlueYellowMale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedMale"
+      },
+      {
+        "value": "CUSTOM:GroncklePinkMale"
+      },
+      {
+        "value": "CUSTOM:MeatlugMale"
+      }
+    ],
+    "biomes": [],
+    "name": "gronckle_male",
+    "namespace": "mod"
+  }
+}

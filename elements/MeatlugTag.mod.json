@@ -8,16 +8,28 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:Meatlug"
+        "value": "CUSTOM:AdolescentMeatlugFemale"
       },
       {
-        "value": "CUSTOM:AdolescentMeatlug"
+        "value": "CUSTOM:AdolescentMeatlugMale"
       },
       {
-        "value": "CUSTOM:BabyMeatlug"
+        "value": "CUSTOM:BabyMeatlugFemale"
       },
       {
-        "value": "CUSTOM:JuvenileMeatlug"
+        "value": "CUSTOM:BabyMeatlugMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileMeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileMeatlugMale"
+      },
+      {
+        "value": "CUSTOM:MeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:MeatlugMale"
       }
     ],
     "biomes": [],
