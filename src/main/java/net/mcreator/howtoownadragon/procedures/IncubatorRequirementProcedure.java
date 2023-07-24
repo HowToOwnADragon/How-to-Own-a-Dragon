@@ -6,6 +6,6 @@ import net.mcreator.howtoownadragon.network.HowToOwnADragonModVariables;
 
 public class IncubatorRequirementProcedure {
 	public static String execute(LevelAccessor world) {
-		return HowToOwnADragonModVariables.MapVariables.get(world).IncubatorRequirement;
+		return HowToOwnADragonModVariables.WorldVariables.get(world).IncubatorRequirement;
 	}
 }

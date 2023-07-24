@@ -271,6 +271,57 @@ public class IncubatorTickProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
+		}.getValue(world, BlockPos.containing(x, y, z), "recipe") >= 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("timer", (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "timer") + 1));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = ((new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "timer")) / (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "MAXTIME"))) * 100;
+			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "recipe") < 0) {
+			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = 0;
+			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
+		}
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
 		}.getValue(world, BlockPos.containing(x, y, z), "recipe") >= 0 && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -614,50 +665,6 @@ public class IncubatorTickProcedure {
 				}
 			}
 		}
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "recipe") >= 0) {
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("timer", (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "timer") + 1));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			HowToOwnADragonModVariables.MapVariables.get(world).TimerLeft = ((new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "timer")) / (new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "MAXTIME"))) * 100;
-			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
-		} else {
-			HowToOwnADragonModVariables.MapVariables.get(world).TimerLeft = 0;
-			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
-		}
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -691,11 +698,11 @@ public class IncubatorTickProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == HowToOwnADragonModBlocks.READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG.get().asItem()) {
-			HowToOwnADragonModVariables.MapVariables.get(world).IncubatorRequirement = "Lava Bucket";
-			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
+			HowToOwnADragonModVariables.WorldVariables.get(world).IncubatorRequirement = "Lava Bucket";
+			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
 		} else {
-			HowToOwnADragonModVariables.MapVariables.get(world).IncubatorRequirement = "Nothing";
-			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
+			HowToOwnADragonModVariables.WorldVariables.get(world).IncubatorRequirement = "Nothing";
+			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
 		}
 	}
 }
