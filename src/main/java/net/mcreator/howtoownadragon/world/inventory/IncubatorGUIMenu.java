@@ -75,11 +75,11 @@ public class IncubatorGUIMenu extends AbstractContainerMenu implements Supplier<
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 26) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 40) {
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 53) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 58) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 97, 35) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 22) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

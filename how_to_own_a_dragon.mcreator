@@ -2357,71 +2357,6 @@
       "path": "~/Dragons/Gronckle"
     },
     {
-      "name": "IncubatorGUI",
-      "type": "gui",
-      "sortid": 161,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "incubator_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/IncubatorGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/IncubatorGUIScreen.java"
-        ]
-      },
-      "path": "~/Items/Incubator"
-    },
-    {
-      "name": "IncubatorTick",
-      "type": "procedure",
-      "sortid": 162,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "incubator_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/IncubatorTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator"
-    },
-    {
-      "name": "Incubator",
-      "type": "block",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "incubator",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/IncubatorBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/incubator.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/entity/IncubatorBlockEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/incubator.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/incubator.json"
-        ]
-      },
-      "path": "~/Items/Incubator"
-    },
-    {
       "name": "IncubatorRecipe",
       "type": "recipe",
       "sortid": 164,
@@ -6742,6 +6677,214 @@
         ]
       },
       "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+    },
+    {
+      "name": "ReadyToHatchMeatlugEgg",
+      "type": "block",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ready_to_hatch_meatlug_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_meatlug_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchMeatlugEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_meatlug_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_meatlug_egg.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+    },
+    {
+      "name": "ReadyToHatchBlueYellowGronckleEgg",
+      "type": "block",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ready_to_hatch_blue_yellow_gronckle_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_blue_yellow_gronckle_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchBlueYellowGronckleEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_blue_yellow_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_blue_yellow_gronckle_egg.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+    },
+    {
+      "name": "ReadyToHatchOrangeRedGronckleEgg",
+      "type": "block",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ready_to_hatch_orange_red_gronckle_egg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchOrangeRedGronckleEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_orange_red_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_orange_red_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_orange_red_gronckle_egg.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+    },
+    {
+      "name": "ReadyToHatchPinkGronckleEgg",
+      "type": "block",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ready_to_hatch_pink_gronckle_egg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchPinkGronckleEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_pink_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_pink_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_pink_gronckle_egg.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+    },
+    {
+      "name": "IncubatorTick",
+      "type": "procedure",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incubator_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/IncubatorTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator"
+    },
+    {
+      "name": "IncubatorGUI",
+      "type": "gui",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incubator_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/IncubatorGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/IncubatorGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/IncubatorGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Items/Incubator"
+    },
+    {
+      "name": "Incubator",
+      "type": "block",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incubator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/IncubatorBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/incubator.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/entity/IncubatorBlockEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/incubator.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/incubator.json"
+        ]
+      },
+      "path": "~/Items/Incubator"
+    },
+    {
+      "name": "HatchButton",
+      "type": "procedure",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hatch_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/HatchButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator"
+    },
+    {
+      "name": "TimerShow",
+      "type": "procedure",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_show",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TimerShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator"
+    },
+    {
+      "name": "IncubatorRequirement",
+      "type": "procedure",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incubator_requirement",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/IncubatorRequirementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator"
     }
   ],
   "variable_elements": [
@@ -6756,6 +6899,18 @@
       "type": "number",
       "scope": "world",
       "value": "0"
+    },
+    {
+      "name": "TimerLeft",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "IncubatorRequirement",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -6770,6 +6925,7 @@
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "entity.how_to_own_a_dragon.adolescent_gronckle_orange_red_male": "Adolescent Gronckle",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
+      "gui.how_to_own_a_dragon.incubator_gui.label_requirement": "Requirement:",
       "item.how_to_own_a_dragon.baby_gronckle_orange_red_female_spawn_egg": "Baby Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_pink_female_spawn_egg": "Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_female": "Juvenile Gronckle",
@@ -6783,6 +6939,7 @@
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "effect.how_to_own_a_dragon.granite_growing": "Growing",
+      "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_orange_red_male_spawn_egg": "Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_female_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "item_group.how_to_own_a_dragon.items": "Items",
@@ -6801,6 +6958,7 @@
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "item.how_to_own_a_dragon.gronckle_spawning_egg": "Gronckle",
       "entity.how_to_own_a_dragon.juvenile_meatlug_female": "Juvenile Gronckle",
+      "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
@@ -6820,16 +6978,19 @@
       "entity.how_to_own_a_dragon.adolescent_meatlug_male": "Adolescent Gronckle",
       "entity.how_to_own_a_dragon.baby_meatlug_male": "Baby Gronckle",
       "entity.how_to_own_a_dragon.gronckle_blue_yellow_male": "Gronckle",
+      "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "effect.how_to_own_a_dragon.bucket_of_lava_growing": "Growing",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
+      "block.how_to_own_a_dragon.ready_to_hatch_meatlug_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.meatlug_male_spawn_egg": "Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_pink_male_spawn_egg": "Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_blue_yellow_female": "Baby Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.button_hatch": "Hatch",
       "item.how_to_own_a_dragon.adolescent_gronckle_orange_red_male_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.juvenile_meatlug_female_spawn_egg": "Juvenile Gronckle Spawn Egg",
+      "block.how_to_own_a_dragon.ready_to_hatch_blue_yellow_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "advancements.hidden_world_root.title": "Hidden World",
       "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
@@ -6844,8 +7005,8 @@
       "entity.how_to_own_a_dragon.baby_meatlug_female": "Baby Gronckle",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
-      "gui.how_to_own_a_dragon.incubator_gui.label_incubator": "Incubator",
       "entity.how_to_own_a_dragon.baby_gronckle_orange_red_male": "Baby Gronckle",
+      "gui.how_to_own_a_dragon.incubator_gui.label_incubator": "Incubator",
       "item.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_female_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.adolescent_gronckle_orange_red_female_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "effect.how_to_own_a_dragon.cobblestone_growing": "Growing",
@@ -6856,6 +7017,7 @@
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
+      "block.how_to_own_a_dragon.ready_to_hatch_orange_red_gronckle_egg": "Gronckle Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_pink_female": "Baby Gronckle",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
@@ -6874,6 +7036,7 @@
       "item.how_to_own_a_dragon.adolescent_gronckle_pink_male_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "block.how_to_own_a_dragon.blue_yellow_gronckle_egg": "Gronckle Egg",
+      "gui.how_to_own_a_dragon.incubator_gui.label_time_left": "Progress:",
       "item.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male": "Juvenile Gronckle",
       "entity.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_male": "Adolescent Gronckle",

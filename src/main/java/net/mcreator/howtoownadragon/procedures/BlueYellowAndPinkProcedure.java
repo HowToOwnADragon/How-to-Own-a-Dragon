@@ -19,8 +19,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlocks;
-import net.mcreator.howtoownadragon.entity.MeatlugFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GroncklePinkMaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
 
 import javax.annotation.Nullable;
 
@@ -42,7 +42,7 @@ public class BlueYellowAndPinkProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof MeatlugFemaleEntity) {
+		if (entity instanceof GronckleBlueYellowFemaleEntity) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
 				if (((Entity) world.getEntitiesOfClass(GroncklePinkMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -60,9 +60,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
@@ -82,9 +82,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
@@ -104,9 +104,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
@@ -126,9 +126,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
@@ -148,9 +148,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
@@ -170,9 +170,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
@@ -192,9 +192,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
@@ -214,9 +214,9 @@ public class BlueYellowAndPinkProcedure {
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity)
 						_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.MEATLUGS_EGG.get().defaultBlockState(), 3);
+						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 				}
 			}

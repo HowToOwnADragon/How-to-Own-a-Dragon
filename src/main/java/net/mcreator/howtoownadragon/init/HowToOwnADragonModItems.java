@@ -64,7 +64,6 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> RUSTY_DRAGON_PROOF_METAL_BARS = block(HowToOwnADragonModBlocks.RUSTY_DRAGON_PROOF_METAL_BARS);
 	public static final RegistryObject<Item> GRONCKLE_SPAWNING_EGG = REGISTRY.register("gronckle_spawning_egg", () -> new GronckleSpawningEggItem());
 	public static final RegistryObject<Item> REAPER_SPAWN_BLOCK = block(HowToOwnADragonModBlocks.REAPER_SPAWN_BLOCK);
-	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
 	public static final RegistryObject<Item> MEATLUGS_EGG = block(HowToOwnADragonModBlocks.MEATLUGS_EGG);
 	public static final RegistryObject<Item> BLUE_YELLOW_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG);
 	public static final RegistryObject<Item> ORANGE_RED_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG);
@@ -128,6 +127,11 @@ public class HowToOwnADragonModItems {
 			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_MALE, -6999808, -7986432, new Item.Properties()));
 	public static final RegistryObject<Item> BABY_GRONCKLE_ORANGE_RED_FEMALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_orange_red_female_spawn_egg",
 			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_FEMALE, -6999808, -7986432, new Item.Properties()));
+	public static final RegistryObject<Item> READY_TO_HATCH_MEATLUG_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_MEATLUG_EGG);
+	public static final RegistryObject<Item> READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG);
+	public static final RegistryObject<Item> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG);
+	public static final RegistryObject<Item> READY_TO_HATCH_PINK_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_PINK_GRONCKLE_EGG);
+	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
