@@ -654,6 +654,9 @@ public class IncubatorTickProcedure {
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "MAXTIME"))) * 100;
 			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
+		} else {
+			HowToOwnADragonModVariables.MapVariables.get(world).TimerLeft = 0;
+			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
 		}
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -688,7 +691,7 @@ public class IncubatorTickProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == HowToOwnADragonModBlocks.READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG.get().asItem()) {
-			HowToOwnADragonModVariables.MapVariables.get(world).IncubatorRequirement = "LavaBucket";
+			HowToOwnADragonModVariables.MapVariables.get(world).IncubatorRequirement = "Lava Bucket";
 			HowToOwnADragonModVariables.MapVariables.get(world).syncData(world);
 		} else {
 			HowToOwnADragonModVariables.MapVariables.get(world).IncubatorRequirement = "Nothing";

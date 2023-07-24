@@ -10,8 +10,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
@@ -73,10 +71,10 @@ public class HatchButtonProcedure {
 					});
 				}
 			}
-			if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+			if (Math.random() <= 0.4) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyMeatlugMaleEntity(HowToOwnADragonModEntities.BABY_MEATLUG_MALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -84,10 +82,10 @@ public class HatchButtonProcedure {
 						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+			} else if (Math.random() >= 0.5 && Math.random() < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyMeatlugFemaleEntity(HowToOwnADragonModEntities.BABY_MEATLUG_FEMALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -139,10 +137,10 @@ public class HatchButtonProcedure {
 					});
 				}
 			}
-			if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+			if (Math.random() <= 0.4) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyGroncklePinkMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_MALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -150,10 +148,10 @@ public class HatchButtonProcedure {
 						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+			} else if (Math.random() >= 0.5 && Math.random() < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyGroncklePinkFemaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_FEMALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -205,10 +203,10 @@ public class HatchButtonProcedure {
 					});
 				}
 			}
-			if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+			if (Math.random() <= 0.4) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyGronckleOrangeRedMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_MALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -216,10 +214,10 @@ public class HatchButtonProcedure {
 						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+			} else if (Math.random() >= 0.5 && Math.random() < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyGronckleOrangeRedFemaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_FEMALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -271,10 +269,10 @@ public class HatchButtonProcedure {
 					});
 				}
 			}
-			if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+			if (Math.random() <= 0.4) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new BabyGronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -282,10 +280,10 @@ public class HatchButtonProcedure {
 						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					_level.addFreshEntity(entityToSpawn);
 				}
-			} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
+			} else if (Math.random() >= 0.5 && Math.random() < 1) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new GronckleBlueYellowFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_FEMALE.get(), _level);
-					entityToSpawn.moveTo((x - 1), y, (z - 1), 0, 0);
+					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					entityToSpawn.setDeltaMovement(0, 0, 0);
