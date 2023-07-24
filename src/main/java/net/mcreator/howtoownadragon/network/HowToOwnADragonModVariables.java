@@ -94,7 +94,7 @@ public class HowToOwnADragonModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "how_to_own_a_dragon_mapvars";
 		public double TimerLeft = 0;
-		public String IncubatorRequirement = "\"\"";
+		public String IncubatorRequirement = "-";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();

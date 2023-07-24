@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "how_to_own_a_dragon:custom/haystackincubator",
   "textures": {
-    "down": "how_to_own_a_dragon:block/reaper_portal",
-    "up": "how_to_own_a_dragon:block/reaper_portal",
-    "north": "how_to_own_a_dragon:block/reaper_portal",
-    "east": "how_to_own_a_dragon:block/reaper_portal",
-    "south": "how_to_own_a_dragon:block/reaper_portal",
-    "west": "how_to_own_a_dragon:block/reaper_portal",
-    "particle": "how_to_own_a_dragon:block/reaper_portal"
+    "all": "how_to_own_a_dragon:block/haystackincubator",
+    "particle": "how_to_own_a_dragon:block/haystackincubator",
+    "0": "how_to_own_a_dragon:block/haystackincubator"
   },
   "render_type": "solid"
 }
