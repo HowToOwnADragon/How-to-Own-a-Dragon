@@ -6885,6 +6885,20 @@
         ]
       },
       "path": "~/Items/Incubator"
+    },
+    {
+      "name": "BreedCooldown",
+      "type": "potioneffect",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breed_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/potion/BreedCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding"
     }
   ],
   "variable_elements": [
@@ -6935,9 +6949,9 @@
       "item.how_to_own_a_dragon.juvenile_gronckle_orange_red_female_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.pink_gronckle_egg": "Gronckle Egg",
-      "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Gronckle Spawn Egg",
-      "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
+      "key.how_to_own_a_dragon.fly_up": "Fly Up",
+      "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Gronckle Spawn Egg",
       "effect.how_to_own_a_dragon.granite_growing": "Growing",
       "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_orange_red_male_spawn_egg": "Gronckle Spawn Egg",
@@ -7010,6 +7024,7 @@
       "item.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_female_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.adolescent_gronckle_orange_red_female_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "effect.how_to_own_a_dragon.cobblestone_growing": "Growing",
+      "effect.how_to_own_a_dragon.breed_cooldown": "cooldown",
       "entity.how_to_own_a_dragon.juvenile_meatlug_male": "Juvenile Gronckle",
       "item.how_to_own_a_dragon.juvenile_gronckle_pink_female_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "advancements.picking_up_dragon_eye.title": "Information?!",
@@ -7255,7 +7270,7 @@
   "workspaceSettings": {
     "modid": "how_to_own_a_dragon",
     "modName": "How to Own a Dragon",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Welcome to the Dragon world, we are trying to make this mod as canon as possible to the original HTTYD Movies and series",
     "author": "MeAlam, Justindraak1",
     "websiteURL": "https://howtoownadragon.miraheze.org/wiki/Main_Page",

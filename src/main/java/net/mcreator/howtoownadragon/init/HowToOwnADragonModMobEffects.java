@@ -21,6 +21,7 @@ import net.mcreator.howtoownadragon.potion.DeepslateGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.CobblestoneGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.CobbledDeepslateGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.BucketOfLavaGrowingMobEffect;
+import net.mcreator.howtoownadragon.potion.BreedCooldownMobEffect;
 import net.mcreator.howtoownadragon.potion.AndesiteGrowingMobEffect;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -38,4 +39,5 @@ public class HowToOwnADragonModMobEffects {
 	public static final RegistryObject<MobEffect> IRON_INGOT_GROWING = REGISTRY.register("iron_ingot_growing", () -> new IronIngotGrowingMobEffect());
 	public static final RegistryObject<MobEffect> SAND_STONE_GROWING = REGISTRY.register("sand_stone_growing", () -> new SandStoneGrowingMobEffect());
 	public static final RegistryObject<MobEffect> IN_LOVE = REGISTRY.register("in_love", () -> new InLoveMobEffect());
+	public static final RegistryObject<MobEffect> BREED_COOLDOWN = REGISTRY.register("breed_cooldown", () -> new BreedCooldownMobEffect());
 }
