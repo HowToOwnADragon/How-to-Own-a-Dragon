@@ -2,8 +2,8 @@
   "_fv": 43,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Juvenile Gronckle",
-    "mobLabel": "Female",
+    "mobName": "Female Juvenile Gronckle",
+    "mobLabel": "",
     "mobModelTexture": "juvigroncklepink.png",
     "mobModelGlowTexture": "",
     "visualScale": {

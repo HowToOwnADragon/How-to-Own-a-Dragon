@@ -3,7 +3,7 @@
   "_type": "animatedentity",
   "definition": {
     "mobName": "Baby Gronckle",
-    "mobLabel": "Male",
+    "mobLabel": "",
     "mobModelTexture": "babygronckleorange.png",
     "mobModelGlowTexture": "",
     "visualScale": {

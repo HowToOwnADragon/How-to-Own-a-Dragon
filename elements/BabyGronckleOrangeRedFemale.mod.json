@@ -2,8 +2,8 @@
   "_fv": 43,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Baby Gronckle",
-    "mobLabel": "Female",
+    "mobName": "Female Baby Gronckle",
+    "mobLabel": "",
     "mobModelTexture": "babygronckleorange.png",
     "mobModelGlowTexture": "",
     "visualScale": {

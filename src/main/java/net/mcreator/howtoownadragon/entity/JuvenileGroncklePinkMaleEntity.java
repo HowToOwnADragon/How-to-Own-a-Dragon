@@ -57,7 +57,6 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
@@ -87,8 +86,6 @@ public class JuvenileGroncklePinkMaleEntity extends TamableAnimal implements Geo
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("Male"));
-		setCustomNameVisible(true);
 		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}

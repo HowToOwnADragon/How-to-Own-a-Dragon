@@ -715,6 +715,17 @@ public class IncubatorTickProcedure {
 		}.getAmount(world, BlockPos.containing(x, y, z), 2) >= 1) {
 			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = "Done";
 			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
+		} else if (new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, BlockPos.containing(x, y, z), 0) >= 1) {
+			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = "Nothing yet";
+			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
 		} else {
 			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = "No egg found";
 			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);

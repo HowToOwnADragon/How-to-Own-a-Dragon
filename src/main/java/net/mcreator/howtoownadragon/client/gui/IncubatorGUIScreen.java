@@ -73,14 +73,14 @@ public class IncubatorGUIScreen extends AbstractContainerScreen<IncubatorGUIMenu
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_incubator"), 7, 8, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_time_left"), 107, 60, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_time_left"), 115, 59, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_requirement"), 106, 8, -13421773);
 		this.font.draw(poseStack,
 
 				IncubatorRequirementProcedure.execute(world), 106, 17, -13421773);
 		this.font.draw(poseStack,
 
-				TimerShowProcedure.execute(world), 106, 71, -13421773);
+				TimerShowProcedure.execute(world), 115, 68, -13421773);
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class IncubatorGUIScreen extends AbstractContainerScreen<IncubatorGUIMenu
 				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new IncubatorGUIButtonMessage(0, x, y, z));
 				IncubatorGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 115, this.topPos + 39, 51, 20).build();
+		}).bounds(this.leftPos + 114, this.topPos + 38, 51, 20).build();
 		guistate.put("button:button_hatch", button_hatch);
 		this.addRenderableWidget(button_hatch);
 	}

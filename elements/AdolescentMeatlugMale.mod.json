@@ -2,8 +2,8 @@
   "_fv": 43,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Adolescent Gronckle",
-    "mobLabel": "Male",
+    "mobName": "Male Adolescent Gronckle",
+    "mobLabel": "",
     "mobModelTexture": "adomeatlug.png",
     "mobModelGlowTexture": "",
     "visualScale": {
