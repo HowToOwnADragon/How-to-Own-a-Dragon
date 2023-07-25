@@ -57,6 +57,7 @@ public class HowToOwnADragonModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPENT_TEST = new KeyMapping("key.how_to_own_a_dragon.opent_test", GLFW.GLFW_KEY_G, "key.categories.misc");
 	private static long FLY_UP_LASTPRESS = 0;
 	private static long FLY_DOWN_LASTPRESS = 0;
 
@@ -64,6 +65,7 @@ public class HowToOwnADragonModKeyMappings {
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(FLY_UP);
 		event.register(FLY_DOWN);
+		event.register(OPENT_TEST);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})

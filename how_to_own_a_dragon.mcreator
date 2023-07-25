@@ -6899,6 +6899,20 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding"
+    },
+    {
+      "name": "OpentTest",
+      "type": "keybind",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opent_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/OpentTestMessage.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [
@@ -6949,9 +6963,9 @@
       "item.how_to_own_a_dragon.juvenile_gronckle_orange_red_female_spawn_egg": "Female Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.pink_gronckle_egg": "Gronckle Egg",
-      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
-      "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Female Gronckle Spawn Egg",
+      "key.how_to_own_a_dragon.fly_up": "Fly Up",
+      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "effect.how_to_own_a_dragon.granite_growing": "Growing",
       "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_orange_red_male_spawn_egg": "Male Gronckle Spawn Egg",
@@ -6994,6 +7008,7 @@
       "entity.how_to_own_a_dragon.gronckle_blue_yellow_male": "Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
       "item_group.how_to_own_a_dragon.tools": "Tools",
+      "key.how_to_own_a_dragon.opent_test": "Opent Test",
       "effect.how_to_own_a_dragon.bucket_of_lava_growing": "Growing",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
