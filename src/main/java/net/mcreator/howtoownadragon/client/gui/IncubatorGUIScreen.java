@@ -74,14 +74,13 @@ public class IncubatorGUIScreen extends AbstractContainerScreen<IncubatorGUIMenu
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_incubator"), 7, 8, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_time_left"), 107, 60, -13421773);
-		this.font.draw(poseStack,
-
-				TimerShowProcedure.execute(world), 107, 70, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_empty"), 123, 70, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_requirement"), 106, 8, -13421773);
 		this.font.draw(poseStack,
 
 				IncubatorRequirementProcedure.execute(world), 106, 17, -13421773);
+		this.font.draw(poseStack,
+
+				TimerShowProcedure.execute(world), 106, 71, -13421773);
 	}
 
 	@Override

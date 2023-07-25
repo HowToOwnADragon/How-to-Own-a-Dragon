@@ -6,6 +6,6 @@ import net.mcreator.howtoownadragon.network.HowToOwnADragonModVariables;
 
 public class TimerShowProcedure {
 	public static String execute(LevelAccessor world) {
-		return new java.text.DecimalFormat("##").format(HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft) + "";
+		return HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft;
 	}
 }

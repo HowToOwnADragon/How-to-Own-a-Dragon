@@ -8,31 +8,31 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:stone"
     },
     "1": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:deepslate"
     },
     "2": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:stone"
     },
     "3": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:deepslate"
     },
     "4": {
-      "item": "minecraft:lava_bucket"
+      "item": "minecraft:bucket"
     },
     "5": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:deepslate"
     },
     "6": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:stone"
     },
     "7": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:deepslate"
     },
     "8": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:stone"
     }
   },
   "result": {

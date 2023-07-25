@@ -64,7 +64,6 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> RUSTY_DRAGON_PROOF_METAL_BARS = block(HowToOwnADragonModBlocks.RUSTY_DRAGON_PROOF_METAL_BARS);
 	public static final RegistryObject<Item> GRONCKLE_SPAWNING_EGG = REGISTRY.register("gronckle_spawning_egg", () -> new GronckleSpawningEggItem());
 	public static final RegistryObject<Item> REAPER_SPAWN_BLOCK = block(HowToOwnADragonModBlocks.REAPER_SPAWN_BLOCK);
-	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
 	public static final RegistryObject<Item> MEATLUGS_EGG = block(HowToOwnADragonModBlocks.MEATLUGS_EGG);
 	public static final RegistryObject<Item> BLUE_YELLOW_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG);
 	public static final RegistryObject<Item> ORANGE_RED_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG);
@@ -132,6 +131,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG);
 	public static final RegistryObject<Item> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG);
 	public static final RegistryObject<Item> READY_TO_HATCH_PINK_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_PINK_GRONCKLE_EGG);
+	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

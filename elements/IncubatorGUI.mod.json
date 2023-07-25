@@ -92,7 +92,7 @@
         "data": {
           "name": "label_time_left",
           "text": {
-            "fixedValue": "Progress:"
+            "fixedValue": "Time total:"
           },
           "color": {
             "value": -13421773,
@@ -100,37 +100,6 @@
           },
           "x": 233,
           "y": 97
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_timer_show",
-          "text": {
-            "fixedValue": "",
-            "name": "TimerShow"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 233,
-          "y": 107
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_empty",
-          "text": {
-            "fixedValue": "%"
-          },
-          "color": {
-            "value": -13421773,
-            "falpha": 0.0
-          },
-          "x": 249,
-          "y": 107
         }
       },
       {
@@ -162,6 +131,22 @@
           },
           "x": 232,
           "y": 54
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_timer_show",
+          "text": {
+            "fixedValue": "",
+            "name": "TimerShow"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 232,
+          "y": 108
         }
       }
     ],

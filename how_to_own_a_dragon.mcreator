@@ -2108,7 +2108,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckles.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "ReaperSpawnBlockUpdateTick",
@@ -2240,7 +2240,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_pink_tag.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "GronckleBlueYellowTag",
@@ -2254,7 +2254,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_blue_yellow_tag.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "GronckleOrangeRedTag",
@@ -2268,7 +2268,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_orange_red_tag.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "MeatlugTag",
@@ -2282,7 +2282,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/meatlug_tag.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "GronckleDiesNotGrown",
@@ -2382,7 +2382,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/StoneGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "CobblestoneGrowing",
@@ -2396,7 +2396,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/CobblestoneGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "DeepslateGrowing",
@@ -2410,7 +2410,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/DeepslateGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "CobbledDeepslateGrowing",
@@ -2424,7 +2424,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/CobbledDeepslateGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "DioriteGrowing",
@@ -2438,7 +2438,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/DioriteGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "GraniteGrowing",
@@ -2452,7 +2452,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/GraniteGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "AndesiteGrowing",
@@ -2466,7 +2466,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/AndesiteGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "BucketOfLavaGrowing",
@@ -2480,7 +2480,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/BucketOfLavaGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "IronIngotGrowing",
@@ -2494,7 +2494,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/IronIngotGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "SandStoneGrowing",
@@ -2508,7 +2508,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/SandStoneGrowingMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "StoneGrowingEffectExpires",
@@ -2528,7 +2528,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "CobblestoneGrowingExpires",
@@ -2548,7 +2548,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "DeepslateGrowingExpires",
@@ -2568,7 +2568,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "CobbledDeepslateGrowingExpires",
@@ -2588,7 +2588,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "DioriteGrowingExpires",
@@ -2608,7 +2608,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "GraniteGrowingExpires",
@@ -2628,7 +2628,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "AndesiteGrowingExpires",
@@ -2648,7 +2648,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "BucketOfLavaGrowingExpires",
@@ -2668,7 +2668,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "IronIngotGrowingExpires",
@@ -2688,7 +2688,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "SandStoneGrowingExpires",
@@ -2708,7 +2708,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Effects"
+      "path": "~/Dragons/Gronckle/GronckleEffects"
     },
     {
       "name": "GronckleGrowingTickRate",
@@ -2744,7 +2744,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages"
     },
     {
       "name": "TameGrownUpWhenSpawned",
@@ -2776,7 +2776,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages"
     },
     {
       "name": "MeatlugsEgg",
@@ -2793,7 +2793,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlugs_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "BlueYellowGronckleEgg",
@@ -2810,7 +2810,7 @@
           "src/main/java/net/mcreator/howtoownadragon/block/BlueYellowGronckleEggBlock.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "OrangeRedGronckleEgg",
@@ -2827,7 +2827,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/orange_red_gronckle_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "PinkGronckleEgg",
@@ -2844,7 +2844,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/pink_gronckle_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "InLove",
@@ -2858,7 +2858,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/InLoveMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
     },
     {
       "name": "MeatlugAndPink",
@@ -2898,7 +2898,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "MeatlugMale",
@@ -2915,7 +2915,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlug_male_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "MeatlugFemale",
@@ -2932,7 +2932,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/MeatlugFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GronckleBlueYellowMale",
@@ -2950,7 +2950,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GronckleBlueYellowFemale",
@@ -2968,7 +2968,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GroncklePinkMale",
@@ -2986,7 +2986,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_pink_male_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GroncklePinkFemale",
@@ -3004,7 +3004,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GroncklePinkFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GronckleOrangeRedMale",
@@ -3022,7 +3022,7 @@
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_male_biome_modifier.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GronckleOrangeRedFemale",
@@ -3040,7 +3040,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_female_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentMeatlugMale",
@@ -3057,7 +3057,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentMeatlugMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentMeatlugFemale",
@@ -3074,7 +3074,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentMeatlugFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentGronckleBlueYellowMale",
@@ -3091,7 +3091,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_blue_yellow_male_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentGronckleBlueYellowFemale",
@@ -3108,7 +3108,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentGroncklePinkMale",
@@ -3125,7 +3125,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGroncklePinkMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentGroncklePinkFemale",
@@ -3142,7 +3142,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGroncklePinkFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentGronckleOrangeRedMale",
@@ -3159,7 +3159,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedMaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "AdolescentGronckleOrangeRedFemale",
@@ -3176,7 +3176,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileMeatlugMale",
@@ -3193,7 +3193,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_meatlug_male_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileMeatlugFemale",
@@ -3210,7 +3210,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileMeatlugFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileGronckleBlueYellowMale",
@@ -3227,7 +3227,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleBlueYellowMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileGronckleBlueYellowFemale",
@@ -3244,7 +3244,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleBlueYellowFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileGroncklePinkMale",
@@ -3261,7 +3261,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGroncklePinkMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileGroncklePinkFemale",
@@ -3278,7 +3278,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGroncklePinkFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileGronckleOrangeRedMale",
@@ -3295,7 +3295,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_orange_red_male_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "JuvenileGronckleOrangeRedFemale",
@@ -3312,7 +3312,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleOrangeRedFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyMeatlugMale",
@@ -3329,7 +3329,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyMeatlugMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyMeatlugFemale",
@@ -3346,7 +3346,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_meatlug_female_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyGronckleBlueYellowMale",
@@ -3363,7 +3363,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_blue_yellow_male_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyGronckleBlueYellowFemale",
@@ -3380,7 +3380,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleBlueYellowFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyGroncklePinkMale",
@@ -3397,7 +3397,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyGroncklePinkMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyGroncklePinkFemale",
@@ -3414,7 +3414,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyGroncklePinkFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyGronckleOrangeRedMale",
@@ -3431,7 +3431,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleOrangeRedMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "BabyGronckleOrangeRedFemale",
@@ -3448,7 +3448,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_orange_red_female_spawn_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
       "name": "GronckleMale",
@@ -3462,7 +3462,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_male.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "GronckleFemale",
@@ -3476,7 +3476,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_female.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
       "name": "BabyStoneGrowUpMale",
@@ -3516,7 +3516,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyStoneGrowUpFemale",
@@ -3556,7 +3556,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyCobblestoneGrowUpMale",
@@ -3596,7 +3596,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyCobblestoneGrowUpFemale",
@@ -3636,7 +3636,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyDeepslateGrowUpMale",
@@ -3676,7 +3676,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyDeepslateGrowUpFemale",
@@ -3716,7 +3716,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyCobbledDeepslateGrowUpMale",
@@ -3756,7 +3756,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyCobbledDeepslateGrowUpFemale",
@@ -3796,7 +3796,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyDioriteGrowUpMale",
@@ -3836,7 +3836,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyDioriteGrowUpFemale",
@@ -3876,7 +3876,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyGraniteGrowUpMale",
@@ -3916,7 +3916,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyGraniteGrowUpFemale",
@@ -3956,7 +3956,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyAndesiteGrowUpMale",
@@ -3996,7 +3996,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyAndesiteGrowUpFemale",
@@ -4036,7 +4036,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyIronGrowUpMale",
@@ -4076,7 +4076,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyIronGrowUpFemale",
@@ -4116,7 +4116,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyLavaGrowUpMale",
@@ -4156,7 +4156,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabyLavaGrowUpFemale",
@@ -4196,7 +4196,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabySandstoneGrowUpMale",
@@ -4236,7 +4236,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "BabySandstoneGrowUpFemale",
@@ -4276,7 +4276,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Baby"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Baby"
     },
     {
       "name": "AdolscentStoneGrowUpMale",
@@ -4316,7 +4316,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentStoneGrowUpFemale",
@@ -4356,7 +4356,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentCobblestoneGrowUpMale",
@@ -4396,7 +4396,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentCobblestoneGrowUpFemale",
@@ -4436,7 +4436,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentDeepslateGrowUpMale",
@@ -4476,7 +4476,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentDeepslateGrowUpFemale",
@@ -4516,7 +4516,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentCobbledDeepslateGrowUpMale",
@@ -4556,7 +4556,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentCobbledDeepslateGrowUpFemale",
@@ -4596,7 +4596,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentAndesiteGrowUpMale",
@@ -4636,7 +4636,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentAndesiteGrowUpFemale",
@@ -4676,7 +4676,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentDioriteGrowUpMale",
@@ -4716,7 +4716,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentDioriteGrowUpFemale",
@@ -4756,7 +4756,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentGraniteGrowUpMale",
@@ -4796,7 +4796,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentGraniteGrowUpFemale",
@@ -4836,7 +4836,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentIronGrowUpMale",
@@ -4876,7 +4876,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentIronGrowUpFemale",
@@ -4916,7 +4916,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentLavaGrowUpMale",
@@ -4956,7 +4956,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentLavaGrowUpFemale",
@@ -4996,7 +4996,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentSandstoneGrowUpMale",
@@ -5036,7 +5036,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "AdolscentSandstoneGrowUpFemale",
@@ -5076,7 +5076,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Adolescent"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Adolescent"
     },
     {
       "name": "JuvenileStoneGrowUpMale",
@@ -5116,7 +5116,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileStoneGrowUpFemale",
@@ -5156,7 +5156,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileCobblestoneGrowUpMale",
@@ -5196,7 +5196,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileCobblestoneGrowUpFemale",
@@ -5236,7 +5236,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileDeepslateGrowUpMale",
@@ -5276,7 +5276,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileDeepslateGrowUpFemale",
@@ -5316,7 +5316,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileCobbledDeepslateGrowUpMale",
@@ -5356,7 +5356,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileCobbledDeepslateGrowUpFemale",
@@ -5396,7 +5396,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileAndesiteGrowUpMale",
@@ -5436,7 +5436,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileAndesiteGrowUpFemale",
@@ -5476,7 +5476,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileDioriteGrowUpMale",
@@ -5516,7 +5516,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileDioriteGrowUpFemale",
@@ -5556,7 +5556,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileGraniteGrowUpMale",
@@ -5596,7 +5596,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileGraniteGrowUpFemale",
@@ -5636,7 +5636,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileLavaGrowUpMale",
@@ -5676,7 +5676,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileLavaGrowUpFemale",
@@ -5716,7 +5716,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileIronGrowUpMale",
@@ -5756,7 +5756,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileIronGrowUpFemale",
@@ -5796,7 +5796,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileSandstoneGrowUpMale",
@@ -5836,7 +5836,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "JuvenileSandstoneGrowUpFemale",
@@ -5876,7 +5876,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GrowingStages/Juvenile"
+      "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
       "name": "MaleMeatlugLove",
@@ -5916,7 +5916,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
     },
     {
       "name": "GronckleBlueYellowMaleLove",
@@ -5956,7 +5956,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
     },
     {
       "name": "GronckleOrangeRedMaleLove",
@@ -5996,7 +5996,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
     },
     {
       "name": "GroncklePinkMaleLove",
@@ -6036,7 +6036,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
     },
     {
       "name": "GronckleSandstoneTame",
@@ -6116,7 +6116,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "MeatlugAndBlueYellow",
@@ -6156,7 +6156,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "MeatlugAndOrangeRed",
@@ -6196,7 +6196,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "PinkAndMeatlug",
@@ -6236,7 +6236,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "PinkAndPink",
@@ -6276,7 +6276,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "PinkAndBlueYellow",
@@ -6316,7 +6316,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "PinkAndOrangeRed",
@@ -6356,7 +6356,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "BlueYellowAndPink",
@@ -6396,7 +6396,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "BlueYellowAndMeatlug",
@@ -6436,7 +6436,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "BlueYellowAndBlueYellow",
@@ -6476,7 +6476,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "BlueYellowAndOrangeRed",
@@ -6516,7 +6516,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "OrangeRedAndPink",
@@ -6556,7 +6556,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "OrangeRedAndMeatlug",
@@ -6596,7 +6596,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "OrangeRedAndBlueYellow",
@@ -6636,7 +6636,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "OrangeRedAndOrangeRed",
@@ -6676,7 +6676,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
     },
     {
       "name": "ReadyToHatchMeatlugEgg",
@@ -6693,7 +6693,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_meatlug_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "ReadyToHatchBlueYellowGronckleEgg",
@@ -6710,7 +6710,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_blue_yellow_gronckle_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "ReadyToHatchOrangeRedGronckleEgg",
@@ -6727,7 +6727,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_orange_red_gronckle_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "ReadyToHatchPinkGronckleEgg",
@@ -6744,7 +6744,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_pink_gronckle_egg.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Eggs"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
     },
     {
       "name": "IncubatorTick",
@@ -6898,7 +6898,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/BreedCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
     }
   ],
   "variable_elements": [
@@ -6916,15 +6916,15 @@
     },
     {
       "name": "TimerLeft",
-      "type": "number",
+      "type": "string",
       "scope": "world",
-      "value": "0"
+      "value": ""
     },
     {
       "name": "IncubatorRequirement",
       "type": "string",
       "scope": "world",
-      "value": "-"
+      "value": ""
     }
   ],
   "sound_elements": [],
@@ -6949,9 +6949,9 @@
       "item.how_to_own_a_dragon.juvenile_gronckle_orange_red_female_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.pink_gronckle_egg": "Gronckle Egg",
-      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
-      "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Gronckle Spawn Egg",
+      "key.how_to_own_a_dragon.fly_up": "Fly Up",
+      "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "effect.how_to_own_a_dragon.granite_growing": "Growing",
       "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_orange_red_male_spawn_egg": "Gronckle Spawn Egg",
@@ -7051,7 +7051,7 @@
       "item.how_to_own_a_dragon.adolescent_gronckle_pink_male_spawn_egg": "Adolescent Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "block.how_to_own_a_dragon.blue_yellow_gronckle_egg": "Gronckle Egg",
-      "gui.how_to_own_a_dragon.incubator_gui.label_time_left": "Progress:",
+      "gui.how_to_own_a_dragon.incubator_gui.label_time_left": "Time total:",
       "item.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male_spawn_egg": "Juvenile Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male": "Juvenile Gronckle",
       "entity.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_male": "Adolescent Gronckle",
@@ -7129,11 +7129,11 @@
                 "children": []
               },
               {
-                "name": "Entity",
+                "name": "GronckleEntity",
                 "children": []
               },
               {
-                "name": "Breeding",
+                "name": "GronckleBreeding",
                 "children": [
                   {
                     "name": "Eggs",
@@ -7146,11 +7146,11 @@
                 ]
               },
               {
-                "name": "Tag",
+                "name": "GronckleTag",
                 "children": []
               },
               {
-                "name": "GrowingStages",
+                "name": "GronckleGrowingStages",
                 "children": [
                   {
                     "name": "Baby",
@@ -7167,11 +7167,11 @@
                 ]
               },
               {
-                "name": "Effects",
+                "name": "GronckleEffects",
                 "children": []
               },
               {
-                "name": "GUI",
+                "name": "GronckleGUIs",
                 "children": []
               }
             ]

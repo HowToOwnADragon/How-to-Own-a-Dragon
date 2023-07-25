@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.DEEPSLATE"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.DEEPSLATE"
       },
       {
-        "value": "Items.LAVA_BUCKET"
+        "value": "Items.BUCKET"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.DEEPSLATE"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.DEEPSLATE"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Blocks.STONE#0"
       }
     ],
     "recipeReturnStack": {
