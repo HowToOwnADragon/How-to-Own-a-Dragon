@@ -28,12 +28,9 @@
       "§8§o§kddd§r§8§oWhat could this be used for?§r§8§o§kddd"
     ],
     "hasGlow": true,
-    "guiBoundTo": "DragonEyeInput",
-    "inventorySize": 1,
-    "inventoryStackSize": 1,
-    "onItemInUseTick": {
-      "name": "DragonEyeItemInHandTick"
-    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

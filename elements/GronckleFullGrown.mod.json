@@ -1,0 +1,39 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:BabyGroncklePinkFemale"
+      },
+      {
+        "value": "CUSTOM:BabyGroncklePinkMale"
+      },
+      {
+        "value": "CUSTOM:BabyMeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:BabyMeatlugMale"
+      },
+      {
+        "value": "CUSTOM:GronckleBlueYellowFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleBlueYellowMale"
+      },
+      {
+        "value": "CUSTOM:MeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:MeatlugMale"
+      }
+    ],
+    "biomes": [],
+    "name": "gronckle_full_grown",
+    "namespace": "mod"
+  }
+}

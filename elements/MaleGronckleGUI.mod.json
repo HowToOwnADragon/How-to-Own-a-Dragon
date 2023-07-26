@@ -21,8 +21,8 @@
             "value": -13421773,
             "falpha": 0.0
           },
-          "x": 131,
-          "y": 42
+          "x": 132,
+          "y": 43
         }
       },
       {
@@ -45,16 +45,75 @@
         "data": {
           "image": "man_symbol_mcreator.png",
           "use1Xscale": true,
-          "x": 142,
-          "y": -17
+          "x": 144,
+          "y": -15
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_next_page_arrrow",
+          "image": "next_page_arrrow.png",
+          "hoveredImage": "next_page_arrrow.png",
+          "x": 145,
+          "y": -26
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 132,
+          "y": 57
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 132,
+          "y": 75
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "OpenMaleGronckleGUI"
+          },
+          "scale": 25,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 186,
+          "y": 75
         }
       }
     ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "ox": 10,
+      "oy": 4,
       "snapOnGrid": false
     }
   }

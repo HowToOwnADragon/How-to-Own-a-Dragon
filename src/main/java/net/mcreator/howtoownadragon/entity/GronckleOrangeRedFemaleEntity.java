@@ -62,8 +62,9 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.OnlyFlyAtDayProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
-import net.mcreator.howtoownadragon.procedures.FlyingTickUpdateProcedure;
+import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import java.util.List;
@@ -139,6 +140,17 @@ public class GronckleOrangeRedFemaleEntity extends TamableAnimal implements GeoE
 				double dir_z = GronckleOrangeRedFemaleEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
+
+			@Override
+			public boolean canUse() {
+				double x = GronckleOrangeRedFemaleEntity.this.getX();
+				double y = GronckleOrangeRedFemaleEntity.this.getY();
+				double z = GronckleOrangeRedFemaleEntity.this.getZ();
+				Entity entity = GronckleOrangeRedFemaleEntity.this;
+				Level world = GronckleOrangeRedFemaleEntity.this.level;
+				return super.canUse() && OnlyFlyAtDayProcedure.execute(world);
+			}
+
 		});
 	}
 
@@ -220,7 +232,7 @@ public class GronckleOrangeRedFemaleEntity extends TamableAnimal implements GeoE
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		FlyingTickUpdateProcedure.execute(this);
+		FlyingGronckleIronTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

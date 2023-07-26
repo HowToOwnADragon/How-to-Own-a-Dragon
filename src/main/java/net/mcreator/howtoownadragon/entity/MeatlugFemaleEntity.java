@@ -59,6 +59,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.OnlyFlyAtDayProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
@@ -136,6 +137,17 @@ public class MeatlugFemaleEntity extends TamableAnimal implements GeoEntity {
 				double dir_z = MeatlugFemaleEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
+
+			@Override
+			public boolean canUse() {
+				double x = MeatlugFemaleEntity.this.getX();
+				double y = MeatlugFemaleEntity.this.getY();
+				double z = MeatlugFemaleEntity.this.getZ();
+				Entity entity = MeatlugFemaleEntity.this;
+				Level world = MeatlugFemaleEntity.this.level;
+				return super.canUse() && OnlyFlyAtDayProcedure.execute(world);
+			}
+
 		});
 	}
 

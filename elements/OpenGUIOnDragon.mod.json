@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "Open GUI On Dragon",
+    "keyBindingCategoryKey": "htoad",
+    "onKeyPressed": {
+      "name": "OpenDragonGUIOnKeyPressed"
+    }
+  }
+}

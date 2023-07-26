@@ -1,0 +1,39 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MeatlugsEgg"
+      },
+      {
+        "value": "CUSTOM:BlueYellowGronckleEgg"
+      },
+      {
+        "value": "CUSTOM:OrangeRedGronckleEgg"
+      },
+      {
+        "value": "CUSTOM:PinkGronckleEgg"
+      },
+      {
+        "value": "CUSTOM:ReadyToHatchMeatlugEgg"
+      },
+      {
+        "value": "CUSTOM:ReadyToHatchBlueYellowGronckleEgg"
+      },
+      {
+        "value": "CUSTOM:ReadyToHatchOrangeRedGronckleEgg"
+      },
+      {
+        "value": "CUSTOM:ReadyToHatchPinkGronckleEgg"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "eggs",
+    "namespace": "mod"
+  }
+}

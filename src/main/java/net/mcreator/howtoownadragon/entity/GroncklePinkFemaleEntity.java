@@ -62,6 +62,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.OnlyFlyAtDayProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
@@ -139,6 +140,17 @@ public class GroncklePinkFemaleEntity extends TamableAnimal implements GeoEntity
 				double dir_z = GroncklePinkFemaleEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
+
+			@Override
+			public boolean canUse() {
+				double x = GroncklePinkFemaleEntity.this.getX();
+				double y = GroncklePinkFemaleEntity.this.getY();
+				double z = GroncklePinkFemaleEntity.this.getZ();
+				Entity entity = GroncklePinkFemaleEntity.this;
+				Level world = GroncklePinkFemaleEntity.this.level;
+				return super.canUse() && OnlyFlyAtDayProcedure.execute(world);
+			}
+
 		});
 	}
 

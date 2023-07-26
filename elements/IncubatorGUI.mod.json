@@ -29,7 +29,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:how_to_own_a_dragon:eggs"
           },
           "disablePlacement": {
             "fixedValue": false
