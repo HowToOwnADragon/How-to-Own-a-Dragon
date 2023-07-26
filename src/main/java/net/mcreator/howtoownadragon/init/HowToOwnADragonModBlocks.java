@@ -25,6 +25,7 @@ import net.mcreator.howtoownadragon.block.PortalBlockBlock;
 import net.mcreator.howtoownadragon.block.PinkGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.OrangeRedGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.MeatlugsEggBlock;
+import net.mcreator.howtoownadragon.block.LimestoneBlock;
 import net.mcreator.howtoownadragon.block.IncubatorBlock;
 import net.mcreator.howtoownadragon.block.DragonProofMetalBarsBlock;
 import net.mcreator.howtoownadragon.block.DeepIronWallBlock;
@@ -64,4 +65,5 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG = REGISTRY.register("ready_to_hatch_orange_red_gronckle_egg", () -> new ReadyToHatchOrangeRedGronckleEggBlock());
 	public static final RegistryObject<Block> READY_TO_HATCH_PINK_GRONCKLE_EGG = REGISTRY.register("ready_to_hatch_pink_gronckle_egg", () -> new ReadyToHatchPinkGronckleEggBlock());
 	public static final RegistryObject<Block> INCUBATOR = REGISTRY.register("incubator", () -> new IncubatorBlock());
+	public static final RegistryObject<Block> LIMESTONE = REGISTRY.register("limestone", () -> new LimestoneBlock());
 }

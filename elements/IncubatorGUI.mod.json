@@ -148,6 +148,21 @@
           "x": 241,
           "y": 105
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 108
+        }
       }
     ],
     "gridSettings": {

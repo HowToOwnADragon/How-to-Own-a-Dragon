@@ -409,10 +409,10 @@
       "registry_name": "deep_iron_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronBlockBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_block.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronBlockBlock.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_block.json"
         ]
       },
       "path": "~/Items/Deep Iron"
@@ -1804,14 +1804,14 @@
       "registry_name": "dragon_proof_metal_bars",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side_alt.json",
           "src/main/java/net/mcreator/howtoownadragon/block/DragonProofMetalBarsBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_post.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside_alt.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_proof_metal_bars.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside_alt.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/dragon_proof_metal_bars.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_post.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side_alt.json"
         ]
       },
       "path": "~/Items/DragonProof"
@@ -1904,14 +1904,14 @@
       "registry_name": "rusty_dragon_proof_metal_bars",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_noside.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/rusty_dragon_proof_metal_bars.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/RustyDragonProofMetalBarsBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side_alt.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_post.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_noside_alt.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/rusty_dragon_proof_metal_bars.json"
+          "src/main/java/net/mcreator/howtoownadragon/block/RustyDragonProofMetalBarsBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/rusty_dragon_proof_metal_bars.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side_alt.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_noside.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side.json"
         ]
       },
       "path": "~/Items/DragonProof"
@@ -1950,7 +1950,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle"
+      "path": "~/Dragons/Gronckle/GronckleSpawnEgg"
     },
     {
       "name": "GronckleSpawningEgg",
@@ -1965,7 +1965,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/GronckleSpawningEggItem.java"
         ]
       },
-      "path": "~/Dragons/Gronckle"
+      "path": "~/Dragons/Gronckle/GronckleSpawnEgg"
     },
     {
       "name": "GronckleDies",
@@ -2354,7 +2354,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle"
+      "path": "~/Dragons/Gronckle/GronckleSpawnEgg"
     },
     {
       "name": "IncubatorRecipe",
@@ -6913,6 +6913,73 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "Limestone",
+      "type": "block",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/limestone.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/limestone.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/LimestoneBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/limestone.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlyingGronckleIronTickUpdate",
+      "type": "procedure",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_gronckle_iron_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyingGronckleIronTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
+    },
+    {
+      "name": "MaleGronckleGUI",
+      "type": "gui",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleGronckleGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleGronckleGUIMenu.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs"
+    },
+    {
+      "name": "GronckleInventory",
+      "type": "gui",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/GronckleInventoryScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/GronckleInventoryMenu.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [
@@ -6950,6 +7017,7 @@
       "advancements.picking_up_dragon_eye.descr": "This changes everything!",
       "entity.how_to_own_a_dragon.baby_gronckle_blue_yellow_male": "Male Baby Gronckle",
       "advancements.hidden_world_root.descr": "What is this place?",
+      "block.how_to_own_a_dragon.limestone": "Limestone",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "entity.how_to_own_a_dragon.adolescent_gronckle_orange_red_male": "Male Adolescent Gronckle",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
@@ -6963,9 +7031,9 @@
       "item.how_to_own_a_dragon.juvenile_gronckle_orange_red_female_spawn_egg": "Female Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.pink_gronckle_egg": "Gronckle Egg",
-      "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Female Gronckle Spawn Egg",
-      "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
+      "key.how_to_own_a_dragon.fly_up": "Fly Up",
+      "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Female Gronckle Spawn Egg",
       "effect.how_to_own_a_dragon.granite_growing": "Growing",
       "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_orange_red_male_spawn_egg": "Male Gronckle Spawn Egg",
@@ -6987,6 +7055,7 @@
       "item.how_to_own_a_dragon.gronckle_spawning_egg": "Gronckle",
       "entity.how_to_own_a_dragon.juvenile_meatlug_female": "Female Juvenile Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
+      "gui.how_to_own_a_dragon.male_gronckle_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
@@ -7027,6 +7096,7 @@
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "entity.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_female": "Female Adolescent Gronckle",
       "item.how_to_own_a_dragon.juvenile_gronckle_orange_red_male_spawn_egg": "Male Juvenile Gronckle Spawn Egg",
+      "gui.how_to_own_a_dragon.incubator_gui.label_inventory": "Inventory",
       "key.categories.htoad": "How to Own a Dragon",
       "item.how_to_own_a_dragon.adolescent_meatlug_male_spawn_egg": "Male Adolescent Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.juvenile_meatlug_male_spawn_egg": "Male Juvenile Gronckle Spawn Egg",
@@ -7078,6 +7148,7 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_pink_male": "Male Juvenile Gronckle",
       "block.how_to_own_a_dragon.incubator": "Incubator",
       "item.how_to_own_a_dragon.gronckle_blue_yellow_female_spawn_egg": "Female Gronckle Spawn Egg",
+      "gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "item.how_to_own_a_dragon.adolescent_gronckle_pink_female_spawn_egg": "Female Adolescent Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.gronckle_pink_female": "Female Gronckle",
       "item.how_to_own_a_dragon.baby_gronckle_blue_yellow_male_spawn_egg": "Male Baby Gronckle Spawn Egg",
@@ -7188,6 +7259,10 @@
               {
                 "name": "GronckleGUIs",
                 "children": []
+              },
+              {
+                "name": "GronckleSpawnEgg",
+                "children": []
               }
             ]
           }
@@ -7289,7 +7364,7 @@
   "workspaceSettings": {
     "modid": "how_to_own_a_dragon",
     "modName": "How to Own a Dragon",
-    "version": "0.0.3",
+    "version": "0.0.2",
     "description": "Welcome to the Dragon world, we are trying to make this mod as canon as possible to the original HTTYD Movies and series",
     "author": "MeAlam, Justindraak1",
     "websiteURL": "https://howtoownadragon.miraheze.org/wiki/Main_Page",

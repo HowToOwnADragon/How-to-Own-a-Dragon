@@ -2,26 +2,25 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "dragonproofmetalbars2",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "temporarly",
+    "textureTop": "temporarly",
+    "textureLeft": "temporarly",
+    "textureFront": "temporarly",
+    "textureRight": "temporarly",
+    "textureBack": "temporarly",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Pane",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Dragon Proof Metal Bars",
+    "name": "Limestone",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -49,11 +48,11 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
@@ -80,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""

@@ -43,7 +43,7 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },

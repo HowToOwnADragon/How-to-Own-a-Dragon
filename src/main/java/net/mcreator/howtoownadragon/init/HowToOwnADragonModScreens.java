@@ -11,7 +11,9 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.IncubatorGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.GronckleInventoryScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HowToOwnADragonModScreens {
@@ -19,6 +21,8 @@ public class HowToOwnADragonModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(HowToOwnADragonModMenus.INCUBATOR_GUI.get(), IncubatorGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MALE_GRONCKLE_GUI.get(), MaleGronckleGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GRONCKLE_INVENTORY.get(), GronckleInventoryScreen::new);
 		});
 	}
 }

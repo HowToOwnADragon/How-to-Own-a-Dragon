@@ -81,6 +81,7 @@ public class IncubatorGUIScreen extends AbstractContainerScreen<IncubatorGUIMenu
 		this.font.draw(poseStack,
 
 				TimerShowProcedure.execute(world), 115, 68, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_gui.label_inventory"), 6, 71, -13421773);
 	}
 
 	@Override

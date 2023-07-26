@@ -132,6 +132,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG);
 	public static final RegistryObject<Item> READY_TO_HATCH_PINK_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_PINK_GRONCKLE_EGG);
 	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
+	public static final RegistryObject<Item> LIMESTONE = block(HowToOwnADragonModBlocks.LIMESTONE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

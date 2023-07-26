@@ -61,7 +61,7 @@ public class PinkAndPinkProcedure {
 							_entity.removeEffect(HowToOwnADragonModMobEffects.IN_LOVE.get());
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.PINK_GRONCKLE_EGG.get().defaultBlockState(), 3);
 						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(GroncklePinkMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {

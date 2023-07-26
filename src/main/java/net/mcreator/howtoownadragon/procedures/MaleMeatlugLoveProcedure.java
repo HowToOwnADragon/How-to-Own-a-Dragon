@@ -44,7 +44,7 @@ public class MaleMeatlugLoveProcedure {
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IN_LOVE.get(), 600, 1, false, false));
+				_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IN_LOVE.get(), 200, 1, false, false));
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 		}
