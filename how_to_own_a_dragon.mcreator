@@ -1373,6 +1373,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/item/DragonEyeItem.java",
+          "src/main/java/net/mcreator/howtoownadragon/item/inventory/DragonEyeInventoryCapability.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_eye.json"
         ]
       },
@@ -2943,11 +2944,11 @@
       "registry_name": "gronckle_blue_yellow_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowMaleModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_male_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowMaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowMaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowMaleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_male_biome_modifier.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -2963,9 +2964,9 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowFemaleRenderer.java",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_female_biome_modifier.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowFemaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowFemaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_female_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3033,11 +3034,11 @@
       "registry_name": "gronckle_orange_red_female",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_female_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleOrangeRedFemaleRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_female_spawn_egg.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_female_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleOrangeRedFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleOrangeRedFemaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_female_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleOrangeRedFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3104,8 +3105,8 @@
         "files": [
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_blue_yellow_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleBlueYellowFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleBlueYellowFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowFemaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleBlueYellowFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3170,10 +3171,10 @@
       "registry_name": "adolescent_gronckle_orange_red_female",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_orange_red_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleOrangeRedFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleOrangeRedFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedFemaleRenderer.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_orange_red_female_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleOrangeRedFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3240,8 +3241,8 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleBlueYellowFemaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleBlueYellowFemaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_blue_yellow_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleBlueYellowFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleBlueYellowFemaleEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_blue_yellow_female_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3306,10 +3307,10 @@
       "registry_name": "juvenile_gronckle_orange_red_female",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleOrangeRedFemaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_orange_red_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleOrangeRedFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleOrangeRedFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleOrangeRedFemaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleOrangeRedFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -6980,6 +6981,118 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "LensDragonInfo",
+      "type": "item",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lens_dragon_info",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/lens_dragon_info.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/LensDragonInfoItem.java"
+        ]
+      },
+      "path": "~/Items/DragonEye"
+    },
+    {
+      "name": "Lenses",
+      "type": "tab",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lenses",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
+    },
+    {
+      "name": "DragonEyeInput",
+      "type": "gui",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_eye_input",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/DragonEyeInputScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/DragonEyeInputMenu.java"
+        ]
+      },
+      "path": "~/Items/DragonEye"
+    },
+    {
+      "name": "InformationGronckle",
+      "type": "gui",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "information_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/InformationGronckleScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/InformationGronckleMenu.java"
+        ]
+      },
+      "path": "~/Items/DragonEye/LensGUIS"
+    },
+    {
+      "name": "OpenInfoGronckle",
+      "type": "procedure",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_info_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenInfoGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/DragonEye/LensGUIS/Procedures"
+    },
+    {
+      "name": "DragonEyeItemInHandTick",
+      "type": "procedure",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_eye_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/DragonEyeItemInHandTickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Items/DragonEye"
     }
   ],
   "variable_elements": [
@@ -7038,6 +7151,7 @@
       "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
       "item.how_to_own_a_dragon.gronckle_orange_red_male_spawn_egg": "Male Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_female_spawn_egg": "Female Adolescent Gronckle Spawn Egg",
+      "item_group.how_to_own_a_dragon.lenses": "Lenses",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
@@ -7059,6 +7173,7 @@
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
+      "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "entity.how_to_own_a_dragon.adolescent_meatlug_female": "Female Adolescent Gronckle",
       "item.how_to_own_a_dragon.juvenile_gronckle_pink_male_spawn_egg": "Male Juvenile Gronckle Spawn Egg",
@@ -7079,6 +7194,7 @@
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "key.how_to_own_a_dragon.opent_test": "Opent Test",
       "effect.how_to_own_a_dragon.bucket_of_lava_growing": "Growing",
+      "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
       "block.how_to_own_a_dragon.ready_to_hatch_meatlug_egg": "Gronckle Egg",
@@ -7123,6 +7239,7 @@
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "block.how_to_own_a_dragon.orange_red_gronckle_egg": "Gronckle Egg",
       "effect.how_to_own_a_dragon.in_love": "Love",
+      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "item.how_to_own_a_dragon.gronckle_blue_yellow_male_spawn_egg": "Male Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "entity.how_to_own_a_dragon.gronckle_pink_male": "Male Gronckle",
@@ -7179,7 +7296,17 @@
           },
           {
             "name": "DragonEye",
-            "children": []
+            "children": [
+              {
+                "name": "LensGUIS",
+                "children": [
+                  {
+                    "name": "Procedures",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "DragonProof",

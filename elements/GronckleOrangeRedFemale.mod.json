@@ -103,7 +103,7 @@
       "name": "GronckleDies"
     },
     "onMobTickUpdate": {
-      "name": "FlyingGronckleIronTickUpdate"
+      "name": "FlyingTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",

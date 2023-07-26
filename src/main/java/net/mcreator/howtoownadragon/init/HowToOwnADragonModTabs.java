@@ -61,5 +61,11 @@ public class HowToOwnADragonModTabs {
 				})
 
 		);
+		event.registerCreativeModeTab(new ResourceLocation("how_to_own_a_dragon", "lenses"),
+				builder -> builder.title(Component.translatable("item_group.how_to_own_a_dragon.lenses")).icon(() -> new ItemStack(HowToOwnADragonModItems.LENS_DRAGON_INFO.get())).displayItems((parameters, tabData) -> {
+					tabData.accept(HowToOwnADragonModItems.LENS_DRAGON_INFO.get());
+				})
+
+		);
 	}
 }

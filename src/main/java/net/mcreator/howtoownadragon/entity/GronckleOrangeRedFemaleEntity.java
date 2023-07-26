@@ -63,7 +63,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
-import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
+import net.mcreator.howtoownadragon.procedures.FlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import java.util.List;
@@ -220,7 +220,7 @@ public class GronckleOrangeRedFemaleEntity extends TamableAnimal implements GeoE
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		FlyingGronckleIronTickUpdateProcedure.execute(this);
+		FlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

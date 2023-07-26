@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Lenses",
+    "icon": {
+      "value": "CUSTOM:LensDragonInfo"
+    },
+    "showSearch": false
+  }
+}

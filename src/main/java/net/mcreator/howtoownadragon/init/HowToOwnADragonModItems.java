@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
+import net.mcreator.howtoownadragon.item.LensDragonInfoItem;
 import net.mcreator.howtoownadragon.item.GronckleSpawningEggItem;
 import net.mcreator.howtoownadragon.item.GronckleScaleItem;
 import net.mcreator.howtoownadragon.item.GronckleIronSwordItem;
@@ -133,6 +134,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> READY_TO_HATCH_PINK_GRONCKLE_EGG = block(HowToOwnADragonModBlocks.READY_TO_HATCH_PINK_GRONCKLE_EGG);
 	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
 	public static final RegistryObject<Item> LIMESTONE = block(HowToOwnADragonModBlocks.LIMESTONE);
+	public static final RegistryObject<Item> LENS_DRAGON_INFO = REGISTRY.register("lens_dragon_info", () -> new LensDragonInfoItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -24,14 +24,14 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.MeatlugMaleEntity;
-import net.mcreator.howtoownadragon.entity.MeatlugFemaleEntity;
-import net.mcreator.howtoownadragon.entity.GroncklePinkMaleEntity;
-import net.mcreator.howtoownadragon.entity.GroncklePinkFemaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleOrangeRedMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleOrangeRedFemaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyMeatlugMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyMeatlugFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGroncklePinkMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGroncklePinkFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGronckleOrangeRedMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGronckleOrangeRedFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGronckleBlueYellowMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGronckleBlueYellowFemaleEntity;
 
 import javax.annotation.Nullable;
 
@@ -64,7 +64,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_pink_tag")))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new GroncklePinkFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_PINK_FEMALE.get(), _level);
+						Entity entityToSpawn = new BabyGroncklePinkFemaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_FEMALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -75,7 +75,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 					}
 				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new GroncklePinkMaleEntity(HowToOwnADragonModEntities.GRONCKLE_PINK_MALE.get(), _level);
+						Entity entityToSpawn = new BabyGroncklePinkMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_MALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -88,7 +88,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_blue_yellow_tag")))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new GronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
+						Entity entityToSpawn = new BabyGronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -99,7 +99,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 					}
 				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new GronckleBlueYellowFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_FEMALE.get(), _level);
+						Entity entityToSpawn = new BabyGronckleBlueYellowFemaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW_FEMALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -112,7 +112,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_orange_red_tag")))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new GronckleOrangeRedFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_FEMALE.get(), _level);
+						Entity entityToSpawn = new BabyGronckleOrangeRedFemaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_FEMALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -123,7 +123,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 					}
 				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new GronckleOrangeRedMaleEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_MALE.get(), _level);
+						Entity entityToSpawn = new BabyGronckleOrangeRedMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_MALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -136,7 +136,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:meatlug_tag")))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new MeatlugMaleEntity(HowToOwnADragonModEntities.MEATLUG_MALE.get(), _level);
+						Entity entityToSpawn = new BabyMeatlugMaleEntity(HowToOwnADragonModEntities.BABY_MEATLUG_MALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -147,7 +147,7 @@ public class GronckleSpawningEggRightclickedEntityProcedure {
 					}
 				} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new MeatlugFemaleEntity(HowToOwnADragonModEntities.MEATLUG_FEMALE.get(), _level);
+						Entity entityToSpawn = new BabyMeatlugFemaleEntity(HowToOwnADragonModEntities.BABY_MEATLUG_FEMALE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
