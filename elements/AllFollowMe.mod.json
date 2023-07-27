@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "All Follow Me",
+    "keyBindingCategoryKey": "htoad",
+    "onKeyPressed": {
+      "name": "AllFollowMeOnKeyPressed"
+    }
+  }
+}

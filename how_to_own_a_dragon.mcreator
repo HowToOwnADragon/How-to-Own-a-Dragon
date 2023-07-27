@@ -7078,27 +7078,6 @@
       "path": "~/Dragons/Gronckle/GronckleTag"
     },
     {
-      "name": "OnlyFlyAtDay",
-      "type": "procedure",
-      "sortid": 381,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "only_fly_at_day",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OnlyFlyAtDayProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
       "name": "StopRidingEntityWhenClickingWithDragonEye",
       "type": "procedure",
       "sortid": 382,
@@ -8051,6 +8030,140 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
+    },
+    {
+      "name": "AllFollowMe",
+      "type": "keybind",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_follow_me",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/AllFollowMeMessage.java"
+        ]
+      },
+      "path": "~/Procedure/AiConditions/Stay Follow"
+    },
+    {
+      "name": "AllFollowMeOnKeyPressed",
+      "type": "procedure",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_follow_me_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AllFollowMeOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions/Stay Follow"
+    },
+    {
+      "name": "AllFollowMeTrigger",
+      "type": "procedure",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_follow_me_trigger",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AllFollowMeTriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions/Stay Follow"
+    },
+    {
+      "name": "DontAllFollowMeTrigger",
+      "type": "procedure",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dont_all_follow_me_trigger",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/DontAllFollowMeTriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions/Stay Follow"
+    },
+    {
+      "name": "FlyAtDayFollowMeTrigger",
+      "type": "procedure",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_at_day_follow_me_trigger",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyAtDayFollowMeTriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "LookAtNightDontFollowMe",
+      "type": "procedure",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "look_at_night_dont_follow_me",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/LookAtNightDontFollowMeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
     }
   ],
   "variable_elements": [
@@ -8093,11 +8206,11 @@
       "entity.how_to_own_a_dragon.meatlug_male": "Male Gronckle",
       "gui.how_to_own_a_dragon.orange_red_male_gronckle_iron_gui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.baby_gronckle_orange_red_female": "Female Baby Gronckle",
-      "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This changes everything!",
+      "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "entity.how_to_own_a_dragon.baby_gronckle_blue_yellow_male": "Male Baby Gronckle",
-      "advancements.hidden_world_root.descr": "What is this place?",
       "block.how_to_own_a_dragon.limestone": "Limestone",
+      "advancements.hidden_world_root.descr": "What is this place?",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "gui.how_to_own_a_dragon.orange_red_male_gronckle_iron_gui.button_smelt": "Smelt",
       "entity.how_to_own_a_dragon.adolescent_gronckle_orange_red_male": "Male Adolescent Gronckle",
@@ -8105,8 +8218,8 @@
       "gui.how_to_own_a_dragon.male_gronckle_pink_gui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.incubator_gui.label_requirement": "Requirement:",
       "item.how_to_own_a_dragon.baby_gronckle_orange_red_female_spawn_egg": "Female Baby Gronckle Spawn Egg",
-      "item.how_to_own_a_dragon.gronckle_pink_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.meatlug_female_gronckle_iron_gui.button_smelt": "Smelt",
+      "item.how_to_own_a_dragon.gronckle_pink_female_spawn_egg": "Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_female": "Female Juvenile Gronckle",
       "item.how_to_own_a_dragon.baby_gronckle_blue_yellow_female_spawn_egg": "Female Baby Gronckle Spawn Egg",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
@@ -8115,9 +8228,9 @@
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.pink_gronckle_egg": "Gronckle Egg",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
-      "key.how_to_own_a_dragon.fly_up": "Fly Up",
-      "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.male_gronckle_blue_yellow_gui.label_male_gronckle": "Male Gronckle",
+      "item.how_to_own_a_dragon.gronckle_orange_red_female_spawn_egg": "Female Gronckle Spawn Egg",
+      "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "gui.how_to_own_a_dragon.female_gronckle_pink_gui.label_male_gronckle": "Female Gronckle",
       "effect.how_to_own_a_dragon.granite_growing": "Growing",
       "block.how_to_own_a_dragon.ready_to_hatch_pink_gronckle_egg": "Gronckle Egg",
@@ -8126,14 +8239,14 @@
       "item_group.how_to_own_a_dragon.lenses": "Lenses",
       "item_group.how_to_own_a_dragon.items": "Items",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
-      "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
       "entity.how_to_own_a_dragon.juvenile_gronckle_pink_female": "Female Juvenile Gronckle",
+      "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
       "entity.how_to_own_a_dragon.juvenile_gronckle_orange_red_male": "Male Juvenile Gronckle",
       "item.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_male_spawn_egg": "Male Adolescent Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.male_gronckle_blue_yellow_gui.label_inventory": "Inventory",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
-      "entity.how_to_own_a_dragon.meatlug_female": "Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_orange_red_male": "Male Gronckle",
+      "entity.how_to_own_a_dragon.meatlug_female": "Female Gronckle",
       "effect.how_to_own_a_dragon.stone_growing": "Growing",
       "effect.how_to_own_a_dragon.andesite_growing": "Growing",
       "item.how_to_own_a_dragon.baby_meatlug_male_spawn_egg": "Male Baby Gronckle Spawn Egg",
@@ -8157,8 +8270,8 @@
       "gui.how_to_own_a_dragon.female_meatlug_gui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.juvenile_gronckle_orange_red_female": "Female Juvenile Gronckle",
       "item.how_to_own_a_dragon.baby_gronckle_pink_male_spawn_egg": "Male Baby Gronckle Spawn Egg",
-      "entity.how_to_own_a_dragon.gronckle_orange_red_female": "Female Gronckle",
       "gui.how_to_own_a_dragon.male_meatlug_gui.label_inventory": "Inventory",
+      "entity.how_to_own_a_dragon.gronckle_orange_red_female": "Female Gronckle",
       "gui.how_to_own_a_dragon.meatlug_female_gronckle_iron_gui.label_inventory": "Inventory",
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "effect.how_to_own_a_dragon.sand_stone_growing": "Growing",
@@ -8173,8 +8286,8 @@
       "gui.how_to_own_a_dragon.blue_yellow_female_gronckle_iron_gui.button_smelt": "Smelt",
       "effect.how_to_own_a_dragon.bucket_of_lava_growing": "Growing",
       "gui.how_to_own_a_dragon.orange_red_male_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
-      "gui.how_to_own_a_dragon.female_gronckle_orange_red_gui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.orange_red_female_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
+      "gui.how_to_own_a_dragon.female_gronckle_orange_red_gui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.orange_red_female_gronckle_iron_gui.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
@@ -8207,20 +8320,21 @@
       "entity.how_to_own_a_dragon.baby_meatlug_female": "Female Baby Gronckle",
       "gui.how_to_own_a_dragon.meatlug_male_gronckle_iron_gui.button_smelt": "Smelt",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
-      "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "entity.how_to_own_a_dragon.baby_gronckle_orange_red_male": "Baby Gronckle",
+      "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "gui.how_to_own_a_dragon.incubator_gui.label_incubator": "Incubator",
       "item.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_female_spawn_egg": "Female Juvenile Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.adolescent_gronckle_orange_red_female_spawn_egg": "Female Adolescent Gronckle Spawn Egg",
       "effect.how_to_own_a_dragon.cobblestone_growing": "Growing",
       "effect.how_to_own_a_dragon.breed_cooldown": "cooldown",
       "gui.how_to_own_a_dragon.meatlug_female_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
+      "key.how_to_own_a_dragon.all_follow_me": "All Follow Me",
       "entity.how_to_own_a_dragon.juvenile_meatlug_male": "Male Juvenile Gronckle",
       "item.how_to_own_a_dragon.juvenile_gronckle_pink_female_spawn_egg": "Female Juvenile Gronckle Spawn Egg",
       "advancements.picking_up_dragon_eye.title": "Information?!",
       "gui.how_to_own_a_dragon.pink_male_gronckle_iron_gui.button_smelt": "Smelt",
-      "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
+      "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "gui.how_to_own_a_dragon.male_gronckle_pink_gui.label_male_gronckle": "Male Gronckle",
       "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
@@ -8231,24 +8345,24 @@
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "gui.how_to_own_a_dragon.female_meatlug_gui.label_male_gronckle": "Female Gronckle",
-      "block.how_to_own_a_dragon.orange_red_gronckle_egg": "Gronckle Egg",
-      "effect.how_to_own_a_dragon.in_love": "Love",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
+      "effect.how_to_own_a_dragon.in_love": "Love",
+      "block.how_to_own_a_dragon.orange_red_gronckle_egg": "Gronckle Egg",
       "gui.how_to_own_a_dragon.female_gronckle_blue_yellow_gui.label_male_gronckle": "Female Gronckle",
       "item.how_to_own_a_dragon.gronckle_blue_yellow_male_spawn_egg": "Male Gronckle Spawn Egg",
-      "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "entity.how_to_own_a_dragon.gronckle_pink_male": "Male Gronckle",
-      "entity.how_to_own_a_dragon.baby_gronckle_pink_male": "Male Baby Gronckle",
       "gui.how_to_own_a_dragon.meatlug_male_gronckle_iron_gui.label_inventory": "Inventory",
+      "entity.how_to_own_a_dragon.baby_gronckle_pink_male": "Male Baby Gronckle",
+      "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
       "entity.how_to_own_a_dragon.adolescent_gronckle_pink_male": "Male Adolescent Gronckle",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
-      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
-      "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
-      "item.how_to_own_a_dragon.adolescent_gronckle_pink_male_spawn_egg": "Male Adolescent Gronckle Spawn Egg",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "gui.how_to_own_a_dragon.male_gronckle_orange_red_gui.label_male_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.female_gronckle_pink_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.adolescent_gronckle_pink_male_spawn_egg": "Male Adolescent Gronckle Spawn Egg",
+      "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "block.how_to_own_a_dragon.blue_yellow_gronckle_egg": "Gronckle Egg",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_left": "Time total:",
@@ -8257,11 +8371,11 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male": "Male Juvenile Gronckle",
       "entity.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_male": "Male Adolescent Gronckle",
       "effect.how_to_own_a_dragon.iron_ingot_growing": "Growing",
-      "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "item.how_to_own_a_dragon.baby_meatlug_female_spawn_egg": "Female Baby Gronckle Spawn Egg",
+      "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
-      "gui.how_to_own_a_dragon.pink_female_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.blue_yellow_female_gronckle_iron_gui.label_inventory": "Inventory",
+      "gui.how_to_own_a_dragon.pink_female_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.pink_male_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
       "entity.how_to_own_a_dragon.adolescent_gronckle_pink_female": "Female Adolescent Gronckle",
       "entity.how_to_own_a_dragon.juvenile_gronckle_pink_male": "Male Juvenile Gronckle",
@@ -8271,9 +8385,9 @@
       "entity.how_to_own_a_dragon.gronckle_pink_female": "Female Gronckle",
       "item.how_to_own_a_dragon.baby_gronckle_blue_yellow_male_spawn_egg": "Male Baby Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.meatlugs_egg": "Gronckle Egg",
-      "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
-      "item.how_to_own_a_dragon.adolescent_meatlug_female_spawn_egg": "Female Adolescent Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.adolescent_gronckle_orange_red_female": "Female Adolescent Gronckle",
+      "item.how_to_own_a_dragon.adolescent_meatlug_female_spawn_egg": "Female Adolescent Gronckle Spawn Egg",
+      "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
       "gui.how_to_own_a_dragon.blue_yellow_male_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
       "effect.how_to_own_a_dragon.cobbled_deepslate_growing": "Growing"
     }
@@ -8477,6 +8591,15 @@
           {
             "name": "Flying",
             "children": []
+          },
+          {
+            "name": "AiConditions",
+            "children": [
+              {
+                "name": "Stay Follow",
+                "children": []
+              }
+            ]
           }
         ]
       },

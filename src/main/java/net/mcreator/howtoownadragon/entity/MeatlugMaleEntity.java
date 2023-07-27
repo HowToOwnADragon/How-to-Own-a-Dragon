@@ -23,10 +23,8 @@ import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -37,10 +35,10 @@ import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
+import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -77,9 +75,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleMeatlugGUIMenu;
-import net.mcreator.howtoownadragon.procedures.OnlyFlyAtDayProcedure;
+import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
+import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
+import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
+import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -139,19 +140,73 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FloatGoal(this));
-		this.goalSelector.addGoal(2, new TemptGoal(this, 0, Ingredient.of(Blocks.STONE.asItem()), false));
-		this.goalSelector.addGoal(3, new TemptGoal(this, 0, Ingredient.of(Blocks.COBBLED_DEEPSLATE.asItem()), false));
-		this.goalSelector.addGoal(4, new TemptGoal(this, 0, Ingredient.of(Blocks.COBBLESTONE.asItem()), false));
-		this.goalSelector.addGoal(5, new TemptGoal(this, 0, Ingredient.of(Blocks.DEEPSLATE.asItem()), false));
-		this.goalSelector.addGoal(6, new TemptGoal(this, 0, Ingredient.of(Blocks.DIORITE.asItem()), false));
-		this.goalSelector.addGoal(7, new TemptGoal(this, 0, Ingredient.of(Blocks.ANDESITE.asItem()), false));
-		this.goalSelector.addGoal(8, new TemptGoal(this, 0, Ingredient.of(Blocks.GRANITE.asItem()), false));
-		this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, Sheep.class, true, false));
-		this.goalSelector.addGoal(10, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(11, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(12, new WaterAvoidingRandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(13, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 6) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && LookAtNightDontFollowMeProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(6, new FloatGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && DontAllFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = MeatlugMaleEntity.this.getRandom();
@@ -168,7 +223,7 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 				double z = MeatlugMaleEntity.this.getZ();
 				Entity entity = MeatlugMaleEntity.this;
 				Level world = MeatlugMaleEntity.this.level;
-				return super.canUse() && OnlyFlyAtDayProcedure.execute(world);
+				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 
 		});
@@ -181,7 +236,7 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 1;
+		return super.getPassengersRidingOffset() + 0.3;
 	}
 
 	@Override

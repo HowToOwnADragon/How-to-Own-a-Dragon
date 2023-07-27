@@ -29,7 +29,7 @@ import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.FollowMobGoal;
+import net.minecraft.world.entity.ai.goal.FollowParentGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -127,10 +127,9 @@ public class AdolescentMeatlugFemaleEntity extends TamableAnimal implements GeoE
 		this.goalSelector.addGoal(6, new TemptGoal(this, 1, Ingredient.of(Blocks.COBBLED_DEEPSLATE.asItem()), false));
 		this.goalSelector.addGoal(7, new TemptGoal(this, 1, Ingredient.of(Blocks.DEEPSLATE.asItem()), false));
 		this.goalSelector.addGoal(8, new TemptGoal(this, 1, Ingredient.of(Blocks.COBBLESTONE.asItem()), false));
-		this.goalSelector.addGoal(9, new FollowMobGoal(this, (float) 1, 10, 5));
-		this.goalSelector.addGoal(10, new FollowMobGoal(this, (float) 1, 10, 5));
-		this.goalSelector.addGoal(11, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(12, new RandomStrollGoal(this, 0.3, 20) {
+		this.goalSelector.addGoal(9, new FollowParentGoal(this, 0.8));
+		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(11, new RandomStrollGoal(this, 0.3, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = AdolescentMeatlugFemaleEntity.this.getRandom();
