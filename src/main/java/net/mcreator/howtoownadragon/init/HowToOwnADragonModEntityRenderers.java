@@ -26,6 +26,7 @@ import net.mcreator.howtoownadragon.client.renderer.GronckleOrangeRedMaleRendere
 import net.mcreator.howtoownadragon.client.renderer.GronckleOrangeRedFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleBlueYellowMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleBlueYellowFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.GronckleAttackRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyMeatlugMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyMeatlugFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyGroncklePinkMaleRenderer;
@@ -80,5 +81,6 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_FEMALE.get(), BabyGroncklePinkFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_MALE.get(), BabyGronckleOrangeRedMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_FEMALE.get(), BabyGronckleOrangeRedFemaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), GronckleAttackRenderer::new);
 	}
 }

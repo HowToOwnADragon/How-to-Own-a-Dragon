@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "how_to_own_a_dragon:block/temporarly",
-    "up": "how_to_own_a_dragon:block/temporarly",
-    "north": "how_to_own_a_dragon:block/temporarly",
-    "east": "how_to_own_a_dragon:block/temporarly",
-    "south": "how_to_own_a_dragon:block/temporarly",
-    "west": "how_to_own_a_dragon:block/temporarly",
-    "particle": "how_to_own_a_dragon:block/temporarly"
+    "down": "how_to_own_a_dragon:block/limestone",
+    "up": "how_to_own_a_dragon:block/limestone",
+    "north": "how_to_own_a_dragon:block/limestone",
+    "east": "how_to_own_a_dragon:block/limestone",
+    "south": "how_to_own_a_dragon:block/limestone",
+    "west": "how_to_own_a_dragon:block/limestone",
+    "particle": "how_to_own_a_dragon:block/limestone"
   },
   "render_type": "solid"
 }

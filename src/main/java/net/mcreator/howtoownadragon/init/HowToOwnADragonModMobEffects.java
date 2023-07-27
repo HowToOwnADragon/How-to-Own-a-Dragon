@@ -19,6 +19,7 @@ import net.mcreator.howtoownadragon.potion.GronckleIronCooldownMobEffect;
 import net.mcreator.howtoownadragon.potion.GraniteGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.DioriteGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.DeepslateGrowingMobEffect;
+import net.mcreator.howtoownadragon.potion.CombatCooldownMobEffect;
 import net.mcreator.howtoownadragon.potion.CobblestoneGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.CobbledDeepslateGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.BucketOfLavaGrowingMobEffect;
@@ -42,4 +43,5 @@ public class HowToOwnADragonModMobEffects {
 	public static final RegistryObject<MobEffect> IN_LOVE = REGISTRY.register("in_love", () -> new InLoveMobEffect());
 	public static final RegistryObject<MobEffect> BREED_COOLDOWN = REGISTRY.register("breed_cooldown", () -> new BreedCooldownMobEffect());
 	public static final RegistryObject<MobEffect> GRONCKLE_IRON_COOLDOWN = REGISTRY.register("gronckle_iron_cooldown", () -> new GronckleIronCooldownMobEffect());
+	public static final RegistryObject<MobEffect> COMBAT_COOLDOWN = REGISTRY.register("combat_cooldown", () -> new CombatCooldownMobEffect());
 }

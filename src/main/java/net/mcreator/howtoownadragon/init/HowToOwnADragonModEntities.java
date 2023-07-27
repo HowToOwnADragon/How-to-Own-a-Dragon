@@ -33,6 +33,7 @@ import net.mcreator.howtoownadragon.entity.GronckleOrangeRedMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleOrangeRedFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
 import net.mcreator.howtoownadragon.entity.BabyMeatlugMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyMeatlugFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGroncklePinkMaleEntity;
@@ -209,6 +210,8 @@ public class HowToOwnADragonModEntities {
 					.setCustomClientFactory(BabyGronckleOrangeRedFemaleEntity::new)
 
 					.sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GronckleAttackEntity>> GRONCKLE_ATTACK = register("projectile_gronckle_attack",
+			EntityType.Builder.<GronckleAttackEntity>of(GronckleAttackEntity::new, MobCategory.MISC).setCustomClientFactory(GronckleAttackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

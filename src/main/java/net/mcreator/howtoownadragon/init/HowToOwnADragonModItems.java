@@ -24,6 +24,7 @@ import net.mcreator.howtoownadragon.item.GronckleIronShovelItem;
 import net.mcreator.howtoownadragon.item.GronckleIronPickaxeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronItem;
 import net.mcreator.howtoownadragon.item.GronckleIronAxeItem;
+import net.mcreator.howtoownadragon.item.GronckleAttackItem;
 import net.mcreator.howtoownadragon.item.DragonSymbolItem;
 import net.mcreator.howtoownadragon.item.DragonProofMetalItem;
 import net.mcreator.howtoownadragon.item.DragonEyeItem;
@@ -135,6 +136,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> INCUBATOR = block(HowToOwnADragonModBlocks.INCUBATOR);
 	public static final RegistryObject<Item> LIMESTONE = block(HowToOwnADragonModBlocks.LIMESTONE);
 	public static final RegistryObject<Item> LENS_DRAGON_INFO = REGISTRY.register("lens_dragon_info", () -> new LensDragonInfoItem());
+	public static final RegistryObject<Item> GRONCKLE_ATTACK = REGISTRY.register("gronckle_attack", () -> new GronckleAttackItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
