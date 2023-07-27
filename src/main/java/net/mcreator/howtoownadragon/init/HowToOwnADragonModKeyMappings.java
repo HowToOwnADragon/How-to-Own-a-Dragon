@@ -15,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-import net.mcreator.howtoownadragon.network.OpenGUIOnDragonMessage;
 import net.mcreator.howtoownadragon.network.FlyUpMessage;
 import net.mcreator.howtoownadragon.network.FlyDownMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -58,19 +57,6 @@ public class HowToOwnADragonModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping OPEN_GUI_ON_DRAGON = new KeyMapping("key.how_to_own_a_dragon.open_gui_on_dragon", GLFW.GLFW_KEY_G, "key.categories.htoad") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new OpenGUIOnDragonMessage(0, 0));
-				OpenGUIOnDragonMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
 	private static long FLY_UP_LASTPRESS = 0;
 	private static long FLY_DOWN_LASTPRESS = 0;
 
@@ -78,7 +64,6 @@ public class HowToOwnADragonModKeyMappings {
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(FLY_UP);
 		event.register(FLY_DOWN);
-		event.register(OPEN_GUI_ON_DRAGON);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -88,7 +73,6 @@ public class HowToOwnADragonModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				FLY_UP.consumeClick();
 				FLY_DOWN.consumeClick();
-				OPEN_GUI_ON_DRAGON.consumeClick();
 			}
 		}
 	}

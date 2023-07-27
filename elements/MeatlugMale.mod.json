@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "MaleGronckleGUI",
+    "guiBoundTo": "MaleMeatlugGUI",
     "inventorySize": 2,
     "inventoryStackSize": 64,
     "deathTime": 20,

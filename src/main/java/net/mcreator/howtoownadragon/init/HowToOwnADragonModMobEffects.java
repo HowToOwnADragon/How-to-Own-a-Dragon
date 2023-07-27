@@ -15,6 +15,7 @@ import net.mcreator.howtoownadragon.potion.SandStoneGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.IronIngotGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.InLoveMobEffect;
 import net.mcreator.howtoownadragon.potion.HitByArrowMobEffect;
+import net.mcreator.howtoownadragon.potion.GronckleIronCooldownMobEffect;
 import net.mcreator.howtoownadragon.potion.GraniteGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.DioriteGrowingMobEffect;
 import net.mcreator.howtoownadragon.potion.DeepslateGrowingMobEffect;
@@ -40,4 +41,5 @@ public class HowToOwnADragonModMobEffects {
 	public static final RegistryObject<MobEffect> SAND_STONE_GROWING = REGISTRY.register("sand_stone_growing", () -> new SandStoneGrowingMobEffect());
 	public static final RegistryObject<MobEffect> IN_LOVE = REGISTRY.register("in_love", () -> new InLoveMobEffect());
 	public static final RegistryObject<MobEffect> BREED_COOLDOWN = REGISTRY.register("breed_cooldown", () -> new BreedCooldownMobEffect());
+	public static final RegistryObject<MobEffect> GRONCKLE_IRON_COOLDOWN = REGISTRY.register("gronckle_iron_cooldown", () -> new GronckleIronCooldownMobEffect());
 }

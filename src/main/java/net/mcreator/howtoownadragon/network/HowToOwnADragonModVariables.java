@@ -11,6 +11,7 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.FriendlyByteBuf;
@@ -57,6 +58,7 @@ public class HowToOwnADragonModVariables {
 		public double SpawnReaper1 = 0;
 		public String TimerLeft = "";
 		public String IncubatorRequirement = "";
+		public ItemStack GUIslot0 = ItemStack.EMPTY;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -69,6 +71,7 @@ public class HowToOwnADragonModVariables {
 			SpawnReaper1 = nbt.getDouble("SpawnReaper1");
 			TimerLeft = nbt.getString("TimerLeft");
 			IncubatorRequirement = nbt.getString("IncubatorRequirement");
+			GUIslot0 = ItemStack.of(nbt.getCompound("GUIslot0"));
 		}
 
 		@Override
@@ -77,6 +80,7 @@ public class HowToOwnADragonModVariables {
 			nbt.putDouble("SpawnReaper1", SpawnReaper1);
 			nbt.putString("TimerLeft", TimerLeft);
 			nbt.putString("IncubatorRequirement", IncubatorRequirement);
+			nbt.put("GUIslot0", GUIslot0.save(new CompoundTag()));
 			return nbt;
 		}
 

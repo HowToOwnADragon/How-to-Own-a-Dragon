@@ -76,7 +76,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MaleMeatlugGUIMenu;
 import net.mcreator.howtoownadragon.procedures.OnlyFlyAtDayProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
@@ -263,7 +263,7 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 						packetBuffer.writeBlockPos(sourceentity.blockPosition());
 						packetBuffer.writeByte(0);
 						packetBuffer.writeVarInt(MeatlugMaleEntity.this.getId());
-						return new MaleGronckleGUIMenu(id, inventory, packetBuffer);
+						return new MaleMeatlugGUIMenu(id, inventory, packetBuffer);
 					}
 				}, buf -> {
 					buf.writeBlockPos(sourceentity.blockPosition());
