@@ -27,7 +27,7 @@ public class GronckleGrowingTickRateProcedure {
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _owner)
 			_toTame.tame(_owner);
-		HowToOwnADragonMod.queueServerWork(10000, () -> {
+		HowToOwnADragonMod.queueServerWork(6000, () -> {
 			if (Mth.nextInt(RandomSource.create(), 1, 10) <= 2) {
 				if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
@@ -81,7 +81,7 @@ public class GronckleGrowingTickRateProcedure {
 						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
 				}
 			} else {
-				HowToOwnADragonMod.queueServerWork(10000, () -> {
+				HowToOwnADragonMod.queueServerWork(6000, () -> {
 					if (Mth.nextInt(RandomSource.create(), 3, 10) <= 4) {
 						if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
@@ -135,7 +135,7 @@ public class GronckleGrowingTickRateProcedure {
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
 						}
 					} else {
-						HowToOwnADragonMod.queueServerWork(10000, () -> {
+						HowToOwnADragonMod.queueServerWork(6000, () -> {
 							if (Mth.nextInt(RandomSource.create(), 5, 10) <= 6) {
 								if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 									if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
@@ -189,7 +189,7 @@ public class GronckleGrowingTickRateProcedure {
 										_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
 								}
 							} else {
-								HowToOwnADragonMod.queueServerWork(10000, () -> {
+								HowToOwnADragonMod.queueServerWork(6000, () -> {
 									if (Mth.nextInt(RandomSource.create(), 7, 10) <= 8) {
 										if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
@@ -243,7 +243,7 @@ public class GronckleGrowingTickRateProcedure {
 												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
 										}
 									} else {
-										HowToOwnADragonMod.queueServerWork(10000, () -> {
+										HowToOwnADragonMod.queueServerWork(6000, () -> {
 											if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 												if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 													_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
