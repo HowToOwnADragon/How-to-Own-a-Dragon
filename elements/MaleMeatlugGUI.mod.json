@@ -72,6 +72,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "MeatlugMaleSaddleOn"
+          },
           "x": 132,
           "y": 57
         }

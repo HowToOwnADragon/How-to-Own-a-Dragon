@@ -18,7 +18,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.network.MaleMeatlugGUISlotMessage;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMenus;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -78,6 +80,11 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 7, 39) {
 		}));
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 21) {
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -212,6 +219,13 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new MaleMeatlugGUISlotMessage(slotid, x, y, z, ctype, meta));
+			MaleMeatlugGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 
