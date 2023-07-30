@@ -16,6 +16,6 @@ public class MeatlugMaleSaddleOnProcedure {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof MeatlugMaleEntity animatable)
-			animatable.setTexture("C:\\Users\\schon\\OneDrive\\Documenten\\Minecraft\\The_Minecraft_Mod\\src\\main\\resources\\assets\\how_to_own_a_dragon\\textures\\entities\\meatlugsaddle.png");
+			animatable.setTexture("meatlugsaddle");
 	}
 }

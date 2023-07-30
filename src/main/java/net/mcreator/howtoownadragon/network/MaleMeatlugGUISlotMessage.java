@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleMeatlugGUIMenu;
 import net.mcreator.howtoownadragon.procedures.MeatlugMaleSaddleOnProcedure;
+import net.mcreator.howtoownadragon.procedures.MeatlugMaleSaddleOffProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
@@ -73,6 +74,10 @@ public class MaleMeatlugGUISlotMessage {
 		if (slotID == 0 && changeType == 0) {
 
 			MeatlugMaleSaddleOnProcedure.execute(world, x, y, z);
+		}
+		if (slotID == 0 && changeType == 1) {
+
+			MeatlugMaleSaddleOffProcedure.execute(world, x, y, z);
 		}
 	}
 

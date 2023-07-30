@@ -75,6 +75,9 @@
           "onSlotChanged": {
             "name": "MeatlugMaleSaddleOn"
           },
+          "onTakenFromSlot": {
+            "name": "MeatlugMaleSaddleOff"
+          },
           "x": 132,
           "y": 57
         }

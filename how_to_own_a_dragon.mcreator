@@ -8346,11 +8346,43 @@
       "type": "procedure",
       "sortid": 453,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "meatlug_male_saddle_on",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleSaddleOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/Saddle Texture"
+    },
+    {
+      "name": "MeatlugMaleSaddleOff",
+      "type": "procedure",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meatlug_male_saddle_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleSaddleOffProcedure.java"
         ],
         "dependencies": [
           {

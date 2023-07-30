@@ -85,6 +85,12 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 				super.setChanged();
 				slotChanged(0, 0, 0);
 			}
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(0, 1, 0);
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
