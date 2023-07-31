@@ -7112,8 +7112,7 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/network/MaleMeatlugGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleMeatlugGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleMeatlugGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/MaleMeatlugGUISlotMessage.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleMeatlugGUIScreen.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8342,47 +8341,30 @@
       "path": "~/Dragons/Gronckle"
     },
     {
-      "name": "MeatlugMaleSaddleOn",
-      "type": "procedure",
-      "sortid": 453,
+      "name": "GronckleSaddle",
+      "type": "item",
+      "sortid": 455,
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "meatlug_male_saddle_on",
+      "locked_code": false,
+      "registry_name": "gronckle_saddle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleSaddleOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_saddle.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleSaddleItem.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/Saddle Texture"
     },
     {
-      "name": "MeatlugMaleSaddleOff",
+      "name": "MeatlugMaleSaddle",
       "type": "procedure",
-      "sortid": 454,
+      "sortid": 456,
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "meatlug_male_saddle_off",
+      "locked_code": false,
+      "registry_name": "meatlug_male_saddle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleSaddleOffProcedure.java"
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleSaddleProcedure.java"
         ],
         "dependencies": [
           {
@@ -8621,6 +8603,7 @@
       "item.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male_spawn_egg": "Male Juvenile Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.adolescent_gronckle_blue_yellow_male": "Male Adolescent Gronckle",
       "effect.how_to_own_a_dragon.iron_ingot_growing": "Growing",
+      "item.how_to_own_a_dragon.gronckle_saddle": "Gronckle Saddle",
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "gui.how_to_own_a_dragon.pink_female_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.pink_male_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",

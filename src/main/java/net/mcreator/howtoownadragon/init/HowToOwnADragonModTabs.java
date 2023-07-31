@@ -42,6 +42,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.DRAGON_PROOF_METAL_BARS.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.INCUBATOR.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.LIMESTONE.get().asItem());
+					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SADDLE.get());
 				})
 
 		);

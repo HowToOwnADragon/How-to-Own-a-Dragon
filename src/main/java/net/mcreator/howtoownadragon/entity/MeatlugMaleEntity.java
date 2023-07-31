@@ -260,10 +260,10 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 		GronckleDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
-	private final ItemStackHandler inventory = new ItemStackHandler(2) {
+	private final ItemStackHandler inventory = new ItemStackHandler(3) {
 		@Override
 		public int getSlotLimit(int slot) {
-			return 64;
+			return 1;
 		}
 	};
 	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));
