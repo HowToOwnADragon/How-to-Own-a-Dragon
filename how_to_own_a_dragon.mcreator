@@ -8353,7 +8353,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/GronckleSaddleItem.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GronckleGUIs/Saddle Texture"
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
     },
     {
       "name": "MeatlugMaleSaddle",
@@ -8365,6 +8365,214 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "SaddleRack",
+      "type": "item",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saddle_rack",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/saddle_rack.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/SaddleRackItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MeatlugFemaleSaddle",
+      "type": "procedure",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug_female_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugFemaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GroncklePinkMaleSaddle",
+      "type": "procedure",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_pink_male_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GroncklePinkMaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GroncklePinkFemaleSaddle",
+      "type": "procedure",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_pink_female_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GroncklePinkFemaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GronckleOrangeRedMaleSaddle",
+      "type": "procedure",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_orange_red_male_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleOrangeRedMaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GronckleOrangeRedFemaleSaddle",
+      "type": "procedure",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_orange_red_female_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleOrangeRedFemaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GronckleBlueYellowMaleSaddle",
+      "type": "procedure",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_blue_yellow_male_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowMaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GronckleBlueYellowFemaleSaddle",
+      "type": "procedure",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_blue_yellow_female_saddle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowFemaleSaddleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "GronckleInventoryStorageRequirement",
+      "type": "procedure",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_inventory_storage_requirement",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleInventoryStorageRequirementProcedure.java"
         ],
         "dependencies": [
           {
@@ -8385,7 +8593,27 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GronckleGUIs/Saddle Texture"
+      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
+    },
+    {
+      "name": "MeatlugMaleOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug_male_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle"
     }
   ],
   "variable_elements": [
@@ -8453,6 +8681,7 @@
       "gui.how_to_own_a_dragon.male_meatlug_gui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.meatlug_female_gronckle_iron_gui.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.sand_stone_growing": "Growing",
+      "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
       "entity.how_to_own_a_dragon.gronckle_blue_yellow_female": "Female Gronckle",
       "entity.how_to_own_a_dragon.adolescent_meatlug_male": "Male Adolescent Gronckle",
       "entity.how_to_own_a_dragon.baby_meatlug_male": "Male Baby Gronckle",
@@ -8733,7 +8962,7 @@
                     "children": []
                   },
                   {
-                    "name": "Saddle Texture",
+                    "name": "GronckleSaddles",
                     "children": []
                   }
                 ]

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "groncklesaddle",
+    "texture": "saddelrack",
     "customModelName": "Normal",
-    "name": "Gronckle Saddle",
+    "name": "Saddle Rack",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Items"

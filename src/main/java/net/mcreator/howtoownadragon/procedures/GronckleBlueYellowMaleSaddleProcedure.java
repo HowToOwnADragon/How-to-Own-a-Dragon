@@ -13,12 +13,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
-import net.mcreator.howtoownadragon.entity.MeatlugMaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
 
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class MeatlugMaleSaddleProcedure {
+public class GronckleBlueYellowMaleSaddleProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -33,7 +33,7 @@ public class MeatlugMaleSaddleProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof MeatlugMaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
+		if (entity instanceof GronckleBlueYellowMaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
 				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get()) {
 			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SADDLE_RACK.get());
@@ -42,10 +42,9 @@ public class MeatlugMaleSaddleProcedure {
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
-			if (entity instanceof MeatlugMaleEntity animatable)
-				animatable.setTexture("meatlugsaddle");
-			entity.getPersistentData().putBoolean("GronckleInventory", true);
-		} else if (entity instanceof MeatlugMaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
+			if (entity instanceof GronckleBlueYellowMaleEntity animatable)
+				animatable.setTexture("gronckleblueyellowsaddle");
+		} else if (entity instanceof GronckleBlueYellowMaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
 				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get()) {
 			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_SADDLE.get());
@@ -54,9 +53,8 @@ public class MeatlugMaleSaddleProcedure {
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
-			if (entity instanceof MeatlugMaleEntity animatable)
-				animatable.setTexture("meatlug");
-			entity.getPersistentData().putBoolean("GronckleInventory", false);
+			if (entity instanceof GronckleBlueYellowMaleEntity animatable)
+				animatable.setTexture("gronckleblueyellow");
 		}
 	}
 }

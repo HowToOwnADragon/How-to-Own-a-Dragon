@@ -1,6 +1,7 @@
 
 package net.mcreator.howtoownadragon.world.inventory;
 
+import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -17,7 +18,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.GronckleInventoryStorageRequirementProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMenus;
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -36,7 +39,7 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 		super(HowToOwnADragonModMenus.MALE_MEATLUG_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(0);
+		this.internal = new ItemStackHandler(10);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -74,6 +77,39 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 				}
 			}
 		}
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 22) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return HowToOwnADragonModItems.SADDLE_RACK.get() == stack.getItem();
+			}
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 97, 22) {
+			@Override
+			public boolean mayPickup(Player entity) {
+				return !GronckleInventoryStorageRequirementProcedure.execute(world, x, y, z);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !GronckleInventoryStorageRequirementProcedure.execute(world, x, y, z);
+			}
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 115, 22) {
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 22) {
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 97, 40) {
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 115, 40) {
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 133, 40) {
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 97, 58) {
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 115, 58) {
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 133, 58) {
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
@@ -93,16 +129,16 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 0) {
-				if (!this.moveItemStackTo(itemstack1, 0, this.slots.size(), true))
+			if (index < 10) {
+				if (!this.moveItemStackTo(itemstack1, 10, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 0, false)) {
-				if (index < 0 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 0 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 10, false)) {
+				if (index < 10 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 10 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 0, 0 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 10, 10 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

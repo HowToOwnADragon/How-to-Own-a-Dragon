@@ -46,7 +46,7 @@ public class MaleMeatlugGUIScreen extends AbstractContainerScreen<MaleMeatlugGUI
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
 		if (MeatlugRenderProcedure.execute(world) instanceof LivingEntity livingEntity) {
-			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + 62, this.topPos + 52, 10, 0f + (float) Math.atan((this.leftPos + 62 - mouseX) / 40.0), (float) Math.atan((this.topPos + 2 - mouseY) / 40.0), livingEntity);
+			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + 35, this.topPos + 52, 10, 0f + (float) Math.atan((this.leftPos + 35 - mouseX) / 40.0), (float) Math.atan((this.topPos + 2 - mouseY) / 40.0), livingEntity);
 		}
 	}
 
@@ -59,7 +59,10 @@ public class MaleMeatlugGUIScreen extends AbstractContainerScreen<MaleMeatlugGUI
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/man_symbol.png"));
-		this.blit(ms, this.leftPos + 76, this.topPos + -112, 0, 0, 128, 128, 128, 128);
+		this.blit(ms, this.leftPos + 76, this.topPos + -111, 0, 0, 128, 128, 128, 128);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/saddelrackingui.png"));
+		this.blit(ms, this.leftPos + 80, this.topPos + 22, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
