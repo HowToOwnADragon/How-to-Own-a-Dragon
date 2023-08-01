@@ -109,13 +109,11 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false,
-            "name": "GronckleInventoryStorageRequirement"
+            "fixedValue": false
           },
           "id": 1,
           "disablePickup": {
-            "fixedValue": false,
-            "name": "GronckleInventoryStorageRequirement"
+            "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
           "x": 222,

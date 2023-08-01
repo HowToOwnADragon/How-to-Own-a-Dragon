@@ -44,7 +44,6 @@ public class MeatlugMaleSaddleProcedure {
 			}
 			if (entity instanceof MeatlugMaleEntity animatable)
 				animatable.setTexture("meatlugsaddle");
-			entity.getPersistentData().putBoolean("GronckleInventory", true);
 		} else if (entity instanceof MeatlugMaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
 				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get()) {
 			if (sourceentity instanceof LivingEntity _entity) {
@@ -56,7 +55,6 @@ public class MeatlugMaleSaddleProcedure {
 			}
 			if (entity instanceof MeatlugMaleEntity animatable)
 				animatable.setTexture("meatlug");
-			entity.getPersistentData().putBoolean("GronckleInventory", false);
 		}
 	}
 }

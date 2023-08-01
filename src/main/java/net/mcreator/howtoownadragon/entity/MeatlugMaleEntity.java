@@ -23,7 +23,6 @@ import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.SpawnEggItem;
@@ -45,7 +44,6 @@ import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
@@ -59,7 +57,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
@@ -78,7 +75,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleMeatlugGUIMenu;
-import net.mcreator.howtoownadragon.procedures.MeatlugMaleOnInitialEntitySpawnProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
@@ -264,17 +260,10 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 		GronckleDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
-	@Override
-	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
-		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		MeatlugMaleOnInitialEntitySpawnProcedure.execute(this);
-		return retval;
-	}
-
-	private final ItemStackHandler inventory = new ItemStackHandler(3) {
+	private final ItemStackHandler inventory = new ItemStackHandler(10) {
 		@Override
 		public int getSlotLimit(int slot) {
-			return 1;
+			return 64;
 		}
 	};
 	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));

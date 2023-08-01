@@ -63,8 +63,8 @@
     "waterMob": false,
     "flyingMob": true,
     "guiBoundTo": "MaleMeatlugGUI",
-    "inventorySize": 3,
-    "inventoryStackSize": 1,
+    "inventorySize": 10,
+    "inventoryStackSize": 64,
     "deathTime": 20,
     "lerp": 4,
     "disableCollisions": false,
@@ -104,9 +104,6 @@
     },
     "onMobTickUpdate": {
       "name": "FlyingGronckleIronTickUpdate"
-    },
-    "onInitialSpawn": {
-      "name": "MeatlugMaleOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

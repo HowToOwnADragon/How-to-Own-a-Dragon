@@ -8321,26 +8321,6 @@
       "path": "~/Procedure/DragonAttack"
     },
     {
-      "name": "GronckleOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 452,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_on_initial_entity_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
       "name": "GronckleSaddle",
       "type": "item",
       "sortid": 455,
@@ -8561,59 +8541,6 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
-    },
-    {
-      "name": "GronckleInventoryStorageRequirement",
-      "type": "procedure",
-      "sortid": 465,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_inventory_storage_requirement",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleInventoryStorageRequirementProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
-    },
-    {
-      "name": "MeatlugMaleOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 466,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "meatlug_male_on_initial_entity_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugMaleOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
     }
   ],
   "variable_elements": [

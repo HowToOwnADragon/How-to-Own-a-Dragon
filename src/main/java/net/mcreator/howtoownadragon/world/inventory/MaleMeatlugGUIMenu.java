@@ -18,7 +18,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.procedures.GronckleInventoryStorageRequirementProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMenus;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 
@@ -84,15 +83,6 @@ public class MaleMeatlugGUIMenu extends AbstractContainerMenu implements Supplie
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 97, 22) {
-			@Override
-			public boolean mayPickup(Player entity) {
-				return !GronckleInventoryStorageRequirementProcedure.execute(world, x, y, z);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack itemstack) {
-				return !GronckleInventoryStorageRequirementProcedure.execute(world, x, y, z);
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 115, 22) {
 		}));
