@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "FemaleGroncklePinkGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 2,
     "inventoryStackSize": 1,
     "deathTime": 20,

@@ -25,7 +25,7 @@ public class MaleMeatlugGUIScreen extends AbstractContainerScreen<MaleMeatlugGUI
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_next_page_mcreator;
+	ImageButton imagebutton_next_page_mcreator_copy;
 
 	public MaleMeatlugGUIScreen(MaleMeatlugGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -58,11 +58,11 @@ public class MaleMeatlugGUIScreen extends AbstractContainerScreen<MaleMeatlugGUI
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/man_symbol.png"));
-		this.blit(ms, this.leftPos + 76, this.topPos + -111, 0, 0, 128, 128, 128, 128);
-
 		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/saddelrackingui.png"));
-		this.blit(ms, this.leftPos + 80, this.topPos + 22, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 79, this.topPos + 40, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/man_symbol_-_copy.png"));
+		this.blit(ms, this.leftPos + 76, this.topPos + 5, 0, 0, 10, 11, 10, 11);
 
 		RenderSystem.disableBlend();
 	}
@@ -95,13 +95,13 @@ public class MaleMeatlugGUIScreen extends AbstractContainerScreen<MaleMeatlugGUI
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_next_page_mcreator = new ImageButton(this.leftPos + 148, this.topPos + -174, 256, 256, 0, 0, 256, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator.png"), 256, 512, e -> {
+		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 146, this.topPos + 62, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
 			if (true) {
 				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new MaleMeatlugGUIButtonMessage(0, x, y, z));
 				MaleMeatlugGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_next_page_mcreator", imagebutton_next_page_mcreator);
-		this.addRenderableWidget(imagebutton_next_page_mcreator);
+		guistate.put("button:imagebutton_next_page_mcreator_copy", imagebutton_next_page_mcreator_copy);
+		this.addRenderableWidget(imagebutton_next_page_mcreator_copy);
 	}
 }

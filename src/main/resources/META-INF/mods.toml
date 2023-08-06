@@ -20,6 +20,12 @@ description="Welcome to the Dragon world, we are trying to make this mod as cano
     side="BOTH"
 
 
+[[dependencies.how_to_own_a_dragon]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.how_to_own_a_dragon]]
     modId="geckolib"
