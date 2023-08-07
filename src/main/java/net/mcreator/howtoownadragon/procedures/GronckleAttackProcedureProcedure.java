@@ -22,7 +22,7 @@ import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class DragonAttackProcedure {
+public class GronckleAttackProcedureProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())

@@ -1,6 +1,8 @@
 {
-  "parent": "item/generated",
+  "parent": "how_to_own_a_dragon:custom/valkastaff",
   "textures": {
-    "layer0": "how_to_own_a_dragon:item/staff"
+    "0": "how_to_own_a_dragon:block/staff",
+    "missing": "how_to_own_a_dragon:block/staff",
+    "particle": "how_to_own_a_dragon:item/staff"
   }
 }

@@ -1,0 +1,74 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_male_gronckle",
+          "text": {
+            "fixedValue": "Male Gronckle"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 43
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 107
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "GroncklePinkRender"
+          },
+          "scale": 10,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 150,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "man_symbol_-_copy.png",
+          "use1Xscale": true,
+          "x": 202,
+          "y": 42
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 10,
+      "oy": 6,
+      "snapOnGrid": false
+    }
+  }
+}

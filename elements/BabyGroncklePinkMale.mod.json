@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "NotGrownMaleGroncklePinkGUI",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "deathTime": 20,

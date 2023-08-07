@@ -75,6 +75,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleMeatlugGUIMenu;
+import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
+import net.mcreator.howtoownadragon.procedures.LookIfTamedProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
@@ -148,10 +150,21 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 				double z = MeatlugMaleEntity.this.getZ();
 				Entity entity = MeatlugMaleEntity.this;
 				Level world = MeatlugMaleEntity.this.level;
-				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
+				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 6) {
+		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 32) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
 			@Override
 			public boolean canUse() {
 				double x = MeatlugMaleEntity.this.getX();
@@ -162,7 +175,40 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
+		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, (float) 32) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && LookIfTamedProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = MeatlugMaleEntity.this.getX();
+				double y = MeatlugMaleEntity.this.getY();
+				double z = MeatlugMaleEntity.this.getZ();
+				Entity entity = MeatlugMaleEntity.this;
+				Level world = MeatlugMaleEntity.this.level;
+				return super.canUse() && LookIfTamedProcedure.execute(world, entity);
+			}
+		});
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
 			@Override
 			public boolean canUse() {
 				double x = MeatlugMaleEntity.this.getX();
@@ -173,18 +219,7 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1) {
-			@Override
-			public boolean canUse() {
-				double x = MeatlugMaleEntity.this.getX();
-				double y = MeatlugMaleEntity.this.getY();
-				double z = MeatlugMaleEntity.this.getZ();
-				Entity entity = MeatlugMaleEntity.this;
-				Level world = MeatlugMaleEntity.this.level;
-				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this) {
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = MeatlugMaleEntity.this.getX();
@@ -195,7 +230,7 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && LookAtNightDontFollowMeProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(6, new FloatGoal(this) {
+		this.goalSelector.addGoal(9, new FloatGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = MeatlugMaleEntity.this.getX();
@@ -206,7 +241,7 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && DontAllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(10, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = MeatlugMaleEntity.this.getRandom();
@@ -260,10 +295,10 @@ public class MeatlugMaleEntity extends TamableAnimal implements GeoEntity {
 		GronckleDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
-	private final ItemStackHandler inventory = new ItemStackHandler(10) {
+	private final ItemStackHandler inventory = new ItemStackHandler(1) {
 		@Override
 		public int getSlotLimit(int slot) {
-			return 64;
+			return 1;
 		}
 	};
 	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));

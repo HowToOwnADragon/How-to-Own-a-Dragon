@@ -11,11 +11,11 @@ public class AllFollowMeOnKeyPressedProcedure {
 		if (entity.getPersistentData().getBoolean("FollowAll")) {
 			entity.getPersistentData().putBoolean("FollowAll", false);
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Not Following"), true);
+				_player.displayClientMessage(Component.literal("Whistle \"Stop All\""), true);
 		} else {
 			entity.getPersistentData().putBoolean("FollowAll", true);
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Following"), true);
+				_player.displayClientMessage(Component.literal("Whistle \"Follow All\""), true);
 		}
 	}
 }

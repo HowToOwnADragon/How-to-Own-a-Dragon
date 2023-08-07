@@ -1,42 +1,30 @@
 {
   "_fv": 43,
-  "_type": "item",
+  "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "staff",
-    "customModelName": "Normal",
+    "customModelName": "valkastaff:default",
     "name": "Valka Staff",
-    "rarity": "COMMON",
+    "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Items"
+      "value": "CUSTOM:Tools"
     },
-    "stackSize": 64,
-    "enchantability": 0,
-    "useDuration": 0,
-    "toolType": 1.0,
-    "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
-    "destroyAnyBlock": false,
+    "toolType": "Shears",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 3000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
-    "specialInfo": [],
-    "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
-    "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "none"
+    "onEntityHitWith": {
+      "name": "ValkaStaffLivingEntityIsHitWithTool"
+    }
   }
 }
