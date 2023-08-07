@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.howtoownadragon.item.ValkaStaffItem;
+import net.mcreator.howtoownadragon.item.StaffItem;
 import net.mcreator.howtoownadragon.item.SaddleRackItem;
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
@@ -141,6 +143,8 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> GRONCKLE_ATTACK = REGISTRY.register("gronckle_attack", () -> new GronckleAttackItem());
 	public static final RegistryObject<Item> GRONCKLE_SADDLE = REGISTRY.register("gronckle_saddle", () -> new GronckleSaddleItem());
 	public static final RegistryObject<Item> SADDLE_RACK = REGISTRY.register("saddle_rack", () -> new SaddleRackItem());
+	public static final RegistryObject<Item> STAFF = REGISTRY.register("staff", () -> new StaffItem());
+	public static final RegistryObject<Item> VALKA_STAFF = REGISTRY.register("valka_staff", () -> new ValkaStaffItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
