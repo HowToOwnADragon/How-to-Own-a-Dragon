@@ -53,8 +53,8 @@
       "registry_name": "the_hidden_world",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/java/net/mcreator/howtoownadragon/world/dimension/TheHiddenWorldDimension.java",
+          "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_hidden_world.json",
           "src/main/resources/data/how_to_own_a_dragon/dimension/the_hidden_world.json"
         ]
       },
@@ -89,10 +89,10 @@
       "registry_name": "portal_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/portal_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/portal_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/portal_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/PortalBlockBlock.java"
         ]
       },
       "path": "~/The Hidden World"
@@ -106,9 +106,9 @@
       "registry_name": "night_fury",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/NightFuryRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/NightFuryEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java"
         ]
       },
@@ -159,11 +159,11 @@
       "registry_name": "night_fury_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_helmet.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_leggings.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_chestplate.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_boots.json",
           "src/main/java/net/mcreator/howtoownadragon/item/NightFuryArmorItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_boots.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_chestplate.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_leggings.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/night_fury_armor_helmet.json"
         ]
       },
       "path": "~/Armor/Scale"
@@ -193,8 +193,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceinhwFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw.json",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entranceinhw_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entranceinhw.json"
         ]
       },
@@ -348,8 +348,8 @@
       "registry_name": "gronckle_iron_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronShovelItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_shovel.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_shovel.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronShovelItem.java"
         ]
       },
       "path": "~/Tools_Weapons/Gronckle iron Tools"
@@ -363,8 +363,8 @@
       "registry_name": "gronckle_iron_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronAxeItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_axe.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_axe.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronAxeItem.java"
         ]
       },
       "path": "~/Tools_Weapons/Gronckle iron Tools"
@@ -392,10 +392,10 @@
       "registry_name": "dark_stone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dark_stone.json",
           "src/main/java/net/mcreator/howtoownadragon/block/DarkStoneBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/dark_stone.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/dark_stone.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dark_stone.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dark_stone.json"
         ]
       },
       "path": "~/The Hidden World/Blocks"
@@ -409,10 +409,10 @@
       "registry_name": "deep_iron_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronBlockBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_block.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronBlockBlock.java"
         ]
       },
       "path": "~/Items/Deep Iron"
@@ -443,12 +443,12 @@
       "registry_name": "deep_iron_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs_outer.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_stairs.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_stairs.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs_inner.json",
           "src/main/java/net/mcreator/howtoownadragon/block/DeepIronStairsBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs_outer.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_stairs_inner.json"
         ]
       },
       "path": "~/Items/Deep Iron"
@@ -462,12 +462,12 @@
       "registry_name": "deep_iron_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_slab.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronSlabBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_slab.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab_full.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronSlabBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab_top.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_slab.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_slab.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_slab.json"
         ]
       },
       "path": "~/Items/Deep Iron"
@@ -481,17 +481,17 @@
       "registry_name": "deep_iron_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronDoorBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_right.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_right_open.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_right.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_right_open.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_door.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_left.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_right.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/DeepIronDoorBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_left_open.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_door.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_right.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_left_open.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_left.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_left.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_top_left_open.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_door.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/deep_iron_door.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/deep_iron_door_bottom_right_open.json"
         ]
       },
       "path": "~/Items/Deep Iron"
@@ -505,8 +505,8 @@
       "registry_name": "deep_iron_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_ingot.json",
-          "src/main/java/net/mcreator/howtoownadragon/item/DeepIronIngotItem.java"
+          "src/main/java/net/mcreator/howtoownadragon/item/DeepIronIngotItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/deep_iron_ingot.json"
         ]
       },
       "path": "~/Items/Deep Iron"
@@ -576,8 +576,8 @@
       "registry_name": "dragon_symbol",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/item/DragonSymbolItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_symbol.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_symbol.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/DragonSymbolItem.java"
         ]
       },
       "path": "~/Achievements"
@@ -1230,10 +1230,10 @@
       "registry_name": "reaper_portal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_portal.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_portal.json",
           "src/main/java/net/mcreator/howtoownadragon/block/ReaperPortalBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_portal.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_portal.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_portal.json"
         ]
       },
       "path": "~/ReaperShip"
@@ -1247,10 +1247,10 @@
       "registry_name": "reaper_bear_trap",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/block/ReaperBearTrapBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_bear_trap.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_bear_trap.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_bear_trap.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/ReaperBearTrapBlock.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_bear_trap.json"
         ]
       },
       "path": "~/ReaperShip/Traps"
@@ -1335,10 +1335,10 @@
       "registry_name": "slowing_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/slowing_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/slowing_block.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/SlowingBlockBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/slowing_block.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/SlowingBlockBlock.java"
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/slowing_block.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/slowing_block.json"
         ]
       },
       "path": "~/ReaperShip/Traps"
@@ -1804,14 +1804,14 @@
       "registry_name": "dragon_proof_metal_bars",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side_alt.json",
           "src/main/java/net/mcreator/howtoownadragon/block/DragonProofMetalBarsBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_proof_metal_bars.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside_alt.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dragon_proof_metal_bars.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_post.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side_alt.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_noside_alt.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/dragon_proof_metal_bars.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/dragon_proof_metal_bars.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/dragon_proof_metal_bars_side.json"
         ]
       },
       "path": "~/Items/DragonProof"
@@ -1867,10 +1867,10 @@
       "registry_name": "reaper_spike_trap",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/ReaperSpikeTrapBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_spike_trap.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_spike_trap.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spike_trap.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spike_trap.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/ReaperSpikeTrapBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_spike_trap.json"
         ]
       },
       "path": "~/ReaperShip/Traps"
@@ -1904,14 +1904,14 @@
       "registry_name": "rusty_dragon_proof_metal_bars",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_noside.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/rusty_dragon_proof_metal_bars.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/RustyDragonProofMetalBarsBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side_alt.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_post.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_noside_alt.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/RustyDragonProofMetalBarsBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/rusty_dragon_proof_metal_bars.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side_alt.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_noside.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/rusty_dragon_proof_metal_bars_side.json"
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/rusty_dragon_proof_metal_bars.json"
         ]
       },
       "path": "~/Items/DragonProof"
@@ -1961,8 +1961,8 @@
       "registry_name": "gronckle_spawning_egg",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawning_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleSpawningEggItem.java"
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleSpawningEggItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_spawning_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleSpawnEgg"
@@ -2064,9 +2064,9 @@
       "registry_name": "reaper_inside_prototype_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/reaper_inside_prototype_2_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/world/features/ReaperInsidePrototype2Feature.java",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/reaper_inside_prototype_2.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/reaper_inside_prototype_2_biome_modifier.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/reaper_inside_prototype_2.json"
         ]
       },
@@ -2151,9 +2151,9 @@
       "registry_name": "reaper_spawn_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spawn_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/reaper_spawn_block.json",
           "src/main/java/net/mcreator/howtoownadragon/block/ReaperSpawnBlockBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spawn_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_spawn_block.json"
         ]
       },
@@ -2200,9 +2200,9 @@
       "registry_name": "empty_reaper",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/empty_reaper_biome_modifier.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/empty_reaper.json",
           "src/main/java/net/mcreator/howtoownadragon/world/features/EmptyReaperFeature.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/empty_reaper_biome_modifier.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/empty_reaper.json"
         ]
       },
@@ -2787,10 +2787,10 @@
       "registry_name": "meatlugs_egg",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/meatlugs_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/block/MeatlugsEggBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/meatlugs_egg.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlugs_egg.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlugs_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/meatlugs_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/meatlugs_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
@@ -2806,8 +2806,8 @@
         "files": [
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/blue_yellow_gronckle_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/blue_yellow_gronckle_egg.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/blue_yellow_gronckle_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/BlueYellowGronckleEggBlock.java"
+          "src/main/java/net/mcreator/howtoownadragon/block/BlueYellowGronckleEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/blue_yellow_gronckle_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
@@ -2821,10 +2821,10 @@
       "registry_name": "orange_red_gronckle_egg",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/orange_red_gronckle_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/OrangeRedGronckleEggBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/orange_red_gronckle_egg.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/orange_red_gronckle_egg.json"
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/orange_red_gronckle_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/OrangeRedGronckleEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/orange_red_gronckle_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
@@ -2838,9 +2838,9 @@
       "registry_name": "pink_gronckle_egg",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/pink_gronckle_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/block/PinkGronckleEggBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/pink_gronckle_egg.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/pink_gronckle_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/pink_gronckle_egg.json"
         ]
       },
@@ -2909,10 +2909,10 @@
       "registry_name": "meatlug_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/MeatlugMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/MeatlugMaleEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlug_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/MeatlugMaleRenderer.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlug_male_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/MeatlugMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/MeatlugMaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -2926,10 +2926,10 @@
       "registry_name": "meatlug_female",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/MeatlugFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/MeatlugFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/MeatlugFemaleModel.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/meatlug_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/MeatlugFemaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/MeatlugFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/MeatlugFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -2943,11 +2943,11 @@
       "registry_name": "gronckle_blue_yellow_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowMaleModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_male_biome_modifier.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowMaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowMaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowMaleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_male_biome_modifier.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -2963,9 +2963,9 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleBlueYellowFemaleRenderer.java",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_blue_yellow_female_biome_modifier.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleBlueYellowFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowFemaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleBlueYellowFemaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_blue_yellow_female_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -2979,11 +2979,11 @@
       "registry_name": "gronckle_pink_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GroncklePinkMaleModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GroncklePinkMaleRenderer.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_pink_male_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GroncklePinkMaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_pink_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/GroncklePinkMaleEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_pink_male_spawn_egg.json"
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_pink_male_biome_modifier.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -2998,10 +2998,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_pink_female_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GroncklePinkFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GroncklePinkFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GroncklePinkFemaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_pink_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GroncklePinkFemaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GroncklePinkFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GroncklePinkFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3015,11 +3015,11 @@
       "registry_name": "gronckle_orange_red_male",
       "metadata": {
         "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_male_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleOrangeRedMaleEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleOrangeRedMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleOrangeRedMaleModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_male_biome_modifier.json"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleOrangeRedMaleRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_male_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3033,11 +3033,11 @@
       "registry_name": "gronckle_orange_red_female",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_female_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleOrangeRedFemaleRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_female_spawn_egg.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_orange_red_female_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleOrangeRedFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleOrangeRedFemaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_orange_red_female_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleOrangeRedFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3051,10 +3051,10 @@
       "registry_name": "adolescent_meatlug_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentMeatlugMaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_meatlug_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentMeatlugMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentMeatlugMaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentMeatlugMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentMeatlugMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3068,10 +3068,10 @@
       "registry_name": "adolescent_meatlug_female",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentMeatlugFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentMeatlugFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentMeatlugFemaleEntity.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_meatlug_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentMeatlugFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentMeatlugFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentMeatlugFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3085,10 +3085,10 @@
       "registry_name": "adolescent_gronckle_blue_yellow_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowMaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_blue_yellow_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleBlueYellowMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleBlueYellowMaleRenderer.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_blue_yellow_male_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleBlueYellowMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3104,8 +3104,8 @@
         "files": [
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_blue_yellow_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleBlueYellowFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleBlueYellowFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowFemaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleBlueYellowFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleBlueYellowFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3120,9 +3120,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGroncklePinkMaleEntity.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_pink_male_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGroncklePinkMaleModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGroncklePinkMaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGroncklePinkMaleModel.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_pink_male_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3138,8 +3138,8 @@
         "files": [
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_pink_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGroncklePinkFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGroncklePinkFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGroncklePinkFemaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGroncklePinkFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGroncklePinkFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3153,10 +3153,10 @@
       "registry_name": "adolescent_gronckle_orange_red_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleOrangeRedMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleOrangeRedMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedMaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_orange_red_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedMaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleOrangeRedMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleOrangeRedMaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3170,10 +3170,10 @@
       "registry_name": "adolescent_gronckle_orange_red_female",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_orange_red_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleOrangeRedFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleOrangeRedFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedFemaleRenderer.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/adolescent_gronckle_orange_red_female_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleOrangeRedFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleOrangeRedFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3187,10 +3187,10 @@
       "registry_name": "juvenile_meatlug_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileMeatlugMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileMeatlugMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileMeatlugMaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_meatlug_male_spawn_egg.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_meatlug_male_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileMeatlugMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileMeatlugMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3204,9 +3204,9 @@
       "registry_name": "juvenile_meatlug_female",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_meatlug_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileMeatlugFemaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileMeatlugFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileMeatlugFemaleRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_meatlug_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileMeatlugFemaleEntity.java"
         ]
       },
@@ -3221,10 +3221,10 @@
       "registry_name": "juvenile_gronckle_blue_yellow_male",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_blue_yellow_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleBlueYellowMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleBlueYellowMaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleBlueYellowMaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleBlueYellowMaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_blue_yellow_male_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleBlueYellowMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3240,8 +3240,8 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleBlueYellowFemaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleBlueYellowFemaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_blue_yellow_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleBlueYellowFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleBlueYellowFemaleEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_blue_yellow_female_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3255,10 +3255,10 @@
       "registry_name": "juvenile_gronckle_pink_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGroncklePinkMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGroncklePinkMaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_pink_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGroncklePinkMaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGroncklePinkMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGroncklePinkMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGroncklePinkMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3272,10 +3272,10 @@
       "registry_name": "juvenile_gronckle_pink_female",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGroncklePinkFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGroncklePinkFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGroncklePinkFemaleEntity.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_pink_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGroncklePinkFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGroncklePinkFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGroncklePinkFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3289,10 +3289,10 @@
       "registry_name": "juvenile_gronckle_orange_red_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleOrangeRedMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleOrangeRedMaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_orange_red_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleOrangeRedMaleRenderer.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_orange_red_male_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleOrangeRedMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleOrangeRedMaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3306,10 +3306,10 @@
       "registry_name": "juvenile_gronckle_orange_red_female",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleOrangeRedFemaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/juvenile_gronckle_orange_red_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleOrangeRedFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleOrangeRedFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleOrangeRedFemaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleOrangeRedFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3323,10 +3323,10 @@
       "registry_name": "baby_meatlug_male",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_meatlug_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyMeatlugMaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyMeatlugMaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyMeatlugMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyMeatlugMaleEntity.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_meatlug_male_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyMeatlugMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3340,10 +3340,10 @@
       "registry_name": "baby_meatlug_female",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyMeatlugFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyMeatlugFemaleRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_meatlug_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyMeatlugFemaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_meatlug_female_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyMeatlugFemaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyMeatlugFemaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3358,9 +3358,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleBlueYellowMaleEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_blue_yellow_male_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleBlueYellowMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleBlueYellowMaleRenderer.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_blue_yellow_male_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleBlueYellowMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3374,10 +3374,10 @@
       "registry_name": "baby_gronckle_blue_yellow_female",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleBlueYellowFemaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleBlueYellowFemaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_blue_yellow_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleBlueYellowFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleBlueYellowFemaleRenderer.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_blue_yellow_female_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3391,10 +3391,10 @@
       "registry_name": "baby_gronckle_pink_male",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGroncklePinkMaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGroncklePinkMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGroncklePinkMaleModel.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_pink_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGroncklePinkMaleEntity.java"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_pink_male_spawn_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3409,9 +3409,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGroncklePinkFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGroncklePinkFemaleEntity.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_pink_female_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGroncklePinkFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGroncklePinkFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGroncklePinkFemaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3425,9 +3425,9 @@
       "registry_name": "baby_gronckle_orange_red_male",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleOrangeRedMaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleOrangeRedMaleRenderer.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_orange_red_male_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleOrangeRedMaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleOrangeRedMaleModel.java"
         ]
       },
@@ -3442,10 +3442,10 @@
       "registry_name": "baby_gronckle_orange_red_female",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleOrangeRedFemaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleOrangeRedFemaleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_orange_red_female_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleOrangeRedFemaleRenderer.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_gronckle_orange_red_female_spawn_egg.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleOrangeRedFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -6687,8 +6687,8 @@
       "registry_name": "ready_to_hatch_meatlug_egg",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_meatlug_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchMeatlugEggBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_meatlug_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_meatlug_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_meatlug_egg.json"
         ]
@@ -6704,10 +6704,10 @@
       "registry_name": "ready_to_hatch_blue_yellow_gronckle_egg",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_blue_yellow_gronckle_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchBlueYellowGronckleEggBlock.java",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_blue_yellow_gronckle_egg.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_blue_yellow_gronckle_egg.json"
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_blue_yellow_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_blue_yellow_gronckle_egg.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
@@ -6722,8 +6722,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchOrangeRedGronckleEggBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_orange_red_gronckle_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_orange_red_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_orange_red_gronckle_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_orange_red_gronckle_egg.json"
         ]
       },
@@ -6738,10 +6738,10 @@
       "registry_name": "ready_to_hatch_pink_gronckle_egg",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchPinkGronckleEggBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_pink_gronckle_egg.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/ready_to_hatch_pink_gronckle_egg.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_pink_gronckle_egg.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/ready_to_hatch_pink_gronckle_egg.json",
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/ready_to_hatch_pink_gronckle_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/ReadyToHatchPinkGronckleEggBlock.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
@@ -6803,11 +6803,11 @@
       "registry_name": "incubator",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/block/IncubatorBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/incubator.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/entity/IncubatorBlockEntity.java",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/incubator.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/incubator.json"
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/incubator.json",
+          "src/main/java/net/mcreator/howtoownadragon/block/IncubatorBlock.java",
+          "src/main/java/net/mcreator/howtoownadragon/block/entity/IncubatorBlockEntity.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/incubator.json"
         ]
       },
       "path": "~/Items/Incubator"
@@ -6909,10 +6909,10 @@
       "registry_name": "limestone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/limestone.json",
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/limestone.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/block/limestone.json",
-          "src/main/java/net/mcreator/howtoownadragon/block/LimestoneBlock.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/limestone.json"
+          "src/main/java/net/mcreator/howtoownadragon/block/LimestoneBlock.java"
         ]
       },
       "path": "~/Items"
@@ -6973,8 +6973,8 @@
       "registry_name": "dragon_eye_input",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/DragonEyeInputMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/DragonEyeInputScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/DragonEyeInputScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/DragonEyeInputMenu.java"
         ]
       },
       "path": "~/Items/DragonEye"
@@ -7110,9 +7110,9 @@
       "registry_name": "male_meatlug_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/network/MaleMeatlugGUIButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleMeatlugGUIScreen.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleMeatlugGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleMeatlugGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/network/MaleMeatlugGUIButtonMessage.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -7224,8 +7224,8 @@
       "registry_name": "meatlug_male_gronckle_iron_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/network/MeatlugMaleGronckleIronGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MeatlugMaleGronckleIronGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/MeatlugMaleGronckleIronGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/MeatlugMaleGronckleIronGUIScreen.java"
         ]
       },
@@ -7240,9 +7240,9 @@
       "registry_name": "pink_male_gronckle_iron_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/PinkMaleGronckleIronGUIScreen.java",
           "src/main/java/net/mcreator/howtoownadragon/network/PinkMaleGronckleIronGUIButtonMessage.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/PinkMaleGronckleIronGUIMenu.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/PinkMaleGronckleIronGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/PinkMaleGronckleIronGUIScreen.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -7256,9 +7256,9 @@
       "registry_name": "orange_red_male_gronckle_iron_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/OrangeRedMaleGronckleIronGUIScreen.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/OrangeRedMaleGronckleIronGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/OrangeRedMaleGronckleIronGUIButtonMessage.java"
+          "src/main/java/net/mcreator/howtoownadragon/network/OrangeRedMaleGronckleIronGUIButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/OrangeRedMaleGronckleIronGUIScreen.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -7272,9 +7272,9 @@
       "registry_name": "blue_yellow_male_gronckle_iron_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/BlueYellowMaleGronckleIronGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BlueYellowMaleGronckleIronGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/BlueYellowMaleGronckleIronGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/BlueYellowMaleGronckleIronGUIButtonMessage.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/BlueYellowMaleGronckleIronGUIMenu.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -7577,8 +7577,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MeatlugFemaleGronckleIronGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/MeatlugFemaleGronckleIronGUIButtonMessage.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MeatlugFemaleGronckleIronGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MeatlugFemaleGronckleIronGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/MeatlugFemaleGronckleIronGUIButtonMessage.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -7592,9 +7592,9 @@
       "registry_name": "pink_female_gronckle_iron_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/PinkFemaleGronckleIronGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/PinkFemaleGronckleIronGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/PinkFemaleGronckleIronGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/PinkFemaleGronckleIronGUIButtonMessage.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/PinkFemaleGronckleIronGUIScreen.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -7609,8 +7609,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/OrangeRedFemaleGronckleIronGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/OrangeRedFemaleGronckleIronGUIButtonMessage.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/OrangeRedFemaleGronckleIronGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/OrangeRedFemaleGronckleIronGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/OrangeRedFemaleGronckleIronGUIButtonMessage.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -7625,8 +7625,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/BlueYellowFemaleGronckleIronGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/BlueYellowFemaleGronckleIronGUIButtonMessage.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/BlueYellowFemaleGronckleIronGUIMenu.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/BlueYellowFemaleGronckleIronGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BlueYellowFemaleGronckleIronGUIButtonMessage.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron"
@@ -8197,8 +8197,8 @@
       "registry_name": "gronckle_saddle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_saddle.json",
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleSaddleItem.java"
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleSaddleItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_saddle.json"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleSaddles"
@@ -8507,7 +8507,7 @@
     {
       "name": "MaleGroncklePinkGUI",
       "type": "gui",
-      "sortid": 471,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "registry_name": "male_gronckle_pink_gui",
@@ -8523,15 +8523,15 @@
     {
       "name": "MaleGronckleOrangeRedGUI",
       "type": "gui",
-      "sortid": 472,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "registry_name": "male_gronckle_orange_red_gui",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleGronckleOrangeRedGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/MaleGronckleOrangeRedGUIButtonMessage.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleGronckleOrangeRedGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleGronckleOrangeRedGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/MaleGronckleOrangeRedGUIButtonMessage.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8539,14 +8539,14 @@
     {
       "name": "MaleGronckleBlueYellowGUI",
       "type": "gui",
-      "sortid": 473,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "registry_name": "male_gronckle_blue_yellow_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleGronckleBlueYellowGUIScreen.java",
           "src/main/java/net/mcreator/howtoownadragon/network/MaleGronckleBlueYellowGUIButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleGronckleBlueYellowGUIScreen.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleGronckleBlueYellowGUIMenu.java"
         ]
       },
@@ -8555,14 +8555,14 @@
     {
       "name": "FemaleMeatlugGUI",
       "type": "gui",
-      "sortid": 474,
+      "sortid": 422,
       "compiles": true,
       "locked_code": false,
       "registry_name": "female_meatlug_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleMeatlugGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleMeatlugGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleMeatlugGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/network/FemaleMeatlugGUIButtonMessage.java"
         ]
       },
@@ -8571,15 +8571,15 @@
     {
       "name": "FemaleGroncklePinkGUI",
       "type": "gui",
-      "sortid": 475,
+      "sortid": 423,
       "compiles": true,
       "locked_code": false,
       "registry_name": "female_gronckle_pink_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/network/FemaleGroncklePinkGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleGroncklePinkGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleGroncklePinkGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleGroncklePinkGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/FemaleGroncklePinkGUIButtonMessage.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8587,14 +8587,14 @@
     {
       "name": "FemaleGronckleOrangeRedGUI",
       "type": "gui",
-      "sortid": 476,
+      "sortid": 424,
       "compiles": true,
       "locked_code": false,
       "registry_name": "female_gronckle_orange_red_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/network/FemaleGronckleOrangeRedGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleGronckleOrangeRedGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/FemaleGronckleOrangeRedGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleGronckleOrangeRedGUIMenu.java"
         ]
       },
@@ -8603,15 +8603,15 @@
     {
       "name": "FemaleGronckleBlueYellowGUI",
       "type": "gui",
-      "sortid": 477,
+      "sortid": 425,
       "compiles": true,
       "locked_code": false,
       "registry_name": "female_gronckle_blue_yellow_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleGronckleBlueYellowGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/network/FemaleGronckleBlueYellowGUIButtonMessage.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleGronckleBlueYellowGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleGronckleBlueYellowGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleGronckleBlueYellowGUIMenu.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8700,8 +8700,8 @@
       "registry_name": "not_grown_female_gronckle_pink_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGroncklePinkGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGroncklePinkGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGroncklePinkGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGroncklePinkGUIMenu.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8715,8 +8715,8 @@
       "registry_name": "not_grown_female_gronckle_orange_red_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGronckleOrangeRedGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleOrangeRedGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleOrangeRedGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGronckleOrangeRedGUIMenu.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8730,8 +8730,8 @@
       "registry_name": "not_grown_female_gronckle_blue_yellow_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleBlueYellowGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGronckleBlueYellowGUIMenu.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGronckleBlueYellowGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleBlueYellowGUIScreen.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs"
@@ -8896,14 +8896,14 @@
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "gui.how_to_own_a_dragon.female_gronckle_blue_yellow_gui.label_male_gronckle": "Female Gronckle",
-      "gui.how_to_own_a_dragon.meatlug_male_gronckle_iron_gui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.gronckle_pink_male": "Male Gronckle",
+      "gui.how_to_own_a_dragon.meatlug_male_gronckle_iron_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "gui.how_to_own_a_dragon.not_grown_male_meatlug_gui.label_male_gronckle": "Male Gronckle",
-      "gui.how_to_own_a_dragon.female_gronckle_pink_gui.label_inventory": "Inventory",
-      "gui.how_to_own_a_dragon.male_gronckle_orange_red_gui.label_male_gronckle": "Male Gronckle",
-      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "gui.how_to_own_a_dragon.male_gronckle_orange_red_gui.label_male_gronckle": "Male Gronckle",
+      "gui.how_to_own_a_dragon.female_gronckle_pink_gui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male": "Male Juvenile Gronckle",
       "item.how_to_own_a_dragon.baby_meatlug_female_spawn_egg": "Female Baby Gronckle Spawn Egg",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -9299,7 +9299,6 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "mcreator_link",
       "geckolib"
     ],
     "currentGenerator": "forge-1.19.4",

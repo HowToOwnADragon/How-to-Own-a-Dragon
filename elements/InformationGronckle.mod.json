@@ -3,28 +3,32 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 400,
-    "height": 230,
+    "width": 425,
+    "height": 239,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": true,
     "components": [
       {
-        "type": "image",
+        "type": "entitymodel",
         "data": {
-          "image": "ehhhhhh.png",
-          "use1Xscale": false,
-          "x": 13,
-          "y": 4
+          "entityModel": {
+            "name": "MeatlugRender"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 204,
+          "y": 110
         }
       }
     ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "ox": 18,
+      "oy": 18,
       "snapOnGrid": false
     }
   }
