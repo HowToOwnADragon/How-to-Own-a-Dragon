@@ -63,7 +63,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -83,7 +83,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -103,7 +103,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -123,7 +123,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -143,7 +143,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -163,7 +163,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -183,7 +183,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
 					if (((Entity) world.getEntitiesOfClass(JuvenileGronckleOrangeRedMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -203,7 +203,7 @@ public class OrangeRedAndOrangeRedProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), HowToOwnADragonModBlocks.ORANGE_RED_GRONCKLE_EGG.get().defaultBlockState(), 3);
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 48000, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREED_COOLDOWN.get(), 600, 1, false, false));
 				}
 			}
 		}

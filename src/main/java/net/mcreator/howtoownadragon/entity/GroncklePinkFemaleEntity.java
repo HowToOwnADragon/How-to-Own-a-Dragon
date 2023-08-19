@@ -79,7 +79,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.FemaleGroncklePinkGUIMenu;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.LookIfTamedProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyingGronckleIronTickUpdateProcedure;
@@ -189,18 +188,7 @@ public class GroncklePinkFemaleEntity extends TamableAnimal implements GeoEntity
 				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = GroncklePinkFemaleEntity.this.getX();
-				double y = GroncklePinkFemaleEntity.this.getY();
-				double z = GroncklePinkFemaleEntity.this.getZ();
-				Entity entity = GroncklePinkFemaleEntity.this;
-				Level world = GroncklePinkFemaleEntity.this.level;
-				return super.canUse() && LookIfTamedProcedure.execute(world, entity);
-			}
-		});
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
 			@Override
 			public boolean canUse() {
 				double x = GroncklePinkFemaleEntity.this.getX();
@@ -211,7 +199,7 @@ public class GroncklePinkFemaleEntity extends TamableAnimal implements GeoEntity
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1) {
+		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1) {
 			@Override
 			public boolean canUse() {
 				double x = GroncklePinkFemaleEntity.this.getX();
@@ -222,7 +210,7 @@ public class GroncklePinkFemaleEntity extends TamableAnimal implements GeoEntity
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this) {
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = GroncklePinkFemaleEntity.this.getX();
@@ -233,7 +221,7 @@ public class GroncklePinkFemaleEntity extends TamableAnimal implements GeoEntity
 				return super.canUse() && LookAtNightDontFollowMeProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(9, new FloatGoal(this) {
+		this.goalSelector.addGoal(8, new FloatGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = GroncklePinkFemaleEntity.this.getX();
@@ -244,7 +232,7 @@ public class GroncklePinkFemaleEntity extends TamableAnimal implements GeoEntity
 				return super.canUse() && DontAllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(10, new WaterAvoidingRandomStrollGoal(this, 0.8) {
+		this.goalSelector.addGoal(9, new WaterAvoidingRandomStrollGoal(this, 0.8) {
 			@Override
 			public boolean canUse() {
 				double x = GroncklePinkFemaleEntity.this.getX();

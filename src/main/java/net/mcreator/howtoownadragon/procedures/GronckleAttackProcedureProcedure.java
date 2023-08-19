@@ -62,7 +62,7 @@ public class GronckleAttackProcedureProcedure {
 				}
 				(entity.getVehicle()).getPersistentData().putDouble("GronckleAttack", 1);
 				if ((entity.getVehicle()) instanceof LivingEntity _entity && !_entity.level.isClientSide())
-					_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COMBAT_COOLDOWN.get(), 6000, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COMBAT_COOLDOWN.get(), 600, 1, false, false));
 			}
 		} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 1) {
 			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {

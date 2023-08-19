@@ -3,14 +3,11 @@ package net.mcreator.howtoownadragon.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 
 import net.mcreator.howtoownadragon.world.inventory.InformationGronckleMenu;
-import net.mcreator.howtoownadragon.procedures.MeatlugRenderProcedure;
 
 import java.util.HashMap;
 
@@ -30,8 +27,8 @@ public class InformationGronckleScreen extends AbstractContainerScreen<Informati
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 425;
-		this.imageHeight = 239;
+		this.imageWidth = 400;
+		this.imageHeight = 230;
 	}
 
 	@Override
@@ -46,9 +43,6 @@ public class InformationGronckleScreen extends AbstractContainerScreen<Informati
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		if (MeatlugRenderProcedure.execute(world) instanceof LivingEntity livingEntity) {
-			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + 214, this.topPos + 130, 30, 0f, 0, livingEntity);
-		}
 	}
 
 	@Override
@@ -58,6 +52,10 @@ public class InformationGronckleScreen extends AbstractContainerScreen<Informati
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/ehhhhhh.png"));
+		this.blit(ms, this.leftPos + 0, this.topPos + -1, 0, 0, -1, -1, -1, -1);
+
 		RenderSystem.disableBlend();
 	}
 

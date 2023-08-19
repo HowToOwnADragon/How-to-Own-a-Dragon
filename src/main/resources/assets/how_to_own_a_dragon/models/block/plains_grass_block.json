@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "how_to_own_a_dragon:block/dirt",
+    "up": "how_to_own_a_dragon:block/grass_block_top",
+    "north": "how_to_own_a_dragon:block/grass_block_side",
+    "east": "how_to_own_a_dragon:block/grass_block_side",
+    "south": "how_to_own_a_dragon:block/grass_block_side",
+    "west": "how_to_own_a_dragon:block/grass_block_side",
+    "particle": "how_to_own_a_dragon:block/dirt"
+  },
+  "render_type": "solid"
+}

@@ -44,6 +44,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.LIMESTONE.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SADDLE.get());
 					tabData.accept(HowToOwnADragonModItems.SADDLE_RACK.get());
+					tabData.accept(HowToOwnADragonModBlocks.PLAINS_GRASS_BLOCK.get().asItem());
 				})
 
 		);

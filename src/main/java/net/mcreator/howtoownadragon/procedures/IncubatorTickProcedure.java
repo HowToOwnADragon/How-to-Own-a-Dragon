@@ -286,7 +286,7 @@ public class IncubatorTickProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "timer") >= 12000) {
+			}.getValue(world, BlockPos.containing(x, y, z), "timer") >= 600) {
 				if (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -702,7 +702,7 @@ public class IncubatorTickProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == HowToOwnADragonModBlocks.BLUE_YELLOW_GRONCKLE_EGG.get().asItem()) {
-			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = "10 Min";
+			HowToOwnADragonModVariables.WorldVariables.get(world).TimerLeft = "30 sec";
 			HowToOwnADragonModVariables.WorldVariables.get(world).syncData(world);
 		} else if (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {

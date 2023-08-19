@@ -22,6 +22,7 @@ import net.mcreator.howtoownadragon.block.ReadyToHatchOrangeRedGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.ReadyToHatchMeatlugEggBlock;
 import net.mcreator.howtoownadragon.block.ReadyToHatchBlueYellowGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.PortalBlockBlock;
+import net.mcreator.howtoownadragon.block.PlainsGrassBlockBlock;
 import net.mcreator.howtoownadragon.block.PinkGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.OrangeRedGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.MeatlugsEggBlock;
@@ -66,4 +67,5 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> READY_TO_HATCH_PINK_GRONCKLE_EGG = REGISTRY.register("ready_to_hatch_pink_gronckle_egg", () -> new ReadyToHatchPinkGronckleEggBlock());
 	public static final RegistryObject<Block> INCUBATOR = REGISTRY.register("incubator", () -> new IncubatorBlock());
 	public static final RegistryObject<Block> LIMESTONE = REGISTRY.register("limestone", () -> new LimestoneBlock());
+	public static final RegistryObject<Block> PLAINS_GRASS_BLOCK = REGISTRY.register("plains_grass_block", () -> new PlainsGrassBlockBlock());
 }
