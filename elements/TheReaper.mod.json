@@ -22,7 +22,7 @@
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "onPlayerEntersDimension": {
-      "name": "TheReaperPlayerEntersDimension"
+      "name": "TheReaperEnterDimension"
     },
     "onPlayerLeavesDimension": {
       "name": "TheReaperPlayerLeavesDimension"

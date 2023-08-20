@@ -90,7 +90,7 @@ public class PinkAndPinkProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(HowToOwnADragonModMobEffects.IN_LOVE.get())) {
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Blocks.COBBLED_DEEPSLATE);
+							ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
 						if (((Entity) world.getEntitiesOfClass(GroncklePinkMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {

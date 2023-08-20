@@ -17,7 +17,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
 
 import net.mcreator.howtoownadragon.procedures.TheReaperPlayerLeavesDimensionProcedure;
-import net.mcreator.howtoownadragon.procedures.TheReaperPlayerEntersDimensionProcedure;
+import net.mcreator.howtoownadragon.procedures.TheReaperEnterDimensionProcedure;
 
 @Mod.EventBusSubscriber
 public class TheReaperDimension {
@@ -54,7 +54,7 @@ public class TheReaperDimension {
 		}
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("how_to_own_a_dragon:the_reaper"))) {
 
-			TheReaperPlayerEntersDimensionProcedure.execute(world, x, y, z, entity);
+			TheReaperEnterDimensionProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

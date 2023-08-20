@@ -2000,42 +2000,6 @@
       "path": "~/Dragons/Gronckle"
     },
     {
-      "name": "TheReaperPlayerEntersDimension",
-      "type": "procedure",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_reaper_player_enters_dimension",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TheReaperPlayerEntersDimensionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReaperShip"
-    },
-    {
       "name": "TheReaperPlayerLeavesDimension",
       "type": "procedure",
       "sortid": 128,
@@ -8833,6 +8797,42 @@
         ]
       },
       "path": "~/Dragons"
+    },
+    {
+      "name": "TheReaperEnterDimension",
+      "type": "procedure",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_reaper_enter_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TheReaperEnterDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReaperShip"
     }
   ],
   "variable_elements": [
@@ -8945,14 +8945,14 @@
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "gui.how_to_own_a_dragon.female_gronckle_blue_yellow_gui.label_male_gronckle": "Female Gronckle",
-      "entity.how_to_own_a_dragon.gronckle_pink_male": "Male Gronckle",
       "gui.how_to_own_a_dragon.meatlug_male_gronckle_iron_gui.label_inventory": "Inventory",
+      "entity.how_to_own_a_dragon.gronckle_pink_male": "Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
       "gui.how_to_own_a_dragon.not_grown_male_meatlug_gui.label_male_gronckle": "Male Gronckle",
-      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
-      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
-      "gui.how_to_own_a_dragon.male_gronckle_orange_red_gui.label_male_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.female_gronckle_pink_gui.label_inventory": "Inventory",
+      "gui.how_to_own_a_dragon.male_gronckle_orange_red_gui.label_male_gronckle": "Male Gronckle",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "entity.how_to_own_a_dragon.juvenile_gronckle_blue_yellow_male": "Male Juvenile Gronckle",
       "item.how_to_own_a_dragon.baby_meatlug_female_spawn_egg": "Female Baby Gronckle Spawn Egg",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
