@@ -16,6 +16,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.howtoownadragon.entity.PinkGronckleEggEntityEntity;
+import net.mcreator.howtoownadragon.entity.OrangeRedGronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.MeatlugsEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.MeatlugMaleEntity;
@@ -35,6 +37,7 @@ import net.mcreator.howtoownadragon.entity.GronckleOrangeRedFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
+import net.mcreator.howtoownadragon.entity.BlueYellowGronkleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.BabyMeatlugMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyMeatlugFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGroncklePinkMaleEntity;
@@ -217,6 +220,21 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<MeatlugsEggEntityEntity>of(MeatlugsEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MeatlugsEggEntityEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlueYellowGronkleEggEntityEntity>> BLUE_YELLOW_GRONKLE_EGG_ENTITY = register("blue_yellow_gronkle_egg_entity",
+			EntityType.Builder.<BlueYellowGronkleEggEntityEntity>of(BlueYellowGronkleEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(BlueYellowGronkleEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<OrangeRedGronckleEggEntityEntity>> ORANGE_RED_GRONCKLE_EGG_ENTITY = register("orange_red_gronckle_egg_entity",
+			EntityType.Builder.<OrangeRedGronckleEggEntityEntity>of(OrangeRedGronckleEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(OrangeRedGronckleEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PinkGronckleEggEntityEntity>> PINK_GRONCKLE_EGG_ENTITY = register("pink_gronckle_egg_entity",
+			EntityType.Builder.<PinkGronckleEggEntityEntity>of(PinkGronckleEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(PinkGronckleEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -259,6 +277,9 @@ public class HowToOwnADragonModEntities {
 			BabyGronckleOrangeRedMaleEntity.init();
 			BabyGronckleOrangeRedFemaleEntity.init();
 			MeatlugsEggEntityEntity.init();
+			BlueYellowGronkleEggEntityEntity.init();
+			OrangeRedGronckleEggEntityEntity.init();
+			PinkGronckleEggEntityEntity.init();
 		});
 	}
 
@@ -298,5 +319,8 @@ public class HowToOwnADragonModEntities {
 		event.put(BABY_GRONCKLE_ORANGE_RED_MALE.get(), BabyGronckleOrangeRedMaleEntity.createAttributes().build());
 		event.put(BABY_GRONCKLE_ORANGE_RED_FEMALE.get(), BabyGronckleOrangeRedFemaleEntity.createAttributes().build());
 		event.put(MEATLUGS_EGG_ENTITY.get(), MeatlugsEggEntityEntity.createAttributes().build());
+		event.put(BLUE_YELLOW_GRONKLE_EGG_ENTITY.get(), BlueYellowGronkleEggEntityEntity.createAttributes().build());
+		event.put(ORANGE_RED_GRONCKLE_EGG_ENTITY.get(), OrangeRedGronckleEggEntityEntity.createAttributes().build());
+		event.put(PINK_GRONCKLE_EGG_ENTITY.get(), PinkGronckleEggEntityEntity.createAttributes().build());
 	}
 }
