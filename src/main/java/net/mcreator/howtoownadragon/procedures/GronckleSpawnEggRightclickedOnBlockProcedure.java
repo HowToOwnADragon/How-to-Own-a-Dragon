@@ -19,8 +19,8 @@ import net.mcreator.howtoownadragon.entity.GroncklePinkMaleEntity;
 import net.mcreator.howtoownadragon.entity.GroncklePinkFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleOrangeRedMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleOrangeRedFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleBlueYellowMaleEntity;
 
 public class GronckleSpawnEggRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -82,7 +82,7 @@ public class GronckleSpawnEggRightclickedOnBlockProcedure {
 				}
 			} else if (Mth.nextInt(RandomSource.create(), 1, 14) == 7 || Mth.nextInt(RandomSource.create(), 1, 14) == 8) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyGronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
+					Entity entityToSpawn = new GronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
 					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);

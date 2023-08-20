@@ -8776,6 +8776,49 @@
         ]
       },
       "path": "~/Items/islandTopBlocks"
+    },
+    {
+      "name": "GronckleIronHoe",
+      "type": "tool",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleIronHoeItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_hoe.json"
+        ]
+      },
+      "path": "~/Tools_Weapons/Gronckle iron Tools"
+    },
+    {
+      "name": "GronckleIronHoeRecipeRight",
+      "type": "recipe",
+      "sortid": 491,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_hoe_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_hoe_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "GronckleIronHoeRecipeLeft",
+      "type": "recipe",
+      "sortid": 492,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_iron_hoe_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_hoe_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/Gronckle Iron"
     }
   ],
   "variable_elements": [
@@ -9013,6 +9056,7 @@
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "gui.how_to_own_a_dragon.pink_female_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.pink_male_gronckle_iron_gui.label_gronckle_iron": "Gronckle iron",
+      "item.how_to_own_a_dragon.gronckle_iron_hoe": "Gronckle Iron Hoe",
       "entity.how_to_own_a_dragon.adolescent_gronckle_pink_female": "Female Adolescent Gronckle",
       "entity.how_to_own_a_dragon.juvenile_gronckle_pink_male": "Male Juvenile Gronckle",
       "block.how_to_own_a_dragon.incubator": "Incubator",

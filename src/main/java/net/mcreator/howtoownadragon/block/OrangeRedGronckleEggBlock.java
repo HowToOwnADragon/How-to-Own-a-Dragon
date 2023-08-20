@@ -41,7 +41,7 @@ public class OrangeRedGronckleEggBlock extends FallingBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(7, 0, 7, 8, 8, 8);
+		return Shapes.or(box(5.58, 0, 4.58, 11.3, 1.43, 10.3), box(4.865, 0.858, 3.865, 12.015, 6.578, 11.015), box(5.58, 6.292, 4.58, 11.3, 7.722, 10.3), box(6.295, 6.864, 5.295, 10.585, 8.294, 9.585));
 	}
 
 	@Override

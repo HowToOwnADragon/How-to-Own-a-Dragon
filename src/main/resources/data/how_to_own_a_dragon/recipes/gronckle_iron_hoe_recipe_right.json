@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "01",
+    "2 ",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "how_to_own_a_dragon:gronckle_iron"
+    },
+    "1": {
+      "item": "how_to_own_a_dragon:gronckle_iron"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "how_to_own_a_dragon:gronckle_iron_hoe",
+    "count": 1
+  }
+}

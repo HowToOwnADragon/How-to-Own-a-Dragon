@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "how_to_own_a_dragon:item/gronckle_iron_hoe"
+  }
+}

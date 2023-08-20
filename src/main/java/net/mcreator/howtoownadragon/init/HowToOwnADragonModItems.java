@@ -26,6 +26,7 @@ import net.mcreator.howtoownadragon.item.GronckleIronSwordItem;
 import net.mcreator.howtoownadragon.item.GronckleIronShovelItem;
 import net.mcreator.howtoownadragon.item.GronckleIronPickaxeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronItem;
+import net.mcreator.howtoownadragon.item.GronckleIronHoeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronAxeItem;
 import net.mcreator.howtoownadragon.item.GronckleAttackItem;
 import net.mcreator.howtoownadragon.item.DragonSymbolItem;
@@ -144,6 +145,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> SADDLE_RACK = REGISTRY.register("saddle_rack", () -> new SaddleRackItem());
 	public static final RegistryObject<Item> VALKA_STAFF = REGISTRY.register("valka_staff", () -> new ValkaStaffItem());
 	public static final RegistryObject<Item> PLAINS_GRASS_BLOCK = block(HowToOwnADragonModBlocks.PLAINS_GRASS_BLOCK);
+	public static final RegistryObject<Item> GRONCKLE_IRON_HOE = REGISTRY.register("gronckle_iron_hoe", () -> new GronckleIronHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
