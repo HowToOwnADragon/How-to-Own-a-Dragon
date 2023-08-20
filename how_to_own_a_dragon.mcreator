@@ -8819,6 +8819,20 @@
         ]
       },
       "path": "~/Recipe/Gronckle Iron"
+    },
+    {
+      "name": "DragonGrown",
+      "type": "tag",
+      "sortid": 493,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/entity_types/dragon_grown.json"
+        ]
+      },
+      "path": "~/Dragons"
     }
   ],
   "variable_elements": [

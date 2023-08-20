@@ -28,115 +28,63 @@ public class GronckleGrowingTickRateProcedure {
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _owner)
 			_toTame.tame(_owner);
 		HowToOwnADragonMod.queueServerWork(600, () -> {
-			if (Mth.nextInt(RandomSource.create(), 1, 10) <= 2) {
-				if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.STONE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobblestone!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 3) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Deepslate!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 4) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobbled Deepslate!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLED_DEEPSLATE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Andesite!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ANDESITE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 6) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Diorite!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DIORITE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 7) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Granite!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRANITE_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 8) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Lava!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 9) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Iron!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IRON_INGOT_GROWING.get(), 12000, 1, false, false));
-				} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
-					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")), false);
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
-				}
-			} else {
-				HowToOwnADragonMod.queueServerWork(600, () -> {
-					if (Mth.nextInt(RandomSource.create(), 3, 10) <= 4) {
-						if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.STONE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobblestone!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 3) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Deepslate!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 4) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobbled Deepslate!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLED_DEEPSLATE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Andesite!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ANDESITE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 6) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Diorite!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DIORITE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 7) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Granite!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRANITE_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 8) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Lava!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 9) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Iron!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IRON_INGOT_GROWING.get(), 12000, 1, false, false));
-						} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
-							if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")), false);
-							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
-						}
-					} else {
-						HowToOwnADragonMod.queueServerWork(600, () -> {
-							if (Mth.nextInt(RandomSource.create(), 5, 10) <= 6) {
+			if (entity.isAlive()) {
+				if (Mth.nextInt(RandomSource.create(), 1, 10) <= 2) {
+					if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.STONE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobblestone!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 3) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Deepslate!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 4) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobbled Deepslate!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLED_DEEPSLATE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Andesite!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ANDESITE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 6) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Diorite!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DIORITE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 7) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Granite!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRANITE_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 8) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Lava!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 9) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Iron!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IRON_INGOT_GROWING.get(), 12000, 1, false, false));
+					} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
+						if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")), false);
+						if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+							_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
+					}
+				} else {
+					HowToOwnADragonMod.queueServerWork(600, () -> {
+						if (entity.isAlive()) {
+							if (Mth.nextInt(RandomSource.create(), 3, 10) <= 4) {
 								if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 									if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 										_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
@@ -190,60 +138,8 @@ public class GronckleGrowingTickRateProcedure {
 								}
 							} else {
 								HowToOwnADragonMod.queueServerWork(600, () -> {
-									if (Mth.nextInt(RandomSource.create(), 7, 10) <= 8) {
-										if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.STONE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobblestone!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 3) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Deepslate!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 4) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobbled Deepslate!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLED_DEEPSLATE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Andesite!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ANDESITE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 6) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Diorite!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DIORITE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 7) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Granite!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRANITE_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 8) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Lava!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 9) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Iron!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IRON_INGOT_GROWING.get(), 12000, 1, false, false));
-										} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
-											if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-												_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")), false);
-											if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-												_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
-										}
-									} else {
-										HowToOwnADragonMod.queueServerWork(600, () -> {
+									if (entity.isAlive()) {
+										if (Mth.nextInt(RandomSource.create(), 5, 10) <= 6) {
 											if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 												if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 													_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
@@ -295,13 +191,138 @@ public class GronckleGrowingTickRateProcedure {
 												if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 													_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
 											}
-										});
+										} else {
+											HowToOwnADragonMod.queueServerWork(600, () -> {
+												if (entity.isAlive()) {
+													if (Mth.nextInt(RandomSource.create(), 7, 10) <= 8) {
+														if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.STONE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobblestone!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 3) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Deepslate!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 4) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobbled Deepslate!")),
+																		false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLED_DEEPSLATE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Andesite!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ANDESITE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 6) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Diorite!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DIORITE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 7) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Granite!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRANITE_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 8) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Lava!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 9) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Iron!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IRON_INGOT_GROWING.get(), 12000, 1, false, false));
+														} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
+															if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")), false);
+															if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
+														}
+													} else {
+														HowToOwnADragonMod.queueServerWork(600, () -> {
+															if (entity.isAlive()) {
+																if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Stone!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.STONE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobblestone!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 3) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Deepslate!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DEEPSLATE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 4) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(
+																				Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cobbled Deepslate!")), false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.COBBLED_DEEPSLATE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Andesite!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ANDESITE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 6) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Diorite!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.DIORITE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 7) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Granite!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRANITE_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 8) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Lava!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 9) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Iron!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.IRON_INGOT_GROWING.get(), 12000, 1, false, false));
+																} else if (Mth.nextInt(RandomSource.create(), 1, 10) == 10) {
+																	if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+																		_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")),
+																				false);
+																	if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+																		_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get(), 12000, 1, false, false));
+																}
+															}
+														});
+													}
+												}
+											});
+										}
 									}
 								});
 							}
-						});
-					}
-				});
+						}
+					});
+				}
 			}
 		});
 	}
