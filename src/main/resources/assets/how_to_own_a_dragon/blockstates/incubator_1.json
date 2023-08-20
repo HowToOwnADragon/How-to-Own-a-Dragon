@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "how_to_own_a_dragon:block/incubator_1"
+    },
+    "facing=east": {
+      "model": "how_to_own_a_dragon:block/incubator_1",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "how_to_own_a_dragon:block/incubator_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "how_to_own_a_dragon:block/incubator_1",
+      "y": 270
+    }
+  }
+}

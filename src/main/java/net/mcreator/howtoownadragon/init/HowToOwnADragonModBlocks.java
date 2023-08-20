@@ -17,17 +17,10 @@ import net.mcreator.howtoownadragon.block.ReaperSpawnBlockBlock;
 import net.mcreator.howtoownadragon.block.ReaperPortalBlock;
 import net.mcreator.howtoownadragon.block.ReaperBearTrapBlock;
 import net.mcreator.howtoownadragon.block.ReaperArrowTrapBlock;
-import net.mcreator.howtoownadragon.block.ReadyToHatchPinkGronckleEggBlock;
-import net.mcreator.howtoownadragon.block.ReadyToHatchOrangeRedGronckleEggBlock;
-import net.mcreator.howtoownadragon.block.ReadyToHatchMeatlugEggBlock;
-import net.mcreator.howtoownadragon.block.ReadyToHatchBlueYellowGronckleEggBlock;
 import net.mcreator.howtoownadragon.block.PortalBlockBlock;
 import net.mcreator.howtoownadragon.block.PlainsGrassBlockBlock;
-import net.mcreator.howtoownadragon.block.PinkGronckleEggBlock;
-import net.mcreator.howtoownadragon.block.OrangeRedGronckleEggBlock;
-import net.mcreator.howtoownadragon.block.MeatlugsEggBlock;
 import net.mcreator.howtoownadragon.block.LimestoneBlock;
-import net.mcreator.howtoownadragon.block.IncubatorBlock;
+import net.mcreator.howtoownadragon.block.Incubator1Block;
 import net.mcreator.howtoownadragon.block.DragonProofMetalBarsBlock;
 import net.mcreator.howtoownadragon.block.DeepIronWallBlock;
 import net.mcreator.howtoownadragon.block.DeepIronStairsBlock;
@@ -36,7 +29,6 @@ import net.mcreator.howtoownadragon.block.DeepIronRodBlock;
 import net.mcreator.howtoownadragon.block.DeepIronDoorBlock;
 import net.mcreator.howtoownadragon.block.DeepIronBlockBlock;
 import net.mcreator.howtoownadragon.block.DarkStoneBlock;
-import net.mcreator.howtoownadragon.block.BlueYellowGronckleEggBlock;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModBlocks {
@@ -57,15 +49,7 @@ public class HowToOwnADragonModBlocks {
 	public static final RegistryObject<Block> REAPER_SPIKE_TRAP = REGISTRY.register("reaper_spike_trap", () -> new ReaperSpikeTrapBlock());
 	public static final RegistryObject<Block> RUSTY_DRAGON_PROOF_METAL_BARS = REGISTRY.register("rusty_dragon_proof_metal_bars", () -> new RustyDragonProofMetalBarsBlock());
 	public static final RegistryObject<Block> REAPER_SPAWN_BLOCK = REGISTRY.register("reaper_spawn_block", () -> new ReaperSpawnBlockBlock());
-	public static final RegistryObject<Block> MEATLUGS_EGG = REGISTRY.register("meatlugs_egg", () -> new MeatlugsEggBlock());
-	public static final RegistryObject<Block> BLUE_YELLOW_GRONCKLE_EGG = REGISTRY.register("blue_yellow_gronckle_egg", () -> new BlueYellowGronckleEggBlock());
-	public static final RegistryObject<Block> ORANGE_RED_GRONCKLE_EGG = REGISTRY.register("orange_red_gronckle_egg", () -> new OrangeRedGronckleEggBlock());
-	public static final RegistryObject<Block> PINK_GRONCKLE_EGG = REGISTRY.register("pink_gronckle_egg", () -> new PinkGronckleEggBlock());
-	public static final RegistryObject<Block> READY_TO_HATCH_MEATLUG_EGG = REGISTRY.register("ready_to_hatch_meatlug_egg", () -> new ReadyToHatchMeatlugEggBlock());
-	public static final RegistryObject<Block> READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG = REGISTRY.register("ready_to_hatch_blue_yellow_gronckle_egg", () -> new ReadyToHatchBlueYellowGronckleEggBlock());
-	public static final RegistryObject<Block> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG = REGISTRY.register("ready_to_hatch_orange_red_gronckle_egg", () -> new ReadyToHatchOrangeRedGronckleEggBlock());
-	public static final RegistryObject<Block> READY_TO_HATCH_PINK_GRONCKLE_EGG = REGISTRY.register("ready_to_hatch_pink_gronckle_egg", () -> new ReadyToHatchPinkGronckleEggBlock());
-	public static final RegistryObject<Block> INCUBATOR = REGISTRY.register("incubator", () -> new IncubatorBlock());
 	public static final RegistryObject<Block> LIMESTONE = REGISTRY.register("limestone", () -> new LimestoneBlock());
 	public static final RegistryObject<Block> PLAINS_GRASS_BLOCK = REGISTRY.register("plains_grass_block", () -> new PlainsGrassBlockBlock());
+	public static final RegistryObject<Block> INCUBATOR_1 = REGISTRY.register("incubator_1", () -> new Incubator1Block());
 }

@@ -16,6 +16,10 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.howtoownadragon.entity.ReadyToHatchPinkGronckleEggEntityEntity;
+import net.mcreator.howtoownadragon.entity.ReadyToHatchOrangeRedGronckleEggEntityEntity;
+import net.mcreator.howtoownadragon.entity.ReadyToHatchMeatlugsEggEntityEntity;
+import net.mcreator.howtoownadragon.entity.ReadyToHatchBlueYellowGronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.PinkGronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.OrangeRedGronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
@@ -235,6 +239,26 @@ public class HowToOwnADragonModEntities {
 					.setCustomClientFactory(PinkGronckleEggEntityEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ReadyToHatchMeatlugsEggEntityEntity>> READY_TO_HATCH_MEATLUGS_EGG_ENTITY = register("ready_to_hatch_meatlugs_egg_entity",
+			EntityType.Builder.<ReadyToHatchMeatlugsEggEntityEntity>of(ReadyToHatchMeatlugsEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(ReadyToHatchMeatlugsEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ReadyToHatchBlueYellowGronckleEggEntityEntity>> READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG_ENTITY = register("ready_to_hatch_blue_yellow_gronckle_egg_entity",
+			EntityType.Builder.<ReadyToHatchBlueYellowGronckleEggEntityEntity>of(ReadyToHatchBlueYellowGronckleEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(ReadyToHatchBlueYellowGronckleEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ReadyToHatchOrangeRedGronckleEggEntityEntity>> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG_ENTITY = register("ready_to_hatch_orange_red_gronckle_egg_entity",
+			EntityType.Builder.<ReadyToHatchOrangeRedGronckleEggEntityEntity>of(ReadyToHatchOrangeRedGronckleEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(ReadyToHatchOrangeRedGronckleEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ReadyToHatchPinkGronckleEggEntityEntity>> READY_TO_HATCH_PINK_GRONCKLE_EGG_ENTITY = register("ready_to_hatch_pink_gronckle_egg_entity",
+			EntityType.Builder.<ReadyToHatchPinkGronckleEggEntityEntity>of(ReadyToHatchPinkGronckleEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(ReadyToHatchPinkGronckleEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -280,6 +304,10 @@ public class HowToOwnADragonModEntities {
 			BlueYellowGronkleEggEntityEntity.init();
 			OrangeRedGronckleEggEntityEntity.init();
 			PinkGronckleEggEntityEntity.init();
+			ReadyToHatchMeatlugsEggEntityEntity.init();
+			ReadyToHatchBlueYellowGronckleEggEntityEntity.init();
+			ReadyToHatchOrangeRedGronckleEggEntityEntity.init();
+			ReadyToHatchPinkGronckleEggEntityEntity.init();
 		});
 	}
 
@@ -322,5 +350,9 @@ public class HowToOwnADragonModEntities {
 		event.put(BLUE_YELLOW_GRONKLE_EGG_ENTITY.get(), BlueYellowGronkleEggEntityEntity.createAttributes().build());
 		event.put(ORANGE_RED_GRONCKLE_EGG_ENTITY.get(), OrangeRedGronckleEggEntityEntity.createAttributes().build());
 		event.put(PINK_GRONCKLE_EGG_ENTITY.get(), PinkGronckleEggEntityEntity.createAttributes().build());
+		event.put(READY_TO_HATCH_MEATLUGS_EGG_ENTITY.get(), ReadyToHatchMeatlugsEggEntityEntity.createAttributes().build());
+		event.put(READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG_ENTITY.get(), ReadyToHatchBlueYellowGronckleEggEntityEntity.createAttributes().build());
+		event.put(READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG_ENTITY.get(), ReadyToHatchOrangeRedGronckleEggEntityEntity.createAttributes().build());
+		event.put(READY_TO_HATCH_PINK_GRONCKLE_EGG_ENTITY.get(), ReadyToHatchPinkGronckleEggEntityEntity.createAttributes().build());
 	}
 }

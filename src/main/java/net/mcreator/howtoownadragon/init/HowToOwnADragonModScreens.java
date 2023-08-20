@@ -30,7 +30,7 @@ import net.mcreator.howtoownadragon.client.gui.MaleGroncklePinkGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleOrangeRedGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleBlueYellowGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.InformationGronckleScreen;
-import net.mcreator.howtoownadragon.client.gui.IncubatorGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleMeatlugGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleGroncklePinkGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleGronckleOrangeRedGUIScreen;
@@ -44,7 +44,6 @@ public class HowToOwnADragonModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(HowToOwnADragonModMenus.INCUBATOR_GUI.get(), IncubatorGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.DRAGON_EYE_INPUT.get(), DragonEyeInputScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.INFORMATION_GRONCKLE.get(), InformationGronckleScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MALE_MEATLUG_GUI.get(), MaleMeatlugGUIScreen::new);
@@ -71,6 +70,7 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_GRONCKLE_PINK_GUI.get(), NotGrownFemaleGroncklePinkGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_GRONCKLE_ORANGE_RED_GUI.get(), NotGrownFemaleGronckleOrangeRedGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_GRONCKLE_BLUE_YELLOW_GUI.get(), NotGrownFemaleGronckleBlueYellowGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.INCUBATOR_1_GUI.get(), Incubator1GUIScreen::new);
 		});
 	}
 }

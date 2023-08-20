@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "OrangeRed Gronckle Egg",
     "mobLabel": "",
-    "mobModelName": "ModelGronckleEgg_Converted",
-    "mobModelTexture": "gronckleegg.png",
+    "mobModelName": "ModelGronckleEggItemImprovedentity",
+    "mobModelTexture": "gronckletextureimprovedentity.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
@@ -96,8 +96,8 @@
     "stepSound": {
       "value": ""
     },
-    "onInitialSpawn": {
-      "name": "OrangeRedGronckleEggEntityProcedure"
+    "whenMobIsHurt": {
+      "name": "OrangeRedGronckleEggEntityEntityIsHurt"
     },
     "hasAI": false,
     "aiBase": "(none)",

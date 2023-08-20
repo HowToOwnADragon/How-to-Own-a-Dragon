@@ -1,13 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "how_to_own_a_dragon:blue_yellow_gronckle_egg",
-    "how_to_own_a_dragon:orange_red_gronckle_egg",
-    "how_to_own_a_dragon:pink_gronckle_egg",
-    "how_to_own_a_dragon:meatlugs_egg",
-    "how_to_own_a_dragon:ready_to_hatch_pink_gronckle_egg",
-    "how_to_own_a_dragon:ready_to_hatch_meatlug_egg",
-    "how_to_own_a_dragon:ready_to_hatch_blue_yellow_gronckle_egg",
-    "how_to_own_a_dragon:ready_to_hatch_orange_red_gronckle_egg"
-  ]
+  "values": []
 }

@@ -9,6 +9,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.howtoownadragon.client.renderer.ReadyToHatchPinkGronckleEggEntityRenderer;
+import net.mcreator.howtoownadragon.client.renderer.ReadyToHatchOrangeRedGronckleEggEntityRenderer;
+import net.mcreator.howtoownadragon.client.renderer.ReadyToHatchMeatlugsEggEntityRenderer;
+import net.mcreator.howtoownadragon.client.renderer.ReadyToHatchBlueYellowGronckleEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.PinkGronckleEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.OrangeRedGronckleEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
@@ -90,5 +94,9 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BLUE_YELLOW_GRONKLE_EGG_ENTITY.get(), BlueYellowGronkleEggEntityRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ORANGE_RED_GRONCKLE_EGG_ENTITY.get(), OrangeRedGronckleEggEntityRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.PINK_GRONCKLE_EGG_ENTITY.get(), PinkGronckleEggEntityRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.READY_TO_HATCH_MEATLUGS_EGG_ENTITY.get(), ReadyToHatchMeatlugsEggEntityRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG_ENTITY.get(), ReadyToHatchBlueYellowGronckleEggEntityRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG_ENTITY.get(), ReadyToHatchOrangeRedGronckleEggEntityRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.READY_TO_HATCH_PINK_GRONCKLE_EGG_ENTITY.get(), ReadyToHatchPinkGronckleEggEntityRenderer::new);
 	}
 }

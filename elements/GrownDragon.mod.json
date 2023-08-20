@@ -1,0 +1,39 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:GronckleBlueYellowFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleBlueYellowMale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleOrangeRedMale"
+      },
+      {
+        "value": "CUSTOM:GroncklePinkFemale"
+      },
+      {
+        "value": "CUSTOM:GroncklePinkMale"
+      },
+      {
+        "value": "CUSTOM:MeatlugFemale"
+      },
+      {
+        "value": "CUSTOM:MeatlugMale"
+      }
+    ],
+    "biomes": [],
+    "name": "grown_dragon",
+    "namespace": "forge"
+  }
+}

@@ -118,18 +118,12 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onEntityWalksOn": {
-      "name": "PortalBlockTp"
+      "name": "PortalBlockTpToHW"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:FireRealm"
-      },
-      {
-        "value": "CUSTOM:Ocean"
-      },
-      {
-        "value": "CUSTOM:Plains"
       },
       {
         "value": "badlands"

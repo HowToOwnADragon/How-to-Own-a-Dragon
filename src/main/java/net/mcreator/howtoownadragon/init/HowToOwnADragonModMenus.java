@@ -30,7 +30,7 @@ import net.mcreator.howtoownadragon.world.inventory.MaleGroncklePinkGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleOrangeRedGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleBlueYellowGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.InformationGronckleMenu;
-import net.mcreator.howtoownadragon.world.inventory.IncubatorGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleMeatlugGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleGroncklePinkGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleOrangeRedGUIMenu;
@@ -42,7 +42,6 @@ import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, HowToOwnADragonMod.MODID);
-	public static final RegistryObject<MenuType<IncubatorGUIMenu>> INCUBATOR_GUI = REGISTRY.register("incubator_gui", () -> IForgeMenuType.create(IncubatorGUIMenu::new));
 	public static final RegistryObject<MenuType<DragonEyeInputMenu>> DRAGON_EYE_INPUT = REGISTRY.register("dragon_eye_input", () -> IForgeMenuType.create(DragonEyeInputMenu::new));
 	public static final RegistryObject<MenuType<InformationGronckleMenu>> INFORMATION_GRONCKLE = REGISTRY.register("information_gronckle", () -> IForgeMenuType.create(InformationGronckleMenu::new));
 	public static final RegistryObject<MenuType<MaleMeatlugGUIMenu>> MALE_MEATLUG_GUI = REGISTRY.register("male_meatlug_gui", () -> IForgeMenuType.create(MaleMeatlugGUIMenu::new));
@@ -74,4 +73,5 @@ public class HowToOwnADragonModMenus {
 			() -> IForgeMenuType.create(NotGrownFemaleGronckleOrangeRedGUIMenu::new));
 	public static final RegistryObject<MenuType<NotGrownFemaleGronckleBlueYellowGUIMenu>> NOT_GROWN_FEMALE_GRONCKLE_BLUE_YELLOW_GUI = REGISTRY.register("not_grown_female_gronckle_blue_yellow_gui",
 			() -> IForgeMenuType.create(NotGrownFemaleGronckleBlueYellowGUIMenu::new));
+	public static final RegistryObject<MenuType<Incubator1GUIMenu>> INCUBATOR_1_GUI = REGISTRY.register("incubator_1_gui", () -> IForgeMenuType.create(Incubator1GUIMenu::new));
 }
