@@ -2832,9 +2832,6 @@
       "locked_code": false,
       "registry_name": "meatlug_and_pink",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugAndPinkProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -5843,166 +5840,6 @@
       "path": "~/Dragons/Gronckle/GronckleGrowingStages/Juvenile"
     },
     {
-      "name": "MaleMeatlugLove",
-      "type": "procedure",
-      "sortid": 334,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "male_meatlug_love",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MaleMeatlugLoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleBreeding"
-    },
-    {
-      "name": "GronckleBlueYellowMaleLove",
-      "type": "procedure",
-      "sortid": 335,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_blue_yellow_male_love",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowMaleLoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleBreeding"
-    },
-    {
-      "name": "GronckleOrangeRedMaleLove",
-      "type": "procedure",
-      "sortid": 336,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_orange_red_male_love",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleOrangeRedMaleLoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleBreeding"
-    },
-    {
-      "name": "GroncklePinkMaleLove",
-      "type": "procedure",
-      "sortid": 337,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_pink_male_love",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GroncklePinkMaleLoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleBreeding"
-    },
-    {
       "name": "GronckleSandstoneTame",
       "type": "procedure",
       "sortid": 338,
@@ -6080,7 +5917,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding"
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding/Female"
     },
     {
       "name": "MeatlugAndBlueYellow",
@@ -8833,6 +8670,137 @@
         ]
       },
       "path": "~/ReaperShip"
+    },
+    {
+      "name": "GronckleBreedingCooldown",
+      "type": "procedure",
+      "sortid": 495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_breeding_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBreedingCooldownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleBreeding"
+    },
+    {
+      "name": "MeatlugsEggEntity",
+      "type": "livingentity",
+      "sortid": 496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlugs_egg_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/MeatlugsEggEntityEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/MeatlugsEggEntityRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
+    },
+    {
+      "name": "MeatlugsEggEntityOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 497,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlugs_egg_entity_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugsEggEntityOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Eggs"
+    },
+    {
+      "name": "MeatlugAndMeatlugMale",
+      "type": "procedure",
+      "sortid": 498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug_and_meatlug_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugAndMeatlugMaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-Breeding/Male"
     }
   ],
   "variable_elements": [
@@ -9002,6 +8970,7 @@
       "item.how_to_own_a_dragon.valka_staff": "Valka Staff",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_blue_yellow_gui.label_male_gronckle": "Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
+      "entity.how_to_own_a_dragon.meatlugs_egg_entity": "Meatlugs Egg",
       "entity.how_to_own_a_dragon.adolescent_meatlug_female": "Female Adolescent Gronckle",
       "gui.how_to_own_a_dragon.pink_male_gronckle_iron_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.juvenile_gronckle_pink_male_spawn_egg": "Male Juvenile Gronckle Spawn Egg",
@@ -9171,7 +9140,16 @@
                   },
                   {
                     "name": "Cross-Breeding",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },

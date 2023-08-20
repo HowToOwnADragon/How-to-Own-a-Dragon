@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
+import net.mcreator.howtoownadragon.entity.MeatlugsEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.MeatlugMaleEntity;
 import net.mcreator.howtoownadragon.entity.MeatlugFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileMeatlugMaleEntity;
@@ -212,6 +213,10 @@ public class HowToOwnADragonModEntities {
 					.sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GronckleAttackEntity>> GRONCKLE_ATTACK = register("projectile_gronckle_attack",
 			EntityType.Builder.<GronckleAttackEntity>of(GronckleAttackEntity::new, MobCategory.MISC).setCustomClientFactory(GronckleAttackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MeatlugsEggEntityEntity>> MEATLUGS_EGG_ENTITY = register("meatlugs_egg_entity",
+			EntityType.Builder.<MeatlugsEggEntityEntity>of(MeatlugsEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MeatlugsEggEntityEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -253,6 +258,7 @@ public class HowToOwnADragonModEntities {
 			BabyGroncklePinkFemaleEntity.init();
 			BabyGronckleOrangeRedMaleEntity.init();
 			BabyGronckleOrangeRedFemaleEntity.init();
+			MeatlugsEggEntityEntity.init();
 		});
 	}
 
@@ -291,5 +297,6 @@ public class HowToOwnADragonModEntities {
 		event.put(BABY_GRONCKLE_PINK_FEMALE.get(), BabyGroncklePinkFemaleEntity.createAttributes().build());
 		event.put(BABY_GRONCKLE_ORANGE_RED_MALE.get(), BabyGronckleOrangeRedMaleEntity.createAttributes().build());
 		event.put(BABY_GRONCKLE_ORANGE_RED_FEMALE.get(), BabyGronckleOrangeRedFemaleEntity.createAttributes().build());
+		event.put(MEATLUGS_EGG_ENTITY.get(), MeatlugsEggEntityEntity.createAttributes().build());
 	}
 }

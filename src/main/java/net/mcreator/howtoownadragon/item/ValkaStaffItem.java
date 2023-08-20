@@ -21,7 +21,7 @@ public class ValkaStaffItem extends ShearsItem {
 
 	@Override
 	public float getDestroySpeed(ItemStack stack, BlockState blockstate) {
-		return 4f;
+		return 0.5f;
 	}
 
 	@Override

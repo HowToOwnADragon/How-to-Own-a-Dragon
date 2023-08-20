@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
+import net.mcreator.howtoownadragon.client.renderer.MeatlugsEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.MeatlugMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.MeatlugFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileMeatlugMaleRenderer;
@@ -82,5 +83,6 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_MALE.get(), BabyGronckleOrangeRedMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_FEMALE.get(), BabyGronckleOrangeRedFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), GronckleAttackRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.MEATLUGS_EGG_ENTITY.get(), MeatlugsEggEntityRenderer::new);
 	}
 }

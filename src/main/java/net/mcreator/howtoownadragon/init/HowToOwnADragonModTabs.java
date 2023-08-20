@@ -19,6 +19,9 @@ public class HowToOwnADragonModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
+		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
+		}
+
 		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 		}
 	}
