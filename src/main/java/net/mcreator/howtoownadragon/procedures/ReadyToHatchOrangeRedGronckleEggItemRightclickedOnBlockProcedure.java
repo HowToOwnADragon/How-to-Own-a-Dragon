@@ -18,7 +18,7 @@ public class ReadyToHatchOrangeRedGronckleEggItemRightclickedOnBlockProcedure {
 			return;
 		if (world instanceof ServerLevel _level) {
 			Entity entityToSpawn = new ReadyToHatchOrangeRedGronckleEggEntityEntity(HowToOwnADragonModEntities.READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG_ENTITY.get(), _level);
-			entityToSpawn.moveTo(x, y, z, 0, 0);
+			entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 			entityToSpawn.setYBodyRot(0);
 			entityToSpawn.setYHeadRot(0);
 			entityToSpawn.setDeltaMovement(0, 0, 0);
