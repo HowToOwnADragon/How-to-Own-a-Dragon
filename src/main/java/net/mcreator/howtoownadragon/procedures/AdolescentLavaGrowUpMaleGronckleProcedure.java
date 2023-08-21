@@ -5,14 +5,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 
@@ -30,7 +31,7 @@ import net.mcreator.howtoownadragon.entity.AdolescentGronckleBlueYellowMaleEntit
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class AdolscentGraniteGrowUpMaleProcedure {
+public class AdolescentLavaGrowUpMaleGronckleProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -45,11 +46,14 @@ public class AdolscentGraniteGrowUpMaleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.GRANITE_GROWING.get()) && entity instanceof AdolescentMeatlugMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.GRANITE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get()) && entity instanceof AdolescentMeatlugMaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
+				if (entity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
@@ -67,11 +71,14 @@ public class AdolscentGraniteGrowUpMaleProcedure {
 				}
 				TameGrownUpWhenSpawnedProcedure.execute(world, x, y, z);
 			}
-		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.GRANITE_GROWING.get()) && entity instanceof AdolescentGroncklePinkMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.GRANITE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get()) && entity instanceof AdolescentGroncklePinkMaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
+				if (entity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
@@ -89,11 +96,14 @@ public class AdolscentGraniteGrowUpMaleProcedure {
 				}
 				TameGrownUpWhenSpawnedProcedure.execute(world, x, y, z);
 			}
-		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.GRANITE_GROWING.get()) && entity instanceof AdolescentGronckleOrangeRedMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.GRANITE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get()) && entity instanceof AdolescentGronckleOrangeRedMaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
+				if (entity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
@@ -111,11 +121,14 @@ public class AdolscentGraniteGrowUpMaleProcedure {
 				}
 				TameGrownUpWhenSpawnedProcedure.execute(world, x, y, z);
 			}
-		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.GRANITE_GROWING.get()) && entity instanceof AdolescentGronckleBlueYellowMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.GRANITE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.BUCKET_OF_LAVA_GROWING.get()) && entity instanceof AdolescentGronckleBlueYellowMaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
+				if (entity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);

@@ -30,7 +30,7 @@ import net.mcreator.howtoownadragon.entity.AdolescentGronckleBlueYellowMaleEntit
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class AdolscentStoneGrowUpMaleProcedure {
+public class AdolescentDioriteGrowUpMaleGronckleProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())

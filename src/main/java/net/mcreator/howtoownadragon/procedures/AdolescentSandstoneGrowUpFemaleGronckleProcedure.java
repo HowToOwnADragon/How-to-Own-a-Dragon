@@ -18,19 +18,19 @@ import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.MeatlugMaleEntity;
-import net.mcreator.howtoownadragon.entity.GroncklePinkMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleOrangeRedMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleBlueYellowMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentMeatlugMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGroncklePinkMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleOrangeRedMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleBlueYellowMaleEntity;
+import net.mcreator.howtoownadragon.entity.MeatlugFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GroncklePinkFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleOrangeRedFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleBlueYellowFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentMeatlugFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentGroncklePinkFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentGronckleOrangeRedFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentGronckleBlueYellowFemaleEntity;
 
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class AdolscentCobblestoneGrowUpMaleProcedure {
+public class AdolescentSandstoneGrowUpFemaleGronckleProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -45,10 +45,10 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get()) && entity instanceof AdolescentMeatlugMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get()) && entity instanceof AdolescentMeatlugFemaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -56,7 +56,7 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new MeatlugMaleEntity(HowToOwnADragonModEntities.MEATLUG_MALE.get(), _level);
+					Entity entityToSpawn = new MeatlugFemaleEntity(HowToOwnADragonModEntities.MEATLUG_FEMALE.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -67,10 +67,10 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				}
 				TameGrownUpWhenSpawnedProcedure.execute(world, x, y, z);
 			}
-		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get()) && entity instanceof AdolescentGroncklePinkMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
+		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get()) && entity instanceof AdolescentGroncklePinkFemaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -78,7 +78,7 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new GroncklePinkMaleEntity(HowToOwnADragonModEntities.GRONCKLE_PINK_MALE.get(), _level);
+					Entity entityToSpawn = new GroncklePinkFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_PINK_FEMALE.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -89,10 +89,10 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				}
 				TameGrownUpWhenSpawnedProcedure.execute(world, x, y, z);
 			}
-		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get()) && entity instanceof AdolescentGronckleOrangeRedMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
+		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get()) && entity instanceof AdolescentGronckleOrangeRedFemaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -100,7 +100,7 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new GronckleOrangeRedMaleEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_MALE.get(), _level);
+					Entity entityToSpawn = new GronckleOrangeRedFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_FEMALE.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -111,10 +111,10 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				}
 				TameGrownUpWhenSpawnedProcedure.execute(world, x, y, z);
 			}
-		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.COBBLESTONE_GROWING.get()) && entity instanceof AdolescentGronckleBlueYellowMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
+		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.SAND_STONE_GROWING.get()) && entity instanceof AdolescentGronckleBlueYellowFemaleEntity) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
+					ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (world instanceof ServerLevel _level)
@@ -122,7 +122,7 @@ public class AdolscentCobblestoneGrowUpMaleProcedure {
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new GronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
+					Entity entityToSpawn = new GronckleBlueYellowFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_FEMALE.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
