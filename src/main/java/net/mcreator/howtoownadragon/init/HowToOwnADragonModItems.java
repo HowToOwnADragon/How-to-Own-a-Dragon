@@ -16,15 +16,9 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.howtoownadragon.item.ValkaStaffItem;
 import net.mcreator.howtoownadragon.item.SaddleRackItem;
-import net.mcreator.howtoownadragon.item.ReadyToHatchPinkGronckleEggItemItem;
-import net.mcreator.howtoownadragon.item.ReadyToHatchOrangeRedGronckleEggItemItem;
-import net.mcreator.howtoownadragon.item.ReadyToHatchMeatlugEggItemItem;
-import net.mcreator.howtoownadragon.item.ReadyToHatchBlueYellowGronckleEggItemItem;
-import net.mcreator.howtoownadragon.item.PinkGronckleEggItemItem;
-import net.mcreator.howtoownadragon.item.OrangeRedGronckleEggItemItem;
+import net.mcreator.howtoownadragon.item.RTHGronckleEggItemItem;
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
-import net.mcreator.howtoownadragon.item.MeatlugsEggItemItem;
 import net.mcreator.howtoownadragon.item.LensDragonInfoItem;
 import net.mcreator.howtoownadragon.item.GronckleSpawningEggItem;
 import net.mcreator.howtoownadragon.item.GronckleScaleItem;
@@ -35,12 +29,12 @@ import net.mcreator.howtoownadragon.item.GronckleIronPickaxeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronItem;
 import net.mcreator.howtoownadragon.item.GronckleIronHoeItem;
 import net.mcreator.howtoownadragon.item.GronckleIronAxeItem;
+import net.mcreator.howtoownadragon.item.GronckleEggItemItem;
 import net.mcreator.howtoownadragon.item.GronckleAttackItem;
 import net.mcreator.howtoownadragon.item.DragonSymbolItem;
 import net.mcreator.howtoownadragon.item.DragonProofMetalItem;
 import net.mcreator.howtoownadragon.item.DragonEyeItem;
 import net.mcreator.howtoownadragon.item.DeepIronIngotItem;
-import net.mcreator.howtoownadragon.item.BlueYellowGronckleEggItemItem;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModItems {
@@ -78,65 +72,6 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> RUSTY_DRAGON_PROOF_METAL_BARS = block(HowToOwnADragonModBlocks.RUSTY_DRAGON_PROOF_METAL_BARS);
 	public static final RegistryObject<Item> GRONCKLE_SPAWNING_EGG = REGISTRY.register("gronckle_spawning_egg", () -> new GronckleSpawningEggItem());
 	public static final RegistryObject<Item> REAPER_SPAWN_BLOCK = block(HowToOwnADragonModBlocks.REAPER_SPAWN_BLOCK);
-	public static final RegistryObject<Item> MEATLUG_MALE_SPAWN_EGG = REGISTRY.register("meatlug_male_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.MEATLUG_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> MEATLUG_FEMALE_SPAWN_EGG = REGISTRY.register("meatlug_female_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.MEATLUG_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> GRONCKLE_BLUE_YELLOW_MALE_SPAWN_EGG = REGISTRY.register("gronckle_blue_yellow_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> GRONCKLE_BLUE_YELLOW_FEMALE_SPAWN_EGG = REGISTRY.register("gronckle_blue_yellow_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_BLUE_YELLOW_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> GRONCKLE_PINK_MALE_SPAWN_EGG = REGISTRY.register("gronckle_pink_male_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_PINK_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> GRONCKLE_PINK_FEMALE_SPAWN_EGG = REGISTRY.register("gronckle_pink_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_PINK_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> GRONCKLE_ORANGE_RED_MALE_SPAWN_EGG = REGISTRY.register("gronckle_orange_red_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> GRONCKLE_ORANGE_RED_FEMALE_SPAWN_EGG = REGISTRY.register("gronckle_orange_red_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_ORANGE_RED_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_MEATLUG_MALE_SPAWN_EGG = REGISTRY.register("adolescent_meatlug_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_MEATLUG_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_MEATLUG_FEMALE_SPAWN_EGG = REGISTRY.register("adolescent_meatlug_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_MEATLUG_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_GRONCKLE_BLUE_YELLOW_MALE_SPAWN_EGG = REGISTRY.register("adolescent_gronckle_blue_yellow_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_BLUE_YELLOW_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_GRONCKLE_BLUE_YELLOW_FEMALE_SPAWN_EGG = REGISTRY.register("adolescent_gronckle_blue_yellow_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_BLUE_YELLOW_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_GRONCKLE_PINK_MALE_SPAWN_EGG = REGISTRY.register("adolescent_gronckle_pink_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_PINK_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_GRONCKLE_PINK_FEMALE_SPAWN_EGG = REGISTRY.register("adolescent_gronckle_pink_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_PINK_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_GRONCKLE_ORANGE_RED_MALE_SPAWN_EGG = REGISTRY.register("adolescent_gronckle_orange_red_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_ORANGE_RED_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> ADOLESCENT_GRONCKLE_ORANGE_RED_FEMALE_SPAWN_EGG = REGISTRY.register("adolescent_gronckle_orange_red_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_ORANGE_RED_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_MEATLUG_MALE_SPAWN_EGG = REGISTRY.register("juvenile_meatlug_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_MEATLUG_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_MEATLUG_FEMALE_SPAWN_EGG = REGISTRY.register("juvenile_meatlug_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_MEATLUG_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_GRONCKLE_BLUE_YELLOW_MALE_SPAWN_EGG = REGISTRY.register("juvenile_gronckle_blue_yellow_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_BLUE_YELLOW_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_GRONCKLE_BLUE_YELLOW_FEMALE_SPAWN_EGG = REGISTRY.register("juvenile_gronckle_blue_yellow_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_BLUE_YELLOW_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_GRONCKLE_PINK_MALE_SPAWN_EGG = REGISTRY.register("juvenile_gronckle_pink_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_PINK_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_GRONCKLE_PINK_FEMALE_SPAWN_EGG = REGISTRY.register("juvenile_gronckle_pink_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_PINK_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_GRONCKLE_ORANGE_RED_MALE_SPAWN_EGG = REGISTRY.register("juvenile_gronckle_orange_red_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_ORANGE_RED_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> JUVENILE_GRONCKLE_ORANGE_RED_FEMALE_SPAWN_EGG = REGISTRY.register("juvenile_gronckle_orange_red_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_ORANGE_RED_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_MEATLUG_MALE_SPAWN_EGG = REGISTRY.register("baby_meatlug_male_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_MEATLUG_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_MEATLUG_FEMALE_SPAWN_EGG = REGISTRY.register("baby_meatlug_female_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_MEATLUG_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_GRONCKLE_BLUE_YELLOW_MALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_blue_yellow_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_GRONCKLE_BLUE_YELLOW_FEMALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_blue_yellow_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_BLUE_YELLOW_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_GRONCKLE_PINK_MALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_pink_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_GRONCKLE_PINK_FEMALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_pink_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_PINK_FEMALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_GRONCKLE_ORANGE_RED_MALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_orange_red_male_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_MALE, -6999808, -7986432, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_GRONCKLE_ORANGE_RED_FEMALE_SPAWN_EGG = REGISTRY.register("baby_gronckle_orange_red_female_spawn_egg",
-			() -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_GRONCKLE_ORANGE_RED_FEMALE, -6999808, -7986432, new Item.Properties()));
 	public static final RegistryObject<Item> LIMESTONE = block(HowToOwnADragonModBlocks.LIMESTONE);
 	public static final RegistryObject<Item> LENS_DRAGON_INFO = REGISTRY.register("lens_dragon_info", () -> new LensDragonInfoItem());
 	public static final RegistryObject<Item> GRONCKLE_ATTACK = REGISTRY.register("gronckle_attack", () -> new GronckleAttackItem());
@@ -146,14 +81,10 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> PLAINS_GRASS_BLOCK = block(HowToOwnADragonModBlocks.PLAINS_GRASS_BLOCK);
 	public static final RegistryObject<Item> GRONCKLE_IRON_HOE = REGISTRY.register("gronckle_iron_hoe", () -> new GronckleIronHoeItem());
 	public static final RegistryObject<Item> INCUBATOR_1 = block(HowToOwnADragonModBlocks.INCUBATOR_1);
-	public static final RegistryObject<Item> MEATLUGS_EGG_ITEM = REGISTRY.register("meatlugs_egg_item", () -> new MeatlugsEggItemItem());
-	public static final RegistryObject<Item> BLUE_YELLOW_GRONCKLE_EGG_ITEM = REGISTRY.register("blue_yellow_gronckle_egg_item", () -> new BlueYellowGronckleEggItemItem());
-	public static final RegistryObject<Item> ORANGE_RED_GRONCKLE_EGG_ITEM = REGISTRY.register("orange_red_gronckle_egg_item", () -> new OrangeRedGronckleEggItemItem());
-	public static final RegistryObject<Item> PINK_GRONCKLE_EGG_ITEM = REGISTRY.register("pink_gronckle_egg_item", () -> new PinkGronckleEggItemItem());
-	public static final RegistryObject<Item> READY_TO_HATCH_MEATLUG_EGG_ITEM = REGISTRY.register("ready_to_hatch_meatlug_egg_item", () -> new ReadyToHatchMeatlugEggItemItem());
-	public static final RegistryObject<Item> READY_TO_HATCH_BLUE_YELLOW_GRONCKLE_EGG_ITEM = REGISTRY.register("ready_to_hatch_blue_yellow_gronckle_egg_item", () -> new ReadyToHatchBlueYellowGronckleEggItemItem());
-	public static final RegistryObject<Item> READY_TO_HATCH_ORANGE_RED_GRONCKLE_EGG_ITEM = REGISTRY.register("ready_to_hatch_orange_red_gronckle_egg_item", () -> new ReadyToHatchOrangeRedGronckleEggItemItem());
-	public static final RegistryObject<Item> READY_TO_HATCH_PINK_GRONCKLE_EGG_ITEM = REGISTRY.register("ready_to_hatch_pink_gronckle_egg_item", () -> new ReadyToHatchPinkGronckleEggItemItem());
+	public static final RegistryObject<Item> GRONCKLE_MALE_SPAWN_EGG = REGISTRY.register("gronckle_male_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_MALE, -6999808, -7986432, new Item.Properties()));
+	public static final RegistryObject<Item> GRONCKLE_FEMALE_SPAWN_EGG = REGISTRY.register("gronckle_female_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.GRONCKLE_FEMALE, -6999808, -7986432, new Item.Properties()));
+	public static final RegistryObject<Item> GRONCKLE_EGG_ITEM = REGISTRY.register("gronckle_egg_item", () -> new GronckleEggItemItem());
+	public static final RegistryObject<Item> RTH_GRONCKLE_EGG_ITEM = REGISTRY.register("rth_gronckle_egg_item", () -> new RTHGronckleEggItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
