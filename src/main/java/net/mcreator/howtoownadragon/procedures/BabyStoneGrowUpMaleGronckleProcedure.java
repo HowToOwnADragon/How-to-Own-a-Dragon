@@ -5,29 +5,21 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
 
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.JuvenileMeatlugMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGroncklePinkMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleOrangeRedMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleBlueYellowMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyMeatlugMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGroncklePinkMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleOrangeRedMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleBlueYellowMaleEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 
 import javax.annotation.Nullable;
+
+import java.util.Comparator;
 
 @Mod.EventBusSubscriber
 public class BabyStoneGrowUpMaleGronckleProcedure {
@@ -45,89 +37,24 @@ public class BabyStoneGrowUpMaleGronckleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof BabyMeatlugMaleEntity) {
+		if ((entity.getPersistentData().getString("groncklecolor")).equals("pink") && entity instanceof BabyGronckleMaleEntity) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
 				if (sourceentity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new JuvenileMeatlugMaleEntity(HowToOwnADragonModEntities.JUVENILE_MEATLUG_MALE.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
-		} else if (entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof BabyGroncklePinkMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-				}
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new JuvenileGroncklePinkMaleEntity(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_PINK_MALE.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
-		} else if (entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof BabyGronckleOrangeRedMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-				}
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new JuvenileGronckleOrangeRedMaleEntity(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_ORANGE_RED_MALE.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
-		} else if (entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(HowToOwnADragonModMobEffects.STONE_GROWING.get()) && entity instanceof BabyGronckleBlueYellowMaleEntity) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-				}
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 1, 1, 1, 0.5);
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new JuvenileGronckleBlueYellowMaleEntity(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_BLUE_YELLOW_MALE.get(), _level);
-					entityToSpawn.moveTo(x, y, z, 0, 0);
-					entityToSpawn.setYBodyRot(0);
-					entityToSpawn.setYHeadRot(0);
-					entityToSpawn.setDeltaMovement(0, 0, 0);
-					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-					_level.addFreshEntity(entityToSpawn);
-				}
+				BabyGronckleGrowUpProcedureProcedure.execute(world, x, y, z, entity);
+				((Entity) world.getEntitiesOfClass(JuvenileGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
+				if (((Entity) world.getEntitiesOfClass(JuvenileGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof JuvenileGronckleMaleEntity animatable)
+					animatable.setTexture("juvigroncklepink");
 			}
 		}
 	}

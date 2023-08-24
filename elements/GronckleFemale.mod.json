@@ -16,7 +16,7 @@
     "modelHeight": 2.0,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.3,
-    "hasSpawnEgg": true,
+    "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -6999808,
       "falpha": 0.0
@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "FemaleGronckleGUI",
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "deathTime": 20,

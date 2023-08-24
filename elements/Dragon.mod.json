@@ -8,100 +8,28 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:AdolescentGronckleBlueYellowFemale"
+        "value": "CUSTOM:AdolescentGronckleFemale"
       },
       {
-        "value": "CUSTOM:AdolescentGronckleBlueYellowMale"
+        "value": "CUSTOM:AdolescentGronckleMale"
       },
       {
-        "value": "CUSTOM:AdolescentGronckleOrangeRedFemale"
+        "value": "CUSTOM:BabyGronckleFemale"
       },
       {
-        "value": "CUSTOM:AdolescentGronckleOrangeRedMale"
+        "value": "CUSTOM:BabyGronckleMale"
       },
       {
-        "value": "CUSTOM:AdolescentGroncklePinkFemale"
+        "value": "CUSTOM:GronckleFemale"
       },
       {
-        "value": "CUSTOM:AdolescentGroncklePinkMale"
+        "value": "CUSTOM:GronckleMale"
       },
       {
-        "value": "CUSTOM:AdolescentMeatlugFemale"
+        "value": "CUSTOM:JuvenileGronckleFemale"
       },
       {
-        "value": "CUSTOM:AdolescentMeatlugMale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleBlueYellowFemale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleBlueYellowMale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleOrangeRedFemale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleOrangeRedMale"
-      },
-      {
-        "value": "CUSTOM:BabyGroncklePinkFemale"
-      },
-      {
-        "value": "CUSTOM:BabyGroncklePinkMale"
-      },
-      {
-        "value": "CUSTOM:BabyMeatlugFemale"
-      },
-      {
-        "value": "CUSTOM:BabyMeatlugMale"
-      },
-      {
-        "value": "CUSTOM:GronckleBlueYellowFemale"
-      },
-      {
-        "value": "CUSTOM:GronckleBlueYellowMale"
-      },
-      {
-        "value": "CUSTOM:GronckleOrangeRedFemale"
-      },
-      {
-        "value": "CUSTOM:GronckleOrangeRedMale"
-      },
-      {
-        "value": "CUSTOM:GroncklePinkFemale"
-      },
-      {
-        "value": "CUSTOM:GroncklePinkMale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGronckleBlueYellowFemale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGronckleBlueYellowMale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGronckleOrangeRedFemale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGronckleOrangeRedMale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGroncklePinkFemale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGroncklePinkMale"
-      },
-      {
-        "value": "CUSTOM:JuvenileMeatlugFemale"
-      },
-      {
-        "value": "CUSTOM:JuvenileMeatlugMale"
-      },
-      {
-        "value": "CUSTOM:MeatlugFemale"
-      },
-      {
-        "value": "CUSTOM:MeatlugMale"
+        "value": "CUSTOM:JuvenileGronckleMale"
       },
       {
         "value": "CUSTOM:NightFury"

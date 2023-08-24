@@ -54,9 +54,7 @@ public class HowToOwnADragonModTabs {
 		event.registerCreativeModeTab(new ResourceLocation("how_to_own_a_dragon", "dragons"),
 				builder -> builder.title(Component.translatable("item_group.how_to_own_a_dragon.dragons")).icon(() -> new ItemStack(Items.ENDERMAN_SPAWN_EGG)).displayItems((parameters, tabData) -> {
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SCALE.get());
-					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SPAWNING_EGG.get());
-					tabData.accept(HowToOwnADragonModItems.GRONCKLE_MALE_SPAWN_EGG.get());
-					tabData.accept(HowToOwnADragonModItems.GRONCKLE_FEMALE_SPAWN_EGG.get());
+					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SPAWN_EGG.get());
 				})
 
 		);

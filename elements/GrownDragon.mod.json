@@ -8,28 +8,13 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:GronckleBlueYellowFemale"
+        "value": "CUSTOM:GronckleFemale"
       },
       {
-        "value": "CUSTOM:GronckleBlueYellowMale"
+        "value": "CUSTOM:GronckleMale"
       },
       {
-        "value": "CUSTOM:GronckleOrangeRedFemale"
-      },
-      {
-        "value": "CUSTOM:GronckleOrangeRedMale"
-      },
-      {
-        "value": "CUSTOM:GroncklePinkFemale"
-      },
-      {
-        "value": "CUSTOM:GroncklePinkMale"
-      },
-      {
-        "value": "CUSTOM:MeatlugFemale"
-      },
-      {
-        "value": "CUSTOM:MeatlugMale"
+        "value": "CUSTOM:NightFury"
       }
     ],
     "biomes": [],

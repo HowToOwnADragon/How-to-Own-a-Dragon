@@ -5,28 +5,10 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:MeatlugsEgg"
+        "value": "CUSTOM:GronckleEggItem"
       },
       {
-        "value": "CUSTOM:BlueYellowGronckleEgg"
-      },
-      {
-        "value": "CUSTOM:OrangeRedGronckleEgg"
-      },
-      {
-        "value": "CUSTOM:PinkGronckleEgg"
-      },
-      {
-        "value": "CUSTOM:ReadyToHatchMeatlugEgg"
-      },
-      {
-        "value": "CUSTOM:ReadyToHatchBlueYellowGronckleEgg"
-      },
-      {
-        "value": "CUSTOM:ReadyToHatchOrangeRedGronckleEgg"
-      },
-      {
-        "value": "CUSTOM:ReadyToHatchPinkGronckleEgg"
+        "value": "CUSTOM:RTHGronckleEggItem"
       }
     ],
     "blocks": [],
