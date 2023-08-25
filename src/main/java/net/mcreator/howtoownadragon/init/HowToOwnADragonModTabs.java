@@ -64,8 +64,8 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_IRON_PICKAXE.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_IRON_SHOVEL.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_IRON_AXE.get());
-					tabData.accept(HowToOwnADragonModItems.VALKA_STAFF.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_IRON_HOE.get());
+					tabData.accept(HowToOwnADragonModItems.VALKAS_STAFF.get());
 				})
 
 		);

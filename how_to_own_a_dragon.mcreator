@@ -2758,45 +2758,6 @@
       "path": "~/Recipe/Saddles"
     },
     {
-      "name": "ValkaStaff",
-      "type": "tool",
-      "sortid": 469,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "valka_staff",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/valka_staff.json",
-          "src/main/java/net/mcreator/howtoownadragon/item/ValkaStaffItem.java"
-        ]
-      },
-      "path": "~/Items/Valka Staff"
-    },
-    {
-      "name": "ValkaStaffLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "sortid": 486,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "valka_staff_living_entity_is_hit_with_tool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ValkaStaffLivingEntityIsHitWithToolProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items/Valka Staff"
-    },
-    {
       "name": "ValkaFollowMeTrigger",
       "type": "procedure",
       "sortid": 487,
@@ -3776,7 +3737,7 @@
       "name": "GronckleSpawnProcedure",
       "type": "procedure",
       "sortid": 666,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "gronckle_spawn_procedure",
       "metadata": {
@@ -3880,7 +3841,7 @@
       "name": "GronckleRender",
       "type": "procedure",
       "sortid": 669,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "gronckle_render",
       "metadata": {
@@ -4028,7 +3989,7 @@
       "name": "AdolescentGronckleGrowUpProcedure",
       "type": "procedure",
       "sortid": 675,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "adolescent_gronckle_grow_up_procedure",
       "metadata": {
@@ -5335,6 +5296,45 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-BreedingGronckle/FemaleGronckle"
+    },
+    {
+      "name": "ValkasStaff",
+      "type": "tool",
+      "sortid": 710,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/ValkasStaffItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/valkas_staff.json"
+        ]
+      },
+      "path": "~/Items/Valka Staff"
+    },
+    {
+      "name": "ValkasStaffLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 711,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ValkasStaffLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Valka Staff"
     }
   ],
   "variable_elements": [
@@ -5373,11 +5373,11 @@
   "language_map": {
     "en_us": {
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
-      "advancements.picking_up_dragon_eye.descr": "This changes everything!",
+      "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "block.how_to_own_a_dragon.limestone": "Limestone",
       "advancements.hidden_world_root.descr": "What is this place?",
-      "gui.how_to_own_a_dragon.incubator_1_gui.label_time_left": "Time total:",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
+      "gui.how_to_own_a_dragon.incubator_1_gui.label_time_left": "Time total:",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "entity.how_to_own_a_dragon.baby_gronckle_male": "Baby Male Gronckle",
       "item.how_to_own_a_dragon.adolescent_gronckle_male_spawn_egg": "Adolescent Male Gronckle Spawn Egg",
@@ -5399,12 +5399,11 @@
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
-      "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
+      "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
-      "item.how_to_own_a_dragon.valka_staff": "Valka Staff",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
@@ -5437,6 +5436,7 @@
       "item_group.how_to_own_a_dragon.dragons": "Dragons",
       "key.categories.htoad": "How to Own a Dragon",
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
+      "item.how_to_own_a_dragon.valkas_staff": "Valka Staff",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "item.how_to_own_a_dragon.adolescent_gronckle_female_spawn_egg": "Adolescent Female Gronckle Spawn Egg",

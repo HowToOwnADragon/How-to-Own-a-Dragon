@@ -20,8 +20,6 @@ import net.mcreator.howtoownadragon.entity.RTHGronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
@@ -37,10 +35,6 @@ public class HowToOwnADragonModEntities {
 			.setUpdateInterval(3).setCustomClientFactory(NightFuryEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GronckleAttackEntity>> GRONCKLE_ATTACK = register("projectile_gronckle_attack",
 			EntityType.Builder.<GronckleAttackEntity>of(GronckleAttackEntity::new, MobCategory.MISC).setCustomClientFactory(GronckleAttackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<GronckleMaleEntity>> GRONCKLE_MALE = register("gronckle_male", EntityType.Builder.<GronckleMaleEntity>of(GronckleMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleMaleEntity::new).fireImmune().sized(2f, 2f));
-	public static final RegistryObject<EntityType<GronckleFemaleEntity>> GRONCKLE_FEMALE = register("gronckle_female", EntityType.Builder.<GronckleFemaleEntity>of(GronckleFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleFemaleEntity::new).fireImmune().sized(2f, 2f));
 	public static final RegistryObject<EntityType<AdolescentGronckleMaleEntity>> ADOLESCENT_GRONCKLE_MALE = register("adolescent_gronckle_male",
 			EntityType.Builder.<AdolescentGronckleMaleEntity>of(AdolescentGronckleMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(AdolescentGronckleMaleEntity::new).fireImmune().sized(1.5f, 1.5f));
@@ -74,8 +68,6 @@ public class HowToOwnADragonModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			NightFuryEntity.init();
-			GronckleMaleEntity.init();
-			GronckleFemaleEntity.init();
 			AdolescentGronckleMaleEntity.init();
 			AdolescentGronckleFemaleEntity.init();
 			JuvenileGronckleMaleEntity.init();
@@ -90,8 +82,6 @@ public class HowToOwnADragonModEntities {
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(NIGHT_FURY.get(), NightFuryEntity.createAttributes().build());
-		event.put(GRONCKLE_MALE.get(), GronckleMaleEntity.createAttributes().build());
-		event.put(GRONCKLE_FEMALE.get(), GronckleFemaleEntity.createAttributes().build());
 		event.put(ADOLESCENT_GRONCKLE_MALE.get(), AdolescentGronckleMaleEntity.createAttributes().build());
 		event.put(ADOLESCENT_GRONCKLE_FEMALE.get(), AdolescentGronckleFemaleEntity.createAttributes().build());
 		event.put(JUVENILE_GRONCKLE_MALE.get(), JuvenileGronckleMaleEntity.createAttributes().build());

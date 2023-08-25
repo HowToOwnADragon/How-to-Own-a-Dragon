@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Information?!",
-    "achievementDescription": "This changes everything!",
+    "achievementDescription": "This, changes, everything!",
     "achievementIcon": {
       "value": "CUSTOM:DragonEye"
     },

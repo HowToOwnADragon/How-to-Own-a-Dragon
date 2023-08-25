@@ -14,7 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.howtoownadragon.item.ValkaStaffItem;
+import net.mcreator.howtoownadragon.item.ValkasStaffItem;
 import net.mcreator.howtoownadragon.item.SaddleRackItem;
 import net.mcreator.howtoownadragon.item.RTHGronckleEggItemItem;
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
@@ -76,13 +76,13 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> GRONCKLE_ATTACK = REGISTRY.register("gronckle_attack", () -> new GronckleAttackItem());
 	public static final RegistryObject<Item> GRONCKLE_SADDLE = REGISTRY.register("gronckle_saddle", () -> new GronckleSaddleItem());
 	public static final RegistryObject<Item> SADDLE_RACK = REGISTRY.register("saddle_rack", () -> new SaddleRackItem());
-	public static final RegistryObject<Item> VALKA_STAFF = REGISTRY.register("valka_staff", () -> new ValkaStaffItem());
 	public static final RegistryObject<Item> PLAINS_GRASS_BLOCK = block(HowToOwnADragonModBlocks.PLAINS_GRASS_BLOCK);
 	public static final RegistryObject<Item> GRONCKLE_IRON_HOE = REGISTRY.register("gronckle_iron_hoe", () -> new GronckleIronHoeItem());
 	public static final RegistryObject<Item> INCUBATOR_1 = block(HowToOwnADragonModBlocks.INCUBATOR_1);
 	public static final RegistryObject<Item> GRONCKLE_EGG_ITEM = REGISTRY.register("gronckle_egg_item", () -> new GronckleEggItemItem());
 	public static final RegistryObject<Item> RTH_GRONCKLE_EGG_ITEM = REGISTRY.register("rth_gronckle_egg_item", () -> new RTHGronckleEggItemItem());
 	public static final RegistryObject<Item> GRONCKLE_SPAWN_EGG = REGISTRY.register("gronckle_spawn_egg", () -> new GronckleSpawnEggItem());
+	public static final RegistryObject<Item> VALKAS_STAFF = REGISTRY.register("valkas_staff", () -> new ValkasStaffItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
