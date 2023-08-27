@@ -13,6 +13,8 @@ import net.mcreator.howtoownadragon.client.renderer.RTHGronckleEggEntityRenderer
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileGronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileGronckleFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.GronckleMaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.GronckleFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleAttackRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyGronckleMaleRenderer;
@@ -26,6 +28,8 @@ public class HowToOwnADragonModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.NIGHT_FURY.get(), NightFuryRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), GronckleAttackRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.GRONCKLE_MALE.get(), GronckleMaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.GRONCKLE_FEMALE.get(), GronckleFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_MALE.get(), AdolescentGronckleMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_FEMALE.get(), AdolescentGronckleFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_MALE.get(), JuvenileGronckleMaleRenderer::new);
