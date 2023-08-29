@@ -102,19 +102,22 @@
     "whenMobDies": {
       "name": "GronckleDiesNotGrown"
     },
+    "onInitialSpawn": {
+      "name": "GronckleGrowingTickRate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"176\" y=\"33\"><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
     "model": "juvigronckle.geo.json",
     "groupName": "",
-    "animation1": "animation.gronckle.idle",
-    "animation2": "animation.gronckle.walk",
+    "animation1": "animation.juvigronckle.idle",
+    "animation2": "animation.juvigronckle.walk",
     "animation3": "",
     "animation4": "",
     "animation5": "",
     "animation6": "",
     "animation7": "",
-    "animation8": "animation.gronckle.flight",
+    "animation8": "animation.juvigronckle.flight",
     "animation9": "",
     "animation10": "",
     "enable2": true,
