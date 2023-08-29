@@ -13,7 +13,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.howtoownadragon.procedures.BabyPinkMaleGronckleSpawnDragonProcedure;
+import net.mcreator.howtoownadragon.procedures.BabyPinkMaleGronckleSpawnDragonCommandProcedure;
+import net.mcreator.howtoownadragon.procedures.AdolescentMeatlugMaleGronckleSpawnDragonCommandProcedure;
 
 @Mod.EventBusSubscriber
 public class DragonSpawnCommand {
@@ -30,7 +31,19 @@ public class DragonSpawnCommand {
 						entity = FakePlayerFactory.getMinecraft(world);
 					Direction direction = entity.getDirection();
 
-					BabyPinkMaleGronckleSpawnDragonProcedure.execute(world, x, y, z);
+					BabyPinkMaleGronckleSpawnDragonCommandProcedure.execute(world, x, y, z);
+					return 0;
+				})))).then(Commands.literal("adolescent").then(Commands.literal("male").then(Commands.literal("meatlug").executes(arguments -> {
+					ServerLevel world = arguments.getSource().getLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null)
+						entity = FakePlayerFactory.getMinecraft(world);
+					Direction direction = entity.getDirection();
+
+					AdolescentMeatlugMaleGronckleSpawnDragonCommandProcedure.execute(world, x, y, z);
 					return 0;
 				}))))));
 	}

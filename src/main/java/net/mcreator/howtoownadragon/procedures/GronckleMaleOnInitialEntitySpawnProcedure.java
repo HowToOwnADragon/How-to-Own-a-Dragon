@@ -10,20 +10,23 @@ public class GronckleMaleOnInitialEntitySpawnProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
-			if (entity instanceof GronckleMaleEntity animatable)
-				animatable.setTexture("groncklepink");
-			entity.getPersistentData().putString("groncklecolor", "pink");
-		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
-			if (entity instanceof GronckleMaleEntity animatable)
-				animatable.setTexture("gronckleorangered");
-			entity.getPersistentData().putString("groncklecolor", "orangered");
-		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
-			if (entity instanceof GronckleMaleEntity animatable)
-				animatable.setTexture("gronckleblueyellow");
-			entity.getPersistentData().putString("groncklecolor", "blueyellow");
-		} else {
-			GronckleMaleOnInitialEntitySpawnProcedure.execute(entity);
+		if (!((entity.getPersistentData().getString("groncklecolor")).equals("meatlug") || (entity.getPersistentData().getString("groncklecolor")).equals("pink") || (entity.getPersistentData().getString("groncklecolor")).equals("orangered")
+				|| (entity.getPersistentData().getString("groncklecolor")).equals("blueyellow"))) {
+			if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
+				if (entity instanceof GronckleMaleEntity animatable)
+					animatable.setTexture("groncklepink");
+				entity.getPersistentData().putString("groncklecolor", "pink");
+			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
+				if (entity instanceof GronckleMaleEntity animatable)
+					animatable.setTexture("gronckleorangered");
+				entity.getPersistentData().putString("groncklecolor", "orangered");
+			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
+				if (entity instanceof GronckleMaleEntity animatable)
+					animatable.setTexture("gronckleblueyellow");
+				entity.getPersistentData().putString("groncklecolor", "blueyellow");
+			} else {
+				GronckleMaleOnInitialEntitySpawnProcedure.execute(entity);
+			}
 		}
 	}
 }

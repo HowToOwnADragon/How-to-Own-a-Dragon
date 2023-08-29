@@ -8,6 +8,8 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
@@ -33,12 +35,18 @@ public class BlueYellowOrangeRedBreedingMaleGronckleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof GronckleMaleEntity && (((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+		if (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) {
+			if (entity instanceof GronckleMaleEntity) {
+				if (!world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					if ((((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("groncklecolor")).equals("orangered") && (entity.getPersistentData().getString("groncklecolor")).equals("blueyellow")) {
+						BlueYellowOrangeRedGronckleBreedingRequirementProcedure.execute(world, x, y, z, entity, sourceentity);
+					}
+				}
 			}
-		}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("groncklecolor")).equals("orangered") && (entity.getPersistentData().getString("groncklecolor")).equals("blueyellow")) {
-			BlueYellowOrangeRedGronckleBreedingRequirementProcedure.execute(world, x, y, z, entity, sourceentity);
 		}
 	}
 }
