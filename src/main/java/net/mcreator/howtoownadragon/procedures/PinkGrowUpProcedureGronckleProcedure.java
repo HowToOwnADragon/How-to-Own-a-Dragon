@@ -12,8 +12,12 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
+import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
 
 import java.util.Comparator;
 
@@ -73,6 +77,110 @@ public class PinkGrowUpProcedureGronckleProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof JuvenileGronckleFemaleEntity animatable)
 				animatable.setTexture("juvigroncklepink");
+		} else if (entity instanceof JuvenileGronckleMaleEntity) {
+			if (!entity.level.isClientSide())
+				entity.discard();
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = new AdolescentGronckleMaleEntity(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_MALE.get(), _level);
+				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.setYBodyRot(0);
+				entityToSpawn.setYHeadRot(0);
+				entityToSpawn.setDeltaMovement(0, 0, 0);
+				if (entityToSpawn instanceof Mob _mobToSpawn)
+					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			((Entity) world.getEntitiesOfClass(AdolescentGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
+			if (((Entity) world.getEntitiesOfClass(AdolescentGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof AdolescentGronckleMaleEntity animatable)
+				animatable.setTexture("adogroncklepink");
+		} else if (entity instanceof JuvenileGronckleFemaleEntity) {
+			if (!entity.level.isClientSide())
+				entity.discard();
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = new AdolescentGronckleFemaleEntity(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_FEMALE.get(), _level);
+				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.setYBodyRot(0);
+				entityToSpawn.setYHeadRot(0);
+				entityToSpawn.setDeltaMovement(0, 0, 0);
+				if (entityToSpawn instanceof Mob _mobToSpawn)
+					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			((Entity) world.getEntitiesOfClass(AdolescentGronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
+			if (((Entity) world.getEntitiesOfClass(AdolescentGronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof AdolescentGronckleFemaleEntity animatable)
+				animatable.setTexture("adogroncklepink");
+		} else if (entity instanceof AdolescentGronckleMaleEntity) {
+			if (!entity.level.isClientSide())
+				entity.discard();
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = new GronckleMaleEntity(HowToOwnADragonModEntities.GRONCKLE_MALE.get(), _level);
+				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.setYBodyRot(0);
+				entityToSpawn.setYHeadRot(0);
+				entityToSpawn.setDeltaMovement(0, 0, 0);
+				if (entityToSpawn instanceof Mob _mobToSpawn)
+					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			((Entity) world.getEntitiesOfClass(GronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
+			if (((Entity) world.getEntitiesOfClass(GronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof GronckleMaleEntity animatable)
+				animatable.setTexture("groncklepink");
+		} else if (entity instanceof AdolescentGronckleFemaleEntity) {
+			if (!entity.level.isClientSide())
+				entity.discard();
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = new GronckleFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_FEMALE.get(), _level);
+				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.setYBodyRot(0);
+				entityToSpawn.setYHeadRot(0);
+				entityToSpawn.setDeltaMovement(0, 0, 0);
+				if (entityToSpawn instanceof Mob _mobToSpawn)
+					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
+			if (((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof GronckleFemaleEntity animatable)
+				animatable.setTexture("groncklepink");
 		}
 	}
 }
