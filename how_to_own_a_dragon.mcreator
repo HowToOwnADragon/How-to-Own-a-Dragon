@@ -2812,9 +2812,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/block/PlainsGrassBlockBlock.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/block/plains_grass_block.json",
           "src/main/resources/assets/how_to_own_a_dragon/models/item/plains_grass_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/blockstates/plains_grass_block.json",
-          "src/main/resources/assets/how_to_own_a_dragon/models/block/plains_grass_block.json"
+          "src/main/resources/assets/how_to_own_a_dragon/blockstates/plains_grass_block.json"
         ]
       },
       "path": "~/Items/IslandTopBlocks"
