@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "how_to_own_a_dragon:block/dirt",
+    "down": "how_to_own_a_dragon:block/generic_grass_block_bottom",
     "up": "how_to_own_a_dragon:block/generic_grass_block_top",
-    "north": "how_to_own_a_dragon:block/dirt",
-    "east": "how_to_own_a_dragon:block/generic_grass_block_side",
-    "south": "how_to_own_a_dragon:block/dirt",
-    "west": "how_to_own_a_dragon:block/dirt",
-    "particle": "how_to_own_a_dragon:block/dirt"
+    "north": "how_to_own_a_dragon:block/generic_grass_block_side_updated",
+    "east": "how_to_own_a_dragon:block/generic_grass_block_side_updated",
+    "south": "how_to_own_a_dragon:block/generic_grass_block_side_updated",
+    "west": "how_to_own_a_dragon:block/generic_grass_block_side_updated",
+    "particle": "how_to_own_a_dragon:block/generic_grass_block_bottom"
   },
   "render_type": "solid"
 }
