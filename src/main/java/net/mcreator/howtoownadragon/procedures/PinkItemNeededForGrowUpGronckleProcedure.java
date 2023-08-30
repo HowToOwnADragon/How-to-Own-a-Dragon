@@ -29,7 +29,7 @@ public class PinkItemNeededForGrowUpGronckleProcedure {
 				PinkGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("deepslate")) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 				if (sourceentity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(Blocks.DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
