@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 
 public class OrangeRedItemNeededForGrowUpGronckleProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
@@ -70,9 +71,12 @@ public class OrangeRedItemNeededForGrowUpGronckleProcedure {
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("lava")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
-				if (sourceentity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(Items.LAVA_BUCKET);
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BUCKET);
+					_setstack.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
 				}
 				OrangeRedGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
