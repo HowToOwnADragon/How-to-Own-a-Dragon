@@ -2340,7 +2340,7 @@
           }
         ]
       },
-      "path": "~/Items/DragonEye/LensGUIS/Info Lens Gronckle"
+      "path": "~/Items/DragonEye/LensGUIS/Procedures"
     },
     {
       "name": "DragonEyeItemInHandTick",
@@ -7524,30 +7524,6 @@
       "path": "~/Dragons/Gronckle/GronckleEntity"
     },
     {
-      "name": "GronckleAttackCooldown",
-      "type": "procedure",
-      "sortid": 789,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_attack_cooldown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleAttackCooldownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleAttack"
-    },
-    {
       "name": "NBTDataGrowUpGronckleMale",
       "type": "procedure",
       "sortid": 790,
@@ -7865,6 +7841,20 @@
         ]
       },
       "path": "~/Items/DragonEye/LensGUIS/Info Lens Gronckle"
+    },
+    {
+      "name": "AttackCooldown",
+      "type": "potioneffect",
+      "sortid": 800,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/potion/AttackCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleAttack"
     }
   ],
   "variable_elements": [
@@ -7930,8 +7920,8 @@
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
-      "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
+      "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
@@ -7951,8 +7941,8 @@
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
-      "item_group.how_to_own_a_dragon.tools": "Tools",
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.button_smelt": "Smelt",
+      "item_group.how_to_own_a_dragon.tools": "Tools",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
@@ -8009,14 +7999,39 @@
     "name": "~",
     "children": [
       {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "Scale",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Overworld2.0",
+        "children": []
+      },
+      {
         "name": "Items",
         "children": [
+          {
+            "name": "Deep Iron",
+            "children": []
+          },
           {
             "name": "Scales",
             "children": []
           },
           {
-            "name": "Deep Iron",
+            "name": "DragonProof",
+            "children": []
+          },
+          {
+            "name": "Incubator",
+            "children": []
+          },
+          {
+            "name": "IslandTopBlocks",
             "children": []
           },
           {
@@ -8034,28 +8049,7 @@
             ]
           },
           {
-            "name": "DragonProof",
-            "children": []
-          },
-          {
-            "name": "Incubator",
-            "children": []
-          },
-          {
             "name": "Valka Staff",
-            "children": []
-          },
-          {
-            "name": "IslandTopBlocks",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Armor",
-        "children": [
-          {
-            "name": "Scale",
             "children": []
           }
         ]
@@ -8070,14 +8064,6 @@
           {
             "name": "Gronckle",
             "children": [
-              {
-                "name": "TamingGronckle",
-                "children": []
-              },
-              {
-                "name": "GronckleEntity",
-                "children": []
-              },
               {
                 "name": "GronckleBreeding",
                 "children": [
@@ -8098,11 +8084,11 @@
                     "name": "Cross-BreedingGronckle",
                     "children": [
                       {
-                        "name": "EggSpawnGronckle",
+                        "name": "FemaleGronckle",
                         "children": []
                       },
                       {
-                        "name": "FemaleGronckle",
+                        "name": "EggSpawnGronckle",
                         "children": []
                       },
                       {
@@ -8118,7 +8104,7 @@
                 ]
               },
               {
-                "name": "GronckleTag",
+                "name": "TamingGronckle",
                 "children": []
               },
               {
@@ -8128,27 +8114,22 @@
                     "name": "BabyGronckle",
                     "children": [
                       {
-                        "name": "Female",
+                        "name": "Male",
                         "children": []
                       },
                       {
-                        "name": "Male",
+                        "name": "Female",
                         "children": []
                       }
                     ]
                   },
                   {
-                    "name": "JuvenileGronckle",
-                    "children": [
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "Male",
-                        "children": []
-                      }
-                    ]
+                    "name": "GrowUpProcedure",
+                    "children": []
+                  },
+                  {
+                    "name": "Item",
+                    "children": []
                   },
                   {
                     "name": "AdolescentGronckle",
@@ -8168,33 +8149,7 @@
                     "children": []
                   },
                   {
-                    "name": "Item",
-                    "children": []
-                  },
-                  {
-                    "name": "GrowUpProcedure",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "GronckleGUIs",
-                "children": [
-                  {
-                    "name": "GronckleIron",
-                    "children": [
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "Male",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "GronckleSaddles",
+                    "name": "JuvenileGronckle",
                     "children": [
                       {
                         "name": "Male",
@@ -8215,6 +8170,45 @@
               {
                 "name": "GronckleAttack",
                 "children": []
+              },
+              {
+                "name": "GronckleTag",
+                "children": []
+              },
+              {
+                "name": "GronckleEntity",
+                "children": []
+              },
+              {
+                "name": "GronckleGUIs",
+                "children": [
+                  {
+                    "name": "GronckleSaddles",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "GronckleIron",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -8236,89 +8230,6 @@
       {
         "name": "Gamerule",
         "children": []
-      },
-      {
-        "name": "The Hidden World",
-        "children": [
-          {
-            "name": "Blocks",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Achievements",
-        "children": [
-          {
-            "name": "Hidden World",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Commands",
-        "children": [
-          {
-            "name": "Teleport between dimensions",
-            "children": []
-          },
-          {
-            "name": "DragonSpawn",
-            "children": [
-              {
-                "name": "Gronckle",
-                "children": [
-                  {
-                    "name": "Male",
-                    "children": [
-                      {
-                        "name": "Baby",
-                        "children": []
-                      },
-                      {
-                        "name": "Juvenile",
-                        "children": []
-                      },
-                      {
-                        "name": "Adolescent",
-                        "children": []
-                      },
-                      {
-                        "name": "Grown",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Recipe",
-        "children": [
-          {
-            "name": "Gronckle Iron",
-            "children": []
-          },
-          {
-            "name": "Deep Iron",
-            "children": []
-          },
-          {
-            "name": "DragonProof",
-            "children": []
-          },
-          {
-            "name": "Saddles",
-            "children": []
-          }
-        ]
       },
       {
         "name": "Procedure",
@@ -8343,21 +8254,100 @@
         ]
       },
       {
-        "name": "ReaperShip",
+        "name": "The Hidden World",
         "children": [
           {
-            "name": "Traps",
-            "children": []
-          },
-          {
-            "name": "REAPERSPAWNINGMECHANISM",
+            "name": "Blocks",
             "children": []
           }
         ]
       },
       {
-        "name": "Overworld2.0",
-        "children": []
+        "name": "ReaperShip",
+        "children": [
+          {
+            "name": "REAPERSPAWNINGMECHANISM",
+            "children": []
+          },
+          {
+            "name": "Traps",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipe",
+        "children": [
+          {
+            "name": "Saddles",
+            "children": []
+          },
+          {
+            "name": "Deep Iron",
+            "children": []
+          },
+          {
+            "name": "Gronckle Iron",
+            "children": []
+          },
+          {
+            "name": "DragonProof",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Achievements",
+        "children": [
+          {
+            "name": "Hidden World",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "DragonSpawn",
+            "children": [
+              {
+                "name": "Gronckle",
+                "children": [
+                  {
+                    "name": "Male",
+                    "children": [
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Adolescent",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvenile",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Female",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Teleport between dimensions",
+            "children": []
+          }
+        ]
       }
     ]
   },

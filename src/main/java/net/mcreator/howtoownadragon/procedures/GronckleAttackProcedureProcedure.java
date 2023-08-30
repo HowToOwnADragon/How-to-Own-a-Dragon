@@ -5,15 +5,17 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
 
@@ -25,18 +27,18 @@ public class GronckleAttackProcedureProcedure {
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
 			return;
-		execute(event, event.getLevel(), event.getEntity());
+		execute(event, event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getVehicle()).getPersistentData().getBoolean("gronckleattackcooldown") == false) {
-			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+		if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+			if (!((entity.getVehicle()) instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.ATTACK_COOLDOWN.get()))) {
 				{
 					Entity _shootFrom = (entity.getVehicle());
 					Level projectileLevel = _shootFrom.level;
@@ -59,11 +61,9 @@ public class GronckleAttackProcedureProcedure {
 					}
 				}
 				(entity.getVehicle()).getPersistentData().putDouble("GronckleAttack", 1);
-				(entity.getVehicle()).getPersistentData().putBoolean("gronckleattackcooldown", true);
-				GronckleAttackCooldownProcedure.execute(world, entity);
-			}
-		} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 1) {
-			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+				if ((entity.getVehicle()) instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.ATTACK_COOLDOWN.get(), 600, 1, false, false));
+			} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 1) {
 				{
 					Entity _shootFrom = (entity.getVehicle());
 					Level projectileLevel = _shootFrom.level;
@@ -86,9 +86,7 @@ public class GronckleAttackProcedureProcedure {
 					}
 				}
 				(entity.getVehicle()).getPersistentData().putDouble("GronckleAttack", 2);
-			}
-		} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 2) {
-			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+			} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 2) {
 				{
 					Entity _shootFrom = (entity.getVehicle());
 					Level projectileLevel = _shootFrom.level;
@@ -111,9 +109,7 @@ public class GronckleAttackProcedureProcedure {
 					}
 				}
 				(entity.getVehicle()).getPersistentData().putDouble("GronckleAttack", 3);
-			}
-		} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 3) {
-			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+			} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 3) {
 				{
 					Entity _shootFrom = (entity.getVehicle());
 					Level projectileLevel = _shootFrom.level;
@@ -136,9 +132,7 @@ public class GronckleAttackProcedureProcedure {
 					}
 				}
 				(entity.getVehicle()).getPersistentData().putDouble("GronckleAttack", 4);
-			}
-		} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 5) {
-			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+			} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 5) {
 				{
 					Entity _shootFrom = (entity.getVehicle());
 					Level projectileLevel = _shootFrom.level;
@@ -161,9 +155,7 @@ public class GronckleAttackProcedureProcedure {
 					}
 				}
 				(entity.getVehicle()).getPersistentData().putDouble("GronckleAttack", 0);
-			}
-		} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 4) {
-			if (entity.isPassenger() && (entity.getVehicle()).getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+			} else if ((entity.getVehicle()).getPersistentData().getDouble("GronckleAttack") == 4) {
 				{
 					Entity _shootFrom = (entity.getVehicle());
 					Level projectileLevel = _shootFrom.level;
