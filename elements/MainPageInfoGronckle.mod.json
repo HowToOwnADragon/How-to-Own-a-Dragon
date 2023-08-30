@@ -18,6 +18,16 @@
           "x": 13,
           "y": 4
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_food_button_infolens_90x30",
+          "image": "food_button_infolens_90x30.png",
+          "hoveredImage": "",
+          "x": 26,
+          "y": 17
+        }
       }
     ],
     "gridSettings": {

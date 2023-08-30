@@ -2303,21 +2303,6 @@
       "path": "~/Items/DragonEye"
     },
     {
-      "name": "InformationGronckle",
-      "type": "gui",
-      "sortid": 374,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "information_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/InformationGronckleScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/InformationGronckleMenu.java"
-        ]
-      },
-      "path": "~/Items/DragonEye/LensGUIS"
-    },
-    {
       "name": "OpenInfoGronckle",
       "type": "procedure",
       "sortid": 375,
@@ -2355,7 +2340,7 @@
           }
         ]
       },
-      "path": "~/Items/DragonEye/LensGUIS/Procedures"
+      "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle"
     },
     {
       "name": "DragonEyeItemInHandTick",
@@ -7851,6 +7836,21 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleAttack"
+    },
+    {
+      "name": "MainPageInfoGronckle",
+      "type": "gui",
+      "sortid": 801,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_page_info_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MainPageInfoGronckleMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MainPageInfoGronckleScreen.java"
+        ]
+      },
+      "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle"
     }
   ],
   "variable_elements": [
@@ -7916,8 +7916,8 @@
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
-      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
+      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
@@ -7938,8 +7938,8 @@
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
-      "gui.how_to_own_a_dragon.gronkle_iron_gui_male.button_smelt": "Smelt",
       "item_group.how_to_own_a_dragon.tools": "Tools",
+      "gui.how_to_own_a_dragon.gronkle_iron_gui_male.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
@@ -8013,8 +8013,13 @@
                 "name": "LensGUIS",
                 "children": [
                   {
-                    "name": "Procedures",
-                    "children": []
+                    "name": "Info Lens",
+                    "children": [
+                      {
+                        "name": "Gronckle",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               }

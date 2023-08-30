@@ -6,21 +6,23 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 
-import net.mcreator.howtoownadragon.world.inventory.InformationGronckleMenu;
+import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class InformationGronckleScreen extends AbstractContainerScreen<InformationGronckleMenu> {
-	private final static HashMap<String, Object> guistate = InformationGronckleMenu.guistate;
+public class MainPageInfoGronckleScreen extends AbstractContainerScreen<MainPageInfoGronckleMenu> {
+	private final static HashMap<String, Object> guistate = MainPageInfoGronckleMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	ImageButton imagebutton_food_button_infolens_90x30;
 
-	public InformationGronckleScreen(InformationGronckleMenu container, Inventory inventory, Component text) {
+	public MainPageInfoGronckleScreen(MainPageInfoGronckleMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -36,7 +38,7 @@ public class InformationGronckleScreen extends AbstractContainerScreen<Informati
 		return true;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/information_gronckle.png");
+	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/main_page_info_gronckle.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -85,5 +87,9 @@ public class InformationGronckleScreen extends AbstractContainerScreen<Informati
 	@Override
 	public void init() {
 		super.init();
+		imagebutton_food_button_infolens_90x30 = new ImageButton(this.leftPos + 12, this.topPos + 12, 90, 30, 0, 0, 30, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_food_button_infolens_90x30.png"), 90, 60, e -> {
+		});
+		guistate.put("button:imagebutton_food_button_infolens_90x30", imagebutton_food_button_infolens_90x30);
+		this.addRenderableWidget(imagebutton_food_button_infolens_90x30);
 	}
 }

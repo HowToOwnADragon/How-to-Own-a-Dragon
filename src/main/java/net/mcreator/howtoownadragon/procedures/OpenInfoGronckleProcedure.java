@@ -22,7 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.InformationGronckleMenu;
+import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 
 import javax.annotation.Nullable;
@@ -53,12 +53,12 @@ public class OpenInfoGronckleProcedure {
 					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return Component.literal("InformationGronckle");
+							return Component.literal("MainPageInfoGronckle");
 						}
 
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new InformationGronckleMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							return new MainPageInfoGronckleMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
