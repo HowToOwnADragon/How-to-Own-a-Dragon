@@ -1,0 +1,21 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:GronckleFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleMale"
+      }
+    ],
+    "biomes": [],
+    "name": "dragon_full_grown",
+    "namespace": "mod"
+  }
+}

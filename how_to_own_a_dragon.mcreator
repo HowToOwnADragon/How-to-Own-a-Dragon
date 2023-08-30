@@ -7851,6 +7851,20 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleAttack"
+    },
+    {
+      "name": "DragonFullGrown",
+      "type": "tag",
+      "sortid": 801,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_full_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon_full_grown.json"
+        ]
+      },
+      "path": "~/Dragons"
     }
   ],
   "variable_elements": [
