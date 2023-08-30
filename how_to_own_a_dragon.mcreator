@@ -2303,21 +2303,6 @@
       "path": "~/Items/DragonEye"
     },
     {
-      "name": "InformationGronckle",
-      "type": "gui",
-      "sortid": 374,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "information_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/InformationGronckleScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/InformationGronckleMenu.java"
-        ]
-      },
-      "path": "~/Items/DragonEye/LensGUIS"
-    },
-    {
       "name": "OpenInfoGronckle",
       "type": "procedure",
       "sortid": 375,
@@ -2355,7 +2340,7 @@
           }
         ]
       },
-      "path": "~/Items/DragonEye/LensGUIS/Procedures"
+      "path": "~/Items/DragonEye/LensGUIS/Info Lens Gronckle"
     },
     {
       "name": "DragonEyeItemInHandTick",
@@ -7865,6 +7850,21 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGUIs/GronckleIron/Female"
+    },
+    {
+      "name": "MainPageInfoGronckle",
+      "type": "gui",
+      "sortid": 800,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_page_info_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MainPageInfoGronckleMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MainPageInfoGronckleScreen.java"
+        ]
+      },
+      "path": "~/Items/DragonEye/LensGUIS/Info Lens Gronckle"
     }
   ],
   "variable_elements": [
@@ -8026,7 +8026,7 @@
                 "name": "LensGUIS",
                 "children": [
                   {
-                    "name": "Procedures",
+                    "name": "Info Lens Gronckle",
                     "children": []
                   }
                 ]

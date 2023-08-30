@@ -7,20 +7,20 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 
-import net.mcreator.howtoownadragon.world.inventory.InformationGronckleMenu;
+import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class InformationGronckleScreen extends AbstractContainerScreen<InformationGronckleMenu> {
-	private final static HashMap<String, Object> guistate = InformationGronckleMenu.guistate;
+public class MainPageInfoGronckleScreen extends AbstractContainerScreen<MainPageInfoGronckleMenu> {
+	private final static HashMap<String, Object> guistate = MainPageInfoGronckleMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public InformationGronckleScreen(InformationGronckleMenu container, Inventory inventory, Component text) {
+	public MainPageInfoGronckleScreen(MainPageInfoGronckleMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -36,7 +36,7 @@ public class InformationGronckleScreen extends AbstractContainerScreen<Informati
 		return true;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/information_gronckle.png");
+	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/main_page_info_gronckle.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
