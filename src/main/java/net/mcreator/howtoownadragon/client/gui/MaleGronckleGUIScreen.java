@@ -3,15 +3,12 @@ package net.mcreator.howtoownadragon.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
-import net.mcreator.howtoownadragon.procedures.GronckleRenderProcedure;
 import net.mcreator.howtoownadragon.network.MaleGronckleGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -45,9 +42,6 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		if (GronckleRenderProcedure.execute(world) instanceof LivingEntity livingEntity) {
-			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + 35, this.topPos + 52, 10, 0f + (float) Math.atan((this.leftPos + 35 - mouseX) / 40.0), (float) Math.atan((this.topPos + 2 - mouseY) / 40.0), livingEntity);
-		}
 	}
 
 	@Override

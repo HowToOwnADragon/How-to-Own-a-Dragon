@@ -18,7 +18,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.STONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("cobblestone")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
@@ -26,7 +26,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("deepslate")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
@@ -34,7 +34,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("cobbleddeepslate")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
@@ -42,7 +42,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.COBBLED_DEEPSLATE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("andesite")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
@@ -50,7 +50,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.ANDESITE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("diorite")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
@@ -58,7 +58,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.DIORITE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("granite")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
@@ -66,7 +66,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.GRANITE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("lava")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
@@ -74,7 +74,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Items.LAVA_BUCKET);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("iron")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT) {
@@ -82,7 +82,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Items.IRON_INGOT);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		} else if ((entity.getPersistentData().getString("groncklegrowup")).equals("sandstone")) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
@@ -90,7 +90,7 @@ public class MeatlugItemNeededForGrowUpGronckleProcedure {
 					ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity);
+				MeatlugGrowUpProcedureGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 			}
 		}
 	}

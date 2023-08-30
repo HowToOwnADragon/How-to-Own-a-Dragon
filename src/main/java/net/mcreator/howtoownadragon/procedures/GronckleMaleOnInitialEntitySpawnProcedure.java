@@ -16,14 +16,17 @@ public class GronckleMaleOnInitialEntitySpawnProcedure {
 				if (entity instanceof GronckleMaleEntity animatable)
 					animatable.setTexture("groncklepink");
 				entity.getPersistentData().putString("groncklecolor", "pink");
+				NBTDataSpawnGronckleProcedure.execute(entity);
 			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 				if (entity instanceof GronckleMaleEntity animatable)
 					animatable.setTexture("gronckleorangered");
 				entity.getPersistentData().putString("groncklecolor", "orangered");
+				NBTDataSpawnGronckleProcedure.execute(entity);
 			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
 				if (entity instanceof GronckleMaleEntity animatable)
 					animatable.setTexture("gronckleblueyellow");
 				entity.getPersistentData().putString("groncklecolor", "blueyellow");
+				NBTDataSpawnGronckleProcedure.execute(entity);
 			} else {
 				GronckleMaleOnInitialEntitySpawnProcedure.execute(entity);
 			}

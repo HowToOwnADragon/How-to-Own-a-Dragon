@@ -3,15 +3,14 @@ package net.mcreator.howtoownadragon.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
-import net.mcreator.howtoownadragon.procedures.GronckleRenderProcedure;
+import net.mcreator.howtoownadragon.network.FemaleGronckleGUIButtonMessage;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.HashMap;
 
@@ -43,9 +42,6 @@ public class FemaleGronckleGUIScreen extends AbstractContainerScreen<FemaleGronc
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		if (GronckleRenderProcedure.execute(world) instanceof LivingEntity livingEntity) {
-			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + 35, this.topPos + 52, 10, 0f + (float) Math.atan((this.leftPos + 35 - mouseX) / 40.0), (float) Math.atan((this.topPos + 2 - mouseY) / 40.0), livingEntity);
-		}
 	}
 
 	@Override
@@ -94,6 +90,10 @@ public class FemaleGronckleGUIScreen extends AbstractContainerScreen<FemaleGronc
 	public void init() {
 		super.init();
 		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 146, this.topPos + 62, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new FemaleGronckleGUIButtonMessage(0, x, y, z));
+				FemaleGronckleGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_next_page_mcreator_copy", imagebutton_next_page_mcreator_copy);
 		this.addRenderableWidget(imagebutton_next_page_mcreator_copy);

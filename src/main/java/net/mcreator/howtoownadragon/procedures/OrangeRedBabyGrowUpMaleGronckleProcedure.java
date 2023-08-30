@@ -28,8 +28,8 @@ public class OrangeRedBabyGrowUpMaleGronckleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((entity.getPersistentData().getString("groncklecolor")).equals("pink") && entity instanceof BabyGronckleMaleEntity) {
-			PinkItemNeededForGrowUpGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
+		if ((entity.getPersistentData().getString("groncklecolor")).equals("orangered") && entity instanceof BabyGronckleMaleEntity) {
+			OrangeRedItemNeededForGrowUpGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 		}
 	}
 }

@@ -14,7 +14,8 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.InformationGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
-import net.mcreator.howtoownadragon.client.gui.GronckleMaleGronckleIronGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.GronkleIronGUIMaleScreen;
+import net.mcreator.howtoownadragon.client.gui.GronckleIronGUIFemaleScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.DragonEyeInputScreen;
 
@@ -28,7 +29,8 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.INCUBATOR_1_GUI.get(), Incubator1GUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.FEMALE_GRONCKLE_GUI.get(), FemaleGronckleGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MALE_GRONCKLE_GUI.get(), MaleGronckleGUIScreen::new);
-			MenuScreens.register(HowToOwnADragonModMenus.GRONCKLE_MALE_GRONCKLE_IRON_GUI.get(), GronckleMaleGronckleIronGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GRONKLE_IRON_GUI_MALE.get(), GronkleIronGUIMaleScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GRONCKLE_IRON_GUI_FEMALE.get(), GronckleIronGUIFemaleScreen::new);
 		});
 	}
 }

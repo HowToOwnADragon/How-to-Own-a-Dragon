@@ -35,6 +35,7 @@ public class PinkAndBlueYellowEggGronckleProcedure {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
+			GiveBreedingCooldownProcedure.execute(world, x, y, z);
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GronckleEggEntityEntity(HowToOwnADragonModEntities.GRONCKLE_EGG_ENTITY.get(), _level);
@@ -51,6 +52,7 @@ public class PinkAndBlueYellowEggGronckleProcedure {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "blueyellow");
+			GiveBreedingCooldownProcedure.execute(world, x, y, z);
 		} else {
 			PinkAndBlueYellowEggGronckleProcedure.execute(world, x, y, z, entity);
 		}

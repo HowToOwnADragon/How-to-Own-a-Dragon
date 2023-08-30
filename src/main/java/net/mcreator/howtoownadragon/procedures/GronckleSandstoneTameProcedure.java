@@ -39,55 +39,57 @@ public class GronckleSandstoneTameProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
-			if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
-				if (new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayer _serverPlayer) {
-							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-						} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-						}
-						return false;
-					}
-				}.checkGamemode(sourceentity)) {
-					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
-						if (Math.random() < 0.7) {
-							if (sourceentity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity.getPersistentData().getBoolean("groncklefeedcooldown") == false) {
+			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
+				if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
+					if (new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+							} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
 							}
-							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 30, 3, 3, 3, 1);
+							return false;
 						}
-						if (Math.random() >= 0.7) {
-							if (sourceentity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}.checkGamemode(sourceentity)) {
+						if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
+							if (Math.random() < 0.7) {
+								if (sourceentity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+								}
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 30, 3, 3, 3, 1);
 							}
-							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
-							if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-								_toTame.tame(_owner);
+							if (Math.random() >= 0.7) {
+								if (sourceentity instanceof Player _player) {
+									ItemStack _stktoremove = new ItemStack(Blocks.SANDSTONE);
+									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+								}
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
+								if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
+									_toTame.tame(_owner);
+							}
 						}
 					}
-				}
-				if (new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayer _serverPlayer) {
-							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-						} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+					if (new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+							} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+							}
+							return false;
 						}
-						return false;
+					}.checkGamemode(sourceentity)) {
+						if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
+							_toTame.tame(_owner);
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 					}
-				}.checkGamemode(sourceentity)) {
-					if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-						_toTame.tame(_owner);
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 				}
 			}
 		}

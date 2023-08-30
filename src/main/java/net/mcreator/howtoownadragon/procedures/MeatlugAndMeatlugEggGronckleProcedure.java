@@ -30,5 +30,6 @@ public class MeatlugAndMeatlugEggGronckleProcedure {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "meatlug");
+		GiveBreedingCooldownProcedure.execute(world, x, y, z);
 	}
 }

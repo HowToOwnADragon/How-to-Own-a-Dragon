@@ -41,19 +41,6 @@
         }
       },
       {
-        "type": "entitymodel",
-        "data": {
-          "entityModel": {
-            "name": "GronckleRender"
-          },
-          "scale": 10,
-          "rotationX": 0,
-          "followMouseMovement": true,
-          "x": 150,
-          "y": 68
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -96,7 +83,7 @@
           "image": "next_page_mcreator_-_copy.png",
           "hoveredImage": "next_page_mcreator_-_copy.png",
           "onClick": {
-            "name": "GronckleMaleOpenGronckleIronGUI"
+            "name": "OpenGronckleIronGUIMale"
           },
           "x": 272,
           "y": 99

@@ -14,7 +14,8 @@ import net.minecraft.world.inventory.MenuType;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.InformationGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
-import net.mcreator.howtoownadragon.world.inventory.GronckleMaleGronckleIronGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.GronkleIronGUIMaleMenu;
+import net.mcreator.howtoownadragon.world.inventory.GronckleIronGUIFemaleMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.DragonEyeInputMenu;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -26,5 +27,6 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<Incubator1GUIMenu>> INCUBATOR_1_GUI = REGISTRY.register("incubator_1_gui", () -> IForgeMenuType.create(Incubator1GUIMenu::new));
 	public static final RegistryObject<MenuType<FemaleGronckleGUIMenu>> FEMALE_GRONCKLE_GUI = REGISTRY.register("female_gronckle_gui", () -> IForgeMenuType.create(FemaleGronckleGUIMenu::new));
 	public static final RegistryObject<MenuType<MaleGronckleGUIMenu>> MALE_GRONCKLE_GUI = REGISTRY.register("male_gronckle_gui", () -> IForgeMenuType.create(MaleGronckleGUIMenu::new));
-	public static final RegistryObject<MenuType<GronckleMaleGronckleIronGUIMenu>> GRONCKLE_MALE_GRONCKLE_IRON_GUI = REGISTRY.register("gronckle_male_gronckle_iron_gui", () -> IForgeMenuType.create(GronckleMaleGronckleIronGUIMenu::new));
+	public static final RegistryObject<MenuType<GronkleIronGUIMaleMenu>> GRONKLE_IRON_GUI_MALE = REGISTRY.register("gronkle_iron_gui_male", () -> IForgeMenuType.create(GronkleIronGUIMaleMenu::new));
+	public static final RegistryObject<MenuType<GronckleIronGUIFemaleMenu>> GRONCKLE_IRON_GUI_FEMALE = REGISTRY.register("gronckle_iron_gui_female", () -> IForgeMenuType.create(GronckleIronGUIFemaleMenu::new));
 }
