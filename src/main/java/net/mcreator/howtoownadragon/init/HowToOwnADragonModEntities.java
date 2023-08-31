@@ -16,7 +16,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.howtoownadragon.entity.RTHGronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
@@ -58,8 +57,6 @@ public class HowToOwnADragonModEntities {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyGronckleFemaleEntity::new).fireImmune().sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GronckleEggEntityEntity>> GRONCKLE_EGG_ENTITY = register("gronckle_egg_entity", EntityType.Builder.<GronckleEggEntityEntity>of(GronckleEggEntityEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleEggEntityEntity::new).fireImmune().sized(0.6f, 0.8f));
-	public static final RegistryObject<EntityType<RTHGronckleEggEntityEntity>> RTH_GRONCKLE_EGG_ENTITY = register("rth_gronckle_egg_entity", EntityType.Builder.<RTHGronckleEggEntityEntity>of(RTHGronckleEggEntityEntity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RTHGronckleEggEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -78,7 +75,6 @@ public class HowToOwnADragonModEntities {
 			BabyGronckleMaleEntity.init();
 			BabyGronckleFemaleEntity.init();
 			GronckleEggEntityEntity.init();
-			RTHGronckleEggEntityEntity.init();
 		});
 	}
 
@@ -94,6 +90,5 @@ public class HowToOwnADragonModEntities {
 		event.put(BABY_GRONCKLE_MALE.get(), BabyGronckleMaleEntity.createAttributes().build());
 		event.put(BABY_GRONCKLE_FEMALE.get(), BabyGronckleFemaleEntity.createAttributes().build());
 		event.put(GRONCKLE_EGG_ENTITY.get(), GronckleEggEntityEntity.createAttributes().build());
-		event.put(RTH_GRONCKLE_EGG_ENTITY.get(), RTHGronckleEggEntityEntity.createAttributes().build());
 	}
 }

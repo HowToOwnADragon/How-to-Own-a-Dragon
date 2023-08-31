@@ -96,6 +96,9 @@
     "stepSound": {
       "value": ""
     },
+    "whenMobIsHurt": {
+      "name": "GronckleEntityIsHurt"
+    },
     "onRightClickedOn": {
       "name": "GronckleEntityIsHurt"
     },

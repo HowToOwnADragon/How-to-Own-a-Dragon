@@ -30,7 +30,7 @@ public class TheReaperEnterDimensionProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 255, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1000000, 255, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1000000, 2, false, false));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"tp @p ~10.5 207 ~2.5");

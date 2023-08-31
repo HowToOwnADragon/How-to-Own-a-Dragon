@@ -82,15 +82,15 @@ public class Incubator1GUIMenu extends AbstractContainerMenu implements Supplier
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 40) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 31, 40) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(new ResourceLocation("how_to_own_a_dragon:eggs")));
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 58) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 85, 58) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 22) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 85, 22) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -98,9 +98,9 @@ public class Incubator1GUIMenu extends AbstractContainerMenu implements Supplier
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 4 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 4 + 8 + si * 18, 0 + 142));
 	}
 
 	@Override

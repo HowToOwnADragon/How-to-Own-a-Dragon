@@ -7,13 +7,15 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlocks;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
-import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -23,11 +25,11 @@ public class ButtonPressedGronckleIronGUIFemaleProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+		if (!(((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
-		}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getBoolean("gronckleironcooldown") == false) {
+		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(HowToOwnADragonModMobEffects.GRONCKLE_IRON_COOLDOWN.get()))) {
 			if (new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
@@ -88,18 +90,12 @@ public class ButtonPressedGronckleIronGUIFemaleProcedure {
 						((Slot) _slots.get(3)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
-					((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					if (((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("gronckleironcooldown", true);
-					HowToOwnADragonMod.queueServerWork(600, () -> {
-						((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("gronckleironcooldown", false);
-					});
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.GRONCKLE_IRON_COOLDOWN.get(), 600, 1, false, false));
 				}
 			}
 		}

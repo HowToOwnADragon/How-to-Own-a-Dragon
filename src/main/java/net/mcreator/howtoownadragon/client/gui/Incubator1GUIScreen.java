@@ -33,7 +33,7 @@ public class Incubator1GUIScreen extends AbstractContainerScreen<Incubator1GUIMe
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 185;
 		this.imageHeight = 166;
 	}
 
@@ -72,16 +72,16 @@ public class Incubator1GUIScreen extends AbstractContainerScreen<Incubator1GUIMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_incubator"), 7, 8, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_time_left"), 115, 59, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_requirement"), 106, 8, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_incubator"), 6, 5, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_time_left"), 118, 60, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_requirement"), 104, 5, -13421773);
 		this.font.draw(poseStack,
 
-				Incubator1RequirementProcedure.execute(world), 106, 17, -13421773);
+				Incubator1RequirementProcedure.execute(world, x, y, z), 104, 14, -13421773);
 		this.font.draw(poseStack,
 
-				Incubator1TimerShowProcedure.execute(world), 114, 68, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_inventory"), 6, 71, -13421773);
+				Incubator1TimerShowProcedure.execute(world, x, y, z), 119, 68, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.incubator_1_gui.label_inventory"), 11, 71, -13421773);
 	}
 
 	@Override
@@ -97,7 +97,7 @@ public class Incubator1GUIScreen extends AbstractContainerScreen<Incubator1GUIMe
 				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new Incubator1GUIButtonMessage(0, x, y, z));
 				Incubator1GUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 114, this.topPos + 38, 51, 20).build();
+		}).bounds(this.leftPos + 119, this.topPos + 38, 51, 20).build();
 		guistate.put("button:button_hatch", button_hatch);
 		this.addRenderableWidget(button_hatch);
 	}

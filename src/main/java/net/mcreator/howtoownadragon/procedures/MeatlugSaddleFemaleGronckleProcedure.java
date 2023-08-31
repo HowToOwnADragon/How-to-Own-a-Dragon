@@ -34,7 +34,8 @@ public class MeatlugSaddleFemaleGronckleProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof GronckleFemaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get() && (entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get() && entity.getPersistentData().getBoolean("groncklesaddle") == false
+					&& (entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
 				if (sourceentity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SADDLE_RACK.get());
 					_setstack.setCount(1);
@@ -44,7 +45,9 @@ public class MeatlugSaddleFemaleGronckleProcedure {
 				}
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("meatlugsaddle");
-			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get() && (entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
+				entity.getPersistentData().putBoolean("groncklesaddle", true);
+			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get() && entity.getPersistentData().getBoolean("groncklesaddle") == true
+					&& (entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
 				if (sourceentity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_SADDLE.get());
 					_setstack.setCount(1);
@@ -54,6 +57,7 @@ public class MeatlugSaddleFemaleGronckleProcedure {
 				}
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("meatlug");
+				entity.getPersistentData().putBoolean("groncklesaddle", false);
 			}
 		}
 	}

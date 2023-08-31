@@ -6,9 +6,6 @@
     "items": [
       {
         "value": "CUSTOM:GronckleEggItem"
-      },
-      {
-        "value": "CUSTOM:RTHGronckleEggItem"
       }
     ],
     "blocks": [],

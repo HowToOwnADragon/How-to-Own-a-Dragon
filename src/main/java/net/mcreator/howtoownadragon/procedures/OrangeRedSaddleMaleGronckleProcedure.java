@@ -34,7 +34,8 @@ public class OrangeRedSaddleMaleGronckleProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof GronckleMaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get() && (entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get() && entity.getPersistentData().getBoolean("groncklesaddle") == false
+					&& (entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
 				if (sourceentity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SADDLE_RACK.get());
 					_setstack.setCount(1);
@@ -44,7 +45,8 @@ public class OrangeRedSaddleMaleGronckleProcedure {
 				}
 				if (entity instanceof GronckleMaleEntity animatable)
 					animatable.setTexture("gronckleorangeredsaddle");
-			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get()
+				entity.getPersistentData().putBoolean("groncklesaddle", true);
+			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get() && entity.getPersistentData().getBoolean("groncklesaddle") == true
 					&& (entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
 				if (sourceentity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_SADDLE.get());
@@ -55,6 +57,7 @@ public class OrangeRedSaddleMaleGronckleProcedure {
 				}
 				if (entity instanceof GronckleMaleEntity animatable)
 					animatable.setTexture("gronckleorangered");
+				entity.getPersistentData().putBoolean("groncklesaddle", false);
 			}
 		}
 	}

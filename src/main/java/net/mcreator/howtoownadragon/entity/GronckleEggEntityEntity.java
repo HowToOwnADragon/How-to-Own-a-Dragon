@@ -57,6 +57,7 @@ public class GronckleEggEntityEntity extends PathfinderMob {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		GronckleEntityIsHurtProcedure.execute(this.level, this, source.getEntity());
 		if (source.is(DamageTypes.IN_FIRE))
 			return false;
 		if (source.getDirectEntity() instanceof AbstractArrow)
@@ -93,7 +94,7 @@ public class GronckleEggEntityEntity extends PathfinderMob {
 		Entity entity = this;
 		Level world = this.level;
 
-		GronckleEntityIsHurtProcedure.execute(entity, sourceentity);
+		GronckleEntityIsHurtProcedure.execute(world, entity, sourceentity);
 		return retval;
 	}
 
