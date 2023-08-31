@@ -3,7 +3,7 @@ package net.mcreator.howtoownadragon.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class GronckleColorLoadWorldProcedure {
 	@SubscribeEvent
-	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+	public static void onEntitySpawned(EntityJoinLevelEvent event) {
 		execute(event, event.getEntity());
 	}
 
