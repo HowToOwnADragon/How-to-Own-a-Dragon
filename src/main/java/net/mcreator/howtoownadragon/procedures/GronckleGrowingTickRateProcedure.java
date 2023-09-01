@@ -17,6 +17,8 @@ public class GronckleGrowingTickRateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		entity.getPersistentData().putBoolean("groncklesaddle", false);
+		entity.getPersistentData().putBoolean("groncklefeedcooldown", false);
 		HowToOwnADragonMod.queueServerWork(2, () -> {
 			if (entity instanceof TamableAnimal _toTame && ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {

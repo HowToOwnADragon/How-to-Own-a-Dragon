@@ -3,8 +3,6 @@ package net.mcreator.howtoownadragon.procedures;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
@@ -20,9 +18,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
-import net.mcreator.howtoownadragon.HowToOwnADragonMod;
-
-import java.util.Comparator;
 
 public class PinkIncubator1HatchButtonGronckleProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -63,13 +58,7 @@ public class PinkIncubator1HatchButtonGronckleProcedure {
 					});
 				}
 			}
-			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(BabyGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
-			});
+			PinkIncubator1CallNBTDataProcedureProcedure.execute(world, x, y, z);
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new BabyGronckleFemaleEntity(HowToOwnADragonModEntities.BABY_GRONCKLE_FEMALE.get(), _level);
@@ -107,13 +96,7 @@ public class PinkIncubator1HatchButtonGronckleProcedure {
 					});
 				}
 			}
-			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(BabyGronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
-			});
+			PinkIncubator1CallNBTDataProcedureProcedure.execute(world, x, y, z);
 		} else {
 			PinkIncubator1HatchButtonGronckleProcedure.execute(world, x, y, z);
 		}

@@ -103,7 +103,7 @@
       "name": "GronckleDiesNotGrown"
     },
     "onInitialSpawn": {
-      "name": "GronckleGrowingTickRate"
+      "name": "GronkleColorTickRate"
     },
     "hasAI": true,
     "aiBase": "(none)",
