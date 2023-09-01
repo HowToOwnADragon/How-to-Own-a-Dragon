@@ -7730,8 +7730,9 @@
       "registry_name": "main_page_info_gronckle",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MainPageInfoGronckleMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/MainPageInfoGronckleScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MainPageInfoGronckleMenu.java"
+          "src/main/java/net/mcreator/howtoownadragon/network/MainPageInfoGronckleButtonMessage.java"
         ]
       },
       "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle"
@@ -8151,6 +8152,57 @@
         ]
       },
       "path": "~/Items/Incubator/HatchButton/Gronckle"
+    },
+    {
+      "name": "FoodPageInfoGronckle",
+      "type": "gui",
+      "sortid": 816,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_page_info_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/FoodPageInfoGronckleScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FoodPageInfoGronckleMenu.java"
+        ]
+      },
+      "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle"
+    },
+    {
+      "name": "OnFoodButtonPressed",
+      "type": "procedure",
+      "sortid": 817,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_food_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OnFoodButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle/ButtonProcedures"
     }
   ],
   "variable_elements": [
@@ -8349,7 +8401,12 @@
                     "children": [
                       {
                         "name": "Gronckle",
-                        "children": []
+                        "children": [
+                          {
+                            "name": "ButtonProcedures",
+                            "children": []
+                          }
+                        ]
                       }
                     ]
                   }

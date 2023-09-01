@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 400,
-    "height": 230,
+    "width": 430,
+    "height": 240,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -17,19 +17,6 @@
           "use1Xscale": false,
           "x": 13,
           "y": 4
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_food_button_infolens_90x30",
-          "image": "food_button_infolens_90x30.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "OnFoodButtonPressed"
-          },
-          "x": 26,
-          "y": 17
         }
       }
     ],
