@@ -22,14 +22,14 @@
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_food_button_infolens_90x30",
-          "image": "food_button_infolens_90x30.png",
-          "hoveredImage": "",
+          "name": "imagebutton_food_button_infolens_90x30_impro",
+          "image": "food_button_infolens_90x30_improved.png",
+          "hoveredImage": "food_button_when_hovered_over.png",
           "onClick": {
             "name": "OnFoodButtonPressed"
           },
-          "x": 26,
-          "y": 17
+          "x": 29,
+          "y": 18
         }
       }
     ],

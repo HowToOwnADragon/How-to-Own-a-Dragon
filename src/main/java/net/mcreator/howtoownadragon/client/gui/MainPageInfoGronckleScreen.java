@@ -22,7 +22,7 @@ public class MainPageInfoGronckleScreen extends AbstractContainerScreen<MainPage
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_food_button_infolens_90x30;
+	ImageButton imagebutton_food_button_infolens_90x30_impro;
 
 	public MainPageInfoGronckleScreen(MainPageInfoGronckleMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -89,13 +89,14 @@ public class MainPageInfoGronckleScreen extends AbstractContainerScreen<MainPage
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_food_button_infolens_90x30 = new ImageButton(this.leftPos + 12, this.topPos + 12, 90, 30, 0, 0, 30, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_food_button_infolens_90x30.png"), 90, 60, e -> {
-			if (true) {
-				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new MainPageInfoGronckleButtonMessage(0, x, y, z));
-				MainPageInfoGronckleButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_food_button_infolens_90x30", imagebutton_food_button_infolens_90x30);
-		this.addRenderableWidget(imagebutton_food_button_infolens_90x30);
+		imagebutton_food_button_infolens_90x30_impro = new ImageButton(this.leftPos + 15, this.topPos + 13, 90, 30, 0, 0, 30, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_food_button_infolens_90x30_impro.png"), 90, 60,
+				e -> {
+					if (true) {
+						HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new MainPageInfoGronckleButtonMessage(0, x, y, z));
+						MainPageInfoGronckleButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				});
+		guistate.put("button:imagebutton_food_button_infolens_90x30_impro", imagebutton_food_button_infolens_90x30_impro);
+		this.addRenderableWidget(imagebutton_food_button_infolens_90x30_impro);
 	}
 }
