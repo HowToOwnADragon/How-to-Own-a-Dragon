@@ -11,6 +11,8 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleGronckleGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.NotGrownFemaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
@@ -31,4 +33,6 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<GronckleIronGUIFemaleMenu>> GRONCKLE_IRON_GUI_FEMALE = REGISTRY.register("gronckle_iron_gui_female", () -> IForgeMenuType.create(GronckleIronGUIFemaleMenu::new));
 	public static final RegistryObject<MenuType<MainPageInfoGronckleMenu>> MAIN_PAGE_INFO_GRONCKLE = REGISTRY.register("main_page_info_gronckle", () -> IForgeMenuType.create(MainPageInfoGronckleMenu::new));
 	public static final RegistryObject<MenuType<FoodPageInfoGronckleMenu>> FOOD_PAGE_INFO_GRONCKLE = REGISTRY.register("food_page_info_gronckle", () -> IForgeMenuType.create(FoodPageInfoGronckleMenu::new));
+	public static final RegistryObject<MenuType<NotGrownMaleGronckleGUIMenu>> NOT_GROWN_MALE_GRONCKLE_GUI = REGISTRY.register("not_grown_male_gronckle_gui", () -> IForgeMenuType.create(NotGrownMaleGronckleGUIMenu::new));
+	public static final RegistryObject<MenuType<NotGrownFemaleGronckleGUIMenu>> NOT_GROWN_FEMALE_GRONCKLE_GUI = REGISTRY.register("not_grown_female_gronckle_gui", () -> IForgeMenuType.create(NotGrownFemaleGronckleGUIMenu::new));
 }

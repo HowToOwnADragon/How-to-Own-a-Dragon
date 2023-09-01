@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.howtoownadragon.client.gui.NotGrownMaleGronckleGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.NotGrownFemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MainPageInfoGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
@@ -33,6 +35,8 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.GRONCKLE_IRON_GUI_FEMALE.get(), GronckleIronGUIFemaleScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MAIN_PAGE_INFO_GRONCKLE.get(), MainPageInfoGronckleScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.FOOD_PAGE_INFO_GRONCKLE.get(), FoodPageInfoGronckleScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_MALE_GRONCKLE_GUI.get(), NotGrownMaleGronckleGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_GRONCKLE_GUI.get(), NotGrownFemaleGronckleGUIScreen::new);
 		});
 	}
 }

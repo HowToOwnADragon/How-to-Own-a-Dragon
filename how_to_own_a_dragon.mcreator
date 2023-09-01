@@ -7708,20 +7708,6 @@
       "path": "~/Dragons/Gronckle/GronckleAttack"
     },
     {
-      "name": "DragonFullGrown",
-      "type": "tag",
-      "sortid": 801,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dragon_full_grown",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon_full_grown.json"
-        ]
-      },
-      "path": "~/Dragons"
-    },
-    {
       "name": "MainPageInfoGronckle",
       "type": "gui",
       "sortid": 801,
@@ -8203,6 +8189,36 @@
         ]
       },
       "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle/ButtonProcedures"
+    },
+    {
+      "name": "NotGrownMaleGronckleGUI",
+      "type": "gui",
+      "sortid": 818,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_male_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownMaleGronckleGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownMaleGronckleGUIMenu.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs"
+    },
+    {
+      "name": "NotGrownFemaleGronckleGUI",
+      "type": "gui",
+      "sortid": 819,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_female_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownFemaleGronckleGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleGUIScreen.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GronckleGUIs"
     }
   ],
   "variable_elements": [
@@ -8250,6 +8266,7 @@
       "item_group.how_to_own_a_dragon.lenses": "Lenses",
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
       "item_group.how_to_own_a_dragon.items": "Items",
+      "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
@@ -8308,6 +8325,7 @@
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_incubator": "Incubator",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
+      "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_inventory": "Inventory",
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
@@ -8318,11 +8336,13 @@
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "effect.how_to_own_a_dragon.gronckle_iron_cooldown": "GronckleIronCooldown",
+      "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.gronckle_saddle": "Gronckle Saddle",
       "block.how_to_own_a_dragon.reaper_bear_trap": "Reaper Bear Trap",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
       "item.how_to_own_a_dragon.gronckle_iron_hoe": "Gronckle Iron Hoe",
+      "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.gronckle_male": "Male Gronckle",
       "block.how_to_own_a_dragon.plains_grass_block": "Plains Grass Block",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle": "Male Gronckle",
