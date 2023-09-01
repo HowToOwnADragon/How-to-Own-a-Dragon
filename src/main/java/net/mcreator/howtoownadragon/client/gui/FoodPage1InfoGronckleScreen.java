@@ -6,21 +6,25 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 
-import net.mcreator.howtoownadragon.world.inventory.FoodPageInfoGronckleMenu;
+import net.mcreator.howtoownadragon.world.inventory.FoodPage1InfoGronckleMenu;
+import net.mcreator.howtoownadragon.network.FoodPage1InfoGronckleButtonMessage;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class FoodPageInfoGronckleScreen extends AbstractContainerScreen<FoodPageInfoGronckleMenu> {
-	private final static HashMap<String, Object> guistate = FoodPageInfoGronckleMenu.guistate;
+public class FoodPage1InfoGronckleScreen extends AbstractContainerScreen<FoodPage1InfoGronckleMenu> {
+	private final static HashMap<String, Object> guistate = FoodPage1InfoGronckleMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	ImageButton imagebutton_previous_page_arrow;
 
-	public FoodPageInfoGronckleScreen(FoodPageInfoGronckleMenu container, Inventory inventory, Component text) {
+	public FoodPage1InfoGronckleScreen(FoodPage1InfoGronckleMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -36,7 +40,7 @@ public class FoodPageInfoGronckleScreen extends AbstractContainerScreen<FoodPage
 		return true;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/food_page_info_gronckle.png");
+	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/food_page_1_info_gronckle.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -85,5 +89,13 @@ public class FoodPageInfoGronckleScreen extends AbstractContainerScreen<FoodPage
 	@Override
 	public void init() {
 		super.init();
+		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 7, this.topPos + 212, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new FoodPage1InfoGronckleButtonMessage(0, x, y, z));
+				FoodPage1InfoGronckleButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);
+		this.addRenderableWidget(imagebutton_previous_page_arrow);
 	}
 }

@@ -18,6 +18,19 @@
           "x": 13,
           "y": 4
         }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "OnGronckleFoodInfoPreviousPageButtonPressed"
+          },
+          "x": 6,
+          "y": 212
+        }
       }
     ],
     "gridSettings": {

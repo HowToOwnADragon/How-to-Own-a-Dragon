@@ -19,7 +19,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class FoodPageInfoGronckleMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class FoodPage1InfoGronckleMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -28,8 +28,8 @@ public class FoodPageInfoGronckleMenu extends AbstractContainerMenu implements S
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
 
-	public FoodPageInfoGronckleMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(HowToOwnADragonModMenus.FOOD_PAGE_INFO_GRONCKLE.get(), id);
+	public FoodPage1InfoGronckleMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(HowToOwnADragonModMenus.FOOD_PAGE_1_INFO_GRONCKLE.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

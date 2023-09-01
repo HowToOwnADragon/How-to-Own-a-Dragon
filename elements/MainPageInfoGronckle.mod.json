@@ -24,7 +24,7 @@
         "data": {
           "name": "imagebutton_food_button_infolens_90x30_impro",
           "image": "food_button_infolens_90x30_improved.png",
-          "hoveredImage": "food_button_when_hovered_over.png",
+          "hoveredImage": "food_button_when_hovered_over_improved.png",
           "onClick": {
             "name": "OnFoodButtonPressed"
           },
