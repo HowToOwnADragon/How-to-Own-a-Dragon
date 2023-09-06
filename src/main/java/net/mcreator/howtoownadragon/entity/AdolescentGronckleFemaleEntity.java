@@ -141,7 +141,9 @@ public class AdolescentGronckleFemaleEntity extends TamableAnimal implements Geo
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = AdolescentGronckleFemaleEntity.this.getRandom();
@@ -151,7 +153,6 @@ public class AdolescentGronckleFemaleEntity extends TamableAnimal implements Geo
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
 	}
 
 	@Override
