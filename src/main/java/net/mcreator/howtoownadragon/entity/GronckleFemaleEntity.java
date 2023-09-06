@@ -55,7 +55,6 @@ import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
@@ -66,6 +65,7 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -254,6 +254,27 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
+		this.goalSelector.addGoal(10, new RandomStrollGoal(this, 0.8, 20) {
+			@Override
+			protected Vec3 getPosition() {
+				RandomSource random = GronckleFemaleEntity.this.getRandom();
+				double dir_x = GronckleFemaleEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_y = GronckleFemaleEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_z = GronckleFemaleEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
+				return new Vec3(dir_x, dir_y, dir_z);
+			}
+
+			@Override
+			public boolean canUse() {
+				double x = GronckleFemaleEntity.this.getX();
+				double y = GronckleFemaleEntity.this.getY();
+				double z = GronckleFemaleEntity.this.getZ();
+				Entity entity = GronckleFemaleEntity.this;
+				Level world = GronckleFemaleEntity.this.level;
+				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
+			}
+
+		});
 	}
 
 	@Override
@@ -373,6 +394,7 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 			}
 			return InteractionResult.sidedSuccess(this.level.isClientSide());
 		}
+
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
 			retval = super.mobInteract(sourceentity, hand);
@@ -409,7 +431,6 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 					this.setPersistenceRequired();
 			}
 		}
-		sourceentity.startRiding(this);
 		return retval;
 	}
 
@@ -435,37 +456,6 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public boolean isFood(ItemStack stack) {
 		return List.of().contains(stack.getItem());
-	}
-
-	@Override
-	public void travel(Vec3 dir) {
-		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
-		if (this.isVehicle()) {
-			this.setYRot(entity.getYRot());
-			this.yRotO = this.getYRot();
-			this.setXRot(entity.getXRot() * 0.5F);
-			this.setRot(this.getYRot(), this.getXRot());
-			this.yBodyRot = entity.getYRot();
-			this.yHeadRot = entity.getYRot();
-			this.maxUpStep = 1.0F;
-			if (entity instanceof LivingEntity passenger) {
-				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
-				float forward = passenger.zza;
-				float strafe = passenger.xxa;
-				super.travel(new Vec3(strafe, 0, forward));
-			}
-			double d1 = this.getX() - this.xo;
-			double d0 = this.getZ() - this.zo;
-			float f1 = (float) Math.sqrt(d1 * d1 + d0 * d0) * 4;
-			if (f1 > 1.0F)
-				f1 = 1.0F;
-			this.walkAnimation.setSpeed(this.walkAnimation.speed() + (f1 - this.walkAnimation.speed()) * 0.4F);
-			this.walkAnimation.position(this.walkAnimation.position() + this.walkAnimation.speed());
-			this.calculateEntityAnimation(true);
-			return;
-		}
-		this.maxUpStep = 0.5F;
-		super.travel(dir);
 	}
 
 	@Override
@@ -502,7 +492,7 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && !this.isVehicle()) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround() && !this.isVehicle()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.walk"));
 			}
 			if (this.isDeadOrDying()) {
@@ -513,6 +503,9 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 			}
 			if (this.isSprinting()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sprint"));
+			}
+			if (!this.isOnGround()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.flight"));
 			}
 			if (this.isVehicle() && event.isMoving()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sprint"));

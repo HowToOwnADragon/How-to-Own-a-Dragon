@@ -1,0 +1,24 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:GronckleFemale"
+      },
+      {
+        "value": "CUSTOM:GronckleMale"
+      },
+      {
+        "value": "CUSTOM:NightFury"
+      }
+    ],
+    "biomes": [],
+    "name": "rideble_dragon",
+    "namespace": "forge"
+  }
+}
