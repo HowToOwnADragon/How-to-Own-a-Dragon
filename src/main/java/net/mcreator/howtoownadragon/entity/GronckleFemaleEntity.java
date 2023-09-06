@@ -85,9 +85,9 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
+import net.mcreator.howtoownadragon.procedures.GronckleFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleFemaleOnInitialEntitySpawnProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
-import net.mcreator.howtoownadragon.procedures.FlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
@@ -416,7 +416,7 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		FlyingTickUpdateProcedure.execute(this);
+		GronckleFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 
@@ -502,7 +502,7 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround() && !this.isVehicle()) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && !this.isVehicle()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.walk"));
 			}
 			if (this.isDeadOrDying()) {
@@ -513,9 +513,6 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 			}
 			if (this.isSprinting()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sprint"));
-			}
-			if (!this.isOnGround()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.flight"));
 			}
 			if (this.isVehicle() && event.isMoving()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.gronckle.sprint"));

@@ -24,7 +24,6 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -35,17 +34,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.animal.Sheep;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
@@ -80,17 +69,11 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
-import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleMaleOnInitialEntitySpawnProcedure;
+import net.mcreator.howtoownadragon.procedures.GronckleFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleDiesProcedure;
-import net.mcreator.howtoownadragon.procedures.FlyingTickUpdateProcedure;
-import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -118,7 +101,6 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
@@ -148,112 +130,9 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	protected PathNavigation createNavigation(Level world) {
-		return new FlyingPathNavigation(this, world);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 6) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, (float) 6) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && LookAtNightDontFollowMeProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(8, new FloatGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && DontAllFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
-		this.goalSelector.addGoal(9, new WaterAvoidingRandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = GronckleMaleEntity.this.getX();
-				double y = GronckleMaleEntity.this.getY();
-				double z = GronckleMaleEntity.this.getZ();
-				Entity entity = GronckleMaleEntity.this;
-				Level world = GronckleMaleEntity.this.level;
-				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
-			}
-		});
+		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
 	}
 
 	@Override
@@ -274,11 +153,6 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-	}
-
-	@Override
-	public boolean causeFallDamage(float l, float d, DamageSource source) {
-		return false;
 	}
 
 	@Override
@@ -416,7 +290,7 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		FlyingTickUpdateProcedure.execute(this);
+		GronckleFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 
@@ -469,19 +343,9 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
-	}
-
-	@Override
-	public void setNoGravity(boolean ignored) {
-		super.setNoGravity(true);
-	}
-
-	@Override
 	public void aiStep() {
 		super.aiStep();
 		this.updateSwingTime();
-		this.setNoGravity(true);
 	}
 
 	public static void init() {
@@ -496,7 +360,6 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 

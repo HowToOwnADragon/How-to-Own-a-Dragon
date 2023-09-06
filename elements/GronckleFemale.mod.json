@@ -103,7 +103,7 @@
       "name": "GronckleDies"
     },
     "onMobTickUpdate": {
-      "name": "FlyingTickUpdate"
+      "name": "GronckleFlyingTickUpdate"
     },
     "onInitialSpawn": {
       "name": "GronckleFemaleOnInitialEntitySpawn"
@@ -120,7 +120,7 @@
     "animation5": "",
     "animation6": "animation.gronckle.sneak",
     "animation7": "animation.gronckle.sprint",
-    "animation8": "animation.gronckle.flight",
+    "animation8": "",
     "animation9": "animation.gronckle.sprint",
     "animation10": "",
     "enable2": true,
@@ -129,7 +129,7 @@
     "enable5": false,
     "enable6": true,
     "enable7": true,
-    "enable8": true,
+    "enable8": false,
     "enable9": true,
     "enable10": false,
     "breedable": true,

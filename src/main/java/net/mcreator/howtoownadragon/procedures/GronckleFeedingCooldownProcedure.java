@@ -32,10 +32,12 @@ public class GronckleFeedingCooldownProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("how_to_own_a_dragon:gronckle_feed_items")))
-				&& entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
-			entity.getPersistentData().putBoolean("groncklefeedcooldown", true);
-			GronckleFeedingCooldown2Procedure.execute(world, entity);
+		if (entity.getPersistentData().getBoolean("groncklefeedcooldown") == false) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("how_to_own_a_dragon:gronckle_feed_items")))
+					&& entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
+				entity.getPersistentData().putBoolean("groncklefeedcooldown", true);
+				GronckleFeedingCooldown2Procedure.execute(world, entity);
+			}
 		}
 	}
 }

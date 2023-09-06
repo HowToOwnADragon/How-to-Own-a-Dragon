@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.PathfinderMob;
@@ -26,6 +25,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.howtoownadragon.procedures.GronckleEntityIsHurtProcedure;
+import net.mcreator.howtoownadragon.procedures.EggGravityProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 public class GronckleEggEntityEntity extends PathfinderMob {
@@ -37,19 +37,13 @@ public class GronckleEggEntityEntity extends PathfinderMob {
 		super(type, world);
 		maxUpStep = 0.6f;
 		xpReward = 0;
-		setNoAi(false);
+		setNoAi(true);
 		setPersistenceRequired();
 	}
 
 	@Override
 	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
-	protected void registerGoals() {
-		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomLookAroundGoal(this));
 	}
 
 	@Override
@@ -105,6 +99,12 @@ public class GronckleEggEntityEntity extends PathfinderMob {
 
 		GronckleEntityIsHurtProcedure.execute(world, entity, sourceentity);
 		return retval;
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		EggGravityProcedure.execute(this);
 	}
 
 	@Override
