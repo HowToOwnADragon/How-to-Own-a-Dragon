@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
-    "group": "",
+    "group": "gronckle_iron_sword",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

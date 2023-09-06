@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 6,
-    "group": "",
+    "group": "deep_iron_slab",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

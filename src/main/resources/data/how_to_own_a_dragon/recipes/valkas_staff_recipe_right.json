@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "gronckle_iron_shovel",
+  "group": "valkas_staff",
   "category": "equipment",
   "pattern": [
     "0",
@@ -9,17 +9,17 @@
   ],
   "key": {
     "0": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
+      "item": "minecraft:bone"
     },
     "1": {
-      "item": "minecraft:stick"
+      "tag": "how_to_own_a_dragon:dragon_scale"
     },
     "2": {
-      "item": "minecraft:stick"
+      "item": "minecraft:bone"
     }
   },
   "result": {
-    "item": "how_to_own_a_dragon:gronckle_iron_shovel",
+    "item": "how_to_own_a_dragon:valkas_staff",
     "count": 1
   }
 }

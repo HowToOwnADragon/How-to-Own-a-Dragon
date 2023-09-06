@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 16,
-    "group": "",
+    "group": "dragon_proof_metal_bars",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

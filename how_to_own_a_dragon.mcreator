@@ -8336,6 +8336,62 @@
         ]
       },
       "path": "~/Dragons/Gronckle/Tag"
+    },
+    {
+      "name": "DragonScale",
+      "type": "tag",
+      "sortid": 827,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_scale",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/items/dragon_scale.json"
+        ]
+      },
+      "path": "~/Items/Scales"
+    },
+    {
+      "name": "ValkasStaffRecipeLeft",
+      "type": "recipe",
+      "sortid": 829,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/ValkasStaff"
+    },
+    {
+      "name": "ValkasStaffRecipeMiddle",
+      "type": "recipe",
+      "sortid": 830,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_recipe_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_middle.json"
+        ]
+      },
+      "path": "~/Recipe/ValkasStaff"
+    },
+    {
+      "name": "ValkasStaffRecipeRight",
+      "type": "recipe",
+      "sortid": 831,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/ValkasStaff"
     }
   ],
   "variable_elements": [
@@ -8390,8 +8446,8 @@
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
-      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
+      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
@@ -8808,6 +8864,10 @@
           },
           {
             "name": "DragonProof",
+            "children": []
+          },
+          {
+            "name": "ValkasStaff",
             "children": []
           }
         ]
