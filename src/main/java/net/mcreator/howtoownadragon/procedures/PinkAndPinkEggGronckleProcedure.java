@@ -24,6 +24,6 @@ public class PinkAndPinkEggGronckleProcedure {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "pink");
-		GiveBreedingCooldownProcedure.execute(world, x, y, z);
+		GiveBreedingCooldownGronckleProcedure.execute(world, x, y, z);
 	}
 }

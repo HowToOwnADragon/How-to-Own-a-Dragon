@@ -1106,7 +1106,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon.json"
         ]
       },
-      "path": "~/Dragons"
+      "path": "~/Dragons/Tag"
     },
     {
       "name": "TheReaper",
@@ -3166,7 +3166,7 @@
           "src/main/resources/data/forge/tags/entity_types/grown_dragon.json"
         ]
       },
-      "path": "~/Dragons"
+      "path": "~/Dragons/Tag"
     },
     {
       "name": "GronckleGrowingUpMessage",
@@ -3227,7 +3227,7 @@
       "type": "procedure",
       "sortid": 647,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gronckle_male_on_initial_entity_spawn",
       "metadata": {
         "files": [
@@ -7471,38 +7471,6 @@
       "path": "~/Dragons/Gronckle/Growing"
     },
     {
-      "name": "GiveBreedingCooldown",
-      "type": "procedure",
-      "sortid": 792,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "give_breeding_cooldown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveBreedingCooldownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
-    },
-    {
       "name": "GronkleIronGUIMale",
       "type": "gui",
       "sortid": 794,
@@ -7690,7 +7658,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/AttackCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Attack"
+      "path": "~/Dragons/Cooldown"
     },
     {
       "name": "MainPageInfoGronckle",
@@ -7880,7 +7848,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/BreedingCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Dragons/Cooldown"
     },
     {
       "name": "GronckleIronCooldown",
@@ -8428,7 +8396,7 @@
           "src/main/resources/data/forge/tags/entity_types/rideble_dragon.json"
         ]
       },
-      "path": "~/Dragons"
+      "path": "~/Dragons/Tag"
     },
     {
       "name": "JuvenileMeatlugMaleGronckleSpawnDragonCommand",
@@ -9197,6 +9165,72 @@
         ]
       },
       "path": "~/Commands/DragonSpawn/Gronckle/Female/Grown"
+    },
+    {
+      "name": "UseAbility",
+      "type": "keybind",
+      "sortid": 858,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/UseAbilityMessage.java"
+        ]
+      },
+      "path": "~/Dragons/Ability"
+    },
+    {
+      "name": "GiveBreedingCooldownGronckle",
+      "type": "procedure",
+      "sortid": 859,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_breeding_cooldown_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveBreedingCooldownGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+    },
+    {
+      "name": "UseAbilityOnKeyPressed",
+      "type": "procedure",
+      "sortid": 860,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_ability_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/UseAbilityOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Ability"
     }
   ],
   "variable_elements": [
@@ -9280,6 +9314,7 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
       "item.how_to_own_a_dragon.baby_gronckle_male_spawn_egg": "Baby Male Gronckle Spawn Egg",
+      "key.how_to_own_a_dragon.use_ability": "Activate Ability(It\u0027s ALT+)",
       "item.how_to_own_a_dragon.gronckle_attack": "Gronckle Attack",
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "advancements.hidden_world_root.title": "Hidden World",
@@ -9588,6 +9623,18 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Ability",
+            "children": []
+          },
+          {
+            "name": "Tag",
+            "children": []
+          },
+          {
+            "name": "Cooldown",
+            "children": []
           }
         ]
       },

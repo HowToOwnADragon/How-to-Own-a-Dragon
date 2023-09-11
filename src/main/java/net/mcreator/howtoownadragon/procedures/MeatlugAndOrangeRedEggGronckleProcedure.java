@@ -29,7 +29,7 @@ public class MeatlugAndOrangeRedEggGronckleProcedure {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "mealtug");
-			GiveBreedingCooldownProcedure.execute(world, x, y, z);
+			GiveBreedingCooldownGronckleProcedure.execute(world, x, y, z);
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -39,7 +39,7 @@ public class MeatlugAndOrangeRedEggGronckleProcedure {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", "orangered");
-			GiveBreedingCooldownProcedure.execute(world, x, y, z);
+			GiveBreedingCooldownGronckleProcedure.execute(world, x, y, z);
 		} else {
 			MeatlugAndOrangeRedEggGronckleProcedure.execute(world, x, y, z, entity);
 		}
