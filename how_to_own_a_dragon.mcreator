@@ -1106,7 +1106,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon.json"
         ]
       },
-      "path": "~/Dragons/Tag"
+      "path": "~/Dragons/NoDragonButRelated/Tag"
     },
     {
       "name": "TheReaper",
@@ -1424,7 +1424,7 @@
           }
         ]
       },
-      "path": "~/Dragons"
+      "path": "~/Dragons/NoDragonButRelated"
     },
     {
       "name": "DeepIronRodRecipeMiddle",
@@ -3153,20 +3153,6 @@
         ]
       },
       "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
-    },
-    {
-      "name": "GrownDragon",
-      "type": "tag",
-      "sortid": 601,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grown_dragon",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/entity_types/grown_dragon.json"
-        ]
-      },
-      "path": "~/Dragons/Tag"
     },
     {
       "name": "GronckleGrowingUpMessage",
@@ -7658,7 +7644,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/AttackCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Cooldown"
+      "path": "~/Dragons/NoDragonButRelated/Cooldown"
     },
     {
       "name": "MainPageInfoGronckle",
@@ -7848,7 +7834,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/BreedingCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Cooldown"
+      "path": "~/Dragons/NoDragonButRelated/Cooldown"
     },
     {
       "name": "GronckleIronCooldown",
@@ -8248,7 +8234,7 @@
           }
         ]
       },
-      "path": "~/Dragons"
+      "path": "~/Dragons/NoDragonButRelated"
     },
     {
       "name": "EggGravity",
@@ -8383,20 +8369,6 @@
         ]
       },
       "path": "~/Procedure"
-    },
-    {
-      "name": "RidebleDragon",
-      "type": "tag",
-      "sortid": 833,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rideble_dragon",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/entity_types/rideble_dragon.json"
-        ]
-      },
-      "path": "~/Dragons/Tag"
     },
     {
       "name": "JuvenileMeatlugMaleGronckleSpawnDragonCommand",
@@ -9178,7 +9150,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/UseAbilityMessage.java"
         ]
       },
-      "path": "~/Dragons/Ability"
+      "path": "~/Dragons/NoDragonButRelated/Ability"
     },
     {
       "name": "GiveBreedingCooldownGronckle",
@@ -9230,7 +9202,478 @@
           }
         ]
       },
-      "path": "~/Dragons/Ability"
+      "path": "~/Dragons/NoDragonButRelated/Ability"
+    },
+    {
+      "name": "WildDayAI",
+      "type": "procedure",
+      "sortid": 861,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_day_ai",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WildDayAIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "WildNightAI",
+      "type": "procedure",
+      "sortid": 862,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_night_ai",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WildNightAIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "TTMale",
+      "type": "animatedentity",
+      "sortid": 863,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTMaleModel.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_male_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "TestGronckle",
+      "type": "animatedentity",
+      "sortid": 864,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestGronckleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_gronckle_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Entity"
+    },
+    {
+      "name": "GrownDragon",
+      "type": "tag",
+      "sortid": 865,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_dragon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/grown_dragon.json"
+        ]
+      },
+      "path": "~/Dragons/NoDragonButRelated/Tag"
+    },
+    {
+      "name": "RidebleDragon",
+      "type": "tag",
+      "sortid": 866,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rideble_dragon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/entity_types/rideble_dragon.json"
+        ]
+      },
+      "path": "~/Dragons/NoDragonButRelated/Tag"
+    },
+    {
+      "name": "TTFemale",
+      "type": "animatedentity",
+      "sortid": 867,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_female",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTFemaleRenderer.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_female_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "FeedNonGrownTT",
+      "type": "procedure",
+      "sortid": 869,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_non_grown_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Feeding"
+    },
+    {
+      "name": "BreadTameTT",
+      "type": "procedure",
+      "sortid": 870,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bread_tame_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BreadTameTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "SpawnEggTT",
+      "type": "item",
+      "sortid": 868,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/SpawnEggTTItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "SpawnEggPlacedDownTT",
+      "type": "procedure",
+      "sortid": 871,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_egg_placed_down_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnEggPlacedDownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "SpawnProcedureTT",
+      "type": "procedure",
+      "sortid": 872,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "SpawnEggRichtClickEntityTT",
+      "type": "procedure",
+      "sortid": 873,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_egg_richt_click_entity_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnEggRichtClickEntityTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "SpawnBabyProcedureTT",
+      "type": "procedure",
+      "sortid": 874,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_baby_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnBabyProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "TT",
+      "type": "tag",
+      "sortid": 875,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "TTFullGrown",
+      "type": "tag",
+      "sortid": 876,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_full_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_full_grown.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "TTNotGrown",
+      "type": "tag",
+      "sortid": 877,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_not_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_not_grown.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "FemaleOnInitialEntitySpawnTT",
+      "type": "procedure",
+      "sortid": 879,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_on_initial_entity_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FemaleOnInitialEntitySpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "MaleOnInitialEntitySpawnTT",
+      "type": "procedure",
+      "sortid": 880,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_on_initial_entity_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MaleOnInitialEntitySpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "WildAI",
+      "type": "procedure",
+      "sortid": 881,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_ai",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WildAIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
     }
   ],
   "variable_elements": [
@@ -9285,8 +9728,9 @@
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.label_gronckle_iron": "Gronckle iron",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
-      "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
+      "entity.how_to_own_a_dragon.tt_female": "Female Terrible Terror",
       "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
+      "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
@@ -9306,9 +9750,11 @@
       "item.how_to_own_a_dragon.gronckle_male_spawn_egg": "Male Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
+      "entity.how_to_own_a_dragon.test_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.button_smelt": "Smelt",
+      "item.how_to_own_a_dragon.tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
@@ -9328,6 +9774,7 @@
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "item.how_to_own_a_dragon.adolescent_gronckle_female_spawn_egg": "Adolescent Female Gronckle Spawn Egg",
+      "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
       "key.how_to_own_a_dragon.all_follow_me": "All Follow Me",
       "advancements.picking_up_dragon_eye.title": "Information?!",
       "biome.how_to_own_a_dragon.fire_realm": "Fire Realm",
@@ -9348,6 +9795,7 @@
       "advancements.welcome_to_the_world.descr": "Welcome to the world of dragons!",
       "block.how_to_own_a_dragon.slowing_block": "Slowing Block",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
+      "item.how_to_own_a_dragon.tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "effect.how_to_own_a_dragon.gronckle_iron_cooldown": "GronckleIronCooldown",
       "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
@@ -9359,8 +9807,10 @@
       "entity.how_to_own_a_dragon.gronckle_male": "Male Gronckle",
       "block.how_to_own_a_dragon.plains_grass_block": "Plains Grass Block",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle": "Male Gronckle",
+      "item.how_to_own_a_dragon.test_gronckle_spawn_egg": "Male Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
       "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
+      "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
     }
@@ -9625,16 +10075,58 @@
             ]
           },
           {
-            "name": "Ability",
-            "children": []
+            "name": "NoDragonButRelated",
+            "children": [
+              {
+                "name": "Cooldown",
+                "children": []
+              },
+              {
+                "name": "Ability",
+                "children": []
+              },
+              {
+                "name": "Tag",
+                "children": []
+              }
+            ]
           },
           {
-            "name": "Tag",
-            "children": []
-          },
-          {
-            "name": "Cooldown",
-            "children": []
+            "name": "Terrible Terror",
+            "children": [
+              {
+                "name": "Entity",
+                "children": []
+              },
+              {
+                "name": "GUI",
+                "children": []
+              },
+              {
+                "name": "Breeding",
+                "children": []
+              },
+              {
+                "name": "Taming",
+                "children": []
+              },
+              {
+                "name": "Growing",
+                "children": []
+              },
+              {
+                "name": "SpawnEgg",
+                "children": []
+              },
+              {
+                "name": "Tag",
+                "children": []
+              },
+              {
+                "name": "Feeding",
+                "children": []
+              }
+            ]
           }
         ]
       },

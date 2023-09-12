@@ -14,6 +14,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.howtoownadragon.item.ValkasStaffItem;
+import net.mcreator.howtoownadragon.item.SpawnEggTTItem;
 import net.mcreator.howtoownadragon.item.SaddleRackItem;
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
@@ -79,6 +80,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> GRONCKLE_EGG_ITEM = REGISTRY.register("gronckle_egg_item", () -> new GronckleEggItemItem());
 	public static final RegistryObject<Item> GRONCKLE_SPAWN_EGG = REGISTRY.register("gronckle_spawn_egg", () -> new GronckleSpawnEggItem());
 	public static final RegistryObject<Item> VALKAS_STAFF = REGISTRY.register("valkas_staff", () -> new ValkasStaffItem());
+	public static final RegistryObject<Item> SPAWN_EGG_TT = REGISTRY.register("spawn_egg_tt", () -> new SpawnEggTTItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

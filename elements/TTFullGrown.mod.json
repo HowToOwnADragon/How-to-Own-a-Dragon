@@ -8,20 +8,14 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:GronckleFemale"
-      },
-      {
-        "value": "CUSTOM:GronckleMale"
-      },
-      {
-        "value": "CUSTOM:NightFury"
+        "value": "CUSTOM:TTFemale"
       },
       {
         "value": "CUSTOM:TTMale"
       }
     ],
     "biomes": [],
-    "name": "grown_dragon",
+    "name": "tt_full_grown",
     "namespace": "mod"
   }
 }

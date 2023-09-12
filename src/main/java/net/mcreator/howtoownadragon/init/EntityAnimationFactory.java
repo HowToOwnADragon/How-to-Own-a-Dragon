@@ -4,6 +4,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
+import net.mcreator.howtoownadragon.entity.TTMaleEntity;
+import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
@@ -76,6 +79,27 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof BabyGronckleFemaleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TTMaleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TestGronckleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TTFemaleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

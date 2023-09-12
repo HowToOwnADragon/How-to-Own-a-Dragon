@@ -16,6 +16,9 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
+import net.mcreator.howtoownadragon.entity.TTMaleEntity;
+import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
@@ -57,6 +60,16 @@ public class HowToOwnADragonModEntities {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyGronckleFemaleEntity::new).fireImmune().sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GronckleEggEntityEntity>> GRONCKLE_EGG_ENTITY = register("gronckle_egg_entity", EntityType.Builder.<GronckleEggEntityEntity>of(GronckleEggEntityEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleEggEntityEntity::new).fireImmune().sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<TTMaleEntity>> TT_MALE = register("tt_male",
+			EntityType.Builder.<TTMaleEntity>of(TTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTMaleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TestGronckleEntity>> TEST_GRONCKLE = register("test_gronckle", EntityType.Builder.<TestGronckleEntity>of(TestGronckleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TestGronckleEntity::new).fireImmune().sized(2f, 2f));
+	public static final RegistryObject<EntityType<TTFemaleEntity>> TT_FEMALE = register("tt_female",
+			EntityType.Builder.<TTFemaleEntity>of(TTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTFemaleEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -75,6 +88,9 @@ public class HowToOwnADragonModEntities {
 			BabyGronckleMaleEntity.init();
 			BabyGronckleFemaleEntity.init();
 			GronckleEggEntityEntity.init();
+			TTMaleEntity.init();
+			TestGronckleEntity.init();
+			TTFemaleEntity.init();
 		});
 	}
 
@@ -90,5 +106,8 @@ public class HowToOwnADragonModEntities {
 		event.put(BABY_GRONCKLE_MALE.get(), BabyGronckleMaleEntity.createAttributes().build());
 		event.put(BABY_GRONCKLE_FEMALE.get(), BabyGronckleFemaleEntity.createAttributes().build());
 		event.put(GRONCKLE_EGG_ENTITY.get(), GronckleEggEntityEntity.createAttributes().build());
+		event.put(TT_MALE.get(), TTMaleEntity.createAttributes().build());
+		event.put(TEST_GRONCKLE.get(), TestGronckleEntity.createAttributes().build());
+		event.put(TT_FEMALE.get(), TTFemaleEntity.createAttributes().build());
 	}
 }
