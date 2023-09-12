@@ -13,13 +13,24 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
+import net.minecraftforge.items.wrapper.EntityArmorInvWrapper;
+import net.minecraftforge.items.wrapper.CombinedInvWrapper;
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
@@ -40,17 +51,26 @@ import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.Direction;
 
+import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
 import net.mcreator.howtoownadragon.procedures.WildNightAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildDayAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildAIProcedure;
@@ -61,6 +81,9 @@ import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
+import javax.annotation.Nonnull;
+
+import io.netty.buffer.Unpooled;
 
 public class TTMaleEntity extends Monster implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(TTMaleEntity.class, EntityDataSerializers.BOOLEAN);
@@ -244,6 +267,75 @@ public class TTMaleEntity extends Monster implements GeoEntity {
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
 		MaleOnInitialEntitySpawnTTProcedure.execute(this);
+		return retval;
+	}
+
+	private final ItemStackHandler inventory = new ItemStackHandler(1) {
+		@Override
+		public int getSlotLimit(int slot) {
+			return 1;
+		}
+	};
+	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));
+
+	@Override
+	public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> capability, @Nullable Direction side) {
+		if (this.isAlive() && capability == ForgeCapabilities.ITEM_HANDLER && side == null)
+			return LazyOptional.of(() -> combined).cast();
+		return super.getCapability(capability, side);
+	}
+
+	@Override
+	protected void dropEquipment() {
+		super.dropEquipment();
+		for (int i = 0; i < inventory.getSlots(); ++i) {
+			ItemStack itemstack = inventory.getStackInSlot(i);
+			if (!itemstack.isEmpty() && !EnchantmentHelper.hasVanishingCurse(itemstack)) {
+				this.spawnAtLocation(itemstack);
+			}
+		}
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.put("InventoryCustom", inventory.serializeNBT());
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		Tag inventoryCustom = compound.get("InventoryCustom");
+		if (inventoryCustom instanceof CompoundTag inventoryTag)
+			inventory.deserializeNBT(inventoryTag);
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+		if (sourceentity instanceof ServerPlayer serverPlayer) {
+			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("Male Terrible Terror");
+				}
+
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+					packetBuffer.writeBlockPos(sourceentity.blockPosition());
+					packetBuffer.writeByte(0);
+					packetBuffer.writeVarInt(TTMaleEntity.this.getId());
+					return new MaleTTGUIMenu(id, inventory, packetBuffer);
+				}
+			}, buf -> {
+				buf.writeBlockPos(sourceentity.blockPosition());
+				buf.writeByte(0);
+				buf.writeVarInt(this.getId());
+			});
+		}
+		super.mobInteract(sourceentity, hand);
 		return retval;
 	}
 

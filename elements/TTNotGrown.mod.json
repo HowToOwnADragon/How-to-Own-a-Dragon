@@ -6,7 +6,26 @@
     "items": [],
     "blocks": [],
     "functions": [],
-    "entities": [],
+    "entities": [
+      {
+        "value": "CUSTOM:AdolescentTTFemale"
+      },
+      {
+        "value": "CUSTOM:AdolescentTTMale"
+      },
+      {
+        "value": "CUSTOM:BabyTTFemale"
+      },
+      {
+        "value": "CUSTOM:BabyTTMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileTTFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileTTMale"
+      }
+    ],
     "biomes": [],
     "name": "tt_not_grown",
     "namespace": "mod"

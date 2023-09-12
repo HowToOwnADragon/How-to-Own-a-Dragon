@@ -374,7 +374,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Male Gronckle");
+					return Component.literal("Test Gronckle");
 				}
 
 				@Override

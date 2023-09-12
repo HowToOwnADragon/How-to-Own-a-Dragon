@@ -1,4 +1,11 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "how_to_own_a_dragon:adolescent_tt_male",
+    "how_to_own_a_dragon:baby_tt_male",
+    "how_to_own_a_dragon:adolescent_tt_female",
+    "how_to_own_a_dragon:baby_tt_female",
+    "how_to_own_a_dragon:juvenile_tt_male",
+    "how_to_own_a_dragon:juvenile_tt_female"
+  ]
 }

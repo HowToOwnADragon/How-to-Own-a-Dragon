@@ -10,17 +10,24 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.howtoownadragon.client.renderer.TestGronckleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.TTTestRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
+import net.mcreator.howtoownadragon.client.renderer.JuvenileTTMaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.JuvenileTTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileGronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileGronckleFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleAttackRenderer;
+import net.mcreator.howtoownadragon.client.renderer.BabyTTMaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.BabyTTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyGronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyGronckleFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.AdolescentTTMaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.AdolescentTTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.AdolescentGronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.AdolescentGronckleFemaleRenderer;
 
@@ -42,5 +49,12 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.TT_MALE.get(), TTMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.TEST_GRONCKLE.get(), TestGronckleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.TT_FEMALE.get(), TTFemaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.TT_TEST.get(), TTTestRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_TT_FEMALE.get(), BabyTTFemaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.JUVENILE_TT_FEMALE.get(), JuvenileTTFemaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_TT_FEMALE.get(), AdolescentTTFemaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_TT_MALE.get(), BabyTTMaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.JUVENILE_TT_MALE.get(), JuvenileTTMaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_TT_MALE.get(), AdolescentTTMaleRenderer::new);
 	}
 }

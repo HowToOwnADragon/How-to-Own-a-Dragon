@@ -12,6 +12,24 @@
       },
       {
         "value": "CUSTOM:TTMale"
+      },
+      {
+        "value": "CUSTOM:AdolescentTTFemale"
+      },
+      {
+        "value": "CUSTOM:AdolescentTTMale"
+      },
+      {
+        "value": "CUSTOM:BabyTTFemale"
+      },
+      {
+        "value": "CUSTOM:BabyTTMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileTTFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileTTMale"
       }
     ],
     "biomes": [],

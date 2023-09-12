@@ -17,17 +17,24 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
+import net.mcreator.howtoownadragon.entity.TTTestEntity;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
+import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -70,6 +77,34 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<TTFemaleEntity>of(TTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTFemaleEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TTTestEntity>> TT_TEST = register("tt_test",
+			EntityType.Builder.<TTTestEntity>of(TTTestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTTestEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabyTTFemaleEntity>> BABY_TT_FEMALE = register("baby_tt_female",
+			EntityType.Builder.<BabyTTFemaleEntity>of(BabyTTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyTTFemaleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JuvenileTTFemaleEntity>> JUVENILE_TT_FEMALE = register("juvenile_tt_female",
+			EntityType.Builder.<JuvenileTTFemaleEntity>of(JuvenileTTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileTTFemaleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolescentTTFemaleEntity>> ADOLESCENT_TT_FEMALE = register("adolescent_tt_female",
+			EntityType.Builder.<AdolescentTTFemaleEntity>of(AdolescentTTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentTTFemaleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabyTTMaleEntity>> BABY_TT_MALE = register("baby_tt_male",
+			EntityType.Builder.<BabyTTMaleEntity>of(BabyTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyTTMaleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JuvenileTTMaleEntity>> JUVENILE_TT_MALE = register("juvenile_tt_male",
+			EntityType.Builder.<JuvenileTTMaleEntity>of(JuvenileTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileTTMaleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolescentTTMaleEntity>> ADOLESCENT_TT_MALE = register("adolescent_tt_male",
+			EntityType.Builder.<AdolescentTTMaleEntity>of(AdolescentTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentTTMaleEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -91,6 +126,13 @@ public class HowToOwnADragonModEntities {
 			TTMaleEntity.init();
 			TestGronckleEntity.init();
 			TTFemaleEntity.init();
+			TTTestEntity.init();
+			BabyTTFemaleEntity.init();
+			JuvenileTTFemaleEntity.init();
+			AdolescentTTFemaleEntity.init();
+			BabyTTMaleEntity.init();
+			JuvenileTTMaleEntity.init();
+			AdolescentTTMaleEntity.init();
 		});
 	}
 
@@ -109,5 +151,12 @@ public class HowToOwnADragonModEntities {
 		event.put(TT_MALE.get(), TTMaleEntity.createAttributes().build());
 		event.put(TEST_GRONCKLE.get(), TestGronckleEntity.createAttributes().build());
 		event.put(TT_FEMALE.get(), TTFemaleEntity.createAttributes().build());
+		event.put(TT_TEST.get(), TTTestEntity.createAttributes().build());
+		event.put(BABY_TT_FEMALE.get(), BabyTTFemaleEntity.createAttributes().build());
+		event.put(JUVENILE_TT_FEMALE.get(), JuvenileTTFemaleEntity.createAttributes().build());
+		event.put(ADOLESCENT_TT_FEMALE.get(), AdolescentTTFemaleEntity.createAttributes().build());
+		event.put(BABY_TT_MALE.get(), BabyTTMaleEntity.createAttributes().build());
+		event.put(JUVENILE_TT_MALE.get(), JuvenileTTMaleEntity.createAttributes().build());
+		event.put(ADOLESCENT_TT_MALE.get(), AdolescentTTMaleEntity.createAttributes().build());
 	}
 }

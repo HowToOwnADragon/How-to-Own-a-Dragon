@@ -5,9 +5,11 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
@@ -17,8 +19,11 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -39,8 +44,8 @@ public class BreadTameTTProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity.getPersistentData().getBoolean("groncklefeedcooldown") == false) {
-			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
+		if (entity.getPersistentData().getBoolean("ttfeedcooldown") == false) {
+			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:tt")))) {
 				if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
 					if (new Object() {
 						public boolean checkGamemode(Entity _ent) {
@@ -53,10 +58,10 @@ public class BreadTameTTProcedure {
 							return false;
 						}
 					}.checkGamemode(sourceentity)) {
-						if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+						if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BREAD) {
 							if (Math.random() < 0.7) {
 								if (sourceentity instanceof Player _player) {
-									ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+									ItemStack _stktoremove = new ItemStack(Items.BREAD);
 									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 								}
 								if (world instanceof ServerLevel _level)
@@ -64,7 +69,7 @@ public class BreadTameTTProcedure {
 							}
 							if (Math.random() >= 0.7) {
 								if (sourceentity instanceof Player _player) {
-									ItemStack _stktoremove = new ItemStack(Blocks.STONE);
+									ItemStack _stktoremove = new ItemStack(Items.BREAD);
 									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 								}
 								if (world instanceof ServerLevel _level)
@@ -89,6 +94,9 @@ public class BreadTameTTProcedure {
 							_toTame.tame(_owner);
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"say testb");
 					}
 				}
 			}
