@@ -99,6 +99,9 @@
     "stepSound": {
       "value": ""
     },
+    "whenMobDies": {
+      "name": "TTDiesNotGrown"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
@@ -123,8 +126,8 @@
     "enable8": false,
     "enable9": false,
     "enable10": false,
-    "breedable": false,
-    "tameable": false,
+    "breedable": true,
+    "tameable": true,
     "disableDeathRotation": false,
     "headMovement": false,
     "eyeHeight": false,

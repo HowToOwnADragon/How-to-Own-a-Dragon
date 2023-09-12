@@ -18,18 +18,18 @@ public class TTDiesProcedure {
 			}
 		} else if (Math.random() >= 0.3 && Math.random() < 0.6) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(HowToOwnADragonModItems.GRONCKLE_SCALE.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(HowToOwnADragonModItems.TT_SCALE.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() >= 0.6) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(HowToOwnADragonModItems.GRONCKLE_SCALE.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(HowToOwnADragonModItems.TT_SCALE.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(HowToOwnADragonModItems.GRONCKLE_SCALE.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(HowToOwnADragonModItems.TT_SCALE.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

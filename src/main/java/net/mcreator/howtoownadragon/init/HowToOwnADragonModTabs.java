@@ -56,6 +56,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SCALE.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SPAWN_EGG.get());
 					tabData.accept(HowToOwnADragonModItems.SPAWN_EGG_TT.get());
+					tabData.accept(HowToOwnADragonModItems.TT_SCALE.get());
 				})
 
 		);

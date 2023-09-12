@@ -5,8 +5,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.Items;
@@ -19,11 +17,8 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -79,7 +74,7 @@ public class BreadTameTTProcedure {
 							}
 						}
 					}
-					if (new Object() {
+					if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && new Object() {
 						public boolean checkGamemode(Entity _ent) {
 							if (_ent instanceof ServerPlayer _serverPlayer) {
 								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
@@ -90,13 +85,10 @@ public class BreadTameTTProcedure {
 							return false;
 						}
 					}.checkGamemode(sourceentity)) {
-						if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-							_toTame.tame(_owner);
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"say testb");
+						if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
+							_toTame.tame(_owner);
 					}
 				}
 			}
