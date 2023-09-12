@@ -9282,8 +9282,7 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestGronckleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_gronckle_biome_modifier.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/Entity"
@@ -9666,11 +9665,10 @@
       "type": "animatedentity",
       "sortid": 882,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_test",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_test_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/TTTestModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTTestRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/TTTestEntity.java"
