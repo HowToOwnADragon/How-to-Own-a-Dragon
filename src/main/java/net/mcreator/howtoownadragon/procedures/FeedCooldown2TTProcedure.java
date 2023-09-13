@@ -1,0 +1,34 @@
+package net.mcreator.howtoownadragon.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
+
+public class FeedCooldown2TTProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		if (Mth.nextInt(RandomSource.create(), 1, 4) == 1) {
+			HowToOwnADragonMod.queueServerWork(40, () -> {
+				entity.getPersistentData().putBoolean("ttfeedcooldown", false);
+			});
+		} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 2) {
+			HowToOwnADragonMod.queueServerWork(60, () -> {
+				entity.getPersistentData().putBoolean("ttfeedcooldown", false);
+			});
+		} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 3) {
+			HowToOwnADragonMod.queueServerWork(80, () -> {
+				entity.getPersistentData().putBoolean("ttfeedcooldown", false);
+			});
+		} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 4) {
+			HowToOwnADragonMod.queueServerWork(100, () -> {
+				entity.getPersistentData().putBoolean("ttfeedcooldown", false);
+			});
+		} else {
+			FeedCooldown2TTProcedure.execute(world, x, y, z, entity);
+		}
+	}
+}

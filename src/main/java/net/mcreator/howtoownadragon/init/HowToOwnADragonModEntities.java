@@ -20,6 +20,7 @@ import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
 import net.mcreator.howtoownadragon.entity.TTTestEntity;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
@@ -105,6 +106,10 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<AdolescentTTMaleEntity>of(AdolescentTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentTTMaleEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TTEggEntityEntity>> TT_EGG_ENTITY = register("tt_egg_entity",
+			EntityType.Builder.<TTEggEntityEntity>of(TTEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTEggEntityEntity::new)
+
+					.sized(0.3f, 0.4f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -133,6 +138,7 @@ public class HowToOwnADragonModEntities {
 			BabyTTMaleEntity.init();
 			JuvenileTTMaleEntity.init();
 			AdolescentTTMaleEntity.init();
+			TTEggEntityEntity.init();
 		});
 	}
 
@@ -158,5 +164,6 @@ public class HowToOwnADragonModEntities {
 		event.put(BABY_TT_MALE.get(), BabyTTMaleEntity.createAttributes().build());
 		event.put(JUVENILE_TT_MALE.get(), JuvenileTTMaleEntity.createAttributes().build());
 		event.put(ADOLESCENT_TT_MALE.get(), AdolescentTTMaleEntity.createAttributes().build());
+		event.put(TT_EGG_ENTITY.get(), TTEggEntityEntity.createAttributes().build());
 	}
 }

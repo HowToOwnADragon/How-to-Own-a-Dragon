@@ -13,6 +13,7 @@ import net.mcreator.howtoownadragon.client.renderer.TestGronckleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTTestRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.TTEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileTTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileTTFemaleRenderer;
@@ -56,5 +57,6 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_TT_MALE.get(), BabyTTMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.JUVENILE_TT_MALE.get(), JuvenileTTMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_TT_MALE.get(), AdolescentTTMaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.TT_EGG_ENTITY.get(), TTEggEntityRenderer::new);
 	}
 }

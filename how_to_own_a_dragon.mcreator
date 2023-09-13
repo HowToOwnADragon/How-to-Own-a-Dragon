@@ -3397,7 +3397,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEggEntityEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/EggGronckle/Just Layed"
+      "path": "~/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleEggItem",
@@ -3412,7 +3412,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_egg_item.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/EggGronckle/Just Layed"
+      "path": "~/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleEntityIsHurt",
@@ -3440,7 +3440,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/EggGronckle/Just Layed"
+      "path": "~/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleSpawnEgg",
@@ -9614,6 +9614,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9634,6 +9650,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -10019,6 +10051,1471 @@
         ]
       },
       "path": "~/Items/Scales"
+    },
+    {
+      "name": "TTEggItem",
+      "type": "item",
+      "sortid": 899,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_egg_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/tt_egg_item.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/TTEggItemItem.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+    },
+    {
+      "name": "TTEggEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 900,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_egg_entity_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTEggEntityEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+    },
+    {
+      "name": "GiveBreedingCooldownTT",
+      "type": "procedure",
+      "sortid": 901,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_breeding_cooldown_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveBreedingCooldownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding"
+    },
+    {
+      "name": "PinkAndPinkEggTT",
+      "type": "procedure",
+      "sortid": 902,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_and_pink_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAndPinkEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "PinkPinkTTBreedingReq",
+      "type": "procedure",
+      "sortid": 903,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_pink_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkPinkTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "PinkPinkBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 904,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_pink_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkPinkBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "PinkPinkBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 905,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_pink_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkPinkBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GreenAndGreenEggTT",
+      "type": "procedure",
+      "sortid": 906,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_and_green_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAndGreenEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "TurqAndTurqEggTT",
+      "type": "procedure",
+      "sortid": 907,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_and_turq_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqAndTurqEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "GreenAndPinkEggTT",
+      "type": "procedure",
+      "sortid": 908,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_and_pink_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAndPinkEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "GreenAndTurqEggTT",
+      "type": "procedure",
+      "sortid": 909,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_and_turq_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAndTurqEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "PinkAndTurqEggTT",
+      "type": "procedure",
+      "sortid": 910,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_and_turq_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAndTurqEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "GreenGreenTTBreedingReq",
+      "type": "procedure",
+      "sortid": 911,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_green_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGreenTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "TurqTurqTTBreedingReq",
+      "type": "procedure",
+      "sortid": 912,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_turq_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqTurqTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "GreenPinkTTBreedingReq",
+      "type": "procedure",
+      "sortid": 913,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_pink_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenPinkTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "GreenTurqTTBreedingReq",
+      "type": "procedure",
+      "sortid": 914,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_turq_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenTurqTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "PinkTurqTTBreedingReq",
+      "type": "procedure",
+      "sortid": 915,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_turq_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkTurqTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "TTEggEntity",
+      "type": "animatedentity",
+      "sortid": 916,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tt_egg_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTEggEntityEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTEggEntityModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTEggEntityRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+    },
+    {
+      "name": "AlwaysTrue",
+      "type": "procedure",
+      "sortid": 917,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "always_true",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AlwaysTrueProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "InLoveBreedingTT",
+      "type": "procedure",
+      "sortid": 918,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_love_breeding_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/InLoveBreedingTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding"
+    },
+    {
+      "name": "PinkGreenBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 919,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_green_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkGreenBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "PinkTurqBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 920,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_turq_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkTurqBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "GreenPinkBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 921,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_pink_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenPinkBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "GreenGreenBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 922,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_green_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGreenBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "GreenTurqBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 923,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_turq_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenTurqBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "TurqGreenBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 924,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_green_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqGreenBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "TurqTurqBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 925,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_turq_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqTurqBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "TurqPinkBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 926,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_pink_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqPinkBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "PinkGreenBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 927,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_green_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkGreenBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "PinkTurqBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 928,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_turq_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkTurqBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GreenGreenBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 929,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_green_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGreenBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GreenPinkBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 930,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_pink_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenPinkBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GreenTurqBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 931,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_turq_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenTurqBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "TurqGreenBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 932,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_green_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqGreenBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "TurqTurqBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 933,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_turq_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqTurqBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "TurqPinkBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 934,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_pink_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqPinkBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "FeedCooldownTT",
+      "type": "procedure",
+      "sortid": 935,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_cooldown_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedCooldownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "FeedCooldown2TT",
+      "type": "procedure",
+      "sortid": 936,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_cooldown_2_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedCooldown2TTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "TTFeedItems",
+      "type": "tag",
+      "sortid": 937,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_feed_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/items/tt_feed_items.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "OpenMaleGUITT",
+      "type": "procedure",
+      "sortid": 938,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_male_guitt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenMaleGUITTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/GUI"
+    },
+    {
+      "name": "OpenFemaleGUITT",
+      "type": "procedure",
+      "sortid": 939,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_female_guitt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenFemaleGUITTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/GUI"
+    },
+    {
+      "name": "NBTOnInitiallSpawnTT",
+      "type": "procedure",
+      "sortid": 940,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbt_on_initiall_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NBTOnInitiallSpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
     }
   ],
   "variable_elements": [
@@ -10044,6 +11541,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.how_to_own_a_dragon.tt_egg_item": "Terrible Terror Egg",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
@@ -10060,6 +11558,7 @@
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
+      "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
@@ -10175,6 +11674,7 @@
       "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
       "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
       "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
+      "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
     }
@@ -10281,13 +11781,8 @@
                 "name": "Breeding",
                 "children": [
                   {
-                    "name": "EggGronckle",
-                    "children": [
-                      {
-                        "name": "Just Layed",
-                        "children": []
-                      }
-                    ]
+                    "name": "Egg",
+                    "children": []
                   },
                   {
                     "name": "Cross-Breeding",
@@ -10468,7 +11963,33 @@
               },
               {
                 "name": "Breeding",
-                "children": []
+                "children": [
+                  {
+                    "name": "Egg",
+                    "children": []
+                  },
+                  {
+                    "name": "Cross-Breeding",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "EggSpawn",
+                        "children": []
+                      },
+                      {
+                        "name": "BreedingReq",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "name": "Taming",
