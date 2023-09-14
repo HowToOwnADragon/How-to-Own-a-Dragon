@@ -1,4 +1,5 @@
 {
+  "item.how_to_own_a_dragon.tt_egg_item": "Terrible Terror Egg",
   "block.how_to_own_a_dragon.deep_iron_wall": "Diep IJzeren Muur",
   "advancements.picking_up_dragon_eye.descr": "Dit, verandert, alles!",
   "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
@@ -15,6 +16,7 @@
   "block.how_to_own_a_dragon.incubator_1": "Incubator",
   "key.how_to_own_a_dragon.fly_down": "Omlaag Vliegen",
   "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronkel IJzeren Houweel",
+  "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
   "block.how_to_own_a_dragon.deep_iron_block": "Diep IJzeren Blok",
   "key.how_to_own_a_dragon.fly_up": "Omhoog vliegen",
   "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Vrouwelijke Kinderlijk Gronkel Spawn Ei",
@@ -130,6 +132,7 @@
   "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Roestige Draken Bestendige Metalen Tralies",
   "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Mannelijke Puber Gronkel",
   "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
+  "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
   "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Vrouwelijke Gronkel",
   "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronkel Ei"
 }
