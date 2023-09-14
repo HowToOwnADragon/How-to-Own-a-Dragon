@@ -7,5 +7,6 @@ public class NBTOnInitiallSpawnTTProcedure {
 		if (entity == null)
 			return;
 		entity.getPersistentData().putBoolean("ttfeedcooldown", false);
+		entity.getPersistentData().putString("ttfoodcooldown", "false");
 	}
 }

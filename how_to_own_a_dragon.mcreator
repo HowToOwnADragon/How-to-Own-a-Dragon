@@ -7307,72 +7307,6 @@
       "path": "~/Dragons/Gronckle/Saddle/Female"
     },
     {
-      "name": "GronckleFeedItems",
-      "type": "tag",
-      "sortid": 785,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_feed_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/items/gronckle_feed_items.json"
-        ]
-      },
-      "path": "~/Dragons/Gronckle/Taming"
-    },
-    {
-      "name": "GronckleFeedingCooldown",
-      "type": "procedure",
-      "sortid": 786,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_feeding_cooldown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleFeedingCooldownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/Taming"
-    },
-    {
-      "name": "GronckleFeedingCooldown2",
-      "type": "procedure",
-      "sortid": 787,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_feeding_cooldown_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleFeedingCooldown2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/Taming"
-    },
-    {
       "name": "NBTDataSpawnGronckle",
       "type": "procedure",
       "sortid": 788,
@@ -7820,7 +7754,7 @@
           }
         ]
       },
-      "path": "~/Items/Incubator/Tickupdate/Gronckle"
+      "path": "~/Items/Incubator/Tickupdate"
     },
     {
       "name": "BreedingCooldown",
@@ -9697,7 +9631,7 @@
       "type": "animatedentity",
       "sortid": 882,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tt_test",
       "metadata": {
         "files": [
@@ -9763,7 +9697,7 @@
       "type": "animatedentity",
       "sortid": 886,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_tt_male",
       "metadata": {
         "files": [
@@ -9780,7 +9714,7 @@
       "type": "animatedentity",
       "sortid": 887,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "juvenile_tt_male",
       "metadata": {
         "files": [
@@ -9797,7 +9731,7 @@
       "type": "animatedentity",
       "sortid": 888,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "adolescent_tt_male",
       "metadata": {
         "files": [
@@ -11328,82 +11262,6 @@
       "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
-      "name": "FeedCooldownTT",
-      "type": "procedure",
-      "sortid": 935,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "feed_cooldown_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedCooldownTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Terrible Terror/Taming"
-    },
-    {
-      "name": "FeedCooldown2TT",
-      "type": "procedure",
-      "sortid": 936,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "feed_cooldown_2_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedCooldown2TTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Terrible Terror/Taming"
-    },
-    {
       "name": "TTFeedItems",
       "type": "tag",
       "sortid": 937,
@@ -11516,6 +11374,38 @@
         ]
       },
       "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "TTIncubator1Tick",
+      "type": "procedure",
+      "sortid": 941,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_incubator_1_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTIncubator1TickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/Tickupdate"
     }
   ],
   "variable_elements": [

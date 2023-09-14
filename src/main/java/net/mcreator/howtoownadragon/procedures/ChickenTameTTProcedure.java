@@ -21,6 +21,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
+
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
@@ -39,7 +41,7 @@ public class ChickenTameTTProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity.getPersistentData().getBoolean("ttfeedcooldown") == false) {
+		HowToOwnADragonMod.queueServerWork(1, () -> {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:tt")))) {
 				if (!(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
 					if (new Object() {
@@ -92,6 +94,6 @@ public class ChickenTameTTProcedure {
 					}
 				}
 			}
-		}
+		});
 	}
 }

@@ -9,12 +9,12 @@ import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
 public class JuvenileTTFemaleModel extends GeoModel<JuvenileTTFemaleEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(JuvenileTTFemaleEntity entity) {
-		return new ResourceLocation("how_to_own_a_dragon", "animations/growntt.animation.json");
+		return new ResourceLocation("how_to_own_a_dragon", "animations/juvitt.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(JuvenileTTFemaleEntity entity) {
-		return new ResourceLocation("how_to_own_a_dragon", "geo/growntt.geo.json");
+		return new ResourceLocation("how_to_own_a_dragon", "geo/juvitt.geo.json");
 	}
 
 	@Override

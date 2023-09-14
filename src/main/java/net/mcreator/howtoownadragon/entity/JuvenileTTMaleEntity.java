@@ -460,9 +460,9 @@ public class JuvenileTTMaleEntity extends TamableAnimal implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.tt.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("Walking"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.tt.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("Idle"));
 		}
 		return PlayState.STOP;
 	}

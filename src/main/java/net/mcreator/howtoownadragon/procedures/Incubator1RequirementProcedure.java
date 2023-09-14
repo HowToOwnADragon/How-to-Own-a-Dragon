@@ -13,8 +13,8 @@ public class Incubator1RequirementProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Lava Bucket")) {
-			return "Lava Bucket";
+		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Rabbit")) {
+			return "Rabbit's Foot";
 		} else if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -33,6 +33,15 @@ public class Incubator1RequirementProcedure {
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Egg is Hatching")) {
 			return "Egg is Hatching";
+		} else if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Lava Bucket")) {
+			return "Lava Bucket";
 		}
 		return "No Egg";
 	}
