@@ -1,4 +1,5 @@
 {
+  "item.how_to_own_a_dragon.tt_egg_item": "Terrible Terror Egg",
   "block.how_to_own_a_dragon.deep_iron_wall": "Uma parede Funda",
   "advancements.picking_up_dragon_eye.descr": "Isto, muda, tudo!",
   "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
@@ -15,6 +16,7 @@
   "block.how_to_own_a_dragon.incubator_1": "Incubador",
   "key.how_to_own_a_dragon.fly_down": "Voe Para Baixo",
   "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Picareta de Ferro Gronckle",
+  "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
   "block.how_to_own_a_dragon.deep_iron_block": "Um Bloco Fundo",
   "key.how_to_own_a_dragon.fly_up": "Voe Para Cima",
   "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Uma Gronckle Adolescente Gerou um Ovo",
@@ -130,6 +132,7 @@
   "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
   "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
   "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
+  "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
   "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Gronckle Fêmea",
   "entity.how_to_own_a_dragon.gronckle_egg_entity": "Ovo Gronckle"
 }
