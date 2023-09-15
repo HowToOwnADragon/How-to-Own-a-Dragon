@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:AdolescentTTMale"
+      },
+      {
+        "value": "CUSTOM:BabyTTMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileTTMale"
+      },
+      {
+        "value": "CUSTOM:TTMale"
+      }
+    ],
+    "biomes": [],
+    "name": "male_tt",
+    "namespace": "mod"
+  }
+}

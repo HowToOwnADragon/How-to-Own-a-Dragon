@@ -52,6 +52,7 @@ import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
@@ -153,7 +154,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
+		this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -164,7 +165,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 6) {
+		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -175,7 +176,18 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
+		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 6, (float) 16, false) {
+			@Override
+			public boolean canUse() {
+				double x = TestGronckleEntity.this.getX();
+				double y = TestGronckleEntity.this.getY();
+				double z = TestGronckleEntity.this.getZ();
+				Entity entity = TestGronckleEntity.this;
+				Level world = TestGronckleEntity.this.level;
+				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -186,7 +198,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, (float) 6) {
+		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -197,7 +209,18 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
+		this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1, (float) 6, (float) 16, false) {
+			@Override
+			public boolean canUse() {
+				double x = TestGronckleEntity.this.getX();
+				double y = TestGronckleEntity.this.getY();
+				double z = TestGronckleEntity.this.getZ();
+				Entity entity = TestGronckleEntity.this;
+				Level world = TestGronckleEntity.this.level;
+				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Sheep.class, true, true) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -208,7 +231,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1) {
+		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -219,7 +242,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this) {
+		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -230,7 +253,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && LookAtNightDontFollowMeProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(8, new FloatGoal(this) {
+		this.goalSelector.addGoal(10, new FloatGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -241,7 +264,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && DontAllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(9, new WaterAvoidingRandomStrollGoal(this, 0.8) {
+		this.goalSelector.addGoal(11, new WaterAvoidingRandomStrollGoal(this, 0.8) {
 			@Override
 			public boolean canUse() {
 				double x = TestGronckleEntity.this.getX();
@@ -252,7 +275,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && FlyAtDayFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(10, new RandomStrollGoal(this, 0.8, 20) {
+		this.goalSelector.addGoal(12, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = TestGronckleEntity.this.getRandom();
@@ -373,26 +396,29 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-		if (sourceentity instanceof ServerPlayer serverPlayer) {
-			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
-				@Override
-				public Component getDisplayName() {
-					return Component.literal("Test Gronckle");
-				}
+		if (sourceentity.isSecondaryUseActive()) {
+			if (sourceentity instanceof ServerPlayer serverPlayer) {
+				NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("Test Gronckle");
+					}
 
-				@Override
-				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-					packetBuffer.writeBlockPos(sourceentity.blockPosition());
-					packetBuffer.writeByte(0);
-					packetBuffer.writeVarInt(TestGronckleEntity.this.getId());
-					return new MaleGronckleGUIMenu(id, inventory, packetBuffer);
-				}
-			}, buf -> {
-				buf.writeBlockPos(sourceentity.blockPosition());
-				buf.writeByte(0);
-				buf.writeVarInt(this.getId());
-			});
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+						packetBuffer.writeBlockPos(sourceentity.blockPosition());
+						packetBuffer.writeByte(0);
+						packetBuffer.writeVarInt(TestGronckleEntity.this.getId());
+						return new MaleGronckleGUIMenu(id, inventory, packetBuffer);
+					}
+				}, buf -> {
+					buf.writeBlockPos(sourceentity.blockPosition());
+					buf.writeByte(0);
+					buf.writeVarInt(this.getId());
+				});
+			}
+			return InteractionResult.sidedSuccess(this.level.isClientSide());
 		}
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
@@ -430,6 +456,7 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 					this.setPersistenceRequired();
 			}
 		}
+		sourceentity.startRiding(this);
 		return retval;
 	}
 
@@ -455,6 +482,37 @@ public class TestGronckleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public boolean isFood(ItemStack stack) {
 		return List.of().contains(stack.getItem());
+	}
+
+	@Override
+	public void travel(Vec3 dir) {
+		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
+		if (this.isVehicle()) {
+			this.setYRot(entity.getYRot());
+			this.yRotO = this.getYRot();
+			this.setXRot(entity.getXRot() * 0.5F);
+			this.setRot(this.getYRot(), this.getXRot());
+			this.yBodyRot = entity.getYRot();
+			this.yHeadRot = entity.getYRot();
+			this.maxUpStep = 1.0F;
+			if (entity instanceof LivingEntity passenger) {
+				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
+				float forward = passenger.zza;
+				float strafe = passenger.xxa;
+				super.travel(new Vec3(strafe, 0, forward));
+			}
+			double d1 = this.getX() - this.xo;
+			double d0 = this.getZ() - this.zo;
+			float f1 = (float) Math.sqrt(d1 * d1 + d0 * d0) * 4;
+			if (f1 > 1.0F)
+				f1 = 1.0F;
+			this.walkAnimation.setSpeed(this.walkAnimation.speed() + (f1 - this.walkAnimation.speed()) * 0.4F);
+			this.walkAnimation.position(this.walkAnimation.position() + this.walkAnimation.speed());
+			this.calculateEntityAnimation(true);
+			return;
+		}
+		this.maxUpStep = 0.5F;
+		super.travel(dir);
 	}
 
 	@Override

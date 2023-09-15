@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "MaleTTGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "deathTime": 20,
@@ -103,11 +103,11 @@
       "name": "TTDiesNotGrown"
     },
     "onInitialSpawn": {
-      "name": "MaleOnInitialEntitySpawnTT"
+      "name": "ColorTickRateTT"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">3</field><field name=\"max_distance\">32</field><field name=\"condition\">ValkaFollowMeTrigger,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">ValkaFollowMeTrigger,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">3</field><field name=\"max_distance\">32</field><field name=\"condition\">AllFollowMeTrigger,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">AllFollowMeTrigger,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">TRUE</field><field name=\"condition\">WildAI,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.BREAD</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">TRUE</field><field name=\"condition\">WildAI,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.FISH#0</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">TRUE</field><field name=\"condition\">WildAI,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.FISH#1</field></block></value><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">TRUE</field><field name=\"condition\">WildAI,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.COOKED_CHICKEN</field></block></value><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">WildDayAI,null</field><next><block type=\"look_around\"><field name=\"condition\">WildNightAI,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">DontAllFollowMeTrigger,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">WildDayAI,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
     "model": "juvitt.geo.json",
     "groupName": "",
     "animation1": "Idle",
@@ -143,8 +143,8 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

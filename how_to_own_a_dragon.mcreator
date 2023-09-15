@@ -9193,7 +9193,7 @@
       "type": "animatedentity",
       "sortid": 863,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tt_male",
       "metadata": {
         "files": [
@@ -9240,7 +9240,7 @@
       "type": "animatedentity",
       "sortid": 867,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tt_female",
       "metadata": {
         "files": [
@@ -9647,14 +9647,13 @@
       "type": "animatedentity",
       "sortid": 883,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_tt_female",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyTTFemaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyTTFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTFemaleModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/baby_tt_female_biome_modifier.json"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Terrible Terror/Entity"
@@ -9664,11 +9663,10 @@
       "type": "animatedentity",
       "sortid": 884,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "juvenile_tt_female",
       "metadata": {
         "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/juvenile_tt_female_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileTTFemaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTFemaleModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTFemaleRenderer.java"
@@ -9681,7 +9679,7 @@
       "type": "animatedentity",
       "sortid": 885,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "adolescent_tt_female",
       "metadata": {
         "files": [
@@ -9703,7 +9701,6 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyTTMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyTTMaleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/baby_tt_male_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTMaleModel.java"
         ]
       },
@@ -9719,7 +9716,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileTTMaleEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/juvenile_tt_male_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTMaleModel.java"
         ]
@@ -9737,7 +9733,6 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentTTMaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentTTMaleModel.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/adolescent_tt_male_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentTTMaleRenderer.java"
         ]
       },
@@ -11406,6 +11401,1086 @@
         ]
       },
       "path": "~/Items/Incubator/Tickupdate"
+    },
+    {
+      "name": "GrowingTickRateTT",
+      "type": "procedure",
+      "sortid": 942,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_rate_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickRateTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+    },
+    {
+      "name": "GrowingUpMessageTT",
+      "type": "procedure",
+      "sortid": 943,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_up_message_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingUpMessageTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+    },
+    {
+      "name": "ColorTickRateTT",
+      "type": "procedure",
+      "sortid": 944,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "color_tick_rate_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ColorTickRateTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+    },
+    {
+      "name": "GreenGrowUpProcedureTT",
+      "type": "procedure",
+      "sortid": 946,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_grow_up_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGrowUpProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "PinkGrowUpProcedureTT",
+      "type": "procedure",
+      "sortid": 947,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_grow_up_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkGrowUpProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "TurqGrowUpProcedureTT",
+      "type": "procedure",
+      "sortid": 948,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_grow_up_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqGrowUpProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "PinkItemNeededForGrowUpTT",
+      "type": "procedure",
+      "sortid": 949,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_item_needed_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkItemNeededForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Item"
+    },
+    {
+      "name": "GreenItemNeededForGrowUpTT",
+      "type": "procedure",
+      "sortid": 950,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_item_needed_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenItemNeededForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Item"
+    },
+    {
+      "name": "TurqItemNeededForGrowUpTT",
+      "type": "procedure",
+      "sortid": 951,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_item_needed_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqItemNeededForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Item"
+    },
+    {
+      "name": "PinkBabyGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 952,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_baby_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkBabyGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+    },
+    {
+      "name": "GreenBabyGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 953,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_baby_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenBabyGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+    },
+    {
+      "name": "TurqBabyGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 954,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_baby_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqBabyGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+    },
+    {
+      "name": "GreenBabyGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 955,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_baby_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenBabyGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+    },
+    {
+      "name": "PinkBabyGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 956,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_baby_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkBabyGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+    },
+    {
+      "name": "TurqBabyGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 957,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_baby_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqBabyGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+    },
+    {
+      "name": "GreenJuvenileGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 958,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_juvenile_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenJuvenileGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+    },
+    {
+      "name": "PinkJuvenileGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 959,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_juvenile_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkJuvenileGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+    },
+    {
+      "name": "TurqJuvenileGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 960,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_juvenile_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqJuvenileGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+    },
+    {
+      "name": "GreenAdolescentGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 961,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_adolescent_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAdolescentGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+    },
+    {
+      "name": "PinkAdolescentGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 962,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_adolescent_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAdolescentGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+    },
+    {
+      "name": "TurqAdolescentGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 963,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_adolescent_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqAdolescentGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+    },
+    {
+      "name": "GreenAdolescentGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 964,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_adolescent_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAdolescentGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+    },
+    {
+      "name": "PinkAdolescentGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 965,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_adolescent_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAdolescentGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+    },
+    {
+      "name": "TurqAdolescentGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 966,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_adolescent_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqAdolescentGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+    },
+    {
+      "name": "GreenJuvenileGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 967,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_juvenile_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenJuvenileGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+    },
+    {
+      "name": "PinkJuvenileGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 968,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_juvenile_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkJuvenileGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+    },
+    {
+      "name": "TurqJuvenileGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 969,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_juvenile_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqJuvenileGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+    },
+    {
+      "name": "FemaleTT",
+      "type": "tag",
+      "sortid": 970,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_tt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "MaleTT",
+      "type": "tag",
+      "sortid": 971,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_tt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
     }
   ],
   "variable_elements": [
@@ -11887,7 +12962,59 @@
               },
               {
                 "name": "Growing",
-                "children": []
+                "children": [
+                  {
+                    "name": "GrowUpProcedure",
+                    "children": []
+                  },
+                  {
+                    "name": "GrowMessage",
+                    "children": []
+                  },
+                  {
+                    "name": "Item",
+                    "children": []
+                  },
+                  {
+                    "name": "Baby",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Adolescent",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Juvenile",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "name": "SpawnEgg",

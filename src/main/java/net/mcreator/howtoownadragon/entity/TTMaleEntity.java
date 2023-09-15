@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
@@ -23,7 +24,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -49,8 +49,8 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -118,7 +118,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
+		this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -129,7 +129,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 6) {
+		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -140,7 +140,18 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 3, (float) 32, false) {
+		this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 6, (float) 16, false) {
+			@Override
+			public boolean canUse() {
+				double x = TTMaleEntity.this.getX();
+				double y = TTMaleEntity.this.getY();
+				double z = TTMaleEntity.this.getZ();
+				Entity entity = TTMaleEntity.this;
+				Level world = TTMaleEntity.this.level;
+				return super.canUse() && ValkaFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -151,7 +162,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, (float) 6) {
+		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, (float) 3) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -162,7 +173,18 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(5, new TemptGoal(this, 1, Ingredient.of(Items.BREAD), true) {
+		this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1, (float) 6, (float) 16, false) {
+			@Override
+			public boolean canUse() {
+				double x = TTMaleEntity.this.getX();
+				double y = TTMaleEntity.this.getY();
+				double z = TTMaleEntity.this.getZ();
+				Entity entity = TTMaleEntity.this;
+				Level world = TTMaleEntity.this.level;
+				return super.canUse() && AllFollowMeTriggerProcedure.execute(world, entity);
+			}
+		});
+		this.goalSelector.addGoal(7, new TemptGoal(this, 1, Ingredient.of(Items.BREAD), true) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -173,7 +195,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && WildAIProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(6, new TemptGoal(this, 1, Ingredient.of(Items.COD), true) {
+		this.goalSelector.addGoal(8, new TemptGoal(this, 1, Ingredient.of(Items.COD), true) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -184,7 +206,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && WildAIProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(7, new TemptGoal(this, 1, Ingredient.of(Items.SALMON), true) {
+		this.goalSelector.addGoal(9, new TemptGoal(this, 1, Ingredient.of(Items.SALMON), true) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -195,7 +217,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && WildAIProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(8, new TemptGoal(this, 1, Ingredient.of(Items.COOKED_CHICKEN), true) {
+		this.goalSelector.addGoal(10, new TemptGoal(this, 1, Ingredient.of(Items.COOKED_CHICKEN), true) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -206,7 +228,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && WildAIProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(9, new RandomStrollGoal(this, 1) {
+		this.goalSelector.addGoal(11, new RandomStrollGoal(this, 1) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -217,7 +239,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && WildDayAIProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this) {
+		this.goalSelector.addGoal(12, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -228,7 +250,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && WildNightAIProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(11, new FloatGoal(this) {
+		this.goalSelector.addGoal(13, new FloatGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -239,7 +261,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 				return super.canUse() && DontAllFollowMeTriggerProcedure.execute(world, entity);
 			}
 		});
-		this.goalSelector.addGoal(12, new WaterAvoidingRandomStrollGoal(this, 0.8) {
+		this.goalSelector.addGoal(14, new WaterAvoidingRandomStrollGoal(this, 0.8) {
 			@Override
 			public boolean canUse() {
 				double x = TTMaleEntity.this.getX();
@@ -361,12 +383,12 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 
 	public static void init() {
 		SpawnPlacements.register(HowToOwnADragonModEntities.TT_MALE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);

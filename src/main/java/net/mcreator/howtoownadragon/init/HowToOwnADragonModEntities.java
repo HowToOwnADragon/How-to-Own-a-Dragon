@@ -69,13 +69,13 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<GronckleEggEntityEntity>> GRONCKLE_EGG_ENTITY = register("gronckle_egg_entity", EntityType.Builder.<GronckleEggEntityEntity>of(GronckleEggEntityEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleEggEntityEntity::new).fireImmune().sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<TTMaleEntity>> TT_MALE = register("tt_male",
-			EntityType.Builder.<TTMaleEntity>of(TTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTMaleEntity::new)
+			EntityType.Builder.<TTMaleEntity>of(TTMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTMaleEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TestGronckleEntity>> TEST_GRONCKLE = register("test_gronckle", EntityType.Builder.<TestGronckleEntity>of(TestGronckleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TestGronckleEntity::new).fireImmune().sized(2f, 2f));
 	public static final RegistryObject<EntityType<TTFemaleEntity>> TT_FEMALE = register("tt_female",
-			EntityType.Builder.<TTFemaleEntity>of(TTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTFemaleEntity::new)
+			EntityType.Builder.<TTFemaleEntity>of(TTFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTFemaleEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TTTestEntity>> TT_TEST = register("tt_test",

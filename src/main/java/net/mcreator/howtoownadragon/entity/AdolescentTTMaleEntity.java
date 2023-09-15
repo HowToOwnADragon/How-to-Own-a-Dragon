@@ -21,7 +21,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.SpawnEggItem;
@@ -30,13 +30,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
@@ -50,7 +49,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.Difficulty;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -68,6 +67,7 @@ import net.minecraft.core.Direction;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
 import net.mcreator.howtoownadragon.procedures.TTDiesNotGrownProcedure;
+import net.mcreator.howtoownadragon.procedures.ColorTickRateTTProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -95,6 +95,7 @@ public class AdolescentTTMaleEntity extends TamableAnimal implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -131,6 +132,11 @@ public class AdolescentTTMaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -151,6 +157,13 @@ public class AdolescentTTMaleEntity extends TamableAnimal implements GeoEntity {
 	public void die(DamageSource source) {
 		super.die(source);
 		TTDiesNotGrownProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		ColorTickRateTTProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		return retval;
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(1) {
@@ -287,8 +300,6 @@ public class AdolescentTTMaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(HowToOwnADragonModEntities.ADOLESCENT_TT_MALE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

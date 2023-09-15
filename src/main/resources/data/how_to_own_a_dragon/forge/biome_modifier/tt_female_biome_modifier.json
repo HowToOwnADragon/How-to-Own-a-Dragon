@@ -1,8 +1,13 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "old_growth_birch_forest",
+    "forest",
+    "dark_forest",
+    "birch_forest",
+    "flower_forest",
+    "windswept_forest"
+  ],
   "spawners": {
     "type": "how_to_own_a_dragon:tt_female",
     "weight": 20,

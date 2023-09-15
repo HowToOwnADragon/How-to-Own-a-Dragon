@@ -14,6 +14,8 @@ public class GronkleColorTickRateProcedure {
 		entity.getPersistentData().putBoolean("groncklefeedcooldown", false);
 		if (entity instanceof BabyGronckleMaleEntity) {
 			if ((entity.getPersistentData().getString("groncklecolor")).equals("pink")) {
+				if (entity instanceof BabyGronckleMaleEntity animatable)
+					animatable.setTexture("babygroncklepink");
 				GronckleGrowingTickRateProcedure.execute(world, x, y, z, entity);
 			} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
 				if (entity instanceof BabyGronckleMaleEntity animatable)
@@ -30,6 +32,8 @@ public class GronkleColorTickRateProcedure {
 			}
 		} else if (entity instanceof BabyGronckleFemaleEntity) {
 			if ((entity.getPersistentData().getString("groncklecolor")).equals("pink")) {
+				if (entity instanceof BabyGronckleFemaleEntity animatable)
+					animatable.setTexture("babygroncklepink");
 				GronckleGrowingTickRateProcedure.execute(world, x, y, z, entity);
 			} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
 				if (entity instanceof BabyGronckleFemaleEntity animatable)
