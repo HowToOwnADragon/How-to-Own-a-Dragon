@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class BabyTTFemaleRenderer extends GeoEntityRenderer<BabyTTFemaleEntity> {
 	public BabyTTFemaleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new BabyTTFemaleModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 0.1f;
 	}
 
 	@Override

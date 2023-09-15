@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class TTMaleRenderer extends GeoEntityRenderer<TTMaleEntity> {
 	public TTMaleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new TTMaleModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 0.4f;
 	}
 
 	@Override

@@ -71,13 +71,13 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<TTMaleEntity>> TT_MALE = register("tt_male",
 			EntityType.Builder.<TTMaleEntity>of(TTMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTMaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.45f, 0.5f));
 	public static final RegistryObject<EntityType<TestGronckleEntity>> TEST_GRONCKLE = register("test_gronckle", EntityType.Builder.<TestGronckleEntity>of(TestGronckleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TestGronckleEntity::new).fireImmune().sized(2f, 2f));
 	public static final RegistryObject<EntityType<TTFemaleEntity>> TT_FEMALE = register("tt_female",
 			EntityType.Builder.<TTFemaleEntity>of(TTFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTFemaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.45f, 0.5f));
 	public static final RegistryObject<EntityType<TTTestEntity>> TT_TEST = register("tt_test",
 			EntityType.Builder.<TTTestEntity>of(TTTestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTTestEntity::new)
 
@@ -85,27 +85,27 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<BabyTTFemaleEntity>> BABY_TT_FEMALE = register("baby_tt_female",
 			EntityType.Builder.<BabyTTFemaleEntity>of(BabyTTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyTTFemaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.15f, 0.2f));
 	public static final RegistryObject<EntityType<JuvenileTTFemaleEntity>> JUVENILE_TT_FEMALE = register("juvenile_tt_female",
 			EntityType.Builder.<JuvenileTTFemaleEntity>of(JuvenileTTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileTTFemaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.2f, 0.3f));
 	public static final RegistryObject<EntityType<AdolescentTTFemaleEntity>> ADOLESCENT_TT_FEMALE = register("adolescent_tt_female",
 			EntityType.Builder.<AdolescentTTFemaleEntity>of(AdolescentTTFemaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentTTFemaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.4f, 0.4f));
 	public static final RegistryObject<EntityType<BabyTTMaleEntity>> BABY_TT_MALE = register("baby_tt_male",
 			EntityType.Builder.<BabyTTMaleEntity>of(BabyTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyTTMaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.15f, 0.2f));
 	public static final RegistryObject<EntityType<JuvenileTTMaleEntity>> JUVENILE_TT_MALE = register("juvenile_tt_male",
 			EntityType.Builder.<JuvenileTTMaleEntity>of(JuvenileTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileTTMaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.2f, 0.3f));
 	public static final RegistryObject<EntityType<AdolescentTTMaleEntity>> ADOLESCENT_TT_MALE = register("adolescent_tt_male",
 			EntityType.Builder.<AdolescentTTMaleEntity>of(AdolescentTTMaleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentTTMaleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.4f, 0.4f));
 	public static final RegistryObject<EntityType<TTEggEntityEntity>> TT_EGG_ENTITY = register("tt_egg_entity",
 			EntityType.Builder.<TTEggEntityEntity>of(TTEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TTEggEntityEntity::new)
 
