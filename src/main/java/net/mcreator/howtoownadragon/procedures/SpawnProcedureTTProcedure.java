@@ -17,7 +17,7 @@ public class SpawnProcedureTTProcedure {
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new TTFemaleEntity(HowToOwnADragonModEntities.TT_FEMALE.get(), _level);
-				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
 				entityToSpawn.setDeltaMovement(0, 0, 0);
@@ -28,7 +28,7 @@ public class SpawnProcedureTTProcedure {
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new TTMaleEntity(HowToOwnADragonModEntities.TT_MALE.get(), _level);
-				entityToSpawn.moveTo(x, y, z, 0, 0);
+				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
 				entityToSpawn.setDeltaMovement(0, 0, 0);

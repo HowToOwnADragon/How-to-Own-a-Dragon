@@ -113,7 +113,7 @@ public class Incubator1TickProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "recipe") >= 0) {
+		}.getValue(world, BlockPos.containing(x, y, z), "recipe") == 0) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -123,6 +123,32 @@ public class Incubator1TickProcedure {
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "timer") >= 600) {
 				GronckleIncubator1TickProcedure.execute(world, x, y, z);
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("timer", 0);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "recipe") == 1) {
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "timer") >= 600) {
 				TTIncubator1TickProcedure.execute(world, x, y, z);
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
@@ -204,7 +230,7 @@ public class Incubator1TickProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -230,7 +256,7 @@ public class Incubator1TickProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get() || (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -293,7 +319,15 @@ public class Incubator1TickProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get() || (new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == HowToOwnADragonModItems.TT_EGG_ITEM.get()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
