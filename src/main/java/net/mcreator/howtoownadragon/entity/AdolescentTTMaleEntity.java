@@ -66,7 +66,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
-import net.mcreator.howtoownadragon.procedures.TTDiesNotGrownProcedure;
+import net.mcreator.howtoownadragon.procedures.NotGrownTTDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.ColorTickRateTTProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
@@ -156,7 +156,7 @@ public class AdolescentTTMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TTDiesNotGrownProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		NotGrownTTDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

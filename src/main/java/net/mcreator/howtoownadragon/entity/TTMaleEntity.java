@@ -64,8 +64,8 @@ import net.mcreator.howtoownadragon.procedures.WildNightAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildDayAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildAIProcedure;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.TTDiesProcedure;
 import net.mcreator.howtoownadragon.procedures.MaleOnInitialEntitySpawnTTProcedure;
+import net.mcreator.howtoownadragon.procedures.GrownTTDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
@@ -299,7 +299,7 @@ public class TTMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TTDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		GrownTTDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

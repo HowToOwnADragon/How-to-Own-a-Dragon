@@ -13,6 +13,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -54,17 +55,23 @@ public class GronckleCobbleTameProcedure {
 				}.checkGamemode(sourceentity)) {
 					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
 						if (Math.random() < 0.7) {
-							if (sourceentity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
 							}
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 30, 3, 3, 3, 1);
 						}
 						if (Math.random() >= 0.7) {
-							if (sourceentity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(Blocks.COBBLESTONE);
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
 							}
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);

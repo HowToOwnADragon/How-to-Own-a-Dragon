@@ -9,6 +9,7 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
@@ -59,6 +60,8 @@ public class TurqGrowUpProcedureTTProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 		} else if (entity instanceof BabyTTFemaleEntity) {
 			if (!entity.level.isClientSide())
 				entity.discard();
@@ -91,6 +94,8 @@ public class TurqGrowUpProcedureTTProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 		} else if (entity instanceof JuvenileTTMaleEntity) {
 			if (!entity.level.isClientSide())
 				entity.discard();
@@ -123,6 +128,8 @@ public class TurqGrowUpProcedureTTProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 		} else if (entity instanceof JuvenileTTFemaleEntity) {
 			if (!entity.level.isClientSide())
 				entity.discard();
@@ -155,6 +162,8 @@ public class TurqGrowUpProcedureTTProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 		} else if (entity instanceof AdolescentTTMaleEntity) {
 			if (!entity.level.isClientSide())
 				entity.discard();
@@ -187,6 +196,8 @@ public class TurqGrowUpProcedureTTProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 		} else if (entity instanceof AdolescentTTFemaleEntity) {
 			if (!entity.level.isClientSide())
 				entity.discard();
@@ -219,6 +230,8 @@ public class TurqGrowUpProcedureTTProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);
+			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 		}
 	}
 }

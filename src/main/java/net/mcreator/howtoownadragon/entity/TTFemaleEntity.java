@@ -63,7 +63,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.mcreator.howtoownadragon.procedures.WildNightAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildDayAIProcedure;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.TTDiesProcedure;
+import net.mcreator.howtoownadragon.procedures.GrownTTDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.FemaleOnInitialEntitySpawnTTProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
@@ -258,7 +258,7 @@ public class TTFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TTDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		GrownTTDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

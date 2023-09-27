@@ -67,8 +67,8 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.Direction;
 
 import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleGronckleGUIMenu;
+import net.mcreator.howtoownadragon.procedures.NotGrownGronckleDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.GronkleColorTickRateProcedure;
-import net.mcreator.howtoownadragon.procedures.GronckleDiesNotGrownProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -171,7 +171,7 @@ public class BabyGronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		GronckleDiesNotGrownProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		NotGrownGronckleDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

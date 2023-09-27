@@ -1857,38 +1857,6 @@
       "path": "~/Items/DragonProof"
     },
     {
-      "name": "GronckleDies",
-      "type": "procedure",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
       "name": "TheReaperPlayerLeavesDimension",
       "type": "procedure",
       "sortid": 128,
@@ -2080,38 +2048,6 @@
         ]
       },
       "path": "~/Procedure"
-    },
-    {
-      "name": "GronckleDiesNotGrown",
-      "type": "procedure",
-      "sortid": 147,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_dies_not_grown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleDiesNotGrownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
     },
     {
       "name": "GronckleSpawningEggRightclickedEntity",
@@ -3179,7 +3115,7 @@
       "type": "animatedentity",
       "sortid": 645,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "gronckle_male",
       "metadata": {
         "files": [
@@ -3196,7 +3132,7 @@
       "type": "animatedentity",
       "sortid": 646,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "gronckle_female",
       "metadata": {
         "files": [
@@ -3469,6 +3405,10 @@
           "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleSpawnProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -9157,7 +9097,7 @@
       "type": "animatedentity",
       "sortid": 863,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_male",
       "metadata": {
         "files": [
@@ -9204,7 +9144,7 @@
       "type": "animatedentity",
       "sortid": 867,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_female",
       "metadata": {
         "files": [
@@ -9323,6 +9263,10 @@
           "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnProcedureTTProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -9559,7 +9503,7 @@
       "type": "animatedentity",
       "sortid": 882,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_test",
       "metadata": {
         "files": [
@@ -9591,7 +9535,7 @@
       "type": "animatedentity",
       "sortid": 884,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "juvenile_tt_female",
       "metadata": {
         "files": [
@@ -9607,7 +9551,7 @@
       "type": "animatedentity",
       "sortid": 885,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "adolescent_tt_female",
       "metadata": {
         "files": [
@@ -9623,7 +9567,7 @@
       "type": "animatedentity",
       "sortid": 886,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "baby_tt_male",
       "metadata": {
         "files": [
@@ -9639,7 +9583,7 @@
       "type": "animatedentity",
       "sortid": 887,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "juvenile_tt_male",
       "metadata": {
         "files": [
@@ -9655,7 +9599,7 @@
       "type": "animatedentity",
       "sortid": 888,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "adolescent_tt_male",
       "metadata": {
         "files": [
@@ -9829,70 +9773,6 @@
         ]
       },
       "path": "~/Dragons/Terrible Terror/GUI"
-    },
-    {
-      "name": "TTDies",
-      "type": "procedure",
-      "sortid": 895,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tt_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TTDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Terrible Terror"
-    },
-    {
-      "name": "TTDiesNotGrown",
-      "type": "procedure",
-      "sortid": 896,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tt_dies_not_grown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TTDiesNotGrownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Terrible Terror"
     },
     {
       "name": "TTScale",
@@ -13369,6 +13249,214 @@
         ]
       },
       "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "GrownGronckleDies",
+      "type": "loottable",
+      "sortid": 1002,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_gronckle_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_gronckle_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "GrownGronckleDiesProcedure",
+      "type": "procedure",
+      "sortid": 1003,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_gronckle_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrownGronckleDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "GrownTTDies",
+      "type": "loottable",
+      "sortid": 1004,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_tt_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_tt_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "GrownTTDiesProcedure",
+      "type": "procedure",
+      "sortid": 1005,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_tt_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrownTTDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "NotGrownTTDies",
+      "type": "loottable",
+      "sortid": 1006,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_tt_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_tt_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "NotGrownTTDiesProcedure",
+      "type": "procedure",
+      "sortid": 1007,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_tt_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NotGrownTTDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "NotGrownGronckleDies",
+      "type": "loottable",
+      "sortid": 1008,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_gronckle_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_gronckle_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "NotGrownGronckleDiesProcedure",
+      "type": "procedure",
+      "sortid": 1009,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_gronckle_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NotGrownGronckleDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "TTColorLoadWorld",
+      "type": "procedure",
+      "sortid": 1010,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_color_load_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTColorLoadWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/TickUpdate"
     }
   ],
   "variable_elements": [
@@ -13398,8 +13486,8 @@
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
-      "advancements.hidden_world_root.descr": "What is this place?",
       "block.how_to_own_a_dragon.limestone": "Limestone",
+      "advancements.hidden_world_root.descr": "What is this place?",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_time_left": "Time total:",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
@@ -13410,8 +13498,8 @@
       "death.attack.gronckleattack": "",
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
-      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
+      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
@@ -13430,8 +13518,8 @@
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
       "entity.how_to_own_a_dragon.tt_female": "Female Terrible Terror",
-      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
+      "block.how_to_own_a_dragon.reaper_spike_trap": "Reaper Spike Trap",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
@@ -13787,6 +13875,10 @@
               {
                 "name": "Feeding",
                 "children": []
+              },
+              {
+                "name": "Dies",
+                "children": []
               }
             ]
           },
@@ -13918,6 +14010,14 @@
               },
               {
                 "name": "Feeding",
+                "children": []
+              },
+              {
+                "name": "Dies",
+                "children": []
+              },
+              {
+                "name": "TickUpdate",
                 "children": []
               }
             ]

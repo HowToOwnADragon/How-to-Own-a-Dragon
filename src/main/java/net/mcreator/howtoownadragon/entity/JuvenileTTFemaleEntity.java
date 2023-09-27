@@ -49,7 +49,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.howtoownadragon.procedures.TTDiesNotGrownProcedure;
+import net.mcreator.howtoownadragon.procedures.NotGrownTTDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.ColorTickRateTTProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
@@ -136,7 +136,7 @@ public class JuvenileTTFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TTDiesNotGrownProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		NotGrownTTDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

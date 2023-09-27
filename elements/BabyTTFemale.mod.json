@@ -100,7 +100,7 @@
       "value": ""
     },
     "whenMobDies": {
-      "name": "TTDiesNotGrown"
+      "name": "NotGrownTTDiesProcedure"
     },
     "onInitialSpawn": {
       "name": "ColorTickRateTT"

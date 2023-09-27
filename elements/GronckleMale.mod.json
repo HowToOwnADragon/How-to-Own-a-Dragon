@@ -99,9 +99,6 @@
     "stepSound": {
       "value": ""
     },
-    "whenMobDies": {
-      "name": "GronckleDies"
-    },
     "onMobTickUpdate": {
       "name": "GronckleFlyingTickUpdate"
     },

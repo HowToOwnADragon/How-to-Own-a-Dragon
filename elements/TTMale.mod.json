@@ -100,7 +100,7 @@
       "value": ""
     },
     "whenMobDies": {
-      "name": "TTDies"
+      "name": "GrownTTDiesProcedure"
     },
     "onInitialSpawn": {
       "name": "MaleOnInitialEntitySpawnTT"

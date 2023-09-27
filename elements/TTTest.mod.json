@@ -99,6 +99,9 @@
     "stepSound": {
       "value": ""
     },
+    "whenMobDies": {
+      "name": "GrownTTDiesProcedure"
+    },
     "onInitialSpawn": {
       "name": "MaleOnInitialEntitySpawnTT"
     },
