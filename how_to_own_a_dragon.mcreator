@@ -13457,6 +13457,114 @@
         ]
       },
       "path": "~/Dragons/Terrible Terror/TickUpdate"
+    },
+    {
+      "name": "MaleGronckle",
+      "type": "tag",
+      "sortid": 1011,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_gronckle.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Tag"
+    },
+    {
+      "name": "OpenNotGrownMaleGronckleGUI",
+      "type": "procedure",
+      "sortid": 1012,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_not_grown_male_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownMaleGronckleGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GUI"
+    },
+    {
+      "name": "OpenNotGrownFemaleGronckleGUI",
+      "type": "procedure",
+      "sortid": 1013,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_not_grown_female_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownFemaleGronckleGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GUI"
+    },
+    {
+      "name": "FemaleGronckle",
+      "type": "tag",
+      "sortid": 1014,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_gronckle.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Tag"
     }
   ],
   "variable_elements": [

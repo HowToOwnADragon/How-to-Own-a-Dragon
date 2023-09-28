@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "MaleTTGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "deathTime": 20,

@@ -8,23 +8,20 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:GronckleFemale"
+        "value": "CUSTOM:AdolescentGronckleMale"
+      },
+      {
+        "value": "CUSTOM:BabyGronckleMale"
       },
       {
         "value": "CUSTOM:GronckleMale"
       },
       {
-        "value": "CUSTOM:NightFury"
-      },
-      {
-        "value": "CUSTOM:TTMale"
-      },
-      {
-        "value": "CUSTOM:TTFemale"
+        "value": "CUSTOM:JuvenileGronckleMale"
       }
     ],
     "biomes": [],
-    "name": "grown_dragon",
+    "name": "male_gronckle",
     "namespace": "mod"
   }
 }
