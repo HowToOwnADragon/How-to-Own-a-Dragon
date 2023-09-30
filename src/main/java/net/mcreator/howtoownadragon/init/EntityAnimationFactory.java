@@ -10,6 +10,7 @@ import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
+import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
@@ -164,6 +165,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof TTEggEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NadderMaleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
