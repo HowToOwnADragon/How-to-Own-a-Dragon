@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.howtoownadragon.client.renderer.TestNadderRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TestGronckleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTTestRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTMaleRenderer;
@@ -60,5 +61,6 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_TT_MALE.get(), AdolescentTTMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.TT_EGG_ENTITY.get(), TTEggEntityRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.NADDER_MALE.get(), NadderMaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.TEST_NADDER.get(), TestNadderRenderer::new);
 	}
 }

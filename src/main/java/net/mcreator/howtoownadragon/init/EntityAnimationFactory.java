@@ -4,6 +4,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.mcreator.howtoownadragon.entity.TestNadderEntity;
 import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
 import net.mcreator.howtoownadragon.entity.TTTestEntity;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
@@ -172,6 +173,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof NadderMaleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TestNadderEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

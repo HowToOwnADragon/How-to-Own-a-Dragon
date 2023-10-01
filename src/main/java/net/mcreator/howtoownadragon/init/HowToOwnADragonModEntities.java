@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.howtoownadragon.entity.TestNadderEntity;
 import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
 import net.mcreator.howtoownadragon.entity.TTTestEntity;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
@@ -113,6 +114,8 @@ public class HowToOwnADragonModEntities {
 					.sized(0.3f, 0.4f));
 	public static final RegistryObject<EntityType<NadderMaleEntity>> NADDER_MALE = register("nadder_male", EntityType.Builder.<NadderMaleEntity>of(NadderMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(NadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TestNadderEntity>> TEST_NADDER = register("test_nadder", EntityType.Builder.<TestNadderEntity>of(TestNadderEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(TestNadderEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -143,6 +146,7 @@ public class HowToOwnADragonModEntities {
 			AdolescentTTMaleEntity.init();
 			TTEggEntityEntity.init();
 			NadderMaleEntity.init();
+			TestNadderEntity.init();
 		});
 	}
 
@@ -170,5 +174,6 @@ public class HowToOwnADragonModEntities {
 		event.put(ADOLESCENT_TT_MALE.get(), AdolescentTTMaleEntity.createAttributes().build());
 		event.put(TT_EGG_ENTITY.get(), TTEggEntityEntity.createAttributes().build());
 		event.put(NADDER_MALE.get(), NadderMaleEntity.createAttributes().build());
+		event.put(TEST_NADDER.get(), TestNadderEntity.createAttributes().build());
 	}
 }

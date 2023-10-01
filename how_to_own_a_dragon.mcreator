@@ -13582,6 +13582,22 @@
         ]
       },
       "path": "~/Dragons/Deadly Nadder/Entity"
+    },
+    {
+      "name": "TestNadder",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/TestNadderEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestNadderModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestNadderRenderer.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_nadder_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Entity"
     }
   ],
   "variable_elements": [
@@ -13683,6 +13699,7 @@
       "key.how_to_own_a_dragon.use_ability": "Activate Ability(It\u0027s ALT+)",
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
       "item.how_to_own_a_dragon.gronckle_attack": "Gronckle Attack",
+      "item.how_to_own_a_dragon.test_nadder_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
       "advancements.hidden_world_root.title": "Hidden World",
       "block.how_to_own_a_dragon.reaper_portal": "Reaper Portal",
@@ -13704,6 +13721,7 @@
       "item.how_to_own_a_dragon.deep_iron_ingot": "Deep Iron Ingot",
       "item.how_to_own_a_dragon.night_fury_armor_chestplate": "Night Fury Scale Chestplate",
       "item.how_to_own_a_dragon.gronckle_iron_sword": "Gronckle Iron Sword",
+      "entity.how_to_own_a_dragon.test_nadder": "Male Deadly Nadder",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "item.how_to_own_a_dragon.night_fury_armor_helmet": "Night Fury Scale Helmet",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_incubator": "Incubator",
