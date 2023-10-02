@@ -7,7 +7,6 @@ package net.mcreator.howtoownadragon.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -86,7 +85,6 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> SPAWN_EGG_TT = REGISTRY.register("spawn_egg_tt", () -> new SpawnEggTTItem());
 	public static final RegistryObject<Item> TT_SCALE = REGISTRY.register("tt_scale", () -> new TTScaleItem());
 	public static final RegistryObject<Item> TT_EGG_ITEM = REGISTRY.register("tt_egg_item", () -> new TTEggItemItem());
-	public static final RegistryObject<Item> TEST_NADDER_SPAWN_EGG = REGISTRY.register("test_nadder_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.TEST_NADDER, -1, -1, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

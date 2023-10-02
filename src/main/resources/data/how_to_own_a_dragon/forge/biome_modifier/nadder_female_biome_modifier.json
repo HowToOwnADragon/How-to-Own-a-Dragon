@@ -11,7 +11,7 @@
     "snowy_taiga"
   ],
   "spawners": {
-    "type": "how_to_own_a_dragon:nadder_male",
+    "type": "how_to_own_a_dragon:nadder_female",
     "weight": 20,
     "minCount": 4,
     "maxCount": 4

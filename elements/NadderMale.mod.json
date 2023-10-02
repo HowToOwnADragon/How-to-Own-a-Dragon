@@ -143,7 +143,47 @@
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "birch_forest_hills"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "mutated_roofed_forest"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "mutated_extreme_hills_with_trees"
+      },
+      {
+        "value": "smaller_extreme_hills"
+      },
+      {
+        "value": "snowy_mountains"
+      },
+      {
+        "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "mutated_taiga"
+      },
+      {
+        "value": "mutated_birch_forest_hills"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

@@ -24,8 +24,11 @@ import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
@@ -34,10 +37,14 @@ import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -116,6 +123,21 @@ public class HowToOwnADragonModEntities {
 			.setUpdateInterval(3).setCustomClientFactory(NadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TestNadderEntity>> TEST_NADDER = register("test_nadder", EntityType.Builder.<TestNadderEntity>of(TestNadderEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(TestNadderEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<NadderFemaleEntity>> NADDER_FEMALE = register("nadder_female", EntityType.Builder.<NadderFemaleEntity>of(NadderFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabyNadderFemaleEntity>> BABY_NADDER_FEMALE = register("baby_nadder_female", EntityType.Builder.<BabyNadderFemaleEntity>of(BabyNadderFemaleEntity::new, MobCategory.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabyNadderMaleEntity>> BABY_NADDER_MALE = register("baby_nadder_male", EntityType.Builder.<BabyNadderMaleEntity>of(BabyNadderMaleEntity::new, MobCategory.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JuvenileNadderMaleEntity>> JUVENILE_NADDER_MALE = register("juvenile_nadder_male", EntityType.Builder.<JuvenileNadderMaleEntity>of(JuvenileNadderMaleEntity::new, MobCategory.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JuvenileNadderFemaleEntity>> JUVENILE_NADDER_FEMALE = register("juvenile_nadder_female", EntityType.Builder.<JuvenileNadderFemaleEntity>of(JuvenileNadderFemaleEntity::new, MobCategory.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolescentNadderFemaleEntity>> ADOLESCENT_NADDER_FEMALE = register("adolescent_nadder_female",
+			EntityType.Builder.<AdolescentNadderFemaleEntity>of(AdolescentNadderFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(AdolescentNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolescentNadderMaleEntity>> ADOLESCENT_NADDER_MALE = register("adolescent_nadder_male", EntityType.Builder.<AdolescentNadderMaleEntity>of(AdolescentNadderMaleEntity::new, MobCategory.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -147,6 +169,13 @@ public class HowToOwnADragonModEntities {
 			TTEggEntityEntity.init();
 			NadderMaleEntity.init();
 			TestNadderEntity.init();
+			NadderFemaleEntity.init();
+			BabyNadderFemaleEntity.init();
+			BabyNadderMaleEntity.init();
+			JuvenileNadderMaleEntity.init();
+			JuvenileNadderFemaleEntity.init();
+			AdolescentNadderFemaleEntity.init();
+			AdolescentNadderMaleEntity.init();
 		});
 	}
 
@@ -175,5 +204,12 @@ public class HowToOwnADragonModEntities {
 		event.put(TT_EGG_ENTITY.get(), TTEggEntityEntity.createAttributes().build());
 		event.put(NADDER_MALE.get(), NadderMaleEntity.createAttributes().build());
 		event.put(TEST_NADDER.get(), TestNadderEntity.createAttributes().build());
+		event.put(NADDER_FEMALE.get(), NadderFemaleEntity.createAttributes().build());
+		event.put(BABY_NADDER_FEMALE.get(), BabyNadderFemaleEntity.createAttributes().build());
+		event.put(BABY_NADDER_MALE.get(), BabyNadderMaleEntity.createAttributes().build());
+		event.put(JUVENILE_NADDER_MALE.get(), JuvenileNadderMaleEntity.createAttributes().build());
+		event.put(JUVENILE_NADDER_FEMALE.get(), JuvenileNadderFemaleEntity.createAttributes().build());
+		event.put(ADOLESCENT_NADDER_FEMALE.get(), AdolescentNadderFemaleEntity.createAttributes().build());
+		event.put(ADOLESCENT_NADDER_MALE.get(), AdolescentNadderMaleEntity.createAttributes().build());
 	}
 }
