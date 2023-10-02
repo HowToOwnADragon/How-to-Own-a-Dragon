@@ -13586,6 +13586,7 @@
     {
       "name": "TestNadder",
       "type": "animatedentity",
+      "sortid": 1016,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test_nadder",
@@ -13594,6 +13595,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/TestNadderEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/TestNadderModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestNadderRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/test_nadder_spawn_egg.json",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_nadder_biome_modifier.json"
         ]
       },
@@ -13627,8 +13629,8 @@
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
-      "advancements.hidden_world_root.descr": "What is this place?",
       "block.how_to_own_a_dragon.limestone": "Limestone",
+      "advancements.hidden_world_root.descr": "What is this place?",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_time_left": "Time total:",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
@@ -13639,8 +13641,8 @@
       "death.attack.gronckleattack": "",
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
-      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
+      "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",

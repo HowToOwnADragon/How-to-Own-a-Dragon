@@ -20,6 +20,7 @@ public class HowToOwnADragonModTabs {
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(HowToOwnADragonModItems.TEST_NADDER_SPAWN_EGG.get());
 		}
 
 		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
