@@ -1,9 +1,9 @@
 # How to Own a Dragon
-### A Minecraft 1.19.4 Mod!!!
+### A Minecraft Mod!!!
 
-# Our mod requires Geckolib forge 1.19.4-4.2 to work
+# Our mod requires Geckolib to work
 * [How to Own a Dragon](https://www.curseforge.com/minecraft/mc-mods/how-to-own-a-dragon)
-* [Geckolib](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/4568326)
+* [Geckolib](https://www.curseforge.com/minecraft/mc-mods/geckolib)
 <br>
 
 ### This Mod will add Dragons from How to Train Your Dragon to your World. You can tame, ride and breed them to explore the World of Dragons which includes new biomes, items and even a new dimension called The Hidden World. 
@@ -22,9 +22,6 @@
  
 
 # Forge:
-* This mod is made with Minecraft Version 1.19.4.
-<br>
-
 * Using this mod in any other version than the above specified version isn't intended, and some features likely won't work properly. Do this at your own risk.
  
 # [Discord](https://discord.gg/K5DRjkffyv)
