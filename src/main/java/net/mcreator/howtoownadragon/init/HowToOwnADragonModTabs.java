@@ -48,6 +48,8 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.SADDLE_RACK.get());
 					tabData.accept(HowToOwnADragonModBlocks.PLAINS_GRASS_BLOCK.get().asItem());
 					tabData.accept(HowToOwnADragonModBlocks.INCUBATOR_1.get().asItem());
+					tabData.accept(HowToOwnADragonModItems.NADDER_SPINE.get());
+					tabData.accept(HowToOwnADragonModItems.NADDER_ARROW.get());
 				})
 
 		);
@@ -58,6 +60,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.SPAWN_EGG_TT.get());
 					tabData.accept(HowToOwnADragonModItems.TT_SCALE.get());
 					tabData.accept(HowToOwnADragonModItems.SPAWN_EGG_NADDER.get());
+					tabData.accept(HowToOwnADragonModItems.NADDER_SCALE.get());
 				})
 
 		);

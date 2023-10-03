@@ -9,6 +9,12 @@
       },
       {
         "value": "CUSTOM:GronckleScale"
+      },
+      {
+        "value": "CUSTOM:TTScale"
+      },
+      {
+        "value": "CUSTOM:NadderScale"
       }
     ],
     "blocks": [],

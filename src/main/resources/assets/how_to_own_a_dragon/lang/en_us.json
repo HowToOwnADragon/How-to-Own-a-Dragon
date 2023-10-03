@@ -1,13 +1,14 @@
 {
   "item.how_to_own_a_dragon.tt_egg_item": "Terrible Terror Egg",
   "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
-  "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
   "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
+  "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
   "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
-  "block.how_to_own_a_dragon.limestone": "Limestone",
   "advancements.hidden_world_root.descr": "What is this place?",
+  "block.how_to_own_a_dragon.limestone": "Limestone",
   "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
   "item.how_to_own_a_dragon.baby_nadder_male_spawn_egg": "Baby Male Deadly Nadder Spawn Egg",
+  "item.how_to_own_a_dragon.nadder_arrow": "Deadly Nadder Arrow",
   "gui.how_to_own_a_dragon.incubator_1_gui.label_time_left": "Time total:",
   "entity.how_to_own_a_dragon.night_fury": "Night Fury",
   "item.how_to_own_a_dragon.juvenile_nadder_female_spawn_egg": "Juvenile Female Deadly Nadder Spawn Egg",
@@ -134,6 +135,7 @@
   "item.how_to_own_a_dragon.tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
   "effect.how_to_own_a_dragon.gronckle_iron_cooldown": "GronckleIronCooldown",
   "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_male_gronckle": "Female Gronckle",
+  "item.how_to_own_a_dragon.nadder_scale": "Deadly Nadder Scale",
   "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
   "item.how_to_own_a_dragon.adolescent_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
   "item.how_to_own_a_dragon.gronckle_saddle": "Gronckle Saddle",
@@ -152,6 +154,7 @@
   "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
   "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
   "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
+  "item.how_to_own_a_dragon.nadder_spine": "Deadly Nadder Spine",
   "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
   "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
 }

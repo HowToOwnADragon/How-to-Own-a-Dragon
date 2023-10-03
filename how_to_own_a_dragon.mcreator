@@ -2498,7 +2498,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Attack"
+      "path": "~/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleAttack",
@@ -2515,7 +2515,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleAttackRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Attack"
+      "path": "~/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleAttackProjectileHitsLivingEntity",
@@ -2551,7 +2551,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Attack"
+      "path": "~/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleExplodeAtBlock",
@@ -2583,7 +2583,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Attack"
+      "path": "~/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleSaddle",
@@ -2633,7 +2633,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Attack"
+      "path": "~/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleSaddleRecipe",
@@ -14013,6 +14013,360 @@
         ]
       },
       "path": "~/Dragons/Deadly Nadder/Entity"
+    },
+    {
+      "name": "SpawnTT",
+      "type": "procedure",
+      "sortid": 1038,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "SpawnGronckle",
+      "type": "procedure",
+      "sortid": 1039,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/SpawnEgg"
+    },
+    {
+      "name": "SpawnNadder",
+      "type": "procedure",
+      "sortid": 1040,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/SpawnEgg"
+    },
+    {
+      "name": "NadderScale",
+      "type": "item",
+      "sortid": 1041,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_scale",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_scale.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/NadderScaleItem.java"
+        ]
+      },
+      "path": "~/Items/Scales"
+    },
+    {
+      "name": "GrownNadderDies",
+      "type": "loottable",
+      "sortid": 1042,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_nadder_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/grown_nadder_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Dies"
+    },
+    {
+      "name": "GrownNadderDiesProcedure",
+      "type": "procedure",
+      "sortid": 1043,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_nadder_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrownNadderDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Dies"
+    },
+    {
+      "name": "NotGrownNadderDies",
+      "type": "loottable",
+      "sortid": 1044,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_nadder_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_nadder_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Dies"
+    },
+    {
+      "name": "NotGrownNadderDiesProcedure",
+      "type": "procedure",
+      "sortid": 1045,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_nadder_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NotGrownNadderDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Dies"
+    },
+    {
+      "name": "NadderSpine",
+      "type": "item",
+      "sortid": 1046,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_spine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/NadderSpineItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_spine.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Items"
+    },
+    {
+      "name": "NadderArrow",
+      "type": "item",
+      "sortid": 1050,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/NadderArrowItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_arrow.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Items"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 1051,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "WallBlocks",
+      "type": "tag",
+      "sortid": 1052,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/walls.json"
+        ]
+      }
+    },
+    {
+      "name": "ArrowItems",
+      "type": "tag",
+      "sortid": 1053,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/arrows.json"
+        ]
+      }
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 1056,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/logs.json"
+        ]
+      }
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 1057,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_block_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/beacon_base_blocks.json"
+        ]
+      }
+    },
+    {
+      "name": "ClimbableBlocks",
+      "type": "tag",
+      "sortid": 1058,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "climbable_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/climbable.json"
+        ]
+      }
+    },
+    {
+      "name": "AnimalsSpawnableOnBlocks",
+      "type": "tag",
+      "sortid": 1059,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animals_spawnable_on_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/animals_spawnable_on.json"
+        ]
+      }
+    },
+    {
+      "name": "TickFunctions",
+      "type": "tag",
+      "sortid": 1060,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tick_functions",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/functions/tick.json"
+        ]
+      }
+    },
+    {
+      "name": "LoadFunctions",
+      "type": "tag",
+      "sortid": 1061,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "load_functions",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/functions/load.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -14040,13 +14394,14 @@
     "en_us": {
       "item.how_to_own_a_dragon.tt_egg_item": "Terrible Terror Egg",
       "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
-      "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
+      "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
-      "block.how_to_own_a_dragon.limestone": "Limestone",
       "advancements.hidden_world_root.descr": "What is this place?",
+      "block.how_to_own_a_dragon.limestone": "Limestone",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.baby_nadder_male_spawn_egg": "Baby Male Deadly Nadder Spawn Egg",
+      "item.how_to_own_a_dragon.nadder_arrow": "Deadly Nadder Arrow",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_time_left": "Time total:",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "item.how_to_own_a_dragon.juvenile_nadder_female_spawn_egg": "Juvenile Female Deadly Nadder Spawn Egg",
@@ -14173,6 +14528,7 @@
       "item.how_to_own_a_dragon.tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "effect.how_to_own_a_dragon.gronckle_iron_cooldown": "GronckleIronCooldown",
       "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_male_gronckle": "Female Gronckle",
+      "item.how_to_own_a_dragon.nadder_scale": "Deadly Nadder Scale",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.adolescent_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_saddle": "Gronckle Saddle",
@@ -14191,6 +14547,7 @@
       "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
       "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
       "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
+      "item.how_to_own_a_dragon.nadder_spine": "Deadly Nadder Spine",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
     }
@@ -14395,7 +14752,7 @@
                 "name": "Ability",
                 "children": [
                   {
-                    "name": "Attack",
+                    "name": "Ball",
                     "children": []
                   },
                   {
@@ -14602,7 +14959,20 @@
             "children": [
               {
                 "name": "Ability",
-                "children": []
+                "children": [
+                  {
+                    "name": "Beam",
+                    "children": []
+                  },
+                  {
+                    "name": "Spikes",
+                    "children": []
+                  },
+                  {
+                    "name": "Bite",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Breeding",
@@ -14646,6 +15016,10 @@
               },
               {
                 "name": "TickUpdate",
+                "children": []
+              },
+              {
+                "name": "Items",
                 "children": []
               }
             ]
