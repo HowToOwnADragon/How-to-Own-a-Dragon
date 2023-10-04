@@ -50,6 +50,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModBlocks.INCUBATOR_1.get().asItem());
 					tabData.accept(HowToOwnADragonModItems.NADDER_SPINE.get());
 					tabData.accept(HowToOwnADragonModItems.NADDER_ARROW.get());
+					tabData.accept(HowToOwnADragonModItems.NADDER_SADDLE.get());
 				})
 
 		);

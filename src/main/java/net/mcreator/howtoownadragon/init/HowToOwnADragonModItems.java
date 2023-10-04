@@ -23,6 +23,7 @@ import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
 import net.mcreator.howtoownadragon.item.NadderSpineItem;
 import net.mcreator.howtoownadragon.item.NadderScaleItem;
+import net.mcreator.howtoownadragon.item.NadderSaddleItem;
 import net.mcreator.howtoownadragon.item.NadderArrowItem;
 import net.mcreator.howtoownadragon.item.LensDragonInfoItem;
 import net.mcreator.howtoownadragon.item.GronckleSpawnEggItem;
@@ -93,6 +94,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> NADDER_SCALE = REGISTRY.register("nadder_scale", () -> new NadderScaleItem());
 	public static final RegistryObject<Item> NADDER_SPINE = REGISTRY.register("nadder_spine", () -> new NadderSpineItem());
 	public static final RegistryObject<Item> NADDER_ARROW = REGISTRY.register("nadder_arrow", () -> new NadderArrowItem());
+	public static final RegistryObject<Item> NADDER_SADDLE = REGISTRY.register("nadder_saddle", () -> new NadderSaddleItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
