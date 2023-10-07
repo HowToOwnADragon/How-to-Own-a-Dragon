@@ -10357,7 +10357,7 @@
       "type": "animatedentity",
       "sortid": 916,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_egg_entity",
       "metadata": {
         "files": [
@@ -14866,6 +14866,1122 @@
         ]
       },
       "path": "~/Dragons/Deadly Nadder/GUI"
+    },
+    {
+      "name": "NBTDataGrowUpNadderFemale",
+      "type": "procedure",
+      "sortid": 1081,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbt_data_grow_up_nadder_female",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NBTDataGrowUpNadderFemaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing"
+    },
+    {
+      "name": "NBTDataGrowUpNadderMale",
+      "type": "procedure",
+      "sortid": 1082,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbt_data_grow_up_nadder_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NBTDataGrowUpNadderMaleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing"
+    },
+    {
+      "name": "StormflyGrowUpProcedureNadder",
+      "type": "procedure",
+      "sortid": 1083,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_grow_up_procedure_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyGrowUpProcedureNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "GrowingTickRateNadder",
+      "type": "procedure",
+      "sortid": 1084,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_rate_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickRateNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/GrowMessage"
+    },
+    {
+      "name": "RedGrowUpProcedureNadder",
+      "type": "procedure",
+      "sortid": 1088,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_grow_up_procedure_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedGrowUpProcedureNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "PurpleGrowUpProcedureNadder",
+      "type": "procedure",
+      "sortid": 1089,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_grow_up_procedure_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleGrowUpProcedureNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "ColorTickRateNadder",
+      "type": "procedure",
+      "sortid": 1090,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "color_tick_rate_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ColorTickRateNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/GrowMessage"
+    },
+    {
+      "name": "GrowingUpMessageNadder",
+      "type": "procedure",
+      "sortid": 1091,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_up_message_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingUpMessageNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/GrowMessage"
+    },
+    {
+      "name": "StormflyItemNeededForGrowUpNadder",
+      "type": "procedure",
+      "sortid": 1092,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_item_needed_for_grow_up_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyItemNeededForGrowUpNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Item"
+    },
+    {
+      "name": "RedItemNeededForGrowUpNadder",
+      "type": "procedure",
+      "sortid": 1093,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_item_needed_for_grow_up_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedItemNeededForGrowUpNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Item"
+    },
+    {
+      "name": "PurpleItemNeededForGrowUpNadder",
+      "type": "procedure",
+      "sortid": 1094,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_item_needed_for_grow_up_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleItemNeededForGrowUpNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Item"
+    },
+    {
+      "name": "StormflyBabyGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1095,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_baby_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyBabyGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Male"
+    },
+    {
+      "name": "StormflyBabyGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1098,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_baby_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyBabyGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Female"
+    },
+    {
+      "name": "RedBabyGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1099,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_baby_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedBabyGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Male"
+    },
+    {
+      "name": "PurpleBabyGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_baby_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleBabyGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Male"
+    },
+    {
+      "name": "StormflyJuviGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_juvi_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyJuviGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Female"
+    },
+    {
+      "name": "StormflyAdoGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_ado_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyAdoGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
+    },
+    {
+      "name": "RedBabyGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_baby_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedBabyGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Female"
+    },
+    {
+      "name": "PurpleBabyGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_baby_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleBabyGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Female"
+    },
+    {
+      "name": "StormflyJuviGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_juvi_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyJuviGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Male"
+    },
+    {
+      "name": "RedJuviGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_juvi_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedJuviGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Male"
+    },
+    {
+      "name": "PurpleJuviGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_juvi_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleJuviGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Male"
+    },
+    {
+      "name": "RedJuviGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_juvi_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedJuviGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Female"
+    },
+    {
+      "name": "PurpleJuviGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_juvi_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleJuviGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Female"
+    },
+    {
+      "name": "StormflyAdoGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_ado_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyAdoGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Male"
+    },
+    {
+      "name": "RedAdoGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_ado_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedAdoGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Male"
+    },
+    {
+      "name": "PurpleAdoGrowUpMaleNadder",
+      "type": "procedure",
+      "sortid": 1112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_ado_grow_up_male_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleAdoGrowUpMaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Male"
+    },
+    {
+      "name": "RedAdoGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_ado_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedAdoGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
+    },
+    {
+      "name": "PurpleAdoGrowUpFemaleNadder",
+      "type": "procedure",
+      "sortid": 1114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_ado_grow_up_female_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleAdoGrowUpFemaleNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
     }
   ],
   "variable_elements": [
@@ -15504,7 +16620,59 @@
               },
               {
                 "name": "Growing",
-                "children": []
+                "children": [
+                  {
+                    "name": "Baby",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Juvenile",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Adolescent",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Item",
+                    "children": []
+                  },
+                  {
+                    "name": "GrowMessage",
+                    "children": []
+                  },
+                  {
+                    "name": "GrowUpProcedure",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Saddle",
@@ -15520,10 +16688,6 @@
                 ]
               },
               {
-                "name": "SpawnEgg",
-                "children": []
-              },
-              {
                 "name": "Tag",
                 "children": []
               },
@@ -15537,6 +16701,10 @@
               },
               {
                 "name": "Items",
+                "children": []
+              },
+              {
+                "name": "SpawnEgg",
                 "children": []
               }
             ]
