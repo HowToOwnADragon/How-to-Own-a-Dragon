@@ -18,6 +18,7 @@ import net.mcreator.howtoownadragon.client.renderer.TTEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NadderMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NadderFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.NadderEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileTTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileTTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.JuvenileNadderMaleRenderer;
@@ -76,5 +77,6 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.JUVENILE_NADDER_FEMALE.get(), JuvenileNadderFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_NADDER_FEMALE.get(), AdolescentNadderFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_NADDER_MALE.get(), AdolescentNadderMaleRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.NADDER_EGG_ENTITY.get(), NadderEggEntityRenderer::new);
 	}
 }

@@ -15982,6 +15982,65 @@
         ]
       },
       "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
+    },
+    {
+      "name": "NadderEggItem",
+      "type": "item",
+      "sortid": 1115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_egg_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/NadderEggItemItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_egg_item.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Breeding/Egg"
+    },
+    {
+      "name": "NadderEggEntity",
+      "type": "animatedentity",
+      "sortid": 1116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_egg_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/NadderEggEntityModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NadderEggEntityRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/NadderEggEntityEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Breeding/Egg"
+    },
+    {
+      "name": "NadderEggEntityIsHurt",
+      "type": "procedure",
+      "sortid": 1117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_egg_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NadderEggEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Breeding/Egg"
     }
   ],
   "variable_elements": [
@@ -16045,6 +16104,7 @@
       "entity.how_to_own_a_dragon.nadder_female": "Female Deadly Nadder",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.label_gronckle_iron": "Gronckle iron",
+      "item.how_to_own_a_dragon.nadder_egg_item": "Deadly Nadder Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
@@ -16076,8 +16136,10 @@
       "item.how_to_own_a_dragon.gronckle_male_spawn_egg": "Male Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
+      "entity.how_to_own_a_dragon.nadder_egg_entity": "Deadly Nadder Egg",
       "entity.how_to_own_a_dragon.juvenile_nadder_female": "Juvenile Female Deadly Nadder",
       "entity.how_to_own_a_dragon.test_gronckle": "Test Gronckle",
+      "item.how_to_own_a_dragon.nadder_egg_entity_spawn_egg": "Deadly Nadder Egg Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.button_smelt": "Smelt",
@@ -16600,7 +16662,16 @@
               },
               {
                 "name": "Breeding",
-                "children": []
+                "children": [
+                  {
+                    "name": "Egg",
+                    "children": []
+                  },
+                  {
+                    "name": "Cross-Breeding",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Dies",

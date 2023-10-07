@@ -67,6 +67,16 @@ public class GronckleEntityIsHurtProcedure {
 				HowToOwnADragonMod.queueServerWork(1, () -> {
 					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("groncklecolor", "meatlug");
 				});
+			} else {
+				if (!entity.level.isClientSide())
+					entity.discard();
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get());
+					_setstack.setCount(1);
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			}
 		}
 	}

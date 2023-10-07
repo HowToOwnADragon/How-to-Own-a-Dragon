@@ -25,6 +25,7 @@ import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
+import net.mcreator.howtoownadragon.entity.NadderEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
@@ -138,6 +139,10 @@ public class HowToOwnADragonModEntities {
 					.setCustomClientFactory(AdolescentNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<AdolescentNadderMaleEntity>> ADOLESCENT_NADDER_MALE = register("adolescent_nadder_male", EntityType.Builder.<AdolescentNadderMaleEntity>of(AdolescentNadderMaleEntity::new, MobCategory.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<NadderEggEntityEntity>> NADDER_EGG_ENTITY = register("nadder_egg_entity",
+			EntityType.Builder.<NadderEggEntityEntity>of(NadderEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderEggEntityEntity::new)
+
+					.sized(0.3f, 0.4f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -176,6 +181,7 @@ public class HowToOwnADragonModEntities {
 			JuvenileNadderFemaleEntity.init();
 			AdolescentNadderFemaleEntity.init();
 			AdolescentNadderMaleEntity.init();
+			NadderEggEntityEntity.init();
 		});
 	}
 
@@ -211,5 +217,6 @@ public class HowToOwnADragonModEntities {
 		event.put(JUVENILE_NADDER_FEMALE.get(), JuvenileNadderFemaleEntity.createAttributes().build());
 		event.put(ADOLESCENT_NADDER_FEMALE.get(), AdolescentNadderFemaleEntity.createAttributes().build());
 		event.put(ADOLESCENT_NADDER_MALE.get(), AdolescentNadderMaleEntity.createAttributes().build());
+		event.put(NADDER_EGG_ENTITY.get(), NadderEggEntityEntity.createAttributes().build());
 	}
 }
