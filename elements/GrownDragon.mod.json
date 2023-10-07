@@ -21,6 +21,15 @@
       },
       {
         "value": "CUSTOM:TTFemale"
+      },
+      {
+        "value": "CUSTOM:NadderFemale"
+      },
+      {
+        "value": "CUSTOM:NadderMale"
+      },
+      {
+        "value": "CUSTOM:TestNadder"
       }
     ],
     "biomes": [],

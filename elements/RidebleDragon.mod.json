@@ -15,6 +15,15 @@
       },
       {
         "value": "CUSTOM:NightFury"
+      },
+      {
+        "value": "CUSTOM:NadderFemale"
+      },
+      {
+        "value": "CUSTOM:NadderMale"
+      },
+      {
+        "value": "CUSTOM:TestNadder"
       }
     ],
     "biomes": [],

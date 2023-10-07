@@ -42,6 +42,15 @@ public class Incubator1RequirementProcedure {
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Lava Bucket")) {
 			return "Lava Bucket";
+		} else if ((new Object() {
+			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getString(tag);
+				return "";
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Flint")) {
+			return "Flint";
 		}
 		return "No Egg";
 	}

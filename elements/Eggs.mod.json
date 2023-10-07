@@ -9,6 +9,9 @@
       },
       {
         "value": "CUSTOM:TTEggItem"
+      },
+      {
+        "value": "CUSTOM:NadderEggItem"
       }
     ],
     "blocks": [],
