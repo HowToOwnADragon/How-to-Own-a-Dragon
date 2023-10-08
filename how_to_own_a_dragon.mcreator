@@ -3115,7 +3115,7 @@
       "type": "animatedentity",
       "sortid": 645,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gronckle_male",
       "metadata": {
         "files": [
@@ -3132,7 +3132,7 @@
       "type": "animatedentity",
       "sortid": 646,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gronckle_female",
       "metadata": {
         "files": [
@@ -9097,7 +9097,7 @@
       "type": "animatedentity",
       "sortid": 863,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tt_male",
       "metadata": {
         "files": [
@@ -9144,7 +9144,7 @@
       "type": "animatedentity",
       "sortid": 867,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tt_female",
       "metadata": {
         "files": [
@@ -9519,7 +9519,7 @@
       "type": "animatedentity",
       "sortid": 883,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_tt_female",
       "metadata": {
         "files": [
@@ -9535,7 +9535,7 @@
       "type": "animatedentity",
       "sortid": 884,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "juvenile_tt_female",
       "metadata": {
         "files": [
@@ -9551,7 +9551,7 @@
       "type": "animatedentity",
       "sortid": 885,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "adolescent_tt_female",
       "metadata": {
         "files": [
@@ -9567,7 +9567,7 @@
       "type": "animatedentity",
       "sortid": 886,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_tt_male",
       "metadata": {
         "files": [
@@ -9583,7 +9583,7 @@
       "type": "animatedentity",
       "sortid": 887,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "juvenile_tt_male",
       "metadata": {
         "files": [
@@ -9599,7 +9599,7 @@
       "type": "animatedentity",
       "sortid": 888,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "adolescent_tt_male",
       "metadata": {
         "files": [
@@ -13571,7 +13571,7 @@
       "type": "animatedentity",
       "sortid": 1015,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "nadder_male",
       "metadata": {
         "files": [
@@ -13605,7 +13605,7 @@
       "type": "animatedentity",
       "sortid": 1017,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "nadder_female",
       "metadata": {
         "files": [
@@ -13622,7 +13622,7 @@
       "type": "animatedentity",
       "sortid": 1018,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_nadder_female",
       "metadata": {
         "files": [
@@ -13638,7 +13638,7 @@
       "type": "animatedentity",
       "sortid": 1019,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_nadder_male",
       "metadata": {
         "files": [
@@ -13654,7 +13654,7 @@
       "type": "animatedentity",
       "sortid": 1020,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "juvenile_nadder_male",
       "metadata": {
         "files": [
@@ -13670,7 +13670,7 @@
       "type": "animatedentity",
       "sortid": 1021,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "juvenile_nadder_female",
       "metadata": {
         "files": [
@@ -13686,7 +13686,7 @@
       "type": "animatedentity",
       "sortid": 1022,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "adolescent_nadder_female",
       "metadata": {
         "files": [
@@ -13702,7 +13702,7 @@
       "type": "animatedentity",
       "sortid": 1023,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "adolescent_nadder_male",
       "metadata": {
         "files": [
