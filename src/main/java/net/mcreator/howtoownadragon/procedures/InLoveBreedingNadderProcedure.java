@@ -22,7 +22,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class InLoveBreedingTTProcedure {
+public class InLoveBreedingNadderProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -38,10 +38,10 @@ public class InLoveBreedingTTProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) {
-			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:tt_full_grown")))) {
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BREAD) {
+			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:grown_nadder")))) {
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MUTTON) {
 					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.BREAD);
+						ItemStack _setstack = new ItemStack(Items.MUTTON);
 						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -49,7 +49,7 @@ public class InLoveBreedingTTProcedure {
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("ttinlove", true);
+					entity.getPersistentData().putBoolean("nadderinlove", true);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.COD);
@@ -60,7 +60,7 @@ public class InLoveBreedingTTProcedure {
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("ttinlove", true);
+					entity.getPersistentData().putBoolean("nadderinlove", true);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.SALMON);
@@ -71,7 +71,7 @@ public class InLoveBreedingTTProcedure {
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("ttinlove", true);
+					entity.getPersistentData().putBoolean("nadderinlove", true);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.COOKED_CHICKEN);
@@ -82,7 +82,7 @@ public class InLoveBreedingTTProcedure {
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("ttinlove", true);
+					entity.getPersistentData().putBoolean("nadderinlove", true);
 				}
 			}
 		}
