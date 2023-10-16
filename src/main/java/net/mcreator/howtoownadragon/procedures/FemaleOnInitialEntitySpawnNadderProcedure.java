@@ -20,7 +20,7 @@ public class FemaleOnInitialEntitySpawnNadderProcedure {
 				animatable.setTexture("purplenadder");
 			entity.getPersistentData().putString("naddercolor", "purple");
 		} else {
-			MaleOnInitialEntitySpawnNadderProcedure.execute(entity);
+			FemaleOnInitialEntitySpawnNadderProcedure.execute(entity);
 		}
 	}
 }

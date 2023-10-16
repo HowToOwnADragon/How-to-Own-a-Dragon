@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class NadderFemaleRenderer extends GeoEntityRenderer<NadderFemaleEntity> {
 	public NadderFemaleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new NadderFemaleModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 1.2f;
 	}
 
 	@Override

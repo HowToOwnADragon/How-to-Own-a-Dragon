@@ -305,6 +305,11 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 0.4;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -387,7 +392,7 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 					@Override
 					public Component getDisplayName() {
 						return Component.literal("Female Deadly Nadder");
-					}
+					}	
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
@@ -402,8 +407,8 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 					buf.writeByte(0);
 					buf.writeVarInt(this.getId());
 				});
-			}
-					return InteractionResult.sidedSuccess(this.level.isClientSide());
+			}	
+							return InteractionResult.sidedSuccess(this.level.isClientSide());
 		}
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
@@ -455,8 +460,8 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 	public EntityDimensions getDimensions(Pose p_33597_) {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
-
-	@Override
+	
+	@Override
 	public void travel(Vec3 dir) {
 		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 		if (this.isVehicle()) {
@@ -486,7 +491,7 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 		this.maxUpStep = 0.5F;
 		super.travel(dir);
 	}
-
+	
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
 		NadderFemaleEntity retval = HowToOwnADragonModEntities.NADDER_FEMALE.get().create(serverWorld);

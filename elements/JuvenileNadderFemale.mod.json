@@ -13,8 +13,8 @@
       "fixedValue": 1.0
     },
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelHeight": 1.2000000000000002,
+    "modelShadowSize": 0.6,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
@@ -98,6 +98,9 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "onMobTickUpdate": {
+      "name": "NadderFlyingTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",

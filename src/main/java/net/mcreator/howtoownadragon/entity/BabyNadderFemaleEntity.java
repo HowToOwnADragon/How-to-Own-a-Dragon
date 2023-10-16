@@ -51,6 +51,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.NadderFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import java.util.List;
@@ -95,7 +96,7 @@ public class BabyNadderFemaleEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	protected float getStandingEyeHeight(Pose poseIn, EntityDimensions sizeIn) {
-		return 1F;
+		return 0.6F;
 	}
 
 	@Override
@@ -197,6 +198,7 @@ public class BabyNadderFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		NadderFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

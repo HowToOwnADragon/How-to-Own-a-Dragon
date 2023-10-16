@@ -1,27 +1,42 @@
 
 package net.mcreator.howtoownadragon.item;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.item.ShearsItem;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.howtoownadragon.procedures.ValkasStaffLivingEntityIsHitWithToolProcedure;
 
-public class ValkasStaffItem extends ShearsItem {
+public class ValkasStaffItem extends SwordItem {
 	public ValkasStaffItem() {
-		super(new Item.Properties().durability(3000));
-	}
+		super(new Tier() {
+			public int getUses() {
+				return 3000;
+			}
 
-	@Override
-	public int getEnchantmentValue() {
-		return 2;
-	}
+			public float getSpeed() {
+				return 0f;
+			}
 
-	@Override
-	public float getDestroySpeed(ItemStack stack, BlockState blockstate) {
-		return 4f;
+			public float getAttackDamageBonus() {
+				return -2f;
+			}
+
+			public int getLevel() {
+				return 0;
+			}
+
+			public int getEnchantmentValue() {
+				return 0;
+			}
+
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of();
+			}
+		}, 3, -3f, new Item.Properties());
 	}
 
 	@Override

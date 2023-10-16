@@ -17465,6 +17465,774 @@
         ]
       },
       "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "RedMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Grown"
+    },
+    {
+      "name": "PurpleMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Grown"
+    },
+    {
+      "name": "StormflyMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Grown"
+    },
+    {
+      "name": "AdoRedMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ado_red_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdoRedMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Ado"
+    },
+    {
+      "name": "JuviRedMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvi_red_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuviRedMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Juvi"
+    },
+    {
+      "name": "BabyRedMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_red_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyRedMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Baby"
+    },
+    {
+      "name": "AdoPurpleMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ado_purple_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdoPurpleMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Ado"
+    },
+    {
+      "name": "AdoStormflyMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ado_stormfly_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdoStormflyMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Ado"
+    },
+    {
+      "name": "BabyStormflyMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_stormfly_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyStormflyMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Baby"
+    },
+    {
+      "name": "BabyPurpleMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_purple_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPurpleMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Baby"
+    },
+    {
+      "name": "JuviStormflyMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvi_stormfly_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuviStormflyMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Juvi"
+    },
+    {
+      "name": "JuviPurpleMaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvi_purple_male_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuviPurpleMaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Male/Juvi"
+    },
+    {
+      "name": "RedFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RedFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Grown"
+    },
+    {
+      "name": "PurpleFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Grown"
+    },
+    {
+      "name": "StormflyFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stormfly_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Grown"
+    },
+    {
+      "name": "AdoPurpleFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ado_purple_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdoPurpleFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Ado"
+    },
+    {
+      "name": "BabyPurpleFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_purple_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPurpleFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/ Baby"
+    },
+    {
+      "name": "JuviPurpleFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvi_purple_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuviPurpleFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Juvi"
+    },
+    {
+      "name": "BabyRedFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_red_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyRedFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/ Baby"
+    },
+    {
+      "name": "BabyStormflyFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_stormfly_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyStormflyFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/ Baby"
+    },
+    {
+      "name": "AdoRedFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ado_red_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdoRedFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Ado"
+    },
+    {
+      "name": "AdoStormflyFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ado_stormfly_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdoStormflyFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Ado"
+    },
+    {
+      "name": "JuviRedFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvi_red_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuviRedFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Juvi"
+    },
+    {
+      "name": "JuviStormflyFemaleSpawnDragonCommandNadder",
+      "type": "procedure",
+      "sortid": 1180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvi_stormfly_female_spawn_dragon_command_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuviStormflyFemaleSpawnDragonCommandNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Juvi"
     }
   ],
   "variable_elements": [
@@ -18424,6 +19192,53 @@
                       },
                       {
                         "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Deadly Nadder",
+                "children": [
+                  {
+                    "name": "Male",
+                    "children": [
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvi",
+                        "children": []
+                      },
+                      {
+                        "name": "Ado",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Female",
+                    "children": [
+                      {
+                        "name": " Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvi",
+                        "children": []
+                      },
+                      {
+                        "name": "Ado",
                         "children": []
                       },
                       {

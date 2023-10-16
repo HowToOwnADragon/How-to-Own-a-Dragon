@@ -53,6 +53,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.NadderFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import java.util.List;
@@ -209,6 +210,7 @@ public class AdolescentNadderFemaleEntity extends TamableAnimal implements GeoEn
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		NadderFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

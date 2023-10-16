@@ -121,24 +121,24 @@ public class HowToOwnADragonModEntities {
 
 					.sized(0.3f, 0.4f));
 	public static final RegistryObject<EntityType<NadderMaleEntity>> NADDER_MALE = register("nadder_male", EntityType.Builder.<NadderMaleEntity>of(NadderMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(NadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setUpdateInterval(3).setCustomClientFactory(NadderMaleEntity::new).fireImmune().sized(1.2f, 2.5f));
 	public static final RegistryObject<EntityType<TestNadderEntity>> TEST_NADDER = register("test_nadder", EntityType.Builder.<TestNadderEntity>of(TestNadderEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(TestNadderEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<NadderFemaleEntity>> NADDER_FEMALE = register("nadder_female", EntityType.Builder.<NadderFemaleEntity>of(NadderFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderFemaleEntity::new).fireImmune().sized(1.2f, 2.5f));
 	public static final RegistryObject<EntityType<BabyNadderFemaleEntity>> BABY_NADDER_FEMALE = register("baby_nadder_female", EntityType.Builder.<BabyNadderFemaleEntity>of(BabyNadderFemaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyNadderFemaleEntity::new).fireImmune().sized(0.4f, 0.6f));
 	public static final RegistryObject<EntityType<BabyNadderMaleEntity>> BABY_NADDER_MALE = register("baby_nadder_male", EntityType.Builder.<BabyNadderMaleEntity>of(BabyNadderMaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyNadderMaleEntity::new).fireImmune().sized(0.4f, 0.6f));
 	public static final RegistryObject<EntityType<JuvenileNadderMaleEntity>> JUVENILE_NADDER_MALE = register("juvenile_nadder_male", EntityType.Builder.<JuvenileNadderMaleEntity>of(JuvenileNadderMaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileNadderMaleEntity::new).fireImmune().sized(0.6f, 1.2f));
 	public static final RegistryObject<EntityType<JuvenileNadderFemaleEntity>> JUVENILE_NADDER_FEMALE = register("juvenile_nadder_female", EntityType.Builder.<JuvenileNadderFemaleEntity>of(JuvenileNadderFemaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.2f));
 	public static final RegistryObject<EntityType<AdolescentNadderFemaleEntity>> ADOLESCENT_NADDER_FEMALE = register("adolescent_nadder_female",
 			EntityType.Builder.<AdolescentNadderFemaleEntity>of(AdolescentNadderFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(AdolescentNadderFemaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+					.setCustomClientFactory(AdolescentNadderFemaleEntity::new).fireImmune().sized(0.9f, 2f));
 	public static final RegistryObject<EntityType<AdolescentNadderMaleEntity>> ADOLESCENT_NADDER_MALE = register("adolescent_nadder_male", EntityType.Builder.<AdolescentNadderMaleEntity>of(AdolescentNadderMaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentNadderMaleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdolescentNadderMaleEntity::new).fireImmune().sized(0.9f, 2f));
 	public static final RegistryObject<EntityType<NadderEggEntityEntity>> NADDER_EGG_ENTITY = register("nadder_egg_entity",
 			EntityType.Builder.<NadderEggEntityEntity>of(NadderEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderEggEntityEntity::new)
 

@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class AdolescentNadderMaleRenderer extends GeoEntityRenderer<AdolescentNadderMaleEntity> {
 	public AdolescentNadderMaleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new AdolescentNadderMaleModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 0.9f;
 	}
 
 	@Override
