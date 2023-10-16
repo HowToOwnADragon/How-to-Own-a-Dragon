@@ -40,6 +40,8 @@ public class ColorTickRateTTProcedure {
 						animatable.setTexture("turqtt");
 					GrowingTickRateTTProcedure.execute(world, x, y, z, entity);
 				}
+			} else {
+				GrowingTickRateTTProcedure.execute(world, x, y, z, entity);
 			}
 		});
 	}

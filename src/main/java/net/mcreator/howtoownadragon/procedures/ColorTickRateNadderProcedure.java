@@ -42,6 +42,8 @@ public class ColorTickRateNadderProcedure {
 						animatable.setTexture("purplenadder");
 					GrowingTickRateNadderProcedure.execute(world, x, y, z, entity);
 				}
+			} else {
+				GrowingTickRateNadderProcedure.execute(world, x, y, z, entity);
 			}
 		});
 	}

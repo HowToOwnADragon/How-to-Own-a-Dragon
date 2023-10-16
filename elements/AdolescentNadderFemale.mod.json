@@ -99,8 +99,8 @@
     "stepSound": {
       "value": ""
     },
-    "onMobTickUpdate": {
-      "name": "NadderFlyingTickUpdate"
+    "onInitialSpawn": {
+      "name": "ColorTickRateNadder"
     },
     "hasAI": true,
     "aiBase": "(none)",
