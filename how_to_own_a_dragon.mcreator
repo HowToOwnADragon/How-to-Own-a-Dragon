@@ -18233,6 +18233,35 @@
         ]
       },
       "path": "~/Commands/DragonSpawn/Deadly Nadder/Female/Juvi"
+    },
+    {
+      "name": "Config",
+      "type": "command",
+      "sortid": 1181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/command/ConfigCommand.java"
+        ]
+      },
+      "path": "~/Config"
+    },
+    {
+      "name": "OpenMainConfig",
+      "type": "procedure",
+      "sortid": 1183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_main_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenMainConfigProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Config"
     }
   ],
   "variable_elements": [
@@ -19256,13 +19285,26 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Config",
+        "children": [
+          {
+            "name": "Generic",
+            "children": []
+          },
+          {
+            "name": "Specific",
+            "children": []
+          }
+        ]
       }
     ]
   },
   "workspaceSettings": {
     "modid": "how_to_own_a_dragon",
     "modName": "How to Own a Dragon",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Welcome to the Dragon world, we are trying to make this mod as canon as possible to the original HTTYD Movies and series",
     "author": "MeAlam, Justindraak1",
     "websiteURL": "https://howtoownadragon.miraheze.org/wiki/Main_Page",
