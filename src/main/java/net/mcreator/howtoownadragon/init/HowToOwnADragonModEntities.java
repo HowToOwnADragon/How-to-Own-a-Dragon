@@ -142,7 +142,7 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<NadderEggEntityEntity>> NADDER_EGG_ENTITY = register("nadder_egg_entity",
 			EntityType.Builder.<NadderEggEntityEntity>of(NadderEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderEggEntityEntity::new)
 
-					.sized(0.3f, 0.4f));
+					.sized(0.6f, 0.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

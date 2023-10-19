@@ -10357,7 +10357,7 @@
       "type": "animatedentity",
       "sortid": 916,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tt_egg_entity",
       "metadata": {
         "files": [
