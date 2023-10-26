@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "gronckle_iron_hoe",
   "category": "equipment",
   "pattern": [
     "01",

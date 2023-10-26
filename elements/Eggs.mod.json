@@ -6,6 +6,12 @@
     "items": [
       {
         "value": "CUSTOM:GronckleEggItem"
+      },
+      {
+        "value": "CUSTOM:TTEggItem"
+      },
+      {
+        "value": "CUSTOM:NadderEggItem"
       }
     ],
     "blocks": [],

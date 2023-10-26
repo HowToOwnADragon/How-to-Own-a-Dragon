@@ -33,6 +33,33 @@
       },
       {
         "value": "CUSTOM:NightFury"
+      },
+      {
+        "value": "CUSTOM:AdolescentNadderFemale"
+      },
+      {
+        "value": "CUSTOM:AdolescentNadderMale"
+      },
+      {
+        "value": "CUSTOM:BabyNadderFemale"
+      },
+      {
+        "value": "CUSTOM:BabyNadderMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileNadderFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileNadderMale"
+      },
+      {
+        "value": "CUSTOM:NadderFemale"
+      },
+      {
+        "value": "CUSTOM:NadderMale"
+      },
+      {
+        "value": "CUSTOM:TestNadder"
       }
     ],
     "biomes": [],

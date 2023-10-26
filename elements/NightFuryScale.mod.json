@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nightfuryscales",
+    "texture": "nf_scale",
     "customModelName": "Normal",
     "name": "Night Fury Scale",
     "rarity": "COMMON",

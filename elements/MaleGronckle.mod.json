@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:AdolescentGronckleMale"
+      },
+      {
+        "value": "CUSTOM:BabyGronckleMale"
+      },
+      {
+        "value": "CUSTOM:GronckleMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileGronckleMale"
+      }
+    ],
+    "biomes": [],
+    "name": "male_gronckle",
+    "namespace": "mod"
+  }
+}

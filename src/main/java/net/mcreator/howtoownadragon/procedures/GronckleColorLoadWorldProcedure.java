@@ -130,7 +130,7 @@ public class GronckleColorLoadWorldProcedure {
 								animatable.setTexture("groncklepink");
 						} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
 							if (entity instanceof GronckleMaleEntity animatable)
-								animatable.setTexture("mealtug");
+								animatable.setTexture("meatlug");
 						} else if ((entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
 							if (entity instanceof GronckleMaleEntity animatable)
 								animatable.setTexture("gronckleorangered");

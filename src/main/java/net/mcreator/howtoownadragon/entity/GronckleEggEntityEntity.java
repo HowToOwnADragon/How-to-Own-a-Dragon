@@ -25,6 +25,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.howtoownadragon.procedures.GronckleEntityIsHurtProcedure;
+import net.mcreator.howtoownadragon.procedures.EggGravityProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 public class GronckleEggEntityEntity extends PathfinderMob {
@@ -66,6 +67,8 @@ public class GronckleEggEntityEntity extends PathfinderMob {
 			return false;
 		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
+		if (source.is(DamageTypes.FALL))
+			return false;
 		if (source.is(DamageTypes.CACTUS))
 			return false;
 		if (source.is(DamageTypes.DROWN))
@@ -96,6 +99,22 @@ public class GronckleEggEntityEntity extends PathfinderMob {
 
 		GronckleEntityIsHurtProcedure.execute(world, entity, sourceentity);
 		return retval;
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		EggGravityProcedure.execute(this);
+	}
+
+	@Override
+	public boolean canCollideWith(Entity entity) {
+		return true;
+	}
+
+	@Override
+	public boolean canBeCollidedWith() {
+		return true;
 	}
 
 	public static void init() {

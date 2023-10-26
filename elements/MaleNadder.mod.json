@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:AdolescentNadderMale"
+      },
+      {
+        "value": "CUSTOM:BabyNadderMale"
+      },
+      {
+        "value": "CUSTOM:JuvenileNadderMale"
+      },
+      {
+        "value": "CUSTOM:NadderMale"
+      }
+    ],
+    "biomes": [],
+    "name": "male_nadder",
+    "namespace": "mod"
+  }
+}

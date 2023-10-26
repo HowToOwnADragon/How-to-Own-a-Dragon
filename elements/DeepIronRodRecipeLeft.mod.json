@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
-    "group": "",
+    "group": "deep_iron_rod",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

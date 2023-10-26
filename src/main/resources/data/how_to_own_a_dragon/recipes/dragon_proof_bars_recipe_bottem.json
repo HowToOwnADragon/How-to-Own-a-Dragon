@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "dragon_proof_metal_bars",
   "category": "building",
   "pattern": [
     "012",

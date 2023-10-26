@@ -62,7 +62,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "NotGrownMaleGronckleGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "deathTime": 20,
@@ -100,14 +100,14 @@
       "value": ""
     },
     "whenMobDies": {
-      "name": "GronckleDiesNotGrown"
+      "name": "NotGrownGronckleDiesProcedure"
     },
     "onInitialSpawn": {
       "name": "GronckleGrowingTickRate"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"176\" y=\"33\"><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"176\" y=\"33\"><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
     "model": "adogronckle.geo.json",
     "groupName": "",
     "animation1": "animation.adogronckle.idle",

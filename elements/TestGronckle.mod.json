@@ -1,0 +1,189 @@
+{
+  "_fv": 43,
+  "_type": "animatedentity",
+  "definition": {
+    "mobName": "Test Gronckle",
+    "mobLabel": "",
+    "mobModelTexture": "meatlug.png",
+    "mobModelGlowTexture": "",
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
+    "modelWidth": 2.0,
+    "modelHeight": 2.0,
+    "modelShadowSize": 1.0,
+    "mountedYOffset": 0.3,
+    "hasSpawnEgg": false,
+    "spawnEggBaseColor": {
+      "value": -6999808,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -7986432,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "followRange": 16,
+    "health": 10,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": true,
+    "guiBoundTo": "MaleGronckleGUI",
+    "inventorySize": 1,
+    "inventoryStackSize": 1,
+    "deathTime": 20,
+    "lerp": 4,
+    "disableCollisions": false,
+    "ridable": true,
+    "canControlForward": true,
+    "canControlStrafe": true,
+    "immuneToFire": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "entity.generic.hurt"
+    },
+    "deathSound": {
+      "value": "entity.generic.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "whenMobDies": {
+      "name": "GrownGronckleDiesProcedure"
+    },
+    "onMobTickUpdate": {
+      "name": "GronckleFlyingTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "GronckleMaleOnInitialEntitySpawn"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"197\" y=\"75\"><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayerMP</field><field name=\"radius\">3</field><field name=\"condition\">ValkaFollowMeTrigger,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">3</field><field name=\"condition\">ValkaFollowMeTrigger,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">6</field><field name=\"max_distance\">16</field><field name=\"condition\">ValkaFollowMeTrigger,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayerMP</field><field name=\"radius\">3</field><field name=\"condition\">AllFollowMeTrigger,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">3</field><field name=\"condition\">AllFollowMeTrigger,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">6</field><field name=\"max_distance\">16</field><field name=\"condition\">AllFollowMeTrigger,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntitySheep</field><field name=\"condition\">FlyAtDayFollowMeTrigger,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">FlyAtDayFollowMeTrigger,null</field><next><block type=\"look_around\"><field name=\"condition\">LookAtNightDontFollowMe,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">DontAllFollowMeTrigger,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">FlyAtDayFollowMeTrigger,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">FlyAtDayFollowMeTrigger,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "gronckle.geo.json",
+    "groupName": "",
+    "animation1": "animation.gronckle.idle",
+    "animation2": "animation.gronckle.walk",
+    "animation3": "animation.gronckle.death",
+    "animation4": "animation.gronckle.walk",
+    "animation5": "",
+    "animation6": "animation.gronckle.sneak",
+    "animation7": "animation.gronckle.sprint",
+    "animation8": "animation.gronckle.flight",
+    "animation9": "animation.gronckle.sprint",
+    "animation10": "",
+    "enable2": true,
+    "enable3": true,
+    "enable4": true,
+    "enable5": false,
+    "enable6": true,
+    "enable7": true,
+    "enable8": true,
+    "enable9": true,
+    "enable10": false,
+    "breedable": true,
+    "tameable": true,
+    "disableDeathRotation": false,
+    "headMovement": false,
+    "eyeHeight": true,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "height": 0.7999999999999999,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      },
+      {
+        "value": "snowy_tundra"
+      },
+      {
+        "value": "mutated_plains"
+      },
+      {
+        "value": "stone_beach"
+      },
+      {
+        "value": "stony_peaks"
+      },
+      {
+        "value": "mutated_extreme_hills_with_trees"
+      },
+      {
+        "value": "smaller_extreme_hills"
+      },
+      {
+        "value": "snowy_mountains"
+      },
+      {
+        "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "mutated_taiga"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "valkas_staff",
+  "category": "equipment",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bone"
+    },
+    "1": {
+      "tag": "how_to_own_a_dragon:dragon_scale"
+    },
+    "2": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "how_to_own_a_dragon:valkas_staff",
+    "count": 1
+  }
+}

@@ -15,10 +15,25 @@
       },
       {
         "value": "CUSTOM:NightFury"
+      },
+      {
+        "value": "CUSTOM:TTMale"
+      },
+      {
+        "value": "CUSTOM:TTFemale"
+      },
+      {
+        "value": "CUSTOM:NadderFemale"
+      },
+      {
+        "value": "CUSTOM:NadderMale"
+      },
+      {
+        "value": "CUSTOM:TestNadder"
       }
     ],
     "biomes": [],
     "name": "grown_dragon",
-    "namespace": "forge"
+    "namespace": "mod"
   }
 }

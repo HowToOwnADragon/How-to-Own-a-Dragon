@@ -1,0 +1,27 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:AdolescentTTFemale"
+      },
+      {
+        "value": "CUSTOM:BabyTTFemale"
+      },
+      {
+        "value": "CUSTOM:JuvenileTTFemale"
+      },
+      {
+        "value": "CUSTOM:TTFemale"
+      }
+    ],
+    "biomes": [],
+    "name": "female_tt",
+    "namespace": "mod"
+  }
+}

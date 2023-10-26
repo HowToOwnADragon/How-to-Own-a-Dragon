@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "deep_iron_slab",
   "category": "building",
   "pattern": [
     "012"

@@ -51,6 +51,8 @@ public class GronckleGrowingUpMessageProcedure {
 			if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Sandstone!")), false);
 			entity.getPersistentData().putString("groncklegrowup", "sandstone");
+		} else {
+			GronckleGrowingUpMessageProcedure.execute(entity);
 		}
 	}
 }

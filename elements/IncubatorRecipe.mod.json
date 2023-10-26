@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Incubator"
+      "value": "CUSTOM:Incubator1"
     },
     "name": "incubator_recipe",
     "namespace": "mod"
