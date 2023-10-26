@@ -1,17 +1,8 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.howtoownadragon.HowToOwnADragonMod;
-
-import java.util.Comparator;
+import javax.annotation.Nullable;
 
 public class GrowingTickRateTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -27,26 +18,21 @@ public class GrowingTickRateTTProcedure {
 			HowToOwnADragonMod.queueServerWork(600, () -> {
 				if (entity.isAlive()) {
 					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 2) {
-						GrowingUpMessageTTProcedure.execute(entity);
 					} else {
 						HowToOwnADragonMod.queueServerWork(600, () -> {
 							if (entity.isAlive()) {
 								if (Mth.nextInt(RandomSource.create(), 3, 10) <= 4) {
-									GrowingUpMessageTTProcedure.execute(entity);
 								} else {
 									HowToOwnADragonMod.queueServerWork(600, () -> {
 										if (entity.isAlive()) {
 											if (Mth.nextInt(RandomSource.create(), 5, 10) <= 6) {
-												GrowingUpMessageTTProcedure.execute(entity);
 											} else {
 												HowToOwnADragonMod.queueServerWork(600, () -> {
 													if (entity.isAlive()) {
 														if (Mth.nextInt(RandomSource.create(), 7, 10) <= 8) {
-															GrowingUpMessageTTProcedure.execute(entity);
 														} else {
 															HowToOwnADragonMod.queueServerWork(600, () -> {
 																if (entity.isAlive()) {
-																	GrowingUpMessageTTProcedure.execute(entity);
 																}
 															});
 														}

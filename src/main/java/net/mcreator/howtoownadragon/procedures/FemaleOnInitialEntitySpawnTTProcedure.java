@@ -1,11 +1,8 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
+import javax.annotation.Nullable;
 
 public class FemaleOnInitialEntitySpawnTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

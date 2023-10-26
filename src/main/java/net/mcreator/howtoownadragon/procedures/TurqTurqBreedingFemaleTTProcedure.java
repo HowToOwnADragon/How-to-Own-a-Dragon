@@ -1,24 +1,8 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
-import net.mcreator.howtoownadragon.entity.TTMaleEntity;
-import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 
 import javax.annotation.Nullable;
-
-import java.util.Comparator;
 
 @Mod.EventBusSubscriber
 public class TurqTurqBreedingFemaleTTProcedure {
@@ -55,7 +39,7 @@ public class TurqTurqBreedingFemaleTTProcedure {
 									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 								}
 							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("ttinlove", false);
-							TurqTurqTTBreedingReqProcedure.execute(world, x, y, z, sourceentity);
+							TurqTurqTTBreedingReqProcedure.execute(sourceentity);
 						}
 					}
 				}

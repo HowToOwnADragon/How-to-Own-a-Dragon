@@ -1,20 +1,6 @@
 
 package net.mcreator.howtoownadragon.client.renderer;
 
-import software.bernie.geckolib.renderer.GeoEntityRenderer;
-import software.bernie.geckolib.cache.object.BakedGeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-
-import net.mcreator.howtoownadragon.entity.model.JuvenileGronckleFemaleModel;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class JuvenileGronckleFemaleRenderer extends GeoEntityRenderer<JuvenileGronckleFemaleEntity> {
 	public JuvenileGronckleFemaleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new JuvenileGronckleFemaleModel());
@@ -34,4 +20,5 @@ public class JuvenileGronckleFemaleRenderer extends GeoEntityRenderer<JuvenileGr
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
+
 }

@@ -1,10 +1,6 @@
 package net.mcreator.howtoownadragon.entity.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class JuvenileTTMaleModel extends GeoModel<JuvenileTTMaleEntity> {
 	@Override

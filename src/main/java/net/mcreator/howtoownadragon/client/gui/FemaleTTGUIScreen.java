@@ -1,21 +1,9 @@
 package net.mcreator.howtoownadragon.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-
-import net.mcreator.howtoownadragon.world.inventory.FemaleTTGUIMenu;
-
-import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class FemaleTTGUIScreen extends AbstractContainerScreen<FemaleTTGUIMenu> {
+
 	private final static HashMap<String, Object> guistate = FemaleTTGUIMenu.guistate;
+
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -38,6 +26,7 @@ public class FemaleTTGUIScreen extends AbstractContainerScreen<FemaleTTGUIMenu> 
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -45,6 +34,7 @@ public class FemaleTTGUIScreen extends AbstractContainerScreen<FemaleTTGUIMenu> 
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
@@ -60,6 +50,7 @@ public class FemaleTTGUIScreen extends AbstractContainerScreen<FemaleTTGUIMenu> 
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -82,5 +73,7 @@ public class FemaleTTGUIScreen extends AbstractContainerScreen<FemaleTTGUIMenu> 
 	@Override
 	public void init() {
 		super.init();
+
 	}
+
 }

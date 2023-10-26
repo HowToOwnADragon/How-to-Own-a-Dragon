@@ -1,11 +1,8 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.network.chat.Component;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class GrowingUpMessageTTProcedure {
 	public static void execute(Entity entity) {

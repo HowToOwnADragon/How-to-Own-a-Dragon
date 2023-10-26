@@ -1,22 +1,13 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.TTMaleEntity;
-
-import java.util.Comparator;
+import javax.annotation.Nullable;
 
 public class TurqMaleSpawnDragonCommandTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = new TTMaleEntity(HowToOwnADragonModEntities.TT_MALE.get(), _level);
+			Entity entityToSpawn = new TTMaleEntity(HowToOwnADragonModEntities.DELETED_MOD_ELEMENT.get(), _level);
 			entityToSpawn.moveTo(x, y, z, 0, 0);
 			entityToSpawn.setYBodyRot(0);
 			entityToSpawn.setYHeadRot(0);

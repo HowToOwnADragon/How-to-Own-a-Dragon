@@ -1858,38 +1858,6 @@
       "path": "~/Items/DragonProof"
     },
     {
-      "name": "GronckleDies",
-      "type": "procedure",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
-    },
-    {
       "name": "TheReaperPlayerLeavesDimension",
       "type": "procedure",
       "sortid": 128,
@@ -2081,38 +2049,6 @@
         ]
       },
       "path": "~/Procedure"
-    },
-    {
-      "name": "GronckleDiesNotGrown",
-      "type": "procedure",
-      "sortid": 147,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_dies_not_grown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleDiesNotGrownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle"
     },
     {
       "name": "GronckleSpawningEggRightclickedEntity",
@@ -3164,7 +3100,7 @@
       "registry_name": "grown_dragon",
       "metadata": {
         "files": [
-          "src/main/resources/data/forge/tags/entity_types/grown_dragon.json"
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/grown_dragon.json"
         ]
       },
       "path": "~/Dragons"
@@ -3198,10 +3134,10 @@
       "registry_name": "gronckle_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleMaleRenderer.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_male_biome_modifier.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleMaleEntity.java"
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_male_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3215,10 +3151,10 @@
       "registry_name": "gronckle_female",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleFemaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleFemaleModel.java",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/gronckle_female_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/GronckleFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3312,9 +3248,9 @@
       "registry_name": "adolescent_gronckle_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleMaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleMaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleMaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3345,8 +3281,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleMaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleMaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleMaleRenderer.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3360,9 +3296,9 @@
       "registry_name": "juvenile_gronckle_female",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleFemaleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleFemaleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleFemaleEntity.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3392,9 +3328,9 @@
       "registry_name": "baby_gronckle_female",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleFemaleRenderer.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleFemaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleFemaleModel.java"
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleEntity"
@@ -3484,42 +3420,6 @@
           "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleSpawnProcedureProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleSpawnEgg"
-    },
-    {
-      "name": "GronckleSpawnEggPlacedDown",
-      "type": "procedure",
-      "sortid": 667,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_spawn_egg_placed_down",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleSpawnEggPlacedDownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -7322,72 +7222,6 @@
       "path": "~/Dragons/Gronckle/GronckleSaddles/Female"
     },
     {
-      "name": "GronckleFeedItems",
-      "type": "tag",
-      "sortid": 785,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_feed_items",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/items/gronckle_feed_items.json"
-        ]
-      },
-      "path": "~/Dragons/Gronckle/TamingGronckle"
-    },
-    {
-      "name": "GronckleFeedingCooldown",
-      "type": "procedure",
-      "sortid": 786,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_feeding_cooldown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleFeedingCooldownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/TamingGronckle"
-    },
-    {
-      "name": "GronckleFeedingCooldown2",
-      "type": "procedure",
-      "sortid": 787,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_feeding_cooldown_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleFeedingCooldown2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/TamingGronckle"
-    },
-    {
       "name": "NBTDataSpawnGronckle",
       "type": "procedure",
       "sortid": 788,
@@ -7470,38 +7304,6 @@
         ]
       },
       "path": "~/Dragons/Gronckle/GronckleGrowingStages"
-    },
-    {
-      "name": "GiveBreedingCooldown",
-      "type": "procedure",
-      "sortid": 792,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "give_breeding_cooldown",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveBreedingCooldownProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Gronckle/GronckleBreeding/Cross-BreedingGronckle"
     },
     {
       "name": "GronkleIronGUIMale",
@@ -8262,6 +8064,5074 @@
         ]
       },
       "path": "~/Items/DragonEye"
+    },
+    {
+      "name": "BabyGreenFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 987,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_green_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyGreenFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Baby"
+    },
+    {
+      "name": "GreenBabyGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 955,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_baby_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenBabyGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+    },
+    {
+      "name": "JuvenileGronckleBlueYellowMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 836,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_gronckle_blue_yellow_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGronckleBlueYellowMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
+    },
+    {
+      "name": "OpenFemaleGUITT",
+      "type": "procedure",
+      "sortid": 939,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_female_guitt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenFemaleGUITTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/GUI"
+    },
+    {
+      "name": "JuvenileBlueYellowFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 851,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_blue_yellow_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileBlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
+    },
+    {
+      "name": "TTIncubator1Tick",
+      "type": "procedure",
+      "sortid": 941,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_incubator_1_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTIncubator1TickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/Tickupdate"
+    },
+    {
+      "name": "TTScale",
+      "type": "item",
+      "sortid": 897,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_scale",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/TTScaleItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/tt_scale.json"
+        ]
+      },
+      "path": "~/Items/Scales"
+    },
+    {
+      "name": "AdolescentTurqMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 980,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_turq_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentTurqMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Adolescent"
+    },
+    {
+      "name": "FeedNonGrownTT",
+      "type": "procedure",
+      "sortid": 869,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_non_grown_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Feeding"
+    },
+    {
+      "name": "GreenFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 993,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Grown"
+    },
+    {
+      "name": "ValkasStaffRecipeRight",
+      "type": "recipe",
+      "sortid": 831,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_recipe_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_right.json"
+        ]
+      },
+      "path": "~/Recipe/ValkasStaff"
+    },
+    {
+      "name": "GreenGreenTTBreedingReq",
+      "type": "procedure",
+      "sortid": 911,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_green_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGreenTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "BabyPinkMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 972,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_pink_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPinkMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Baby"
+    },
+    {
+      "name": "TurqPinkBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 926,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_pink_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqPinkBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "AdolescentTTFemale",
+      "type": "animatedentity",
+      "sortid": 885,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_tt_female",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentTTFemaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentTTFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentTTFemaleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "TurqPinkBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 934,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_pink_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqPinkBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "ChickenTameTT",
+      "type": "procedure",
+      "sortid": 892,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_tame_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ChickenTameTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "TurqGreenBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 932,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_green_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqGreenBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "PinkJuvenileGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 959,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_juvenile_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkJuvenileGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+    },
+    {
+      "name": "JuvenileOrangeRedFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 850,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_orange_red_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileOrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
+    },
+    {
+      "name": "GreenTurqTTBreedingReq",
+      "type": "procedure",
+      "sortid": 914,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_turq_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenTurqTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "TurqGrowUpProcedureTT",
+      "type": "procedure",
+      "sortid": 948,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_grow_up_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqGrowUpProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "TurqMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 992,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Grown"
+    },
+    {
+      "name": "TurqAdolescentGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 966,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_adolescent_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqAdolescentGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+    },
+    {
+      "name": "FemaleTT",
+      "type": "tag",
+      "sortid": 970,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_tt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "TurqBabyGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 954,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_baby_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqBabyGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+    },
+    {
+      "name": "JuvenileTurqMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 978,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_turq_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileTurqMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Juvenile"
+    },
+    {
+      "name": "GreenAndTurqEggTT",
+      "type": "procedure",
+      "sortid": 909,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_and_turq_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAndTurqEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "CodTameTT",
+      "type": "procedure",
+      "sortid": 890,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cod_tame_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/CodTameTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "PinkAdolescentGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 962,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_adolescent_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAdolescentGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+    },
+    {
+      "name": "BabyPinkFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 988,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_pink_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPinkFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Baby"
+    },
+    {
+      "name": "GreenPinkTTBreedingReq",
+      "type": "procedure",
+      "sortid": 913,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_pink_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenPinkTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "PinkIncubator1HatchButtonTT",
+      "type": "procedure",
+      "sortid": 997,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_incubator_1_hatch_button_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkIncubator1HatchButtonTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "TTTest",
+      "type": "animatedentity",
+      "sortid": 882,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTTestEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTTestRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTTestModel.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "PinkAndTurqEggTT",
+      "type": "procedure",
+      "sortid": 910,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_and_turq_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAndTurqEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "WildNightAI",
+      "type": "procedure",
+      "sortid": 862,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_night_ai",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WildNightAIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "JuvenileGreenFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 984,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_green_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGreenFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Juvenile"
+    },
+    {
+      "name": "ValkasStaffRecipeMiddle",
+      "type": "recipe",
+      "sortid": 830,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_recipe_middle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_middle.json"
+        ]
+      },
+      "path": "~/Recipe/ValkasStaff"
+    },
+    {
+      "name": "BlueYellowFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 857,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_yellow_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Grown"
+    },
+    {
+      "name": "BreadTameTT",
+      "type": "procedure",
+      "sortid": 870,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bread_tame_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BreadTameTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "GreenTurqBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 923,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_turq_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenTurqBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "PinkTurqBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 928,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_turq_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkTurqBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GronckleFlyingTickUpdate",
+      "type": "procedure",
+      "sortid": 825,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_flying_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleFlyingTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Tick"
+    },
+    {
+      "name": "PinkTurqTTBreedingReq",
+      "type": "procedure",
+      "sortid": 915,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_turq_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkTurqTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "TurqBabyGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 957,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_baby_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqBabyGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+    },
+    {
+      "name": "NotGrownTTDies",
+      "type": "loottable",
+      "sortid": 1006,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_tt_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_tt_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "PinkPinkBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 904,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_pink_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkPinkBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "HoveringFlyingTickUpdate",
+      "type": "procedure",
+      "sortid": 823,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hovering_flying_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/HoveringFlyingTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/NoDragonButRelated"
+    },
+    {
+      "name": "EmptyHandRideDragon",
+      "type": "procedure",
+      "sortid": 832,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_hand_ride_dragon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/EmptyHandRideDragonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "AlwaysTrue",
+      "type": "procedure",
+      "sortid": 917,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "always_true",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AlwaysTrueProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "PinkJuvenileGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 968,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_juvenile_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkJuvenileGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+    },
+    {
+      "name": "GreenMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 991,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Grown"
+    },
+    {
+      "name": "GronckleBlueYellowMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 839,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_blue_yellow_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBlueYellowMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Grown"
+    },
+    {
+      "name": "TTNotGrown",
+      "type": "tag",
+      "sortid": 877,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_not_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_not_grown.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "TTFeedItems",
+      "type": "tag",
+      "sortid": 937,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_feed_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/items/tt_feed_items.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "FemaleGronckle",
+      "type": "tag",
+      "sortid": 1014,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_gronckle.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Tag"
+    },
+    {
+      "name": "NBTOnInitiallSpawnTT",
+      "type": "procedure",
+      "sortid": 940,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbt_on_initiall_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NBTOnInitiallSpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "TurqIncubator1CallNBTDataProcedureTT",
+      "type": "procedure",
+      "sortid": 1001,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_incubator_1_call_nbt_data_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqIncubator1CallNBTDataProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "GreenItemNeededForGrowUpTT",
+      "type": "procedure",
+      "sortid": 950,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_item_needed_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenItemNeededForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Item"
+    },
+    {
+      "name": "TurqJuvenileGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 960,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_juvenile_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqJuvenileGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+    },
+    {
+      "name": "TTFemale",
+      "type": "animatedentity",
+      "sortid": 867,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_female",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_female_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "GreenTurqBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 931,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_turq_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenTurqBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "PinkBabyGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 952,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_baby_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkBabyGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+    },
+    {
+      "name": "JuvenileTTMale",
+      "type": "animatedentity",
+      "sortid": 887,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_tt_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileTTMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTMaleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "GreenAdolescentGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 961,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_adolescent_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAdolescentGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+    },
+    {
+      "name": "MeatlugFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 848,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meatlug_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Grown"
+    },
+    {
+      "name": "NotGrownTTDiesProcedure",
+      "type": "procedure",
+      "sortid": 1007,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_tt_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NotGrownTTDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "JuvenilePinkFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 849,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_pink_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenilePinkFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
+    },
+    {
+      "name": "NadderMale",
+      "type": "animatedentity",
+      "sortid": 1015,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/NadderMaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/NadderMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/NadderMaleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/nadder_male_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Entity"
+    },
+    {
+      "name": "BabyMeatlugFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 843,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_meatlug_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyMeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
+    },
+    {
+      "name": "PinkGrowUpProcedureTT",
+      "type": "procedure",
+      "sortid": 947,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_grow_up_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkGrowUpProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "BabyPinkFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 842,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_pink_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPinkFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
+    },
+    {
+      "name": "TurqTurqTTBreedingReq",
+      "type": "procedure",
+      "sortid": 912,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_turq_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqTurqTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "GreenJuvenileGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 967,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_juvenile_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenJuvenileGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+    },
+    {
+      "name": "UseAbility",
+      "type": "keybind",
+      "sortid": 858,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/UseAbilityMessage.java"
+        ]
+      },
+      "path": "~/Dragons/NoDragonButRelated/Ability"
+    },
+    {
+      "name": "AdolescentBlueYellowFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 854,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_blue_yellow_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentBlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
+    },
+    {
+      "name": "SpawnEggTT",
+      "type": "item",
+      "sortid": 868,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/SpawnEggTTItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "GreenAndPinkEggTT",
+      "type": "procedure",
+      "sortid": 908,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_and_pink_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAndPinkEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "AdolescentGreenFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 981,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_green_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentGreenFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Adolescent"
+    },
+    {
+      "name": "BabyTTFemale",
+      "type": "animatedentity",
+      "sortid": 883,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_tt_female",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyTTFemaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyTTFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTFemaleModel.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "TurqTurqBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 933,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_turq_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqTurqBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GreenPinkBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 930,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_pink_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenPinkBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "PinkAdolescentGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 965,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_adolescent_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAdolescentGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+    },
+    {
+      "name": "EggGravity",
+      "type": "procedure",
+      "sortid": 824,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egg_gravity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/EggGravityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "JuvenileMeatlugMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 834,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_meatlug_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileMeatlugMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
+    },
+    {
+      "name": "AdolescentTTMale",
+      "type": "animatedentity",
+      "sortid": 888,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_tt_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentTTMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentTTMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentTTMaleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "TTEggEntity",
+      "type": "animatedentity",
+      "sortid": 916,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tt_egg_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTEggEntityEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTEggEntityModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTEggEntityRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+    },
+    {
+      "name": "GiveBreedingCooldownGronckle",
+      "type": "procedure",
+      "sortid": 859,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_breeding_cooldown_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveBreedingCooldownGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+    },
+    {
+      "name": "TT",
+      "type": "tag",
+      "sortid": 875,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "GreenJuvenileGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 958,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_juvenile_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenJuvenileGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+    },
+    {
+      "name": "TestNadder",
+      "type": "animatedentity",
+      "sortid": 1016,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestNadderRenderer.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_nadder_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TestNadderEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestNadderModel.java"
+        ]
+      },
+      "path": "~/Dragons/Deadly Nadder/Entity"
+    },
+    {
+      "name": "AdolescentPinkFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 982,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_pink_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentPinkFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Adolescent"
+    },
+    {
+      "name": "TTFullGrown",
+      "type": "tag",
+      "sortid": 876,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_full_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_full_grown.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "MaleTT",
+      "type": "tag",
+      "sortid": 971,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_tt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_tt.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Tag"
+    },
+    {
+      "name": "AdolescentPinkMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 979,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_pink_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentPinkMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Adolescent"
+    },
+    {
+      "name": "JuvenileGreenMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 975,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_green_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGreenMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Juvenile"
+    },
+    {
+      "name": "GreenGrowUpProcedureTT",
+      "type": "procedure",
+      "sortid": 946,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_grow_up_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGrowUpProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+    },
+    {
+      "name": "MaleGronckle",
+      "type": "tag",
+      "sortid": 1011,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_gronckle.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Tag"
+    },
+    {
+      "name": "JuvenileTurqFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 986,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_turq_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileTurqFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Juvenile"
+    },
+    {
+      "name": "AdolescentMeatlugFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 847,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_meatlug_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentMeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
+    },
+    {
+      "name": "JuvenilePinkFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 985,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_pink_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenilePinkFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Juvenile"
+    },
+    {
+      "name": "GreenIncubator1HatchButtonTT",
+      "type": "procedure",
+      "sortid": 998,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_incubator_1_hatch_button_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenIncubator1HatchButtonTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "NotGrownGronckleDiesProcedure",
+      "type": "procedure",
+      "sortid": 1009,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_gronckle_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NotGrownGronckleDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "GrownTTDies",
+      "type": "loottable",
+      "sortid": 1004,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_tt_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_tt_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "TTColorLoadWorld",
+      "type": "procedure",
+      "sortid": 1010,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_color_load_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTColorLoadWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/TickUpdate"
+    },
+    {
+      "name": "TurqGreenBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 924,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_green_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqGreenBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "BabyTurqMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 974,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_turq_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyTurqMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Baby"
+    },
+    {
+      "name": "PinkFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 855,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Grown"
+    },
+    {
+      "name": "DragonScale",
+      "type": "tag",
+      "sortid": 827,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_scale",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/items/dragon_scale.json"
+        ]
+      },
+      "path": "~/Items/Scales"
+    },
+    {
+      "name": "FemaleTTGUI",
+      "type": "gui",
+      "sortid": 894,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_ttgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleTTGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleTTGUIMenu.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/GUI"
+    },
+    {
+      "name": "TurqAdolescentGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 963,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_adolescent_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqAdolescentGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+    },
+    {
+      "name": "GiveBreedingCooldownTT",
+      "type": "procedure",
+      "sortid": 901,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_breeding_cooldown_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveBreedingCooldownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding"
+    },
+    {
+      "name": "UseAbilityOnKeyPressed",
+      "type": "procedure",
+      "sortid": 860,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_ability_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/UseAbilityOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/NoDragonButRelated/Ability"
+    },
+    {
+      "name": "TestGronckle",
+      "type": "animatedentity",
+      "sortid": 864,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestGronckleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Entity"
+    },
+    {
+      "name": "RidebleDragon",
+      "type": "tag",
+      "sortid": 889,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rideble_dragon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/rideble_dragon.json"
+        ]
+      },
+      "path": "~/Dragons/NoDragonButRelated/Tag"
+    },
+    {
+      "name": "AdolescentOrangeRedFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 853,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_orange_red_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentOrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
+    },
+    {
+      "name": "ValkasStaffRecipeLeft",
+      "type": "recipe",
+      "sortid": 829,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_recipe_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_left.json"
+        ]
+      },
+      "path": "~/Recipe/ValkasStaff"
+    },
+    {
+      "name": "SpawnProcedureTT",
+      "type": "procedure",
+      "sortid": 872,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "TurqIncubator1HatchButtonTT",
+      "type": "procedure",
+      "sortid": 999,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_incubator_1_hatch_button_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqIncubator1HatchButtonTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "GronckleMeatlugMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 841,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_meatlug_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleMeatlugMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Grown"
+    },
+    {
+      "name": "BabyBlueYellowFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 844,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_blue_yellow_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyBlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
+    },
+    {
+      "name": "JuvenileTTFemale",
+      "type": "animatedentity",
+      "sortid": 884,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_tt_female",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTFemaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTFemaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileTTFemaleEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "MaleTTGUI",
+      "type": "gui",
+      "sortid": 893,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_ttgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleTTGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleTTGUIMenu.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/GUI"
+    },
+    {
+      "name": "TTEggEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 900,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_egg_entity_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTEggEntityEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+    },
+    {
+      "name": "PinkIncubator1CallNBTDataProcedureTT",
+      "type": "procedure",
+      "sortid": 996,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_incubator_1_call_nbt_data_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkIncubator1CallNBTDataProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "JuvenilePinkMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 977,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_pink_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenilePinkMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Juvenile"
+    },
+    {
+      "name": "AdolescentTurqFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 983,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_turq_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentTurqFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Adolescent"
+    },
+    {
+      "name": "ColorTickRateTT",
+      "type": "procedure",
+      "sortid": 944,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "color_tick_rate_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ColorTickRateTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+    },
+    {
+      "name": "WildDayAI",
+      "type": "procedure",
+      "sortid": 861,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_day_ai",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WildDayAIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "GronckleNotGrown",
+      "type": "tag",
+      "sortid": 826,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_not_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_not_grown.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Tag"
+    },
+    {
+      "name": "TTMale",
+      "type": "animatedentity",
+      "sortid": 863,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTMaleEntity.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_male_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "SpawnBabyProcedureTT",
+      "type": "procedure",
+      "sortid": 874,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_baby_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnBabyProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "GreenGreenBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 922,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_green_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGreenBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "BabyOrangeRedFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 845,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_orange_red_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyOrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
+    },
+    {
+      "name": "PinkMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 990,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Grown"
+    },
+    {
+      "name": "AdolescentPinkFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 852,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_pink_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentPinkFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
+    },
+    {
+      "name": "MaleOnInitialEntitySpawnTT",
+      "type": "procedure",
+      "sortid": 880,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_on_initial_entity_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MaleOnInitialEntitySpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "GreenAndGreenEggTT",
+      "type": "procedure",
+      "sortid": 906,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_and_green_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAndGreenEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "JuvenileGroncklePinkMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 835,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_gronckle_pink_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGroncklePinkMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
+    },
+    {
+      "name": "TurqJuvenileGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 969,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_juvenile_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqJuvenileGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+    },
+    {
+      "name": "TurqFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 995,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Grown"
+    },
+    {
+      "name": "JuvenileGronckleOrangeRedMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 837,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_gronckle_orange_red_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGronckleOrangeRedMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
+    },
+    {
+      "name": "GreenIncubator1CallNBTDataProcedureTT",
+      "type": "procedure",
+      "sortid": 1000,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_incubator_1_call_nbt_data_procedure_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenIncubator1CallNBTDataProcedureTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
+    },
+    {
+      "name": "OpenMaleGUITT",
+      "type": "procedure",
+      "sortid": 938,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_male_guitt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenMaleGUITTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/GUI"
+    },
+    {
+      "name": "GreenAdolescentGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 964,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_adolescent_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenAdolescentGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+    },
+    {
+      "name": "BabyTurqFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 989,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_turq_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyTurqFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Baby"
+    },
+    {
+      "name": "TurqAndTurqEggTT",
+      "type": "procedure",
+      "sortid": 907,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_and_turq_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqAndTurqEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "JuvenileMeatlugFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 846,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_meatlug_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileMeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
+    },
+    {
+      "name": "PinkFemaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 994,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_female_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkFemaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Grown"
+    },
+    {
+      "name": "PinkTurqBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 920,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_turq_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkTurqBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "AdolescentGreenMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 976,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_green_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentGreenMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Adolescent"
+    },
+    {
+      "name": "GrowingTickRateTT",
+      "type": "procedure",
+      "sortid": 942,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_rate_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickRateTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+    },
+    {
+      "name": "GrownGronckleDiesProcedure",
+      "type": "procedure",
+      "sortid": 1003,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_gronckle_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrownGronckleDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "GroncklePinkMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 840,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_pink_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GroncklePinkMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Grown"
+    },
+    {
+      "name": "GrowingUpMessageTT",
+      "type": "procedure",
+      "sortid": 943,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_up_message_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingUpMessageTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+    },
+    {
+      "name": "TurqTurqBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 925,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_turq_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqTurqBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "BabyTTMale",
+      "type": "animatedentity",
+      "sortid": 886,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_tt_male",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyTTMaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTMaleModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyTTMaleEntity.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "PinkPinkTTBreedingReq",
+      "type": "procedure",
+      "sortid": 903,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_pink_tt_breeding_req",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkPinkTTBreedingReqProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+    },
+    {
+      "name": "SalmonTameTT",
+      "type": "procedure",
+      "sortid": 891,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salmon_tame_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SalmonTameTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Taming"
+    },
+    {
+      "name": "OpenNotGrownMaleGronckleGUI",
+      "type": "procedure",
+      "sortid": 1012,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_not_grown_male_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownMaleGronckleGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GUI"
+    },
+    {
+      "name": "PinkBabyGrowUpFemaleTT",
+      "type": "procedure",
+      "sortid": 956,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_baby_grow_up_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkBabyGrowUpFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+    },
+    {
+      "name": "GronckleOrangeRedMaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 838,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_orange_red_male_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleOrangeRedMaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Male/Grown"
+    },
+    {
+      "name": "OrangeRedFemaleGronckleSpawnDragonCommand",
+      "type": "procedure",
+      "sortid": 856,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_red_female_gronckle_spawn_dragon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Gronckle/Female/Grown"
+    },
+    {
+      "name": "PinkGreenBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 919,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_green_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkGreenBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "OpenNotGrownFemaleGronckleGUI",
+      "type": "procedure",
+      "sortid": 1013,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_not_grown_female_gronckle_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownFemaleGronckleGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Gronckle/GUI"
+    },
+    {
+      "name": "NotGrownGronckleDies",
+      "type": "loottable",
+      "sortid": 1008,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_grown_gronckle_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_gronckle_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "TTEggItem",
+      "type": "item",
+      "sortid": 899,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_egg_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/tt_egg_item.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/TTEggItemItem.java"
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+    },
+    {
+      "name": "TurqItemNeededForGrowUpTT",
+      "type": "procedure",
+      "sortid": 951,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turq_item_needed_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqItemNeededForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Item"
+    },
+    {
+      "name": "FemaleOnInitialEntitySpawnTT",
+      "type": "procedure",
+      "sortid": 879,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_on_initial_entity_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FemaleOnInitialEntitySpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "GreenBabyGrowUpMaleTT",
+      "type": "procedure",
+      "sortid": 953,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_baby_grow_up_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenBabyGrowUpMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+    },
+    {
+      "name": "GreenPinkBreedingFemaleTT",
+      "type": "procedure",
+      "sortid": 921,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_pink_breeding_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenPinkBreedingFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+    },
+    {
+      "name": "GrownGronckleDies",
+      "type": "loottable",
+      "sortid": 1002,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_gronckle_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_gronckle_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Gronckle/Dies"
+    },
+    {
+      "name": "BabyGreenMaleSpawnDragonCommandTT",
+      "type": "procedure",
+      "sortid": 973,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_green_male_spawn_dragon_command_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyGreenMaleSpawnDragonCommandTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/DragonSpawn/Terrible Terror/Male/Baby"
+    },
+    {
+      "name": "PinkGreenBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 927,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_green_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkGreenBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "GrownTTDiesProcedure",
+      "type": "procedure",
+      "sortid": 1005,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_tt_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrownTTDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Dies"
+    },
+    {
+      "name": "WildAI",
+      "type": "procedure",
+      "sortid": 881,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_ai",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WildAIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/AiConditions"
+    },
+    {
+      "name": "PinkAndPinkEggTT",
+      "type": "procedure",
+      "sortid": 902,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_and_pink_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkAndPinkEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+    },
+    {
+      "name": "InLoveBreedingTT",
+      "type": "procedure",
+      "sortid": 918,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_love_breeding_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/InLoveBreedingTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding"
+    },
+    {
+      "name": "GreenGreenBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 929,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_green_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenGreenBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+    },
+    {
+      "name": "PinkItemNeededForGrowUpTT",
+      "type": "procedure",
+      "sortid": 949,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_item_needed_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkItemNeededForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Growing/Item"
+    },
+    {
+      "name": "SpawnEggRichtClickEntityTT",
+      "type": "procedure",
+      "sortid": 873,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_egg_richt_click_entity_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnEggRichtClickEntityTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+    },
+    {
+      "name": "PinkPinkBreedingMaleTT",
+      "type": "procedure",
+      "sortid": 905,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_pink_breeding_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkPinkBreedingMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
     }
   ],
   "variable_elements": [
@@ -8301,6 +13171,7 @@
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "item.how_to_own_a_dragon.gronckle_iron_pickaxe": "Gronckle Iron Pickaxe",
+      "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
@@ -8391,6 +13262,7 @@
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
       "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
+      "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
     }
@@ -8434,6 +13306,10 @@
                 "children": [
                   {
                     "name": "Gronckle",
+                    "children": []
+                  },
+                  {
+                    "name": "Terrible Terror",
                     "children": []
                   }
                 ]
@@ -8487,6 +13363,23 @@
         "name": "Dragons",
         "children": [
           {
+            "name": "NoDragonButRelated",
+            "children": [
+              {
+                "name": "Cooldown",
+                "children": []
+              },
+              {
+                "name": "Ability",
+                "children": []
+              },
+              {
+                "name": "Tag",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "NightFury",
             "children": []
           },
@@ -8494,49 +13387,14 @@
             "name": "Gronckle",
             "children": [
               {
-                "name": "GronckleBreeding",
-                "children": [
-                  {
-                    "name": "EggGronckle",
-                    "children": [
-                      {
-                        "name": "Just Layed",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Cross-BreedingGronckle",
-                    "children": [
-                      {
-                        "name": "FemaleGronckle",
-                        "children": []
-                      },
-                      {
-                        "name": "EggSpawnGronckle",
-                        "children": []
-                      },
-                      {
-                        "name": "MaleGronckle",
-                        "children": []
-                      },
-                      {
-                        "name": "BreedingRequirementGronckle",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "TamingGronckle",
+                "name": "SpawnEgg",
                 "children": []
               },
               {
-                "name": "GronckleGrowingStages",
+                "name": "Growing",
                 "children": [
                   {
-                    "name": "BabyGronckle",
+                    "name": "Baby",
                     "children": [
                       {
                         "name": "Male",
@@ -8557,7 +13415,7 @@
                     "children": []
                   },
                   {
-                    "name": "AdolescentGronckle",
+                    "name": "Adolescent",
                     "children": [
                       {
                         "name": "Male",
@@ -8570,11 +13428,11 @@
                     ]
                   },
                   {
-                    "name": "GrowMessageGronckle",
+                    "name": "GrowMessage",
                     "children": []
                   },
                   {
-                    "name": "JuvenileGronckle",
+                    "name": "Juvenile",
                     "children": [
                       {
                         "name": "Male",
@@ -8589,23 +13447,20 @@
                 ]
               },
               {
-                "name": "GronckleSpawnEgg",
-                "children": []
+                "name": "Saddle",
+                "children": [
+                  {
+                    "name": "Female",
+                    "children": []
+                  },
+                  {
+                    "name": "Male",
+                    "children": []
+                  }
+                ]
               },
               {
-                "name": "GronckleAttack",
-                "children": []
-              },
-              {
-                "name": "GronckleTag",
-                "children": []
-              },
-              {
-                "name": "GronckleEntity",
-                "children": []
-              },
-              {
-                "name": "GronckleGUIs",
+                "name": "GUI",
                 "children": [
                   {
                     "name": "GronckleIron",
@@ -8623,24 +13478,246 @@
                 ]
               },
               {
-                "name": "TickUpdate",
+                "name": "Tag",
                 "children": []
               },
               {
-                "name": "GronckleSaddles",
+                "name": "Entity",
+                "children": []
+              },
+              {
+                "name": "Taming",
+                "children": []
+              },
+              {
+                "name": "Breeding",
                 "children": [
                   {
-                    "name": "Female",
+                    "name": "Egg",
                     "children": []
                   },
                   {
-                    "name": "Male",
+                    "name": "Cross-Breeding",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "EggSpawn",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "BreedingRequirementGronckle",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ability",
+                "children": [
+                  {
+                    "name": "Attack",
+                    "children": []
+                  },
+                  {
+                    "name": "Bite",
                     "children": []
                   }
                 ]
               },
               {
-                "name": "FeedingGronckle",
+                "name": "Tick",
+                "children": []
+              },
+              {
+                "name": "Feeding",
+                "children": []
+              },
+              {
+                "name": "Dies",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Deadly Nadder",
+            "children": [
+              {
+                "name": "Ability",
+                "children": []
+              },
+              {
+                "name": "Breeding",
+                "children": []
+              },
+              {
+                "name": "Dies",
+                "children": []
+              },
+              {
+                "name": "Entity",
+                "children": []
+              },
+              {
+                "name": "Feeding",
+                "children": []
+              },
+              {
+                "name": "GUI",
+                "children": []
+              },
+              {
+                "name": "Growing",
+                "children": []
+              },
+              {
+                "name": "Saddle",
+                "children": []
+              },
+              {
+                "name": "SpawnEgg",
+                "children": []
+              },
+              {
+                "name": "Tag",
+                "children": []
+              },
+              {
+                "name": "Taming",
+                "children": []
+              },
+              {
+                "name": "TickUpdate",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Terrible Terror",
+            "children": [
+              {
+                "name": "Entity",
+                "children": []
+              },
+              {
+                "name": "GUI",
+                "children": []
+              },
+              {
+                "name": "Breeding",
+                "children": [
+                  {
+                    "name": "Egg",
+                    "children": []
+                  },
+                  {
+                    "name": "Cross-Breeding",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "EggSpawn",
+                        "children": []
+                      },
+                      {
+                        "name": "BreedingReq",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Taming",
+                "children": []
+              },
+              {
+                "name": "Growing",
+                "children": [
+                  {
+                    "name": "GrowUpProcedure",
+                    "children": []
+                  },
+                  {
+                    "name": "GrowMessage",
+                    "children": []
+                  },
+                  {
+                    "name": "Item",
+                    "children": []
+                  },
+                  {
+                    "name": "Baby",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Adolescent",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Juvenile",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "SpawnEgg",
+                "children": []
+              },
+              {
+                "name": "Tag",
+                "children": []
+              },
+              {
+                "name": "Feeding",
+                "children": []
+              },
+              {
+                "name": "Dies",
+                "children": []
+              },
+              {
+                "name": "TickUpdate",
                 "children": []
               }
             ]
@@ -8712,6 +13789,10 @@
         "name": "Recipe",
         "children": [
           {
+            "name": "ValkasStaff",
+            "children": []
+          },
+          {
             "name": "Saddles",
             "children": []
           },
@@ -8733,11 +13814,11 @@
         "name": "Achievements",
         "children": [
           {
-            "name": "Hidden World",
+            "name": "Welcome To The World",
             "children": []
           },
           {
-            "name": "Welcome To The World",
+            "name": "Hidden World",
             "children": []
           }
         ]
@@ -8774,7 +13855,71 @@
                   },
                   {
                     "name": "Female",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "Juvenile",
+                        "children": []
+                      },
+                      {
+                        "name": "Adolescent",
+                        "children": []
+                      },
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Terrible Terror",
+                "children": [
+                  {
+                    "name": "Male",
+                    "children": [
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvenile",
+                        "children": []
+                      },
+                      {
+                        "name": "Adolescent",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Female",
+                    "children": [
+                      {
+                        "name": "Adolescent",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvenile",
+                        "children": []
+                      },
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               }

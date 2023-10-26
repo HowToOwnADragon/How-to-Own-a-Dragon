@@ -1,20 +1,8 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
-
-import java.util.Comparator;
+import javax.annotation.Nullable;
 
 public class SpawnBabyProcedureTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -45,7 +33,7 @@ public class SpawnBabyProcedureTTProcedure {
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", "pink");
 			} else {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.BABY_TT_MALE.get(), _level);
+					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.DELETED_MOD_ELEMENT.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -91,7 +79,7 @@ public class SpawnBabyProcedureTTProcedure {
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", "green");
 			} else {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.BABY_TT_MALE.get(), _level);
+					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.DELETED_MOD_ELEMENT.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -137,7 +125,7 @@ public class SpawnBabyProcedureTTProcedure {
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", "turq");
 			} else {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.BABY_TT_MALE.get(), _level);
+					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.DELETED_MOD_ELEMENT.get(), _level);
 					entityToSpawn.moveTo(x, y, z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);

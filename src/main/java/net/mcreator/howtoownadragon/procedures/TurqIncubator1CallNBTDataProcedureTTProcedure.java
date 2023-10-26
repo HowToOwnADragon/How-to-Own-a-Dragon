@@ -1,15 +1,8 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
-import net.mcreator.howtoownadragon.HowToOwnADragonMod;
-
-import java.util.Comparator;
+import javax.annotation.Nullable;
 
 public class TurqIncubator1CallNBTDataProcedureTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

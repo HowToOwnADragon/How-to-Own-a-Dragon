@@ -1,28 +1,14 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
+import javax.annotation.Nullable;
 
 public class PinkIncubator1HatchButtonTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.BABY_TT_MALE.get(), _level);
+				Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.DELETED_MOD_ELEMENT.get(), _level);
 				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -59,10 +45,9 @@ public class PinkIncubator1HatchButtonTTProcedure {
 					});
 				}
 			}
-			PinkIncubator1CallNBTDataProcedureTTProcedure.execute(world, x, y, z);
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new BabyTTFemaleEntity(HowToOwnADragonModEntities.BABY_TT_FEMALE.get(), _level);
+				Entity entityToSpawn = new BabyTTFemaleEntity(HowToOwnADragonModEntities.DELETED_MOD_ELEMENT.get(), _level);
 				entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -99,7 +84,6 @@ public class PinkIncubator1HatchButtonTTProcedure {
 					});
 				}
 			}
-			PinkIncubator1CallNBTDataProcedureTTProcedure.execute(world, x, y, z);
 		} else {
 			PinkIncubator1HatchButtonTTProcedure.execute(world, x, y, z);
 		}
