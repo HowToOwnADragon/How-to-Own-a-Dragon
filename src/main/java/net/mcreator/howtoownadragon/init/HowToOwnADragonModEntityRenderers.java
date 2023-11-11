@@ -29,6 +29,7 @@ import net.mcreator.howtoownadragon.client.renderer.GronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleEggEntityRenderer;
 import net.mcreator.howtoownadragon.client.renderer.GronckleAttackRenderer;
+import net.mcreator.howtoownadragon.client.renderer.ChickenRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyTTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyTTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyNadderMaleRenderer;
@@ -78,5 +79,6 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_NADDER_FEMALE.get(), AdolescentNadderFemaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.ADOLESCENT_NADDER_MALE.get(), AdolescentNadderMaleRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.NADDER_EGG_ENTITY.get(), NadderEggEntityRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.CHICKEN.get(), ChickenRenderer::new);
 	}
 }

@@ -18262,6 +18262,58 @@
         "dependencies": []
       },
       "path": "~/Config"
+    },
+    {
+      "name": "Chicken",
+      "type": "animatedentity",
+      "sortid": 1184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/ChickenEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/ChickenModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/ChickenRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken"
+    },
+    {
+      "name": "ReplaceChicken",
+      "type": "procedure",
+      "sortid": 1185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replace_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReplaceChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken"
     }
   ],
   "variable_elements": [
@@ -18294,6 +18346,7 @@
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
       "advancements.hidden_world_root.descr": "What is this place?",
       "block.how_to_own_a_dragon.limestone": "Limestone",
+      "entity.how_to_own_a_dragon.chicken": "Chicken",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.baby_nadder_male_spawn_egg": "Baby Male Deadly Nadder Spawn Egg",
       "item.how_to_own_a_dragon.nadder_arrow": "Deadly Nadder Arrow",
@@ -18446,6 +18499,7 @@
       "item.how_to_own_a_dragon.adolescent_nadder_female_spawn_egg": "Adolescent Female Deadly Nadder Spawn Egg",
       "entity.how_to_own_a_dragon.gronckle_male": "Male Gronckle",
       "block.how_to_own_a_dragon.plains_grass_block": "Plains Grass Block",
+      "item.how_to_own_a_dragon.chicken_spawn_egg": "Chicken Spawn Egg",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.not_grown_female_nadder_gui.label_male_gronckle": "Female Deadly Nadder",
       "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
@@ -19026,6 +19080,15 @@
               },
               {
                 "name": "SpawnEgg",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Animals",
+            "children": [
+              {
+                "name": "Chicken",
                 "children": []
               }
             ]

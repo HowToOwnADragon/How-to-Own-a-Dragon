@@ -36,6 +36,7 @@ import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
+import net.mcreator.howtoownadragon.entity.ChickenEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
@@ -143,6 +144,10 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<NadderEggEntityEntity>of(NadderEggEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NadderEggEntityEntity::new)
 
 					.sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<ChickenEntity>> CHICKEN = register("chicken",
+			EntityType.Builder.<ChickenEntity>of(ChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChickenEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -182,6 +187,7 @@ public class HowToOwnADragonModEntities {
 			AdolescentNadderFemaleEntity.init();
 			AdolescentNadderMaleEntity.init();
 			NadderEggEntityEntity.init();
+			ChickenEntity.init();
 		});
 	}
 
@@ -218,5 +224,6 @@ public class HowToOwnADragonModEntities {
 		event.put(ADOLESCENT_NADDER_FEMALE.get(), AdolescentNadderFemaleEntity.createAttributes().build());
 		event.put(ADOLESCENT_NADDER_MALE.get(), AdolescentNadderMaleEntity.createAttributes().build());
 		event.put(NADDER_EGG_ENTITY.get(), NadderEggEntityEntity.createAttributes().build());
+		event.put(CHICKEN.get(), ChickenEntity.createAttributes().build());
 	}
 }
