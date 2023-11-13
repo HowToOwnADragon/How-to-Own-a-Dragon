@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Chicken",
+    "mobName": "Baby Chicken",
     "mobLabel": "",
     "mobModelTexture": "chickenwhite.png",
     "mobModelGlowTexture": "",
@@ -103,7 +103,7 @@
       "name": "ChickenFall"
     },
     "onInitialSpawn": {
-      "name": "TextureChicken"
+      "name": "TextureBabyChicken"
     },
     "hasAI": true,
     "aiBase": "(none)",

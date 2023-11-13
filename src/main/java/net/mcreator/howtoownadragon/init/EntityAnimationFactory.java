@@ -29,6 +29,7 @@ import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyChickenEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
@@ -252,6 +253,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof ChickenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BabyChickenEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

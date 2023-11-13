@@ -43,6 +43,7 @@ import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyChickenEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
@@ -148,6 +149,10 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<ChickenEntity>of(ChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChickenEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabyChickenEntity>> BABY_CHICKEN = register("baby_chicken",
+			EntityType.Builder.<BabyChickenEntity>of(BabyChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyChickenEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -188,6 +193,7 @@ public class HowToOwnADragonModEntities {
 			AdolescentNadderMaleEntity.init();
 			NadderEggEntityEntity.init();
 			ChickenEntity.init();
+			BabyChickenEntity.init();
 		});
 	}
 
@@ -225,5 +231,6 @@ public class HowToOwnADragonModEntities {
 		event.put(ADOLESCENT_NADDER_MALE.get(), AdolescentNadderMaleEntity.createAttributes().build());
 		event.put(NADDER_EGG_ENTITY.get(), NadderEggEntityEntity.createAttributes().build());
 		event.put(CHICKEN.get(), ChickenEntity.createAttributes().build());
+		event.put(BABY_CHICKEN.get(), BabyChickenEntity.createAttributes().build());
 	}
 }

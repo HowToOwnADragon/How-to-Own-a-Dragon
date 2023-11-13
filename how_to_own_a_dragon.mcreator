@@ -18277,7 +18277,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/ChickenRenderer.java"
         ]
       },
-      "path": "~/Dragons/Animals/Chicken"
+      "path": "~/Dragons/Animals/Chicken/Entity"
     },
     {
       "name": "ReplaceChicken",
@@ -18313,7 +18313,613 @@
           }
         ]
       },
+      "path": "~/Dragons/Animals/Chicken/ChickenOnly"
+    },
+    {
+      "name": "FeedNonGrownChicken",
+      "type": "procedure",
+      "sortid": 1186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_non_grown_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/FeedNonGrown"
+    },
+    {
+      "name": "SeedTameChicken",
+      "type": "procedure",
+      "sortid": 1187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seed_tame_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SeedTameChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Taming"
+    },
+    {
+      "name": "OnInitialEntitySpawnChicken",
+      "type": "procedure",
+      "sortid": 1188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_initial_entity_spawn_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OnInitialEntitySpawnChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Entity"
+    },
+    {
+      "name": "BabyChicken",
+      "type": "animatedentity",
+      "sortid": 1189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyChickenRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyChickenEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyChickenModel.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Entity"
+    },
+    {
+      "name": "Chickens",
+      "type": "tag",
+      "sortid": 1190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chickens",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/chickens.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Tag"
+    },
+    {
+      "name": "BeetrootSeedTameChicken",
+      "type": "procedure",
+      "sortid": 1191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beetroot_seed_tame_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BeetrootSeedTameChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Taming"
+    },
+    {
+      "name": "MelonSeedTameChicken",
+      "type": "procedure",
+      "sortid": 1192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_seed_tame_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MelonSeedTameChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Taming"
+    },
+    {
+      "name": "PumpkinSeedTameChicken",
+      "type": "procedure",
+      "sortid": 1193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pumpkin_seed_tame_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/PumpkinSeedTameChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Taming"
+    },
+    {
+      "name": "InLoveBreedingChicken",
+      "type": "procedure",
+      "sortid": 1194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_love_breeding_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/InLoveBreedingChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Breeding"
+    },
+    {
+      "name": "LayingEggChicken",
+      "type": "procedure",
+      "sortid": 1195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laying_egg_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/LayingEggChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/ChickenOnly"
+    },
+    {
+      "name": "ChickenBreeding",
+      "type": "procedure",
+      "sortid": 1196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_breeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ChickenBreedingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Breeding"
+    },
+    {
+      "name": "BreedingSpawnbabyChicken",
+      "type": "procedure",
+      "sortid": 1197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breeding_spawnbaby_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BreedingSpawnbabyChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Breeding"
+    },
+    {
+      "name": "TextureBabyChicken",
+      "type": "procedure",
+      "sortid": 1198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_baby_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureBabyChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
       "path": "~/Dragons/Animals/Chicken"
+    },
+    {
+      "name": "TextureChicken",
+      "type": "procedure",
+      "sortid": 1201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Entity"
+    },
+    {
+      "name": "ChickenFall",
+      "type": "procedure",
+      "sortid": 1202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_fall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ChickenFallProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Entity"
+    },
+    {
+      "name": "AutoTameChicken",
+      "type": "procedure",
+      "sortid": 1203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_tame_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AutoTameChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Growing"
+    },
+    {
+      "name": "RandomTextureBabyChicken",
+      "type": "procedure",
+      "sortid": 1204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_texture_baby_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RandomTextureBabyChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Entity"
+    },
+    {
+      "name": "GrowingTickRateChicken",
+      "type": "procedure",
+      "sortid": 1205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_rate_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickRateChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Growing"
+    },
+    {
+      "name": "GrowUpBabyChicken",
+      "type": "procedure",
+      "sortid": 1206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grow_up_baby_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpBabyChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Growing"
     }
   ],
   "variable_elements": [
@@ -18366,6 +18972,7 @@
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
+      "item.how_to_own_a_dragon.baby_chicken_spawn_egg": "Baby Chicken Spawn Egg",
       "entity.how_to_own_a_dragon.gronckle_female": "Female Gronckle",
       "entity.how_to_own_a_dragon.adolescent_gronckle_female": "Adolescent Female Gronckle",
       "item.how_to_own_a_dragon.baby_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
@@ -18470,6 +19077,7 @@
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "gui.how_to_own_a_dragon.male_ttgui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.baby_tt_male": "Male Terrible Terror",
+      "entity.how_to_own_a_dragon.baby_chicken": "Baby Chicken",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
       "item.how_to_own_a_dragon.juvenile_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
@@ -19089,7 +19697,36 @@
             "children": [
               {
                 "name": "Chicken",
-                "children": []
+                "children": [
+                  {
+                    "name": "Entity",
+                    "children": []
+                  },
+                  {
+                    "name": "FeedNonGrown",
+                    "children": []
+                  },
+                  {
+                    "name": "Taming",
+                    "children": []
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": []
+                  },
+                  {
+                    "name": "ChickenOnly",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  }
+                ]
               }
             ]
           }

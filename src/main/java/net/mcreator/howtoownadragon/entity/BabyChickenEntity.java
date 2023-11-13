@@ -56,7 +56,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.procedures.TextureChickenProcedure;
+import net.mcreator.howtoownadragon.procedures.TextureBabyChickenProcedure;
 import net.mcreator.howtoownadragon.procedures.ChickenFallProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
@@ -64,21 +64,21 @@ import javax.annotation.Nullable;
 
 import java.util.List;
 
-public class ChickenEntity extends TamableAnimal implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ChickenEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(ChickenEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ChickenEntity.class, EntityDataSerializers.STRING);
+public class BabyChickenEntity extends TamableAnimal implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(BabyChickenEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(BabyChickenEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(BabyChickenEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public ChickenEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(HowToOwnADragonModEntities.CHICKEN.get(), world);
+	public BabyChickenEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(HowToOwnADragonModEntities.BABY_CHICKEN.get(), world);
 	}
 
-	public ChickenEntity(EntityType<ChickenEntity> type, Level world) {
+	public BabyChickenEntity(EntityType<BabyChickenEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -156,7 +156,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		TextureChickenProcedure.execute(this);
+		TextureBabyChickenProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 
@@ -217,7 +217,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		ChickenEntity retval = HowToOwnADragonModEntities.CHICKEN.get().create(serverWorld);
+		BabyChickenEntity retval = HowToOwnADragonModEntities.BABY_CHICKEN.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}
@@ -301,7 +301,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(ChickenEntity.RemovalReason.KILLED);
+			this.remove(BabyChickenEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}
