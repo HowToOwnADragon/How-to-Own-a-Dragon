@@ -39,6 +39,8 @@ public class ReplaceChickenProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 				} else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.isBaby() : false)) {
+					if (!entity.level.isClientSide())
+						entity.discard();
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = new ChickenEntity(HowToOwnADragonModEntities.CHICKEN.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);
@@ -49,8 +51,6 @@ public class ReplaceChickenProcedure {
 							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						_level.addFreshEntity(entityToSpawn);
 					}
-					if (!entity.level.isClientSide())
-						entity.discard();
 				}
 			}
 		});
