@@ -18410,6 +18410,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -18420,7 +18424,7 @@
       "type": "animatedentity",
       "sortid": 1189,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "baby_chicken",
       "metadata": {
         "files": [
@@ -18768,6 +18772,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -19727,6 +19735,10 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Yak",
+                "children": []
               }
             ]
           }

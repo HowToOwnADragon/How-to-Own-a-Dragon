@@ -27,9 +27,9 @@ public class TextureBabyChickenProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		AutoTameChickenProcedure.execute(world, x, y, z, entity);
-		if (entity instanceof BabyChickenEntity) {
-			HowToOwnADragonMod.queueServerWork(2, () -> {
+		HowToOwnADragonMod.queueServerWork(1, () -> {
+			AutoTameChickenProcedure.execute(world, x, y, z, entity);
+			if (entity instanceof BabyChickenEntity) {
 				if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
 					if (entity instanceof BabyChickenEntity animatable)
 						animatable.setTexture("chickenbrown");
@@ -42,7 +42,7 @@ public class TextureBabyChickenProcedure {
 				} else {
 					RandomTextureBabyChickenProcedure.execute(entity);
 				}
-			});
-		}
+			}
+		});
 	}
 }

@@ -1,11 +1,12 @@
 package net.mcreator.howtoownadragon.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
 
 public class TextureChickenProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
@@ -18,7 +19,7 @@ public class TextureChickenProcedure {
 			if (entity instanceof ChickenEntity animatable)
 				animatable.setTexture("chickenwhite");
 		} else {
-			OnInitialEntitySpawnChickenProcedure.execute(entity);
+			OnInitialEntitySpawnChickenProcedure.execute(world, entity);
 		}
 	}
 }

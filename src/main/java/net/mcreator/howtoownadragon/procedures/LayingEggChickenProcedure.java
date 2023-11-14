@@ -35,7 +35,7 @@ public class LayingEggChickenProcedure {
 			return;
 		HowToOwnADragonMod.queueServerWork(1, () -> {
 			if (entity instanceof ChickenEntity) {
-				HowToOwnADragonMod.queueServerWork(600, () -> {
+				HowToOwnADragonMod.queueServerWork(6000, () -> {
 					if (entity.isAlive()) {
 						if (Mth.nextInt(RandomSource.create(), 1, 10) <= 2) {
 							if (world instanceof ServerLevel _level) {
@@ -43,52 +43,9 @@ public class LayingEggChickenProcedure {
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}
+							LayingEggChickenProcedure.execute(world, x, y, z, entity);
 						} else {
-							HowToOwnADragonMod.queueServerWork(600, () -> {
-								if (entity.isAlive()) {
-									if (Mth.nextInt(RandomSource.create(), 3, 10) <= 4) {
-										if (world instanceof ServerLevel _level) {
-											ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.EGG));
-											entityToSpawn.setPickUpDelay(10);
-											_level.addFreshEntity(entityToSpawn);
-										}
-									} else {
-										HowToOwnADragonMod.queueServerWork(600, () -> {
-											if (entity.isAlive()) {
-												if (Mth.nextInt(RandomSource.create(), 5, 10) <= 6) {
-													if (world instanceof ServerLevel _level) {
-														ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.EGG));
-														entityToSpawn.setPickUpDelay(10);
-														_level.addFreshEntity(entityToSpawn);
-													}
-												} else {
-													HowToOwnADragonMod.queueServerWork(600, () -> {
-														if (entity.isAlive()) {
-															if (Mth.nextInt(RandomSource.create(), 7, 10) <= 8) {
-																if (world instanceof ServerLevel _level) {
-																	ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.EGG));
-																	entityToSpawn.setPickUpDelay(10);
-																	_level.addFreshEntity(entityToSpawn);
-																}
-															} else {
-																HowToOwnADragonMod.queueServerWork(600, () -> {
-																	if (entity.isAlive()) {
-																		if (world instanceof ServerLevel _level) {
-																			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.EGG));
-																			entityToSpawn.setPickUpDelay(10);
-																			_level.addFreshEntity(entityToSpawn);
-																		}
-																	}
-																});
-															}
-														}
-													});
-												}
-											}
-										});
-									}
-								}
-							});
+							LayingEggChickenProcedure.execute(world, x, y, z, entity);
 						}
 					}
 				});
