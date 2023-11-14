@@ -18356,46 +18356,6 @@
       "path": "~/Dragons/Animals/Chicken/FeedNonGrown"
     },
     {
-      "name": "SeedTameChicken",
-      "type": "procedure",
-      "sortid": 1187,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "seed_tame_chicken",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SeedTameChickenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Chicken/Taming"
-    },
-    {
       "name": "OnInitialEntitySpawnChicken",
       "type": "procedure",
       "sortid": 1188,
@@ -18448,126 +18408,6 @@
         ]
       },
       "path": "~/Dragons/Animals/Chicken/Tag"
-    },
-    {
-      "name": "BeetrootSeedTameChicken",
-      "type": "procedure",
-      "sortid": 1191,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beetroot_seed_tame_chicken",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BeetrootSeedTameChickenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Chicken/Taming"
-    },
-    {
-      "name": "MelonSeedTameChicken",
-      "type": "procedure",
-      "sortid": 1192,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "melon_seed_tame_chicken",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MelonSeedTameChickenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Chicken/Taming"
-    },
-    {
-      "name": "PumpkinSeedTameChicken",
-      "type": "procedure",
-      "sortid": 1193,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pumpkin_seed_tame_chicken",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PumpkinSeedTameChickenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Chicken/Taming"
     },
     {
       "name": "InLoveBreedingChicken",
@@ -18802,42 +18642,6 @@
       "path": "~/Dragons/Animals/Chicken/Entity"
     },
     {
-      "name": "AutoTameChicken",
-      "type": "procedure",
-      "sortid": 1203,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "auto_tame_chicken",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AutoTameChickenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Chicken/Growing"
-    },
-    {
       "name": "RandomTextureBabyChicken",
       "type": "procedure",
       "sortid": 1204,
@@ -19009,46 +18813,6 @@
         ]
       },
       "path": "~/Dragons/Animals/Yak/Entity"
-    },
-    {
-      "name": "WheatTameYak",
-      "type": "procedure",
-      "sortid": 1211,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wheat_tame_yak",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/WheatTameYakProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Yak/Taming"
     },
     {
       "name": "Yaks",
@@ -19302,42 +19066,6 @@
       "path": "~/Dragons/Animals/Yak/YakOnly"
     },
     {
-      "name": "AutoTameYak",
-      "type": "procedure",
-      "sortid": 1221,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "auto_tame_yak",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AutoTameYakProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Dragons/Animals/Yak/Growing"
-    },
-    {
       "name": "GrowUpBabyYak",
       "type": "procedure",
       "sortid": 1222,
@@ -19436,7 +19164,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_furnace.json"
         ]
       },
-      "path": "~/Recipe/YakMeat"
+      "path": "~/Recipe/Yak/YakMeat"
     },
     {
       "name": "YakMeatSmoker",
@@ -19450,7 +19178,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_smoker.json"
         ]
       },
-      "path": "~/Recipe/YakMeat"
+      "path": "~/Recipe/Yak/YakMeat"
     },
     {
       "name": "YakMeatCampfire",
@@ -19464,7 +19192,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_campfire.json"
         ]
       },
-      "path": "~/Recipe/YakMeat"
+      "path": "~/Recipe/Yak/YakMeat"
     },
     {
       "name": "YakMilk",
@@ -19514,12 +19242,65 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "sourceentity",
             "type": "entity"
           }
         ]
       },
       "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
+    },
+    {
+      "name": "YakNogBowl",
+      "type": "item",
+      "sortid": 1232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_nog_bowl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/YakNogBowlItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/yak_nog_bowl.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly/Yaknog"
+    },
+    {
+      "name": "YaknogNausea",
+      "type": "procedure",
+      "sortid": 1233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaknog_nausea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/YaknogNauseaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly/Yaknog"
+    },
+    {
+      "name": "Yaknog",
+      "type": "recipe",
+      "sortid": 1234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaknog",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/yaknog.json"
+        ]
+      },
+      "path": "~/Recipe/Yak/Yaknog"
     }
   ],
   "variable_elements": [
@@ -19623,6 +19404,7 @@
       "entity.how_to_own_a_dragon.juvenile_nadder_female": "Juvenile Female Deadly Nadder",
       "entity.how_to_own_a_dragon.test_gronckle": "Test Gronckle",
       "item.how_to_own_a_dragon.nadder_egg_entity_spawn_egg": "Deadly Nadder Egg Spawn Egg",
+      "item.how_to_own_a_dragon.yak_nog_bowl": "Yaknog Bowl",
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
       "item_group.how_to_own_a_dragon.tools": "Tools",
       "gui.how_to_own_a_dragon.gronkle_iron_gui_male.button_smelt": "Smelt",
@@ -20314,10 +20096,6 @@
                     "children": []
                   },
                   {
-                    "name": "Taming",
-                    "children": []
-                  },
-                  {
                     "name": "Tag",
                     "children": []
                   },
@@ -20356,6 +20134,10 @@
                       {
                         "name": "YakMilk",
                         "children": []
+                      },
+                      {
+                        "name": "Yaknog",
+                        "children": []
                       }
                     ]
                   },
@@ -20373,10 +20155,6 @@
                   },
                   {
                     "name": "Tag",
-                    "children": []
-                  },
-                  {
-                    "name": "Taming",
                     "children": []
                   }
                 ]
@@ -20470,8 +20248,17 @@
             "children": []
           },
           {
-            "name": "YakMeat",
-            "children": []
+            "name": "Yak",
+            "children": [
+              {
+                "name": "YakMeat",
+                "children": []
+              },
+              {
+                "name": "Yaknog",
+                "children": []
+              }
+            ]
           }
         ]
       },

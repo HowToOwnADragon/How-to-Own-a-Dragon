@@ -56,6 +56,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.RAW_YAK_MEAT.get());
 					tabData.accept(HowToOwnADragonModItems.COOKED_YAK_MEAT.get());
 					tabData.accept(HowToOwnADragonModItems.YAK_MILK.get());
+					tabData.accept(HowToOwnADragonModItems.YAK_NOG_BOWL.get());
 				})
 
 		);

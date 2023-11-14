@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.howtoownadragon.item.YakNogBowlItem;
 import net.mcreator.howtoownadragon.item.YakMilkItem;
 import net.mcreator.howtoownadragon.item.ValkasStaffItem;
 import net.mcreator.howtoownadragon.item.TTScaleItem;
@@ -106,6 +107,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> RAW_YAK_MEAT = REGISTRY.register("raw_yak_meat", () -> new RawYakMeatItem());
 	public static final RegistryObject<Item> COOKED_YAK_MEAT = REGISTRY.register("cooked_yak_meat", () -> new CookedYakMeatItem());
 	public static final RegistryObject<Item> YAK_MILK = REGISTRY.register("yak_milk", () -> new YakMilkItem());
+	public static final RegistryObject<Item> YAK_NOG_BOWL = REGISTRY.register("yak_nog_bowl", () -> new YakNogBowlItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

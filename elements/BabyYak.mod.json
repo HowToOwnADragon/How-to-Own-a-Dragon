@@ -100,7 +100,7 @@
       "value": ""
     },
     "onInitialSpawn": {
-      "name": "AutoTameYak"
+      "name": "GrowingTickRateYak"
     },
     "hasAI": true,
     "aiBase": "(none)",

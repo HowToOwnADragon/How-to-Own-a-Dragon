@@ -28,7 +28,7 @@ public class TextureBabyChickenProcedure {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(1, () -> {
-			AutoTameChickenProcedure.execute(world, x, y, z, entity);
+			GrowingTickRateChickenProcedure.execute(world, x, y, z, entity);
 			if (entity instanceof BabyChickenEntity) {
 				if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
 					if (entity instanceof BabyChickenEntity animatable)
