@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.howtoownadragon.entity.YakEntity;
 import net.mcreator.howtoownadragon.entity.TestNadderEntity;
 import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
 import net.mcreator.howtoownadragon.entity.TTTestEntity;
@@ -37,6 +38,7 @@ import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
+import net.mcreator.howtoownadragon.entity.BabyYakEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
@@ -153,6 +155,14 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<BabyChickenEntity>of(BabyChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyChickenEntity::new)
 
 					.sized(0.3f, 0.3f));
+	public static final RegistryObject<EntityType<YakEntity>> YAK = register("yak",
+			EntityType.Builder.<YakEntity>of(YakEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YakEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabyYakEntity>> BABY_YAK = register("baby_yak",
+			EntityType.Builder.<BabyYakEntity>of(BabyYakEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyYakEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -194,6 +204,8 @@ public class HowToOwnADragonModEntities {
 			NadderEggEntityEntity.init();
 			ChickenEntity.init();
 			BabyChickenEntity.init();
+			YakEntity.init();
+			BabyYakEntity.init();
 		});
 	}
 
@@ -232,5 +244,7 @@ public class HowToOwnADragonModEntities {
 		event.put(NADDER_EGG_ENTITY.get(), NadderEggEntityEntity.createAttributes().build());
 		event.put(CHICKEN.get(), ChickenEntity.createAttributes().build());
 		event.put(BABY_CHICKEN.get(), BabyChickenEntity.createAttributes().build());
+		event.put(YAK.get(), YakEntity.createAttributes().build());
+		event.put(BABY_YAK.get(), BabyYakEntity.createAttributes().build());
 	}
 }

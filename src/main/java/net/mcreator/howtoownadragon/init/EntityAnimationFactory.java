@@ -4,6 +4,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.mcreator.howtoownadragon.entity.YakEntity;
 import net.mcreator.howtoownadragon.entity.TestNadderEntity;
 import net.mcreator.howtoownadragon.entity.TestGronckleEntity;
 import net.mcreator.howtoownadragon.entity.TTTestEntity;
@@ -23,6 +24,7 @@ import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
+import net.mcreator.howtoownadragon.entity.BabyYakEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
@@ -260,6 +262,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof BabyChickenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof YakEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BabyYakEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

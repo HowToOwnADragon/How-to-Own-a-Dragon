@@ -14,26 +14,25 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.SpawnEggItem;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
@@ -43,11 +42,11 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -57,37 +56,33 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.procedures.TextureChickenProcedure;
-import net.mcreator.howtoownadragon.procedures.ChickenFallProcedure;
-import net.mcreator.howtoownadragon.procedures.ChickenDiesProceduresProcedure;
+import net.mcreator.howtoownadragon.procedures.YakOnInitialEntitySpawnProcedure;
+import net.mcreator.howtoownadragon.procedures.YakDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 
-public class ChickenEntity extends TamableAnimal implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ChickenEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(ChickenEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ChickenEntity.class, EntityDataSerializers.STRING);
+public class YakEntity extends TamableAnimal implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(YakEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(YakEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(YakEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public ChickenEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(HowToOwnADragonModEntities.CHICKEN.get(), world);
+	public YakEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(HowToOwnADragonModEntities.YAK.get(), world);
 	}
 
-	public ChickenEntity(EntityType<ChickenEntity> type, Level world) {
+	public YakEntity(EntityType<YakEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setPersistenceRequired();
-		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
@@ -95,7 +90,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "chickenwhite");
+		this.entityData.define(TEXTURE, "yak");
 	}
 
 	public void setTexture(String texture) {
@@ -112,31 +107,18 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	protected PathNavigation createNavigation(Level world) {
-		return new FlyingPathNavigation(this, world);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.WHEAT_SEEDS), true));
-		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.BEETROOT_SEEDS), true));
-		this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.of(Items.PUMPKIN_SEEDS), true));
-		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(Items.MELON_SEEDS), true));
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
-		this.goalSelector.addGoal(8, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Blocks.WHEAT.asItem()), true));
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new FloatGoal(this));
+		this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
-	}
-
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
 	}
 
 	@Override
@@ -150,27 +132,15 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	public boolean causeFallDamage(float l, float d, DamageSource source) {
-		return false;
-	}
-
-	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.is(DamageTypes.FALL))
-			return false;
-		return super.hurt(source, amount);
-	}
-
-	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		ChickenDiesProceduresProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		YakDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		TextureChickenProcedure.execute(world, this);
+		YakOnInitialEntitySpawnProcedure.execute(this);
 		return retval;
 	}
 
@@ -220,7 +190,6 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ChickenFallProcedure.execute(this);
 		this.refreshDimensions();
 	}
 
@@ -231,7 +200,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		ChickenEntity retval = HowToOwnADragonModEntities.CHICKEN.get().create(serverWorld);
+		YakEntity retval = HowToOwnADragonModEntities.YAK.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}
@@ -242,22 +211,14 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
-	}
-
-	@Override
-	public void setNoGravity(boolean ignored) {
-		super.setNoGravity(true);
-	}
-
-	@Override
 	public void aiStep() {
 		super.aiStep();
 		this.updateSwingTime();
-		this.setNoGravity(true);
 	}
 
 	public static void init() {
+		SpawnPlacements.register(HowToOwnADragonModEntities.YAK.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -267,7 +228,6 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 
@@ -276,9 +236,9 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("Walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("yak.animation.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("Idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("yak.animation.idle"));
 		}
 		return PlayState.STOP;
 	}
@@ -315,7 +275,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(ChickenEntity.RemovalReason.KILLED);
+			this.remove(YakEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

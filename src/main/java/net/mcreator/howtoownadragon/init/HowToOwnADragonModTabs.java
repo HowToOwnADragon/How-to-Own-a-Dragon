@@ -20,6 +20,8 @@ public class HowToOwnADragonModTabs {
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(HowToOwnADragonModItems.YAK_SPAWN_EGG.get());
+			tabData.accept(HowToOwnADragonModItems.BABY_YAK_SPAWN_EGG.get());
 		}
 
 		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -51,6 +53,7 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.NADDER_SPINE.get());
 					tabData.accept(HowToOwnADragonModItems.NADDER_ARROW.get());
 					tabData.accept(HowToOwnADragonModItems.NADDER_SADDLE.get());
+					tabData.accept(HowToOwnADragonModItems.RAW_YAK_MEAT.get());
 				})
 
 		);

@@ -7,6 +7,7 @@ package net.mcreator.howtoownadragon.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -19,6 +20,7 @@ import net.mcreator.howtoownadragon.item.TTEggItemItem;
 import net.mcreator.howtoownadragon.item.SpawnEggTTItem;
 import net.mcreator.howtoownadragon.item.SpawnEggNadderItem;
 import net.mcreator.howtoownadragon.item.SaddleRackItem;
+import net.mcreator.howtoownadragon.item.RawYakMeatItem;
 import net.mcreator.howtoownadragon.item.NightFuryScaleItem;
 import net.mcreator.howtoownadragon.item.NightFuryArmorItem;
 import net.mcreator.howtoownadragon.item.NadderSpineItem;
@@ -97,6 +99,9 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> NADDER_ARROW = REGISTRY.register("nadder_arrow", () -> new NadderArrowItem());
 	public static final RegistryObject<Item> NADDER_SADDLE = REGISTRY.register("nadder_saddle", () -> new NadderSaddleItem());
 	public static final RegistryObject<Item> NADDER_EGG_ITEM = REGISTRY.register("nadder_egg_item", () -> new NadderEggItemItem());
+	public static final RegistryObject<Item> YAK_SPAWN_EGG = REGISTRY.register("yak_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.YAK, -10066330, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> BABY_YAK_SPAWN_EGG = REGISTRY.register("baby_yak_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_YAK, -10066330, -13421773, new Item.Properties()));
+	public static final RegistryObject<Item> RAW_YAK_MEAT = REGISTRY.register("raw_yak_meat", () -> new RawYakMeatItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

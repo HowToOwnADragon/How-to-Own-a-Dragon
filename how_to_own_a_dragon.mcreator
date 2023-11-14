@@ -18974,6 +18974,440 @@
         ]
       },
       "path": "~/Dragons/Animals/Chicken/Dies"
+    },
+    {
+      "name": "Yak",
+      "type": "animatedentity",
+      "sortid": 1209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/yak_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/YakEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/YakRenderer.java",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/yak_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/YakModel.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Entity"
+    },
+    {
+      "name": "BabyYak",
+      "type": "animatedentity",
+      "sortid": 1210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyYakEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyYakRenderer.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_yak_spawn_egg.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyYakModel.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Entity"
+    },
+    {
+      "name": "WheatTameYak",
+      "type": "procedure",
+      "sortid": 1211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheat_tame_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WheatTameYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Taming"
+    },
+    {
+      "name": "Yaks",
+      "type": "tag",
+      "sortid": 1212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yaks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/yaks.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Tag"
+    },
+    {
+      "name": "YakDies",
+      "type": "loottable",
+      "sortid": 1213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/yak_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Dies"
+    },
+    {
+      "name": "YakDiesProcedure",
+      "type": "procedure",
+      "sortid": 1214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_dies_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/YakDiesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Dies"
+    },
+    {
+      "name": "FeedNonGrownYak",
+      "type": "procedure",
+      "sortid": 1215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_non_grown_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/FeedNonGrown"
+    },
+    {
+      "name": "YakBreeding",
+      "type": "procedure",
+      "sortid": 1216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_breeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/YakBreedingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Breeding"
+    },
+    {
+      "name": "InLoveBreedingYak",
+      "type": "procedure",
+      "sortid": 1217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_love_breeding_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/InLoveBreedingYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Breeding"
+    },
+    {
+      "name": "BreedingSpawnBabyYak",
+      "type": "procedure",
+      "sortid": 1218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breeding_spawn_baby_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BreedingSpawnBabyYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Breeding"
+    },
+    {
+      "name": "YakOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 1219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/YakOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Entity"
+    },
+    {
+      "name": "RawYakMeat",
+      "type": "item",
+      "sortid": 1220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_yak_meat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/RawYakMeatItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/raw_yak_meat.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly"
+    },
+    {
+      "name": "AutoTameYak",
+      "type": "procedure",
+      "sortid": 1221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_tame_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AutoTameYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Growing"
+    },
+    {
+      "name": "GrowUpBabyYak",
+      "type": "procedure",
+      "sortid": 1222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grow_up_baby_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpBabyYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Growing"
+    },
+    {
+      "name": "GrowingTickRateYak",
+      "type": "procedure",
+      "sortid": 1223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_rate_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickRateYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/Growing"
     }
   ],
   "variable_elements": [
@@ -19055,6 +19489,7 @@
       "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
       "item.how_to_own_a_dragon.baby_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
+      "entity.how_to_own_a_dragon.yak": "Yak",
       "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "gui.how_to_own_a_dragon.female_ttgui.label_inventory": "Inventory",
@@ -19083,6 +19518,7 @@
       "item.how_to_own_a_dragon.tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "entity.how_to_own_a_dragon.adolescent_tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.baby_yak_spawn_egg": "Baby Yak Spawn Egg",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
@@ -19109,10 +19545,12 @@
       "block.how_to_own_a_dragon.deep_iron_stairs": "Deep Iron Stairs",
       "gui.how_to_own_a_dragon.female_ttgui.label_male_gronckle": "Female Terrible Terror",
       "item.how_to_own_a_dragon.valkas_staff": "Valka Staff",
+      "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
       "block.how_to_own_a_dragon.deep_iron_slab": "Deep Iron Slab",
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "item.how_to_own_a_dragon.adolescent_gronckle_female_spawn_egg": "Adolescent Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
+      "item.how_to_own_a_dragon.raw_yak_meat": "Yak Meat",
       "key.how_to_own_a_dragon.all_follow_me": "All Follow Me",
       "advancements.picking_up_dragon_eye.title": "Information?!",
       "entity.how_to_own_a_dragon.juvenile_nadder_male": "Juvenile Male Deadly Nadder",
@@ -19165,6 +19603,7 @@
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.not_grown_female_nadder_gui.label_male_gronckle": "Female Deadly Nadder",
       "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
+      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "item.how_to_own_a_dragon.test_gronckle_spawn_egg": "Test Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
       "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
@@ -19788,7 +20227,45 @@
               },
               {
                 "name": "Yak",
-                "children": []
+                "children": [
+                  {
+                    "name": "Entity",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": []
+                  },
+                  {
+                    "name": "YakOnly",
+                    "children": [
+                      {
+                        "name": "YakMilk",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "FeedNonGrown",
+                    "children": []
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "Taming",
+                    "children": []
+                  }
+                ]
               }
             ]
           }
