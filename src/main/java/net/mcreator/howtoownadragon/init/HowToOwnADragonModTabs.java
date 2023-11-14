@@ -54,6 +54,8 @@ public class HowToOwnADragonModTabs {
 					tabData.accept(HowToOwnADragonModItems.NADDER_ARROW.get());
 					tabData.accept(HowToOwnADragonModItems.NADDER_SADDLE.get());
 					tabData.accept(HowToOwnADragonModItems.RAW_YAK_MEAT.get());
+					tabData.accept(HowToOwnADragonModItems.COOKED_YAK_MEAT.get());
+					tabData.accept(HowToOwnADragonModItems.YAK_MILK.get());
 				})
 
 		);

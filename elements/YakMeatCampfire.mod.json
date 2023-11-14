@@ -1,0 +1,22 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "recipeRetstackSize": 1,
+    "group": "yakmeat",
+    "cookingBookCategory": "FOOD",
+    "xpReward": 1.0,
+    "cookingTime": 600,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:RawYakMeat"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:CookedYakMeat"
+    },
+    "name": "yak_meat_campfire",
+    "namespace": "mod"
+  }
+}

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "yakmeat",
+    "texture": "cookedyakmeat",
     "customModelName": "Normal",
-    "name": "Raw Yak Meat",
+    "name": "Cooked Yak Meat",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Items"
@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 4,
+    "nutritionalValue": 8,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""

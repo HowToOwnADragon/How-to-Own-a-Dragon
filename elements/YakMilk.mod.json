@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "yakmeat",
+    "texture": "yakmilk",
     "customModelName": "Normal",
-    "name": "Raw Yak Meat",
+    "name": "Yak Milk",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Items"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -30,13 +30,13 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:YakMilk"
     },
-    "isMeat": true,
-    "isAlwaysEdible": false,
-    "animation": "eat"
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "none"
   }
 }

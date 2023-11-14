@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "group": "yakmeat",
+  "category": "food",
+  "experience": 1,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "how_to_own_a_dragon:raw_yak_meat"
+  },
+  "result": "how_to_own_a_dragon:cooked_yak_meat"
+}

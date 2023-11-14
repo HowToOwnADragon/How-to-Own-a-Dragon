@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.howtoownadragon.item.YakMilkItem;
 import net.mcreator.howtoownadragon.item.ValkasStaffItem;
 import net.mcreator.howtoownadragon.item.TTScaleItem;
 import net.mcreator.howtoownadragon.item.TTEggItemItem;
@@ -44,6 +45,7 @@ import net.mcreator.howtoownadragon.item.DragonSymbolItem;
 import net.mcreator.howtoownadragon.item.DragonProofMetalItem;
 import net.mcreator.howtoownadragon.item.DragonEyeItem;
 import net.mcreator.howtoownadragon.item.DeepIronIngotItem;
+import net.mcreator.howtoownadragon.item.CookedYakMeatItem;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModItems {
@@ -102,6 +104,8 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> YAK_SPAWN_EGG = REGISTRY.register("yak_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.YAK, -10066330, -13421773, new Item.Properties()));
 	public static final RegistryObject<Item> BABY_YAK_SPAWN_EGG = REGISTRY.register("baby_yak_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_YAK, -10066330, -13421773, new Item.Properties()));
 	public static final RegistryObject<Item> RAW_YAK_MEAT = REGISTRY.register("raw_yak_meat", () -> new RawYakMeatItem());
+	public static final RegistryObject<Item> COOKED_YAK_MEAT = REGISTRY.register("cooked_yak_meat", () -> new CookedYakMeatItem());
+	public static final RegistryObject<Item> YAK_MILK = REGISTRY.register("yak_milk", () -> new YakMilkItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

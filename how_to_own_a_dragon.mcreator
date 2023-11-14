@@ -19408,6 +19408,118 @@
         ]
       },
       "path": "~/Dragons/Animals/Yak/Growing"
+    },
+    {
+      "name": "CookedYakMeat",
+      "type": "item",
+      "sortid": 1224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_yak_meat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/cooked_yak_meat.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/CookedYakMeatItem.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly"
+    },
+    {
+      "name": "YakMeatFurnace",
+      "type": "recipe",
+      "sortid": 1226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_meat_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_furnace.json"
+        ]
+      },
+      "path": "~/Recipe/YakMeat"
+    },
+    {
+      "name": "YakMeatSmoker",
+      "type": "recipe",
+      "sortid": 1227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_meat_smoker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_smoker.json"
+        ]
+      },
+      "path": "~/Recipe/YakMeat"
+    },
+    {
+      "name": "YakMeatCampfire",
+      "type": "recipe",
+      "sortid": 1228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_meat_campfire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_campfire.json"
+        ]
+      },
+      "path": "~/Recipe/YakMeat"
+    },
+    {
+      "name": "YakMilk",
+      "type": "item",
+      "sortid": 1229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_milk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/yak_milk.json",
+          "src/main/java/net/mcreator/howtoownadragon/item/YakMilkItem.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
+    },
+    {
+      "name": "YakMilkRemovePotions",
+      "type": "procedure",
+      "sortid": 1230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_milk_remove_potions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/YakMilkRemovePotionsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
+    },
+    {
+      "name": "MilkYak",
+      "type": "procedure",
+      "sortid": 1231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_yak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MilkYakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
     }
   ],
   "variable_elements": [
@@ -19503,6 +19615,7 @@
       "gui.how_to_own_a_dragon.female_nadder_gui.label_male_gronckle": "Female Deadly Nadder",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.cooked_yak_meat": "Cooked Yak Meat",
       "item.how_to_own_a_dragon.gronckle_male_spawn_egg": "Male Gronckle Spawn Egg",
       "block.how_to_own_a_dragon.reaper_spawn_block": "Reaper Spawn Block",
       "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
@@ -19528,6 +19641,7 @@
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
       "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.yak_milk": "Yak Milk",
       "item.how_to_own_a_dragon.gronckle_attack": "Gronckle Attack",
       "item.how_to_own_a_dragon.test_nadder_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "item.how_to_own_a_dragon.gronckle_iron": "Gronckle Iron",
@@ -19550,7 +19664,7 @@
       "item.how_to_own_a_dragon.dragon_proof_metal": "Dragon Proof Metal",
       "item.how_to_own_a_dragon.adolescent_gronckle_female_spawn_egg": "Adolescent Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
-      "item.how_to_own_a_dragon.raw_yak_meat": "Yak Meat",
+      "item.how_to_own_a_dragon.raw_yak_meat": "Raw Yak Meat",
       "key.how_to_own_a_dragon.all_follow_me": "All Follow Me",
       "advancements.picking_up_dragon_eye.title": "Information?!",
       "entity.how_to_own_a_dragon.juvenile_nadder_male": "Juvenile Male Deadly Nadder",
@@ -20353,6 +20467,10 @@
           },
           {
             "name": "ValkasStaff",
+            "children": []
+          },
+          {
+            "name": "YakMeat",
             "children": []
           }
         ]
