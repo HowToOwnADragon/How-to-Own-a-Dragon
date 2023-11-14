@@ -18928,6 +18928,52 @@
         ]
       },
       "path": "~/Dragons/Animals/Chicken/Growing"
+    },
+    {
+      "name": "ChickenDies",
+      "type": "loottable",
+      "sortid": 1207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_dies",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/chicken_dies.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Dies"
+    },
+    {
+      "name": "ChickenDiesProcedures",
+      "type": "procedure",
+      "sortid": 1208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_dies_procedures",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ChickenDiesProceduresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Chicken/Dies"
     }
   ],
   "variable_elements": [
@@ -19732,6 +19778,10 @@
                   },
                   {
                     "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "Dies",
                     "children": []
                   }
                 ]
