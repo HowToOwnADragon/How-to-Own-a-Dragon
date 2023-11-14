@@ -18808,7 +18808,6 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/entity/BabyYakEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyYakRenderer.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/baby_yak_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyYakModel.java"
         ]
       },

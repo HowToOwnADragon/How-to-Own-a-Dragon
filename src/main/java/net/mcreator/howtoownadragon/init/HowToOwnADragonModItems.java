@@ -103,7 +103,6 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> NADDER_SADDLE = REGISTRY.register("nadder_saddle", () -> new NadderSaddleItem());
 	public static final RegistryObject<Item> NADDER_EGG_ITEM = REGISTRY.register("nadder_egg_item", () -> new NadderEggItemItem());
 	public static final RegistryObject<Item> YAK_SPAWN_EGG = REGISTRY.register("yak_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.YAK, -10066330, -13421773, new Item.Properties()));
-	public static final RegistryObject<Item> BABY_YAK_SPAWN_EGG = REGISTRY.register("baby_yak_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.BABY_YAK, -10066330, -13421773, new Item.Properties()));
 	public static final RegistryObject<Item> RAW_YAK_MEAT = REGISTRY.register("raw_yak_meat", () -> new RawYakMeatItem());
 	public static final RegistryObject<Item> COOKED_YAK_MEAT = REGISTRY.register("cooked_yak_meat", () -> new CookedYakMeatItem());
 	public static final RegistryObject<Item> YAK_MILK = REGISTRY.register("yak_milk", () -> new YakMilkItem());

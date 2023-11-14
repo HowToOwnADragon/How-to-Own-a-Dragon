@@ -7,8 +7,8 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,6 +20,8 @@ import net.mcreator.howtoownadragon.entity.YakEntity;
 
 import javax.annotation.Nullable;
 
+import java.util.stream.Collectors;
+import java.util.List;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
@@ -38,31 +40,25 @@ public class YakBreedingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof YakEntity && !world.getEntitiesOfClass(YakEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-			if (((Entity) world.getEntitiesOfClass(YakEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getBoolean("yakinlove") == true && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
-					&& !(((Entity) world.getEntitiesOfClass(YakEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+		{
+			final Vec3 _center = new Vec3(x, y, z);
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			for (Entity entityiterator : _entfound) {
+				if (!(entityiterator == entity) && entityiterator instanceof YakEntity && entity instanceof YakEntity) {
+					if (entityiterator.getPersistentData().getBoolean("yakinlove") == true && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
+							&& !(entityiterator instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))) {
+						entityiterator.getPersistentData().putBoolean("yakinlove", false);
+						if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WHEAT) {
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Items.WHEAT);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
+							}
+							BreedingSpawnBabyYakProcedure.execute(world, x, y, z, entity);
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))) {
-				((Entity) world.getEntitiesOfClass(YakEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("yakinlove", false);
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.WHEAT.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.WHEAT);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					BreedingSpawnBabyYakProcedure.execute(world, x, y, z, entity);
 				}
 			}
 		}

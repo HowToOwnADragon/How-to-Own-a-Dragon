@@ -16,10 +16,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
-import net.mcreator.howtoownadragon.entity.ChickenEntity;
+import net.mcreator.howtoownadragon.entity.YakEntity;
 
 import javax.annotation.Nullable;
 
+import java.util.stream.Collectors;
+import java.util.List;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
@@ -38,58 +40,52 @@ public class ChickenBreedingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof ChickenEntity && !world.getEntitiesOfClass(ChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-			if (((Entity) world.getEntitiesOfClass(ChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getBoolean("chickeninlove") == true && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
-					&& !(((Entity) world.getEntitiesOfClass(ChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+		{
+			final Vec3 _center = new Vec3(x, y, z);
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			for (Entity entityiterator : _entfound) {
+				if (!(entityiterator == entity) && entityiterator instanceof YakEntity && entity instanceof YakEntity) {
+					if (entityiterator.getPersistentData().getBoolean("chickeninlove") == true && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
+							&& !(entityiterator instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))) {
+						entityiterator.getPersistentData().putBoolean("chickeninlove", false);
+						if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WHEAT_SEEDS) {
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Items.WHEAT_SEEDS);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
+							}
+							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.PUMPKIN_SEEDS) {
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Items.PUMPKIN_SEEDS);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
+							}
+							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MELON_SEEDS) {
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Items.MELON_SEEDS);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
+							}
+							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BEETROOT_SEEDS) {
+							if (sourceentity instanceof LivingEntity _entity) {
+								ItemStack _setstack = new ItemStack(Items.BEETROOT_SEEDS);
+								_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
+							}
+							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))) {
-				((Entity) world.getEntitiesOfClass(ChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("chickeninlove", false);
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WHEAT_SEEDS) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.WHEAT_SEEDS);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.PUMPKIN_SEEDS) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.PUMPKIN_SEEDS);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MELON_SEEDS) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.MELON_SEEDS);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BEETROOT_SEEDS) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.BEETROOT_SEEDS);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
 				}
 			}
 		}

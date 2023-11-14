@@ -1,8 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "sunflower_plains",
+    "plains",
+    "meadow"
+  ],
   "spawners": {
     "type": "how_to_own_a_dragon:yak",
     "weight": 20,
