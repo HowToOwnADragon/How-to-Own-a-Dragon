@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class BabyChickenRenderer extends GeoEntityRenderer<BabyChickenEntity> {
 	public BabyChickenRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new BabyChickenModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 0.3f;
 	}
 
 	@Override

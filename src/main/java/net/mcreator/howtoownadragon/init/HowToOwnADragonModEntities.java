@@ -148,11 +148,11 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<ChickenEntity>> CHICKEN = register("chicken",
 			EntityType.Builder.<ChickenEntity>of(ChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChickenEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 0.7f));
 	public static final RegistryObject<EntityType<BabyChickenEntity>> BABY_CHICKEN = register("baby_chicken",
 			EntityType.Builder.<BabyChickenEntity>of(BabyChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyChickenEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.3f, 0.3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
