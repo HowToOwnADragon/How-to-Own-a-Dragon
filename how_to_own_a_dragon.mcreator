@@ -18384,7 +18384,7 @@
       "type": "animatedentity",
       "sortid": 1189,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "baby_chicken",
       "metadata": {
         "files": [
@@ -18595,7 +18595,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken"
+      "path": "~/Dragons/Animals/Chicken/Entity"
     },
     {
       "name": "TextureChicken",
@@ -18639,7 +18639,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Dragons/Animals/Chicken"
     },
     {
       "name": "RandomTextureBabyChicken",
@@ -19300,6 +19300,415 @@
         ]
       },
       "path": "~/Recipe/Yak/Yaknog"
+    },
+    {
+      "name": "Sheep",
+      "type": "animatedentity",
+      "sortid": 1235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/SheepEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/SheepModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/SheepRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Entity"
+    },
+    {
+      "name": "BabySheep",
+      "type": "animatedentity",
+      "sortid": 1236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabySheepEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabySheepModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabySheepRenderer.java"
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Entity"
+    },
+    {
+      "name": "FeedNonGrownSheep",
+      "type": "procedure",
+      "sortid": 1237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_non_grown_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/FeedNonGrown"
+    },
+    {
+      "name": "Sheeps",
+      "type": "tag",
+      "sortid": 1238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheeps",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/sheeps.json"
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Tag"
+    },
+    {
+      "name": "InLoveBreedingSheep",
+      "type": "procedure",
+      "sortid": 1239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_love_breeding_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/InLoveBreedingSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Breeding"
+    },
+    {
+      "name": "SheepBreeding",
+      "type": "procedure",
+      "sortid": 1240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_breeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SheepBreedingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Breeding"
+    },
+    {
+      "name": "GrowingTickRateSheep",
+      "type": "procedure",
+      "sortid": 1242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_rate_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickRateSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Growing"
+    },
+    {
+      "name": "GrowUpBabySheep",
+      "type": "procedure",
+      "sortid": 1243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grow_up_baby_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpBabySheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Growing"
+    },
+    {
+      "name": "OnInitialEntitySpawnSheep",
+      "type": "procedure",
+      "sortid": 1244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_initial_entity_spawn_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OnInitialEntitySpawnSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Entity"
+    },
+    {
+      "name": "TextureSheep",
+      "type": "procedure",
+      "sortid": 1247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Entity"
+    },
+    {
+      "name": "DyeSheepColorChange",
+      "type": "procedure",
+      "sortid": 1248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_sheep_color_change",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/DyeSheepColorChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/SheepOnly/Dyeing"
+    },
+    {
+      "name": "A",
+      "type": "livingentity",
+      "sortid": 1249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/ARenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/AEntity.java"
+        ]
+      },
+      "path": "~/NOT USED"
+    },
+    {
+      "name": "ReplaceSheep",
+      "type": "procedure",
+      "sortid": 1250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replace_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ReplaceSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/SheepOnly"
+    },
+    {
+      "name": "TextureBabySheep",
+      "type": "procedure",
+      "sortid": 1251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_baby_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureBabySheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Entity"
+    },
+    {
+      "name": "OnInitialEntitySpawnBabySheep",
+      "type": "procedure",
+      "sortid": 1252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_initial_entity_spawn_baby_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OnInitialEntitySpawnBabySheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dragons/Animals/Sheep/Entity"
     }
   ],
   "variable_elements": [
@@ -19327,6 +19736,7 @@
     "en_us": {
       "item.how_to_own_a_dragon.tt_egg_item": "Terrible Terror Egg",
       "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
+      "entity.how_to_own_a_dragon.baby_sheep": "Baby Sheep",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
@@ -19353,6 +19763,7 @@
       "key.how_to_own_a_dragon.fly_up": "Fly Up",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.baby_chicken_spawn_egg": "Baby Chicken Spawn Egg",
+      "item.how_to_own_a_dragon.baby_sheep_spawn_egg": "Baby Sheep Spawn Egg",
       "entity.how_to_own_a_dragon.gronckle_female": "Female Gronckle",
       "entity.how_to_own_a_dragon.adolescent_gronckle_female": "Adolescent Female Gronckle",
       "item.how_to_own_a_dragon.baby_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
@@ -19383,6 +19794,7 @@
       "item.how_to_own_a_dragon.baby_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "entity.how_to_own_a_dragon.yak": "Yak",
       "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "gui.how_to_own_a_dragon.female_ttgui.label_inventory": "Inventory",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
@@ -19410,6 +19822,7 @@
       "item.how_to_own_a_dragon.tt_test_spawn_egg": "Male Terrible Terror Spawn Egg",
       "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
+      "entity.how_to_own_a_dragon.a": "A",
       "entity.how_to_own_a_dragon.adolescent_tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.baby_yak_spawn_egg": "Baby Yak Spawn Egg",
@@ -19506,6 +19919,7 @@
       "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
       "item.how_to_own_a_dragon.nadder_spine": "Deadly Nadder Spine",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
+      "entity.how_to_own_a_dragon.sheep": "Sheep",
       "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
     }
   },
@@ -20157,6 +20571,44 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Sheep",
+                "children": [
+                  {
+                    "name": "Breeding",
+                    "children": []
+                  },
+                  {
+                    "name": "SheepOnly",
+                    "children": [
+                      {
+                        "name": "Dyeing",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Entity",
+                    "children": []
+                  },
+                  {
+                    "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "FeedNonGrown",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -20441,6 +20893,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "NOT USED",
+        "children": []
       }
     ]
   },

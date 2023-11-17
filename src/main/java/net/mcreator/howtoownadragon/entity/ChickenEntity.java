@@ -84,7 +84,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 
 	public ChickenEntity(EntityType<ChickenEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 2;
 		setNoAi(false);
 		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
@@ -263,7 +263,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MAX_HEALTH, 4);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);

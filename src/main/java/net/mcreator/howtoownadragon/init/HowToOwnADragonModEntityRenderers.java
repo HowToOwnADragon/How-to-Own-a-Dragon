@@ -16,6 +16,7 @@ import net.mcreator.howtoownadragon.client.renderer.TTTestRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.TTEggEntityRenderer;
+import net.mcreator.howtoownadragon.client.renderer.SheepRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NightFuryRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NadderMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.NadderFemaleRenderer;
@@ -34,6 +35,7 @@ import net.mcreator.howtoownadragon.client.renderer.ChickenRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyYakRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyTTMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyTTFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.BabySheepRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyNadderMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyNadderFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.BabyGronckleMaleRenderer;
@@ -45,6 +47,7 @@ import net.mcreator.howtoownadragon.client.renderer.AdolescentNadderMaleRenderer
 import net.mcreator.howtoownadragon.client.renderer.AdolescentNadderFemaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.AdolescentGronckleMaleRenderer;
 import net.mcreator.howtoownadragon.client.renderer.AdolescentGronckleFemaleRenderer;
+import net.mcreator.howtoownadragon.client.renderer.ARenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HowToOwnADragonModEntityRenderers {
@@ -86,5 +89,8 @@ public class HowToOwnADragonModEntityRenderers {
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_CHICKEN.get(), BabyChickenRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.YAK.get(), YakRenderer::new);
 		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_YAK.get(), BabyYakRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.SHEEP.get(), SheepRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.BABY_SHEEP.get(), BabySheepRenderer::new);
+		event.registerEntityRenderer(HowToOwnADragonModEntities.A.get(), ARenderer::new);
 	}
 }

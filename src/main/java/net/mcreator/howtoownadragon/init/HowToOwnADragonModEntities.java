@@ -4,6 +4,8 @@
  */
 package net.mcreator.howtoownadragon.init;
 
+import org.checkerframework.checker.units.qual.A;
+
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +25,7 @@ import net.mcreator.howtoownadragon.entity.TTTestEntity;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
+import net.mcreator.howtoownadragon.entity.SheepEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
@@ -41,6 +44,7 @@ import net.mcreator.howtoownadragon.entity.ChickenEntity;
 import net.mcreator.howtoownadragon.entity.BabyYakEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabySheepEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
@@ -52,6 +56,7 @@ import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -158,9 +163,21 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<YakEntity>> YAK = register("yak",
 			EntityType.Builder.<YakEntity>of(YakEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YakEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(1f, 2f));
 	public static final RegistryObject<EntityType<BabyYakEntity>> BABY_YAK = register("baby_yak",
 			EntityType.Builder.<BabyYakEntity>of(BabyYakEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyYakEntity::new)
+
+					.sized(0.5f, 1f));
+	public static final RegistryObject<EntityType<SheepEntity>> SHEEP = register("sheep",
+			EntityType.Builder.<SheepEntity>of(SheepEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SheepEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BabySheepEntity>> BABY_SHEEP = register("baby_sheep",
+			EntityType.Builder.<BabySheepEntity>of(BabySheepEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabySheepEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AEntity>> A = register("a",
+			EntityType.Builder.<AEntity>of(AEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -206,6 +223,9 @@ public class HowToOwnADragonModEntities {
 			BabyChickenEntity.init();
 			YakEntity.init();
 			BabyYakEntity.init();
+			SheepEntity.init();
+			BabySheepEntity.init();
+			AEntity.init();
 		});
 	}
 
@@ -246,5 +266,8 @@ public class HowToOwnADragonModEntities {
 		event.put(BABY_CHICKEN.get(), BabyChickenEntity.createAttributes().build());
 		event.put(YAK.get(), YakEntity.createAttributes().build());
 		event.put(BABY_YAK.get(), BabyYakEntity.createAttributes().build());
+		event.put(SHEEP.get(), SheepEntity.createAttributes().build());
+		event.put(BABY_SHEEP.get(), BabySheepEntity.createAttributes().build());
+		event.put(A.get(), AEntity.createAttributes().build());
 	}
 }

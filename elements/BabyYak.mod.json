@@ -7,13 +7,13 @@
     "mobModelTexture": "yak.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 0.5
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelWidth": 0.5,
+    "modelHeight": 1.0,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
@@ -58,8 +58,8 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
-    "xpAmount": 0,
+    "health": 5,
+    "xpAmount": 1,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",

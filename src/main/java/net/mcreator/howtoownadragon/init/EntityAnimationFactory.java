@@ -11,6 +11,7 @@ import net.mcreator.howtoownadragon.entity.TTTestEntity;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
+import net.mcreator.howtoownadragon.entity.SheepEntity;
 import net.mcreator.howtoownadragon.entity.NightFuryEntity;
 import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
@@ -27,6 +28,7 @@ import net.mcreator.howtoownadragon.entity.ChickenEntity;
 import net.mcreator.howtoownadragon.entity.BabyYakEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabySheepEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
@@ -276,6 +278,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof BabyYakEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SheepEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BabySheepEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -16,7 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
-import net.mcreator.howtoownadragon.entity.YakEntity;
+import net.mcreator.howtoownadragon.entity.ChickenEntity;
 
 import javax.annotation.Nullable;
 
@@ -44,7 +44,7 @@ public class ChickenBreedingProcedure {
 			final Vec3 _center = new Vec3(x, y, z);
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator == entity) && entityiterator instanceof YakEntity && entity instanceof YakEntity) {
+				if (!(entityiterator == entity) && entityiterator instanceof ChickenEntity && entity instanceof ChickenEntity) {
 					if (entityiterator.getPersistentData().getBoolean("chickeninlove") == true && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
 							&& !(entityiterator instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))) {
 						entityiterator.getPersistentData().putBoolean("chickeninlove", false);

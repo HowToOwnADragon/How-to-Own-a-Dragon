@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class YakRenderer extends GeoEntityRenderer<YakEntity> {
 	public YakRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new YakModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 1f;
 	}
 
 	@Override

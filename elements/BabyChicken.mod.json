@@ -7,7 +7,7 @@
     "mobModelTexture": "chickenwhite.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 0.4
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
@@ -58,8 +58,8 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
-    "xpAmount": 0,
+    "health": 2,
+    "xpAmount": 1,
     "waterMob": false,
     "flyingMob": true,
     "guiBoundTo": "<NONE>",
