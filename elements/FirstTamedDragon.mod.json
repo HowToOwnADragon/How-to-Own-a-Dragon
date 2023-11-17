@@ -2,8 +2,8 @@
   "_fv": 43,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Welcome to Jumanji! No wait....",
-    "achievementDescription": "Welcome to the world of dragons!",
+    "achievementName": "Berk Dragon Training Academy.",
+    "achievementDescription": "Tame your first dragon.",
     "achievementIcon": {
       "value": "CUSTOM:DragonSymbol"
     },
@@ -15,11 +15,11 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 0,
+    "rewardXP": 50,
     "achievementType": "task",
     "parent": {
-      "value": "No parent: root"
+      "value": "CUSTOM:WelcomeToTheWorld"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"84\" y=\"91\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"52\" y=\"72\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

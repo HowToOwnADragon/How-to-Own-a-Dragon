@@ -21,6 +21,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.client.Minecraft;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import javax.annotation.Nullable;
 
@@ -77,6 +79,14 @@ public class GronckleCodTameProcedure {
 							}
 							if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 								_toTame.tame(_owner);
+							if (sourceentity instanceof ServerPlayer _player) {
+								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:first_tamed_dragon"));
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
+							}
 						}
 					}
 				}
@@ -93,6 +103,14 @@ public class GronckleCodTameProcedure {
 				}.checkGamemode(sourceentity)) {
 					if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 						_toTame.tame(_owner);
+					if (sourceentity instanceof ServerPlayer _player) {
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:first_tamed_dragon"));
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 				}

@@ -1,14 +1,13 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "how_to_own_a_dragon:dragon_symbol"
     },
     "title": {
-      "translate": "advancements.welcome_to_the_world.title"
+      "translate": "advancements.first_tamed_dragon.title"
     },
     "description": {
-      "translate": "advancements.welcome_to_the_world.descr"
+      "translate": "advancements.first_tamed_dragon.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,8 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "welcome_to_the_world": {
+    "first_tamed_dragon": {
       "trigger": "minecraft:impossible"
     }
-  }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
 }
