@@ -23,7 +23,6 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.SheepEntity;
-import net.mcreator.howtoownadragon.entity.BabySheepEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
@@ -69,13 +68,15 @@ public class SheepBreedingProcedure {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										"/execute at @e[type=how_to_own_a_dragon:sheep, sort= nearest, limit= 1] run summon how_to_own_a_dragon:baby_sheep ~ ~ ~");
-							HowToOwnADragonMod.queueServerWork(1, () -> {
-								((Entity) world.getEntitiesOfClass(BabySheepEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-										return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-									}
-								}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("sheepcolor", (entity.getPersistentData().getString("sheepcolor")));
-							});
+							if ((entity.getPersistentData().getString("sheepcolor")).equals("black") && (entityiterator.getPersistentData().getString("sheepcolor")).equals("black")) {
+								HowToOwnADragonMod.queueServerWork(1, () -> {
+									entity.getPersistentData().putString("sheepcolor", "black");
+								});
+							} else {
+								HowToOwnADragonMod.queueServerWork(1, () -> {
+									entity.getPersistentData().putString("sheepcolor", "white");
+								});
+							}
 						}
 					}
 				}

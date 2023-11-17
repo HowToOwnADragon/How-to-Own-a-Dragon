@@ -11,6 +11,7 @@ public class TextureBabySheepProcedure {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(1, () -> {
+			entity.getPersistentData().putBoolean("sheared", false);
 			entity.getPersistentData().putBoolean("sheepinlove", false);
 			if ((entity.getPersistentData().getString("sheepcolor")).equals("white")) {
 				if (entity instanceof BabySheepEntity animatable)

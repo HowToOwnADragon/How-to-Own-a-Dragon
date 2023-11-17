@@ -6,13 +6,12 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.howtoownadragon.entity.SheepEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
-public class TextureSheepProcedure {
+public class GrowWoolProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		HowToOwnADragonMod.queueServerWork(1, () -> {
+		HowToOwnADragonMod.queueServerWork(600, () -> {
 			entity.getPersistentData().putBoolean("sheared", false);
-			entity.getPersistentData().putBoolean("sheepinlove", false);
 			if ((entity.getPersistentData().getString("sheepcolor")).equals("white")) {
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheep");
@@ -61,8 +60,6 @@ public class TextureSheepProcedure {
 			} else if ((entity.getPersistentData().getString("sheepcolor")).equals("pink")) {
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeppink");
-			} else {
-				OnInitialEntitySpawnSheepProcedure.execute(world, entity);
 			}
 		});
 	}
