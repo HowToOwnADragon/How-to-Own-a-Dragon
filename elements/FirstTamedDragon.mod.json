@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Berk Dragon Training Academy.",
+    "achievementName": "We, have dragons.",
     "achievementDescription": "Tame your first dragon.",
     "achievementIcon": {
       "value": "CUSTOM:DragonSymbol"
