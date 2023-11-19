@@ -7,6 +7,8 @@ public class ChickenFallProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.025), (entity.getDeltaMovement().z())));
+		if (!entity.isOnGround()) {
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.025), (entity.getDeltaMovement().z())));
+		}
 	}
 }

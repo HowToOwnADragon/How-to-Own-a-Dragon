@@ -1,0 +1,7 @@
+{
+  "_fv": 43,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_tamed</field><next><block type=\"wait\"><value name=\"ticks\"><block type=\"math_number\"><field name=\"NUM\">3</field></block></value><statement name=\"do\"><block type=\"controls_if\"><value name=\"IF0\"><block type=\"entity_is_tagged_in\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"tag\"><block type=\"text\"><field name=\"TEXT\">how_to_own_a_dragon:dragon</field></block></value></block></value><statement name=\"DO0\"><block type=\"entity_add_achievement\"><field name=\"achievement\">CUSTOM:FirstTamedDragon</field><value name=\"entity\"><block type=\"entity_getowner\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value></block></statement></block></statement></block></next></block></xml>"
+  }
+}

@@ -14,7 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -23,14 +22,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
@@ -57,7 +53,6 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.procedures.TextureChickenProcedure;
 import net.mcreator.howtoownadragon.procedures.ChickenFallProcedure;
@@ -87,7 +82,6 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 		xpReward = 2;
 		setNoAi(false);
 		setPersistenceRequired();
-		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
@@ -112,17 +106,12 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	protected PathNavigation createNavigation(Level world) {
-		return new FlyingPathNavigation(this, world);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.WHEAT_SEEDS), true));
-		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.BEETROOT_SEEDS), true));
-		this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.of(Items.PUMPKIN_SEEDS), true));
-		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(Items.MELON_SEEDS), true));
+		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.WHEAT_SEEDS), false));
+		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.PUMPKIN_SEEDS), false));
+		this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.of(Items.MELON_SEEDS), false));
+		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(Items.BEETROOT_SEEDS), false));
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));
@@ -151,7 +140,8 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
-		return false;
+		ChickenFallProcedure.execute(this);
+		return super.causeFallDamage(l, d, source);
 	}
 
 	@Override
@@ -220,7 +210,6 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ChickenFallProcedure.execute(this);
 		this.refreshDimensions();
 	}
 
@@ -242,19 +231,9 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
-	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
-	}
-
-	@Override
-	public void setNoGravity(boolean ignored) {
-		super.setNoGravity(true);
-	}
-
-	@Override
 	public void aiStep() {
 		super.aiStep();
 		this.updateSwingTime();
-		this.setNoGravity(true);
 	}
 
 	public static void init() {
@@ -262,12 +241,11 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
 		builder = builder.add(Attributes.MAX_HEALTH, 4);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 

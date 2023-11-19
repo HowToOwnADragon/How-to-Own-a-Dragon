@@ -83,7 +83,7 @@ public class ChickenTameNadderProcedure {
 								if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 									_toTame.tame(_owner);
 								if (sourceentity instanceof ServerPlayer _player) {
-									Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:first_tamed_dragon"));
+									Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:deleted_mod_element"));
 									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 									if (!_ap.isDone()) {
 										for (String criteria : _ap.getRemainingCriteria())
@@ -106,16 +106,16 @@ public class ChickenTameNadderProcedure {
 					}.checkGamemode(sourceentity)) {
 						if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 							_toTame.tame(_owner);
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 						if (sourceentity instanceof ServerPlayer _player) {
-							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:first_tamed_dragon"));
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:deleted_mod_element"));
 							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 							if (!_ap.isDone()) {
 								for (String criteria : _ap.getRemainingCriteria())
 									_player.getAdvancements().award(_adv, criteria);
 							}
 						}
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 					}
 				}
 			}

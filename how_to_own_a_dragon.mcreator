@@ -42,7 +42,7 @@
           }
         ]
       },
-      "path": "~/Dragons/NightFury"
+      "path": "~/Entities/NightFury"
     },
     {
       "name": "TheHiddenWorld",
@@ -91,7 +91,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java"
         ]
       },
-      "path": "~/Dragons/NightFury"
+      "path": "~/Entities/NightFury"
     },
     {
       "name": "TheHiddenWorldPlayerEntersDimension",
@@ -776,7 +776,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "WhenNotTamedKick",
@@ -852,7 +852,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "GronckleGraniteTame",
@@ -892,7 +892,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "GronckleCobbleTame",
@@ -932,7 +932,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "GronckleDioriteTame",
@@ -972,7 +972,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "GronckleDeepslateTame",
@@ -1012,7 +1012,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "GronckleAndesiteTame",
@@ -1052,7 +1052,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "GronckleCobbleDeepslateTame",
@@ -1092,7 +1092,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "Dragon",
@@ -1106,7 +1106,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon.json"
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Tag"
+      "path": "~/Entities/NoDragonButRelated/Tag"
     },
     {
       "name": "TheReaper",
@@ -1424,7 +1424,7 @@
           }
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated"
+      "path": "~/Entities/NoDragonButRelated"
     },
     {
       "name": "DeepIronRodRecipeMiddle",
@@ -1929,7 +1929,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckles.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Entities/Gronckle/Tag"
     },
     {
       "name": "ReaperSpawnBlockUpdateTick",
@@ -2087,7 +2087,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/SpawnEgg"
+      "path": "~/Entities/Gronckle/SpawnEgg"
     },
     {
       "name": "IncubatorRecipe",
@@ -2137,7 +2137,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowMessage"
+      "path": "~/Entities/Gronckle/Growing/GrowMessage"
     },
     {
       "name": "GronckleSandstoneTame",
@@ -2177,7 +2177,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "Limestone",
@@ -2304,7 +2304,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_full_grown.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Entities/Gronckle/Tag"
     },
     {
       "name": "StopRidingEntityWhenClickingWithDragonEye",
@@ -2498,7 +2498,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Ball"
+      "path": "~/Entities/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleAttack",
@@ -2515,7 +2515,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleAttackRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Ball"
+      "path": "~/Entities/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleAttackProjectileHitsLivingEntity",
@@ -2551,7 +2551,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Ball"
+      "path": "~/Entities/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleExplodeAtBlock",
@@ -2583,7 +2583,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Ball"
+      "path": "~/Entities/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleSaddle",
@@ -2598,7 +2598,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/GronckleSaddleItem.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle"
+      "path": "~/Entities/Gronckle/Saddle"
     },
     {
       "name": "SaddleRack",
@@ -2633,7 +2633,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Ability/Ball"
+      "path": "~/Entities/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleSaddleRecipe",
@@ -2828,7 +2828,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding"
+      "path": "~/Entities/Gronckle/Breeding"
     },
     {
       "name": "Incubator1HatchButton",
@@ -3052,7 +3052,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Taming"
+      "path": "~/Entities/Gronckle/Taming"
     },
     {
       "name": "PinkAndMeatlugEggGronckle",
@@ -3088,7 +3088,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "GronckleGrowingUpMessage",
@@ -3108,7 +3108,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowMessage"
+      "path": "~/Entities/Gronckle/Growing/GrowMessage"
     },
     {
       "name": "GronckleMale",
@@ -3125,7 +3125,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "GronckleFemale",
@@ -3142,7 +3142,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "GronckleMaleOnInitialEntitySpawn",
@@ -3162,7 +3162,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "GronckleFemaleOnInitialEntitySpawn",
@@ -3182,7 +3182,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "PinkBlueYellowBreedingFemaleGronckle",
@@ -3222,7 +3222,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "AdolescentGronckleMale",
@@ -3238,7 +3238,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleMaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "AdolescentGronckleFemale",
@@ -3254,7 +3254,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "JuvenileGronckleMale",
@@ -3270,7 +3270,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "JuvenileGronckleFemale",
@@ -3286,7 +3286,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "BabyGronckleMale",
@@ -3302,7 +3302,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleMaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "BabyGronckleFemale",
@@ -3318,7 +3318,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "GronckleEggEntity",
@@ -3333,7 +3333,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEggEntityEntity.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleEggItem",
@@ -3348,7 +3348,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_egg_item.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleEntityIsHurt",
@@ -3376,7 +3376,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleSpawnEgg",
@@ -3391,7 +3391,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/GronckleSpawnEggItem.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/SpawnEgg"
+      "path": "~/Entities/Gronckle/SpawnEgg"
     },
     {
       "name": "GronckleSpawnProcedure",
@@ -3427,7 +3427,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/SpawnEgg"
+      "path": "~/Entities/Gronckle/SpawnEgg"
     },
     {
       "name": "GronckleSpawnBabyProcedure",
@@ -3463,7 +3463,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/SpawnEgg"
+      "path": "~/Entities/Gronckle/SpawnEgg"
     },
     {
       "name": "FemaleGronckleGUI",
@@ -3479,7 +3479,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/FemaleGronckleGUIButtonMessage.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI"
+      "path": "~/Entities/Gronckle/GUI"
     },
     {
       "name": "MaleGronckleGUI",
@@ -3495,7 +3495,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/MaleGronckleGUIButtonMessage.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI"
+      "path": "~/Entities/Gronckle/GUI"
     },
     {
       "name": "PinkBlueYellowGronckleBreedingRequirement",
@@ -3535,7 +3535,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "PinkBlueYellowBreedingMaleGronckle",
@@ -3575,7 +3575,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PinkAndBlueYellowEggGronckle",
@@ -3611,7 +3611,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "PinkAndOrangeRedEggGronckle",
@@ -3647,7 +3647,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "MeatlugAndBlueYellowEggGronckle",
@@ -3683,7 +3683,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "MeatlugAndOrangeRedEggGronckle",
@@ -3719,7 +3719,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "BlueYellowAndOrangeRedEggGronckle",
@@ -3755,7 +3755,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "PinkOrangeRedGronckleBreedingRequirement",
@@ -3795,7 +3795,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "PinkMeatlugGronckleBreedingRequirement",
@@ -3835,7 +3835,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "MeatlugOrangeRedGronckleBreedingRequirement",
@@ -3875,7 +3875,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "MeatlugBlueYellowGronckleBreedingRequirement",
@@ -3915,7 +3915,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "BlueYellowOrangeRedGronckleBreedingRequirement",
@@ -3955,7 +3955,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "PinkOrangeRedBreedingFemaleGronckle",
@@ -3995,7 +3995,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PinkMeatlugBreedingFemaleGronckle",
@@ -4035,7 +4035,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PinkPinkBreedingFemaleGronckle",
@@ -4075,7 +4075,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PinkAndPinkEggGronckle",
@@ -4107,7 +4107,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "MeatlugAndMeatlugEggGronckle",
@@ -4139,7 +4139,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "BlueYellowAndBlueYellowEggGronckle",
@@ -4171,7 +4171,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "OrangeRedAndOrangeRedEggGronckle",
@@ -4203,7 +4203,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "MeatlugBlueYellowBreedingFemaleGronckle",
@@ -4243,7 +4243,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "MeatlugOrangeRedBreedingFemaleGronckle",
@@ -4283,7 +4283,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "MeatlugMeatlugBreedingFemaleGronckle",
@@ -4323,7 +4323,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "MeatlugPinkBreedingFemaleGronckle",
@@ -4363,7 +4363,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "OrangeRedBlueYellowBreedingFemaleGronckle",
@@ -4403,7 +4403,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "OrangeRedOrangeRedBreedingFemaleGronckle",
@@ -4443,7 +4443,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "OrangeRedMeatlugBreedingFemaleGronckle",
@@ -4483,7 +4483,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "OrangeRedPinkBreedingFemaleGronckle",
@@ -4523,7 +4523,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "BlueYellowBlueYellowBreedingFemaleGronckle",
@@ -4563,7 +4563,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "BlueYellowOrangeRedBreedingFemaleGronckle",
@@ -4603,7 +4603,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "BlueYellowMeatlugBreedingFemaleGronckle",
@@ -4643,7 +4643,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "BlueYellowPinkBreedingFemaleGronckle",
@@ -4683,7 +4683,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "ValkasStaff",
@@ -4762,7 +4762,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PinkOrangeRedBreedingMaleGronckle",
@@ -4802,7 +4802,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PinkMeatlugBreedingMaleGronckle",
@@ -4842,7 +4842,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "MeatlugBlueYellowBreedingMaleGronckle",
@@ -4882,7 +4882,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "MeatlugPinkBreedingMaleGronckle",
@@ -4922,7 +4922,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "MeatlugOrangeRedBreedingMaleGronckle",
@@ -4962,7 +4962,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "MeatlugMeatlugBreedingMaleGronckle",
@@ -5002,7 +5002,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "OrangeRedBlueYellowBreedingMaleGronckle",
@@ -5042,7 +5042,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "OrangeRedPinkBreedingMaleGronckle",
@@ -5082,7 +5082,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "OrangeRedOrangeRedBreedingMaleGronckle",
@@ -5122,7 +5122,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "OrangeRedMeatlugBreedingMaleGronckle",
@@ -5162,7 +5162,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "BlueYellowBlueYellowBreedingMaleGronckle",
@@ -5202,7 +5202,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "BlueYellowPinkBreedingMaleGronckle",
@@ -5242,7 +5242,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "BlueYellowOrangeRedBreedingMaleGronckle",
@@ -5282,7 +5282,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "BlueYellowMeatlugBreedingMaleGronckle",
@@ -5322,7 +5322,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PinkPinkGronckleBreedingRequirement",
@@ -5358,7 +5358,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "MeatlugMeatlugGronckleBreedingRequirement",
@@ -5394,7 +5394,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "OrangeRedOrangeRedGronckleBreedingRequirement",
@@ -5430,7 +5430,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "BlueYellowBlueYellowGronckleBreedingRequirement",
@@ -5466,7 +5466,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding/BreedingRequirementGronckle"
     },
     {
       "name": "DragonSpawn",
@@ -5520,7 +5520,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Male"
+      "path": "~/Entities/Gronckle/Growing/Baby/Male"
     },
     {
       "name": "PinkItemNeededForGrowUpGronckle",
@@ -5560,7 +5560,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Item"
+      "path": "~/Entities/Gronckle/Growing/Item"
     },
     {
       "name": "MeatlugBabyGrowUpMaleGronckle",
@@ -5600,7 +5600,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Male"
+      "path": "~/Entities/Gronckle/Growing/Baby/Male"
     },
     {
       "name": "OrangeRedBabyGrowUpMaleGronckle",
@@ -5640,7 +5640,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Male"
+      "path": "~/Entities/Gronckle/Growing/Baby/Male"
     },
     {
       "name": "BlueYellowBabyGrowUpMaleGronckle",
@@ -5680,7 +5680,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Male"
+      "path": "~/Entities/Gronckle/Growing/Baby/Male"
     },
     {
       "name": "MeatlugItemNeededForGrowUpGronckle",
@@ -5720,7 +5720,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Item"
+      "path": "~/Entities/Gronckle/Growing/Item"
     },
     {
       "name": "OrangeRedItemNeededForGrowUpGronckle",
@@ -5760,7 +5760,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Item"
+      "path": "~/Entities/Gronckle/Growing/Item"
     },
     {
       "name": "BlueYellowItemNeededForGrowUpGronckle",
@@ -5800,7 +5800,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Item"
+      "path": "~/Entities/Gronckle/Growing/Item"
     },
     {
       "name": "PinkGrowUpProcedureGronckle",
@@ -5840,7 +5840,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowUpProcedure"
+      "path": "~/Entities/Gronckle/Growing/GrowUpProcedure"
     },
     {
       "name": "MeatlugGrowUpProcedureGronckle",
@@ -5880,7 +5880,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowUpProcedure"
+      "path": "~/Entities/Gronckle/Growing/GrowUpProcedure"
     },
     {
       "name": "OrangeRedGrowUpProcedureGronckle",
@@ -5920,7 +5920,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowUpProcedure"
+      "path": "~/Entities/Gronckle/Growing/GrowUpProcedure"
     },
     {
       "name": "BlueYellowGrowUpProcedureGronckle",
@@ -5960,7 +5960,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowUpProcedure"
+      "path": "~/Entities/Gronckle/Growing/GrowUpProcedure"
     },
     {
       "name": "MeatlugAdolescentGrowUpMaleGronckle",
@@ -6000,7 +6000,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Male"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Male"
     },
     {
       "name": "BabyPinkMaleGronckleSpawnDragonCommand",
@@ -6104,7 +6104,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Male"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Male"
     },
     {
       "name": "AdolescentPinkMaleGronckleSpawnDragonCommand",
@@ -6336,7 +6336,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Female"
+      "path": "~/Entities/Gronckle/Growing/Baby/Female"
     },
     {
       "name": "MeatlugBabyGrowUpFemaleGronckle",
@@ -6376,7 +6376,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Female"
+      "path": "~/Entities/Gronckle/Growing/Baby/Female"
     },
     {
       "name": "OrangeRedBabyGrowUpFemaleGronckle",
@@ -6416,7 +6416,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Female"
+      "path": "~/Entities/Gronckle/Growing/Baby/Female"
     },
     {
       "name": "BlueYellowBabyGrowUpFemaleGronckle",
@@ -6456,7 +6456,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Baby/Female"
+      "path": "~/Entities/Gronckle/Growing/Baby/Female"
     },
     {
       "name": "OrangeRedAdolescentGrowUpMaleGronckle",
@@ -6496,7 +6496,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Male"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Male"
     },
     {
       "name": "BlueYellowAdolescentGrowUpMaleGronckle",
@@ -6536,7 +6536,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Male"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Male"
     },
     {
       "name": "PinkAdolescentGrowUpFemaleGronckle",
@@ -6576,7 +6576,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Female"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Female"
     },
     {
       "name": "MeatlugAdolescentGrowUpFemaleGronckle",
@@ -6616,7 +6616,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Female"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Female"
     },
     {
       "name": "OrangeRedAdolescentGrowUpFemaleGronckle",
@@ -6656,7 +6656,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Female"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Female"
     },
     {
       "name": "BlueYellowAdolescentGrowUpFemaleGronckle",
@@ -6696,7 +6696,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Adolescent/Female"
+      "path": "~/Entities/Gronckle/Growing/Adolescent/Female"
     },
     {
       "name": "PinkJuvenileGrowUpFemaleGronckle",
@@ -6736,7 +6736,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Female"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Female"
     },
     {
       "name": "MeatlugJuvenileGrowUpFemaleGronckle",
@@ -6776,7 +6776,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Female"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Female"
     },
     {
       "name": "OrangeRedJuvenileGrowUpFemaleGronckle",
@@ -6816,7 +6816,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Female"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Female"
     },
     {
       "name": "BlueYellowJuvenileGrowUpFemaleGronckle",
@@ -6856,7 +6856,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Female"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Female"
     },
     {
       "name": "MeatlugJuvenileGrowUpMaleGronckle",
@@ -6896,7 +6896,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Male"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Male"
     },
     {
       "name": "PinkJuvenileGrowUpMaleGronckle",
@@ -6936,7 +6936,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Male"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Male"
     },
     {
       "name": "OrangeRedJuvenileGrowUpMaleGronckle",
@@ -6976,7 +6976,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Male"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Male"
     },
     {
       "name": "BlueYellowJuvenileGrowUpMaleGronckle",
@@ -7016,7 +7016,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/Juvenile/Male"
+      "path": "~/Entities/Gronckle/Growing/Juvenile/Male"
     },
     {
       "name": "PinkSaddleMaleGronckle",
@@ -7040,7 +7040,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Male"
+      "path": "~/Entities/Gronckle/Saddle/Male"
     },
     {
       "name": "MeatlugSaddleMaleGronckle",
@@ -7064,7 +7064,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Male"
+      "path": "~/Entities/Gronckle/Saddle/Male"
     },
     {
       "name": "OrangeRedSaddleMaleGronckle",
@@ -7088,7 +7088,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Male"
+      "path": "~/Entities/Gronckle/Saddle/Male"
     },
     {
       "name": "BlueYellowSaddleMaleGronckle",
@@ -7112,7 +7112,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Male"
+      "path": "~/Entities/Gronckle/Saddle/Male"
     },
     {
       "name": "MeatlugSaddleFemaleGronckle",
@@ -7136,7 +7136,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Female"
+      "path": "~/Entities/Gronckle/Saddle/Female"
     },
     {
       "name": "PinkSaddleFemaleGronckle",
@@ -7160,7 +7160,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Female"
+      "path": "~/Entities/Gronckle/Saddle/Female"
     },
     {
       "name": "OrangeRedSaddleFemaleGronckle",
@@ -7184,7 +7184,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Female"
+      "path": "~/Entities/Gronckle/Saddle/Female"
     },
     {
       "name": "BlueYellowSaddleFemaleGronckle",
@@ -7208,7 +7208,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Saddle/Female"
+      "path": "~/Entities/Gronckle/Saddle/Female"
     },
     {
       "name": "NBTDataSpawnGronckle",
@@ -7228,7 +7228,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "NBTDataGrowUpGronckleMale",
@@ -7260,7 +7260,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing"
+      "path": "~/Entities/Gronckle/Growing"
     },
     {
       "name": "NBTDataGrowUpGronckleFemale",
@@ -7292,7 +7292,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing"
+      "path": "~/Entities/Gronckle/Growing"
     },
     {
       "name": "GronkleIronGUIMale",
@@ -7308,7 +7308,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/GronkleIronGUIMaleButtonMessage.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron/Male"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron/Male"
     },
     {
       "name": "OpenGronckleIronGUIMale",
@@ -7344,7 +7344,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron/Male"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron/Male"
     },
     {
       "name": "ButtonPressedGronckleIronGUIMale",
@@ -7380,7 +7380,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron/Male"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron/Male"
     },
     {
       "name": "GronckleIronGUIFemale",
@@ -7396,7 +7396,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/GronckleIronGUIFemaleScreen.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron/Female"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron/Female"
     },
     {
       "name": "OpenGronckleIronGUIFemale",
@@ -7432,7 +7432,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron/Female"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron/Female"
     },
     {
       "name": "ButtonPressedGronckleIronGUIFemale",
@@ -7468,7 +7468,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron/Female"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron/Female"
     },
     {
       "name": "AttackCooldown",
@@ -7482,7 +7482,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/AttackCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Cooldown"
+      "path": "~/Entities/NoDragonButRelated/Cooldown"
     },
     {
       "name": "MainPageInfoGronckle",
@@ -7672,7 +7672,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/BreedingCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Cooldown"
+      "path": "~/Entities/NoDragonButRelated/Cooldown"
     },
     {
       "name": "GronckleIronCooldown",
@@ -7686,7 +7686,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/GronckleIronCooldownMobEffect.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI/GronckleIron"
+      "path": "~/Entities/Gronckle/GUI/GronckleIron"
     },
     {
       "name": "GronckleColorLoadWorld",
@@ -7710,7 +7710,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Tick"
+      "path": "~/Entities/Gronckle/Tick"
     },
     {
       "name": "FeedNonGrownGronckles",
@@ -7750,7 +7750,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Feeding"
+      "path": "~/Entities/Gronckle/Feeding"
     },
     {
       "name": "GronkleColorTickRate",
@@ -7786,7 +7786,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Growing/GrowMessage"
+      "path": "~/Entities/Gronckle/Growing/GrowMessage"
     },
     {
       "name": "PinkIncubator1CallNBTDataProcedure",
@@ -7965,7 +7965,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownMaleGronckleGUIMenu.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI"
+      "path": "~/Entities/Gronckle/GUI"
     },
     {
       "name": "NotGrownFemaleGronckleGUI",
@@ -7980,7 +7980,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleGUIScreen.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI"
+      "path": "~/Entities/Gronckle/GUI"
     },
     {
       "name": "FoodPage1InfoGronckle",
@@ -8072,7 +8072,7 @@
           }
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated"
+      "path": "~/Entities/NoDragonButRelated"
     },
     {
       "name": "EggGravity",
@@ -8112,7 +8112,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Tick"
+      "path": "~/Entities/Gronckle/Tick"
     },
     {
       "name": "GronckleNotGrown",
@@ -8126,7 +8126,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_not_grown.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Entities/Gronckle/Tag"
     },
     {
       "name": "DragonScale",
@@ -8988,7 +8988,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/UseAbilityMessage.java"
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Ability"
+      "path": "~/Entities/NoDragonButRelated/Ability"
     },
     {
       "name": "GiveBreedingCooldownGronckle",
@@ -9020,7 +9020,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Breeding/Cross-Breeding"
+      "path": "~/Entities/Gronckle/Breeding/Cross-Breeding"
     },
     {
       "name": "UseAbilityOnKeyPressed",
@@ -9040,7 +9040,7 @@
           }
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Ability"
+      "path": "~/Entities/NoDragonButRelated/Ability"
     },
     {
       "name": "WildDayAI",
@@ -9107,7 +9107,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "TestGronckle",
@@ -9123,7 +9123,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java"
         ]
       },
-      "path": "~/Dragons/Gronckle/Entity"
+      "path": "~/Entities/Gronckle/Entity"
     },
     {
       "name": "GrownDragon",
@@ -9137,7 +9137,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/grown_dragon.json"
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Tag"
+      "path": "~/Entities/NoDragonButRelated/Tag"
     },
     {
       "name": "TTFemale",
@@ -9154,7 +9154,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "FeedNonGrownTT",
@@ -9194,7 +9194,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Feeding"
+      "path": "~/Entities/Terrible Terror/Feeding"
     },
     {
       "name": "BreadTameTT",
@@ -9234,7 +9234,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Taming"
+      "path": "~/Entities/Terrible Terror/Taming"
     },
     {
       "name": "SpawnEggTT",
@@ -9249,7 +9249,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_tt.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnProcedureTT",
@@ -9285,7 +9285,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnEggRichtClickEntityTT",
@@ -9325,7 +9325,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnBabyProcedureTT",
@@ -9361,7 +9361,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Terrible Terror/SpawnEgg"
     },
     {
       "name": "TT",
@@ -9375,7 +9375,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Tag"
+      "path": "~/Entities/Terrible Terror/Tag"
     },
     {
       "name": "TTFullGrown",
@@ -9389,7 +9389,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_full_grown.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Tag"
+      "path": "~/Entities/Terrible Terror/Tag"
     },
     {
       "name": "TTNotGrown",
@@ -9403,7 +9403,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_not_grown.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Tag"
+      "path": "~/Entities/Terrible Terror/Tag"
     },
     {
       "name": "FemaleOnInitialEntitySpawnTT",
@@ -9439,7 +9439,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "MaleOnInitialEntitySpawnTT",
@@ -9475,7 +9475,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "WildAI",
@@ -9512,7 +9512,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/TTTestEntity.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "BabyTTFemale",
@@ -9528,7 +9528,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "JuvenileTTFemale",
@@ -9544,7 +9544,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "AdolescentTTFemale",
@@ -9560,7 +9560,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentTTFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "BabyTTMale",
@@ -9576,7 +9576,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "JuvenileTTMale",
@@ -9592,7 +9592,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "AdolescentTTMale",
@@ -9608,7 +9608,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentTTMaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "RidebleDragon",
@@ -9622,7 +9622,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/rideble_dragon.json"
         ]
       },
-      "path": "~/Dragons/NoDragonButRelated/Tag"
+      "path": "~/Entities/NoDragonButRelated/Tag"
     },
     {
       "name": "CodTameTT",
@@ -9662,7 +9662,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Taming"
+      "path": "~/Entities/Terrible Terror/Taming"
     },
     {
       "name": "SalmonTameTT",
@@ -9702,7 +9702,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Taming"
+      "path": "~/Entities/Terrible Terror/Taming"
     },
     {
       "name": "ChickenTameTT",
@@ -9742,7 +9742,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Taming"
+      "path": "~/Entities/Terrible Terror/Taming"
     },
     {
       "name": "MaleTTGUI",
@@ -9757,7 +9757,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleTTGUIMenu.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/GUI"
+      "path": "~/Entities/Terrible Terror/GUI"
     },
     {
       "name": "FemaleTTGUI",
@@ -9772,7 +9772,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleTTGUIScreen.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/GUI"
+      "path": "~/Entities/Terrible Terror/GUI"
     },
     {
       "name": "TTScale",
@@ -9802,7 +9802,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/TTEggItemItem.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "TTEggEntityEntityIsHurt",
@@ -9830,7 +9830,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "GiveBreedingCooldownTT",
@@ -9862,7 +9862,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding"
     },
     {
       "name": "PinkAndPinkEggTT",
@@ -9894,7 +9894,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "PinkPinkTTBreedingReq",
@@ -9930,7 +9930,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
     },
     {
       "name": "PinkPinkBreedingFemaleTT",
@@ -9970,7 +9970,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PinkPinkBreedingMaleTT",
@@ -10010,7 +10010,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "GreenAndGreenEggTT",
@@ -10042,7 +10042,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "TurqAndTurqEggTT",
@@ -10074,7 +10074,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "GreenAndPinkEggTT",
@@ -10106,7 +10106,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "GreenAndTurqEggTT",
@@ -10138,7 +10138,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "PinkAndTurqEggTT",
@@ -10170,7 +10170,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "GreenGreenTTBreedingReq",
@@ -10206,7 +10206,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
     },
     {
       "name": "TurqTurqTTBreedingReq",
@@ -10242,7 +10242,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
     },
     {
       "name": "GreenPinkTTBreedingReq",
@@ -10278,7 +10278,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
     },
     {
       "name": "GreenTurqTTBreedingReq",
@@ -10314,7 +10314,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
     },
     {
       "name": "PinkTurqTTBreedingReq",
@@ -10350,7 +10350,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/BreedingReq"
     },
     {
       "name": "TTEggEntity",
@@ -10366,7 +10366,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTEggEntityRenderer.java"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "AlwaysTrue",
@@ -10422,7 +10422,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding"
+      "path": "~/Entities/Terrible Terror/Breeding"
     },
     {
       "name": "PinkGreenBreedingFemaleTT",
@@ -10462,7 +10462,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PinkTurqBreedingFemaleTT",
@@ -10502,7 +10502,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "GreenPinkBreedingFemaleTT",
@@ -10542,7 +10542,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "GreenGreenBreedingFemaleTT",
@@ -10582,7 +10582,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "GreenTurqBreedingFemaleTT",
@@ -10622,7 +10622,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "TurqGreenBreedingFemaleTT",
@@ -10662,7 +10662,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "TurqTurqBreedingFemaleTT",
@@ -10702,7 +10702,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "TurqPinkBreedingFemaleTT",
@@ -10742,7 +10742,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PinkGreenBreedingMaleTT",
@@ -10782,7 +10782,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PinkTurqBreedingMaleTT",
@@ -10822,7 +10822,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "GreenGreenBreedingMaleTT",
@@ -10862,7 +10862,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "GreenPinkBreedingMaleTT",
@@ -10902,7 +10902,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "GreenTurqBreedingMaleTT",
@@ -10942,7 +10942,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "TurqGreenBreedingMaleTT",
@@ -10982,7 +10982,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "TurqTurqBreedingMaleTT",
@@ -11022,7 +11022,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "TurqPinkBreedingMaleTT",
@@ -11062,7 +11062,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "TTFeedItems",
@@ -11076,7 +11076,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/items/tt_feed_items.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Tag"
+      "path": "~/Entities/Terrible Terror/Tag"
     },
     {
       "name": "OpenMaleGUITT",
@@ -11116,7 +11116,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/GUI"
+      "path": "~/Entities/Terrible Terror/GUI"
     },
     {
       "name": "OpenFemaleGUITT",
@@ -11156,7 +11156,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/GUI"
+      "path": "~/Entities/Terrible Terror/GUI"
     },
     {
       "name": "NBTOnInitiallSpawnTT",
@@ -11176,7 +11176,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity"
     },
     {
       "name": "TTIncubator1Tick",
@@ -11244,7 +11244,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+      "path": "~/Entities/Terrible Terror/Growing/GrowMessage"
     },
     {
       "name": "GrowingUpMessageTT",
@@ -11264,7 +11264,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+      "path": "~/Entities/Terrible Terror/Growing/GrowMessage"
     },
     {
       "name": "ColorTickRateTT",
@@ -11300,7 +11300,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/GrowMessage"
+      "path": "~/Entities/Terrible Terror/Growing/GrowMessage"
     },
     {
       "name": "GreenGrowUpProcedureTT",
@@ -11340,7 +11340,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+      "path": "~/Entities/Terrible Terror/Growing/GrowUpProcedure"
     },
     {
       "name": "PinkGrowUpProcedureTT",
@@ -11380,7 +11380,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+      "path": "~/Entities/Terrible Terror/Growing/GrowUpProcedure"
     },
     {
       "name": "TurqGrowUpProcedureTT",
@@ -11420,7 +11420,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/GrowUpProcedure"
+      "path": "~/Entities/Terrible Terror/Growing/GrowUpProcedure"
     },
     {
       "name": "PinkItemNeededForGrowUpTT",
@@ -11460,7 +11460,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Item"
+      "path": "~/Entities/Terrible Terror/Growing/Item"
     },
     {
       "name": "GreenItemNeededForGrowUpTT",
@@ -11500,7 +11500,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Item"
+      "path": "~/Entities/Terrible Terror/Growing/Item"
     },
     {
       "name": "TurqItemNeededForGrowUpTT",
@@ -11540,7 +11540,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Item"
+      "path": "~/Entities/Terrible Terror/Growing/Item"
     },
     {
       "name": "PinkBabyGrowUpMaleTT",
@@ -11580,7 +11580,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Baby/Male"
     },
     {
       "name": "GreenBabyGrowUpMaleTT",
@@ -11620,7 +11620,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Baby/Male"
     },
     {
       "name": "TurqBabyGrowUpMaleTT",
@@ -11660,7 +11660,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Baby/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Baby/Male"
     },
     {
       "name": "GreenBabyGrowUpFemaleTT",
@@ -11700,7 +11700,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Baby/Female"
     },
     {
       "name": "PinkBabyGrowUpFemaleTT",
@@ -11740,7 +11740,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Baby/Female"
     },
     {
       "name": "TurqBabyGrowUpFemaleTT",
@@ -11780,7 +11780,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Baby/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Baby/Female"
     },
     {
       "name": "GreenJuvenileGrowUpFemaleTT",
@@ -11820,7 +11820,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Female"
     },
     {
       "name": "PinkJuvenileGrowUpFemaleTT",
@@ -11860,7 +11860,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Female"
     },
     {
       "name": "TurqJuvenileGrowUpFemaleTT",
@@ -11900,7 +11900,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Female"
     },
     {
       "name": "GreenAdolescentGrowUpFemaleTT",
@@ -11940,7 +11940,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Female"
     },
     {
       "name": "PinkAdolescentGrowUpFemaleTT",
@@ -11980,7 +11980,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Female"
     },
     {
       "name": "TurqAdolescentGrowUpFemaleTT",
@@ -12020,7 +12020,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Female"
     },
     {
       "name": "GreenAdolescentGrowUpMaleTT",
@@ -12060,7 +12060,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Male"
     },
     {
       "name": "PinkAdolescentGrowUpMaleTT",
@@ -12100,7 +12100,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Male"
     },
     {
       "name": "TurqAdolescentGrowUpMaleTT",
@@ -12140,7 +12140,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Adolescent/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Male"
     },
     {
       "name": "GreenJuvenileGrowUpMaleTT",
@@ -12180,7 +12180,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Male"
     },
     {
       "name": "PinkJuvenileGrowUpMaleTT",
@@ -12220,7 +12220,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Male"
     },
     {
       "name": "TurqJuvenileGrowUpMaleTT",
@@ -12260,7 +12260,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Growing/Juvenile/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Male"
     },
     {
       "name": "FemaleTT",
@@ -12274,7 +12274,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_tt.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Tag"
+      "path": "~/Entities/Terrible Terror/Tag"
     },
     {
       "name": "MaleTT",
@@ -12288,7 +12288,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_tt.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Tag"
+      "path": "~/Entities/Terrible Terror/Tag"
     },
     {
       "name": "BabyPinkMaleSpawnDragonCommandTT",
@@ -13262,7 +13262,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_gronckle_dies.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Dies"
+      "path": "~/Entities/Gronckle/Dies"
     },
     {
       "name": "GrownGronckleDiesProcedure",
@@ -13294,7 +13294,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Dies"
+      "path": "~/Entities/Gronckle/Dies"
     },
     {
       "name": "GrownTTDies",
@@ -13308,7 +13308,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_tt_dies.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Dies"
+      "path": "~/Entities/Terrible Terror/Dies"
     },
     {
       "name": "GrownTTDiesProcedure",
@@ -13340,7 +13340,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Dies"
+      "path": "~/Entities/Terrible Terror/Dies"
     },
     {
       "name": "NotGrownTTDies",
@@ -13354,7 +13354,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_tt_dies.json"
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Dies"
+      "path": "~/Entities/Terrible Terror/Dies"
     },
     {
       "name": "NotGrownTTDiesProcedure",
@@ -13386,7 +13386,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/Dies"
+      "path": "~/Entities/Terrible Terror/Dies"
     },
     {
       "name": "NotGrownGronckleDies",
@@ -13400,7 +13400,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_gronckle_dies.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Dies"
+      "path": "~/Entities/Gronckle/Dies"
     },
     {
       "name": "NotGrownGronckleDiesProcedure",
@@ -13432,7 +13432,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/Dies"
+      "path": "~/Entities/Gronckle/Dies"
     },
     {
       "name": "TTColorLoadWorld",
@@ -13456,7 +13456,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/TickUpdate"
+      "path": "~/Entities/Terrible Terror/TickUpdate"
     },
     {
       "name": "MaleGronckle",
@@ -13470,7 +13470,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_gronckle.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Entities/Gronckle/Tag"
     },
     {
       "name": "OpenNotGrownMaleGronckleGUI",
@@ -13510,7 +13510,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI"
+      "path": "~/Entities/Gronckle/GUI"
     },
     {
       "name": "OpenNotGrownFemaleGronckleGUI",
@@ -13550,7 +13550,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/GUI"
+      "path": "~/Entities/Gronckle/GUI"
     },
     {
       "name": "FemaleGronckle",
@@ -13564,7 +13564,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_gronckle.json"
         ]
       },
-      "path": "~/Dragons/Gronckle/Tag"
+      "path": "~/Entities/Gronckle/Tag"
     },
     {
       "name": "NadderMale",
@@ -13581,7 +13581,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/NadderMaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "TestNadder",
@@ -13598,7 +13598,7 @@
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_nadder_biome_modifier.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "NadderFemale",
@@ -13615,7 +13615,7 @@
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/nadder_female_biome_modifier.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "BabyNadderFemale",
@@ -13631,7 +13631,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyNadderFemaleModel.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "BabyNadderMale",
@@ -13647,7 +13647,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyNadderMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "JuvenileNadderMale",
@@ -13663,7 +13663,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileNadderMaleModel.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "JuvenileNadderFemale",
@@ -13679,7 +13679,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileNadderFemaleRenderer.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "AdolescentNadderFemale",
@@ -13695,7 +13695,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentNadderFemaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "AdolescentNadderMale",
@@ -13711,7 +13711,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentNadderMaleEntity.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "SpawnBabyProcedureNadder",
@@ -13747,7 +13747,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "SpawnProcedureNadder",
@@ -13783,7 +13783,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "SpawningEggRightClickedEntityNadder",
@@ -13823,7 +13823,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "SpawnEggNadder",
@@ -13838,7 +13838,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_nadder.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "NadderFlyingTickUpdate",
@@ -13858,7 +13858,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/TickUpdate"
+      "path": "~/Entities/Deadly Nadder/TickUpdate"
     },
     {
       "name": "GrownNadder",
@@ -13872,7 +13872,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/grown_nadder.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Tag"
+      "path": "~/Entities/Deadly Nadder/Tag"
     },
     {
       "name": "NotGrownNadder",
@@ -13886,7 +13886,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/not_grown_nadder.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Tag"
+      "path": "~/Entities/Deadly Nadder/Tag"
     },
     {
       "name": "Nadder",
@@ -13900,7 +13900,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/nadder.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Tag"
+      "path": "~/Entities/Deadly Nadder/Tag"
     },
     {
       "name": "MaleNadder",
@@ -13914,7 +13914,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_nadder.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Tag"
+      "path": "~/Entities/Deadly Nadder/Tag"
     },
     {
       "name": "FemaleNadder",
@@ -13928,7 +13928,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_nadder.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Tag"
+      "path": "~/Entities/Deadly Nadder/Tag"
     },
     {
       "name": "MaleOnInitialEntitySpawnNadder",
@@ -13948,7 +13948,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "NBTDataSpawnNadder",
@@ -13968,7 +13968,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "FemaleOnInitialEntitySpawnNadder",
@@ -13988,7 +13988,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Entity"
+      "path": "~/Entities/Deadly Nadder/Entity"
     },
     {
       "name": "SpawnTT",
@@ -14024,7 +14024,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnGronckle",
@@ -14056,7 +14056,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Gronckle/SpawnEgg"
+      "path": "~/Entities/Gronckle/SpawnEgg"
     },
     {
       "name": "SpawnNadder",
@@ -14088,7 +14088,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "NadderScale",
@@ -14117,7 +14117,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/grown_nadder_dies.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Dies"
+      "path": "~/Entities/Deadly Nadder/Dies"
     },
     {
       "name": "GrownNadderDiesProcedure",
@@ -14149,7 +14149,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Dies"
+      "path": "~/Entities/Deadly Nadder/Dies"
     },
     {
       "name": "NotGrownNadderDies",
@@ -14163,7 +14163,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_nadder_dies.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Dies"
+      "path": "~/Entities/Deadly Nadder/Dies"
     },
     {
       "name": "NotGrownNadderDiesProcedure",
@@ -14195,7 +14195,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Dies"
+      "path": "~/Entities/Deadly Nadder/Dies"
     },
     {
       "name": "NadderSpine",
@@ -14210,7 +14210,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_spine.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Items"
+      "path": "~/Entities/Deadly Nadder/Items"
     },
     {
       "name": "NadderArrow",
@@ -14225,7 +14225,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_arrow.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Items"
+      "path": "~/Entities/Deadly Nadder/Items"
     },
     {
       "name": "DirtBlocks",
@@ -14366,7 +14366,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle/Male"
+      "path": "~/Entities/Deadly Nadder/Saddle/Male"
     },
     {
       "name": "NadderSaddle",
@@ -14381,7 +14381,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/NadderSaddleItem.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle"
+      "path": "~/Entities/Deadly Nadder/Saddle"
     },
     {
       "name": "RedNadderSaddleMale",
@@ -14405,7 +14405,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle/Male"
+      "path": "~/Entities/Deadly Nadder/Saddle/Male"
     },
     {
       "name": "PurpleNadderSaddleMale",
@@ -14429,7 +14429,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle/Male"
+      "path": "~/Entities/Deadly Nadder/Saddle/Male"
     },
     {
       "name": "PurpleNadderSaddleFemale",
@@ -14453,7 +14453,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle/Female"
+      "path": "~/Entities/Deadly Nadder/Saddle/Female"
     },
     {
       "name": "RedNadderSaddleFemale",
@@ -14477,7 +14477,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle/Female"
+      "path": "~/Entities/Deadly Nadder/Saddle/Female"
     },
     {
       "name": "StormflySaddleFemaleNadder",
@@ -14501,7 +14501,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Saddle/Female"
+      "path": "~/Entities/Deadly Nadder/Saddle/Female"
     },
     {
       "name": "FeedNonGrownNadder",
@@ -14541,7 +14541,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Feeding"
+      "path": "~/Entities/Deadly Nadder/Feeding"
     },
     {
       "name": "NadderColorLoadWorld",
@@ -14565,7 +14565,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/TickUpdate"
+      "path": "~/Entities/Deadly Nadder/TickUpdate"
     },
     {
       "name": "ChickenTameNadder",
@@ -14605,7 +14605,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Taming"
+      "path": "~/Entities/Deadly Nadder/Taming"
     },
     {
       "name": "CodTameNadder",
@@ -14645,7 +14645,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Taming"
+      "path": "~/Entities/Deadly Nadder/Taming"
     },
     {
       "name": "SalmonTameNadder",
@@ -14685,7 +14685,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Taming"
+      "path": "~/Entities/Deadly Nadder/Taming"
     },
     {
       "name": "MuttonTameNadder",
@@ -14725,7 +14725,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Taming"
+      "path": "~/Entities/Deadly Nadder/Taming"
     },
     {
       "name": "FemaleNadderGUI",
@@ -14740,7 +14740,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleNadderGUIScreen.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/GUI"
+      "path": "~/Entities/Deadly Nadder/GUI"
     },
     {
       "name": "MaleNadderGUI",
@@ -14755,7 +14755,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleNadderGUIMenu.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/GUI"
+      "path": "~/Entities/Deadly Nadder/GUI"
     },
     {
       "name": "NotGrownFemaleNadderGUI",
@@ -14770,7 +14770,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleNadderGUIScreen.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/GUI"
+      "path": "~/Entities/Deadly Nadder/GUI"
     },
     {
       "name": "NotGrownMaleNadderGUI",
@@ -14785,7 +14785,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownMaleNadderGUIScreen.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/GUI"
+      "path": "~/Entities/Deadly Nadder/GUI"
     },
     {
       "name": "OpenNotGrownFemaleNadderGUI",
@@ -14825,7 +14825,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/GUI"
+      "path": "~/Entities/Deadly Nadder/GUI"
     },
     {
       "name": "OpenNotGrownMaleNadderGUI",
@@ -14865,7 +14865,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/GUI"
+      "path": "~/Entities/Deadly Nadder/GUI"
     },
     {
       "name": "NBTDataGrowUpNadderFemale",
@@ -14897,7 +14897,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing"
+      "path": "~/Entities/Deadly Nadder/Growing"
     },
     {
       "name": "NBTDataGrowUpNadderMale",
@@ -14929,7 +14929,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing"
+      "path": "~/Entities/Deadly Nadder/Growing"
     },
     {
       "name": "StormflyGrowUpProcedureNadder",
@@ -14969,7 +14969,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/GrowUpProcedure"
+      "path": "~/Entities/Deadly Nadder/Growing/GrowUpProcedure"
     },
     {
       "name": "GrowingTickRateNadder",
@@ -15005,7 +15005,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/GrowMessage"
+      "path": "~/Entities/Deadly Nadder/Growing/GrowMessage"
     },
     {
       "name": "RedGrowUpProcedureNadder",
@@ -15045,7 +15045,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/GrowUpProcedure"
+      "path": "~/Entities/Deadly Nadder/Growing/GrowUpProcedure"
     },
     {
       "name": "PurpleGrowUpProcedureNadder",
@@ -15085,7 +15085,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/GrowUpProcedure"
+      "path": "~/Entities/Deadly Nadder/Growing/GrowUpProcedure"
     },
     {
       "name": "ColorTickRateNadder",
@@ -15121,7 +15121,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/GrowMessage"
+      "path": "~/Entities/Deadly Nadder/Growing/GrowMessage"
     },
     {
       "name": "GrowingUpMessageNadder",
@@ -15141,7 +15141,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/GrowMessage"
+      "path": "~/Entities/Deadly Nadder/Growing/GrowMessage"
     },
     {
       "name": "StormflyItemNeededForGrowUpNadder",
@@ -15181,7 +15181,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Item"
+      "path": "~/Entities/Deadly Nadder/Growing/Item"
     },
     {
       "name": "RedItemNeededForGrowUpNadder",
@@ -15221,7 +15221,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Item"
+      "path": "~/Entities/Deadly Nadder/Growing/Item"
     },
     {
       "name": "PurpleItemNeededForGrowUpNadder",
@@ -15261,7 +15261,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Item"
+      "path": "~/Entities/Deadly Nadder/Growing/Item"
     },
     {
       "name": "StormflyBabyGrowUpMaleNadder",
@@ -15301,7 +15301,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Baby/Male"
     },
     {
       "name": "StormflyBabyGrowUpFemaleNadder",
@@ -15341,7 +15341,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Baby/Female"
     },
     {
       "name": "RedBabyGrowUpMaleNadder",
@@ -15381,7 +15381,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Baby/Male"
     },
     {
       "name": "PurpleBabyGrowUpMaleNadder",
@@ -15421,7 +15421,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Baby/Male"
     },
     {
       "name": "StormflyJuviGrowUpFemaleNadder",
@@ -15461,7 +15461,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Juvenile/Female"
     },
     {
       "name": "StormflyAdoGrowUpFemaleNadder",
@@ -15501,7 +15501,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Adolescent/Female"
     },
     {
       "name": "RedBabyGrowUpFemaleNadder",
@@ -15541,7 +15541,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Baby/Female"
     },
     {
       "name": "PurpleBabyGrowUpFemaleNadder",
@@ -15581,7 +15581,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Baby/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Baby/Female"
     },
     {
       "name": "StormflyJuviGrowUpMaleNadder",
@@ -15621,7 +15621,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Juvenile/Male"
     },
     {
       "name": "RedJuviGrowUpMaleNadder",
@@ -15661,7 +15661,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Juvenile/Male"
     },
     {
       "name": "PurpleJuviGrowUpMaleNadder",
@@ -15701,7 +15701,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Juvenile/Male"
     },
     {
       "name": "RedJuviGrowUpFemaleNadder",
@@ -15741,7 +15741,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Juvenile/Female"
     },
     {
       "name": "PurpleJuviGrowUpFemaleNadder",
@@ -15781,7 +15781,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Juvenile/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Juvenile/Female"
     },
     {
       "name": "StormflyAdoGrowUpMaleNadder",
@@ -15821,7 +15821,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Adolescent/Male"
     },
     {
       "name": "RedAdoGrowUpMaleNadder",
@@ -15861,7 +15861,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Adolescent/Male"
     },
     {
       "name": "PurpleAdoGrowUpMaleNadder",
@@ -15901,7 +15901,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Male"
+      "path": "~/Entities/Deadly Nadder/Growing/Adolescent/Male"
     },
     {
       "name": "RedAdoGrowUpFemaleNadder",
@@ -15941,7 +15941,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Adolescent/Female"
     },
     {
       "name": "PurpleAdoGrowUpFemaleNadder",
@@ -15981,7 +15981,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Growing/Adolescent/Female"
+      "path": "~/Entities/Deadly Nadder/Growing/Adolescent/Female"
     },
     {
       "name": "NadderEggItem",
@@ -15996,7 +15996,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_egg_item.json"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "NadderEggEntity",
@@ -16012,7 +16012,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/NadderEggEntityEntity.java"
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "NadderEggEntityIsHurt",
@@ -16040,7 +16040,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "GiveBreedingCooldownNadder",
@@ -16072,7 +16072,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding"
     },
     {
       "name": "StormflyAndStormflyEggNadder",
@@ -16104,7 +16104,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "StormflyAndRedEggNadder",
@@ -16136,7 +16136,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "RedAndRedEggNadder",
@@ -16168,7 +16168,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "PurpleAndPurpleEggNadder",
@@ -16200,7 +16200,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "StormflyAndPurpleEggNadder",
@@ -16232,7 +16232,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "RedAndPurpleEggNadder",
@@ -16264,7 +16264,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
     },
     {
       "name": "NadderIncubator1Tick",
@@ -16524,7 +16524,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
     },
     {
       "name": "RedRedNadderBreedingReq",
@@ -16560,7 +16560,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
     },
     {
       "name": "PurplePurpleNadderBreedingReq",
@@ -16596,7 +16596,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
     },
     {
       "name": "StormflyRedNadderBreedingReq",
@@ -16632,7 +16632,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
     },
     {
       "name": "StormflyPurpleNadderBreedingReq",
@@ -16668,7 +16668,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
     },
     {
       "name": "RedPurpleNadderBreedingReq",
@@ -16704,7 +16704,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
     },
     {
       "name": "StormflyStormflyBreedingMaleNadder",
@@ -16744,7 +16744,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "StormflyStormflyBreedingFemaleNadder",
@@ -16784,7 +16784,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "InLoveBreedingNadder",
@@ -16824,7 +16824,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding"
+      "path": "~/Entities/Deadly Nadder/Breeding"
     },
     {
       "name": "RedRedBreedingMaleNadder",
@@ -16864,7 +16864,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PurplePurpleBreedingMaleNadder",
@@ -16904,7 +16904,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "StormflyRedBreedingMaleNadder",
@@ -16944,7 +16944,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "RedStormflyBreedingMaleNadder",
@@ -16984,7 +16984,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PurpleRedBreedingMaleNadder",
@@ -17024,7 +17024,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "RedPurpleBreedingMaleNadder",
@@ -17064,7 +17064,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "PurpleStormflyBreedingMaleNadder",
@@ -17104,7 +17104,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "StormflyPurpleBreedingMaleNadder",
@@ -17144,7 +17144,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Male"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
     },
     {
       "name": "StormflyRedBreedingFemaleNadder",
@@ -17184,7 +17184,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "StormflyPurpleBreedingFemaleNadder",
@@ -17224,7 +17224,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "RedRedBreedingFemaleNadder",
@@ -17264,7 +17264,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "RedStormflyBreedingFemaleNadder",
@@ -17304,7 +17304,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "RedPurpleBreedingFemaleNadder",
@@ -17344,7 +17344,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PurplePurpleBreedingFemaleNadder",
@@ -17384,7 +17384,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PurpleStormflyBreedingFemaleNadder",
@@ -17424,7 +17424,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "PurpleRedBreedingFemaleNadder",
@@ -17464,7 +17464,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Deadly Nadder/Breeding/Cross-Breeding/Female"
+      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "RedMaleSpawnDragonCommandNadder",
@@ -18272,12 +18272,12 @@
       "registry_name": "chicken",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/ChickenEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/ChickenModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/ChickenEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/ChickenRenderer.java"
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Entities/Animals/Chicken/Entity"
     },
     {
       "name": "ReplaceChicken",
@@ -18313,7 +18313,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/ChickenOnly"
+      "path": "~/Entities/Animals/Chicken/ChickenOnly"
     },
     {
       "name": "FeedNonGrownChicken",
@@ -18353,7 +18353,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/FeedNonGrown"
+      "path": "~/Entities/Animals/Chicken/FeedNonGrown"
     },
     {
       "name": "OnInitialEntitySpawnChicken",
@@ -18377,7 +18377,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Entities/Animals/Chicken/Entity"
     },
     {
       "name": "BabyChicken",
@@ -18388,12 +18388,12 @@
       "registry_name": "baby_chicken",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyChickenModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyChickenRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyChickenEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyChickenModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/BabyChickenEntity.java"
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Entities/Animals/Chicken/Entity"
     },
     {
       "name": "Chickens",
@@ -18407,7 +18407,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/chickens.json"
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Tag"
+      "path": "~/Entities/Animals/Chicken/Tag"
     },
     {
       "name": "InLoveBreedingChicken",
@@ -18447,7 +18447,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Breeding"
+      "path": "~/Entities/Animals/Chicken/Breeding"
     },
     {
       "name": "LayingEggChicken",
@@ -18483,7 +18483,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/ChickenOnly"
+      "path": "~/Entities/Animals/Chicken/ChickenOnly"
     },
     {
       "name": "ChickenBreeding",
@@ -18523,7 +18523,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Breeding"
+      "path": "~/Entities/Animals/Chicken/Breeding"
     },
     {
       "name": "BreedingSpawnbabyChicken",
@@ -18559,7 +18559,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Breeding"
+      "path": "~/Entities/Animals/Chicken/Breeding"
     },
     {
       "name": "TextureBabyChicken",
@@ -18595,7 +18595,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Entities/Animals/Chicken/Entity"
     },
     {
       "name": "TextureChicken",
@@ -18619,7 +18619,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Entities/Animals/Chicken/Entity"
     },
     {
       "name": "ChickenFall",
@@ -18639,7 +18639,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken"
+      "path": "~/Entities/Animals/Chicken"
     },
     {
       "name": "RandomTextureBabyChicken",
@@ -18659,7 +18659,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Entity"
+      "path": "~/Entities/Animals/Chicken/Entity"
     },
     {
       "name": "GrowingTickRateChicken",
@@ -18695,7 +18695,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Growing"
+      "path": "~/Entities/Animals/Chicken/Growing"
     },
     {
       "name": "GrowUpBabyChicken",
@@ -18731,7 +18731,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Growing"
+      "path": "~/Entities/Animals/Chicken/Growing"
     },
     {
       "name": "ChickenDies",
@@ -18745,7 +18745,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/chicken_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Dies"
+      "path": "~/Entities/Animals/Chicken/Dies"
     },
     {
       "name": "ChickenDiesProcedures",
@@ -18777,7 +18777,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Chicken/Dies"
+      "path": "~/Entities/Animals/Chicken/Dies"
     },
     {
       "name": "Yak",
@@ -18789,13 +18789,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/how_to_own_a_dragon/models/item/yak_spawn_egg.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/YakEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/YakRenderer.java",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/yak_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/YakModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/YakRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/YakModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/YakEntity.java"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Entity"
+      "path": "~/Entities/Animals/Yak/Entity"
     },
     {
       "name": "BabyYak",
@@ -18811,7 +18811,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyYakModel.java"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Entity"
+      "path": "~/Entities/Animals/Yak/Entity"
     },
     {
       "name": "Yaks",
@@ -18825,7 +18825,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/yaks.json"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Tag"
+      "path": "~/Entities/Animals/Yak/Tag"
     },
     {
       "name": "YakDies",
@@ -18839,7 +18839,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/yak_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Dies"
+      "path": "~/Entities/Animals/Yak/Dies"
     },
     {
       "name": "YakDiesProcedure",
@@ -18871,7 +18871,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Dies"
+      "path": "~/Entities/Animals/Yak/Dies"
     },
     {
       "name": "FeedNonGrownYak",
@@ -18911,7 +18911,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/FeedNonGrown"
+      "path": "~/Entities/Animals/Yak/FeedNonGrown"
     },
     {
       "name": "YakBreeding",
@@ -18951,7 +18951,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Breeding"
+      "path": "~/Entities/Animals/Yak/Breeding"
     },
     {
       "name": "InLoveBreedingYak",
@@ -18991,7 +18991,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Breeding"
+      "path": "~/Entities/Animals/Yak/Breeding"
     },
     {
       "name": "BreedingSpawnBabyYak",
@@ -19027,7 +19027,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Breeding"
+      "path": "~/Entities/Animals/Yak/Breeding"
     },
     {
       "name": "YakOnInitialEntitySpawn",
@@ -19047,7 +19047,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Entity"
+      "path": "~/Entities/Animals/Yak/Entity"
     },
     {
       "name": "RawYakMeat",
@@ -19062,7 +19062,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/raw_yak_meat.json"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly"
+      "path": "~/Entities/Animals/Yak/YakOnly"
     },
     {
       "name": "GrowUpBabyYak",
@@ -19098,7 +19098,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Growing"
+      "path": "~/Entities/Animals/Yak/Growing"
     },
     {
       "name": "GrowingTickRateYak",
@@ -19134,7 +19134,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/Growing"
+      "path": "~/Entities/Animals/Yak/Growing"
     },
     {
       "name": "CookedYakMeat",
@@ -19149,7 +19149,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/CookedYakMeatItem.java"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly"
+      "path": "~/Entities/Animals/Yak/YakOnly"
     },
     {
       "name": "YakMeatFurnace",
@@ -19206,7 +19206,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/yak_milk.json"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMilk"
     },
     {
       "name": "YakMilkRemovePotions",
@@ -19226,7 +19226,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMilk"
     },
     {
       "name": "MilkYak",
@@ -19250,7 +19250,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly/YakMilk"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMilk"
     },
     {
       "name": "YakNogBowl",
@@ -19265,7 +19265,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/yak_nog_bowl.json"
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly/Yaknog"
+      "path": "~/Entities/Animals/Yak/YakOnly/Yaknog"
     },
     {
       "name": "YaknogNausea",
@@ -19285,7 +19285,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Yak/YakOnly/Yaknog"
+      "path": "~/Entities/Animals/Yak/YakOnly/Yaknog"
     },
     {
       "name": "Yaknog",
@@ -19310,12 +19310,12 @@
       "registry_name": "sheep",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/SheepEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/SheepModel.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/SheepEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/SheepRenderer.java"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Entity"
+      "path": "~/Entities/Animals/Sheep/Entity"
     },
     {
       "name": "BabySheep",
@@ -19331,7 +19331,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabySheepRenderer.java"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Entity"
+      "path": "~/Entities/Animals/Sheep/Entity"
     },
     {
       "name": "FeedNonGrownSheep",
@@ -19371,7 +19371,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/FeedNonGrown"
+      "path": "~/Entities/Animals/Sheep/FeedNonGrown"
     },
     {
       "name": "Sheeps",
@@ -19385,7 +19385,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/sheeps.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Tag"
+      "path": "~/Entities/Animals/Sheep/Tag"
     },
     {
       "name": "InLoveBreedingSheep",
@@ -19425,7 +19425,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Breeding"
+      "path": "~/Entities/Animals/Sheep/Breeding"
     },
     {
       "name": "SheepBreeding",
@@ -19465,7 +19465,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Breeding"
+      "path": "~/Entities/Animals/Sheep/Breeding"
     },
     {
       "name": "GrowingTickRateSheep",
@@ -19501,7 +19501,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Growing"
+      "path": "~/Entities/Animals/Sheep/Growing"
     },
     {
       "name": "GrowUpBabySheep",
@@ -19537,7 +19537,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Growing"
+      "path": "~/Entities/Animals/Sheep/Growing"
     },
     {
       "name": "OnInitialEntitySpawnSheep",
@@ -19561,7 +19561,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Entity"
+      "path": "~/Entities/Animals/Sheep/Entity"
     },
     {
       "name": "TextureSheep",
@@ -19585,7 +19585,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Entity"
+      "path": "~/Entities/Animals/Sheep/Entity"
     },
     {
       "name": "DyeSheepColorChange",
@@ -19609,7 +19609,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/Dyeing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/Dyeing"
     },
     {
       "name": "A",
@@ -19660,7 +19660,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly"
+      "path": "~/Entities/Animals/Sheep/SheepOnly"
     },
     {
       "name": "TextureBabySheep",
@@ -19684,7 +19684,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Entity"
+      "path": "~/Entities/Animals/Sheep/Entity"
     },
     {
       "name": "OnInitialEntitySpawnBabySheep",
@@ -19708,7 +19708,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Entity"
+      "path": "~/Entities/Animals/Sheep/Entity"
     },
     {
       "name": "ShearingSheep",
@@ -19748,7 +19748,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly"
+      "path": "~/Entities/Animals/Sheep/SheepOnly"
     },
     {
       "name": "GrowWool",
@@ -19772,7 +19772,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly"
+      "path": "~/Entities/Animals/Sheep/SheepOnly"
     },
     {
       "name": "BlackSheepDies",
@@ -19786,7 +19786,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/black_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "BlackSheepShearing",
@@ -19800,7 +19800,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/black_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "WhiteSheepShearing",
@@ -19814,7 +19814,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/white_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "GreySheepShearing",
@@ -19828,7 +19828,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/grey_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "LightGreySheepShearing",
@@ -19842,7 +19842,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_grey_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "BrownSheepShearing",
@@ -19856,7 +19856,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/brown_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "BlueSheepShearing",
@@ -19870,7 +19870,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/blue_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "LightBlueSheepShearing",
@@ -19884,7 +19884,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_blue_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "GreenSheepShearing",
@@ -19898,7 +19898,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/green_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "LimeSheepShearing",
@@ -19912,7 +19912,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/lime_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "CyanSheepShearing",
@@ -19926,7 +19926,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/cyan_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "RedSheepShearing",
@@ -19940,7 +19940,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/red_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "OrangeSheepShearing",
@@ -19954,7 +19954,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/orange_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "YellowSheepShearing",
@@ -19968,7 +19968,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/yellow_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "PurpleSheepShearing",
@@ -19982,7 +19982,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/purple_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "MagentaSheepShearing",
@@ -19996,7 +19996,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/magenta_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "PinkSheepShearing",
@@ -20010,7 +20010,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/pink_sheep_shearing.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/SheepOnly/SheepShearing"
+      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
     },
     {
       "name": "WhiteSheepDies",
@@ -20024,7 +20024,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/white_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "GreySheepDies",
@@ -20038,7 +20038,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/grey_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "LightGreySheepDies",
@@ -20052,7 +20052,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_grey_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "BrownSheepDies",
@@ -20066,7 +20066,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/brown_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "RedSheepDies",
@@ -20080,7 +20080,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/red_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "OrangeSheepDies",
@@ -20094,7 +20094,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/orange_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "YellowSheepDies",
@@ -20108,7 +20108,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/yellow_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "GreenSheepDies",
@@ -20122,7 +20122,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/green_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "LimeSheepDies",
@@ -20136,7 +20136,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/lime_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "LightBlueSheepDies",
@@ -20150,7 +20150,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_blue_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "BlueSheepDies",
@@ -20164,7 +20164,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/blue_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "PurpleSheepDies",
@@ -20178,7 +20178,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/purple_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "MagentaSheepDies",
@@ -20192,7 +20192,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/magenta_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "PinkSheepDies",
@@ -20206,7 +20206,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/pink_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "CyanSheepDies",
@@ -20220,7 +20220,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/cyan_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "ShearedSheepDies",
@@ -20234,7 +20234,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/sheared_sheep_dies.json"
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "SheepEntityDies",
@@ -20270,21 +20270,7 @@
           }
         ]
       },
-      "path": "~/Dragons/Animals/Sheep/Dies"
-    },
-    {
-      "name": "FirstTamedDragon",
-      "type": "achievement",
-      "sortid": 1289,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "first_tamed_dragon",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/advancements/first_tamed_dragon.json"
-        ]
-      },
-      "path": "~/Achievements/FirstTamedDragon"
+      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "ObtainGronckleIron",
@@ -20313,6 +20299,30 @@
         ]
       },
       "path": "~/Achievements/DrinkYaknog"
+    },
+    {
+      "name": "ObtainFirstTameDragonAchievements",
+      "type": "procedure",
+      "sortid": 1292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtain_first_tame_dragon_achievements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ObtainFirstTameDragonAchievementsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/FirstTamedDragon"
     }
   ],
   "variable_elements": [
@@ -20352,8 +20362,8 @@
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
-      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
+      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -20363,8 +20373,8 @@
       "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
-      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "advancements.drinking_yaknog.descr": "Drink Yaknog",
+      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
@@ -20386,12 +20396,11 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
-      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "advancements.hidden_world_root.title": "Hidden World",
       "item.how_to_own_a_dragon.gronckle_egg_item": "Gronckle Egg",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
-      "advancements.first_tamed_dragon.descr": "Tame your first dragon.",
       "item.how_to_own_a_dragon.spawn_egg_nadder": "Deadly Nadder",
       "item.how_to_own_a_dragon.valkas_staff": "Valka Staff",
       "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
@@ -20410,8 +20419,8 @@
       "gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.juvenile_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.tt_scale": "Terrible Terror Scale",
-      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -20438,7 +20447,6 @@
       "entity.how_to_own_a_dragon.baby_gronckle_male": "Baby Male Gronckle",
       "item.how_to_own_a_dragon.adolescent_gronckle_male_spawn_egg": "Adolescent Male Gronckle Spawn Egg",
       "death.attack.gronckleattack": "",
-      "advancements.first_tamed_dragon.title": "We, have dragons.",
       "entity.how_to_own_a_dragon.baby_nadder_female": "Baby Female Deadly Nadder",
       "key.how_to_own_a_dragon.fly_down": "Fly Down",
       "entity.how_to_own_a_dragon.tt_egg_entity": "Terrible Terror Egg",
@@ -20638,7 +20646,7 @@
         ]
       },
       {
-        "name": "Dragons",
+        "name": "Entities",
         "children": [
           {
             "name": "NightFury",
