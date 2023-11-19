@@ -13,7 +13,7 @@ import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 
 public class YakNogBowlItem extends Item {
 	public YakNogBowlItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.1f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.1f).alwaysEat().build()));
 	}
 
 	@Override

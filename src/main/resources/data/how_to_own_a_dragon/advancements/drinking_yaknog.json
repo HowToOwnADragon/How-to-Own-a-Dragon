@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "how_to_own_a_dragon:yak_nog_bowl"
+    },
+    "title": {
+      "translate": "advancements.drinking_yaknog.title"
+    },
+    "description": {
+      "translate": "advancements.drinking_yaknog.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "drinking_yaknog": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "how_to_own_a_dragon:yak_nog_bowl"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}

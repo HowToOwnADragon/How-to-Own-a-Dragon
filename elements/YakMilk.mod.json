@@ -12,7 +12,7 @@
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -33,10 +33,10 @@
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {
-      "value": "CUSTOM:YakMilk"
+      "value": "Items.BUCKET"
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "none"
+    "animation": "drink"
   }
 }
