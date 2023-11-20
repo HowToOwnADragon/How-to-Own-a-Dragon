@@ -1,0 +1,33 @@
+name: Suggestion Template
+description: Suggest a Suggestion!
+title: "[Suggestions]: "
+labels: ["Suggestions"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for making a Suggestion!
+  - type: textarea
+    id: what-should-we-add
+    attributes:
+      label: What do you want to have added?
+      description: |
+        Please tell us as detailed as possible what you want to have added to the mod!
+        Feel free to also add Examples if they exist!
+    validations:
+      required: true
+  - type: dropdown
+    id: inspiration
+    attributes:
+      label: Inspiration
+      description: Is this idea used in other Mods/Games?
+      options:
+        - "Yes"
+        - "no"
+    validations:
+      required: true
+  - type: input
+    id: inpiration-where
+    attributes:
+      label: Where did you get the inspiration from?
+      description: If this idea is used in a different Mod/Game, please provide which one
