@@ -44,7 +44,8 @@ body:
     id: which-other-mods
     attributes:
       label: Which other mods?
-      description: If you said Yes on previous question, which other mods did you use.
+      description: |
+      If you said Yes on previous question, which other mods did you use.
       Please provide a list of your mods or provide a screenshot in the first question.
     validations:
       required: false
