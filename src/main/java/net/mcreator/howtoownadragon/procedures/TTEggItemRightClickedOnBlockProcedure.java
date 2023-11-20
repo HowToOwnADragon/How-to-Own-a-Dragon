@@ -27,7 +27,7 @@ import javax.annotation.Nullable;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
-public class GronckleEggItemRightclickedOnBlockProcedure {
+public class TTEggItemRightClickedOnBlockProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())

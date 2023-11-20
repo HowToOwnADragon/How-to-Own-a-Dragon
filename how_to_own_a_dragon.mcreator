@@ -7814,7 +7814,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Cross-Breeding"
+      "path": "~/Entities/Terrible Terror/Breeding"
     },
     {
       "name": "PinkAndPinkEggTT",
@@ -14024,199 +14024,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding"
-    },
-    {
-      "name": "StormflyAndStormflyEggNadder",
-      "type": "procedure",
-      "sortid": 1119,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_and_stormfly_egg_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyAndStormflyEggNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
-    },
-    {
-      "name": "StormflyAndRedEggNadder",
-      "type": "procedure",
-      "sortid": 1120,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_and_red_egg_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyAndRedEggNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
-    },
-    {
-      "name": "RedAndRedEggNadder",
-      "type": "procedure",
-      "sortid": 1121,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_and_red_egg_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedAndRedEggNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
-    },
-    {
-      "name": "PurpleAndPurpleEggNadder",
-      "type": "procedure",
-      "sortid": 1122,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_and_purple_egg_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleAndPurpleEggNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
-    },
-    {
-      "name": "StormflyAndPurpleEggNadder",
-      "type": "procedure",
-      "sortid": 1123,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_and_purple_egg_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyAndPurpleEggNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
-    },
-    {
-      "name": "RedAndPurpleEggNadder",
-      "type": "procedure",
-      "sortid": 1124,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_and_purple_egg_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedAndPurpleEggNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/EggSpawn"
+      "path": "~/Entities/Deadly Nadder/Breeding"
     },
     {
       "name": "NadderIncubator1Tick",
@@ -14443,302 +14251,6 @@
       "path": "~/Items/Incubator/HatchButton/Nadder"
     },
     {
-      "name": "StormflyStormflyNadderBreedingReq",
-      "type": "procedure",
-      "sortid": 1132,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_stormfly_nadder_breeding_req",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyStormflyNadderBreedingReqProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
-    },
-    {
-      "name": "RedRedNadderBreedingReq",
-      "type": "procedure",
-      "sortid": 1133,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_red_nadder_breeding_req",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedRedNadderBreedingReqProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
-    },
-    {
-      "name": "PurplePurpleNadderBreedingReq",
-      "type": "procedure",
-      "sortid": 1134,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_purple_nadder_breeding_req",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurplePurpleNadderBreedingReqProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
-    },
-    {
-      "name": "StormflyRedNadderBreedingReq",
-      "type": "procedure",
-      "sortid": 1135,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_red_nadder_breeding_req",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyRedNadderBreedingReqProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
-    },
-    {
-      "name": "StormflyPurpleNadderBreedingReq",
-      "type": "procedure",
-      "sortid": 1136,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_purple_nadder_breeding_req",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyPurpleNadderBreedingReqProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
-    },
-    {
-      "name": "RedPurpleNadderBreedingReq",
-      "type": "procedure",
-      "sortid": 1137,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_purple_nadder_breeding_req",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedPurpleNadderBreedingReqProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/BreedingRequirement"
-    },
-    {
-      "name": "StormflyStormflyBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1138,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_stormfly_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyStormflyBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "StormflyStormflyBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1139,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_stormfly_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyStormflyBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
       "name": "InLoveBreedingNadder",
       "type": "procedure",
       "sortid": 1140,
@@ -14777,646 +14289,6 @@
         ]
       },
       "path": "~/Entities/Deadly Nadder/Breeding"
-    },
-    {
-      "name": "RedRedBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1141,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_red_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedRedBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "PurplePurpleBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1142,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_purple_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurplePurpleBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "StormflyRedBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1143,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_red_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyRedBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "RedStormflyBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1144,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_stormfly_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedStormflyBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "PurpleRedBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1145,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_red_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleRedBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "RedPurpleBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1146,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_purple_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedPurpleBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "PurpleStormflyBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1147,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_stormfly_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleStormflyBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "StormflyPurpleBreedingMaleNadder",
-      "type": "procedure",
-      "sortid": 1148,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_purple_breeding_male_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyPurpleBreedingMaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Male"
-    },
-    {
-      "name": "StormflyRedBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1149,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_red_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyRedBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "StormflyPurpleBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1150,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_purple_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyPurpleBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "RedRedBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1151,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_red_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedRedBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "RedStormflyBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1152,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_stormfly_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedStormflyBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "RedPurpleBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1153,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_purple_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedPurpleBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "PurplePurpleBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1154,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_purple_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurplePurpleBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "PurpleStormflyBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1155,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_stormfly_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleStormflyBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
-    },
-    {
-      "name": "PurpleRedBreedingFemaleNadder",
-      "type": "procedure",
-      "sortid": 1156,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_red_breeding_female_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleRedBreedingFemaleNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Breeding/Cross-Breeding/Female"
     },
     {
       "name": "RedMaleSpawnDragonCommandNadder",
@@ -18331,7 +17203,7 @@
         ],
         "dependencies": [
           {
-            "name": "sourceentity",
+            "name": "entity",
             "type": "entity"
           },
           {
@@ -18505,6 +17377,306 @@
         ]
       },
       "path": "~/Entities/Gronckle/Breeding/Female"
+    },
+    {
+      "name": "FemaleSpawnEggNadder",
+      "type": "procedure",
+      "sortid": 1305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_spawn_egg_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FemaleSpawnEggNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Breeding/Female"
+    },
+    {
+      "name": "FemaleBreedingNadder",
+      "type": "procedure",
+      "sortid": 1306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_breeding_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FemaleBreedingNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Breeding/Female"
+    },
+    {
+      "name": "MaleBreedingNadder",
+      "type": "procedure",
+      "sortid": 1307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_breeding_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MaleBreedingNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Breeding/Male"
+    },
+    {
+      "name": "MaleSpawnEggNadder",
+      "type": "procedure",
+      "sortid": 1308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "male_spawn_egg_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MaleSpawnEggNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Breeding/Male"
+    },
+    {
+      "name": "NadderEggItemRihtClickedOnBlock",
+      "type": "procedure",
+      "sortid": 1309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_egg_item_riht_clicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NadderEggItemRihtClickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
+    },
+    {
+      "name": "FemaleSpawnEggTT",
+      "type": "procedure",
+      "sortid": 1310,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_spawn_egg_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FemaleSpawnEggTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Breeding/Female"
+    },
+    {
+      "name": "FemaleBreedingTT",
+      "type": "procedure",
+      "sortid": 1311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "female_breeding_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FemaleBreedingTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Breeding/Female"
+    },
+    {
+      "name": "TTEggItemRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 1312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_egg_item_right_clicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTEggItemRightClickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Breeding/Egg"
     }
   ],
   "variable_elements": [
@@ -18544,8 +17716,8 @@
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
-      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
+      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -18555,8 +17727,8 @@
       "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
-      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "advancements.drinking_yaknog.descr": "Drink Yaknog",
+      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
@@ -18579,8 +17751,8 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
-      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "advancements.hidden_world_root.title": "Hidden World",
       "item.how_to_own_a_dragon.gronckle_egg_item": "Gronckle Egg",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
@@ -18603,8 +17775,8 @@
       "gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.juvenile_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.tt_scale": "Terrible Terror Scale",
-      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -19043,6 +18215,14 @@
                         "children": []
                       }
                     ]
+                  },
+                  {
+                    "name": "Female",
+                    "children": []
+                  },
+                  {
+                    "name": "Male",
+                    "children": []
                   }
                 ]
               },
@@ -19156,25 +18336,12 @@
                     "children": []
                   },
                   {
-                    "name": "Cross-Breeding",
-                    "children": [
-                      {
-                        "name": "Male",
-                        "children": []
-                      },
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "BreedingRequirement",
-                        "children": []
-                      },
-                      {
-                        "name": "EggSpawn",
-                        "children": []
-                      }
-                    ]
+                    "name": "Female",
+                    "children": []
+                  },
+                  {
+                    "name": "Male",
+                    "children": []
                   }
                 ]
               },

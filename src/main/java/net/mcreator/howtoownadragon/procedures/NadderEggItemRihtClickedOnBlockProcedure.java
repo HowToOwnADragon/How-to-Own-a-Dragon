@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
+import net.mcreator.howtoownadragon.entity.NadderEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -27,7 +28,7 @@ import javax.annotation.Nullable;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
-public class GronckleEggItemRightclickedOnBlockProcedure {
+public class NadderEggItemRihtClickedOnBlockProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -42,7 +43,7 @@ public class GronckleEggItemRightclickedOnBlockProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.NADDER_EGG_ITEM.get()) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new GronckleEggEntityEntity(HowToOwnADragonModEntities.GRONCKLE_EGG_ENTITY.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
@@ -54,13 +55,13 @@ public class GronckleEggItemRightclickedOnBlockProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(NadderEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("naddercolor")));
 				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get());
+					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.NADDER_EGG_ITEM.get());
 					_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 					if (_entity instanceof Player _player)
