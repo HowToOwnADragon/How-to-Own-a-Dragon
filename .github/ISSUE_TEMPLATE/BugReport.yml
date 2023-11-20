@@ -80,8 +80,6 @@ body:
           value: Structure
         - label: Other
           value: Other
-    validations:
-      required: true
   - type: checkboxes
     id: other
     attributes:
