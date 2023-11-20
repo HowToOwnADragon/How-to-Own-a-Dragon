@@ -69,13 +69,13 @@ body:
       description: What type of bug is this?
       options:
         - label: Items/Blocks
-          value: Items/Blocks
+          value: Items or Blocks
         - label: Entity
           value: Entity
         - label: QOL
           value: QOL
         - label: Tools/Armor
-          value: Tools/Armor
+          value: Tools or Armor
         - label: Structure
           value: Structure
         - label: Other
