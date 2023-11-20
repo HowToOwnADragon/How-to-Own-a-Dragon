@@ -66,36 +66,36 @@ body:
       label: Type of Bug
       description: What type of bug is this?
       options:
-        - label: Item/Block
-          required: false
-          value: Items/Blocks
-        - label: Entity's
-          required: false
-          value: Entity's
-        - label: QOL
-          required: false
-          value: QOL
-        - label: Tools/Armor
-          required: false
-          value: Tools/Armor
-        - label: Structure
-          required: false
-          value: Structure
-        - label: Other
-          required: false
-          value: Other
+      - label: Item/Block
+        required: false
+        name: Items/Blocks
+      - label: Entity's
+        required: false
+        name: Entity's
+      - label: QOL
+        required: false
+        name: QOL
+      - label: Tools/Armor
+        required: false
+        name: Tools/Armor
+      - label: Structure
+        required: false
+        name: Structure
+      - label: Other
+        required: false
+        name: Other
   - type: checkboxes
     id: other
     attributes:
       label: Other Information
       description: Are you using a Test or Pre-Release version of How to Own a Dragon?
       options:
-        - label: I am playing on a Test/Pre-Release version of HTOAD.
-          required: false
-          value: Tester Version
-        - label: This is a Translation issue.
-          required: false
-          value: Translation Issue
+      - label: I am playing on a Test/Pre-Release version of HTOAD.
+        required: false
+        name: Tester Version
+      - label: This is a Translation issue.
+        required: false
+        name: Translation Issue
   - type: textarea
     id: more-information
     attributes:
