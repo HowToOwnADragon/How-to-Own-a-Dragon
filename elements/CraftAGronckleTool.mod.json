@@ -1,0 +1,25 @@
+{
+  "_fv": 43,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Craft A Gronckle Tool",
+    "achievementDescription": "Craft Any Gronckle Tool",
+    "achievementIcon": {
+      "value": "CUSTOM:GronckleIronHoe"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 15,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:ObtainGronckleIron"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"37\" y=\"49\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}
