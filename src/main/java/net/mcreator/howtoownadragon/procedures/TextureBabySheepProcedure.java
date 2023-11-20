@@ -10,7 +10,7 @@ public class TextureBabySheepProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		HowToOwnADragonMod.queueServerWork(1, () -> {
+		HowToOwnADragonMod.queueServerWork(3, () -> {
 			entity.getPersistentData().putBoolean("sheared", false);
 			entity.getPersistentData().putBoolean("sheepinlove", false);
 			if ((entity.getPersistentData().getString("sheepcolor")).equals("white")) {

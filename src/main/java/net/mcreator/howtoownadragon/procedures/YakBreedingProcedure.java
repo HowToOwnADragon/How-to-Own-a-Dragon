@@ -6,6 +6,7 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
@@ -13,7 +14,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.YakEntity;
@@ -56,7 +62,13 @@ public class YakBreedingProcedure {
 								if (_entity instanceof Player _player)
 									_player.getInventory().setChanged();
 							}
-							BreedingSpawnBabyYakProcedure.execute(world, x, y, z, entity);
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"/execute at @e[type=how_to_own_a_dragon:yak, sort= nearest, limit= 1] run summon how_to_own_a_dragon:baby_yak ~ ~ ~");
 						}
 					}
 				}

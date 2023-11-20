@@ -27,7 +27,7 @@ public class TextureBabyChickenProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		HowToOwnADragonMod.queueServerWork(1, () -> {
+		HowToOwnADragonMod.queueServerWork(3, () -> {
 			GrowingTickRateChickenProcedure.execute(world, x, y, z, entity);
 			if (entity instanceof BabyChickenEntity) {
 				if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {

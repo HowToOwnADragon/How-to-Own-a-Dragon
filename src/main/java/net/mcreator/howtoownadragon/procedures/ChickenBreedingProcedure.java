@@ -13,6 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
@@ -56,7 +57,11 @@ public class ChickenBreedingProcedure {
 								if (_entity instanceof Player _player)
 									_player.getInventory().setChanged();
 							}
-							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
 						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.PUMPKIN_SEEDS) {
 							if (sourceentity instanceof LivingEntity _entity) {
 								ItemStack _setstack = new ItemStack(Items.PUMPKIN_SEEDS);
@@ -65,7 +70,11 @@ public class ChickenBreedingProcedure {
 								if (_entity instanceof Player _player)
 									_player.getInventory().setChanged();
 							}
-							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
 						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MELON_SEEDS) {
 							if (sourceentity instanceof LivingEntity _entity) {
 								ItemStack _setstack = new ItemStack(Items.MELON_SEEDS);
@@ -74,7 +83,11 @@ public class ChickenBreedingProcedure {
 								if (_entity instanceof Player _player)
 									_player.getInventory().setChanged();
 							}
-							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
 						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BEETROOT_SEEDS) {
 							if (sourceentity instanceof LivingEntity _entity) {
 								ItemStack _setstack = new ItemStack(Items.BEETROOT_SEEDS);
@@ -83,7 +96,11 @@ public class ChickenBreedingProcedure {
 								if (_entity instanceof Player _player)
 									_player.getInventory().setChanged();
 							}
-							BreedingSpawnbabyChickenProcedure.execute(world, x, y, z, entity);
+							if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
+							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
 						}
 					}
 				}
