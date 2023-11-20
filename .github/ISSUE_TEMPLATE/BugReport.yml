@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug"]
+labels: ["bug", "crash"]
 body:
   - type: markdown
     attributes:
@@ -14,37 +14,24 @@ body:
       description: |
         Please tell us about the bug as detailed as possible.
         Feel free to also add Media and CrashLogs!
-      validations:
-        required: true
+    validations:
+      required: true
   - type: dropdown
     id: minecraft-version
     attributes:
       label: Minecraft Version
       description: Which version of Minecraft did you use?
       options:
-        - label: "1.19.4"
-          value: "1.19.4"
-      required: true
-  - type: dropdown
-    id: alpha-beta-stable
-    attributes:
-      label: Alpha, Beta or Stable?
-      description: Are you playing an Alpha, Beta, or Stable version of the mod?
-      options:
-        - label: "Alpha"
-          value: "Alpha"
-        - label: "Beta"
-          value: "Beta"
-        - label: "Stable"
-          value: "Stable"
+        - "1.19.4"
+    validations:
       required: true
   - type: input
     id: mod-version
     attributes:
       label: HTOAD version
       description: Which version of How to Own a Dragon did you use?
-      validations:
-        required: true
+    validations:
+      required: true
   - type: dropdown
     id: other-mods
     attributes:
@@ -53,6 +40,7 @@ body:
       options:
         - "Yes"
         - "No"
+    validations:
       required: true
   - type: textarea
     id: which-other-mods
@@ -60,25 +48,13 @@ body:
       label: Which other mods
       description: Please provide a screenshot or list your mod folder.
   - type: checkboxes
-    id: related
-    attributes:
-      label: Type of Bug
-      description: What type of bug is this?
-      options:
-        - label: Items/Blocks
-        - label: Entity's
-        - label: QOL
-        - label: Tools/Armor
-        - label: Structure
-        - label: Other
-  - type: checkboxes
     id: other
     attributes:
       label: Other Information
       description: Are you using a Test or Pre-Release version of How to Own a Dragon?
       options:
         - label: I am playing on a Test/Pre-Release version of HTOAD.
-        - label: This is a Translation issue.
+          required: false
   - type: textarea
     id: more-information
     attributes:
