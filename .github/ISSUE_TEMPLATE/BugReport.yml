@@ -70,8 +70,8 @@ body:
       options:
         - label: Items/Blocks
           value: Items/Blocks
-        - label: Entity's
-          value: Entity's
+        - label: Entity
+          value: Entity
         - label: QOL
           value: QOL
         - label: Tools/Armor
