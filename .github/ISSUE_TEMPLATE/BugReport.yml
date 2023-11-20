@@ -20,20 +20,9 @@ body:
     id: minecraft-version
     attributes:
       label: Minecraft Version
-      description: Which version of Minecraft did you use?
+      description: Which version of Minecraft are you using?
       options:
-        - value: "1.19.4"
-    validations:
-      required: true
-  - type: dropdown
-    id: alpha-beta-stable
-    attributes:
-      label: Alpha, Beta or Stable?
-      description: Are you playing a Alpha, Beta or Stable version of the mod?
-      options:
-      - value: "Alpha"
-      - value: "Beta"
-      - value: "Stable"
+        - "1.19.4"
     validations:
       required: true
   - type: input
