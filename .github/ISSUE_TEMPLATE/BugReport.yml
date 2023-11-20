@@ -1,0 +1,58 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "crash"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for making a Bug Report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: |
+        Please tell us about the bug as detailed as possible.
+        Feel free to also add Media and CrashLogs!
+    validations:
+      required: true
+  - type: dropdown
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: Which version of Minecraft did you use?
+      options:
+        - "1.19"
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: HTOAD version
+      description: Which version of How to Own a Dragon did you use?
+    validations:
+      required: true
+  - type: dropdown
+    id: other-mods
+    attributes:
+      label: Other mods?
+      description: Are you using other mods besides How to Own a Dragon?
+      options:
+        - "Yes"
+        - "No"
+  - type: input
+    id: which-other-mods
+    attributes:
+      label: Which other mods?
+      description: If you said Yes on previous question, which other mods did you use.
+      Please provide a list of your mods or provide a screenshot in the first question.
+    validations:
+      required: false
+  - type: checkboxes
+    id: other
+    attributes:
+      label: Other Information
+      description: Are you using a Test or Pre-Release version of How to Own a Dragon?
+      options:
+        - label: I am playing on a Test/Pre-Release version of HTOAD.
+          required: false
