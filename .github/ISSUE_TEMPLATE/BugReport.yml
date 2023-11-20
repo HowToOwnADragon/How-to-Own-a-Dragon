@@ -22,7 +22,7 @@ body:
       label: Minecraft Version
       description: Which version of Minecraft did you use?
       options:
-        - "1.19"
+        - "1.19.4"
     validations:
       required: true
   - type: input
@@ -40,13 +40,13 @@ body:
       options:
         - "Yes"
         - "No"
-  - type: input
+      validations:
+        required: true
+  - type: textarea
     id: which-other-mods
     attributes:
-      label: Which other mods?
-      description: If you said Yes on previous question, which other mods did you use. Please provide a list of your mods or provide a screenshot in the first question.
-    validations:
-      required: false
+      label: Which other mods
+      description: Please provide a screenshot or list your mod folder.
   - type: checkboxes
     id: other
     attributes:
@@ -55,3 +55,8 @@ body:
       options:
         - label: I am playing on a Test/Pre-Release version of HTOAD.
           required: false
+  - type: textarea
+    id: More Information
+    attributes:
+      label: More information
+      description: Is there anything else relevant that you want/need to share.
