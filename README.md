@@ -1,5 +1,5 @@
 # How to Own a Dragon
-### A Minecraft Mod!!!
+### A Minecraft Mod!
 
 # Our mod requires Geckolib to work
 * [How to Own a Dragon](https://www.curseforge.com/minecraft/mc-mods/how-to-own-a-dragon)
