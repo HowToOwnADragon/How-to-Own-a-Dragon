@@ -31,3 +31,15 @@ body:
     attributes:
       label: Where did you get the inspiration from?
       description: If this idea is used in a different Mod/Game, please provide a list of the Games/Mods
+  - type: checkboxes
+    id: related
+    attributes:
+      label: Type of Bug
+      description: What type of bug is this?
+      options:
+        - label: Items/Blocks
+        - label: Entity
+        - label: QOL
+        - label: Tools/Armor
+        - label: Structure
+        - label: Other
