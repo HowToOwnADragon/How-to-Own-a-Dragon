@@ -14,8 +14,8 @@ body:
       description: |
         Please tell us about the bug as detailed as possible.
         Feel free to also add Media and CrashLogs!
-    validations:
-      required: true
+      validations:
+        required: true
   - type: dropdown
     id: minecraft-version
     attributes:
