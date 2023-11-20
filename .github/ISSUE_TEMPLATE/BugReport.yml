@@ -35,13 +35,13 @@ body:
   - type: dropdown
     id: other-mods
     attributes:
-      label: Other mods?
-      description: Are you using other mods besides How to Own a Dragon?
+      label: Other mods
+      description: Are you using any other mod outside of How to Own a Dragon and Geckolib?
       options:
         - "Yes"
         - "No"
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: which-other-mods
     attributes:
@@ -56,7 +56,7 @@ body:
         - label: I am playing on a Test/Pre-Release version of HTOAD.
           required: false
   - type: textarea
-    id: More Information
+    id: more-information
     attributes:
       label: More information
       description: Is there anything else relevant that you want/need to share.
