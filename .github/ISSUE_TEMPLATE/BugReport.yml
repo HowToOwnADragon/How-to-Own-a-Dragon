@@ -67,23 +67,17 @@ body:
       description: What type of bug is this?
       options:
       - label: Item/Block
-        required: false
-        name: Items/Blocks
+        value: Items/Blocks
       - label: Entity's
-        required: false
-        name: Entity's
+        value: Entity's
       - label: QOL
-        required: false
-        name: QOL
+        value: QOL
       - label: Tools/Armor
-        required: false
-        name: Tools/Armor
+        value: Tools/Armor
       - label: Structure
-        required: false
-        name: Structure
+        value: Structure
       - label: Other
-        required: false
-        name: Other
+        value: Other
   - type: checkboxes
     id: other
     attributes:
@@ -91,11 +85,9 @@ body:
       description: Are you using a Test or Pre-Release version of How to Own a Dragon?
       options:
       - label: I am playing on a Test/Pre-Release version of HTOAD.
-        required: false
-        name: Tester Version
+        value: Tester Version
       - label: This is a Translation issue.
-        required: false
-        name: Translation Issue
+        value: Translation Issue
   - type: textarea
     id: more-information
     attributes:
