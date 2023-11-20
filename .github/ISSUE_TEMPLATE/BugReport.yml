@@ -79,9 +79,7 @@ body:
       description: Are you using a Test or Pre-Release version of How to Own a Dragon?
       options:
         - label: I am playing on a Test/Pre-Release version of HTOAD.
-          value: Tester Version
         - label: This is a Translation issue.
-          value: Translation Issue
   - type: textarea
     id: more-information
     attributes:
