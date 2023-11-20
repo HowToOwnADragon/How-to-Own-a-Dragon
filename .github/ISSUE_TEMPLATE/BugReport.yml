@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "crash"]
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
@@ -22,9 +22,22 @@ body:
       label: Minecraft Version
       description: Which version of Minecraft did you use?
       options:
-        - "1.19.4"
+      - label: "1.19.4"
+        value: "1.19.4"
     validations:
       required: true
+  - type: dropdown
+    id: alpha-beta-stable
+    attributes:
+      label: Alpha, Beta or Stable?
+      description: Are you playing a Alpha, Beta or Stable version of the mod?
+      options:
+      - label: "Alpha"
+        value: "Alpha"
+      - label: "Beta"
+        value: "Beta"
+      - label: "Stable"
+        value: "Stable"
   - type: input
     id: mod-version
     attributes:
@@ -48,6 +61,30 @@ body:
       label: Which other mods
       description: Please provide a screenshot or list your mod folder.
   - type: checkboxes
+    id: related
+    attributes:
+      label: Type of Bug
+      description: What type of bug is this?
+      options:
+        - label: Item/Block
+          required: false
+          value: Items/Blocks
+        - label: Entity's
+          required: false
+          value: Entity's
+        - label: QOL
+          required: false
+          value: QOL
+        - label: Tools/Armor
+          required: false
+          value: Tools/Armor
+        - label: Structure
+          required: false
+          value: Structure
+        - label: Other
+          required: false
+          value: Other
+  - type: checkboxes
     id: other
     attributes:
       label: Other Information
@@ -55,6 +92,10 @@ body:
       options:
         - label: I am playing on a Test/Pre-Release version of HTOAD.
           required: false
+          value: Tester Version
+        - label: This is a Translation issue.
+          required: false
+          value: Translation Issue
   - type: textarea
     id: more-information
     attributes:
