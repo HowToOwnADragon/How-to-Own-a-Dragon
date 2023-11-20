@@ -57,6 +57,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.howtoownadragon.procedures.NotGrownNadderDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.ColorTickRateNadderProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
@@ -168,6 +169,12 @@ public class JuvenileNadderMaleEntity extends TamableAnimal implements GeoEntity
 		if (source.is(DamageTypes.FALL))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NotGrownNadderDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

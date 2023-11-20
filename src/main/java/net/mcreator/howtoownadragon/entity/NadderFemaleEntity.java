@@ -87,6 +87,7 @@ import net.mcreator.howtoownadragon.world.inventory.FemaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.NadderFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
+import net.mcreator.howtoownadragon.procedures.GrownNadderDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.FemaleOnInitialEntitySpawnNadderProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
@@ -336,6 +337,12 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		GrownNadderDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
 		FemaleOnInitialEntitySpawnNadderProcedure.execute(this);
@@ -392,7 +399,7 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 					@Override
 					public Component getDisplayName() {
 						return Component.literal("Female Deadly Nadder");
-					}	
+					}
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
@@ -407,8 +414,8 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 					buf.writeByte(0);
 					buf.writeVarInt(this.getId());
 				});
-			}	
-							return InteractionResult.sidedSuccess(this.level.isClientSide());
+			}
+			return InteractionResult.sidedSuccess(this.level.isClientSide());
 		}
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
@@ -461,7 +468,7 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 	
-	@Override
+	@Override
 	public void travel(Vec3 dir) {
 		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 		if (this.isVehicle()) {
@@ -491,7 +498,7 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 		this.maxUpStep = 0.5F;
 		super.travel(dir);
 	}
-	
+
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
 		NadderFemaleEntity retval = HowToOwnADragonModEntities.NADDER_FEMALE.get().create(serverWorld);

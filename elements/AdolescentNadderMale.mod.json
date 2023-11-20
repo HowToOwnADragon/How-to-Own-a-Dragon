@@ -7,7 +7,7 @@
     "mobModelTexture": "stormfly.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 0.75
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
@@ -98,6 +98,9 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "whenMobDies": {
+      "name": "NotGrownNadderDiesProcedure"
     },
     "onInitialSpawn": {
       "name": "ColorTickRateNadder"
