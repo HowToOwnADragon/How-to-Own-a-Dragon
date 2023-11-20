@@ -69,7 +69,6 @@ body:
       description: What type of bug is this?
       options:
         - label: Items/Blocks
-          name: Items or Blocks
         - label: Entity
           value: Entity
         - label: QOL
