@@ -70,15 +70,10 @@ body:
       options:
         - label: Items/Blocks
         - label: Entity
-          value: Entity
         - label: QOL
-          value: QOL
         - label: Tools/Armor
-          value: Tools or Armor
         - label: Structure
-          value: Structure
         - label: Other
-          value: Other
   - type: checkboxes
     id: other
     attributes:
