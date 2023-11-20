@@ -60,24 +60,24 @@ body:
     attributes:
       label: Which other mods
       description: Please provide a screenshot or list your mod folder.
-  - type: checkboxes
-    id: related
-    attributes:
-      label: Type of Bug
-      description: What type of bug is this?
-      options:
-      - label: Item/Block
-        value: Items/Blocks
-      - label: Entity's
-        value: Entity's
-      - label: QOL
-        value: QOL
-      - label: Tools/Armor
-        value: Tools/Armor
-      - label: Structure
-        value: Structure
-      - label: Other
-        value: Other
+- type: checkboxes
+  id: related
+  attributes:
+    label: Type of Bug
+    description: What type of bug is this?
+    options:
+    - label: Item/Block
+      value: Items/Blocks
+    - label: Entity's
+      value: Entity's
+    - label: QOL
+      value: QOL
+    - label: Tools/Armor
+      value: Tools/Armor
+    - label: Structure
+      value: Structure
+    - label: Other
+      value: Other
   - type: checkboxes
     id: other
     attributes:
