@@ -22,8 +22,7 @@ body:
       label: Minecraft Version
       description: Which version of Minecraft did you use?
       options:
-      - label: "1.19.x"
-        value: "1.19.4"
+        - value: "1.19.4"
     validations:
       required: true
   - type: dropdown
@@ -32,12 +31,9 @@ body:
       label: Alpha, Beta or Stable?
       description: Are you playing a Alpha, Beta or Stable version of the mod?
       options:
-      - label: "Alpha"
-        value: "Alpha"
-      - label: "Beta"
-        value: "Beta"
-      - label: "Stable"
-        value: "Stable"
+      - value: "Alpha"
+      - value: "Beta"
+      - value: "Stable"
     validations:
       required: true
   - type: input
