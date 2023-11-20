@@ -20,7 +20,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 import net.mcreator.howtoownadragon.entity.NadderEggEntityEntity;
-import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
@@ -45,7 +44,7 @@ public class NadderEggItemRihtClickedOnBlockProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.NADDER_EGG_ITEM.get()) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new GronckleEggEntityEntity(HowToOwnADragonModEntities.GRONCKLE_EGG_ENTITY.get(), _level);
+				Entity entityToSpawn = new NadderEggEntityEntity(HowToOwnADragonModEntities.NADDER_EGG_ENTITY.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);

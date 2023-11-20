@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
 import java.util.Comparator;
 
 @Mod.EventBusSubscriber
-public class FemaleBreedingTTProcedure {
+public class MaleBreedingTTProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -40,15 +40,19 @@ public class FemaleBreedingTTProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof TTFemaleEntity && (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)
-				&& !world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-			if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
-					&& ((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+		if (entity instanceof TTMaleEntity && (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)
+				&& !world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+			if (!(((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))
+					&& ((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getBoolean("ttinlove") == true) {
-				((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
@@ -61,7 +65,7 @@ public class FemaleBreedingTTProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.COD);
@@ -70,7 +74,7 @@ public class FemaleBreedingTTProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.SALMON);
@@ -79,7 +83,7 @@ public class FemaleBreedingTTProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.COOKED_CHICKEN);
@@ -88,7 +92,7 @@ public class FemaleBreedingTTProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
 				}
 			}
 		}

@@ -12,13 +12,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.howtoownadragon.entity.TTMaleEntity;
+import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.Comparator;
 
-public class FemaleSpawnEggTTProcedure {
+public class MaleSpawnEggTTProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -44,14 +44,15 @@ public class FemaleSpawnEggTTProcedure {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", (((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor",
+						(((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
 			});
 		} else {
-			FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+			MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }
