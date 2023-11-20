@@ -22,7 +22,8 @@ body:
       label: Minecraft Version
       description: Which version of Minecraft did you use?
       options:
-        - "1.19.4"
+      - label: "1.19.x"
+        value: "1.19.4"
     validations:
       required: true
   - type: dropdown
@@ -37,6 +38,8 @@ body:
         value: "Beta"
       - label: "Stable"
         value: "Stable"
+    validations:
+      required: true
   - type: input
     id: mod-version
     attributes:
@@ -59,6 +62,26 @@ body:
     attributes:
       label: Which other mods
       description: Please provide a screenshot or list your mod folder.
+  - type: checkboxes
+    id: related
+    attributes:
+      label: Type of Bug
+      description: What type of bug is this?
+      options:
+        - label: Items/Blocks
+          value: Items/Blocks
+        - label: Entity's
+          value: Entity's
+        - label: QOL
+          value: QOL
+        - label: Tools/Armor
+          value: Tools/Armor
+        - label: Structure
+          value: Structure
+        - label: Other
+          value: Other
+    validations:
+      required: true
   - type: checkboxes
     id: other
     attributes:
