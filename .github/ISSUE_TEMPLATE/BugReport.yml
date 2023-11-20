@@ -14,8 +14,6 @@ body:
       description: |
         Please tell us about the bug as detailed as possible.
         Feel free to also add Media and CrashLogs!
-      validations:
-        required: true
   - type: dropdown
     id: minecraft-version
     attributes:
@@ -43,8 +41,6 @@ body:
     attributes:
       label: HTOAD version
       description: Which version of How to Own a Dragon did you use?
-    validations:
-      required: true
   - type: dropdown
     id: other-mods
     attributes:
