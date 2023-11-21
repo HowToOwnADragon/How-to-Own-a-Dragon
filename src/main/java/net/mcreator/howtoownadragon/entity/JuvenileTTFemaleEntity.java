@@ -50,7 +50,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.howtoownadragon.procedures.NotGrownTTDiesProcedureProcedure;
-import net.mcreator.howtoownadragon.procedures.ColorTickRateTTProcedure;
+import net.mcreator.howtoownadragon.procedures.JuvenileColorSpawnTTProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -142,7 +142,7 @@ public class JuvenileTTFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		ColorTickRateTTProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		JuvenileColorSpawnTTProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 

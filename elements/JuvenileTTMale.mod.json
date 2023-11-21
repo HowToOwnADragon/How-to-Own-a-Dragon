@@ -103,7 +103,7 @@
       "name": "NotGrownTTDiesProcedure"
     },
     "onInitialSpawn": {
-      "name": "ColorTickRateTT"
+      "name": "JuvenileColorSpawnTT"
     },
     "hasAI": true,
     "aiBase": "(none)",
