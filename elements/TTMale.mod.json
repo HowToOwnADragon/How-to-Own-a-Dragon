@@ -7,7 +7,7 @@
     "mobModelTexture": "greentt.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 0.4
     },
     "boundingBoxScale": {
       "fixedValue": 1.0

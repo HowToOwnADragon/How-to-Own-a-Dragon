@@ -5621,7 +5621,7 @@
       "type": "animatedentity",
       "sortid": 863,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_male",
       "metadata": {
         "files": [
@@ -5631,7 +5631,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Male"
     },
     {
       "name": "TestGronckle",
@@ -5668,7 +5668,7 @@
       "type": "animatedentity",
       "sortid": 867,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "tt_female",
       "metadata": {
         "files": [
@@ -5678,7 +5678,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Female"
     },
     {
       "name": "FeedNonGrownTT",
@@ -5963,7 +5963,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Female"
     },
     {
       "name": "MaleOnInitialEntitySpawnTT",
@@ -5999,7 +5999,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Male"
     },
     {
       "name": "WildAI",
@@ -6043,7 +6043,7 @@
       "type": "animatedentity",
       "sortid": 883,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "baby_tt_female",
       "metadata": {
         "files": [
@@ -6052,14 +6052,14 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTFemaleModel.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Female"
     },
     {
       "name": "JuvenileTTFemale",
       "type": "animatedentity",
       "sortid": 884,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "juvenile_tt_female",
       "metadata": {
         "files": [
@@ -6068,14 +6068,14 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTFemaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Female"
     },
     {
       "name": "AdolescentTTFemale",
       "type": "animatedentity",
       "sortid": 885,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "adolescent_tt_female",
       "metadata": {
         "files": [
@@ -6084,14 +6084,14 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentTTFemaleEntity.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Female"
     },
     {
       "name": "BabyTTMale",
       "type": "animatedentity",
       "sortid": 886,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "baby_tt_male",
       "metadata": {
         "files": [
@@ -6100,14 +6100,14 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTMaleModel.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Male"
     },
     {
       "name": "JuvenileTTMale",
       "type": "animatedentity",
       "sortid": 887,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "juvenile_tt_male",
       "metadata": {
         "files": [
@@ -6116,14 +6116,14 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTMaleModel.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Male"
     },
     {
       "name": "AdolescentTTMale",
       "type": "animatedentity",
       "sortid": 888,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "adolescent_tt_male",
       "metadata": {
         "files": [
@@ -6132,7 +6132,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentTTMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Terrible Terror/Entity/Male"
     },
     {
       "name": "RidebleDragon",
@@ -6640,7 +6640,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/GrowMessage"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/GrowMessage"
     },
     {
       "name": "GrowingUpMessageTT",
@@ -6660,7 +6660,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/GrowMessage"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/GrowMessage"
     },
     {
       "name": "ColorTickRateTT",
@@ -6696,7 +6696,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/GrowMessage"
+      "path": "~/Entities/Terrible Terror/Growing/Delete"
     },
     {
       "name": "GreenGrowUpProcedureTT",
@@ -6736,7 +6736,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/GrowUpProcedure"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/GrowUpProcedure"
     },
     {
       "name": "PinkGrowUpProcedureTT",
@@ -6776,7 +6776,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/GrowUpProcedure"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/GrowUpProcedure"
     },
     {
       "name": "TurqGrowUpProcedureTT",
@@ -6816,7 +6816,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/GrowUpProcedure"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/GrowUpProcedure"
     },
     {
       "name": "PinkItemNeededForGrowUpTT",
@@ -6856,7 +6856,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Item"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Item"
     },
     {
       "name": "GreenItemNeededForGrowUpTT",
@@ -6896,7 +6896,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Item"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Item"
     },
     {
       "name": "TurqItemNeededForGrowUpTT",
@@ -6936,7 +6936,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Item"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Item"
     },
     {
       "name": "PinkBabyGrowUpMaleTT",
@@ -6976,7 +6976,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Baby/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Baby/Male"
     },
     {
       "name": "GreenBabyGrowUpMaleTT",
@@ -7016,7 +7016,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Baby/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Baby/Male"
     },
     {
       "name": "TurqBabyGrowUpMaleTT",
@@ -7056,7 +7056,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Baby/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Baby/Male"
     },
     {
       "name": "GreenBabyGrowUpFemaleTT",
@@ -7096,7 +7096,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Baby/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Baby/Female"
     },
     {
       "name": "PinkBabyGrowUpFemaleTT",
@@ -7136,7 +7136,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Baby/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Baby/Female"
     },
     {
       "name": "TurqBabyGrowUpFemaleTT",
@@ -7176,7 +7176,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Baby/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Baby/Female"
     },
     {
       "name": "GreenJuvenileGrowUpFemaleTT",
@@ -7216,7 +7216,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Juvenile/Female"
     },
     {
       "name": "PinkJuvenileGrowUpFemaleTT",
@@ -7256,7 +7256,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Juvenile/Female"
     },
     {
       "name": "TurqJuvenileGrowUpFemaleTT",
@@ -7296,7 +7296,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Juvenile/Female"
     },
     {
       "name": "GreenAdolescentGrowUpFemaleTT",
@@ -7336,7 +7336,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Adolescent/Female"
     },
     {
       "name": "PinkAdolescentGrowUpFemaleTT",
@@ -7376,7 +7376,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Adolescent/Female"
     },
     {
       "name": "TurqAdolescentGrowUpFemaleTT",
@@ -7416,7 +7416,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Female"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Adolescent/Female"
     },
     {
       "name": "GreenAdolescentGrowUpMaleTT",
@@ -7456,7 +7456,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Adolescent/Male"
     },
     {
       "name": "PinkAdolescentGrowUpMaleTT",
@@ -7496,7 +7496,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Adolescent/Male"
     },
     {
       "name": "TurqAdolescentGrowUpMaleTT",
@@ -7536,7 +7536,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Adolescent/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Adolescent/Male"
     },
     {
       "name": "GreenJuvenileGrowUpMaleTT",
@@ -7576,7 +7576,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Juvenile/Male"
     },
     {
       "name": "PinkJuvenileGrowUpMaleTT",
@@ -7616,7 +7616,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Juvenile/Male"
     },
     {
       "name": "TurqJuvenileGrowUpMaleTT",
@@ -7656,7 +7656,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing/Juvenile/Male"
+      "path": "~/Entities/Terrible Terror/Growing/Delete/Juvenile/Male"
     },
     {
       "name": "FemaleTT",
@@ -8831,30 +8831,6 @@
       "path": "~/Entities/Gronckle/Dies"
     },
     {
-      "name": "TTColorLoadWorld",
-      "type": "procedure",
-      "sortid": 1010,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tt_color_load_world",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TTColorLoadWorldProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Terrible Terror/TickUpdate"
-    },
-    {
       "name": "MaleGronckle",
       "type": "tag",
       "sortid": 1011,
@@ -9143,7 +9119,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/SpawnEgg"
     },
     {
       "name": "SpawnProcedureNadder",
@@ -9179,7 +9155,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/SpawnEgg"
     },
     {
       "name": "SpawningEggRightClickedEntityNadder",
@@ -9219,7 +9195,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/SpawnEgg"
     },
     {
       "name": "SpawnEggNadder",
@@ -9234,7 +9210,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_nadder.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/SpawnEgg"
     },
     {
       "name": "NadderFlyingTickUpdate",
@@ -9341,6 +9317,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9381,6 +9361,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -9484,7 +9468,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/SpawnEgg"
+      "path": "~/Entities/SpawnEgg"
     },
     {
       "name": "NadderScale",
@@ -14689,6 +14673,342 @@
         ]
       },
       "path": "~/Entities/Deadly Nadder/Growing"
+    },
+    {
+      "name": "BabyColorSpawnTT",
+      "type": "procedure",
+      "sortid": 1338,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_color_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyColorSpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Entity/ColorSpawnNotGrown"
+    },
+    {
+      "name": "RandomColorMaleTT",
+      "type": "procedure",
+      "sortid": 1339,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_color_male_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RandomColorMaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Entity/Male"
+    },
+    {
+      "name": "RandomColorFemaleTT",
+      "type": "procedure",
+      "sortid": 1340,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_color_female_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RandomColorFemaleTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Entity/Female"
+    },
+    {
+      "name": "TameNonGrownTT",
+      "type": "procedure",
+      "sortid": 1341,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tame_non_grown_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TameNonGrownTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Growing"
+    },
+    {
+      "name": "JuvenileColorSpawnTT",
+      "type": "procedure",
+      "sortid": 1342,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juvenile_color_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileColorSpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Entity/ColorSpawnNotGrown"
+    },
+    {
+      "name": "AdolescentColorSpawnTT",
+      "type": "procedure",
+      "sortid": 1343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolescent_color_spawn_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentColorSpawnTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Entity/ColorSpawnNotGrown"
+    },
+    {
+      "name": "GrowingTickTT",
+      "type": "procedure",
+      "sortid": 1344,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing_tick_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Growing"
+    },
+    {
+      "name": "GrowUpMessageTT",
+      "type": "procedure",
+      "sortid": 1345,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grow_up_message_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpMessageTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Growing"
+    },
+    {
+      "name": "GrowUpTT",
+      "type": "procedure",
+      "sortid": 1346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Growing"
+    },
+    {
+      "name": "ItemCheckForGrowUpTT",
+      "type": "procedure",
+      "sortid": 1347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_check_for_grow_up_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ItemCheckForGrowUpTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Growing"
     }
   ],
   "variable_elements": [
@@ -14728,8 +15048,8 @@
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
-      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
+      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -14739,8 +15059,8 @@
       "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
-      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "advancements.drinking_yaknog.descr": "Drink Yaknog",
+      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
@@ -14763,8 +15083,8 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
-      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "advancements.hidden_world_root.title": "Hidden World",
       "item.how_to_own_a_dragon.gronckle_egg_item": "Gronckle Egg",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
@@ -14787,8 +15107,8 @@
       "gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.juvenile_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.tt_scale": "Terrible Terror Scale",
-      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -15155,7 +15475,20 @@
             "children": [
               {
                 "name": "Entity",
-                "children": []
+                "children": [
+                  {
+                    "name": "Male",
+                    "children": []
+                  },
+                  {
+                    "name": "Female",
+                    "children": []
+                  },
+                  {
+                    "name": "ColorSpawnNotGrown",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "GUI",
@@ -15186,52 +15519,57 @@
                 "name": "Growing",
                 "children": [
                   {
-                    "name": "GrowUpProcedure",
-                    "children": []
-                  },
-                  {
-                    "name": "GrowMessage",
-                    "children": []
-                  },
-                  {
-                    "name": "Item",
-                    "children": []
-                  },
-                  {
-                    "name": "Baby",
+                    "name": "Delete",
                     "children": [
                       {
-                        "name": "Male",
+                        "name": "Baby",
+                        "children": [
+                          {
+                            "name": "Male",
+                            "children": []
+                          },
+                          {
+                            "name": "Female",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Adolescent",
+                        "children": [
+                          {
+                            "name": "Female",
+                            "children": []
+                          },
+                          {
+                            "name": "Male",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Juvenile",
+                        "children": [
+                          {
+                            "name": "Female",
+                            "children": []
+                          },
+                          {
+                            "name": "Male",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "GrowMessage",
                         "children": []
                       },
                       {
-                        "name": "Female",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Adolescent",
-                    "children": [
-                      {
-                        "name": "Female",
+                        "name": "GrowUpProcedure",
                         "children": []
                       },
                       {
-                        "name": "Male",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Juvenile",
-                    "children": [
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "Male",
+                        "name": "Item",
                         "children": []
                       }
                     ]
@@ -15358,10 +15696,6 @@
               {
                 "name": "Items",
                 "children": []
-              },
-              {
-                "name": "SpawnEgg",
-                "children": []
               }
             ]
           },
@@ -15486,6 +15820,10 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "SpawnEgg",
+            "children": []
           }
         ]
       },
