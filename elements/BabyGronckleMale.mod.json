@@ -103,7 +103,7 @@
       "name": "NotGrownGronckleDiesProcedure"
     },
     "onInitialSpawn": {
-      "name": "GronkleColorTickRate"
+      "name": "BabyColorSpawnGronckle"
     },
     "hasAI": true,
     "aiBase": "(none)",

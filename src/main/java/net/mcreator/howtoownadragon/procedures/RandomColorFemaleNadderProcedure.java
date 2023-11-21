@@ -1,23 +1,23 @@
 package net.mcreator.howtoownadragon.procedures;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 
 import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
 
-public class FemaleOnInitialEntitySpawnNadderProcedure {
+public class RandomColorFemaleNadderProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		NBTDataSpawnNadderProcedure.execute(entity);
-		if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
+		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 			if (entity instanceof NadderFemaleEntity animatable)
 				animatable.setTexture("rednadder");
-		} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
+			entity.getPersistentData().putString("naddercolor", "red");
+		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (entity instanceof NadderFemaleEntity animatable)
 				animatable.setTexture("purplenadder");
-		} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-			if (entity instanceof NadderFemaleEntity animatable)
-				animatable.setTexture("stormfly");
+			entity.getPersistentData().putString("naddercolor", "purple");
 		} else {
 			RandomColorFemaleNadderProcedure.execute(entity);
 		}

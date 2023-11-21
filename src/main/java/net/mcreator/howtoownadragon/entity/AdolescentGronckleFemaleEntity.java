@@ -58,7 +58,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.procedures.NotGrownGronckleDiesProcedureProcedure;
-import net.mcreator.howtoownadragon.procedures.GronckleGrowingTickRateProcedure;
+import net.mcreator.howtoownadragon.procedures.AdolescentColorSpawnGronckleProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -185,7 +185,7 @@ public class AdolescentGronckleFemaleEntity extends TamableAnimal implements Geo
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		GronckleGrowingTickRateProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		AdolescentColorSpawnGronckleProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 
