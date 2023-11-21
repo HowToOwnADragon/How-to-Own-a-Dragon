@@ -19,6 +19,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
+
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
@@ -37,96 +39,98 @@ public class InLoveGronckleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) {
-			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.STONE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get())) {
+			if (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) {
+				if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.STONE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.SANDSTONE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.DEEPSLATE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.COBBLED_DEEPSLATE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.DIORITE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.GRANITE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Blocks.ANDESITE);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("gronckleinlove", true);
 					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.SANDSTONE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.DEEPSLATE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.COBBLED_DEEPSLATE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.DIORITE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.GRANITE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Blocks.ANDESITE);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("gronckleinlove", true);
 				}
 			}
 		}

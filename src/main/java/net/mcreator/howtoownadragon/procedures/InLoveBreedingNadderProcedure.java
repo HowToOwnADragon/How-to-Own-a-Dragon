@@ -19,6 +19,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 
+import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
+
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
@@ -37,52 +39,54 @@ public class InLoveBreedingNadderProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) {
-			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:grown_nadder")))) {
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MUTTON) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.MUTTON);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get()))) {
+			if (entity instanceof TamableAnimal _tamIsTamedBy && sourceentity instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false) {
+				if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:grown_nadder")))) {
+					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MUTTON) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Items.MUTTON);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("nadderinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Items.COD);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("nadderinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Items.SALMON);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("nadderinlove", true);
+					} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Items.COOKED_CHICKEN);
+							_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
+						entity.getPersistentData().putBoolean("nadderinlove", true);
 					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("nadderinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.COD);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("nadderinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.SALMON);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("nadderinlove", true);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
-					if (sourceentity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(Items.COOKED_CHICKEN);
-						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-						if (_entity instanceof Player _player)
-							_player.getInventory().setChanged();
-					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					entity.getPersistentData().putBoolean("nadderinlove", true);
 				}
 			}
 		}

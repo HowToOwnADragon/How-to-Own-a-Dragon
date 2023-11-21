@@ -29,15 +29,18 @@ public class MaleSpawnEggTTProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:tt_female, sort= nearest, limit= 1] run summon how_to_own_a_dragon:tt_egg_entity ~ ~ ~");
 			GiveBreedingCooldownTTProcedure.execute(world, x, y, z);
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", (((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+				if (!world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor",
+							(((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+				}
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level)
@@ -45,16 +48,18 @@ public class MaleSpawnEggTTProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:tt_female, sort= nearest, limit= 1] run summon how_to_own_a_dragon:tt_egg_entity ~ ~ ~");
 			GiveBreedingCooldownTTProcedure.execute(world, x, y, z);
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor",
-						(((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+				if (!world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor",
+							(((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+				}
 			});
 		} else {
 			MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);

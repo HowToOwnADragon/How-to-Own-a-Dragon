@@ -28,11 +28,13 @@ public class FemaleSpawnEggGronckleProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:gronckle_female, sort= nearest, limit= 1] run summon how_to_own_a_dragon:gronckle_egg_entity ~ ~ ~");
 			GiveBreedingCooldownGronckleProcedure.execute(world, x, y, z);
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				if (!world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level)
@@ -40,16 +42,18 @@ public class FemaleSpawnEggGronckleProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:gronckle_female, sort= nearest, limit= 1] run summon how_to_own_a_dragon:gronckle_egg_entity ~ ~ ~");
 			GiveBreedingCooldownGronckleProcedure.execute(world, x, y, z);
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor",
-						(((Entity) world.getEntitiesOfClass(GronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("groncklecolor")));
+				if (!world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor",
+							(((Entity) world.getEntitiesOfClass(GronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("groncklecolor")));
+				}
 			});
 		} else {
 			FemaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
