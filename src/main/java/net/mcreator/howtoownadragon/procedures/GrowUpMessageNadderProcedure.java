@@ -7,7 +7,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.network.chat.Component;
 
-public class GrowingUpMessageNadderProcedure {
+public class GrowUpMessageNadderProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
@@ -28,7 +28,7 @@ public class GrowingUpMessageNadderProcedure {
 				_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " is ready to grow up! It requires some sustenance. It needs some Cooked Chicken!")), false);
 			entity.getPersistentData().putString("naddergrowup", "chicken");
 		} else {
-			GrowingUpMessageNadderProcedure.execute(entity);
+			GrowUpMessageNadderProcedure.execute(entity);
 		}
 	}
 }

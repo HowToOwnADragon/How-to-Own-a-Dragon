@@ -103,7 +103,7 @@
       "name": "NotGrownNadderDiesProcedure"
     },
     "onInitialSpawn": {
-      "name": "ColorTickRateNadder"
+      "name": "BabyColorSpawnNadder"
     },
     "hasAI": true,
     "aiBase": "(none)",

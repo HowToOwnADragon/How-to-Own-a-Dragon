@@ -13,27 +13,27 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
+import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.Comparator;
 
-public class GrowUpProcedureGronckleProcedure {
+public class GrowUpNadderProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof BabyGronckleMaleEntity) {
+		if (entity instanceof BabyNadderMaleEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new JuvenileGronckleMaleEntity(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_MALE.get(), _level);
+				Entity entityToSpawn = new JuvenileNadderMaleEntity(HowToOwnADragonModEntities.JUVENILE_NADDER_MALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -43,21 +43,21 @@ public class GrowUpProcedureGronckleProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(JuvenileGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(JuvenileNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 			});
-		} else if (entity instanceof BabyGronckleFemaleEntity) {
+		} else if (entity instanceof BabyNadderFemaleEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new JuvenileGronckleFemaleEntity(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_FEMALE.get(), _level);
+				Entity entityToSpawn = new JuvenileNadderFemaleEntity(HowToOwnADragonModEntities.JUVENILE_NADDER_FEMALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -67,21 +67,21 @@ public class GrowUpProcedureGronckleProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(JuvenileGronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(JuvenileNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 			});
-		} else if (entity instanceof JuvenileGronckleMaleEntity) {
+		} else if (entity instanceof JuvenileNadderMaleEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new AdolescentGronckleMaleEntity(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_MALE.get(), _level);
+				Entity entityToSpawn = new AdolescentNadderMaleEntity(HowToOwnADragonModEntities.ADOLESCENT_NADDER_MALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -91,21 +91,21 @@ public class GrowUpProcedureGronckleProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(AdolescentGronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(AdolescentNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 			});
-		} else if (entity instanceof JuvenileGronckleFemaleEntity) {
+		} else if (entity instanceof JuvenileNadderFemaleEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new AdolescentGronckleFemaleEntity(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_FEMALE.get(), _level);
+				Entity entityToSpawn = new AdolescentNadderFemaleEntity(HowToOwnADragonModEntities.ADOLESCENT_NADDER_FEMALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -115,21 +115,21 @@ public class GrowUpProcedureGronckleProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(AdolescentGronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(AdolescentNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 			});
-		} else if (entity instanceof AdolescentGronckleMaleEntity) {
+		} else if (entity instanceof AdolescentNadderMaleEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new GronckleMaleEntity(HowToOwnADragonModEntities.GRONCKLE_MALE.get(), _level);
+				Entity entityToSpawn = new NadderMaleEntity(HowToOwnADragonModEntities.NADDER_MALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -139,21 +139,21 @@ public class GrowUpProcedureGronckleProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(GronckleMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
 			});
-		} else if (entity instanceof AdolescentGronckleFemaleEntity) {
+		} else if (entity instanceof AdolescentNadderFemaleEntity) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 30, 3, 3, 3, 0.5);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new GronckleFemaleEntity(HowToOwnADragonModEntities.GRONCKLE_FEMALE.get(), _level);
+				Entity entityToSpawn = new NadderFemaleEntity(HowToOwnADragonModEntities.NADDER_FEMALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -163,11 +163,11 @@ public class GrowUpProcedureGronckleProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				((Entity) world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())

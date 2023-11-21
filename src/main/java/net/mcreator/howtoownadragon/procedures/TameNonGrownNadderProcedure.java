@@ -20,9 +20,9 @@ public class TameNonGrownNadderProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _owner)
 				_toTame.tame(_owner);
-			GrowingTickGronckleProcedure.execute(world, entity);
+			GrowingTickNadderProcedure.execute(world, entity);
 		} else {
-			GrowingTickGronckleProcedure.execute(world, entity);
+			GrowingTickNadderProcedure.execute(world, entity);
 		}
 	}
 }

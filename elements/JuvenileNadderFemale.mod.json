@@ -106,7 +106,7 @@
       "name": "NadderFlyingTickUpdate"
     },
     "onInitialSpawn": {
-      "name": "ColorTickRateNadder"
+      "name": "JuvenileColorSpawnNadder"
     },
     "hasAI": true,
     "aiBase": "(none)",
