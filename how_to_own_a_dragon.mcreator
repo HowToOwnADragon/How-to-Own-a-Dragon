@@ -42,7 +42,7 @@
           }
         ]
       },
-      "path": "~/Entities/NightFury"
+      "path": "~/Entities/Dragons/NightFury"
     },
     {
       "name": "TheHiddenWorld",
@@ -91,7 +91,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/NightFuryModel.java"
         ]
       },
-      "path": "~/Entities/NightFury"
+      "path": "~/Entities/Dragons/NightFury"
     },
     {
       "name": "TheHiddenWorldPlayerEntersDimension",
@@ -776,7 +776,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "WhenNotTamedKick",
@@ -852,7 +852,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleGraniteTame",
@@ -892,7 +892,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleCobbleTame",
@@ -932,7 +932,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleDioriteTame",
@@ -972,7 +972,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleDeepslateTame",
@@ -1012,7 +1012,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleAndesiteTame",
@@ -1052,7 +1052,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleCobbleDeepslateTame",
@@ -1092,7 +1092,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "Dragon",
@@ -1106,7 +1106,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/dragon.json"
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Tag"
+      "path": "~/Entities/Tag"
     },
     {
       "name": "TheReaper",
@@ -1405,26 +1405,6 @@
         ]
       },
       "path": "~/Procedure/Flying"
-    },
-    {
-      "name": "FlyingTickUpdate",
-      "type": "procedure",
-      "sortid": 94,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flying_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/FlyingTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/NoDragonButRelated"
     },
     {
       "name": "DeepIronRodRecipeMiddle",
@@ -1929,7 +1909,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckles.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Tag"
+      "path": "~/Entities/Dragons/Gronckle/Tag"
     },
     {
       "name": "ReaperSpawnBlockUpdateTick",
@@ -2087,7 +2067,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/SpawnEgg"
+      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
       "name": "IncubatorRecipe",
@@ -2141,7 +2121,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "Limestone",
@@ -2268,7 +2248,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_full_grown.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Tag"
+      "path": "~/Entities/Dragons/Gronckle/Tag"
     },
     {
       "name": "StopRidingEntityWhenClickingWithDragonEye",
@@ -2462,7 +2442,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Ability/Ball"
+      "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleAttack",
@@ -2479,7 +2459,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleAttackRenderer.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Ability/Ball"
+      "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleAttackProjectileHitsLivingEntity",
@@ -2515,7 +2495,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Ability/Ball"
+      "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleExplodeAtBlock",
@@ -2547,7 +2527,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Ability/Ball"
+      "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleSaddle",
@@ -2562,7 +2542,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/GronckleSaddleItem.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle"
+      "path": "~/Entities/Dragons/Gronckle/Saddle"
     },
     {
       "name": "SaddleRack",
@@ -2597,7 +2577,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Ability/Ball"
+      "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
     },
     {
       "name": "GronckleSaddleRecipe",
@@ -2976,7 +2956,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Taming"
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     },
     {
       "name": "GronckleMale",
@@ -2993,7 +2973,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleMaleEntity.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Male"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
     },
     {
       "name": "GronckleFemale",
@@ -3010,7 +2990,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleFemaleEntity.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Female"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
       "name": "GronckleMaleOnInitialEntitySpawn",
@@ -3034,7 +3014,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Male"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
     },
     {
       "name": "GronckleFemaleOnInitialEntitySpawn",
@@ -3058,7 +3038,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Female"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
       "name": "AdolescentGronckleMale",
@@ -3074,7 +3054,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Male"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
     },
     {
       "name": "AdolescentGronckleFemale",
@@ -3090,7 +3070,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleFemaleModel.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Female"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
       "name": "JuvenileGronckleMale",
@@ -3106,7 +3086,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleMaleModel.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Male"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
     },
     {
       "name": "JuvenileGronckleFemale",
@@ -3122,7 +3102,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleFemaleModel.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Female"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
       "name": "BabyGronckleMale",
@@ -3138,7 +3118,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Male"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
     },
     {
       "name": "BabyGronckleFemale",
@@ -3154,7 +3134,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleFemaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Female"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
       "name": "GronckleEggEntity",
@@ -3169,7 +3149,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/GronckleEggEntityEntity.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleEggItem",
@@ -3184,7 +3164,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_egg_item.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleEntityIsHurt",
@@ -3212,7 +3192,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "GronckleSpawnEgg",
@@ -3227,7 +3207,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/GronckleSpawnEggItem.java"
         ]
       },
-      "path": "~/Entities/Gronckle/SpawnEgg"
+      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
       "name": "GronckleSpawnProcedure",
@@ -3263,7 +3243,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/SpawnEgg"
+      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
       "name": "GronckleSpawnBabyProcedure",
@@ -3299,7 +3279,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/SpawnEgg"
+      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
       "name": "FemaleGronckleGUI",
@@ -3315,7 +3295,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/FemaleGronckleGUIButtonMessage.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI"
+      "path": "~/Entities/Dragons/Gronckle/GUI"
     },
     {
       "name": "MaleGronckleGUI",
@@ -3331,7 +3311,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/MaleGronckleGUIButtonMessage.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI"
+      "path": "~/Entities/Dragons/Gronckle/GUI"
     },
     {
       "name": "ValkasStaff",
@@ -3664,7 +3644,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Male"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Male"
     },
     {
       "name": "MeatlugSaddleMaleGronckle",
@@ -3688,7 +3668,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Male"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Male"
     },
     {
       "name": "OrangeRedSaddleMaleGronckle",
@@ -3712,7 +3692,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Male"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Male"
     },
     {
       "name": "BlueYellowSaddleMaleGronckle",
@@ -3736,7 +3716,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Male"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Male"
     },
     {
       "name": "MeatlugSaddleFemaleGronckle",
@@ -3760,7 +3740,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Female"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Female"
     },
     {
       "name": "PinkSaddleFemaleGronckle",
@@ -3784,7 +3764,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Female"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Female"
     },
     {
       "name": "OrangeRedSaddleFemaleGronckle",
@@ -3808,7 +3788,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Female"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Female"
     },
     {
       "name": "BlueYellowSaddleFemaleGronckle",
@@ -3832,7 +3812,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Saddle/Female"
+      "path": "~/Entities/Dragons/Gronckle/Saddle/Female"
     },
     {
       "name": "NBTDataSpawnGronckle",
@@ -3852,7 +3832,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity"
+      "path": "~/Entities/Dragons/Gronckle/Entity"
     },
     {
       "name": "GronkleIronGUIMale",
@@ -3868,7 +3848,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/GronkleIronGUIMaleButtonMessage.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron/Male"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron/Male"
     },
     {
       "name": "OpenGronckleIronGUIMale",
@@ -3904,7 +3884,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron/Male"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron/Male"
     },
     {
       "name": "ButtonPressedGronckleIronGUIMale",
@@ -3940,7 +3920,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron/Male"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron/Male"
     },
     {
       "name": "GronckleIronGUIFemale",
@@ -3956,7 +3936,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/GronckleIronGUIFemaleScreen.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron/Female"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron/Female"
     },
     {
       "name": "OpenGronckleIronGUIFemale",
@@ -3992,7 +3972,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron/Female"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron/Female"
     },
     {
       "name": "ButtonPressedGronckleIronGUIFemale",
@@ -4028,7 +4008,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron/Female"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron/Female"
     },
     {
       "name": "AttackCooldown",
@@ -4042,7 +4022,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/AttackCooldownMobEffect.java"
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Cooldown"
+      "path": "~/Entities/Cooldown"
     },
     {
       "name": "MainPageInfoGronckle",
@@ -4232,7 +4212,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/BreedingCooldownMobEffect.java"
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Cooldown"
+      "path": "~/Entities/Cooldown"
     },
     {
       "name": "GronckleIronCooldown",
@@ -4246,71 +4226,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/GronckleIronCooldownMobEffect.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI/GronckleIron"
-    },
-    {
-      "name": "GronckleColorLoadWorld",
-      "type": "procedure",
-      "sortid": 809,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_color_load_world",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleColorLoadWorldProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Gronckle/Tick"
-    },
-    {
-      "name": "FeedNonGrownGronckles",
-      "type": "procedure",
-      "sortid": 810,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "feed_non_grown_gronckles",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownGroncklesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Gronckle/Feeding"
+      "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron"
     },
     {
       "name": "PinkIncubator1CallNBTDataProcedure",
@@ -4489,7 +4405,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownMaleGronckleGUIMenu.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI"
+      "path": "~/Entities/Dragons/Gronckle/GUI"
     },
     {
       "name": "NotGrownFemaleGronckleGUI",
@@ -4504,7 +4420,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleGronckleGUIScreen.java"
         ]
       },
-      "path": "~/Entities/Gronckle/GUI"
+      "path": "~/Entities/Dragons/Gronckle/GUI"
     },
     {
       "name": "FoodPage1InfoGronckle",
@@ -4579,26 +4495,6 @@
       "path": "~/Items/DragonEye"
     },
     {
-      "name": "HoveringFlyingTickUpdate",
-      "type": "procedure",
-      "sortid": 823,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hovering_flying_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/HoveringFlyingTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/NoDragonButRelated"
-    },
-    {
       "name": "EggGravity",
       "type": "procedure",
       "sortid": 824,
@@ -4636,7 +4532,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Tick"
+      "path": "~/Entities/Dragons/Gronckle/Tick"
     },
     {
       "name": "GronckleNotGrown",
@@ -4650,7 +4546,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_not_grown.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Tag"
+      "path": "~/Entities/Dragons/Gronckle/Tag"
     },
     {
       "name": "DragonScale",
@@ -5512,7 +5408,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/UseAbilityMessage.java"
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Ability"
+      "path": "~/Entities/AbilityWheel"
     },
     {
       "name": "GiveBreedingCooldownGronckle",
@@ -5544,7 +5440,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding"
+      "path": "~/Entities/Dragons/Gronckle/Breeding"
     },
     {
       "name": "UseAbilityOnKeyPressed",
@@ -5564,7 +5460,7 @@
           }
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Ability"
+      "path": "~/Entities/AbilityWheel"
     },
     {
       "name": "WildDayAI",
@@ -5631,7 +5527,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
     },
     {
       "name": "TestGronckle",
@@ -5647,7 +5543,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java"
         ]
       },
-      "path": "~/Entities/Gronckle/Entity"
+      "path": "~/Entities/Dragons/Gronckle/Entity"
     },
     {
       "name": "GrownDragon",
@@ -5661,7 +5557,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/grown_dragon.json"
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Tag"
+      "path": "~/Entities/Tag"
     },
     {
       "name": "TTFemale",
@@ -5678,7 +5574,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
     },
     {
       "name": "BreadTameTT",
@@ -5718,7 +5614,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Taming"
+      "path": "~/Entities/Dragons/Terrible Terror/Taming"
     },
     {
       "name": "SpawnEggTT",
@@ -5733,7 +5629,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_tt.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Dragons/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnProcedureTT",
@@ -5769,7 +5665,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Dragons/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnEggRichtClickEntityTT",
@@ -5809,7 +5705,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Dragons/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnBabyProcedureTT",
@@ -5845,7 +5741,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Dragons/Terrible Terror/SpawnEgg"
     },
     {
       "name": "TT",
@@ -5859,7 +5755,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Tag"
+      "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
       "name": "TTFullGrown",
@@ -5873,7 +5769,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_full_grown.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Tag"
+      "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
       "name": "TTNotGrown",
@@ -5887,7 +5783,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/tt_not_grown.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Tag"
+      "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
       "name": "FemaleOnInitialEntitySpawnTT",
@@ -5923,7 +5819,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
     },
     {
       "name": "MaleOnInitialEntitySpawnTT",
@@ -5959,7 +5855,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
     },
     {
       "name": "WildAI",
@@ -5996,7 +5892,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/TTTestEntity.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity"
     },
     {
       "name": "BabyTTFemale",
@@ -6012,7 +5908,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTFemaleModel.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
     },
     {
       "name": "JuvenileTTFemale",
@@ -6028,7 +5924,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileTTFemaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
     },
     {
       "name": "AdolescentTTFemale",
@@ -6044,7 +5940,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentTTFemaleEntity.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
     },
     {
       "name": "BabyTTMale",
@@ -6060,7 +5956,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyTTMaleModel.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
     },
     {
       "name": "JuvenileTTMale",
@@ -6076,7 +5972,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileTTMaleModel.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
     },
     {
       "name": "AdolescentTTMale",
@@ -6092,7 +5988,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentTTMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
     },
     {
       "name": "RidebleDragon",
@@ -6106,7 +6002,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/rideble_dragon.json"
         ]
       },
-      "path": "~/Entities/NoDragonButRelated/Tag"
+      "path": "~/Entities/Tag"
     },
     {
       "name": "CodTameTT",
@@ -6146,7 +6042,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Taming"
+      "path": "~/Entities/Dragons/Terrible Terror/Taming"
     },
     {
       "name": "SalmonTameTT",
@@ -6186,7 +6082,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Taming"
+      "path": "~/Entities/Dragons/Terrible Terror/Taming"
     },
     {
       "name": "ChickenTameTT",
@@ -6226,7 +6122,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Taming"
+      "path": "~/Entities/Dragons/Terrible Terror/Taming"
     },
     {
       "name": "MaleTTGUI",
@@ -6241,7 +6137,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleTTGUIMenu.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/GUI"
+      "path": "~/Entities/Dragons/Terrible Terror/GUI"
     },
     {
       "name": "FemaleTTGUI",
@@ -6256,7 +6152,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleTTGUIScreen.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/GUI"
+      "path": "~/Entities/Dragons/Terrible Terror/GUI"
     },
     {
       "name": "TTScale",
@@ -6286,7 +6182,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/TTEggItemItem.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "TTEggEntityEntityIsHurt",
@@ -6314,7 +6210,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "GiveBreedingCooldownTT",
@@ -6346,7 +6242,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding"
     },
     {
       "name": "TTEggEntity",
@@ -6362,7 +6258,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTEggEntityRenderer.java"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "AlwaysTrue",
@@ -6418,7 +6314,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding"
     },
     {
       "name": "TTFeedItems",
@@ -6432,7 +6328,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/items/tt_feed_items.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Tag"
+      "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
       "name": "OpenMaleGUITT",
@@ -6472,7 +6368,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/GUI"
+      "path": "~/Entities/Dragons/Terrible Terror/GUI"
     },
     {
       "name": "OpenFemaleGUITT",
@@ -6512,7 +6408,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/GUI"
+      "path": "~/Entities/Dragons/Terrible Terror/GUI"
     },
     {
       "name": "NBTOnInitiallSpawnTT",
@@ -6532,7 +6428,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity"
     },
     {
       "name": "TTIncubator1Tick",
@@ -6578,7 +6474,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_tt.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Tag"
+      "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
       "name": "MaleTT",
@@ -6592,7 +6488,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_tt.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Tag"
+      "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
       "name": "BabyPinkMaleSpawnDragonCommandTT",
@@ -7566,7 +7462,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_gronckle_dies.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Dies"
+      "path": "~/Entities/Dragons/Gronckle/Dies"
     },
     {
       "name": "GrownGronckleDiesProcedure",
@@ -7598,7 +7494,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Dies"
+      "path": "~/Entities/Dragons/Gronckle/Dies"
     },
     {
       "name": "GrownTTDies",
@@ -7612,7 +7508,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/grown_tt_dies.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Dies"
+      "path": "~/Entities/Dragons/Terrible Terror/Dies"
     },
     {
       "name": "GrownTTDiesProcedure",
@@ -7644,7 +7540,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Dies"
+      "path": "~/Entities/Dragons/Terrible Terror/Dies"
     },
     {
       "name": "NotGrownTTDies",
@@ -7658,7 +7554,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_tt_dies.json"
         ]
       },
-      "path": "~/Entities/Terrible Terror/Dies"
+      "path": "~/Entities/Dragons/Terrible Terror/Dies"
     },
     {
       "name": "NotGrownTTDiesProcedure",
@@ -7690,7 +7586,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Dies"
+      "path": "~/Entities/Dragons/Terrible Terror/Dies"
     },
     {
       "name": "NotGrownGronckleDies",
@@ -7704,7 +7600,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_gronckle_dies.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Dies"
+      "path": "~/Entities/Dragons/Gronckle/Dies"
     },
     {
       "name": "NotGrownGronckleDiesProcedure",
@@ -7736,7 +7632,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Dies"
+      "path": "~/Entities/Dragons/Gronckle/Dies"
     },
     {
       "name": "MaleGronckle",
@@ -7750,7 +7646,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_gronckle.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Tag"
+      "path": "~/Entities/Dragons/Gronckle/Tag"
     },
     {
       "name": "OpenNotGrownMaleGronckleGUI",
@@ -7790,7 +7686,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/GUI"
+      "path": "~/Entities/Dragons/Gronckle/GUI"
     },
     {
       "name": "OpenNotGrownFemaleGronckleGUI",
@@ -7830,7 +7726,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/GUI"
+      "path": "~/Entities/Dragons/Gronckle/GUI"
     },
     {
       "name": "FemaleGronckle",
@@ -7844,7 +7740,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_gronckle.json"
         ]
       },
-      "path": "~/Entities/Gronckle/Tag"
+      "path": "~/Entities/Dragons/Gronckle/Tag"
     },
     {
       "name": "NadderMale",
@@ -7861,7 +7757,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/NadderMaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Male"
     },
     {
       "name": "TestNadder",
@@ -7878,7 +7774,7 @@
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_nadder_biome_modifier.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity"
     },
     {
       "name": "NadderFemale",
@@ -7895,7 +7791,7 @@
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/nadder_female_biome_modifier.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Female"
     },
     {
       "name": "BabyNadderFemale",
@@ -7911,7 +7807,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyNadderFemaleModel.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Female"
     },
     {
       "name": "BabyNadderMale",
@@ -7927,7 +7823,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyNadderMaleModel.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Male"
     },
     {
       "name": "JuvenileNadderMale",
@@ -7943,7 +7839,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileNadderMaleModel.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Male"
     },
     {
       "name": "JuvenileNadderFemale",
@@ -7959,7 +7855,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileNadderFemaleRenderer.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Female"
     },
     {
       "name": "AdolescentNadderFemale",
@@ -7975,7 +7871,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentNadderFemaleEntity.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Female"
     },
     {
       "name": "AdolescentNadderMale",
@@ -7991,43 +7887,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentNadderMaleEntity.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Male"
-    },
-    {
-      "name": "SpawnBabyProcedureNadder",
-      "type": "procedure",
-      "sortid": 1025,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_baby_procedure_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnBabyProcedureNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/SpawnEgg"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Male"
     },
     {
       "name": "SpawnProcedureNadder",
@@ -8063,47 +7923,7 @@
           }
         ]
       },
-      "path": "~/Entities/SpawnEgg"
-    },
-    {
-      "name": "SpawningEggRightClickedEntityNadder",
-      "type": "procedure",
-      "sortid": 1027,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawning_egg_right_clicked_entity_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawningEggRightClickedEntityNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/SpawnEgg"
+      "path": "~/Entities/Dragons/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "SpawnEggNadder",
@@ -8118,7 +7938,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/spawn_egg_nadder.json"
         ]
       },
-      "path": "~/Entities/SpawnEgg"
+      "path": "~/Entities/Dragons/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "NadderFlyingTickUpdate",
@@ -8138,7 +7958,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/TickUpdate"
+      "path": "~/Entities/Dragons/Deadly Nadder/TickUpdate"
     },
     {
       "name": "GrownNadder",
@@ -8152,7 +7972,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/grown_nadder.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Tag"
+      "path": "~/Entities/Dragons/Deadly Nadder/Tag"
     },
     {
       "name": "NotGrownNadder",
@@ -8166,7 +7986,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/not_grown_nadder.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Tag"
+      "path": "~/Entities/Dragons/Deadly Nadder/Tag"
     },
     {
       "name": "Nadder",
@@ -8180,7 +8000,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/nadder.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Tag"
+      "path": "~/Entities/Dragons/Deadly Nadder/Tag"
     },
     {
       "name": "MaleNadder",
@@ -8194,7 +8014,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_nadder.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Tag"
+      "path": "~/Entities/Dragons/Deadly Nadder/Tag"
     },
     {
       "name": "FemaleNadder",
@@ -8208,7 +8028,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_nadder.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Tag"
+      "path": "~/Entities/Dragons/Deadly Nadder/Tag"
     },
     {
       "name": "MaleOnInitialEntitySpawnNadder",
@@ -8232,7 +8052,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Male"
     },
     {
       "name": "NBTDataSpawnNadder",
@@ -8252,7 +8072,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity"
     },
     {
       "name": "FemaleOnInitialEntitySpawnNadder",
@@ -8276,7 +8096,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Female"
     },
     {
       "name": "SpawnTT",
@@ -8312,7 +8132,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/SpawnEgg"
+      "path": "~/Entities/Dragons/Terrible Terror/SpawnEgg"
     },
     {
       "name": "SpawnGronckle",
@@ -8344,7 +8164,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/SpawnEgg"
+      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
       "name": "SpawnNadder",
@@ -8376,7 +8196,7 @@
           }
         ]
       },
-      "path": "~/Entities/SpawnEgg"
+      "path": "~/Entities/Dragons/Deadly Nadder/SpawnEgg"
     },
     {
       "name": "NadderScale",
@@ -8405,7 +8225,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/grown_nadder_dies.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Dies"
+      "path": "~/Entities/Dragons/Deadly Nadder/Dies"
     },
     {
       "name": "GrownNadderDiesProcedure",
@@ -8437,7 +8257,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Dies"
+      "path": "~/Entities/Dragons/Deadly Nadder/Dies"
     },
     {
       "name": "NotGrownNadderDies",
@@ -8451,7 +8271,7 @@
           "src/main/resources/data/how_to_own_a_dragon/loot_tables/not_grown_nadder_dies.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Dies"
+      "path": "~/Entities/Dragons/Deadly Nadder/Dies"
     },
     {
       "name": "NotGrownNadderDiesProcedure",
@@ -8483,7 +8303,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Dies"
+      "path": "~/Entities/Dragons/Deadly Nadder/Dies"
     },
     {
       "name": "NadderSpine",
@@ -8498,7 +8318,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_spine.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Items"
+      "path": "~/Entities/Dragons/Deadly Nadder/Items"
     },
     {
       "name": "NadderArrow",
@@ -8513,7 +8333,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_arrow.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Items"
+      "path": "~/Entities/Dragons/Deadly Nadder/Items"
     },
     {
       "name": "DirtBlocks",
@@ -8654,7 +8474,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle/Male"
     },
     {
       "name": "NadderSaddle",
@@ -8669,7 +8489,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/NadderSaddleItem.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle"
     },
     {
       "name": "RedNadderSaddleMale",
@@ -8693,7 +8513,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle/Male"
     },
     {
       "name": "PurpleNadderSaddleMale",
@@ -8717,7 +8537,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle/Male"
     },
     {
       "name": "PurpleNadderSaddleFemale",
@@ -8741,7 +8561,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle/Female"
     },
     {
       "name": "RedNadderSaddleFemale",
@@ -8765,7 +8585,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle/Female"
     },
     {
       "name": "StormflySaddleFemaleNadder",
@@ -8789,7 +8609,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Saddle/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle/Female"
     },
     {
       "name": "ChickenTameNadder",
@@ -8829,7 +8649,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Taming"
+      "path": "~/Entities/Dragons/Deadly Nadder/Taming"
     },
     {
       "name": "CodTameNadder",
@@ -8869,7 +8689,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Taming"
+      "path": "~/Entities/Dragons/Deadly Nadder/Taming"
     },
     {
       "name": "SalmonTameNadder",
@@ -8909,7 +8729,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Taming"
+      "path": "~/Entities/Dragons/Deadly Nadder/Taming"
     },
     {
       "name": "MuttonTameNadder",
@@ -8949,7 +8769,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Taming"
+      "path": "~/Entities/Dragons/Deadly Nadder/Taming"
     },
     {
       "name": "FemaleNadderGUI",
@@ -8964,7 +8784,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleNadderGUIScreen.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/GUI"
+      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
     },
     {
       "name": "MaleNadderGUI",
@@ -8979,7 +8799,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleNadderGUIMenu.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/GUI"
+      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
     },
     {
       "name": "NotGrownFemaleNadderGUI",
@@ -8994,7 +8814,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownFemaleNadderGUIScreen.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/GUI"
+      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
     },
     {
       "name": "NotGrownMaleNadderGUI",
@@ -9009,7 +8829,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownMaleNadderGUIScreen.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/GUI"
+      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
     },
     {
       "name": "OpenNotGrownFemaleNadderGUI",
@@ -9049,7 +8869,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/GUI"
+      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
     },
     {
       "name": "OpenNotGrownMaleNadderGUI",
@@ -9089,7 +8909,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/GUI"
+      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
     },
     {
       "name": "NadderEggItem",
@@ -9104,7 +8924,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/nadder_egg_item.json"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "NadderEggEntity",
@@ -9120,7 +8940,7 @@
           "src/main/java/net/mcreator/howtoownadragon/entity/NadderEggEntityEntity.java"
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "NadderEggEntityIsHurt",
@@ -9148,7 +8968,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "GiveBreedingCooldownNadder",
@@ -9180,7 +9000,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding"
     },
     {
       "name": "NadderIncubator1Tick",
@@ -9444,7 +9264,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding"
     },
     {
       "name": "RedMaleSpawnDragonCommandNadder",
@@ -12344,7 +12164,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding"
+      "path": "~/Entities/Dragons/Gronckle/Breeding"
     },
     {
       "name": "GronckleEggItemRightclickedOnBlock",
@@ -12380,7 +12200,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Egg"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Egg"
     },
     {
       "name": "MaleBreedingGronckle",
@@ -12420,7 +12240,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Male"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Male"
     },
     {
       "name": "MaleSpawnEggGronckle",
@@ -12456,7 +12276,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Male"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Male"
     },
     {
       "name": "FemaleSpawnEggGronckle",
@@ -12492,7 +12312,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Female"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Female"
     },
     {
       "name": "FemaleBreedingGronckle",
@@ -12532,7 +12352,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Breeding/Female"
+      "path": "~/Entities/Dragons/Gronckle/Breeding/Female"
     },
     {
       "name": "FemaleSpawnEggNadder",
@@ -12568,7 +12388,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Female"
     },
     {
       "name": "FemaleBreedingNadder",
@@ -12608,7 +12428,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Female"
     },
     {
       "name": "MaleBreedingNadder",
@@ -12648,7 +12468,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Male"
     },
     {
       "name": "MaleSpawnEggNadder",
@@ -12684,7 +12504,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Male"
     },
     {
       "name": "NadderEggItemRihtClickedOnBlock",
@@ -12720,7 +12540,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Breeding/Egg"
+      "path": "~/Entities/Dragons/Deadly Nadder/Breeding/Egg"
     },
     {
       "name": "FemaleSpawnEggTT",
@@ -12756,7 +12576,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Female"
     },
     {
       "name": "FemaleBreedingTT",
@@ -12796,7 +12616,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Female"
     },
     {
       "name": "TTEggItemRightClickedOnBlock",
@@ -12832,7 +12652,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Egg"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Egg"
     },
     {
       "name": "MaleSpawnEggTT",
@@ -12868,7 +12688,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Male"
     },
     {
       "name": "MaleBreedingTT",
@@ -12908,7 +12728,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Breeding/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Breeding/Male"
     },
     {
       "name": "RandomColorFemaleGronckle",
@@ -12928,7 +12748,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Female"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
       "name": "RandomColorMaleGronckle",
@@ -12948,7 +12768,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/Male"
+      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
     },
     {
       "name": "BabyColorSpawnGronckle",
@@ -12984,7 +12804,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/ColorSpawnNonGrown"
+      "path": "~/Entities/Dragons/Gronckle/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "GrowingTickGronckle",
@@ -13008,7 +12828,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Growing"
+      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "GrowUpMessageGronckle",
@@ -13028,7 +12848,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Growing"
+      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "ItemCheckForGrowUpGronckle",
@@ -13068,7 +12888,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Growing"
+      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "JuvenileColorSpawnGronckle",
@@ -13104,7 +12924,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/ColorSpawnNonGrown"
+      "path": "~/Entities/Dragons/Gronckle/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "AdolescentColorSpawnGronckle",
@@ -13140,7 +12960,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Entity/ColorSpawnNonGrown"
+      "path": "~/Entities/Dragons/Gronckle/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "RandomColorMaleNadder",
@@ -13160,7 +12980,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Male"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Male"
     },
     {
       "name": "RandomColorFemaleNadder",
@@ -13180,7 +13000,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/Female"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/Female"
     },
     {
       "name": "BabyColorSpawnNadder",
@@ -13216,7 +13036,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/ColorSpawnNonGrown"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "TameNonGrownGronckle",
@@ -13252,7 +13072,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Growing"
+      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "TameNonGrownNadder",
@@ -13288,7 +13108,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Growing"
+      "path": "~/Entities/Dragons/Deadly Nadder/Growing"
     },
     {
       "name": "JuvenileColorSpawnNadder",
@@ -13324,7 +13144,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/ColorSpawnNonGrown"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "AdolescentColorSpawnNadder",
@@ -13360,7 +13180,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Entity/ColorSpawnNonGrown"
+      "path": "~/Entities/Dragons/Deadly Nadder/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "GrowingTickNadder",
@@ -13384,7 +13204,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Growing"
+      "path": "~/Entities/Dragons/Deadly Nadder/Growing"
     },
     {
       "name": "GrowUpMessageNadder",
@@ -13404,7 +13224,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Growing"
+      "path": "~/Entities/Dragons/Deadly Nadder/Growing"
     },
     {
       "name": "ItemCheckForGrowUpNadder",
@@ -13444,7 +13264,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Growing"
+      "path": "~/Entities/Dragons/Deadly Nadder/Growing"
     },
     {
       "name": "GrowUpGronckle",
@@ -13480,7 +13300,7 @@
           }
         ]
       },
-      "path": "~/Entities/Gronckle/Growing"
+      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "GrowUpNadder",
@@ -13516,7 +13336,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Growing"
+      "path": "~/Entities/Dragons/Deadly Nadder/Growing"
     },
     {
       "name": "BabyColorSpawnTT",
@@ -13552,7 +13372,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/ColorSpawnNotGrown"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/ColorSpawnNotGrown"
     },
     {
       "name": "RandomColorMaleTT",
@@ -13588,7 +13408,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Male"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
     },
     {
       "name": "RandomColorFemaleTT",
@@ -13624,7 +13444,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/Female"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
     },
     {
       "name": "TameNonGrownTT",
@@ -13660,7 +13480,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing"
+      "path": "~/Entities/Dragons/Terrible Terror/Growing"
     },
     {
       "name": "JuvenileColorSpawnTT",
@@ -13696,7 +13516,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/ColorSpawnNotGrown"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/ColorSpawnNotGrown"
     },
     {
       "name": "AdolescentColorSpawnTT",
@@ -13732,7 +13552,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Entity/ColorSpawnNotGrown"
+      "path": "~/Entities/Dragons/Terrible Terror/Entity/ColorSpawnNotGrown"
     },
     {
       "name": "GrowingTickTT",
@@ -13756,7 +13576,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing"
+      "path": "~/Entities/Dragons/Terrible Terror/Growing"
     },
     {
       "name": "GrowUpMessageTT",
@@ -13776,7 +13596,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing"
+      "path": "~/Entities/Dragons/Terrible Terror/Growing"
     },
     {
       "name": "GrowUpTT",
@@ -13812,7 +13632,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing"
+      "path": "~/Entities/Dragons/Terrible Terror/Growing"
     },
     {
       "name": "ItemCheckForGrowUpTT",
@@ -13852,7 +13672,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Growing"
+      "path": "~/Entities/Dragons/Terrible Terror/Growing"
     },
     {
       "name": "CreativeTameTT",
@@ -13892,7 +13712,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Taming"
+      "path": "~/Entities/Dragons/Terrible Terror/Taming"
     },
     {
       "name": "FeedTamedTT",
@@ -13932,7 +13752,7 @@
           }
         ]
       },
-      "path": "~/Entities/Terrible Terror/Feeding"
+      "path": "~/Entities/Dragons/Terrible Terror/Feeding"
     },
     {
       "name": "FeedTamedNadder",
@@ -13972,7 +13792,7 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Feeding"
+      "path": "~/Entities/Dragons/Deadly Nadder/Feeding"
     },
     {
       "name": "CreativeTameNadder",
@@ -14012,7 +13832,163 @@
           }
         ]
       },
-      "path": "~/Entities/Deadly Nadder/Taming"
+      "path": "~/Entities/Dragons/Deadly Nadder/Taming"
+    },
+    {
+      "name": "FeedTamedGronckle",
+      "type": "procedure",
+      "sortid": 1352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_tamed_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedTamedGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Gronckle/Feeding"
+    },
+    {
+      "name": "SpawnBabyNadder",
+      "type": "procedure",
+      "sortid": 1353,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_baby_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnBabyNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Deadly Nadder/SpawnEgg"
+    },
+    {
+      "name": "SpawnEggRightClickEntityNadder",
+      "type": "procedure",
+      "sortid": 1354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_egg_right_click_entity_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SpawnEggRightClickEntityNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Deadly Nadder/SpawnEgg"
+    },
+    {
+      "name": "CreativeTameGronckle",
+      "type": "procedure",
+      "sortid": 1355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_tame_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/CreativeTameGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Gronckle/Taming"
     }
   ],
   "variable_elements": [
@@ -14052,8 +14028,8 @@
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
-      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
+      "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -14063,8 +14039,8 @@
       "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
-      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "advancements.drinking_yaknog.descr": "Drink Yaknog",
+      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
@@ -14087,8 +14063,8 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
-      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
+      "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
       "advancements.hidden_world_root.title": "Hidden World",
       "item.how_to_own_a_dragon.gronckle_egg_item": "Gronckle Egg",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
@@ -14111,8 +14087,8 @@
       "gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.juvenile_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.tt_scale": "Terrible Terror Scale",
-      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
+      "advancements.enter_hidden_world.title": "Woah, it really does exist....",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -14180,7 +14156,7 @@
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
-      "key.how_to_own_a_dragon.use_ability": "Activate Ability(It\u0027s ALT+)",
+      "key.how_to_own_a_dragon.use_ability": "Activate Ability",
       "item.how_to_own_a_dragon.baby_gronckle_male_spawn_egg": "Baby Male Gronckle Spawn Egg",
       "item.how_to_own_a_dragon.yak_milk": "Yak Milk",
       "item.how_to_own_a_dragon.gronckle_attack": "Gronckle Attack",
@@ -14343,306 +14319,6 @@
         "name": "Entities",
         "children": [
           {
-            "name": "NightFury",
-            "children": []
-          },
-          {
-            "name": "Gronckle",
-            "children": [
-              {
-                "name": "Breeding",
-                "children": [
-                  {
-                    "name": "Egg",
-                    "children": []
-                  },
-                  {
-                    "name": "Male",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Taming",
-                "children": []
-              },
-              {
-                "name": "Growing",
-                "children": []
-              },
-              {
-                "name": "SpawnEgg",
-                "children": []
-              },
-              {
-                "name": "Ability",
-                "children": [
-                  {
-                    "name": "Ball",
-                    "children": []
-                  },
-                  {
-                    "name": "Bite",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Tag",
-                "children": []
-              },
-              {
-                "name": "Entity",
-                "children": [
-                  {
-                    "name": "Male",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  },
-                  {
-                    "name": "ColorSpawnNonGrown",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "GUI",
-                "children": [
-                  {
-                    "name": "GronckleIron",
-                    "children": [
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "Male",
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Tick",
-                "children": []
-              },
-              {
-                "name": "Saddle",
-                "children": [
-                  {
-                    "name": "Female",
-                    "children": []
-                  },
-                  {
-                    "name": "Male",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Feeding",
-                "children": []
-              },
-              {
-                "name": "Dies",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "NoDragonButRelated",
-            "children": [
-              {
-                "name": "Cooldown",
-                "children": []
-              },
-              {
-                "name": "Ability",
-                "children": []
-              },
-              {
-                "name": "Tag",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "Terrible Terror",
-            "children": [
-              {
-                "name": "Entity",
-                "children": [
-                  {
-                    "name": "Male",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  },
-                  {
-                    "name": "ColorSpawnNotGrown",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "GUI",
-                "children": []
-              },
-              {
-                "name": "Breeding",
-                "children": [
-                  {
-                    "name": "Egg",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  },
-                  {
-                    "name": "Male",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Taming",
-                "children": []
-              },
-              {
-                "name": "Growing",
-                "children": []
-              },
-              {
-                "name": "SpawnEgg",
-                "children": []
-              },
-              {
-                "name": "Tag",
-                "children": []
-              },
-              {
-                "name": "Feeding",
-                "children": []
-              },
-              {
-                "name": "Dies",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "Deadly Nadder",
-            "children": [
-              {
-                "name": "Ability",
-                "children": [
-                  {
-                    "name": "Beam",
-                    "children": []
-                  },
-                  {
-                    "name": "Spikes",
-                    "children": []
-                  },
-                  {
-                    "name": "Bite",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Breeding",
-                "children": [
-                  {
-                    "name": "Egg",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  },
-                  {
-                    "name": "Male",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Dies",
-                "children": []
-              },
-              {
-                "name": "Entity",
-                "children": [
-                  {
-                    "name": "Male",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  },
-                  {
-                    "name": "ColorSpawnNonGrown",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Feeding",
-                "children": []
-              },
-              {
-                "name": "GUI",
-                "children": []
-              },
-              {
-                "name": "Growing",
-                "children": []
-              },
-              {
-                "name": "Saddle",
-                "children": [
-                  {
-                    "name": "Male",
-                    "children": []
-                  },
-                  {
-                    "name": "Female",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Tag",
-                "children": []
-              },
-              {
-                "name": "Taming",
-                "children": []
-              },
-              {
-                "name": "TickUpdate",
-                "children": []
-              },
-              {
-                "name": "Items",
-                "children": []
-              }
-            ]
-          },
-          {
             "name": "Animals",
             "children": [
               {
@@ -14765,8 +14441,308 @@
             ]
           },
           {
-            "name": "SpawnEgg",
+            "name": "Cooldown",
             "children": []
+          },
+          {
+            "name": "Tag",
+            "children": []
+          },
+          {
+            "name": "AbilityWheel",
+            "children": []
+          },
+          {
+            "name": "Dragons",
+            "children": [
+              {
+                "name": "Deadly Nadder",
+                "children": [
+                  {
+                    "name": "Ability",
+                    "children": [
+                      {
+                        "name": "Beam",
+                        "children": []
+                      },
+                      {
+                        "name": "Spikes",
+                        "children": []
+                      },
+                      {
+                        "name": "Bite",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": [
+                      {
+                        "name": "Egg",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "Entity",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "ColorSpawnNonGrown",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Feeding",
+                    "children": []
+                  },
+                  {
+                    "name": "GUI",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "Saddle",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "Taming",
+                    "children": []
+                  },
+                  {
+                    "name": "TickUpdate",
+                    "children": []
+                  },
+                  {
+                    "name": "Items",
+                    "children": []
+                  },
+                  {
+                    "name": "SpawnEgg",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Gronckle",
+                "children": [
+                  {
+                    "name": "Breeding",
+                    "children": [
+                      {
+                        "name": "Egg",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Taming",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "SpawnEgg",
+                    "children": []
+                  },
+                  {
+                    "name": "Ability",
+                    "children": [
+                      {
+                        "name": "Ball",
+                        "children": []
+                      },
+                      {
+                        "name": "Bite",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "Entity",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "ColorSpawnNonGrown",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "GUI",
+                    "children": [
+                      {
+                        "name": "GronckleIron",
+                        "children": [
+                          {
+                            "name": "Female",
+                            "children": []
+                          },
+                          {
+                            "name": "Male",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tick",
+                    "children": []
+                  },
+                  {
+                    "name": "Saddle",
+                    "children": [
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Feeding",
+                    "children": []
+                  },
+                  {
+                    "name": "Dies",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "NightFury",
+                "children": []
+              },
+              {
+                "name": "Terrible Terror",
+                "children": [
+                  {
+                    "name": "Entity",
+                    "children": [
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "ColorSpawnNotGrown",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "GUI",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": [
+                      {
+                        "name": "Egg",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Taming",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "SpawnEgg",
+                    "children": []
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "Feeding",
+                    "children": []
+                  },
+                  {
+                    "name": "Dies",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },

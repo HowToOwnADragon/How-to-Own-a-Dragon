@@ -7,23 +7,28 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.client.Minecraft;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class SpawningEggRightClickedEntityNadderProcedure {
+public class CreativeTameGronckleProcedure {
 	@SubscribeEvent
 	public static void onRightClickEntity(PlayerInteractEvent.EntityInteract event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())
@@ -38,7 +43,7 @@ public class SpawningEggRightClickedEntityNadderProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (new Object() {
+		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles"))) && !(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
@@ -47,21 +52,21 @@ public class SpawningEggRightClickedEntityNadderProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(sourceentity) && entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:nadder")))) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SPAWN_EGG_NADDER.get()) {
-				SpawnBabyProcedureNadderProcedure.execute(world, x, y, z, entity);
-			}
-		} else {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SPAWN_EGG_NADDER.get()) {
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SPAWN_EGG_NADDER.get());
-					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+		}.checkGamemode(sourceentity) && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
+			if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
+				_toTame.tame(_owner);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
+			HowToOwnADragonMod.queueServerWork(1, () -> {
+				if (sourceentity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:first_tamed_dragon"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
-				SpawnBabyProcedureNadderProcedure.execute(world, x, y, z, entity);
-			}
+			});
 		}
 	}
 }

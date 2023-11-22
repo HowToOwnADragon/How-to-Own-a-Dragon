@@ -43,15 +43,17 @@ public class GrowUpNadderProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(JuvenileNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				if (!world.getEntitiesOfClass(JuvenileNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(JuvenileNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+					if (!entity.level.isClientSide())
+						entity.discard();
+					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				}
 			});
 		} else if (entity instanceof BabyNadderFemaleEntity) {
 			if (world instanceof ServerLevel _level)
@@ -67,15 +69,17 @@ public class GrowUpNadderProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(JuvenileNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				if (!world.getEntitiesOfClass(JuvenileNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(JuvenileNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+					if (!entity.level.isClientSide())
+						entity.discard();
+					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				}
 			});
 		} else if (entity instanceof JuvenileNadderMaleEntity) {
 			if (world instanceof ServerLevel _level)
@@ -91,15 +95,17 @@ public class GrowUpNadderProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(AdolescentNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				if (!world.getEntitiesOfClass(AdolescentNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(AdolescentNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+					if (!entity.level.isClientSide())
+						entity.discard();
+					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				}
 			});
 		} else if (entity instanceof JuvenileNadderFemaleEntity) {
 			if (world instanceof ServerLevel _level)
@@ -115,15 +121,17 @@ public class GrowUpNadderProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(AdolescentNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				if (!world.getEntitiesOfClass(AdolescentNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(AdolescentNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+					if (!entity.level.isClientSide())
+						entity.discard();
+					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				}
 			});
 		} else if (entity instanceof AdolescentNadderMaleEntity) {
 			if (world instanceof ServerLevel _level)
@@ -139,15 +147,17 @@ public class GrowUpNadderProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				if (!world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+					if (!entity.level.isClientSide())
+						entity.discard();
+					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				}
 			});
 		} else if (entity instanceof AdolescentNadderFemaleEntity) {
 			if (world instanceof ServerLevel _level)
@@ -163,15 +173,17 @@ public class GrowUpNadderProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				((Entity) world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				if (!world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+					if (!entity.level.isClientSide())
+						entity.discard();
+					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+				}
 			});
 		}
 	}

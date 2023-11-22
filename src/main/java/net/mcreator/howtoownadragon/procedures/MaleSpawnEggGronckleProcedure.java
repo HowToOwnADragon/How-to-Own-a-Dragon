@@ -42,7 +42,8 @@ public class MaleSpawnEggGronckleProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:gronckle_female, sort= nearest, limit= 1] run summon how_to_own_a_dragon:gronckle_egg_entity ~ ~ ~");
 			GiveBreedingCooldownGronckleProcedure.execute(world, x, y, z);
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				if (!world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+				if (!world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()
+						&& !world.getEntitiesOfClass(GronckleFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(GronckleEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
