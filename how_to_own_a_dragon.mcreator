@@ -274,7 +274,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Gronckle Iron"
     },
     {
       "name": "GronckleIronSword",
@@ -289,7 +289,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_sword.json"
         ]
       },
-      "path": "~/Tools_Weapons/Gronckle iron Tools"
+      "path": "~/Items/Gronckle Iron/Tools"
     },
     {
       "name": "Tools",
@@ -316,7 +316,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_pickaxe.json"
         ]
       },
-      "path": "~/Tools_Weapons/Gronckle iron Tools"
+      "path": "~/Items/Gronckle Iron/Tools"
     },
     {
       "name": "GronckleIronShovel",
@@ -331,7 +331,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_shovel.json"
         ]
       },
-      "path": "~/Tools_Weapons/Gronckle iron Tools"
+      "path": "~/Items/Gronckle Iron/Tools"
     },
     {
       "name": "GronckleIronAxe",
@@ -346,7 +346,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_axe.json"
         ]
       },
-      "path": "~/Tools_Weapons/Gronckle iron Tools"
+      "path": "~/Items/Gronckle Iron/Tools"
     },
     {
       "name": "GronckleIronPickaxeRecipe",
@@ -360,7 +360,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_pickaxe.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "DarkStone",
@@ -502,7 +502,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_ingot_recipe.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronBlockRecipe",
@@ -516,7 +516,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_block_recipe.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "HiddenWorldRoot",
@@ -725,20 +725,6 @@
       "path": "~/Items/Deep Iron"
     },
     {
-      "name": "Walls",
-      "type": "tag",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "walls",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/walls.json"
-        ]
-      },
-      "path": "~/Items/Deep Iron"
-    },
-    {
       "name": "GronckleStoneTame",
       "type": "procedure",
       "sortid": 64,
@@ -812,7 +798,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Entities"
     },
     {
       "name": "GronckleSalmonTame",
@@ -1330,7 +1316,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/FlyUpMessage.java"
         ]
       },
-      "path": "~/Procedure/Flying"
+      "path": "~/Entities/Flying"
     },
     {
       "name": "FlyDown",
@@ -1344,7 +1330,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/FlyDownMessage.java"
         ]
       },
-      "path": "~/Procedure/Flying"
+      "path": "~/Entities/Flying"
     },
     {
       "name": "FlyUpOnKeyPressed",
@@ -1364,7 +1350,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Flying"
+      "path": "~/Entities/Flying"
     },
     {
       "name": "FlyUpOnKeyReleased",
@@ -1384,7 +1370,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Flying"
+      "path": "~/Entities/Flying"
     },
     {
       "name": "FlyDownOnKeyPressed",
@@ -1404,7 +1390,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Flying"
+      "path": "~/Entities/Flying"
     },
     {
       "name": "DeepIronRodRecipeMiddle",
@@ -1418,7 +1404,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe_middle.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronRodRecipeLeft",
@@ -1432,7 +1418,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronRodRecipeRight",
@@ -1446,7 +1432,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_rod_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronWallRecipeTop",
@@ -1460,7 +1446,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_wall_recipe_top.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronWallRecipeBottem",
@@ -1474,7 +1460,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_wall_recipe_bottem.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronDoorRecipeRight",
@@ -1488,7 +1474,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_door_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronDoorRecipeLeft",
@@ -1502,7 +1488,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_door_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronSlabRecipeBottem",
@@ -1516,7 +1502,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe_bottem.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronSlabRecipeMiddle",
@@ -1530,7 +1516,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe_middle.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronSlabRecipeTop",
@@ -1544,7 +1530,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_slab_recipe_top.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepIronStairsRecipeLeft",
@@ -1558,7 +1544,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deep_iron_stairs_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "DeepironStairsRecipeRight",
@@ -1572,7 +1558,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/deepiron_stairs_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Deep Iron"
+      "path": "~/Items/Deep Iron/Recipe"
     },
     {
       "name": "GronckleIronSwordRecipeMiddle",
@@ -1586,7 +1572,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_middle.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronSwordRecipeLeft",
@@ -1600,7 +1586,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronSwordRecipeRight",
@@ -1614,7 +1600,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronAxeRecipeRight",
@@ -1628,7 +1614,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_axe_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronAxeRecipeLeft",
@@ -1642,7 +1628,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_axe_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronShovelRecipeMiddle",
@@ -1656,7 +1642,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_middle.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronShovelRecipeLeft",
@@ -1670,7 +1656,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronShovelRecipeRight",
@@ -1684,7 +1670,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "PickingUpDragonEye",
@@ -1748,7 +1734,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/dragon_proof_metal_recipe.json"
         ]
       },
-      "path": "~/Recipe/DragonProof"
+      "path": "~/Items/DragonProof/Recipe"
     },
     {
       "name": "DragonProofBarsRecipeTop",
@@ -1762,7 +1748,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/dragon_proof_bars_recipe_top.json"
         ]
       },
-      "path": "~/Recipe/DragonProof"
+      "path": "~/Items/DragonProof/Recipe"
     },
     {
       "name": "DragonProofBarsRecipeBottem",
@@ -1776,7 +1762,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/dragon_proof_bars_recipe_bottem.json"
         ]
       },
-      "path": "~/Recipe/DragonProof"
+      "path": "~/Items/DragonProof/Recipe"
     },
     {
       "name": "ReaperSpikeTrap",
@@ -2010,26 +1996,6 @@
       "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
     },
     {
-      "name": "ByeDrowned",
-      "type": "procedure",
-      "sortid": 142,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bye_drowned",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ByeDrownedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure"
-    },
-    {
       "name": "GronckleSpawningEggRightclickedEntity",
       "type": "procedure",
       "sortid": 160,
@@ -2081,7 +2047,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/incubator_recipe.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Items/Incubator"
     },
     {
       "name": "GronckleSandstoneTame",
@@ -2286,7 +2252,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/AllFollowMeMessage.java"
         ]
       },
-      "path": "~/Procedure/AiConditions/Stay Follow"
+      "path": "~/Entities/AI/Stay Follow"
     },
     {
       "name": "AllFollowMeOnKeyPressed",
@@ -2306,7 +2272,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions/Stay Follow"
+      "path": "~/Entities/AI/Stay Follow"
     },
     {
       "name": "AllFollowMeTrigger",
@@ -2331,7 +2297,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions/Stay Follow"
+      "path": "~/Entities/AI/Stay Follow"
     },
     {
       "name": "DontAllFollowMeTrigger",
@@ -2356,7 +2322,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions/Stay Follow"
+      "path": "~/Entities/AI/Stay Follow"
     },
     {
       "name": "FlyAtDayFollowMeTrigger",
@@ -2381,7 +2347,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions"
+      "path": "~/Entities/AI"
     },
     {
       "name": "LookAtNightDontFollowMe",
@@ -2406,7 +2372,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions"
+      "path": "~/Entities/AI"
     },
     {
       "name": "GronckleAttackProjectileHitsBlock",
@@ -2591,7 +2557,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_saddle_recipe.json"
         ]
       },
-      "path": "~/Recipe/Saddles"
+      "path": "~/Entities/Dragons/Gronckle/Saddle"
     },
     {
       "name": "ValkaFollowMeTrigger",
@@ -2616,27 +2582,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions/Valka Staff"
-    },
-    {
-      "name": "ByeForceSpawnedDrowneds",
-      "type": "procedure",
-      "sortid": 488,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bye_force_spawned_drowneds",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ByeForceSpawnedDrownedsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure"
+      "path": "~/Entities/AI/Valka Staff"
     },
     {
       "name": "PlainsGrassBlock",
@@ -2668,7 +2614,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_iron_hoe.json"
         ]
       },
-      "path": "~/Tools_Weapons/Gronckle iron Tools"
+      "path": "~/Items/Gronckle Iron/Tools"
     },
     {
       "name": "GronckleIronHoeRecipeRight",
@@ -2682,7 +2628,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_hoe_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "GronckleIronHoeRecipeLeft",
@@ -2696,7 +2642,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_hoe_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/Gronckle Iron"
+      "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
       "name": "TheReaperEnterDimension",
@@ -4512,7 +4458,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Entities"
     },
     {
       "name": "GronckleFlyingTickUpdate",
@@ -4574,7 +4520,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_left.json"
         ]
       },
-      "path": "~/Recipe/ValkasStaff"
+      "path": "~/Items/Valka Staff/Recipe"
     },
     {
       "name": "ValkasStaffRecipeMiddle",
@@ -4588,7 +4534,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_middle.json"
         ]
       },
-      "path": "~/Recipe/ValkasStaff"
+      "path": "~/Items/Valka Staff/Recipe"
     },
     {
       "name": "ValkasStaffRecipeRight",
@@ -4602,7 +4548,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_right.json"
         ]
       },
-      "path": "~/Recipe/ValkasStaff"
+      "path": "~/Items/Valka Staff/Recipe"
     },
     {
       "name": "EmptyHandRideDragon",
@@ -4626,7 +4572,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Entities"
     },
     {
       "name": "JuvenileMeatlugMaleGronckleSpawnDragonCommand",
@@ -5485,7 +5431,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions"
+      "path": "~/Entities/AI"
     },
     {
       "name": "WildNightAI",
@@ -5510,7 +5456,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions"
+      "path": "~/Entities/AI"
     },
     {
       "name": "TTMale",
@@ -5876,7 +5822,7 @@
           }
         ]
       },
-      "path": "~/Procedure/AiConditions"
+      "path": "~/Entities/AI"
     },
     {
       "name": "TTTest",
@@ -6274,7 +6220,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Procedure/AiConditions"
+      "path": "~/Entities/AI"
     },
     {
       "name": "InLoveBreedingTT",
@@ -8346,7 +8292,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/dirt.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "WallBlocks",
@@ -8359,7 +8306,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/walls.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "ArrowItems",
@@ -8372,7 +8320,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/items/arrows.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "LogBlocks",
@@ -8385,7 +8334,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/logs.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "BeaconBaseBlockBlocks",
@@ -8398,7 +8348,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/beacon_base_blocks.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "ClimbableBlocks",
@@ -8411,7 +8362,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/climbable.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "AnimalsSpawnableOnBlocks",
@@ -8424,7 +8376,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/blocks/animals_spawnable_on.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "TickFunctions",
@@ -8437,7 +8390,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/functions/tick.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "LoadFunctions",
@@ -8450,7 +8404,8 @@
         "files": [
           "src/main/resources/data/minecraft/tags/functions/load.json"
         ]
-      }
+      },
+      "path": "~/VanillaTags"
     },
     {
       "name": "StormflySaddleMaleNadder",
@@ -10790,7 +10745,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/item/raw_yak_meat.json"
         ]
       },
-      "path": "~/Entities/Animals/Yak/YakOnly"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMeat"
     },
     {
       "name": "GrowUpBabyYak",
@@ -10877,7 +10832,7 @@
           "src/main/java/net/mcreator/howtoownadragon/item/CookedYakMeatItem.java"
         ]
       },
-      "path": "~/Entities/Animals/Yak/YakOnly"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMeat"
     },
     {
       "name": "YakMeatFurnace",
@@ -10891,7 +10846,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_furnace.json"
         ]
       },
-      "path": "~/Recipe/Yak/YakMeat"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMeat"
     },
     {
       "name": "YakMeatSmoker",
@@ -10905,7 +10860,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_smoker.json"
         ]
       },
-      "path": "~/Recipe/Yak/YakMeat"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMeat"
     },
     {
       "name": "YakMeatCampfire",
@@ -10919,7 +10874,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yak_meat_campfire.json"
         ]
       },
-      "path": "~/Recipe/Yak/YakMeat"
+      "path": "~/Entities/Animals/Yak/YakOnly/YakMeat"
     },
     {
       "name": "YakMilk",
@@ -11027,7 +10982,7 @@
           "src/main/resources/data/how_to_own_a_dragon/recipes/yaknog.json"
         ]
       },
-      "path": "~/Recipe/Yak/Yaknog"
+      "path": "~/Entities/Animals/Yak/YakOnly/Yaknog"
     },
     {
       "name": "Sheep",
@@ -12054,7 +12009,7 @@
           "src/main/resources/data/how_to_own_a_dragon/tags/items/gronckle_tools.json"
         ]
       },
-      "path": "~/Tools_Weapons/Gronckle iron Tools"
+      "path": "~/Items/Gronckle Iron/Tools"
     },
     {
       "name": "CraftGronckleTool",
@@ -13989,6 +13944,40 @@
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/Taming"
+    },
+    {
+      "name": "DeleteVanillaEntity",
+      "type": "procedure",
+      "sortid": 1356,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delete_vanilla_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/DeleteVanillaEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "NadderSaddleRecipe",
+      "type": "recipe",
+      "sortid": 1357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_saddle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/recipes/nadder_saddle_recipe.json"
+        ]
+      },
+      "path": "~/Entities/Dragons/Deadly Nadder/Saddle"
     }
   ],
   "variable_elements": [
@@ -14028,8 +14017,8 @@
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
       "item.how_to_own_a_dragon.gronckle_female_spawn_egg": "Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.incubator_1_gui.label_requirement": "Requirement:",
-      "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
+      "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
@@ -14039,8 +14028,8 @@
       "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
-      "advancements.drinking_yaknog.descr": "Drink Yaknog",
       "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
+      "advancements.drinking_yaknog.descr": "Drink Yaknog",
       "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
@@ -14063,8 +14052,8 @@
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_tt_female": "Female Terrible Terror",
-      "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
+      "gui.how_to_own_a_dragon.female_nadder_gui.label_inventory": "Inventory",
       "advancements.hidden_world_root.title": "Hidden World",
       "item.how_to_own_a_dragon.gronckle_egg_item": "Gronckle Egg",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
@@ -14087,8 +14076,8 @@
       "gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.juvenile_tt_male_spawn_egg": "Male Terrible Terror Spawn Egg",
       "item.how_to_own_a_dragon.tt_scale": "Terrible Terror Scale",
-      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
+      "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "advancements.welcome_to_the_world.title": "Welcome to Jumanji! No wait....",
@@ -14232,7 +14221,12 @@
         "children": [
           {
             "name": "Deep Iron",
-            "children": []
+            "children": [
+              {
+                "name": "Recipe",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Scales",
@@ -14240,7 +14234,12 @@
           },
           {
             "name": "DragonProof",
-            "children": []
+            "children": [
+              {
+                "name": "Recipe",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Incubator",
@@ -14311,7 +14310,25 @@
           },
           {
             "name": "Valka Staff",
-            "children": []
+            "children": [
+              {
+                "name": "Recipe",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Gronckle Iron",
+            "children": [
+              {
+                "name": "Recipe",
+                "children": []
+              },
+              {
+                "name": "Tools",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -14374,6 +14391,10 @@
                       },
                       {
                         "name": "Yaknog",
+                        "children": []
+                      },
+                      {
+                        "name": "YakMeat",
                         "children": []
                       }
                     ]
@@ -14743,14 +14764,22 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Tools_Weapons",
-        "children": [
+          },
           {
-            "name": "Gronckle iron Tools",
+            "name": "AI",
+            "children": [
+              {
+                "name": "Stay Follow",
+                "children": []
+              },
+              {
+                "name": "Valka Staff",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Flying",
             "children": []
           }
         ]
@@ -14764,71 +14793,11 @@
         "children": []
       },
       {
-        "name": "Procedure",
-        "children": [
-          {
-            "name": "Flying",
-            "children": []
-          },
-          {
-            "name": "AiConditions",
-            "children": [
-              {
-                "name": "Stay Follow",
-                "children": []
-              },
-              {
-                "name": "Valka Staff",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "The Hidden World",
         "children": [
           {
             "name": "Blocks",
             "children": []
-          }
-        ]
-      },
-      {
-        "name": "Recipe",
-        "children": [
-          {
-            "name": "Saddles",
-            "children": []
-          },
-          {
-            "name": "Deep Iron",
-            "children": []
-          },
-          {
-            "name": "Gronckle Iron",
-            "children": []
-          },
-          {
-            "name": "DragonProof",
-            "children": []
-          },
-          {
-            "name": "ValkasStaff",
-            "children": []
-          },
-          {
-            "name": "Yak",
-            "children": [
-              {
-                "name": "YakMeat",
-                "children": []
-              },
-              {
-                "name": "Yaknog",
-                "children": []
-              }
-            ]
           }
         ]
       },
@@ -15050,6 +15019,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "VanillaTags",
+        "children": []
       }
     ]
   },

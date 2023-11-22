@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "how_to_own_a_dragon:nadder_scale"
+    },
+    "1": {
+      "item": "minecraft:leather"
+    },
+    "2": {
+      "item": "how_to_own_a_dragon:nadder_scale"
+    },
+    "3": {
+      "item": "minecraft:leather"
+    },
+    "4": {
+      "item": "minecraft:saddle"
+    },
+    "5": {
+      "item": "minecraft:leather"
+    },
+    "6": {
+      "item": "how_to_own_a_dragon:nadder_scale"
+    },
+    "7": {
+      "item": "minecraft:leather"
+    },
+    "8": {
+      "item": "how_to_own_a_dragon:nadder_scale"
+    }
+  },
+  "result": {
+    "item": "how_to_own_a_dragon:nadder_saddle",
+    "count": 1
+  }
+}
