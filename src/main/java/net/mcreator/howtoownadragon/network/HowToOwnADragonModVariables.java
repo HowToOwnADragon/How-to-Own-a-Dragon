@@ -11,7 +11,6 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.FriendlyByteBuf;
@@ -55,8 +54,6 @@ public class HowToOwnADragonModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "how_to_own_a_dragon_worldvars";
 		public boolean HasplayerenteredHWbefore = false;
-		public double SpawnReaper1 = 0;
-		public ItemStack GUIslot0 = ItemStack.EMPTY;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -66,15 +63,11 @@ public class HowToOwnADragonModVariables {
 
 		public void read(CompoundTag nbt) {
 			HasplayerenteredHWbefore = nbt.getBoolean("HasplayerenteredHWbefore");
-			SpawnReaper1 = nbt.getDouble("SpawnReaper1");
-			GUIslot0 = ItemStack.of(nbt.getCompound("GUIslot0"));
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("HasplayerenteredHWbefore", HasplayerenteredHWbefore);
-			nbt.putDouble("SpawnReaper1", SpawnReaper1);
-			nbt.put("GUIslot0", GUIslot0.save(new CompoundTag()));
 			return nbt;
 		}
 

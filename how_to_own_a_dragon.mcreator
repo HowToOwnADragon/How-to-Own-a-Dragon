@@ -1575,34 +1575,6 @@
       "path": "~/Items/Gronckle Iron/Recipe"
     },
     {
-      "name": "GronckleIronSwordRecipeLeft",
-      "type": "recipe",
-      "sortid": 108,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_sword_recipe_left",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_left.json"
-        ]
-      },
-      "path": "~/Items/Gronckle Iron/Recipe"
-    },
-    {
-      "name": "GronckleIronSwordRecipeRight",
-      "type": "recipe",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_sword_recipe_right",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_sword_recipe_right.json"
-        ]
-      },
-      "path": "~/Items/Gronckle Iron/Recipe"
-    },
-    {
       "name": "GronckleIronAxeRecipeRight",
       "type": "recipe",
       "sortid": 110,
@@ -1640,34 +1612,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_middle.json"
-        ]
-      },
-      "path": "~/Items/Gronckle Iron/Recipe"
-    },
-    {
-      "name": "GronckleIronShovelRecipeLeft",
-      "type": "recipe",
-      "sortid": 113,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_shovel_recipe_left",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_left.json"
-        ]
-      },
-      "path": "~/Items/Gronckle Iron/Recipe"
-    },
-    {
-      "name": "GronckleIronShovelRecipeRight",
-      "type": "recipe",
-      "sortid": 114,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_iron_shovel_recipe_right",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/gronckle_iron_shovel_recipe_right.json"
         ]
       },
       "path": "~/Items/Gronckle Iron/Recipe"
@@ -2159,32 +2103,7 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/OpenInfoGronckleProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle"
     },
@@ -2215,30 +2134,6 @@
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/Tag"
-    },
-    {
-      "name": "StopRidingEntityWhenClickingWithDragonEye",
-      "type": "procedure",
-      "sortid": 382,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stop_riding_entity_when_clicking_with_dragon_eye",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StopRidingEntityWhenClickingWithDragonEyeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items/DragonEye"
     },
     {
       "name": "AllFollowMe",
@@ -2809,7 +2704,7 @@
           }
         ]
       },
-      "path": "~/Items/Incubator"
+      "path": "~/Items/Incubator/Tickupdate"
     },
     {
       "name": "Incubator1TimerShow",
@@ -2842,7 +2737,7 @@
           }
         ]
       },
-      "path": "~/Items/Incubator"
+      "path": "~/Items/Incubator/Tickupdate"
     },
     {
       "name": "PortalBlockTpToHW",
@@ -3987,166 +3882,6 @@
       "path": "~/Items/DragonEye/LensGUIS/Info Lens/Gronckle"
     },
     {
-      "name": "PinkIncubator1HatchButtonGronckle",
-      "type": "procedure",
-      "sortid": 802,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_incubator_1_hatch_button_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkIncubator1HatchButtonGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "MeatlugIncubator1HatchButtonGronckle",
-      "type": "procedure",
-      "sortid": 803,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "meatlug_incubator_1_hatch_button_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugIncubator1HatchButtonGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "OrangeRedIncubator1HatchButtonGronckle",
-      "type": "procedure",
-      "sortid": 804,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "orange_red_incubator_1_hatch_button_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OrangeRedIncubator1HatchButtonGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "BlueYellowIncubator1HatchButtonGronckle",
-      "type": "procedure",
-      "sortid": 805,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_yellow_incubator_1_hatch_button_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BlueYellowIncubator1HatchButtonGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "GronckleIncubator1Tick",
-      "type": "procedure",
-      "sortid": 806,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_incubator_1_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleIncubator1TickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/Tickupdate/Gronckle"
-    },
-    {
       "name": "BreedingCooldown",
       "type": "potioneffect",
       "sortid": 807,
@@ -4173,134 +3908,6 @@
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/GUI/GronckleIron"
-    },
-    {
-      "name": "PinkIncubator1CallNBTDataProcedure",
-      "type": "procedure",
-      "sortid": 812,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_incubator_1_call_nbt_data_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkIncubator1CallNBTDataProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "MeatlugIncubator1CallNBTDataProcedure",
-      "type": "procedure",
-      "sortid": 813,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "meatlug_incubator_1_call_nbt_data_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/MeatlugIncubator1CallNBTDataProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "OrangeRedIncubator1CallNBTDataProcedure",
-      "type": "procedure",
-      "sortid": 814,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "orange_red_incubator_1_call_nbt_data_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OrangeRedIncubator1CallNBTDataProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
-    },
-    {
-      "name": "BlueYellowIncubator1CallNBTDataProcedure",
-      "type": "procedure",
-      "sortid": 815,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_yellow_incubator_1_call_nbt_data_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BlueYellowIncubator1CallNBTDataProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Gronckle"
     },
     {
       "name": "OnFoodButtonPressed",
@@ -4509,20 +4116,6 @@
       "path": "~/Items/Scales"
     },
     {
-      "name": "ValkasStaffRecipeLeft",
-      "type": "recipe",
-      "sortid": 829,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "valkas_staff_recipe_left",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_left.json"
-        ]
-      },
-      "path": "~/Items/Valka Staff/Recipe"
-    },
-    {
       "name": "ValkasStaffRecipeMiddle",
       "type": "recipe",
       "sortid": 830,
@@ -4532,20 +4125,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_middle.json"
-        ]
-      },
-      "path": "~/Items/Valka Staff/Recipe"
-    },
-    {
-      "name": "ValkasStaffRecipeRight",
-      "type": "recipe",
-      "sortid": 831,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "valkas_staff_recipe_right",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/recipes/valkas_staff_recipe_right.json"
         ]
       },
       "path": "~/Items/Valka Staff/Recipe"
@@ -6377,38 +5956,6 @@
       "path": "~/Entities/Dragons/Terrible Terror/Entity"
     },
     {
-      "name": "TTIncubator1Tick",
-      "type": "procedure",
-      "sortid": 941,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tt_incubator_1_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TTIncubator1TickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/Tickupdate/TT"
-    },
-    {
       "name": "FemaleTT",
       "type": "tag",
       "sortid": 970,
@@ -7203,198 +6750,6 @@
         ]
       },
       "path": "~/Commands/DragonSpawn/Terrible Terror/Female/Grown"
-    },
-    {
-      "name": "PinkIncubator1CallNBTDataProcedureTT",
-      "type": "procedure",
-      "sortid": 996,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_incubator_1_call_nbt_data_procedure_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkIncubator1CallNBTDataProcedureTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
-    },
-    {
-      "name": "PinkIncubator1HatchButtonTT",
-      "type": "procedure",
-      "sortid": 997,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_incubator_1_hatch_button_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PinkIncubator1HatchButtonTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
-    },
-    {
-      "name": "GreenIncubator1HatchButtonTT",
-      "type": "procedure",
-      "sortid": 998,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_incubator_1_hatch_button_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenIncubator1HatchButtonTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
-    },
-    {
-      "name": "TurqIncubator1HatchButtonTT",
-      "type": "procedure",
-      "sortid": 999,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "turq_incubator_1_hatch_button_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqIncubator1HatchButtonTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
-    },
-    {
-      "name": "GreenIncubator1CallNBTDataProcedureTT",
-      "type": "procedure",
-      "sortid": 1000,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_incubator_1_call_nbt_data_procedure_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GreenIncubator1CallNBTDataProcedureTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
-    },
-    {
-      "name": "TurqIncubator1CallNBTDataProcedureTT",
-      "type": "procedure",
-      "sortid": 1001,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "turq_incubator_1_call_nbt_data_procedure_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TurqIncubator1CallNBTDataProcedureTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Terrible Terror"
     },
     {
       "name": "GrownGronckleDies",
@@ -8956,230 +8311,6 @@
         ]
       },
       "path": "~/Entities/Dragons/Deadly Nadder/Breeding"
-    },
-    {
-      "name": "NadderIncubator1Tick",
-      "type": "procedure",
-      "sortid": 1125,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nadder_incubator_1_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/NadderIncubator1TickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/Tickupdate/Nadder"
-    },
-    {
-      "name": "StormflyIncubator1CallNBTDataProcedureNadder",
-      "type": "procedure",
-      "sortid": 1126,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_incubator_1_call_nbt_data_procedure_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyIncubator1CallNBTDataProcedureNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Nadder"
-    },
-    {
-      "name": "StormflyIncubator1HatchButtonNadder",
-      "type": "procedure",
-      "sortid": 1127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stormfly_incubator_1_hatch_button_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/StormflyIncubator1HatchButtonNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Nadder"
-    },
-    {
-      "name": "RedIncubator1HatchButtonNadder",
-      "type": "procedure",
-      "sortid": 1128,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_incubator_1_hatch_button_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedIncubator1HatchButtonNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Nadder"
-    },
-    {
-      "name": "PurpleIncubator1HatchButtonnadder",
-      "type": "procedure",
-      "sortid": 1129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_incubator_1_hatch_buttonnadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleIncubator1HatchButtonnadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Nadder"
-    },
-    {
-      "name": "RedIncubator1CallNBTDataProcedureNadder",
-      "type": "procedure",
-      "sortid": 1130,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_incubator_1_call_nbt_data_procedure_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RedIncubator1CallNBTDataProcedureNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Nadder"
-    },
-    {
-      "name": "PurpleIncubator1CallNBTDataProcedureNadder",
-      "type": "procedure",
-      "sortid": 1131,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_incubator_1_call_nbt_data_procedure_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/PurpleIncubator1CallNBTDataProcedureNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Incubator/HatchButton/Nadder"
     },
     {
       "name": "InLoveBreedingNadder",
@@ -11998,20 +11129,6 @@
       "path": "~/Achievements/CraftGronckleTool"
     },
     {
-      "name": "GronckleTools",
-      "type": "tag",
-      "sortid": 1294,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_tools",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/items/gronckle_tools.json"
-        ]
-      },
-      "path": "~/Items/Gronckle Iron/Tools"
-    },
-    {
       "name": "CraftGronckleTool",
       "type": "procedure",
       "sortid": 1295,
@@ -12026,6 +11143,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -13978,6 +13103,20 @@
         ]
       },
       "path": "~/Entities/Dragons/Deadly Nadder/Saddle"
+    },
+    {
+      "name": "GronckleTools",
+      "type": "tag",
+      "sortid": 1358,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/items/gronckle_tools.json"
+        ]
+      },
+      "path": "~/Achievements/CraftGronckleTool"
     }
   ],
   "variable_elements": [
@@ -13986,18 +13125,6 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
-    },
-    {
-      "name": "SpawnReaper1",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "GUIslot0",
-      "type": "itemstack",
-      "scope": "world",
-      "value": "ItemStack.EMPTY"
     }
   ],
   "sound_elements": [],
@@ -14246,37 +13373,11 @@
             "children": [
               {
                 "name": "HatchButton",
-                "children": [
-                  {
-                    "name": "Gronckle",
-                    "children": []
-                  },
-                  {
-                    "name": "Terrible Terror",
-                    "children": []
-                  },
-                  {
-                    "name": "Nadder",
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "Tickupdate",
-                "children": [
-                  {
-                    "name": "Gronckle",
-                    "children": []
-                  },
-                  {
-                    "name": "TT",
-                    "children": []
-                  },
-                  {
-                    "name": "Nadder",
-                    "children": []
-                  }
-                ]
+                "children": []
               }
             ]
           },
