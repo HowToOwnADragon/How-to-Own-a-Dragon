@@ -6,6 +6,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
 
 import java.util.Comparator;
 
@@ -20,6 +22,8 @@ public class TameNonGrownGronckleProcedure {
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _owner)
 				_toTame.tame(_owner);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
 			GrowingTickGronckleProcedure.execute(world, entity);
 		} else {
 			GrowingTickGronckleProcedure.execute(world, entity);

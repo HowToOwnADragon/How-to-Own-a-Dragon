@@ -1122,7 +1122,7 @@
           "src/main/resources/data/how_to_own_a_dragon/dimension_type/the_reaper.json"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/Structures/ReaperShip"
     },
     {
       "name": "ReaperPortalEntityWalksOnTheBlock",
@@ -1158,7 +1158,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/Structures/ReaperShip"
     },
     {
       "name": "ReaperPortal",
@@ -1175,7 +1175,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_portal.json"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/Structures/ReaperShip"
     },
     {
       "name": "ReaperBearTrap",
@@ -1192,7 +1192,7 @@
           "src/main/java/net/mcreator/howtoownadragon/block/ReaperBearTrapBlock.java"
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "ReaperArrowTrapEntityWalksOnTheBlock",
@@ -1212,7 +1212,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "ReaperArrowTrap",
@@ -1229,7 +1229,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_arrow_trap.json"
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "HitByArrow",
@@ -1243,7 +1243,7 @@
           "src/main/java/net/mcreator/howtoownadragon/potion/HitByArrowMobEffect.java"
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "SlowingBlockEntityWalksOnTheBlock",
@@ -1263,7 +1263,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "SlowingBlock",
@@ -1280,7 +1280,7 @@
           "src/main/java/net/mcreator/howtoownadragon/block/SlowingBlockBlock.java"
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "ReaperBearTrapEntityWalksOnTheBlock",
@@ -1300,7 +1300,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "DragonEye",
@@ -1813,7 +1813,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/models/block/reaper_spike_trap.json"
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "ReaperSpikeTrapProcedure",
@@ -1833,7 +1833,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip/Traps"
+      "path": "~/Structures/ReaperShip/Traps"
     },
     {
       "name": "RustyDragonProofMetalBars",
@@ -1874,7 +1874,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/Structures/ReaperShip"
     },
     {
       "name": "ReaperInsidePrototype2",
@@ -1891,7 +1891,7 @@
           "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/reaper_inside_prototype_2.json"
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/Structures/ReaperShip"
     },
     {
       "name": "GrantWelcome",
@@ -1961,7 +1961,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+      "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
     },
     {
       "name": "ReaperSpawnBlock",
@@ -1978,7 +1978,7 @@
           "src/main/resources/assets/how_to_own_a_dragon/blockstates/reaper_spawn_block.json"
         ]
       },
-      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+      "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
     },
     {
       "name": "EmptyReaperOnStructureInstanceGenerated",
@@ -2010,7 +2010,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+      "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
     },
     {
       "name": "EmptyReaper",
@@ -2027,7 +2027,7 @@
           "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/empty_reaper.json"
         ]
       },
-      "path": "~/ReaperShip/REAPERSPAWNINGMECHANISM"
+      "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
     },
     {
       "name": "ByeDrowned",
@@ -2752,7 +2752,7 @@
           }
         ]
       },
-      "path": "~/ReaperShip"
+      "path": "~/Structures/ReaperShip"
     },
     {
       "name": "Incubator1HatchButton",
@@ -5679,46 +5679,6 @@
         ]
       },
       "path": "~/Entities/Terrible Terror/Entity/Female"
-    },
-    {
-      "name": "FeedNonGrownTT",
-      "type": "procedure",
-      "sortid": 869,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "feed_non_grown_tt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownTTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Terrible Terror/Feeding"
     },
     {
       "name": "BreadTameTT",
@@ -8830,70 +8790,6 @@
         ]
       },
       "path": "~/Entities/Deadly Nadder/Saddle/Female"
-    },
-    {
-      "name": "FeedNonGrownNadder",
-      "type": "procedure",
-      "sortid": 1069,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "feed_non_grown_nadder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedNonGrownNadderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/Feeding"
-    },
-    {
-      "name": "NadderColorLoadWorld",
-      "type": "procedure",
-      "sortid": 1070,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nadder_color_load_world",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/NadderColorLoadWorldProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Deadly Nadder/TickUpdate"
     },
     {
       "name": "ChickenTameNadder",
@@ -13957,6 +13853,166 @@
         ]
       },
       "path": "~/Entities/Terrible Terror/Growing"
+    },
+    {
+      "name": "CreativeTameTT",
+      "type": "procedure",
+      "sortid": 1348,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_tame_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/CreativeTameTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Taming"
+    },
+    {
+      "name": "FeedTamedTT",
+      "type": "procedure",
+      "sortid": 1349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_tamed_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedTamedTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Terrible Terror/Feeding"
+    },
+    {
+      "name": "FeedTamedNadder",
+      "type": "procedure",
+      "sortid": 1350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_tamed_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/FeedTamedNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Feeding"
+    },
+    {
+      "name": "CreativeTameNadder",
+      "type": "procedure",
+      "sortid": 1351,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_tame_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/CreativeTameNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Deadly Nadder/Taming"
     }
   ],
   "variable_elements": [
@@ -14482,10 +14538,6 @@
               {
                 "name": "Dies",
                 "children": []
-              },
-              {
-                "name": "TickUpdate",
-                "children": []
               }
             ]
           },
@@ -14767,19 +14819,6 @@
         ]
       },
       {
-        "name": "ReaperShip",
-        "children": [
-          {
-            "name": "REAPERSPAWNINGMECHANISM",
-            "children": []
-          },
-          {
-            "name": "Traps",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Recipe",
         "children": [
           {
@@ -15017,6 +15056,24 @@
       {
         "name": "NOT USED",
         "children": []
+      },
+      {
+        "name": "Structures",
+        "children": [
+          {
+            "name": "ReaperShip",
+            "children": [
+              {
+                "name": "REAPERSPAWNINGMECHANISM",
+                "children": []
+              },
+              {
+                "name": "Traps",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },

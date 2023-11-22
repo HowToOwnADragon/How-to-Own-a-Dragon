@@ -15,39 +15,18 @@ public class NadderEggEntityIsHurtProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
-			if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.NADDER_EGG_ITEM.get());
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-				HowToOwnADragonMod.queueServerWork(1, () -> {
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("naddercolor", "stormfly");
-				});
-			} else if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.NADDER_EGG_ITEM.get());
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-				HowToOwnADragonMod.queueServerWork(1, () -> {
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("naddercolor", "red");
-				});
-			} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-				if (!entity.level.isClientSide())
-					entity.discard();
-				HowToOwnADragonMod.queueServerWork(1, () -> {
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("naddercolor", "purple");
-				});
+			if (sourceentity instanceof LivingEntity _entity) {
+				ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.NADDER_EGG_ITEM.get());
+				_setstack.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				if (_entity instanceof Player _player)
+					_player.getInventory().setChanged();
 			}
+			HowToOwnADragonMod.queueServerWork(1, () -> {
+				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+			});
+			if (!entity.level.isClientSide())
+				entity.discard();
 		}
 	}
 }

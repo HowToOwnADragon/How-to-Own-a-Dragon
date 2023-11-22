@@ -13,7 +13,6 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
-import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.TTEggEntityEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -34,12 +33,7 @@ public class FemaleSpawnEggTTProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor",
-							(((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", (entity.getPersistentData().getString("ttcolor")));
 				}
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
@@ -48,7 +42,8 @@ public class FemaleSpawnEggTTProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:tt_female, sort= nearest, limit= 1] run summon how_to_own_a_dragon:tt_egg_entity ~ ~ ~");
 			GiveBreedingCooldownTTProcedure.execute(world, x, y, z);
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				if (!world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+				if (!world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()
+						&& !world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(TTEggEntityEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));

@@ -15,46 +15,18 @@ public class TTEggEntityEntityIsHurtProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
-			if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.TT_EGG_ITEM.get());
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-				HowToOwnADragonMod.queueServerWork(1, () -> {
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("ttcolor", "green");
-				});
-			} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.TT_EGG_ITEM.get());
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-				HowToOwnADragonMod.queueServerWork(1, () -> {
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("ttcolor", "pink");
-				});
-			} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-				if (!entity.level.isClientSide())
-					entity.discard();
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.TT_EGG_ITEM.get());
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
-				}
-				HowToOwnADragonMod.queueServerWork(1, () -> {
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("ttcolor", "turq");
-				});
+			if (sourceentity instanceof LivingEntity _entity) {
+				ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.TT_EGG_ITEM.get());
+				_setstack.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				if (_entity instanceof Player _player)
+					_player.getInventory().setChanged();
 			}
+			HowToOwnADragonMod.queueServerWork(1, () -> {
+				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("ttcolor", (entity.getPersistentData().getString("ttcolor")));
+				if (!entity.level.isClientSide())
+					entity.discard();
+			});
 		}
 	}
 }

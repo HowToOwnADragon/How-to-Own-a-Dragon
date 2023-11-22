@@ -31,8 +31,8 @@ public class Incubator1RequirementProcedure {
 					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Egg is Hatching")) {
-			return "Egg is Hatching";
+		}.getValue(world, BlockPos.containing(x, y, z), "IncubatorRequirement")).equals("Hatching")) {
+			return "Hatching";
 		} else if ((new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);

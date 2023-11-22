@@ -95,32 +95,6 @@ public class ChickenTameNadderProcedure {
 							}
 						}
 					}
-					if (new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayer _serverPlayer) {
-								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-							} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-							}
-							return false;
-						}
-					}.checkGamemode(sourceentity)) {
-						if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-							_toTame.tame(_owner);
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
-						HowToOwnADragonMod.queueServerWork(1, () -> {
-							if (sourceentity instanceof ServerPlayer _player) {
-								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:first_tamed_dragon"));
-								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-								if (!_ap.isDone()) {
-									for (String criteria : _ap.getRemainingCriteria())
-										_player.getAdvancements().award(_adv, criteria);
-								}
-							}
-						});
-					}
 				}
 			}
 		});
