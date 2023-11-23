@@ -22,9 +22,6 @@
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "ValkasStaffLivingEntityIsHitWithTool"
-    }
+    "damageOnCrafting": false
   }
 }

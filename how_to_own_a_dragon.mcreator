@@ -3170,30 +3170,6 @@
       "path": "~/Items/Valka Staff"
     },
     {
-      "name": "ValkasStaffLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "sortid": 711,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "valkas_staff_living_entity_is_hit_with_tool",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ValkasStaffLivingEntityIsHitWithToolProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items/Valka Staff"
-    },
-    {
       "name": "DragonSpawn",
       "type": "command",
       "sortid": 731,
@@ -9584,20 +9560,6 @@
       "path": "~/Entities/Animals/Chicken/Growing"
     },
     {
-      "name": "ChickenDies",
-      "type": "loottable",
-      "sortid": 1207,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chicken_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/chicken_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Chicken/Dies"
-    },
-    {
       "name": "ChickenDiesProcedures",
       "type": "procedure",
       "sortid": 1208,
@@ -9609,6 +9571,10 @@
           "src/main/java/net/mcreator/howtoownadragon/procedures/ChickenDiesProceduresProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -9678,20 +9644,6 @@
       "path": "~/Entities/Animals/Yak/Tag"
     },
     {
-      "name": "YakDies",
-      "type": "loottable",
-      "sortid": 1213,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yak_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/yak_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Yak/Dies"
-    },
-    {
       "name": "YakDiesProcedure",
       "type": "procedure",
       "sortid": 1214,
@@ -9703,6 +9655,10 @@
           "src/main/java/net/mcreator/howtoownadragon/procedures/YakDiesProcedureProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -10587,468 +10543,6 @@
         ]
       },
       "path": "~/Entities/Animals/Sheep/SheepOnly"
-    },
-    {
-      "name": "BlackSheepDies",
-      "type": "loottable",
-      "sortid": 1255,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "black_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/black_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "BlackSheepShearing",
-      "type": "loottable",
-      "sortid": 1256,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "black_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/entities/black_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "WhiteSheepShearing",
-      "type": "loottable",
-      "sortid": 1257,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "white_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/white_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "GreySheepShearing",
-      "type": "loottable",
-      "sortid": 1258,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grey_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/grey_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "LightGreySheepShearing",
-      "type": "loottable",
-      "sortid": 1259,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_grey_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_grey_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "BrownSheepShearing",
-      "type": "loottable",
-      "sortid": 1260,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "brown_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/brown_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "BlueSheepShearing",
-      "type": "loottable",
-      "sortid": 1261,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/blue_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "LightBlueSheepShearing",
-      "type": "loottable",
-      "sortid": 1262,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_blue_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_blue_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "GreenSheepShearing",
-      "type": "loottable",
-      "sortid": 1263,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/green_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "LimeSheepShearing",
-      "type": "loottable",
-      "sortid": 1264,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lime_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/lime_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "CyanSheepShearing",
-      "type": "loottable",
-      "sortid": 1265,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cyan_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/cyan_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "RedSheepShearing",
-      "type": "loottable",
-      "sortid": 1266,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/red_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "OrangeSheepShearing",
-      "type": "loottable",
-      "sortid": 1267,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "orange_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/orange_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "YellowSheepShearing",
-      "type": "loottable",
-      "sortid": 1268,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yellow_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/yellow_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "PurpleSheepShearing",
-      "type": "loottable",
-      "sortid": 1269,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/purple_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "MagentaSheepShearing",
-      "type": "loottable",
-      "sortid": 1270,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magenta_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/magenta_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "PinkSheepShearing",
-      "type": "loottable",
-      "sortid": 1271,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_sheep_shearing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/pink_sheep_shearing.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/SheepOnly/SheepShearing"
-    },
-    {
-      "name": "WhiteSheepDies",
-      "type": "loottable",
-      "sortid": 1272,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "white_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/white_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "GreySheepDies",
-      "type": "loottable",
-      "sortid": 1273,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grey_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/grey_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "LightGreySheepDies",
-      "type": "loottable",
-      "sortid": 1274,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_grey_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_grey_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "BrownSheepDies",
-      "type": "loottable",
-      "sortid": 1275,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "brown_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/brown_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "RedSheepDies",
-      "type": "loottable",
-      "sortid": 1276,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "red_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/red_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "OrangeSheepDies",
-      "type": "loottable",
-      "sortid": 1277,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "orange_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/orange_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "YellowSheepDies",
-      "type": "loottable",
-      "sortid": 1278,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yellow_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/yellow_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "GreenSheepDies",
-      "type": "loottable",
-      "sortid": 1279,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/green_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "LimeSheepDies",
-      "type": "loottable",
-      "sortid": 1280,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lime_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/lime_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "LightBlueSheepDies",
-      "type": "loottable",
-      "sortid": 1281,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_blue_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_blue_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "BlueSheepDies",
-      "type": "loottable",
-      "sortid": 1282,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/blue_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "PurpleSheepDies",
-      "type": "loottable",
-      "sortid": 1283,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/purple_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "MagentaSheepDies",
-      "type": "loottable",
-      "sortid": 1284,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magenta_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/magenta_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "PinkSheepDies",
-      "type": "loottable",
-      "sortid": 1285,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pink_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/pink_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "CyanSheepDies",
-      "type": "loottable",
-      "sortid": 1286,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cyan_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/cyan_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
-    },
-    {
-      "name": "ShearedSheepDies",
-      "type": "loottable",
-      "sortid": 1287,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sheared_sheep_dies",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/loot_tables/sheared_sheep_dies.json"
-        ]
-      },
-      "path": "~/Entities/Animals/Sheep/Dies"
     },
     {
       "name": "SheepEntityDies",
@@ -13117,6 +12611,402 @@
         ]
       },
       "path": "~/Achievements/CraftGronckleTool"
+    },
+    {
+      "name": "YakLeatherDrop",
+      "type": "loottable",
+      "sortid": 1359,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yak_leather_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/yak_leather_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Yak/Dies"
+    },
+    {
+      "name": "RawYakMeatDrop",
+      "type": "loottable",
+      "sortid": 1360,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_yak_meat_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/raw_yak_meat_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Yak/Dies"
+    },
+    {
+      "name": "CookedYakMeatDrop",
+      "type": "loottable",
+      "sortid": 1361,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_yak_meat_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/cooked_yak_meat_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Yak/Dies"
+    },
+    {
+      "name": "ChickenFeatherDrop",
+      "type": "loottable",
+      "sortid": 1362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_feather_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/chicken_feather_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Chicken/Dies"
+    },
+    {
+      "name": "CookedChickenDrop",
+      "type": "loottable",
+      "sortid": 1363,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_chicken_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/cooked_chicken_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Chicken/Dies"
+    },
+    {
+      "name": "ChickenDrop",
+      "type": "loottable",
+      "sortid": 1364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/chicken_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Chicken/Dies"
+    },
+    {
+      "name": "ValkasStaffRightClickEntity",
+      "type": "procedure",
+      "sortid": 1365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valkas_staff_right_click_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ValkasStaffRightClickEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Valka Staff"
+    },
+    {
+      "name": "BlackWoolDrop",
+      "type": "loottable",
+      "sortid": 1366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/black_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "BlueWoolDrop",
+      "type": "loottable",
+      "sortid": 1367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/blue_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "BrownWoolDrop",
+      "type": "loottable",
+      "sortid": 1368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/brown_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "CyanWoolDrop",
+      "type": "loottable",
+      "sortid": 1369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/cyan_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "GreenWoolDrop",
+      "type": "loottable",
+      "sortid": 1370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/green_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "GreyWoolDrop",
+      "type": "loottable",
+      "sortid": 1371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/grey_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "LightBlueWoolDrop",
+      "type": "loottable",
+      "sortid": 1372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_blue_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "LightGreyWoolDrop",
+      "type": "loottable",
+      "sortid": 1373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grey_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/light_grey_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "LimeWoolDrop",
+      "type": "loottable",
+      "sortid": 1374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lime_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/lime_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "MagentaWoolDrop",
+      "type": "loottable",
+      "sortid": 1375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magenta_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/magenta_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "OrangeWoolDrop",
+      "type": "loottable",
+      "sortid": 1376,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/orange_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "PinkWoolDrop",
+      "type": "loottable",
+      "sortid": 1377,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/pink_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "PurpleWoolDrop",
+      "type": "loottable",
+      "sortid": 1378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/purple_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "RedWoolDrop",
+      "type": "loottable",
+      "sortid": 1379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/red_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "RawMuttonDrop",
+      "type": "loottable",
+      "sortid": 1380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mutton_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/raw_mutton_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "WhiteWoolDrop",
+      "type": "loottable",
+      "sortid": 1381,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/white_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "YellowWoolDrop",
+      "type": "loottable",
+      "sortid": 1382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_wool_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/yellow_wool_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "CookedMuttonDrop",
+      "type": "loottable",
+      "sortid": 1383,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_mutton_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/loot_tables/cooked_mutton_drop.json"
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
+    },
+    {
+      "name": "WoolDropSheepKill",
+      "type": "procedure",
+      "sortid": 1384,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wool_drop_sheep_kill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WoolDropSheepKillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Dies"
     }
   ],
   "variable_elements": [
@@ -13530,10 +13420,6 @@
                     "children": [
                       {
                         "name": "Dyeing",
-                        "children": []
-                      },
-                      {
-                        "name": "SheepShearing",
                         "children": []
                       }
                     ]

@@ -100,7 +100,7 @@
       "value": ""
     },
     "onInitialSpawn": {
-      "name": "TextureSheep"
+      "name": "TextureBabySheep"
     },
     "hasAI": true,
     "aiBase": "(none)",

@@ -154,7 +154,7 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		ChickenDiesProceduresProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		ChickenDiesProceduresProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

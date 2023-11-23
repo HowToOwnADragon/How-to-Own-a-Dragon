@@ -134,7 +134,7 @@ public class YakEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		YakDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		YakDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

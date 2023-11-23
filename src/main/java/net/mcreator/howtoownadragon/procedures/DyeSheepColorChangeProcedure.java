@@ -30,7 +30,7 @@ public class DyeSheepColorChangeProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof SheepEntity) {
+		if (entity instanceof SheepEntity && entity.getPersistentData().getBoolean("sheared") == false) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WHITE_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "white");
 				if (entity instanceof SheepEntity animatable)

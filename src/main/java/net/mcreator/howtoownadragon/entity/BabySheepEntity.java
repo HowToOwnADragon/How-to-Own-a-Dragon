@@ -56,7 +56,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.howtoownadragon.procedures.TextureSheepProcedure;
+import net.mcreator.howtoownadragon.procedures.TextureBabySheepProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -140,7 +140,7 @@ public class BabySheepEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		TextureSheepProcedure.execute(world, this);
+		TextureBabySheepProcedure.execute(world, this);
 		return retval;
 	}
 
