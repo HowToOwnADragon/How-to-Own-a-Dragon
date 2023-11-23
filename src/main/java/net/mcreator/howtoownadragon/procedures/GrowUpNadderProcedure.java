@@ -52,7 +52,7 @@ public class GrowUpNadderProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 				}
 			});
 		} else if (entity instanceof BabyNadderFemaleEntity) {
@@ -78,7 +78,7 @@ public class GrowUpNadderProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 				}
 			});
 		} else if (entity instanceof JuvenileNadderMaleEntity) {
@@ -104,7 +104,7 @@ public class GrowUpNadderProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 				}
 			});
 		} else if (entity instanceof JuvenileNadderFemaleEntity) {
@@ -130,7 +130,7 @@ public class GrowUpNadderProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 				}
 			});
 		} else if (entity instanceof AdolescentNadderMaleEntity) {
@@ -156,7 +156,7 @@ public class GrowUpNadderProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 				}
 			});
 		} else if (entity instanceof AdolescentNadderFemaleEntity) {
@@ -182,7 +182,7 @@ public class GrowUpNadderProcedure {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 				}
 			});
 		}

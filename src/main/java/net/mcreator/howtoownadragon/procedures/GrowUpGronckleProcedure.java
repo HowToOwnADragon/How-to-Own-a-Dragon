@@ -50,7 +50,7 @@ public class GrowUpGronckleProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}
@@ -76,7 +76,7 @@ public class GrowUpGronckleProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}
@@ -102,7 +102,7 @@ public class GrowUpGronckleProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}
@@ -128,7 +128,7 @@ public class GrowUpGronckleProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}
@@ -154,7 +154,7 @@ public class GrowUpGronckleProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}
@@ -180,7 +180,7 @@ public class GrowUpGronckleProcedure {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 					if ((entity instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + "has succesfully grown up!")), false);
+						_player.displayClientMessage(Component.literal(("Your " + entity.getDisplayName().getString() + " has succesfully grown up!")), false);
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}
