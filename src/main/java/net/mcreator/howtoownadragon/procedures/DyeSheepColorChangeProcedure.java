@@ -7,8 +7,10 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.entity.SheepEntity;
 
@@ -35,66 +37,178 @@ public class DyeSheepColorChangeProcedure {
 				entity.getPersistentData().putString("sheepcolor", "white");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheep");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.WHITE_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BLACK_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "black");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepblack");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BLACK_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GRAY_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "grey");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepgrey");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.GRAY_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LIGHT_GRAY_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "lightgrey");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeplightgrey");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.LIGHT_GRAY_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BROWN_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "brown");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepbrown");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BROWN_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.RED_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "red");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepred");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.RED_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.ORANGE_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "orange");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeporange");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.ORANGE_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.YELLOW_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "yellow");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepyellow");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.YELLOW_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GREEN_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "green");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepgreen");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.GREEN_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LIME_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "lime");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeplime");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.LIME_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.CYAN_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "cyan");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepcyan");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.CYAN_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BLUE_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "blue");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepblue");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.BLUE_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LIGHT_BLUE_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "lightblue");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeplightblue");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.LIGHT_BLUE_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.PURPLE_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "purple");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeppurple");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.PURPLE_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MAGENTA_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "magenta");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheepmagenta");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.MAGENTA_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.PINK_DYE) {
 				entity.getPersistentData().putString("sheepcolor", "pink");
 				if (entity instanceof SheepEntity animatable)
 					animatable.setTexture("sheeppink");
+				if (sourceentity instanceof LivingEntity _entity) {
+					ItemStack _setstack = new ItemStack(Items.PINK_DYE);
+					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+					if (_entity instanceof Player _player)
+						_player.getInventory().setChanged();
+				}
 			}
 		}
 	}
