@@ -4,10 +4,10 @@
       "item": "how_to_own_a_dragon:dragon_symbol"
     },
     "title": {
-      "translate": "advancements.tame_all_dragons.title"
+      "translate": "advancements.breed_all_dragons.title"
     },
     "description": {
-      "translate": "advancements.tame_all_dragons.descr"
+      "translate": "advancements.breed_all_dragons.descr"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "tame_all_dragons": {
+    "breed_all_dragons": {
       "trigger": "minecraft:impossible"
     }
   },

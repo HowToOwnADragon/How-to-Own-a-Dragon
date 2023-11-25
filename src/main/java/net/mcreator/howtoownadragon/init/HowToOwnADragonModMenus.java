@@ -20,6 +20,7 @@ import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
+import net.mcreator.howtoownadragon.world.inventory.LoveIsInTheAirMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.HTOADAdvancementsMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronkleIronGUIMaleMenu;
@@ -57,4 +58,5 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<HTOADAdvancementsMenu>> HTOAD_ADVANCEMENTS = REGISTRY.register("htoad_advancements", () -> IForgeMenuType.create(HTOADAdvancementsMenu::new));
 	public static final RegistryObject<MenuType<GottaCatchEmAllMenu>> GOTTA_CATCH_EM_ALL = REGISTRY.register("gotta_catch_em_all", () -> IForgeMenuType.create(GottaCatchEmAllMenu::new));
 	public static final RegistryObject<MenuType<CongratsGUIMenu>> CONGRATS_GUI = REGISTRY.register("congrats_gui", () -> IForgeMenuType.create(CongratsGUIMenu::new));
+	public static final RegistryObject<MenuType<LoveIsInTheAirMenu>> LOVE_IS_IN_THE_AIR = REGISTRY.register("love_is_in_the_air", () -> IForgeMenuType.create(LoveIsInTheAirMenu::new));
 }

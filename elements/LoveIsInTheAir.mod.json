@@ -8,20 +8,20 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "doesPauseGame": true,
+    "doesPauseGame": false,
     "components": [
       {
         "type": "label",
         "data": {
-          "name": "label_dragons",
+          "name": "label_all_breedable_dragons",
           "text": {
-            "fixedValue": "All Tamable Dragons"
+            "fixedValue": "All Breedable Dragons"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 163,
+          "x": 158,
           "y": 86
         }
       },
@@ -37,7 +37,7 @@
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "GronckleTameReturn"
+            "name": "GronckleBreedReturn"
           },
           "x": 192,
           "y": 111
@@ -55,7 +55,7 @@
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "TTTameReturn"
+            "name": "TTBreedReturn"
           },
           "x": 173,
           "y": 127
@@ -73,7 +73,7 @@
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "NadderTameReturn"
+            "name": "NadderBreedReturn"
           },
           "x": 180,
           "y": 143
@@ -89,7 +89,7 @@
             "name": "BackButtonHTOADAdvancementsGUI"
           },
           "x": 154,
-          "y": 138
+          "y": 137
         }
       }
     ],

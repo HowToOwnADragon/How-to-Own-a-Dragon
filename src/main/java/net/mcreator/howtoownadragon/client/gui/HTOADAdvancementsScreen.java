@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Button;
 
 import net.mcreator.howtoownadragon.world.inventory.HTOADAdvancementsMenu;
@@ -23,6 +24,8 @@ public class HTOADAdvancementsScreen extends AbstractContainerScreen<HTOADAdvanc
 	private final int x, y, z;
 	private final Player entity;
 	Button button_gotta_catch_em_all;
+	Button button_breed_all_dragons;
+	ImageButton imagebutton_previous_page_arrow;
 
 	public HTOADAdvancementsScreen(HTOADAdvancementsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -32,7 +35,7 @@ public class HTOADAdvancementsScreen extends AbstractContainerScreen<HTOADAdvanc
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 180;
-		this.imageHeight = 50;
+		this.imageHeight = 80;
 	}
 
 	@Override
@@ -75,7 +78,7 @@ public class HTOADAdvancementsScreen extends AbstractContainerScreen<HTOADAdvanc
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.htoad_advancements.label_htoad_advancements"), 7, 7, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.htoad_advancements.label_htoad_advancements"), 6, 7, -12829636);
 	}
 
 	@Override
@@ -91,8 +94,24 @@ public class HTOADAdvancementsScreen extends AbstractContainerScreen<HTOADAdvanc
 				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new HTOADAdvancementsButtonMessage(0, x, y, z));
 				HTOADAdvancementsButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 27, this.topPos + 23, 124, 20).build();
+		}).bounds(this.leftPos + 28, this.topPos + 28, 124, 20).build();
 		guistate.put("button:button_gotta_catch_em_all", button_gotta_catch_em_all);
 		this.addRenderableWidget(button_gotta_catch_em_all);
+		button_breed_all_dragons = Button.builder(Component.translatable("gui.how_to_own_a_dragon.htoad_advancements.button_breed_all_dragons"), e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new HTOADAdvancementsButtonMessage(1, x, y, z));
+				HTOADAdvancementsButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}).bounds(this.leftPos + 34, this.topPos + 52, 113, 20).build();
+		guistate.put("button:button_breed_all_dragons", button_breed_all_dragons);
+		this.addRenderableWidget(button_breed_all_dragons);
+		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 1, this.topPos + 57, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new HTOADAdvancementsButtonMessage(2, x, y, z));
+				HTOADAdvancementsButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);
+		this.addRenderableWidget(imagebutton_previous_page_arrow);
 	}
 }

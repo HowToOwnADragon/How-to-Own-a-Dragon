@@ -20,6 +20,7 @@ import net.mcreator.howtoownadragon.client.gui.MaleTTGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MainPageInfoGronckleScreen;
+import net.mcreator.howtoownadragon.client.gui.LoveIsInTheAirScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
 import net.mcreator.howtoownadragon.client.gui.HTOADAdvancementsScreen;
 import net.mcreator.howtoownadragon.client.gui.GronkleIronGUIMaleScreen;
@@ -59,6 +60,7 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.HTOAD_ADVANCEMENTS.get(), HTOADAdvancementsScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.GOTTA_CATCH_EM_ALL.get(), GottaCatchEmAllScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.CONGRATS_GUI.get(), CongratsGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.LOVE_IS_IN_THE_AIR.get(), LoveIsInTheAirScreen::new);
 		});
 	}
 }

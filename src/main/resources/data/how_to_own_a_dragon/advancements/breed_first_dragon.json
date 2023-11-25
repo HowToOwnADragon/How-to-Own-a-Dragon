@@ -4,23 +4,23 @@
       "item": "how_to_own_a_dragon:dragon_symbol"
     },
     "title": {
-      "translate": "advancements.tame_all_dragons.title"
+      "translate": "advancements.breed_first_dragon.title"
     },
     "description": {
-      "translate": "advancements.tame_all_dragons.descr"
+      "translate": "advancements.breed_first_dragon.descr"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "tame_all_dragons": {
+    "breed_first_dragon": {
       "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
-    "experience": 100
+    "experience": 20
   },
-  "parent": "how_to_own_a_dragon:breed_first_dragon"
+  "parent": "how_to_own_a_dragon:first_tamed_dragon"
 }

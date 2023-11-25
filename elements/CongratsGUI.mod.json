@@ -22,7 +22,20 @@
             "falpha": 0.0
           },
           "x": 80,
-          "y": 115
+          "y": 108
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "BackButtonHTOADAdvancementsGUI"
+          },
+          "x": 77,
+          "y": 117
         }
       }
     ],

@@ -11,41 +11,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.HTOADAdvancementsMenu;
-import net.mcreator.howtoownadragon.procedures.OpenLoveIsInTheAirProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenGottaCatchEmAllProcedure;
-import net.mcreator.howtoownadragon.procedures.BackButtonMainAdvancementGUIProcedure;
+import net.mcreator.howtoownadragon.world.inventory.CongratsGUIMenu;
+import net.mcreator.howtoownadragon.procedures.BackButtonHTOADAdvancementsGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class HTOADAdvancementsButtonMessage {
+public class CongratsGUIButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public HTOADAdvancementsButtonMessage(FriendlyByteBuf buffer) {
+	public CongratsGUIButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public HTOADAdvancementsButtonMessage(int buttonID, int x, int y, int z) {
+	public CongratsGUIButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(HTOADAdvancementsButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(CongratsGUIButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(HTOADAdvancementsButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(CongratsGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -60,26 +58,18 @@ public class HTOADAdvancementsButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = HTOADAdvancementsMenu.guistate;
+		HashMap guistate = CongratsGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			OpenGottaCatchEmAllProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 1) {
-
-			OpenLoveIsInTheAirProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 2) {
-
-			BackButtonMainAdvancementGUIProcedure.execute(world, x, y, z, entity);
+			BackButtonHTOADAdvancementsGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		HowToOwnADragonMod.addNetworkMessage(HTOADAdvancementsButtonMessage.class, HTOADAdvancementsButtonMessage::buffer, HTOADAdvancementsButtonMessage::new, HTOADAdvancementsButtonMessage::handler);
+		HowToOwnADragonMod.addNetworkMessage(CongratsGUIButtonMessage.class, CongratsGUIButtonMessage::buffer, CongratsGUIButtonMessage::new, CongratsGUIButtonMessage::handler);
 	}
 }
