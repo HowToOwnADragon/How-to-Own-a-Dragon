@@ -1,0 +1,51 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 180,
+    "height": 50,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_htoad_advancements",
+          "text": {
+            "fixedValue": "HTOAD Progressive Advancements"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 102
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_gotta_catch_em_all",
+          "text": "Gotta Catch 'Em All",
+          "onClick": {
+            "name": "OpenGottaCatchEmAll"
+          },
+          "width": 124,
+          "height": 20,
+          "x": 151,
+          "y": 118
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 17,
+      "sy": 17,
+      "ox": 17,
+      "oy": 18,
+      "snapOnGrid": false
+    }
+  }
+}

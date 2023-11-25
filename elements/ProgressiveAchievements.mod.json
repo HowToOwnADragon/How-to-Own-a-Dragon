@@ -1,0 +1,62 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_vanilla_achievements",
+          "text": "Vanilla Advancements",
+          "width": 129,
+          "height": 20,
+          "x": 148,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_htoad_advancements",
+          "text": "HTOAD Advancements",
+          "onClick": {
+            "name": "OpenHTOADAdvancements"
+          },
+          "width": 119,
+          "height": 20,
+          "x": 153,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_progressive_advancement_check",
+          "text": {
+            "fixedValue": "Progressive Advancement Check"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 88
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 24,
+      "sy": 18,
+      "ox": 17,
+      "oy": 6,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.howtoownadragon.client.gui.ProgressiveAchievementsScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownMaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownMaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownFemaleNadderGUIScreen;
@@ -20,14 +21,17 @@ import net.mcreator.howtoownadragon.client.gui.MaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MainPageInfoGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
+import net.mcreator.howtoownadragon.client.gui.HTOADAdvancementsScreen;
 import net.mcreator.howtoownadragon.client.gui.GronkleIronGUIMaleScreen;
 import net.mcreator.howtoownadragon.client.gui.GronckleIronGUIFemaleScreen;
+import net.mcreator.howtoownadragon.client.gui.GottaCatchEmAllScreen;
 import net.mcreator.howtoownadragon.client.gui.GenericOrAdvancedConfigScreen;
 import net.mcreator.howtoownadragon.client.gui.FoodPage1InfoGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleTTGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.DragonEyeInputScreen;
+import net.mcreator.howtoownadragon.client.gui.CongratsGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HowToOwnADragonModScreens {
@@ -51,6 +55,10 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_NADDER_GUI.get(), NotGrownFemaleNadderGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_MALE_NADDER_GUI.get(), NotGrownMaleNadderGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.GENERIC_OR_ADVANCED_CONFIG.get(), GenericOrAdvancedConfigScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.PROGRESSIVE_ACHIEVEMENTS.get(), ProgressiveAchievementsScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.HTOAD_ADVANCEMENTS.get(), HTOADAdvancementsScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GOTTA_CATCH_EM_ALL.get(), GottaCatchEmAllScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.CONGRATS_GUI.get(), CongratsGUIScreen::new);
 		});
 	}
 }

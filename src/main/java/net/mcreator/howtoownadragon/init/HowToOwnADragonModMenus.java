@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.howtoownadragon.world.inventory.ProgressiveAchievementsMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownFemaleNadderGUIMenu;
@@ -20,14 +21,17 @@ import net.mcreator.howtoownadragon.world.inventory.MaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.HTOADAdvancementsMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronkleIronGUIMaleMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronckleIronGUIFemaleMenu;
+import net.mcreator.howtoownadragon.world.inventory.GottaCatchEmAllMenu;
 import net.mcreator.howtoownadragon.world.inventory.GenericOrAdvancedConfigMenu;
 import net.mcreator.howtoownadragon.world.inventory.FoodPage1InfoGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleTTGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.DragonEyeInputMenu;
+import net.mcreator.howtoownadragon.world.inventory.CongratsGUIMenu;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModMenus {
@@ -49,4 +53,8 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<NotGrownFemaleNadderGUIMenu>> NOT_GROWN_FEMALE_NADDER_GUI = REGISTRY.register("not_grown_female_nadder_gui", () -> IForgeMenuType.create(NotGrownFemaleNadderGUIMenu::new));
 	public static final RegistryObject<MenuType<NotGrownMaleNadderGUIMenu>> NOT_GROWN_MALE_NADDER_GUI = REGISTRY.register("not_grown_male_nadder_gui", () -> IForgeMenuType.create(NotGrownMaleNadderGUIMenu::new));
 	public static final RegistryObject<MenuType<GenericOrAdvancedConfigMenu>> GENERIC_OR_ADVANCED_CONFIG = REGISTRY.register("generic_or_advanced_config", () -> IForgeMenuType.create(GenericOrAdvancedConfigMenu::new));
+	public static final RegistryObject<MenuType<ProgressiveAchievementsMenu>> PROGRESSIVE_ACHIEVEMENTS = REGISTRY.register("progressive_achievements", () -> IForgeMenuType.create(ProgressiveAchievementsMenu::new));
+	public static final RegistryObject<MenuType<HTOADAdvancementsMenu>> HTOAD_ADVANCEMENTS = REGISTRY.register("htoad_advancements", () -> IForgeMenuType.create(HTOADAdvancementsMenu::new));
+	public static final RegistryObject<MenuType<GottaCatchEmAllMenu>> GOTTA_CATCH_EM_ALL = REGISTRY.register("gotta_catch_em_all", () -> IForgeMenuType.create(GottaCatchEmAllMenu::new));
+	public static final RegistryObject<MenuType<CongratsGUIMenu>> CONGRATS_GUI = REGISTRY.register("congrats_gui", () -> IForgeMenuType.create(CongratsGUIMenu::new));
 }

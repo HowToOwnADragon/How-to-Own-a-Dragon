@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.howtoownadragon.network.UseAbilityMessage;
+import net.mcreator.howtoownadragon.network.ProgressiveAdvancementsMessage;
 import net.mcreator.howtoownadragon.network.FlyUpMessage;
 import net.mcreator.howtoownadragon.network.FlyDownMessage;
 import net.mcreator.howtoownadragon.network.AllFollowMeMessage;
@@ -85,6 +86,19 @@ public class HowToOwnADragonModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping PROGRESSIVE_ADVANCEMENTS = new KeyMapping("key.how_to_own_a_dragon.progressive_advancements", GLFW.GLFW_KEY_K, "key.categories.ui") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new ProgressiveAdvancementsMessage(0, 0));
+				ProgressiveAdvancementsMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long FLY_UP_LASTPRESS = 0;
 	private static long FLY_DOWN_LASTPRESS = 0;
 
@@ -94,6 +108,7 @@ public class HowToOwnADragonModKeyMappings {
 		event.register(FLY_DOWN);
 		event.register(ALL_FOLLOW_ME);
 		event.register(USE_ABILITY);
+		event.register(PROGRESSIVE_ADVANCEMENTS);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -105,6 +120,7 @@ public class HowToOwnADragonModKeyMappings {
 				FLY_DOWN.consumeClick();
 				ALL_FOLLOW_ME.consumeClick();
 				USE_ABILITY.consumeClick();
+				PROGRESSIVE_ADVANCEMENTS.consumeClick();
 			}
 		}
 	}
