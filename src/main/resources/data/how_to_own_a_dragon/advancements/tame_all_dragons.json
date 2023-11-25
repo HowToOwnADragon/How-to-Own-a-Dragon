@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "how_to_own_a_dragon:dragon_symbol"
+    },
+    "title": {
+      "translate": "advancements.tame_all_dragons.title"
+    },
+    "description": {
+      "translate": "advancements.tame_all_dragons.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tame_all_dragons": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "how_to_own_a_dragon:first_tamed_dragon"
+}
