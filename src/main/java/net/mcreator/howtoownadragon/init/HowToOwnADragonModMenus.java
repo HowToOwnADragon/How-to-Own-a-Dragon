@@ -22,6 +22,7 @@ import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronkleIronGUIMaleMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronckleIronGUIFemaleMenu;
+import net.mcreator.howtoownadragon.world.inventory.GenericOrAdvancedConfigMenu;
 import net.mcreator.howtoownadragon.world.inventory.FoodPage1InfoGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleTTGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleNadderGUIMenu;
@@ -47,4 +48,5 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<MaleNadderGUIMenu>> MALE_NADDER_GUI = REGISTRY.register("male_nadder_gui", () -> IForgeMenuType.create(MaleNadderGUIMenu::new));
 	public static final RegistryObject<MenuType<NotGrownFemaleNadderGUIMenu>> NOT_GROWN_FEMALE_NADDER_GUI = REGISTRY.register("not_grown_female_nadder_gui", () -> IForgeMenuType.create(NotGrownFemaleNadderGUIMenu::new));
 	public static final RegistryObject<MenuType<NotGrownMaleNadderGUIMenu>> NOT_GROWN_MALE_NADDER_GUI = REGISTRY.register("not_grown_male_nadder_gui", () -> IForgeMenuType.create(NotGrownMaleNadderGUIMenu::new));
+	public static final RegistryObject<MenuType<GenericOrAdvancedConfigMenu>> GENERIC_OR_ADVANCED_CONFIG = REGISTRY.register("generic_or_advanced_config", () -> IForgeMenuType.create(GenericOrAdvancedConfigMenu::new));
 }

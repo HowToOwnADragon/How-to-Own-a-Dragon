@@ -22,6 +22,7 @@ import net.mcreator.howtoownadragon.client.gui.MainPageInfoGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
 import net.mcreator.howtoownadragon.client.gui.GronkleIronGUIMaleScreen;
 import net.mcreator.howtoownadragon.client.gui.GronckleIronGUIFemaleScreen;
+import net.mcreator.howtoownadragon.client.gui.GenericOrAdvancedConfigScreen;
 import net.mcreator.howtoownadragon.client.gui.FoodPage1InfoGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleTTGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleNadderGUIScreen;
@@ -49,6 +50,7 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.MALE_NADDER_GUI.get(), MaleNadderGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_NADDER_GUI.get(), NotGrownFemaleNadderGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_MALE_NADDER_GUI.get(), NotGrownMaleNadderGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GENERIC_OR_ADVANCED_CONFIG.get(), GenericOrAdvancedConfigScreen::new);
 		});
 	}
 }
