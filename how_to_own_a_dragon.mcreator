@@ -13944,6 +13944,343 @@
         ]
       },
       "path": "~/Achievements/TameAllDragons"
+    },
+    {
+      "name": "OpenHotTouristDestinations",
+      "type": "procedure",
+      "sortid": 1428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_hot_tourist_destinations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenHotTouristDestinationsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations"
+    },
+    {
+      "name": "NetherBiomesGUI",
+      "type": "gui",
+      "sortid": 1429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_biomes_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NetherBiomesGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NetherBiomesGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/NetherBiomesGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations"
+    },
+    {
+      "name": "CrimsonForestCheck",
+      "type": "procedure",
+      "sortid": 1430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_forest_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/CrimsonForestCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+    },
+    {
+      "name": "CrimsonForestReturn",
+      "type": "procedure",
+      "sortid": 1431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_forest_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/CrimsonForestReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+    },
+    {
+      "name": "WarpedForestCheck",
+      "type": "procedure",
+      "sortid": 1432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_forest_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WarpedForestCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+    },
+    {
+      "name": "SoulSandValleyCheck",
+      "type": "procedure",
+      "sortid": 1433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_sand_valley_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SoulSandValleyCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+    },
+    {
+      "name": "NetherWastesCheck",
+      "type": "procedure",
+      "sortid": 1434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wastes_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NetherWastesCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+    },
+    {
+      "name": "BasaltDeltaCheck",
+      "type": "procedure",
+      "sortid": 1435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_delta_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BasaltDeltaCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+    },
+    {
+      "name": "WarpedForestReturn",
+      "type": "procedure",
+      "sortid": 1436,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_forest_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/WarpedForestReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+    },
+    {
+      "name": "SoulSandValleyReturn",
+      "type": "procedure",
+      "sortid": 1437,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_sand_valley_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/SoulSandValleyReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+    },
+    {
+      "name": "NetherWastesReturn",
+      "type": "procedure",
+      "sortid": 1438,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wastes_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NetherWastesReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+    },
+    {
+      "name": "BasaltDeltasCheck",
+      "type": "procedure",
+      "sortid": 1439,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_deltas_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BasaltDeltasCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
     }
   ],
   "variable_elements": [
@@ -13959,6 +14296,7 @@
     "en_us": {
       "gui.how_to_own_a_dragon.husbandry_tab_group_gui.button_two_by_two": "Two by Two",
       "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_soul_sand_valley": "Soul Sand Valley",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "gui.how_to_own_a_dragon.nether_tab_group_gui.button_hot_tourist_destinations": "Hot Tourist Destinations",
       "block.how_to_own_a_dragon.limestone": "Limestone",
@@ -13966,6 +14304,7 @@
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.baby_nadder_male_spawn_egg": "Baby Male Deadly Nadder Spawn Egg",
       "item.how_to_own_a_dragon.nadder_arrow": "Deadly Nadder Arrow",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas": "Basalt Deltas",
       "entity.how_to_own_a_dragon.juvenile_tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.progressive_achievements.button_htoad_advancements": "HTOAD Advancements",
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
@@ -13982,6 +14321,7 @@
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
       "gui.how_to_own_a_dragon.nether_tab_group_gui.label_nether_progressive_advancements": "Nether Progressive Advancements",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_all_nether_biomes": "All Nether Biomes",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
@@ -13997,6 +14337,7 @@
       "gui.how_to_own_a_dragon.gotta_catch_em_all.label_dragons": "All Tamable Dragons",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_crimson_forest": "Crimson Forest",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle",
       "item.how_to_own_a_dragon.gronckle_male_spawn_egg": "Male Gronckle Spawn Egg",
       "advancements.obtain_gronckle_iron.title": "Gronckle Smith.",
@@ -14048,6 +14389,7 @@
       "item.how_to_own_a_dragon.tt_scale": "Terrible Terror Scale",
       "item.how_to_own_a_dragon.gronckle_iron_axe": "Gronckle Iron Axe",
       "advancements.enter_hidden_world.title": "Woah, it really does exist....",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_warped_forest": "Warped Forest",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.button_smelt": "Smelt",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.husbandry_tab_group_gui.button_a_balanced_diet": "A Balanced Diet",
@@ -14127,6 +14469,7 @@
       "gui.how_to_own_a_dragon.incubator_gui.label_empty": "%",
       "item.how_to_own_a_dragon.tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "entity.how_to_own_a_dragon.a": "A",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_nether_waste": "Nether Wastes",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_inventory": "Inventory",
       "effect.how_to_own_a_dragon.hit_by_arrow": "HitByArrow",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
@@ -14830,7 +15173,26 @@
                 "children": [
                   {
                     "name": "NetherTabGroupButtonGUI",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "HotTouristDestinations",
+                        "children": [
+                          {
+                            "name": "TestDisplayProcedures",
+                            "children": [
+                              {
+                                "name": "NetherBiomeChecks",
+                                "children": []
+                              },
+                              {
+                                "name": "NetherBiomeReturns",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "name": "AdventureTabGroupButtonGUI",

@@ -11,40 +11,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.NetherTabGroupGUIMenu;
-import net.mcreator.howtoownadragon.procedures.OpenHotTouristDestinationsProcedure;
-import net.mcreator.howtoownadragon.procedures.BackButtonVanillaTabGroupGUIProcedure;
+import net.mcreator.howtoownadragon.world.inventory.NetherBiomesGUIMenu;
+import net.mcreator.howtoownadragon.procedures.OpenNetherTabGroupGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class NetherTabGroupGUIButtonMessage {
+public class NetherBiomesGUIButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public NetherTabGroupGUIButtonMessage(FriendlyByteBuf buffer) {
+	public NetherBiomesGUIButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public NetherTabGroupGUIButtonMessage(int buttonID, int x, int y, int z) {
+	public NetherBiomesGUIButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(NetherTabGroupGUIButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(NetherBiomesGUIButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(NetherTabGroupGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(NetherBiomesGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -59,22 +58,18 @@ public class NetherTabGroupGUIButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = NetherTabGroupGUIMenu.guistate;
+		HashMap guistate = NetherBiomesGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			OpenHotTouristDestinationsProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 1) {
-
-			BackButtonVanillaTabGroupGUIProcedure.execute(world, x, y, z, entity);
+			OpenNetherTabGroupGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		HowToOwnADragonMod.addNetworkMessage(NetherTabGroupGUIButtonMessage.class, NetherTabGroupGUIButtonMessage::buffer, NetherTabGroupGUIButtonMessage::new, NetherTabGroupGUIButtonMessage::handler);
+		HowToOwnADragonMod.addNetworkMessage(NetherBiomesGUIButtonMessage.class, NetherBiomesGUIButtonMessage::buffer, NetherBiomesGUIButtonMessage::new, NetherBiomesGUIButtonMessage::handler);
 	}
 }

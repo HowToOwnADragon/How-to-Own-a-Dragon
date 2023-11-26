@@ -32,7 +32,7 @@
           "image": "previous_page_arrow.png",
           "hoveredImage": "previous_page_arrow_when_hovered_over.png",
           "onClick": {
-            "name": "BackButtonHTOADAdvancementsGUI"
+            "name": "BackButtonMainAdvancementGUI"
           },
           "x": 77,
           "y": 117
