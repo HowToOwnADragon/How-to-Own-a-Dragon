@@ -1,4 +1,4 @@
-{
+
   "display": {
     "icon": {
       "item": "how_to_own_a_dragon:dragon_symbol"
@@ -16,31 +16,31 @@
   },
   "criteria": {
     "tame_htoad:gronckle": {
-	"conditions": {
-    	"entity": [
-        	{
-            	"condition": "minecraft:entity_properties",
-            	"entity": "this",
-            	"predicate": {
-                	"tag": "gronckle_full_grown"
-           	 	}
-        	}
-    	]
-	},
+    "conditions": {
+        "entity": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "tag": "gronckle_full_grown"
+                    }
+            }
+        ]
+    },
       "trigger": "minecraft:tame_animal"
     },
     "tame_htoad:nadder": {
       "conditions": {
-    	"entity": [
-        	{
-            	"condition": "minecraft:entity_properties",
-            	"entity": "this",
-            	"predicate": {
-                	"tag": "grown_nadder"
-            	}
-        	}
-    	]
-	},
+        "entity": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "tag": "grown_nadder"
+                }
+            }
+        ]
+    },
       "trigger": "minecraft:tame_animal"
     }
   },
