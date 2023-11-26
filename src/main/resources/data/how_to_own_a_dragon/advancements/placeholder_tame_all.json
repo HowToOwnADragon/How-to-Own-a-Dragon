@@ -14,43 +14,39 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "how_to_own_a_dragon:first_tamed_dragon"
+  "parent": "how_to_own_a_dragon:first_tamed_dragon",
   "criteria": {
-    "tame_htoad:gronckle": {
-    "conditions": {
-        "entity": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "tag": "gronckle_full_grown"
-                    }
-            }
-        ]
-    },
-      "trigger": "minecraft:tame_animal"
-    },
-    "tame_htoad:nadder": {
+    "dragonCriteriaGronckle": {
       "conditions": {
         "entity": [
-            {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "tag": "grown_nadder"
-                }
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "tag": "gronckle_full_grown"
             }
+          }
         ]
+      },
+      "trigger": "minecraft:tame_animal"
     },
+    "dragonCriteriaNadder": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "tag": "grown_nadder"
+            }
+          }
+        ]
+      },
       "trigger": "minecraft:tame_animal"
     }
   },
   "requirements": [
-    [
-      "tame_htoad:nadder"
-    ],
-    [
-      "tame_htoad:gronckle"
-    ]
-  ],
+    ["dragonCriteriaNadder"],
+    ["dragonCriteriaGronckle"]
+  ]
 }
