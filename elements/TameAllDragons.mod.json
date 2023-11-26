@@ -2,8 +2,8 @@
   "_fv": 43,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Gotta Catch 'Em All",
-    "achievementDescription": "Tame all possible dragons.",
+    "achievementName": "Placeholder Tame All",
+    "achievementDescription": "Lets hope this works",
     "achievementIcon": {
       "value": "CUSTOM:DragonSymbol"
     },
@@ -15,11 +15,11 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
-    "rewardXP": 100,
+    "rewardXP": 0,
     "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:FirstTamedDragon"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"36\" y=\"63\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"23\" y=\"44\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

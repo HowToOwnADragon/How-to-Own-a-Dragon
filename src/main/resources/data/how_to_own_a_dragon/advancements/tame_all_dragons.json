@@ -14,13 +14,105 @@
     "announce_to_chat": true,
     "hidden": false
   },
+  "parent": "how_to_own_a_dragon:first_tamed_dragon",
   "criteria": {
-    "tame_all_dragons": {
-      "trigger": "minecraft:impossible"
+    "dragonCriteriaGronckleMale": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "how_to_own_a_dragon:gronckle_male"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "dragonCriteriaGronckleFemale": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "how_to_own_a_dragon:gronckle_female"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "dragonCriteriaNadderMale": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "how_to_own_a_dragon:nadder_male"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "dragonCriteriaNadderFemale": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "how_to_own_a_dragon:nadder_female"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "dragonCriteriaTTMale": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "how_to_own_a_dragon:tt_male"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    },
+    "dragonCriteriaTTFemale": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "how_to_own_a_dragon:tt_female"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
     }
   },
-  "rewards": {
-    "experience": 100
-  },
-  "parent": "how_to_own_a_dragon:first_tamed_dragon"
+  "requirements": [
+    [
+    	"dragonCriteriaGronckleMale",
+    	"dragonCriteriaGronckleFemale"
+    ],
+    [
+		"dragonCriteriaNadderMale",
+		"dragonCriteriaNadderFemale"
+    ],
+    [
+		"dragonCriteriaTTMale",
+		"dragonCriteriaTTFemale"
+    ]
+  ]
 }
