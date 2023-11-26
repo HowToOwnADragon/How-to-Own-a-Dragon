@@ -94,7 +94,7 @@ public class FeedTamedNadderProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 				}
-			} else if (true) {
+			} else {
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MUTTON) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);

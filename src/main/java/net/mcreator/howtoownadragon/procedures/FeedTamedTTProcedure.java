@@ -94,17 +94,7 @@ public class FeedTamedTTProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 				}
-			} else if (new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-					} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-					}
-					return false;
-				}
-			}.checkGamemode(sourceentity)) {
+			} else {
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BREAD) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
