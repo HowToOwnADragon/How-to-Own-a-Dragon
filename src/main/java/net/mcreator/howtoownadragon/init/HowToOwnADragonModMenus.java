@@ -11,17 +11,22 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.howtoownadragon.world.inventory.VanillaTabGroupsGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.ProgressiveAchievementsMenu;
+import net.mcreator.howtoownadragon.world.inventory.NothingsHereMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownFemaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NotGrownFemaleGronckleGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.NetherTabGroupGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.NOTFINISHEDMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
 import net.mcreator.howtoownadragon.world.inventory.LoveIsInTheAirMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.HusbandryTabGroupGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.HTOADAdvancementsMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronkleIronGUIMaleMenu;
 import net.mcreator.howtoownadragon.world.inventory.GronckleIronGUIFemaleMenu;
@@ -33,6 +38,7 @@ import net.mcreator.howtoownadragon.world.inventory.FemaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.DragonEyeInputMenu;
 import net.mcreator.howtoownadragon.world.inventory.CongratsGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.AdventureTabGroupGUIMenu;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModMenus {
@@ -59,4 +65,10 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<GottaCatchEmAllMenu>> GOTTA_CATCH_EM_ALL = REGISTRY.register("gotta_catch_em_all", () -> IForgeMenuType.create(GottaCatchEmAllMenu::new));
 	public static final RegistryObject<MenuType<CongratsGUIMenu>> CONGRATS_GUI = REGISTRY.register("congrats_gui", () -> IForgeMenuType.create(CongratsGUIMenu::new));
 	public static final RegistryObject<MenuType<LoveIsInTheAirMenu>> LOVE_IS_IN_THE_AIR = REGISTRY.register("love_is_in_the_air", () -> IForgeMenuType.create(LoveIsInTheAirMenu::new));
+	public static final RegistryObject<MenuType<VanillaTabGroupsGUIMenu>> VANILLA_TAB_GROUPS_GUI = REGISTRY.register("vanilla_tab_groups_gui", () -> IForgeMenuType.create(VanillaTabGroupsGUIMenu::new));
+	public static final RegistryObject<MenuType<NothingsHereMenu>> NOTHINGS_HERE = REGISTRY.register("nothings_here", () -> IForgeMenuType.create(NothingsHereMenu::new));
+	public static final RegistryObject<MenuType<HusbandryTabGroupGUIMenu>> HUSBANDRY_TAB_GROUP_GUI = REGISTRY.register("husbandry_tab_group_gui", () -> IForgeMenuType.create(HusbandryTabGroupGUIMenu::new));
+	public static final RegistryObject<MenuType<AdventureTabGroupGUIMenu>> ADVENTURE_TAB_GROUP_GUI = REGISTRY.register("adventure_tab_group_gui", () -> IForgeMenuType.create(AdventureTabGroupGUIMenu::new));
+	public static final RegistryObject<MenuType<NetherTabGroupGUIMenu>> NETHER_TAB_GROUP_GUI = REGISTRY.register("nether_tab_group_gui", () -> IForgeMenuType.create(NetherTabGroupGUIMenu::new));
+	public static final RegistryObject<MenuType<NOTFINISHEDMenu>> NOTFINISHED = REGISTRY.register("notfinished", () -> IForgeMenuType.create(NOTFINISHEDMenu::new));
 }

@@ -8,11 +8,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
-import net.mcreator.howtoownadragon.world.inventory.LoveIsInTheAirMenu;
-import net.mcreator.howtoownadragon.procedures.TTBreedReturnProcedure;
-import net.mcreator.howtoownadragon.procedures.NadderBreedReturnProcedure;
-import net.mcreator.howtoownadragon.procedures.GronckleBreedReturnProcedure;
-import net.mcreator.howtoownadragon.network.LoveIsInTheAirButtonMessage;
+import net.mcreator.howtoownadragon.world.inventory.NOTFINISHEDMenu;
+import net.mcreator.howtoownadragon.network.NOTFINISHEDButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.HashMap;
@@ -20,25 +17,30 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class LoveIsInTheAirScreen extends AbstractContainerScreen<LoveIsInTheAirMenu> {
-	private final static HashMap<String, Object> guistate = LoveIsInTheAirMenu.guistate;
+public class NOTFINISHEDScreen extends AbstractContainerScreen<NOTFINISHEDMenu> {
+	private final static HashMap<String, Object> guistate = NOTFINISHEDMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_previous_page_arrow;
 
-	public LoveIsInTheAirScreen(LoveIsInTheAirMenu container, Inventory inventory, Component text) {
+	public NOTFINISHEDScreen(NOTFINISHEDMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 126;
-		this.imageHeight = 80;
+		this.imageWidth = 80;
+		this.imageHeight = 40;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/love_is_in_the_air.png");
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
+	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/notfinished.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -73,13 +75,7 @@ public class LoveIsInTheAirScreen extends AbstractContainerScreen<LoveIsInTheAir
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.love_is_in_the_air.label_all_breedable_dragons"), 7, 6, -12829636);
-		if (GronckleBreedReturnProcedure.execute(entity))
-			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.love_is_in_the_air.label_gronckle"), 41, 31, -12829636);
-		if (TTBreedReturnProcedure.execute(entity))
-			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.love_is_in_the_air.label_terrible_terror"), 22, 47, -12829636);
-		if (NadderBreedReturnProcedure.execute(entity))
-			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.love_is_in_the_air.label_deadly_nadder"), 29, 63, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.notfinished.label_not_finished"), 7, 7, -12829636);
 	}
 
 	@Override
@@ -90,10 +86,10 @@ public class LoveIsInTheAirScreen extends AbstractContainerScreen<LoveIsInTheAir
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 3, this.topPos + 57, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
+		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 27, this.topPos + 17, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
 			if (true) {
-				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new LoveIsInTheAirButtonMessage(0, x, y, z));
-				LoveIsInTheAirButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new NOTFINISHEDButtonMessage(0, x, y, z));
+				NOTFINISHEDButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
 		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);

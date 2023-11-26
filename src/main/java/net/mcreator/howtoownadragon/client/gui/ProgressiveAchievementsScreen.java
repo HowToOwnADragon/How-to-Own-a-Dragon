@@ -76,7 +76,7 @@ public class ProgressiveAchievementsScreen extends AbstractContainerScreen<Progr
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.progressive_achievements.label_progressive_advancement_check"), 8, 8, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.progressive_achievements.label_progressive_advancement_check"), 7, 8, -12829636);
 	}
 
 	@Override
@@ -88,6 +88,10 @@ public class ProgressiveAchievementsScreen extends AbstractContainerScreen<Progr
 	public void init() {
 		super.init();
 		button_vanilla_achievements = Button.builder(Component.translatable("gui.how_to_own_a_dragon.progressive_achievements.button_vanilla_achievements"), e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new ProgressiveAchievementsButtonMessage(0, x, y, z));
+				ProgressiveAchievementsButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 22, this.topPos + 28, 129, 20).build();
 		guistate.put("button:button_vanilla_achievements", button_vanilla_achievements);
 		this.addRenderableWidget(button_vanilla_achievements);

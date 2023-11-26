@@ -11,40 +11,40 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.ProgressiveAchievementsMenu;
-import net.mcreator.howtoownadragon.procedures.OpenVanillaAdvancementsProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenHTOADAdvancementsProcedure;
+import net.mcreator.howtoownadragon.world.inventory.HusbandryTabGroupGUIMenu;
+import net.mcreator.howtoownadragon.procedures.OpenNOTFINISHEDProcedure;
+import net.mcreator.howtoownadragon.procedures.BackButtonVanillaTabGroupGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ProgressiveAchievementsButtonMessage {
+public class HusbandryTabGroupGUIButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public ProgressiveAchievementsButtonMessage(FriendlyByteBuf buffer) {
+	public HusbandryTabGroupGUIButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public ProgressiveAchievementsButtonMessage(int buttonID, int x, int y, int z) {
+	public HusbandryTabGroupGUIButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(ProgressiveAchievementsButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(HusbandryTabGroupGUIButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(ProgressiveAchievementsButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(HusbandryTabGroupGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -59,22 +59,30 @@ public class ProgressiveAchievementsButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = ProgressiveAchievementsMenu.guistate;
+		HashMap guistate = HusbandryTabGroupGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			OpenVanillaAdvancementsProcedure.execute(world, x, y, z, entity);
+			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			OpenHTOADAdvancementsProcedure.execute(world, x, y, z, entity);
+			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			BackButtonVanillaTabGroupGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		HowToOwnADragonMod.addNetworkMessage(ProgressiveAchievementsButtonMessage.class, ProgressiveAchievementsButtonMessage::buffer, ProgressiveAchievementsButtonMessage::new, ProgressiveAchievementsButtonMessage::handler);
+		HowToOwnADragonMod.addNetworkMessage(HusbandryTabGroupGUIButtonMessage.class, HusbandryTabGroupGUIButtonMessage::buffer, HusbandryTabGroupGUIButtonMessage::new, HusbandryTabGroupGUIButtonMessage::handler);
 	}
 }
