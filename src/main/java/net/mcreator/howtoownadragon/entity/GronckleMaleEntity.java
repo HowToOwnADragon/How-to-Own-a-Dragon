@@ -345,7 +345,7 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		GronckleMaleOnInitialEntitySpawnProcedure.execute(world, this);
+		GronckleMaleOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 
@@ -393,14 +393,14 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-		if (sourceentity.isSecondaryUseActive()) {	
+		if (sourceentity.isSecondaryUseActive()) {
 			if (sourceentity instanceof ServerPlayer serverPlayer) {
 				NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
 						return Component.literal("Male Gronckle");
 					}
-	
+
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
@@ -462,8 +462,7 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		GronckleFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
-
-		@Override
+			@Override
 	public void travel(Vec3 dir) {
 		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 		if (this.isVehicle()) {
@@ -493,7 +492,7 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		this.maxUpStep = 0.5F;
 		super.travel(dir);
 	}
-	
+
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
 		return super.getDimensions(p_33597_).scale((float) 1);

@@ -2850,6 +2850,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -5039,8 +5051,8 @@
       "registry_name": "test_gronckle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestGronckleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java"
         ]
       },
@@ -7045,9 +7057,8 @@
       "registry_name": "test_nadder",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestNadderModel.java",
           "src/main/java/net/mcreator/howtoownadragon/entity/TestNadderEntity.java",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/test_nadder_biome_modifier.json",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestNadderModel.java",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestNadderRenderer.java"
         ]
       },
@@ -11274,6 +11285,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -13873,6 +13900,20 @@
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "PlaceholderTameAll",
+      "type": "achievement",
+      "sortid": 1426,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "placeholder_tame_all",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/placeholder_tame_all.json"
+        ]
+      },
+      "path": "~/Achievements/Placeholder"
     }
   ],
   "variable_elements": [
@@ -13990,6 +14031,7 @@
       "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
       "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "item.how_to_own_a_dragon.test_gronckle_spawn_egg": "Test Gronckle Spawn Egg",
+      "advancements.placeholder_tame_all.title": "Placeholder Tame All",
       "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
       "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
       "item.how_to_own_a_dragon.nadder_spine": "Deadly Nadder Spine",
@@ -14097,6 +14139,7 @@
       "entity.how_to_own_a_dragon.baby_chicken": "Baby Chicken",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
       "item.how_to_own_a_dragon.juvenile_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
+      "advancements.placeholder_tame_all.descr": "Lets hope this works",
       "gui.how_to_own_a_dragon.generic_or_advanced_config.button_example_advanced": "Example Advanced",
       "gui.how_to_own_a_dragon.htoad_advancements.button_breed_all_dragons": "Love Is In The Air",
       "gui.how_to_own_a_dragon.generic_or_advanced_config.button_example_generic": "Example Generic",
@@ -14779,6 +14822,10 @@
           },
           {
             "name": "BreedAllDragons",
+            "children": []
+          },
+          {
+            "name": "Placeholder",
             "children": []
           }
         ]
