@@ -1,4 +1,4 @@
-
+{
   "display": {
     "icon": {
       "item": "how_to_own_a_dragon:dragon_symbol"
@@ -14,6 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
+  "parent": "how_to_own_a_dragon:first_tamed_dragon"
   "criteria": {
     "tame_htoad:gronckle": {
     "conditions": {
@@ -46,11 +47,10 @@
   },
   "requirements": [
     [
-      "tame_htoad:gronckle"
+      "tame_htoad:nadder"
     ],
     [
-      "tame_htoad:nadder"
+      "tame_htoad:gronckle"
     ]
   ],
-  "parent": "how_to_own_a_dragon:first_tamed_dragon"
 }
