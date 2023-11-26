@@ -13,6 +13,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
@@ -59,6 +63,18 @@ public class FemaleBreedingTTProcedure {
 					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
 					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+				}
+				if (sourceentity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:breed_first_dragon"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+				if (!(sourceentity.getPersistentData().getBoolean("isttbreed") == true)) {
+					sourceentity.getPersistentData().putBoolean("isttbreed", true);
+					BreedingAllDragonsProcedure.execute(sourceentity);
 				}
 			}
 		}

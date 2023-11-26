@@ -17,7 +17,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.client.Minecraft;
@@ -73,12 +72,9 @@ public class CreativeTameNadderProcedure {
 								_player.getAdvancements().award(_adv, criteria);
 						}
 					}
-					if (!(sourceentity.getPersistentData().getString("isnaddertamed")).equals("true")) {
-						sourceentity.getPersistentData().putString("isnaddertamed", "true");
+					if (!(sourceentity.getPersistentData().getBoolean("isnaddertamed") == true)) {
+						sourceentity.getPersistentData().putBoolean("isnaddertamed", true);
 						TamingAllDragonsProcedure.execute(sourceentity);
-					} else {
-						if (sourceentity instanceof Player _player && !_player.level.isClientSide())
-							_player.displayClientMessage(Component.literal("You have already tamed this species of dragon."), true);
 					}
 				});
 			}

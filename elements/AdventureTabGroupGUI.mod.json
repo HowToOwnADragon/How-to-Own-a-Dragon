@@ -1,0 +1,78 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "BackButtonVanillaTabGroupGUI"
+          },
+          "x": 121,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_adventure_progressive_achievemen",
+          "text": {
+            "fixedValue": "Adventure Progressive Achievements"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_monsters_hunted",
+          "text": "Monsters Hunted",
+          "onClick": {
+            "name": "OpenNOTFINISHED"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 161,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_adventuring_time",
+          "text": "Adventuring Time",
+          "onClick": {
+            "name": "OpenNOTFINISHED"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 159,
+          "y": 133
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

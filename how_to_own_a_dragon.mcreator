@@ -13091,6 +13091,838 @@
         ]
       },
       "path": "~/Config"
+    },
+    {
+      "name": "OpenHTOADAdvancements",
+      "type": "procedure",
+      "sortid": 1394,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_htoad_advancements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenHTOADAdvancementsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
+    },
+    {
+      "name": "OpenLoveIsInTheAir",
+      "type": "procedure",
+      "sortid": 1406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_love_is_in_the_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenLoveIsInTheAirProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons"
+    },
+    {
+      "name": "GronckleTameReturn",
+      "type": "procedure",
+      "sortid": 1399,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_tame_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleTameReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
+    },
+    {
+      "name": "AdventureTabGroupGUI",
+      "type": "gui",
+      "sortid": 1419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adventure_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/AdventureTabGroupGUIButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/AdventureTabGroupGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/AdventureTabGroupGUIScreen.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI"
+    },
+    {
+      "name": "ProgressiveAdvancementsOnKeyPressed",
+      "type": "procedure",
+      "sortid": 1391,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_advancements_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/ProgressiveAdvancementsOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
+    },
+    {
+      "name": "OpenNetherTabGroupGUI",
+      "type": "procedure",
+      "sortid": 1423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_nether_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNetherTabGroupGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI"
+    },
+    {
+      "name": "LoveIsInTheAir",
+      "type": "gui",
+      "sortid": 1405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "love_is_in_the_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/LoveIsInTheAirMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/LoveIsInTheAirScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/LoveIsInTheAirButtonMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons"
+    },
+    {
+      "name": "TTBreedReturn",
+      "type": "procedure",
+      "sortid": 1409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_breed_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTBreedReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
+    },
+    {
+      "name": "CongratsGUI",
+      "type": "gui",
+      "sortid": 1401,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "congrats_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/CongratsGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/CongratsGUIButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/CongratsGUIMenu.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
+    },
+    {
+      "name": "OpenNothingsHere",
+      "type": "procedure",
+      "sortid": 1416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_nothings_here",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNothingsHereProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "BackButtonVanillaTabGroupGUI",
+      "type": "procedure",
+      "sortid": 1417,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_button_vanilla_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BackButtonVanillaTabGroupGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "NothingsHere",
+      "type": "gui",
+      "sortid": 1415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nothings_here",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NothingsHereMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NothingsHereScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/NothingsHereButtonMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "BackButtonMainAdvancementGUI",
+      "type": "procedure",
+      "sortid": 1410,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_button_main_advancement_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BackButtonMainAdvancementGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs"
+    },
+    {
+      "name": "HTOADAdvancements",
+      "type": "gui",
+      "sortid": 1393,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "htoad_advancements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/HTOADAdvancementsButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/HTOADAdvancementsScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/HTOADAdvancementsMenu.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs"
+    },
+    {
+      "name": "OpenAdventureTabGroupGUI",
+      "type": "procedure",
+      "sortid": 1421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_adventure_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenAdventureTabGroupGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI"
+    },
+    {
+      "name": "BreedingAllDragons",
+      "type": "procedure",
+      "sortid": 1404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breeding_all_dragons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BreedingAllDragonsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/BreedAllDragons"
+    },
+    {
+      "name": "GronckleBreedReturn",
+      "type": "procedure",
+      "sortid": 1408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_breed_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleBreedReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
+    },
+    {
+      "name": "NetherTabGroupGUI",
+      "type": "gui",
+      "sortid": 1420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/NetherTabGroupGUIButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NetherTabGroupGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NetherTabGroupGUIScreen.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI"
+    },
+    {
+      "name": "HusbandryTabGroupGUI",
+      "type": "gui",
+      "sortid": 1418,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "husbandry_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/HusbandryTabGroupGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/HusbandryTabGroupGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/HusbandryTabGroupGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI"
+    },
+    {
+      "name": "ProgressiveAdvancements",
+      "type": "keybind",
+      "sortid": 1392,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_advancements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/ProgressiveAdvancementsMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
+    },
+    {
+      "name": "NadderBreedReturn",
+      "type": "procedure",
+      "sortid": 1407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_breed_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NadderBreedReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
+    },
+    {
+      "name": "VanillaTabGroupsGUI",
+      "type": "gui",
+      "sortid": 1412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanilla_tab_groups_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/VanillaTabGroupsGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/VanillaTabGroupsGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/VanillaTabGroupsGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "OpenNOTFINISHED",
+      "type": "procedure",
+      "sortid": 1425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_notfinished",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNOTFINISHEDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "OpenHusbandryTabGroupGUI",
+      "type": "procedure",
+      "sortid": 1422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_husbandry_tab_group_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenHusbandryTabGroupGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI"
+    },
+    {
+      "name": "GottaCatchEmAll",
+      "type": "gui",
+      "sortid": 1395,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gotta_catch_em_all",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/GottaCatchEmAllScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/GottaCatchEmAllButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/GottaCatchEmAllMenu.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll"
+    },
+    {
+      "name": "NOTFINISHED",
+      "type": "gui",
+      "sortid": 1424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "notfinished",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/NOTFINISHEDButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/NOTFINISHEDScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/NOTFINISHEDMenu.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
+    },
+    {
+      "name": "BreedFirstDragon",
+      "type": "achievement",
+      "sortid": 1402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breed_first_dragon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/breed_first_dragon.json"
+        ]
+      },
+      "path": "~/Achievements/BreedFirstDragon"
+    },
+    {
+      "name": "TTTameReturn",
+      "type": "procedure",
+      "sortid": 1400,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_tame_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTTameReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
+    },
+    {
+      "name": "ProgressiveAchievements",
+      "type": "gui",
+      "sortid": 1390,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressive_achievements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/ProgressiveAchievementsMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/ProgressiveAchievementsScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ProgressiveAchievementsButtonMessage.java"
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
+    },
+    {
+      "name": "NadderTameReturn",
+      "type": "procedure",
+      "sortid": 1398,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nadder_tame_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/NadderTameReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
+    },
+    {
+      "name": "BackButtonHTOADAdvancementsGUI",
+      "type": "procedure",
+      "sortid": 1411,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_button_htoad_advancements_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/BackButtonHTOADAdvancementsGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs"
+    },
+    {
+      "name": "BreedAllDragons",
+      "type": "achievement",
+      "sortid": 1403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breed_all_dragons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/advancements/breed_all_dragons.json"
+        ]
+      },
+      "path": "~/Achievements/BreedAllDragons"
+    },
+    {
+      "name": "OpenGottaCatchEmAll",
+      "type": "procedure",
+      "sortid": 1397,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gotta_catch_em_all",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenGottaCatchEmAllProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll"
+    },
+    {
+      "name": "OpenVanillaAdvancements",
+      "type": "procedure",
+      "sortid": 1413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_vanilla_advancements",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenVanillaAdvancementsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     }
   ],
   "variable_elements": [
@@ -13320,8 +14152,35 @@
         ]
       },
       {
+        "name": "NOT USED",
+        "children": []
+      },
+      {
         "name": "Overworld2.0",
         "children": []
+      },
+      {
+        "name": "Config",
+        "children": [
+          {
+            "name": "Advanced",
+            "children": [
+              {
+                "name": "ExampleAdvanced",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Generic",
+            "children": [
+              {
+                "name": "ExampleGeneric",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Items",
@@ -13362,6 +14221,19 @@
             ]
           },
           {
+            "name": "Gronckle Iron",
+            "children": [
+              {
+                "name": "Recipe",
+                "children": []
+              },
+              {
+                "name": "Tools",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "IslandTopBlocks",
             "children": []
           },
@@ -13397,332 +14269,79 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Gronckle Iron",
-            "children": [
-              {
-                "name": "Recipe",
-                "children": []
-              },
-              {
-                "name": "Tools",
-                "children": []
-              }
-            ]
           }
         ]
+      },
+      {
+        "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "VanillaTags",
+        "children": []
+      },
+      {
+        "name": "Gamerule",
+        "children": []
       },
       {
         "name": "Entities",
         "children": [
           {
-            "name": "Animals",
-            "children": [
-              {
-                "name": "Chicken",
-                "children": [
-                  {
-                    "name": "Entity",
-                    "children": []
-                  },
-                  {
-                    "name": "FeedNonGrown",
-                    "children": []
-                  },
-                  {
-                    "name": "Tag",
-                    "children": []
-                  },
-                  {
-                    "name": "Breeding",
-                    "children": []
-                  },
-                  {
-                    "name": "ChickenOnly",
-                    "children": []
-                  },
-                  {
-                    "name": "Growing",
-                    "children": []
-                  },
-                  {
-                    "name": "Dies",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Yak",
-                "children": [
-                  {
-                    "name": "Entity",
-                    "children": []
-                  },
-                  {
-                    "name": "Breeding",
-                    "children": []
-                  },
-                  {
-                    "name": "YakOnly",
-                    "children": [
-                      {
-                        "name": "YakMilk",
-                        "children": []
-                      },
-                      {
-                        "name": "Yaknog",
-                        "children": []
-                      },
-                      {
-                        "name": "YakMeat",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Dies",
-                    "children": []
-                  },
-                  {
-                    "name": "Growing",
-                    "children": []
-                  },
-                  {
-                    "name": "FeedNonGrown",
-                    "children": []
-                  },
-                  {
-                    "name": "Tag",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Sheep",
-                "children": [
-                  {
-                    "name": "Breeding",
-                    "children": []
-                  },
-                  {
-                    "name": "SheepOnly",
-                    "children": [
-                      {
-                        "name": "Dyeing",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Entity",
-                    "children": []
-                  },
-                  {
-                    "name": "Dies",
-                    "children": []
-                  },
-                  {
-                    "name": "Tag",
-                    "children": []
-                  },
-                  {
-                    "name": "FeedNonGrown",
-                    "children": []
-                  },
-                  {
-                    "name": "Growing",
-                    "children": []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Cooldown",
-            "children": []
-          },
-          {
-            "name": "Tag",
-            "children": []
-          },
-          {
             "name": "AbilityWheel",
+            "children": []
+          },
+          {
+            "name": "Flying",
             "children": []
           },
           {
             "name": "Dragons",
             "children": [
               {
-                "name": "Deadly Nadder",
+                "name": "Gronckle",
                 "children": [
                   {
-                    "name": "Ability",
-                    "children": [
-                      {
-                        "name": "Beam",
-                        "children": []
-                      },
-                      {
-                        "name": "Spikes",
-                        "children": []
-                      },
-                      {
-                        "name": "Bite",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Breeding",
-                    "children": [
-                      {
-                        "name": "Egg",
-                        "children": []
-                      },
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "Male",
-                        "children": []
-                      }
-                    ]
+                    "name": "Tick",
+                    "children": []
                   },
                   {
                     "name": "Dies",
                     "children": []
                   },
                   {
-                    "name": "Entity",
+                    "name": "Ability",
                     "children": [
                       {
-                        "name": "Male",
+                        "name": "Bite",
                         "children": []
                       },
                       {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "ColorSpawnNonGrown",
+                        "name": "Ball",
                         "children": []
                       }
                     ]
-                  },
-                  {
-                    "name": "Feeding",
-                    "children": []
-                  },
-                  {
-                    "name": "GUI",
-                    "children": []
-                  },
-                  {
-                    "name": "Growing",
-                    "children": []
                   },
                   {
                     "name": "Saddle",
                     "children": [
                       {
-                        "name": "Male",
-                        "children": []
-                      },
-                      {
                         "name": "Female",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Tag",
-                    "children": []
-                  },
-                  {
-                    "name": "Taming",
-                    "children": []
-                  },
-                  {
-                    "name": "TickUpdate",
-                    "children": []
-                  },
-                  {
-                    "name": "Items",
-                    "children": []
-                  },
-                  {
-                    "name": "SpawnEgg",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Gronckle",
-                "children": [
-                  {
-                    "name": "Breeding",
-                    "children": [
-                      {
-                        "name": "Egg",
                         "children": []
                       },
                       {
                         "name": "Male",
                         "children": []
-                      },
-                      {
-                        "name": "Female",
-                        "children": []
                       }
                     ]
-                  },
-                  {
-                    "name": "Taming",
-                    "children": []
-                  },
-                  {
-                    "name": "Growing",
-                    "children": []
                   },
                   {
                     "name": "SpawnEgg",
                     "children": []
                   },
                   {
-                    "name": "Ability",
-                    "children": [
-                      {
-                        "name": "Ball",
-                        "children": []
-                      },
-                      {
-                        "name": "Bite",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
                     "name": "Tag",
                     "children": []
-                  },
-                  {
-                    "name": "Entity",
-                    "children": [
-                      {
-                        "name": "Male",
-                        "children": []
-                      },
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "ColorSpawnNonGrown",
-                        "children": []
-                      }
-                    ]
                   },
                   {
                     "name": "GUI",
@@ -13743,12 +14362,100 @@
                     ]
                   },
                   {
-                    "name": "Tick",
+                    "name": "Entity",
+                    "children": [
+                      {
+                        "name": "ColorSpawnNonGrown",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Taming",
                     "children": []
                   },
                   {
-                    "name": "Saddle",
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "Feeding",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
                     "children": [
+                      {
+                        "name": "Egg",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Terrible Terror",
+                "children": [
+                  {
+                    "name": "Entity",
+                    "children": [
+                      {
+                        "name": "ColorSpawnNotGrown",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "GUI",
+                    "children": []
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "SpawnEgg",
+                    "children": []
+                  },
+                  {
+                    "name": "Taming",
+                    "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": [
+                      {
+                        "name": "Egg",
+                        "children": []
+                      },
                       {
                         "name": "Female",
                         "children": []
@@ -13774,36 +14481,44 @@
                 "children": []
               },
               {
-                "name": "Terrible Terror",
+                "name": "Deadly Nadder",
                 "children": [
                   {
-                    "name": "Entity",
-                    "children": [
-                      {
-                        "name": "Male",
-                        "children": []
-                      },
-                      {
-                        "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "ColorSpawnNotGrown",
-                        "children": []
-                      }
-                    ]
+                    "name": "Taming",
+                    "children": []
                   },
                   {
                     "name": "GUI",
                     "children": []
                   },
                   {
-                    "name": "Breeding",
+                    "name": "Items",
+                    "children": []
+                  },
+                  {
+                    "name": "Saddle",
                     "children": [
                       {
-                        "name": "Egg",
+                        "name": "Male",
                         "children": []
                       },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "TickUpdate",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": [
                       {
                         "name": "Female",
                         "children": []
@@ -13811,11 +14526,79 @@
                       {
                         "name": "Male",
                         "children": []
+                      },
+                      {
+                        "name": "Egg",
+                        "children": []
                       }
                     ]
                   },
                   {
-                    "name": "Taming",
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "Ability",
+                    "children": [
+                      {
+                        "name": "Beam",
+                        "children": []
+                      },
+                      {
+                        "name": "Spikes",
+                        "children": []
+                      },
+                      {
+                        "name": "Bite",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "SpawnEgg",
+                    "children": []
+                  },
+                  {
+                    "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "Entity",
+                    "children": [
+                      {
+                        "name": "ColorSpawnNonGrown",
+                        "children": []
+                      },
+                      {
+                        "name": "Male",
+                        "children": []
+                      },
+                      {
+                        "name": "Female",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Feeding",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Animals",
+            "children": [
+              {
+                "name": "Sheep",
+                "children": [
+                  {
+                    "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "FeedNonGrown",
                     "children": []
                   },
                   {
@@ -13823,7 +14606,33 @@
                     "children": []
                   },
                   {
-                    "name": "SpawnEgg",
+                    "name": "Breeding",
+                    "children": []
+                  },
+                  {
+                    "name": "SheepOnly",
+                    "children": [
+                      {
+                        "name": "Dyeing",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tag",
+                    "children": []
+                  },
+                  {
+                    "name": "Entity",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Yak",
+                "children": [
+                  {
+                    "name": "Growing",
                     "children": []
                   },
                   {
@@ -13831,16 +14640,78 @@
                     "children": []
                   },
                   {
-                    "name": "Feeding",
+                    "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "FeedNonGrown",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": []
+                  },
+                  {
+                    "name": "Entity",
+                    "children": []
+                  },
+                  {
+                    "name": "YakOnly",
+                    "children": [
+                      {
+                        "name": "YakMilk",
+                        "children": []
+                      },
+                      {
+                        "name": "YakMeat",
+                        "children": []
+                      },
+                      {
+                        "name": "Yaknog",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Chicken",
+                "children": [
+                  {
+                    "name": "ChickenOnly",
+                    "children": []
+                  },
+                  {
+                    "name": "Breeding",
+                    "children": []
+                  },
+                  {
+                    "name": "Tag",
                     "children": []
                   },
                   {
                     "name": "Dies",
                     "children": []
+                  },
+                  {
+                    "name": "Growing",
+                    "children": []
+                  },
+                  {
+                    "name": "FeedNonGrown",
+                    "children": []
+                  },
+                  {
+                    "name": "Entity",
+                    "children": []
                   }
                 ]
               }
             ]
+          },
+          {
+            "name": "Cooldown",
+            "children": []
           },
           {
             "name": "AI",
@@ -13856,18 +14727,10 @@
             ]
           },
           {
-            "name": "Flying",
+            "name": "Tag",
             "children": []
           }
         ]
-      },
-      {
-        "name": "Creative Tabs",
-        "children": []
-      },
-      {
-        "name": "Gamerule",
-        "children": []
       },
       {
         "name": "The Hidden World",
@@ -13879,22 +14742,36 @@
         ]
       },
       {
+        "name": "Structures",
+        "children": [
+          {
+            "name": "ReaperShip",
+            "children": [
+              {
+                "name": "Traps",
+                "children": []
+              },
+              {
+                "name": "REAPERSPAWNINGMECHANISM",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Achievements",
         "children": [
           {
-            "name": "Hidden World",
+            "name": "ObtainGronckleIron",
+            "children": []
+          },
+          {
+            "name": "BreedAllDragons",
             "children": []
           },
           {
             "name": "Welcome To The World",
-            "children": []
-          },
-          {
-            "name": "FirstTamedDragon",
-            "children": []
-          },
-          {
-            "name": "ObtainGronckleIron",
             "children": []
           },
           {
@@ -13906,7 +14783,64 @@
             "children": []
           },
           {
+            "name": "BreedFirstDragon",
+            "children": []
+          },
+          {
+            "name": "ProgressiveAchievementsGUI",
+            "children": [
+              {
+                "name": "HTOADAdvancementGUIs",
+                "children": [
+                  {
+                    "name": "GottaCatchEmAll",
+                    "children": [
+                      {
+                        "name": "TextDisplayProcedures",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "BreedAllDragons",
+                    "children": [
+                      {
+                        "name": "TextDisplayProcedures",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "VanillaAdvancements",
+                "children": [
+                  {
+                    "name": "NetherTabGroupButtonGUI",
+                    "children": []
+                  },
+                  {
+                    "name": "AdventureTabGroupButtonGUI",
+                    "children": []
+                  },
+                  {
+                    "name": "HusbandryTabGroupButtonGUI",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hidden World",
+            "children": []
+          },
+          {
             "name": "TameAllDragons",
+            "children": []
+          },
+          {
+            "name": "FirstTamedDragon",
             "children": []
           }
         ]
@@ -13945,15 +14879,15 @@
                     "name": "Female",
                     "children": [
                       {
-                        "name": "Baby",
-                        "children": []
-                      },
-                      {
                         "name": "Juvenile",
                         "children": []
                       },
                       {
                         "name": "Adolescent",
+                        "children": []
+                      },
+                      {
+                        "name": "Baby",
                         "children": []
                       },
                       {
@@ -13968,6 +14902,27 @@
                 "name": "Terrible Terror",
                 "children": [
                   {
+                    "name": "Female",
+                    "children": [
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Grown",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvenile",
+                        "children": []
+                      },
+                      {
+                        "name": "Adolescent",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
                     "name": "Male",
                     "children": [
                       {
@@ -13975,7 +14930,7 @@
                         "children": []
                       },
                       {
-                        "name": "Juvenile",
+                        "name": "Grown",
                         "children": []
                       },
                       {
@@ -13983,28 +14938,7 @@
                         "children": []
                       },
                       {
-                        "name": "Grown",
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Female",
-                    "children": [
-                      {
-                        "name": "Adolescent",
-                        "children": []
-                      },
-                      {
                         "name": "Juvenile",
-                        "children": []
-                      },
-                      {
-                        "name": "Baby",
-                        "children": []
-                      },
-                      {
-                        "name": "Grown",
                         "children": []
                       }
                     ]
@@ -14015,43 +14949,43 @@
                 "name": "Deadly Nadder",
                 "children": [
                   {
-                    "name": "Male",
+                    "name": "Female",
                     "children": [
-                      {
-                        "name": "Baby",
-                        "children": []
-                      },
-                      {
-                        "name": "Juvi",
-                        "children": []
-                      },
-                      {
-                        "name": "Ado",
-                        "children": []
-                      },
                       {
                         "name": "Grown",
                         "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Female",
-                    "children": [
+                      },
                       {
                         "name": " Baby",
                         "children": []
                       },
                       {
-                        "name": "Juvi",
-                        "children": []
-                      },
-                      {
                         "name": "Ado",
                         "children": []
                       },
                       {
+                        "name": "Juvi",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Male",
+                    "children": [
+                      {
                         "name": "Grown",
+                        "children": []
+                      },
+                      {
+                        "name": "Juvi",
+                        "children": []
+                      },
+                      {
+                        "name": "Baby",
+                        "children": []
+                      },
+                      {
+                        "name": "Ado",
                         "children": []
                       }
                     ]
@@ -14065,55 +14999,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Config",
-        "children": [
-          {
-            "name": "Generic",
-            "children": [
-              {
-                "name": "ExampleGeneric",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "Advanced",
-            "children": [
-              {
-                "name": "ExampleAdvanced",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "NOT USED",
-        "children": []
-      },
-      {
-        "name": "Structures",
-        "children": [
-          {
-            "name": "ReaperShip",
-            "children": [
-              {
-                "name": "REAPERSPAWNINGMECHANISM",
-                "children": []
-              },
-              {
-                "name": "Traps",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "VanillaTags",
-        "children": []
       }
     ]
   },
