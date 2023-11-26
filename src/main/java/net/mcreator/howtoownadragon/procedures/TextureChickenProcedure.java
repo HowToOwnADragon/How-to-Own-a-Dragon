@@ -17,14 +17,14 @@ import javax.annotation.Nullable;
 public class TextureChickenProcedure {
 	@SubscribeEvent
 	public static void onEntitySpawned(EntityJoinLevelEvent event) {
-		execute(event, event.getLevel(), event.getEntity());
+		execute(event, event.getLevel(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(1, () -> {
@@ -40,7 +40,7 @@ public class TextureChickenProcedure {
 					if (entity instanceof ChickenEntity animatable)
 						animatable.setTexture("chickenwhite");
 				} else {
-					OnInitialEntitySpawnChickenProcedure.execute(world, entity);
+					OnInitialEntitySpawnChickenProcedure.execute(world, x, y, z, entity);
 				}
 			}
 		});
