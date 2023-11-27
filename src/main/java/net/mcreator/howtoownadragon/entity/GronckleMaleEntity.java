@@ -393,7 +393,7 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-		if (sourceentity.isSecondaryUseActive()) {
+		if (sourceentity.isSecondaryUseActive()) {	
 			if (sourceentity instanceof ServerPlayer serverPlayer) {
 				NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 					@Override
@@ -462,7 +462,8 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		GronckleFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
-			@Override
+	
+		@Override
 	public void travel(Vec3 dir) {
 		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 		if (this.isVehicle()) {

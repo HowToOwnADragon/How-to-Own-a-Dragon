@@ -32,26 +32,38 @@ public class RenderDistanceFixChickenProcedure {
 		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:chickens")))) {
 			if (entity instanceof ChickenEntity) {
 				if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
-					if (entity instanceof ChickenEntity animatable)
-						animatable.setTexture("chickenbrown");
+					if (!((entity instanceof ChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenbrown"))) {
+						if (entity instanceof ChickenEntity animatable)
+							animatable.setTexture("chickenbrown");
+					}
 				} else if ((entity.getPersistentData().getString("chickencolor")).equals("lightbrown")) {
-					if (entity instanceof ChickenEntity animatable)
-						animatable.setTexture("chickenlightbrown");
+					if (!((entity instanceof ChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenlightbrown"))) {
+						if (entity instanceof ChickenEntity animatable)
+							animatable.setTexture("chickenlightbrown");
+					}
 				} else if ((entity.getPersistentData().getString("chickencolor")).equals("white")) {
-					if (entity instanceof ChickenEntity animatable)
-						animatable.setTexture("chickenwhite");
+					if (!((entity instanceof ChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenwhite"))) {
+						if (entity instanceof ChickenEntity animatable)
+							animatable.setTexture("chickenwhite");
+					}
 				}
 			} else {
 				if (entity instanceof BabyChickenEntity) {
 					if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
-						if (entity instanceof BabyChickenEntity animatable)
-							animatable.setTexture("chickenbrown");
+						if (!((entity instanceof BabyChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenbrown"))) {
+							if (entity instanceof BabyChickenEntity animatable)
+								animatable.setTexture("chickenbrown");
+						}
 					} else if ((entity.getPersistentData().getString("chickencolor")).equals("lightbrown")) {
-						if (entity instanceof BabyChickenEntity animatable)
-							animatable.setTexture("chickenlightbrown");
+						if (!((entity instanceof BabyChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenlightbrown"))) {
+							if (entity instanceof BabyChickenEntity animatable)
+								animatable.setTexture("chickenlightbrown");
+						}
 					} else if ((entity.getPersistentData().getString("chickencolor")).equals("white")) {
-						if (entity instanceof BabyChickenEntity animatable)
-							animatable.setTexture("chickenwhite");
+						if (!((entity instanceof BabyChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenwhite"))) {
+							if (entity instanceof BabyChickenEntity animatable)
+								animatable.setTexture("chickenwhite");
+						}
 					}
 				}
 			}
