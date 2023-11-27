@@ -12,7 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.CongratsGUIMenu;
-import net.mcreator.howtoownadragon.procedures.BackButtonHTOADAdvancementsGUIProcedure;
+import net.mcreator.howtoownadragon.procedures.BackButtonMainAdvancementGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
@@ -64,7 +64,7 @@ public class CongratsGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			BackButtonHTOADAdvancementsGUIProcedure.execute(world, x, y, z, entity);
+			BackButtonMainAdvancementGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

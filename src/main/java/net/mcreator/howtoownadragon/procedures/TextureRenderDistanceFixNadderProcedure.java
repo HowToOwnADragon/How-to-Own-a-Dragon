@@ -1,23 +1,6 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
-
-import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.TagKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
-
-import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
 
 import javax.annotation.Nullable;
 

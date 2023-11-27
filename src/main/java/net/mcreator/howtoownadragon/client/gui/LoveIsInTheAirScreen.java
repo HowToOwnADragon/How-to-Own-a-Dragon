@@ -38,6 +38,11 @@ public class LoveIsInTheAirScreen extends AbstractContainerScreen<LoveIsInTheAir
 		this.imageHeight = 80;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/love_is_in_the_air.png");
 
 	@Override

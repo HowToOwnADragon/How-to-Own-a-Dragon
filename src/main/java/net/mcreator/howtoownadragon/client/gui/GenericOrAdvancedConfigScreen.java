@@ -36,6 +36,11 @@ public class GenericOrAdvancedConfigScreen extends AbstractContainerScreen<Gener
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/generic_or_advanced_config.png");
 
 	@Override

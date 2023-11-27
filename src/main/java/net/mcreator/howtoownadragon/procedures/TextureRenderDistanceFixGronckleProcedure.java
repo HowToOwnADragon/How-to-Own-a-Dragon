@@ -1,23 +1,6 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
-
-import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.TagKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
-
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
 
 import javax.annotation.Nullable;
 

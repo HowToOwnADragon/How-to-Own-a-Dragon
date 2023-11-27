@@ -44,7 +44,7 @@
           "name": "button_hot_tourist_destinations",
           "text": "Hot Tourist Destinations",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenHotTouristDestinations"
           },
           "width": 150,
           "height": 20,

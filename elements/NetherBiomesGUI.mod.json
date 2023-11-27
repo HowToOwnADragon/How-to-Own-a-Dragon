@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 126,
-    "height": 80,
+    "width": 120,
+    "height": 120,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -13,70 +13,106 @@
       {
         "type": "label",
         "data": {
-          "name": "label_all_breedable_dragons",
+          "name": "label_all_nether_biomes",
           "text": {
-            "fixedValue": "All Breedable Dragons"
+            "fixedValue": "All Nether Biomes"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 158,
-          "y": 86
+          "x": 167,
+          "y": 65
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_gronckle",
+          "name": "label_crimson_forest",
           "text": {
-            "fixedValue": "Gronckle"
+            "fixedValue": "Crimson Forest"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "GronckleBreedReturn"
+            "name": "CrimsonForestReturn"
           },
-          "x": 192,
+          "x": 175,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_warped_forest",
+          "text": {
+            "fixedValue": "Warped Forest"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "WarpedForestReturn"
+          },
+          "x": 178,
           "y": 111
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_terrible_terror",
+          "name": "label_soul_sand_valley",
           "text": {
-            "fixedValue": "Terrible Terror"
+            "fixedValue": "Soul Sand Valley"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "TTBreedReturn"
+            "name": "SoulSandValleyReturn"
           },
-          "x": 173,
-          "y": 127
+          "x": 170,
+          "y": 129
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_deadly_nadder",
+          "name": "label_nether_waste",
           "text": {
-            "fixedValue": "Deadly Nadder"
+            "fixedValue": "Nether Wastes"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "NadderBreedReturn"
+            "name": "NetherWastesReturn"
           },
-          "x": 180,
-          "y": 143
+          "x": 179,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_basalt_deltas",
+          "text": {
+            "fixedValue": "Basalt Deltas"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "BasaltDeltasCheck"
+          },
+          "x": 179,
+          "y": 165
         }
       },
       {
@@ -86,10 +122,10 @@
           "image": "previous_page_arrow.png",
           "hoveredImage": "previous_page_arrow_when_hovered_over.png",
           "onClick": {
-            "name": "BackButtonHTOADAdvancementsGUI"
+            "name": "OpenNetherTabGroupGUI"
           },
           "x": 154,
-          "y": 137
+          "y": 157
         }
       }
     ],

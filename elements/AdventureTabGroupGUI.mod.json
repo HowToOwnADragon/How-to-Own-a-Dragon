@@ -44,7 +44,7 @@
           "name": "button_monsters_hunted",
           "text": "Monsters Hunted",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenMonstersHunted"
           },
           "width": 103,
           "height": 20,
