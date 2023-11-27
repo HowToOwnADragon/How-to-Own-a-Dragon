@@ -21,6 +21,7 @@ import net.mcreator.howtoownadragon.world.inventory.NotGrownFemaleGronckleGUIMen
 import net.mcreator.howtoownadragon.world.inventory.NetherTabGroupGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NetherBiomesGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NOTFINISHEDMenu;
+import net.mcreator.howtoownadragon.world.inventory.MonstersHuntedGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
@@ -73,4 +74,5 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<NetherTabGroupGUIMenu>> NETHER_TAB_GROUP_GUI = REGISTRY.register("nether_tab_group_gui", () -> IForgeMenuType.create(NetherTabGroupGUIMenu::new));
 	public static final RegistryObject<MenuType<NOTFINISHEDMenu>> NOTFINISHED = REGISTRY.register("notfinished", () -> IForgeMenuType.create(NOTFINISHEDMenu::new));
 	public static final RegistryObject<MenuType<NetherBiomesGUIMenu>> NETHER_BIOMES_GUI = REGISTRY.register("nether_biomes_gui", () -> IForgeMenuType.create(NetherBiomesGUIMenu::new));
+	public static final RegistryObject<MenuType<MonstersHuntedGUIMenu>> MONSTERS_HUNTED_GUI = REGISTRY.register("monsters_hunted_gui", () -> IForgeMenuType.create(MonstersHuntedGUIMenu::new));
 }
