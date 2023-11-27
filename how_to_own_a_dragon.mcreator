@@ -13944,6 +13944,86 @@
         ]
       },
       "path": "~/Achievements/TameAllDragons"
+    },
+    {
+      "name": "TextureRenderDistanceFixGronckle",
+      "type": "procedure",
+      "sortid": 1427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_render_distance_fix_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureRenderDistanceFixGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Gronckle/Tick"
+    },
+    {
+      "name": "TextureRenderDistanceFixNadder",
+      "type": "procedure",
+      "sortid": 1428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_render_distance_fix_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureRenderDistanceFixNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Deadly Nadder/TickUpdate"
+    },
+    {
+      "name": "RenderDistanceFixTT",
+      "type": "procedure",
+      "sortid": 1429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_distance_fix_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RenderDistanceFixTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Terrible Terror/Tick"
+    },
+    {
+      "name": "RenderDistanceFixChicken",
+      "type": "procedure",
+      "sortid": 1430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_distance_fix_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RenderDistanceFixChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Animals/Chicken/Tick"
     }
   ],
   "variable_elements": [
@@ -14339,6 +14419,10 @@
                   {
                     "name": "Dies",
                     "children": []
+                  },
+                  {
+                    "name": "Tick",
+                    "children": []
                   }
                 ]
               },
@@ -14726,6 +14810,10 @@
                   },
                   {
                     "name": "Dies",
+                    "children": []
+                  },
+                  {
+                    "name": "Tick",
                     "children": []
                   }
                 ]
