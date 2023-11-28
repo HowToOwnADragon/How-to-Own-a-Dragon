@@ -73,7 +73,7 @@
           "name": "button_adventure",
           "text": "Adventure",
           "onClick": {
-            "name": "OpenAdventureTabGroupGUI"
+            "name": "OpenNOTFINISHED"
           },
           "width": 72,
           "height": 20,
@@ -87,7 +87,7 @@
           "name": "button_husbandry",
           "text": "Husbandry",
           "onClick": {
-            "name": "OpenHusbandryTabGroupGUI"
+            "name": "OpenNOTFINISHED"
           },
           "width": 72,
           "height": 20,
