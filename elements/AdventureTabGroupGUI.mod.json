@@ -44,7 +44,7 @@
           "name": "button_monsters_hunted",
           "text": "Monsters Hunted",
           "onClick": {
-            "name": "OpenMonstersHunted"
+            "name": "OpenMHFirstPageGUI"
           },
           "width": 103,
           "height": 20,

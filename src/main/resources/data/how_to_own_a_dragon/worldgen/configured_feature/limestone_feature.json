@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:replace_single_block",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "minecraft:andesite"
+        },
+        "state": {
+          "Name": "how_to_own_a_dragon:limestone"
+        }
+      }
+    ]
+  }
+}

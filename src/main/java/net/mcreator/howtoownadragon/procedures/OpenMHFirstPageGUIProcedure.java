@@ -13,11 +13,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.MonstersHuntedGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHFirstPageGUIMenu;
 
 import io.netty.buffer.Unpooled;
 
-public class OpenMonstersHuntedProcedure {
+public class OpenMHFirstPageGUIProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -27,12 +27,12 @@ public class OpenMonstersHuntedProcedure {
 				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("MonstersHuntedGUI");
+						return Component.literal("MHFirstPageGUI");
 					}
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new MonstersHuntedGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new MHFirstPageGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

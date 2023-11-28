@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.AdventureTabGroupGUIMenu;
 import net.mcreator.howtoownadragon.procedures.OpenNOTFINISHEDProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenMonstersHuntedProcedure;
+import net.mcreator.howtoownadragon.procedures.OpenMHFirstPageGUIProcedure;
 import net.mcreator.howtoownadragon.procedures.BackButtonVanillaTabGroupGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -66,7 +66,7 @@ public class AdventureTabGroupGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			OpenMonstersHuntedProcedure.execute(world, x, y, z, entity);
+			OpenMHFirstPageGUIProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 

@@ -21,11 +21,11 @@ import net.mcreator.howtoownadragon.client.gui.NotGrownFemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NetherTabGroupGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NetherBiomesGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NOTFINISHEDScreen;
-import net.mcreator.howtoownadragon.client.gui.MonstersHuntedGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleTTGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MainPageInfoGronckleScreen;
+import net.mcreator.howtoownadragon.client.gui.MHFirstPageGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.LoveIsInTheAirScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
 import net.mcreator.howtoownadragon.client.gui.HusbandryTabGroupGUIScreen;
@@ -76,7 +76,7 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.NETHER_TAB_GROUP_GUI.get(), NetherTabGroupGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOTFINISHED.get(), NOTFINISHEDScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NETHER_BIOMES_GUI.get(), NetherBiomesGUIScreen::new);
-			MenuScreens.register(HowToOwnADragonModMenus.MONSTERS_HUNTED_GUI.get(), MonstersHuntedGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_FIRST_PAGE_GUI.get(), MHFirstPageGUIScreen::new);
 		});
 	}
 }
