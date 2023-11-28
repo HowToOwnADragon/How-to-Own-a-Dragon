@@ -31,14 +31,20 @@ public class MaleOnInitialEntitySpawnTTProcedure {
 			if (entity instanceof TTMaleEntity) {
 				NBTOnInitiallSpawnTTProcedure.execute(entity);
 				if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-					if (entity instanceof TTMaleEntity animatable)
-						animatable.setTexture("greentt");
+					if (!((entity instanceof TTMaleEntity animatable ? animatable.getTexture() : "null").equals("greentt"))) {
+						if (entity instanceof TTMaleEntity animatable)
+							animatable.setTexture("greentt");
+					}
 				} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-					if (entity instanceof TTMaleEntity animatable)
-						animatable.setTexture("pinktt");
+					if (!((entity instanceof TTMaleEntity animatable ? animatable.getTexture() : "null").equals("pinktt"))) {
+						if (entity instanceof TTMaleEntity animatable)
+							animatable.setTexture("pinktt");
+					}
 				} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-					if (entity instanceof TTMaleEntity animatable)
-						animatable.setTexture("turqtt");
+					if (!((entity instanceof TTMaleEntity animatable ? animatable.getTexture() : "null").equals("turqtt"))) {
+						if (entity instanceof TTMaleEntity animatable)
+							animatable.setTexture("turqtt");
+					}
 				} else {
 					RandomColorMaleTTProcedure.execute(world, x, y, z, entity);
 				}

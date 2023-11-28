@@ -13113,7 +13113,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ProgressiveAchievementsMenu.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     },
     {
       "name": "ProgressiveAdvancementsOnKeyPressed",
@@ -13149,7 +13149,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     },
     {
       "name": "ProgressiveAdvancements",
@@ -13163,7 +13163,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/ProgressiveAdvancementsMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     },
     {
       "name": "HTOADAdvancements",
@@ -13179,7 +13179,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/HTOADAdvancementsScreen.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs"
     },
     {
       "name": "OpenHTOADAdvancements",
@@ -13215,7 +13215,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     },
     {
       "name": "GottaCatchEmAll",
@@ -13231,7 +13231,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/GottaCatchEmAllButtonMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/GottaCatchEmAll"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll"
     },
     {
       "name": "OpenGottaCatchEmAll",
@@ -13267,7 +13267,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/GottaCatchEmAll"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll"
     },
     {
       "name": "NadderTameReturn",
@@ -13288,7 +13288,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
     },
     {
       "name": "GronckleTameReturn",
@@ -13309,7 +13309,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
     },
     {
       "name": "TTTameReturn",
@@ -13330,7 +13330,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/GottaCatchEmAll/TextDisplayProcedures"
     },
     {
       "name": "CongratsGUI",
@@ -13346,7 +13346,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/CongratsGUIButtonMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     },
     {
       "name": "BreedFirstDragon",
@@ -13410,7 +13410,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/LoveIsInTheAirMenu.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/BreedAllDragons"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons"
     },
     {
       "name": "OpenLoveIsInTheAir",
@@ -13446,7 +13446,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/BreedAllDragons"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons"
     },
     {
       "name": "NadderBreedReturn",
@@ -13467,7 +13467,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
     },
     {
       "name": "GronckleBreedReturn",
@@ -13488,7 +13488,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
     },
     {
       "name": "TTBreedReturn",
@@ -13509,7 +13509,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs/BreedAllDragons/TextDisplayProcedures"
     },
     {
       "name": "BackButtonMainAdvancementGUI",
@@ -13545,7 +13545,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs"
     },
     {
       "name": "BackButtonHTOADAdvancementsGUI",
@@ -13581,7 +13581,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/HTOADAdvancementGUIs"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/HTOADAdvancementGUIs"
     },
     {
       "name": "VanillaTabGroupsGUI",
@@ -13597,7 +13597,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/VanillaTabGroupsGUIButtonMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
     },
     {
       "name": "OpenVanillaAdvancements",
@@ -13633,7 +13633,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI"
     },
     {
       "name": "NothingsHere",
@@ -13649,7 +13649,7 @@
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NothingsHereScreen.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
     },
     {
       "name": "OpenNothingsHere",
@@ -13685,7 +13685,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
     },
     {
       "name": "BackButtonVanillaTabGroupGUI",
@@ -13721,7 +13721,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
     },
     {
       "name": "HusbandryTabGroupGUI",
@@ -13737,7 +13737,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/HusbandryTabGroupGUIButtonMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI"
     },
     {
       "name": "AdventureTabGroupGUI",
@@ -13753,7 +13753,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/AdventureTabGroupGUIMenu.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/AdventureTabGroupButtonGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI"
     },
     {
       "name": "NetherTabGroupGUI",
@@ -13769,7 +13769,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/NetherTabGroupGUIButtonMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI"
     },
     {
       "name": "OpenAdventureTabGroupGUI",
@@ -13805,7 +13805,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/AdventureTabGroupButtonGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI"
     },
     {
       "name": "OpenHusbandryTabGroupGUI",
@@ -13841,7 +13841,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI"
     },
     {
       "name": "OpenNetherTabGroupGUI",
@@ -13877,7 +13877,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI"
     },
     {
       "name": "NOTFINISHED",
@@ -13893,7 +13893,7 @@
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/NOTFINISHEDMenu.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
     },
     {
       "name": "OpenNOTFINISHED",
@@ -13929,7 +13929,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements"
     },
     {
       "name": "TameAllDragons",
@@ -13979,7 +13979,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations"
     },
     {
       "name": "NetherBiomesGUI",
@@ -13995,7 +13995,7 @@
           "src/main/java/net/mcreator/howtoownadragon/network/NetherBiomesGUIButtonMessage.java"
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations"
     },
     {
       "name": "CrimsonForestCheck",
@@ -14031,7 +14031,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
     },
     {
       "name": "CrimsonForestReturn",
@@ -14052,7 +14052,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
     },
     {
       "name": "WarpedForestCheck",
@@ -14088,7 +14088,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
     },
     {
       "name": "SoulSandValleyCheck",
@@ -14124,7 +14124,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
     },
     {
       "name": "NetherWastesCheck",
@@ -14160,7 +14160,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
     },
     {
       "name": "BasaltDeltaCheck",
@@ -14196,7 +14196,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeChecks"
     },
     {
       "name": "WarpedForestReturn",
@@ -14217,7 +14217,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
     },
     {
       "name": "SoulSandValleyReturn",
@@ -14238,7 +14238,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
     },
     {
       "name": "NetherWastesReturn",
@@ -14259,7 +14259,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
     },
     {
       "name": "BasaltDeltasCheck",
@@ -14280,22 +14280,7 @@
           }
         ]
       },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
-    },
-    {
-      "name": "MHFirstPageGUI",
-      "type": "gui",
-      "sortid": 1442,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mh_first_page_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MHFirstPageGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MHFirstPageGUIScreen.java"
-        ]
-      },
-      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted"
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/NetherTabGroupButtonGUI/HotTouristDestinations/TestDisplayProcedures/NetherBiomeReturns"
     },
     {
       "name": "OpenMHFirstPageGUI",
@@ -14332,6 +14317,109 @@
         ]
       },
       "path": "~/Achievements/AchievementGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted"
+    },
+    {
+      "name": "MHFirstPageGUI",
+      "type": "gui",
+      "sortid": 1442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mh_first_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MHFirstPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MHFirstPageGUIScreen.java"
+        ]
+      },
+      "path": "~/Achievements/AchievementGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted"
+    },
+    {
+      "name": "TextureRenderDistanceFixGronckle",
+      "type": "procedure",
+      "sortid": 1427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_render_distance_fix_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureRenderDistanceFixGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Gronckle/Tick"
+    },
+    {
+      "name": "RenderDistanceFixTT",
+      "type": "procedure",
+      "sortid": 1429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_distance_fix_tt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RenderDistanceFixTTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Terrible Terror/Tick"
+    },
+    {
+      "name": "TextureRenderDistanceFixNadder",
+      "type": "procedure",
+      "sortid": 1428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "texture_render_distance_fix_nadder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureRenderDistanceFixNadderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Deadly Nadder/TickUpdate"
+    },
+    {
+      "name": "RenderDistanceFixChicken",
+      "type": "procedure",
+      "sortid": 1430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_distance_fix_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RenderDistanceFixChickenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Animals/Chicken/Tick"
     }
   ],
   "variable_elements": [
@@ -14371,9 +14459,8 @@
       "block.how_to_own_a_dragon.reaper_arrow_trap": "Reaper Arrow Trap",
       "entity.how_to_own_a_dragon.baby_tt_female": "Female Terrible Terror",
       "gui.how_to_own_a_dragon.nether_tab_group_gui.label_nether_progressive_advancements": "Nether Progressive Advancements",
-      "gui.how_to_own_a_dragon.nether_biomes_gui.label_all_nether_biomes": "All Nether Biomes",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_wither_skeleton": "Wither Skeleton",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_all_nether_biomes": "All Nether Biomes",
       "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "item.how_to_own_a_dragon.night_fury_scale": "Night Fury Scale",
       "item.how_to_own_a_dragon.dragon_symbol": "Dragon Symbol",
@@ -14382,14 +14469,14 @@
       "item.how_to_own_a_dragon.sheep_spawn_egg": "Sheep Spawn Egg",
       "item.how_to_own_a_dragon.lens_dragon_info": "Dragon Lens",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
-      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "advancements.drinking_yaknog.descr": "Drink Yaknog",
+      "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "gui.how_to_own_a_dragon.gotta_catch_em_all.label_dragons": "All Tamable Dragons",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
-      "gui.how_to_own_a_dragon.nether_biomes_gui.label_crimson_forest": "Crimson Forest",
       "item.how_to_own_a_dragon.gronckle_scale": "Gronckle Scale",
+      "gui.how_to_own_a_dragon.nether_biomes_gui.label_crimson_forest": "Crimson Forest",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle",
       "item.how_to_own_a_dragon.gronckle_male_spawn_egg": "Male Gronckle Spawn Egg",
       "advancements.obtain_gronckle_iron.title": "Gronckle Smith.",
@@ -14408,7 +14495,6 @@
       "gui.how_to_own_a_dragon.htoad_advancements.button_gotta_catch_em_all": "Gotta Catch \u0027Em All",
       "advancements.breed_first_dragon.descr": "Breed dragons for the first time.",
       "gui.how_to_own_a_dragon.gotta_catch_em_all.label_terrible_terror": "Terrible Terror",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombie": "Zombie",
       "item.how_to_own_a_dragon.baby_yak_spawn_egg": "Baby Yak Spawn Egg",
       "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
@@ -14421,11 +14507,9 @@
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
       "advancements.first_tamed_dragon.descr": "Tame your first dragon",
       "item.how_to_own_a_dragon.spawn_egg_nadder": "Deadly Nadder",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_spider": "Spider",
       "gui.how_to_own_a_dragon.generic_or_advanced_config.button_advanced": "Advanced",
       "item.how_to_own_a_dragon.valkas_staff": "Valka Staff",
       "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombified_piglin": "Zombified Piglin",
       "item.how_to_own_a_dragon.adolescent_gronckle_female_spawn_egg": "Adolescent Female Gronckle Spawn Egg",
       "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
       "item.how_to_own_a_dragon.raw_yak_meat": "Raw Yak Meat",
@@ -14473,7 +14557,6 @@
       "item.how_to_own_a_dragon.juvenile_nadder_female_spawn_egg": "Juvenile Female Deadly Nadder Spawn Egg",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "entity.how_to_own_a_dragon.baby_gronckle_male": "Baby Male Gronckle",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_wither": "Wither",
       "item.how_to_own_a_dragon.adolescent_gronckle_male_spawn_egg": "Adolescent Male Gronckle Spawn Egg",
       "death.attack.gronckleattack": "",
       "advancements.first_tamed_dragon.title": "We, have dragons",
@@ -14493,7 +14576,6 @@
       "item_group.how_to_own_a_dragon.items": "Items",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "item.how_to_own_a_dragon.gronckle_iron_shovel": "Gronckle Iron Shovel",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_zoglin": "Zoglin",
       "gui.how_to_own_a_dragon.vanilla_tab_groups_gui.button_adventure": "Adventure",
       "item.how_to_own_a_dragon.night_fury_armor_leggings": "Night Fury Scale Leggings",
       "entity.how_to_own_a_dragon.nadder_female": "Female Deadly Nadder",
@@ -14564,7 +14646,6 @@
       "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_inventory": "Inventory",
       "block.how_to_own_a_dragon.deep_iron_rod": "Deep Iron Rod",
       "gui.how_to_own_a_dragon.male_ttgui.label_inventory": "Inventory",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombie_villager": "Zombie Villager",
       "entity.how_to_own_a_dragon.baby_tt_male": "Male Terrible Terror",
       "entity.how_to_own_a_dragon.baby_chicken": "Baby Chicken",
       "advancements.enter_hidden_world.descr": "Enter the Hidden World",
@@ -14593,7 +14674,6 @@
       "gui.how_to_own_a_dragon.htoad_advancements.label_htoad_advancements": "HTOAD Progressive Advancements",
       "block.how_to_own_a_dragon.rusty_dragon_proof_metal_bars": "Rusty Dragon Proof Metal Bars",
       "item.how_to_own_a_dragon.spawn_egg_tt": "Terrible Terror",
-      "gui.how_to_own_a_dragon.mh_first_page_gui.label_first_page": "First Page",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle": "Female Gronckle",
       "entity.how_to_own_a_dragon.sheep": "Sheep",
       "entity.how_to_own_a_dragon.gronckle_egg_entity": "Gronckle Egg"
