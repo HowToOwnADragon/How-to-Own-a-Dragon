@@ -21,7 +21,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 167,
+          "x": 170,
           "y": 65
         }
       },
@@ -39,7 +39,7 @@
           "displayCondition": {
             "name": "CrimsonForestReturn"
           },
-          "x": 175,
+          "x": 177,
           "y": 93
         }
       },
@@ -75,7 +75,7 @@
           "displayCondition": {
             "name": "SoulSandValleyReturn"
           },
-          "x": 170,
+          "x": 172,
           "y": 129
         }
       },
@@ -111,7 +111,7 @@
           "displayCondition": {
             "name": "BasaltDeltasCheck"
           },
-          "x": 179,
+          "x": 181,
           "y": 165
         }
       },

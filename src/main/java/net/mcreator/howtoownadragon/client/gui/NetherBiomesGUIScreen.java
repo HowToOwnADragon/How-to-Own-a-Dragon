@@ -80,17 +80,17 @@ public class NetherBiomesGUIScreen extends AbstractContainerScreen<NetherBiomesG
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_all_nether_biomes"), 13, 5, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_all_nether_biomes"), 16, 5, -12829636);
 		if (CrimsonForestReturnProcedure.execute(entity))
-			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_crimson_forest"), 21, 33, -12829636);
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_crimson_forest"), 23, 33, -12829636);
 		if (WarpedForestReturnProcedure.execute(entity))
 			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_warped_forest"), 24, 51, -12829636);
 		if (SoulSandValleyReturnProcedure.execute(entity))
-			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_soul_sand_valley"), 16, 69, -12829636);
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_soul_sand_valley"), 18, 69, -12829636);
 		if (NetherWastesReturnProcedure.execute(entity))
 			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_nether_waste"), 25, 87, -12829636);
 		if (BasaltDeltasCheckProcedure.execute(entity))
-			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas"), 25, 105, -12829636);
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas"), 27, 105, -12829636);
 	}
 
 	@Override

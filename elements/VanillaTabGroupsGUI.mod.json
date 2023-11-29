@@ -73,7 +73,7 @@
           "name": "button_adventure",
           "text": "Adventure",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenAdventureTabGroupGUI"
           },
           "width": 72,
           "height": 20,

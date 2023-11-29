@@ -21,11 +21,16 @@ import net.mcreator.howtoownadragon.world.inventory.NotGrownFemaleGronckleGUIMen
 import net.mcreator.howtoownadragon.world.inventory.NetherTabGroupGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NetherBiomesGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.NOTFINISHEDMenu;
-import net.mcreator.howtoownadragon.world.inventory.MonstersHuntedGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleTTGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleNadderGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.MainPageInfoGronckleMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHThirdPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHSixthPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHSecondPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHFourthPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHFirstPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.MHFifthPageGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.LoveIsInTheAirMenu;
 import net.mcreator.howtoownadragon.world.inventory.Incubator1GUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.HusbandryTabGroupGUIMenu;
@@ -74,5 +79,10 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<NetherTabGroupGUIMenu>> NETHER_TAB_GROUP_GUI = REGISTRY.register("nether_tab_group_gui", () -> IForgeMenuType.create(NetherTabGroupGUIMenu::new));
 	public static final RegistryObject<MenuType<NOTFINISHEDMenu>> NOTFINISHED = REGISTRY.register("notfinished", () -> IForgeMenuType.create(NOTFINISHEDMenu::new));
 	public static final RegistryObject<MenuType<NetherBiomesGUIMenu>> NETHER_BIOMES_GUI = REGISTRY.register("nether_biomes_gui", () -> IForgeMenuType.create(NetherBiomesGUIMenu::new));
-	public static final RegistryObject<MenuType<MonstersHuntedGUIMenu>> MONSTERS_HUNTED_GUI = REGISTRY.register("monsters_hunted_gui", () -> IForgeMenuType.create(MonstersHuntedGUIMenu::new));
+	public static final RegistryObject<MenuType<MHFirstPageGUIMenu>> MH_FIRST_PAGE_GUI = REGISTRY.register("mh_first_page_gui", () -> IForgeMenuType.create(MHFirstPageGUIMenu::new));
+	public static final RegistryObject<MenuType<MHSecondPageGUIMenu>> MH_SECOND_PAGE_GUI = REGISTRY.register("mh_second_page_gui", () -> IForgeMenuType.create(MHSecondPageGUIMenu::new));
+	public static final RegistryObject<MenuType<MHThirdPageGUIMenu>> MH_THIRD_PAGE_GUI = REGISTRY.register("mh_third_page_gui", () -> IForgeMenuType.create(MHThirdPageGUIMenu::new));
+	public static final RegistryObject<MenuType<MHFourthPageGUIMenu>> MH_FOURTH_PAGE_GUI = REGISTRY.register("mh_fourth_page_gui", () -> IForgeMenuType.create(MHFourthPageGUIMenu::new));
+	public static final RegistryObject<MenuType<MHFifthPageGUIMenu>> MH_FIFTH_PAGE_GUI = REGISTRY.register("mh_fifth_page_gui", () -> IForgeMenuType.create(MHFifthPageGUIMenu::new));
+	public static final RegistryObject<MenuType<MHSixthPageGUIMenu>> MH_SIXTH_PAGE_GUI = REGISTRY.register("mh_sixth_page_gui", () -> IForgeMenuType.create(MHSixthPageGUIMenu::new));
 }

@@ -11,43 +11,40 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.world.inventory.VanillaTabGroupsGUIMenu;
-import net.mcreator.howtoownadragon.procedures.OpenNothingsHereProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenNetherTabGroupGUIProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenNOTFINISHEDProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenAdventureTabGroupGUIProcedure;
-import net.mcreator.howtoownadragon.procedures.BackButtonMainAdvancementGUIProcedure;
+import net.mcreator.howtoownadragon.world.inventory.MHFourthPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.OpenMHThirdPageGUIProcedure;
+import net.mcreator.howtoownadragon.procedures.OpenMHFifthPageGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class VanillaTabGroupsGUIButtonMessage {
+public class MHFourthPageGUIButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public VanillaTabGroupsGUIButtonMessage(FriendlyByteBuf buffer) {
+	public MHFourthPageGUIButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public VanillaTabGroupsGUIButtonMessage(int buttonID, int x, int y, int z) {
+	public MHFourthPageGUIButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(VanillaTabGroupsGUIButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(MHFourthPageGUIButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(VanillaTabGroupsGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(MHFourthPageGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -62,38 +59,22 @@ public class VanillaTabGroupsGUIButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = VanillaTabGroupsGUIMenu.guistate;
+		HashMap guistate = MHFourthPageGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			OpenNothingsHereProcedure.execute(world, x, y, z, entity);
+			OpenMHThirdPageGUIProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			OpenNetherTabGroupGUIProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 2) {
-
-			OpenNothingsHereProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 3) {
-
-			OpenAdventureTabGroupGUIProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 4) {
-
-			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 5) {
-
-			BackButtonMainAdvancementGUIProcedure.execute(world, x, y, z, entity);
+			OpenMHFifthPageGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		HowToOwnADragonMod.addNetworkMessage(VanillaTabGroupsGUIButtonMessage.class, VanillaTabGroupsGUIButtonMessage::buffer, VanillaTabGroupsGUIButtonMessage::new, VanillaTabGroupsGUIButtonMessage::handler);
+		HowToOwnADragonMod.addNetworkMessage(MHFourthPageGUIButtonMessage.class, MHFourthPageGUIButtonMessage::buffer, MHFourthPageGUIButtonMessage::new, MHFourthPageGUIButtonMessage::handler);
 	}
 }
