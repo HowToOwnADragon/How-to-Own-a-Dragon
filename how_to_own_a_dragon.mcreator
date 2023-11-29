@@ -14681,6 +14681,26 @@
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted"
+    },
+    {
+      "name": "RenderDistanceFixSheep",
+      "type": "procedure",
+      "sortid": 1454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_distance_fix_sheep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RenderDistanceFixSheepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Animals/Sheep/Tick"
     }
   ],
   "variable_elements": [
@@ -14701,15 +14721,15 @@
       "gui.how_to_own_a_dragon.nether_tab_group_gui.button_hot_tourist_destinations": "Hot Tourist Destinations",
       "block.how_to_own_a_dragon.limestone": "Limestone",
       "gui.how_to_own_a_dragon.love_is_in_the_air.label_gronckle": "Gronckle",
-      "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.baby_nadder_male_spawn_egg": "Baby Male Deadly Nadder Spawn Egg",
+      "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_inventory": "Inventory",
       "item.how_to_own_a_dragon.nadder_arrow": "Deadly Nadder Arrow",
       "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas": "Basalt Deltas",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_piglin": "Piglin|",
-      "entity.how_to_own_a_dragon.juvenile_tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.progressive_achievements.button_htoad_advancements": "HTOAD Advancements",
+      "entity.how_to_own_a_dragon.juvenile_tt_male": "Male Terrible Terror",
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
       "gui.how_to_own_a_dragon.adventure_tab_group_gui.button_adventuring_time": "Adventuring Time",
       "gui.how_to_own_a_dragon.adventure_tab_group_gui.button_monsters_hunted": "Monsters Hunted",
@@ -15512,6 +15532,10 @@
                   },
                   {
                     "name": "Entity",
+                    "children": []
+                  },
+                  {
+                    "name": "Tick",
                     "children": []
                   }
                 ]
