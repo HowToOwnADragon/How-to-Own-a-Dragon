@@ -1,0 +1,64 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 196,
+    "height": 45,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nether_progressive_advancements",
+          "text": {
+            "fixedValue": "Nether Progressive Advancements"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 103
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "BackButtonVanillaTabGroupGUI"
+          },
+          "x": 116,
+          "y": 122
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_hot_tourist_destinations",
+          "text": "Hot Tourist Destinations",
+          "onClick": {
+            "name": "OpenHotTouristDestinations"
+          },
+          "width": 150,
+          "height": 20,
+          "x": 139,
+          "y": 118
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

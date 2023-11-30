@@ -11,22 +11,41 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.howtoownadragon.client.gui.VanillaTabGroupsGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ProgressiveAchievementsScreen;
+import net.mcreator.howtoownadragon.client.gui.NothingsHereScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownMaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownMaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownFemaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownFemaleGronckleGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.NetherTabGroupGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.NetherBiomesGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.NOTFINISHEDScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleTTGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.MainPageInfoGronckleScreen;
+import net.mcreator.howtoownadragon.client.gui.MHThirdPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.MHSixthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.MHSecondPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.MHFourthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.MHFirstPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.MHFifthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.LoveIsInTheAirScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
+import net.mcreator.howtoownadragon.client.gui.HusbandryTabGroupGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.HTOADAdvancementsScreen;
 import net.mcreator.howtoownadragon.client.gui.GronkleIronGUIMaleScreen;
 import net.mcreator.howtoownadragon.client.gui.GronckleIronGUIFemaleScreen;
+import net.mcreator.howtoownadragon.client.gui.GottaCatchEmAllScreen;
+import net.mcreator.howtoownadragon.client.gui.GenericOrAdvancedConfigScreen;
 import net.mcreator.howtoownadragon.client.gui.FoodPage1InfoGronckleScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleTTGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.DragonEyeInputScreen;
+import net.mcreator.howtoownadragon.client.gui.CongratsGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.AdventureTabGroupGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HowToOwnADragonModScreens {
@@ -49,6 +68,25 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.MALE_NADDER_GUI.get(), MaleNadderGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_NADDER_GUI.get(), NotGrownFemaleNadderGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_MALE_NADDER_GUI.get(), NotGrownMaleNadderGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GENERIC_OR_ADVANCED_CONFIG.get(), GenericOrAdvancedConfigScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.PROGRESSIVE_ACHIEVEMENTS.get(), ProgressiveAchievementsScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.HTOAD_ADVANCEMENTS.get(), HTOADAdvancementsScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GOTTA_CATCH_EM_ALL.get(), GottaCatchEmAllScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.CONGRATS_GUI.get(), CongratsGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.LOVE_IS_IN_THE_AIR.get(), LoveIsInTheAirScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.VANILLA_TAB_GROUPS_GUI.get(), VanillaTabGroupsGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.NOTHINGS_HERE.get(), NothingsHereScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.HUSBANDRY_TAB_GROUP_GUI.get(), HusbandryTabGroupGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.ADVENTURE_TAB_GROUP_GUI.get(), AdventureTabGroupGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.NETHER_TAB_GROUP_GUI.get(), NetherTabGroupGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.NOTFINISHED.get(), NOTFINISHEDScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.NETHER_BIOMES_GUI.get(), NetherBiomesGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_FIRST_PAGE_GUI.get(), MHFirstPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_SECOND_PAGE_GUI.get(), MHSecondPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_THIRD_PAGE_GUI.get(), MHThirdPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_FOURTH_PAGE_GUI.get(), MHFourthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_FIFTH_PAGE_GUI.get(), MHFifthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.MH_SIXTH_PAGE_GUI.get(), MHSixthPageGUIScreen::new);
 		});
 	}
 }

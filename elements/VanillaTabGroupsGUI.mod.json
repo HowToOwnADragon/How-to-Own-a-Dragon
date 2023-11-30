@@ -1,0 +1,120 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 140,
+    "height": 155,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_all_vanilla_tab_groups",
+          "text": {
+            "fixedValue": "All Vanilla Tab Groups"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_minecraft",
+          "text": "Minecraft",
+          "onClick": {
+            "name": "OpenNothingsHere"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 176,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nether",
+          "text": "Nether",
+          "onClick": {
+            "name": "OpenNetherTabGroupGUI"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 184,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_end",
+          "text": "End",
+          "onClick": {
+            "name": "OpenNothingsHere"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 191,
+          "y": 120
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_adventure",
+          "text": "Adventure",
+          "onClick": {
+            "name": "OpenAdventureTabGroupGUI"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 176,
+          "y": 146
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_husbandry",
+          "text": "Husbandry",
+          "onClick": {
+            "name": "OpenNOTFINISHED"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 176,
+          "y": 172
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "BackButtonMainAdvancementGUI"
+          },
+          "x": 146,
+          "y": 175
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

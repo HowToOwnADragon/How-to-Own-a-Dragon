@@ -6,7 +6,6 @@ public class NBTDataSpawnNadderProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.getPersistentData().putBoolean("nadderfeedcooldown", false);
 		entity.getPersistentData().putBoolean("naddersaddle", false);
 	}
 }

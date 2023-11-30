@@ -11,11 +11,11 @@ public class OnInitialEntitySpawnSheepProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (Mth.nextInt(RandomSource.create(), 1, 20) == 1) {
+		if (Mth.nextInt(RandomSource.create(), 1, 20) <= 1) {
 			if (entity instanceof SheepEntity animatable)
 				animatable.setTexture("sheepblack");
 			entity.getPersistentData().putString("sheepcolor", "black");
-		} else if (Mth.nextInt(RandomSource.create(), 1, 20) >= 2) {
+		} else if (Mth.nextInt(RandomSource.create(), 1, 20) > 1) {
 			if (entity instanceof SheepEntity animatable)
 				animatable.setTexture("sheep");
 			entity.getPersistentData().putString("sheepcolor", "white");

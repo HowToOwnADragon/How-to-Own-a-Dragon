@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Obtain Gronckle Iron",
+    "achievementName": "Gronckle Smith.",
     "achievementDescription": "Obtain Gronckle Iron",
     "achievementIcon": {
       "value": "CUSTOM:GronckleIron"
@@ -13,7 +13,19 @@
     "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
-    "rewardRecipes": [],
+    "rewardRecipes": [
+      "GronckleIronPickaxeRecipe",
+      "GronckleIronSwordRecipeMiddle",
+      "GronckleIronSwordRecipeLeft",
+      "GronckleIronSwordRecipeRight",
+      "GronckleIronAxeRecipeRight",
+      "GronckleIronAxeRecipeLeft",
+      "GronckleIronShovelRecipeMiddle",
+      "GronckleIronShovelRecipeLeft",
+      "GronckleIronShovelRecipeRight",
+      "GronckleIronHoeRecipeRight",
+      "GronckleIronHoeRecipeLeft"
+    ],
     "rewardFunction": "No function",
     "rewardXP": 25,
     "achievementType": "task",

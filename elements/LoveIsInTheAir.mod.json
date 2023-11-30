@@ -1,0 +1,104 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 126,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_all_breedable_dragons",
+          "text": {
+            "fixedValue": "All Breedable Dragons"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gronckle",
+          "text": {
+            "fixedValue": "Gronckle"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "GronckleBreedReturn"
+          },
+          "x": 192,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_terrible_terror",
+          "text": {
+            "fixedValue": "Terrible Terror"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "TTBreedReturn"
+          },
+          "x": 173,
+          "y": 127
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_deadly_nadder",
+          "text": {
+            "fixedValue": "Deadly Nadder"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "NadderBreedReturn"
+          },
+          "x": 180,
+          "y": 143
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "BackButtonHTOADAdvancementsGUI"
+          },
+          "x": 154,
+          "y": 137
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

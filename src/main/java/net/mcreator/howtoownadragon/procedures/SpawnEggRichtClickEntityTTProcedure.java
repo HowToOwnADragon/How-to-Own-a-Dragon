@@ -38,29 +38,28 @@ public class SpawnEggRichtClickEntityTTProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-				} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-				}
-				return false;
-			}
-		}.checkGamemode(sourceentity) && entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
+		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:tt")))) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SPAWN_EGG_TT.get()) {
 				SpawnBabyProcedureTTProcedure.execute(world, x, y, z, entity);
-			}
-		} else {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SPAWN_EGG_TT.get()) {
-				if (sourceentity instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SPAWN_EGG_TT.get());
-					_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+				if (new Object() {
+					public boolean checkGamemode(Entity _ent) {
+						if (_ent instanceof ServerPlayer _serverPlayer) {
+							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+						} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
+							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+						}
+						return false;
+					}
+				}.checkGamemode(sourceentity)) {
+					if (sourceentity instanceof LivingEntity _entity) {
+						ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SPAWN_EGG_TT.get());
+						_setstack.setCount((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
 				}
-				SpawnBabyProcedureTTProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

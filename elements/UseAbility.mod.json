@@ -3,7 +3,7 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "R",
-    "keyBindingName": "Activate Ability(It's ALT+)",
+    "keyBindingName": "Activate Ability",
     "keyBindingCategoryKey": "htoad",
     "onKeyPressed": {
       "name": "UseAbilityOnKeyPressed"

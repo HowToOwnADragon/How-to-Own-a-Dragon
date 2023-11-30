@@ -171,11 +171,11 @@ public class HowToOwnADragonModEntities {
 	public static final RegistryObject<EntityType<SheepEntity>> SHEEP = register("sheep",
 			EntityType.Builder.<SheepEntity>of(SheepEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SheepEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.7f, 1.1f));
 	public static final RegistryObject<EntityType<BabySheepEntity>> BABY_SHEEP = register("baby_sheep",
 			EntityType.Builder.<BabySheepEntity>of(BabySheepEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabySheepEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.5f, 0.7f));
 	public static final RegistryObject<EntityType<AEntity>> A = register("a",
 			EntityType.Builder.<AEntity>of(AEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AEntity::new)
 

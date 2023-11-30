@@ -98,7 +98,7 @@ public class DragonSpawnCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher()
-				.register(Commands.literal("spawndragon").requires(s -> s.hasPermission(4)).then(Commands.literal("Gronckle").then(Commands.literal("male").then(Commands.literal("baby").then(Commands.literal("pink").executes(arguments -> {
+				.register(Commands.literal("dragonspawn").requires(s -> s.hasPermission(4)).then(Commands.literal("Gronckle").then(Commands.literal("male").then(Commands.literal("baby").then(Commands.literal("pink").executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();

@@ -57,7 +57,8 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.howtoownadragon.procedures.ColorTickRateNadderProcedure;
+import net.mcreator.howtoownadragon.procedures.NotGrownNadderDiesProcedureProcedure;
+import net.mcreator.howtoownadragon.procedures.AdolescentColorSpawnNadderProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 
 import javax.annotation.Nullable;
@@ -171,9 +172,15 @@ public class AdolescentNadderFemaleEntity extends TamableAnimal implements GeoEn
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NotGrownNadderDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		ColorTickRateNadderProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
+		AdolescentColorSpawnNadderProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 

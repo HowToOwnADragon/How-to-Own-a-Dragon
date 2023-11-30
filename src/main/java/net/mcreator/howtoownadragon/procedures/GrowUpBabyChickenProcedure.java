@@ -27,14 +27,16 @@ public class GrowUpBabyChickenProcedure {
 						"/execute at @e[type=how_to_own_a_dragon:baby_chicken, sort= nearest, limit= 1] run summon how_to_own_a_dragon:chicken ~ ~ ~");
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
-			HowToOwnADragonMod.queueServerWork(1, () -> {
+			HowToOwnADragonMod.queueServerWork(2, () -> {
 				((Entity) world.getEntitiesOfClass(ChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("chickencolor", (entity.getPersistentData().getString("chickencolor")));
-				if (!entity.level.isClientSide())
-					entity.discard();
+				HowToOwnADragonMod.queueServerWork(1, () -> {
+					if (!entity.level.isClientSide())
+						entity.discard();
+				});
 			});
 		}
 	}

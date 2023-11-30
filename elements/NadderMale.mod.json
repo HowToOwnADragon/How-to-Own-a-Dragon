@@ -99,6 +99,9 @@
     "stepSound": {
       "value": ""
     },
+    "whenMobDies": {
+      "name": "GrownNadderDiesProcedure"
+    },
     "onMobTickUpdate": {
       "name": "NadderFlyingTickUpdate"
     },

@@ -7,7 +7,7 @@
     "mobModelTexture": "greentt.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 0.175
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
@@ -103,7 +103,7 @@
       "name": "NotGrownTTDiesProcedure"
     },
     "onInitialSpawn": {
-      "name": "ColorTickRateTT"
+      "name": "BabyColorSpawnTT"
     },
     "hasAI": true,
     "aiBase": "(none)",

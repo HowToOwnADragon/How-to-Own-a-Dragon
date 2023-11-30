@@ -1,0 +1,30 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GronckleIronSword"
+      },
+      {
+        "value": "CUSTOM:GronckleIronPickaxe"
+      },
+      {
+        "value": "CUSTOM:GronckleIronShovel"
+      },
+      {
+        "value": "CUSTOM:GronckleIronAxe"
+      },
+      {
+        "value": "CUSTOM:GronckleIronHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "gronckle_tools",
+    "namespace": "mod"
+  }
+}

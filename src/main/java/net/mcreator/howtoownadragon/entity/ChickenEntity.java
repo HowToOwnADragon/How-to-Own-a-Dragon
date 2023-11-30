@@ -154,13 +154,13 @@ public class ChickenEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		ChickenDiesProceduresProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		ChickenDiesProceduresProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		TextureChickenProcedure.execute(world, this);
+		TextureChickenProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 

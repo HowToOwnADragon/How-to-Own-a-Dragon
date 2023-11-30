@@ -6,7 +6,6 @@ public class NBTDataSpawnGronckleProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.getPersistentData().putBoolean("groncklefeedcooldown", false);
 		entity.getPersistentData().putBoolean("groncklesaddle", false);
 	}
 }

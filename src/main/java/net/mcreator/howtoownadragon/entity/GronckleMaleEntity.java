@@ -86,6 +86,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
+import net.mcreator.howtoownadragon.procedures.GrownGronckleDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleMaleOnInitialEntitySpawnProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
@@ -336,9 +337,15 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		GrownGronckleDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		GronckleMaleOnInitialEntitySpawnProcedure.execute(this);
+		GronckleMaleOnInitialEntitySpawnProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
 
@@ -410,7 +417,6 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 			}
 					return InteractionResult.sidedSuccess(this.level.isClientSide());
 		}
-		
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
 			retval = super.mobInteract(sourceentity, hand);
@@ -456,13 +462,8 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		GronckleFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
-
-	@Override
-	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
-	}
-
-		@Override
+	
+			@Override
 	public void travel(Vec3 dir) {
 		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
 		if (this.isVehicle()) {
@@ -492,7 +493,12 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		this.maxUpStep = 0.5F;
 		super.travel(dir);
 	}
-	
+
+	@Override
+	public EntityDimensions getDimensions(Pose p_33597_) {
+		return super.getDimensions(p_33597_).scale((float) 1);
+	}
+
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
 		GronckleMaleEntity retval = HowToOwnADragonModEntities.GRONCKLE_MALE.get().create(serverWorld);

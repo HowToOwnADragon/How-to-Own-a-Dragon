@@ -1,0 +1,92 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 205,
+    "height": 95,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_vanilla_progressive_advancements",
+          "text": {
+            "fixedValue": "Husbandry Progressive Advancements"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 118,
+          "y": 78
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "BackButtonVanillaTabGroupGUI"
+          },
+          "x": 121,
+          "y": 146
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_two_by_two",
+          "text": "Two by Two",
+          "onClick": {
+            "name": "OpenNOTFINISHED"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 174,
+          "y": 96
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_complete_catalog",
+          "text": "A Complete Catalog",
+          "onClick": {
+            "name": "OpenNOTFINISHED"
+          },
+          "width": 119,
+          "height": 20,
+          "x": 154,
+          "y": 119
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a_balanced_diet",
+          "text": "A Balanced Diet",
+          "onClick": {
+            "name": "OpenNOTFINISHED"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 162,
+          "y": 143
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_generic",
+          "text": "Generic",
+          "width": 61,
+          "height": 20,
+          "x": 129,
+          "y": 153
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_advanced",
+          "text": "Advanced",
+          "width": 67,
+          "height": 20,
+          "x": 228,
+          "y": 153
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "whattypeofconfigdoyouwant.png",
+          "use1Xscale": true,
+          "x": 130,
+          "y": 41
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "genericconfigexplanation.png",
+          "use1Xscale": true,
+          "x": 129,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "advancedconfigexplanation.png",
+          "use1Xscale": true,
+          "x": 129,
+          "y": 77
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "confignote.png",
+          "use1Xscale": true,
+          "x": 128,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_example_generic",
+          "text": "Example Generic",
+          "width": 103,
+          "height": 20,
+          "x": 162,
+          "y": 104
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_example_advanced",
+          "text": "Example Advanced",
+          "width": 108,
+          "height": 20,
+          "x": 159,
+          "y": 127
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
