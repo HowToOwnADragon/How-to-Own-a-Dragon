@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceLocation;
@@ -27,14 +28,14 @@ import javax.annotation.Nullable;
 public class RenderDistanceFixTTProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
-		execute(event, event.getEntity());
+		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:tt")))) {
@@ -54,6 +55,11 @@ public class RenderDistanceFixTTProcedure {
 						if (entity instanceof TTMaleEntity animatable)
 							animatable.setTexture("turqtt");
 					}
+				} else {
+					if (!(entity.getPersistentData().getBoolean("ttinlove") == true)) {
+						NBTOnInitiallSpawnTTProcedure.execute(entity);
+						MaleOnInitialEntitySpawnTTProcedure.execute(world, x, y, z, entity);
+					}
 				}
 			} else {
 				if (entity instanceof TTFemaleEntity) {
@@ -71,6 +77,11 @@ public class RenderDistanceFixTTProcedure {
 						if (!((entity instanceof TTFemaleEntity animatable ? animatable.getTexture() : "null").equals("turqtt"))) {
 							if (entity instanceof TTFemaleEntity animatable)
 								animatable.setTexture("turqtt");
+						}
+					} else {
+						if (!(entity.getPersistentData().getBoolean("ttinlove") == true)) {
+							NBTOnInitiallSpawnTTProcedure.execute(entity);
+							FemaleOnInitialEntitySpawnTTProcedure.execute(world, x, y, z, entity);
 						}
 					}
 				} else {

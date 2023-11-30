@@ -43,147 +43,159 @@ public class TextureRenderDistanceFixNadderProcedure {
 			return;
 		HowToOwnADragonMod.queueServerWork(1, () -> {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:nadder")))) {
-				if (entity instanceof NadderMaleEntity) {
-					if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-						if (!((entity instanceof NadderMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-							if (entity instanceof NadderMaleEntity animatable)
-								animatable.setTexture("rednadder");
-						}
-					} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-						if (!((entity instanceof NadderMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-							if (entity instanceof NadderMaleEntity animatable)
-								animatable.setTexture("purplenadder");
-						}
-					} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-						if (!((entity instanceof NadderMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-							if (entity instanceof NadderMaleEntity animatable)
-								animatable.setTexture("stormfly");
-						}
-					}
-				} else {
-					if (entity instanceof NadderFemaleEntity) {
+				if (!(entity.getPersistentData().getBoolean("naddersaddle") == true)) {
+					if (entity instanceof NadderMaleEntity) {
 						if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-							if (!((entity instanceof NadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-								if (entity instanceof NadderFemaleEntity animatable)
+							if (!((entity instanceof NadderMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+								if (entity instanceof NadderMaleEntity animatable)
 									animatable.setTexture("rednadder");
 							}
 						} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-							if (!((entity instanceof NadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-								if (entity instanceof NadderFemaleEntity animatable)
+							if (!((entity instanceof NadderMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+								if (entity instanceof NadderMaleEntity animatable)
 									animatable.setTexture("purplenadder");
 							}
 						} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-							if (!((entity instanceof NadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-								if (entity instanceof NadderFemaleEntity animatable)
+							if (!((entity instanceof NadderMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+								if (entity instanceof NadderMaleEntity animatable)
 									animatable.setTexture("stormfly");
+							}
+						} else {
+							if (!(entity.getPersistentData().getBoolean("naddersaddle") == true)) {
+								NBTDataSpawnNadderProcedure.execute(entity);
+								MaleOnInitialEntitySpawnNadderProcedure.execute(world, entity);
 							}
 						}
 					} else {
-						if (entity instanceof AdolescentNadderMaleEntity) {
+						if (entity instanceof NadderFemaleEntity) {
 							if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-								if (!((entity instanceof AdolescentNadderMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-									if (entity instanceof AdolescentNadderMaleEntity animatable)
+								if (!((entity instanceof NadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+									if (entity instanceof NadderFemaleEntity animatable)
 										animatable.setTexture("rednadder");
 								}
 							} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-								if (!((entity instanceof AdolescentNadderMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-									if (entity instanceof AdolescentNadderMaleEntity animatable)
+								if (!((entity instanceof NadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+									if (entity instanceof NadderFemaleEntity animatable)
 										animatable.setTexture("purplenadder");
 								}
 							} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-								if (!((entity instanceof AdolescentNadderMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-									if (entity instanceof AdolescentNadderMaleEntity animatable)
+								if (!((entity instanceof NadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+									if (entity instanceof NadderFemaleEntity animatable)
 										animatable.setTexture("stormfly");
+								}
+							} else {
+								if (!(entity.getPersistentData().getBoolean("naddersaddle") == true)) {
+									NBTDataSpawnNadderProcedure.execute(entity);
+									FemaleOnInitialEntitySpawnNadderProcedure.execute(world, entity);
 								}
 							}
 						} else {
-							if (entity instanceof AdolescentNadderFemaleEntity) {
+							if (entity instanceof AdolescentNadderMaleEntity) {
 								if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-									if (!((entity instanceof AdolescentNadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-										if (entity instanceof AdolescentNadderFemaleEntity animatable)
+									if (!((entity instanceof AdolescentNadderMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+										if (entity instanceof AdolescentNadderMaleEntity animatable)
 											animatable.setTexture("rednadder");
 									}
 								} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-									if (!((entity instanceof AdolescentNadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-										if (entity instanceof AdolescentNadderFemaleEntity animatable)
+									if (!((entity instanceof AdolescentNadderMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+										if (entity instanceof AdolescentNadderMaleEntity animatable)
 											animatable.setTexture("purplenadder");
 									}
 								} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-									if (!((entity instanceof AdolescentNadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-										if (entity instanceof AdolescentNadderFemaleEntity animatable)
+									if (!((entity instanceof AdolescentNadderMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+										if (entity instanceof AdolescentNadderMaleEntity animatable)
 											animatable.setTexture("stormfly");
 									}
 								}
 							} else {
-								if (entity instanceof JuvenileNadderMaleEntity) {
+								if (entity instanceof AdolescentNadderFemaleEntity) {
 									if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-										if (!((entity instanceof JuvenileGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-											if (entity instanceof JuvenileNadderMaleEntity animatable)
+										if (!((entity instanceof AdolescentNadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+											if (entity instanceof AdolescentNadderFemaleEntity animatable)
 												animatable.setTexture("rednadder");
 										}
 									} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-										if (!((entity instanceof JuvenileGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-											if (entity instanceof JuvenileNadderMaleEntity animatable)
+										if (!((entity instanceof AdolescentNadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+											if (entity instanceof AdolescentNadderFemaleEntity animatable)
 												animatable.setTexture("purplenadder");
 										}
 									} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-										if (!((entity instanceof JuvenileGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-											if (entity instanceof JuvenileNadderMaleEntity animatable)
+										if (!((entity instanceof AdolescentNadderFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+											if (entity instanceof AdolescentNadderFemaleEntity animatable)
 												animatable.setTexture("stormfly");
 										}
 									}
 								} else {
-									if (entity instanceof JuvenileNadderFemaleEntity) {
+									if (entity instanceof JuvenileNadderMaleEntity) {
 										if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-											if (!((entity instanceof JuvenileGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-												if (entity instanceof JuvenileNadderFemaleEntity animatable)
+											if (!((entity instanceof JuvenileGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+												if (entity instanceof JuvenileNadderMaleEntity animatable)
 													animatable.setTexture("rednadder");
 											}
 										} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-											if (!((entity instanceof JuvenileGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-												if (entity instanceof JuvenileNadderFemaleEntity animatable)
+											if (!((entity instanceof JuvenileGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+												if (entity instanceof JuvenileNadderMaleEntity animatable)
 													animatable.setTexture("purplenadder");
 											}
 										} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-											if (!((entity instanceof JuvenileGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-												if (entity instanceof JuvenileNadderFemaleEntity animatable)
+											if (!((entity instanceof JuvenileGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+												if (entity instanceof JuvenileNadderMaleEntity animatable)
 													animatable.setTexture("stormfly");
 											}
 										}
 									} else {
-										if (entity instanceof BabyNadderMaleEntity) {
+										if (entity instanceof JuvenileNadderFemaleEntity) {
 											if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-												if (!((entity instanceof BabyGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-													if (entity instanceof BabyNadderMaleEntity animatable)
+												if (!((entity instanceof JuvenileGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+													if (entity instanceof JuvenileNadderFemaleEntity animatable)
 														animatable.setTexture("rednadder");
 												}
 											} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-												if (!((entity instanceof BabyGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-													if (entity instanceof BabyNadderMaleEntity animatable)
+												if (!((entity instanceof JuvenileGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+													if (entity instanceof JuvenileNadderFemaleEntity animatable)
 														animatable.setTexture("purplenadder");
 												}
 											} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-												if (!((entity instanceof BabyGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-													if (entity instanceof BabyNadderMaleEntity animatable)
+												if (!((entity instanceof JuvenileGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+													if (entity instanceof JuvenileNadderFemaleEntity animatable)
 														animatable.setTexture("stormfly");
 												}
 											}
 										} else {
-											if (entity instanceof BabyNadderFemaleEntity) {
+											if (entity instanceof BabyNadderMaleEntity) {
 												if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-													if (!((entity instanceof BabyGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
-														if (entity instanceof BabyNadderFemaleEntity animatable)
+													if (!((entity instanceof BabyGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+														if (entity instanceof BabyNadderMaleEntity animatable)
 															animatable.setTexture("rednadder");
 													}
 												} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-													if (!((entity instanceof BabyGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
-														if (entity instanceof BabyNadderFemaleEntity animatable)
+													if (!((entity instanceof BabyGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+														if (entity instanceof BabyNadderMaleEntity animatable)
 															animatable.setTexture("purplenadder");
 													}
 												} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-													if (!((entity instanceof BabyGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
-														if (entity instanceof BabyNadderFemaleEntity animatable)
+													if (!((entity instanceof BabyGronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+														if (entity instanceof BabyNadderMaleEntity animatable)
 															animatable.setTexture("stormfly");
+													}
+												}
+											} else {
+												if (entity instanceof BabyNadderFemaleEntity) {
+													if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
+														if (!((entity instanceof BabyGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("rednadder"))) {
+															if (entity instanceof BabyNadderFemaleEntity animatable)
+																animatable.setTexture("rednadder");
+														}
+													} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
+														if (!((entity instanceof BabyGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("purplenadder"))) {
+															if (entity instanceof BabyNadderFemaleEntity animatable)
+																animatable.setTexture("purplenadder");
+														}
+													} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
+														if (!((entity instanceof BabyGronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("stormfly"))) {
+															if (entity instanceof BabyNadderFemaleEntity animatable)
+																animatable.setTexture("stormfly");
+														}
 													}
 												}
 											}
