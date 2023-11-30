@@ -76,13 +76,13 @@ public class MHFifthPageGUIScreen extends AbstractContainerScreen<MHFifthPageGUI
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_fifth_page"), 22, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_evoker"), 32, 22, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ghast"), 34, 39, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_gaurdian"), 27, 56, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_fifth_page"), 23, 4, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_evoker"), 33, 22, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ghast"), 35, 39, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_gaurdian"), 28, 56, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_elder_gaurdian"), 13, 73, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ender_dragon"), 18, 91, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_enderman"), 28, 109, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ender_dragon"), 15, 91, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fifth_page_gui.label_enderman"), 27, 109, -12829636);
 	}
 
 	@Override

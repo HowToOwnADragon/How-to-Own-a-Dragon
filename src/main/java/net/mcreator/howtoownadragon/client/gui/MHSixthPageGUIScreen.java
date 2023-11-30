@@ -75,9 +75,9 @@ public class MHSixthPageGUIScreen extends AbstractContainerScreen<MHSixthPageGUI
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_sixth_page"), 23, 4, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_sixth_page"), 24, 4, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_cave_spider"), 21, 25, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_creeper"), 31, 43, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_creeper"), 30, 43, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_drowned"), 30, 61, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_sixth_page_gui.label_blaze"), 36, 80, -12829636);
 	}

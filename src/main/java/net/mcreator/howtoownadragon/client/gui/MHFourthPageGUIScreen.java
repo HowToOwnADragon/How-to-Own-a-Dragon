@@ -78,9 +78,9 @@ public class MHFourthPageGUIScreen extends AbstractContainerScreen<MHFourthPageG
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_fourth_page"), 20, 4, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger"), 28, 21, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_hoglin"), 32, 38, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_husk"), 37, 56, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_magma_cube"), 23, 73, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_hoglin"), 36, 38, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_husk"), 39, 56, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_magma_cube"), 21, 73, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_phantom"), 30, 91, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_fourth_page_gui.label_endermite"), 26, 109, -12829636);
 	}

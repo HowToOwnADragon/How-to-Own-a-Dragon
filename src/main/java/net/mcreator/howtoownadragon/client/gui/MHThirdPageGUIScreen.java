@@ -76,13 +76,13 @@ public class MHThirdPageGUIScreen extends AbstractContainerScreen<MHThirdPageGUI
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_third_page"), 23, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_silverfish"), 22, 21, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_skeleton"), 27, 38, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_slime"), 35, 55, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_piglin"), 32, 72, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_piglin_brute"), 18, 90, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_pillager"), 29, 109, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_third_page"), 22, 4, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_silverfish"), 26, 21, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_skeleton"), 29, 38, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_slime"), 38, 55, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_piglin"), 37, 72, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_piglin_brute"), 21, 90, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_third_page_gui.label_pillager"), 32, 109, -12829636);
 	}
 
 	@Override

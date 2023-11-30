@@ -76,13 +76,13 @@ public class MHSecondPageGUIScreen extends AbstractContainerScreen<MHSecondPageG
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_second_page"), 20, 4, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_second_page"), 18, 4, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_spider"), 33, 21, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_stray"), 35, 38, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_vex"), 40, 55, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_vindicator"), 23, 72, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_witch"), 36, 90, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_shulker"), 31, 109, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_vindicator"), 25, 72, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_witch"), 38, 90, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_second_page_gui.label_shulker"), 32, 109, -12829636);
 	}
 
 	@Override
