@@ -161,7 +161,7 @@ public class HowToOwnADragonModEntities {
 
 					.sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<YakEntity>> YAK = register("yak",
-			EntityType.Builder.<YakEntity>of(YakEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YakEntity::new)
+			EntityType.Builder.<YakEntity>of(YakEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YakEntity::new)
 
 					.sized(1f, 2f));
 	public static final RegistryObject<EntityType<BabyYakEntity>> BABY_YAK = register("baby_yak",
