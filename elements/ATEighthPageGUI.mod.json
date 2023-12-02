@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 130,
+    "width": 106,
     "height": 130,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -13,15 +13,15 @@
       {
         "type": "label",
         "data": {
-          "name": "label_sixth_page",
+          "name": "label_eighth_page",
           "text": {
-            "fixedValue": "Sixth Page"
+            "fixedValue": "Eighth Page"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 188,
+          "x": 184,
           "y": 59
         }
       },
@@ -31,7 +31,7 @@
           "name": "imagebutton_previous_page_arrow",
           "image": "previous_page_arrow.png",
           "hoveredImage": "previous_page_arrow_when_hovered_over.png",
-          "x": 151,
+          "x": 163,
           "y": 162
         }
       },
@@ -41,104 +41,104 @@
           "name": "imagebutton_next_page_mcreator_copy",
           "image": "next_page_mcreator_-_copy.png",
           "hoveredImage": "",
-          "x": 251,
+          "x": 239,
           "y": 162
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_old_growth_birch_forest",
+          "name": "label_stony_peaks",
           "text": {
-            "fixedValue": "Old Growth Birch Forest"
+            "fixedValue": "Stony Peaks"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 153,
+          "x": 185,
           "y": 77
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_old_growth_paine_taiga",
+          "name": "label_stony_shore",
           "text": {
-            "fixedValue": "Old Growth Paine Taiga"
+            "fixedValue": "Stony Shore"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 156,
+          "x": 184,
           "y": 94
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_old_growth_spruce_taiga",
+          "name": "label_sunflower_plains",
           "text": {
-            "fixedValue": "Old Growth Spruce Taiga"
+            "fixedValue": "Sunflower Plains"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 153,
-          "y": 111
+          "x": 171,
+          "y": 112
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_plains",
+          "name": "label_swamp",
           "text": {
-            "fixedValue": "Plains"
+            "fixedValue": "Swamp"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 197,
+          "x": 199,
           "y": 129
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_river",
+          "name": "label_taiga",
           "text": {
-            "fixedValue": "River"
+            "fixedValue": "Taiga"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 200,
+          "x": 199,
           "y": 147
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_savanna",
+          "name": "label_warm_ocean",
           "text": {
-            "fixedValue": "Savanna"
+            "fixedValue": "Warm Ocean"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 195,
-          "y": 165
+          "x": 188,
+          "y": 164
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
+      "sx": 1,
+      "sy": 1,
       "ox": 11,
       "oy": 15,
       "snapOnGrid": false
