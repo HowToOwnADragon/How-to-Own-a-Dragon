@@ -46,6 +46,12 @@ import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.DragonEyeInputMenu;
 import net.mcreator.howtoownadragon.world.inventory.CongratsGUIMenu;
 import net.mcreator.howtoownadragon.world.inventory.AdventureTabGroupGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.ATThirdPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.ATSixthPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.ATSecondPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.ATFourthPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.ATFirstPageGUIMenu;
+import net.mcreator.howtoownadragon.world.inventory.ATFifthPageGUIMenu;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class HowToOwnADragonModMenus {
@@ -85,4 +91,10 @@ public class HowToOwnADragonModMenus {
 	public static final RegistryObject<MenuType<MHFourthPageGUIMenu>> MH_FOURTH_PAGE_GUI = REGISTRY.register("mh_fourth_page_gui", () -> IForgeMenuType.create(MHFourthPageGUIMenu::new));
 	public static final RegistryObject<MenuType<MHFifthPageGUIMenu>> MH_FIFTH_PAGE_GUI = REGISTRY.register("mh_fifth_page_gui", () -> IForgeMenuType.create(MHFifthPageGUIMenu::new));
 	public static final RegistryObject<MenuType<MHSixthPageGUIMenu>> MH_SIXTH_PAGE_GUI = REGISTRY.register("mh_sixth_page_gui", () -> IForgeMenuType.create(MHSixthPageGUIMenu::new));
+	public static final RegistryObject<MenuType<ATFirstPageGUIMenu>> AT_FIRST_PAGE_GUI = REGISTRY.register("at_first_page_gui", () -> IForgeMenuType.create(ATFirstPageGUIMenu::new));
+	public static final RegistryObject<MenuType<ATSecondPageGUIMenu>> AT_SECOND_PAGE_GUI = REGISTRY.register("at_second_page_gui", () -> IForgeMenuType.create(ATSecondPageGUIMenu::new));
+	public static final RegistryObject<MenuType<ATThirdPageGUIMenu>> AT_THIRD_PAGE_GUI = REGISTRY.register("at_third_page_gui", () -> IForgeMenuType.create(ATThirdPageGUIMenu::new));
+	public static final RegistryObject<MenuType<ATFourthPageGUIMenu>> AT_FOURTH_PAGE_GUI = REGISTRY.register("at_fourth_page_gui", () -> IForgeMenuType.create(ATFourthPageGUIMenu::new));
+	public static final RegistryObject<MenuType<ATFifthPageGUIMenu>> AT_FIFTH_PAGE_GUI = REGISTRY.register("at_fifth_page_gui", () -> IForgeMenuType.create(ATFifthPageGUIMenu::new));
+	public static final RegistryObject<MenuType<ATSixthPageGUIMenu>> AT_SIXTH_PAGE_GUI = REGISTRY.register("at_sixth_page_gui", () -> IForgeMenuType.create(ATSixthPageGUIMenu::new));
 }

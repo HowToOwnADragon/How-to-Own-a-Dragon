@@ -46,6 +46,12 @@ import net.mcreator.howtoownadragon.client.gui.FemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.DragonEyeInputScreen;
 import net.mcreator.howtoownadragon.client.gui.CongratsGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.AdventureTabGroupGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ATThirdPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ATSixthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ATSecondPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ATFourthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ATFirstPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.ATFifthPageGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class HowToOwnADragonModScreens {
@@ -87,6 +93,12 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.MH_FOURTH_PAGE_GUI.get(), MHFourthPageGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MH_FIFTH_PAGE_GUI.get(), MHFifthPageGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MH_SIXTH_PAGE_GUI.get(), MHSixthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.AT_FIRST_PAGE_GUI.get(), ATFirstPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.AT_SECOND_PAGE_GUI.get(), ATSecondPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.AT_THIRD_PAGE_GUI.get(), ATThirdPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.AT_FOURTH_PAGE_GUI.get(), ATFourthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.AT_FIFTH_PAGE_GUI.get(), ATFifthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.AT_SIXTH_PAGE_GUI.get(), ATSixthPageGUIScreen::new);
 		});
 	}
 }

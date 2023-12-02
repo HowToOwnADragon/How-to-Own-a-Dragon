@@ -58,7 +58,7 @@
           "name": "button_adventuring_time",
           "text": "Adventuring Time",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenATFirstPageGUI"
           },
           "width": 108,
           "height": 20,
