@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.howtoownadragon.world.inventory.VanillaTabGroupsGUIMenu;
 import net.mcreator.howtoownadragon.procedures.OpenNothingsHereProcedure;
 import net.mcreator.howtoownadragon.procedures.OpenNetherTabGroupGUIProcedure;
-import net.mcreator.howtoownadragon.procedures.OpenNOTFINISHEDProcedure;
+import net.mcreator.howtoownadragon.procedures.OpenHusbandryTabGroupGUIProcedure;
 import net.mcreator.howtoownadragon.procedures.OpenAdventureTabGroupGUIProcedure;
 import net.mcreator.howtoownadragon.procedures.BackButtonMainAdvancementGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -84,7 +84,7 @@ public class VanillaTabGroupsGUIButtonMessage {
 		}
 		if (buttonID == 4) {
 
-			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
+			OpenHusbandryTabGroupGUIProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 5) {
 

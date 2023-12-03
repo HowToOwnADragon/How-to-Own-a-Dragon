@@ -1,0 +1,147 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 100,
+    "height": 130,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_third_page",
+          "text": {
+            "fixedValue": "Third Page"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 188,
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "x": 166,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_next_page_mcreator_copy",
+          "image": "next_page_mcreator_-_copy.png",
+          "hoveredImage": "",
+          "x": 236,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_llama",
+          "text": {
+            "fixedValue": "Llama"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 202,
+          "y": 82
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mooshroom",
+          "text": {
+            "fixedValue": "Mooshroom"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 191,
+          "y": 99
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mule",
+          "text": {
+            "fixedValue": "Mule"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 204,
+          "y": 115
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ocelot",
+          "text": {
+            "fixedValue": "Ocelot"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 198,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_panda",
+          "text": {
+            "fixedValue": "Panda"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 201,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_pig",
+          "text": {
+            "fixedValue": "Pig"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 206,
+          "y": 165
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

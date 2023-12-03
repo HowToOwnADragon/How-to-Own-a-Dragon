@@ -1,0 +1,147 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 116,
+    "height": 130,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_second_page",
+          "text": {
+            "fixedValue": "Second Page"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 185,
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "x": 158,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_next_page_mcreator_copy",
+          "image": "next_page_mcreator_-_copy.png",
+          "hoveredImage": "",
+          "x": 244,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chorus_fruit",
+          "text": {
+            "fixedValue": "Chorus Fruit"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooked_chicken",
+          "text": {
+            "fixedValue": "Cooked Chicken"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooked_cod",
+          "text": {
+            "fixedValue": "Cooked Cod"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooked_mutton",
+          "text": {
+            "fixedValue": "Cooked Mutton"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 179,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooked_porkchop",
+          "text": {
+            "fixedValue": "Cooked Porkchop"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 174,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooked_rabbit",
+          "text": {
+            "fixedValue": "Cooked Rabbit"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 179,
+          "y": 165
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

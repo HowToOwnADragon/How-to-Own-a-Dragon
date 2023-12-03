@@ -1,0 +1,147 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 124,
+    "height": 130,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_third_page",
+          "text": {
+            "fixedValue": "Third Page"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 188,
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "x": 154,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_next_page_mcreator_copy",
+          "image": "next_page_mcreator_-_copy.png",
+          "hoveredImage": "",
+          "x": 248,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooked_salmon",
+          "text": {
+            "fixedValue": "Cooked Salmon"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 179,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cookie",
+          "text": {
+            "fixedValue": "Cookie"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 196,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dried_kelp",
+          "text": {
+            "fixedValue": "Dried Kelp"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_enchanted_golden_apple",
+          "text": {
+            "fixedValue": "Enchanted Golden Apple"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 155,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_glow_berries",
+          "text": {
+            "fixedValue": "Glow Berries"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 183,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_golden_apple",
+          "text": {
+            "fixedValue": "Golden Apple"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 183,
+          "y": 165
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

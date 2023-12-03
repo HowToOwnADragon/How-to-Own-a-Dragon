@@ -1,0 +1,147 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 100,
+    "height": 130,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_first_page",
+          "text": {
+            "fixedValue": "First page"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_arrow",
+          "image": "previous_page_arrow.png",
+          "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "x": 166,
+          "y": 162
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_next_page_mcreator_copy",
+          "image": "next_page_mcreator_-_copy.png",
+          "hoveredImage": "",
+          "x": 236,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_apple",
+          "text": {
+            "fixedValue": "Apple"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 200,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_baked_potato",
+          "text": {
+            "fixedValue": "Baked Potato"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_beetroot",
+          "text": {
+            "fixedValue": "Beetroot"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 192,
+          "y": 112
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_beetroot_soup",
+          "text": {
+            "fixedValue": "Beetroot Soup"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 179,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bread",
+          "text": {
+            "fixedValue": "Bread"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 200,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_carrot",
+          "text": {
+            "fixedValue": "Carrot"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 197,
+          "y": 165
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

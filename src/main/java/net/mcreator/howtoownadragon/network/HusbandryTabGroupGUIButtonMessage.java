@@ -12,7 +12,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.HusbandryTabGroupGUIMenu;
+import net.mcreator.howtoownadragon.procedures.OpenTBTFirstPageGUIProcedure;
 import net.mcreator.howtoownadragon.procedures.OpenNOTFINISHEDProcedure;
+import net.mcreator.howtoownadragon.procedures.OpenBDFirstPageGUIProcedure;
 import net.mcreator.howtoownadragon.procedures.BackButtonVanillaTabGroupGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -65,7 +67,7 @@ public class HusbandryTabGroupGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
+			OpenTBTFirstPageGUIProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
@@ -73,7 +75,7 @@ public class HusbandryTabGroupGUIButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			OpenNOTFINISHEDProcedure.execute(world, x, y, z, entity);
+			OpenBDFirstPageGUIProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 3) {
 

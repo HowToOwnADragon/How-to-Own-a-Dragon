@@ -12,6 +12,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.howtoownadragon.client.gui.VanillaTabGroupsGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.TBTThirdPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.TBTSecondPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.TBTFourthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.TBTFirstPageGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.ProgressiveAchievementsScreen;
 import net.mcreator.howtoownadragon.client.gui.NothingsHereScreen;
 import net.mcreator.howtoownadragon.client.gui.NotGrownMaleNadderGUIScreen;
@@ -45,6 +49,13 @@ import net.mcreator.howtoownadragon.client.gui.FemaleNadderGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.FemaleGronckleGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.DragonEyeInputScreen;
 import net.mcreator.howtoownadragon.client.gui.CongratsGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDThirdPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDSixthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDSeventhPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDSecondPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDFourthPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDFirstPageGUIScreen;
+import net.mcreator.howtoownadragon.client.gui.BDFifthPageGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.AdventureTabGroupGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.ATThirdPageGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.ATSixthPageGUIScreen;
@@ -105,6 +116,17 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.AT_SEVENTH_PAGE_GUI.get(), ATSeventhPageGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.AT_EIGHTH_PAGE_GUI.get(), ATEighthPageGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.AT_NINTH_PAGE_GUI.get(), ATNinthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_FIRST_PAGE_GUI.get(), BDFirstPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_SECOND_PAGE_GUI.get(), BDSecondPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_THIRD_PAGE_GUI.get(), BDThirdPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_FOURTH_PAGE_GUI.get(), BDFourthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_FIFTH_PAGE_GUI.get(), BDFifthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_SIXTH_PAGE_GUI.get(), BDSixthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.BD_SEVENTH_PAGE_GUI.get(), BDSeventhPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.TBT_FIRST_PAGE_GUI.get(), TBTFirstPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.TBT_SECOND_PAGE_GUI.get(), TBTSecondPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.TBT_THIRD_PAGE_GUI.get(), TBTThirdPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.TBT_FOURTH_PAGE_GUI.get(), TBTFourthPageGUIScreen::new);
 		});
 	}
 }

@@ -87,7 +87,7 @@
           "name": "button_husbandry",
           "text": "Husbandry",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenHusbandryTabGroupGUI"
           },
           "width": 72,
           "height": 20,

@@ -44,7 +44,7 @@
           "name": "button_two_by_two",
           "text": "Two by Two",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenTBTFirstPageGUI"
           },
           "width": 77,
           "height": 20,
@@ -72,7 +72,7 @@
           "name": "button_a_balanced_diet",
           "text": "A Balanced Diet",
           "onClick": {
-            "name": "OpenNOTFINISHED"
+            "name": "OpenBDFirstPageGUI"
           },
           "width": 103,
           "height": 20,
