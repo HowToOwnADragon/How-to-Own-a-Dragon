@@ -62,10 +62,8 @@ public class TextureRenderDistanceFixGronckleProcedure {
 									animatable.setTexture("meatlug");
 							}
 						} else {
-							if (!(entity.getPersistentData().getBoolean("groncklesaddle") == true)) {
-								RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
-								NBTDataSpawnGronckleProcedure.execute(entity);
-							}
+							RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
+							NBTDataSpawnGronckleProcedure.execute(entity);
 						}
 					} else {
 						if (entity instanceof GronckleFemaleEntity) {
@@ -90,10 +88,8 @@ public class TextureRenderDistanceFixGronckleProcedure {
 										animatable.setTexture("meatlug");
 								}
 							} else {
-								if (!(entity.getPersistentData().getBoolean("groncklesaddle") == true)) {
-									RandomColorFemaleGronckleProcedure.execute(entity);
-									NBTDataSpawnGronckleProcedure.execute(entity);
-								}
+								RandomColorFemaleGronckleProcedure.execute(entity);
+								NBTDataSpawnGronckleProcedure.execute(entity);
 							}
 						} else {
 							if (entity instanceof AdolescentGronckleMaleEntity) {
