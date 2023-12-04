@@ -15138,6 +15138,26 @@
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/Two by Two/OpenTBTPagesProcedures"
+    },
+    {
+      "name": "GiveEmptyBucketYaknog",
+      "type": "procedure",
+      "sortid": 1481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_empty_bucket_yaknog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/GiveEmptyBucketYaknogProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Animals/Yak/YakOnly/Yaknog"
     }
   ],
   "variable_elements": [

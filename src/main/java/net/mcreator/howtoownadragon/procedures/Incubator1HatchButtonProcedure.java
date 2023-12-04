@@ -19,8 +19,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.TTMaleEntity;
-import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
+import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
@@ -181,7 +181,7 @@ public class Incubator1HatchButtonProcedure {
 		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.RABBIT_FOOT) {
 			if (Mth.nextInt(RandomSource.create(), 1, 2) <= 1) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new TTMaleEntity(HowToOwnADragonModEntities.TT_MALE.get(), _level);
+					Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.BABY_TT_MALE.get(), _level);
 					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -191,8 +191,8 @@ public class Incubator1HatchButtonProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 				HowToOwnADragonMod.queueServerWork(1, () -> {
-					if (!world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-						((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					if (!world.getEntitiesOfClass(BabyTTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+						((Entity) world.getEntitiesOfClass(BabyTTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
@@ -237,7 +237,7 @@ public class Incubator1HatchButtonProcedure {
 				});
 			} else if (Mth.nextInt(RandomSource.create(), 1, 2) > 1) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new TTFemaleEntity(HowToOwnADragonModEntities.TT_FEMALE.get(), _level);
+					Entity entityToSpawn = new BabyTTFemaleEntity(HowToOwnADragonModEntities.BABY_TT_FEMALE.get(), _level);
 					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -247,8 +247,8 @@ public class Incubator1HatchButtonProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 				HowToOwnADragonMod.queueServerWork(1, () -> {
-					if (!world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-						((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					if (!world.getEntitiesOfClass(BabyTTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+						((Entity) world.getEntitiesOfClass(BabyTTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
