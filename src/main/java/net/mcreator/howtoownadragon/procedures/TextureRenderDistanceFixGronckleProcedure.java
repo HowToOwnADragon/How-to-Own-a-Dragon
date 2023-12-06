@@ -37,7 +37,7 @@ public class TextureRenderDistanceFixGronckleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		HowToOwnADragonMod.queueServerWork(1, () -> {
+		HowToOwnADragonMod.queueServerWork(3, () -> {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles")))) {
 				if (!(entity.getPersistentData().getBoolean("groncklesaddle") == true)) {
 					if (entity instanceof GronckleMaleEntity) {
@@ -57,10 +57,8 @@ public class TextureRenderDistanceFixGronckleProcedure {
 									animatable.setTexture("gronckleblueyellow");
 							}
 						} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
-							if (!((entity instanceof GronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("meatlug"))) {
-								if (entity instanceof GronckleMaleEntity animatable)
-									animatable.setTexture("meatlug");
-							}
+							if (entity instanceof GronckleMaleEntity animatable)
+								animatable.setTexture("meatlug");
 						} else {
 							RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
 							NBTDataSpawnGronckleProcedure.execute(entity);

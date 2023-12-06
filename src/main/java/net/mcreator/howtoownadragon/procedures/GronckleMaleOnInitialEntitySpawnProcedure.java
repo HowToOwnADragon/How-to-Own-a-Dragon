@@ -10,7 +10,7 @@ public class GronckleMaleOnInitialEntitySpawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		HowToOwnADragonMod.queueServerWork(1, () -> {
+		HowToOwnADragonMod.queueServerWork(2, () -> {
 			if (entity instanceof GronckleMaleEntity) {
 				NBTDataSpawnGronckleProcedure.execute(entity);
 				if ((entity.getPersistentData().getString("groncklecolor")).equals("pink")) {
@@ -29,6 +29,8 @@ public class GronckleMaleOnInitialEntitySpawnProcedure {
 							animatable.setTexture("gronckleblueyellow");
 					}
 				} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
+					if (entity instanceof GronckleMaleEntity animatable)
+						animatable.setTexture("meatlug");
 					if (!((entity instanceof GronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("meatlug"))) {
 						if (entity instanceof GronckleMaleEntity animatable)
 							animatable.setTexture("meatlug");
