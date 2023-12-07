@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "unlock_gronckle_saddle_recipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "how_to_own_a_dragon:gronckle_scale"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "how_to_own_a_dragon:gronckle_saddle_recipe",
+      "how_to_own_a_dragon:valkas_staff_recipe_middle"
+    ]
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}

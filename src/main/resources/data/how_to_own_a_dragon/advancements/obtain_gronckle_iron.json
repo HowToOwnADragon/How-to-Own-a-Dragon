@@ -45,7 +45,8 @@
       "how_to_own_a_dragon:deleted_mod_element",
       "how_to_own_a_dragon:deleted_mod_element",
       "how_to_own_a_dragon:gronckle_iron_hoe_recipe_right",
-      "how_to_own_a_dragon:gronckle_iron_hoe_recipe_left"
+      "how_to_own_a_dragon:gronckle_iron_hoe_recipe_left",
+      "how_to_own_a_dragon:dragon_proof_metal_recipe"
     ]
   },
   "parent": "how_to_own_a_dragon:welcome_to_the_world"

@@ -24,7 +24,8 @@
       "GronckleIronShovelRecipeLeft",
       "GronckleIronShovelRecipeRight",
       "GronckleIronHoeRecipeRight",
-      "GronckleIronHoeRecipeLeft"
+      "GronckleIronHoeRecipeLeft",
+      "DragonProofMetalRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 25,

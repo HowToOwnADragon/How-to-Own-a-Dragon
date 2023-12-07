@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "obtain_cooked_yak_meat_recipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "how_to_own_a_dragon:cooked_yak_meat"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "how_to_own_a_dragon:yak_meat_furnace",
+      "how_to_own_a_dragon:yak_meat_smoker",
+      "how_to_own_a_dragon:yak_meat_campfire"
+    ]
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}
