@@ -9,6 +9,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.BDSeventhPageGUIMenu;
+import net.mcreator.howtoownadragon.network.BDSeventhPageGUIButtonMessage;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.HashMap;
 
@@ -21,7 +23,6 @@ public class BDSeventhPageGUIScreen extends AbstractContainerScreen<BDSeventhPag
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_previous_page_arrow;
-	ImageButton imagebutton_next_page_mcreator_copy;
 
 	public BDSeventhPageGUIScreen(BDSeventhPageGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -32,6 +33,11 @@ public class BDSeventhPageGUIScreen extends AbstractContainerScreen<BDSeventhPag
 		this.entity = container.entity;
 		this.imageWidth = 116;
 		this.imageHeight = 100;
+	}
+
+	@Override
+	public boolean isPauseScreen() {
+		return true;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/bd_seventh_page_gui.png");
@@ -69,11 +75,11 @@ public class BDSeventhPageGUIScreen extends AbstractContainerScreen<BDSeventhPag
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.bd_seventh_page_gui.label_seventh_page"), 27, 4, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.bd_seventh_page_gui.label_steak"), 44, 28, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.bd_seventh_page_gui.label_suspicious_stew"), 18, 45, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.bd_seventh_page_gui.label_sweet_berries"), 24, 63, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.bd_seventh_page_gui.label_tropical_fish"), 23, 80, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.bd_seventh_page_gui.label_seventh_page"), 27, 4, -12829636);
 	}
 
 	@Override
@@ -85,12 +91,12 @@ public class BDSeventhPageGUIScreen extends AbstractContainerScreen<BDSeventhPag
 	public void init() {
 		super.init();
 		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 2, this.topPos + 77, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new BDSeventhPageGUIButtonMessage(0, x, y, z));
+				BDSeventhPageGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);
 		this.addRenderableWidget(imagebutton_previous_page_arrow);
-		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 88, this.topPos + 77, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
-		});
-		guistate.put("button:imagebutton_next_page_mcreator_copy", imagebutton_next_page_mcreator_copy);
-		this.addRenderableWidget(imagebutton_next_page_mcreator_copy);
 	}
 }

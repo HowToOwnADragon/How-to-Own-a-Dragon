@@ -9,6 +9,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.BDFirstPageGUIMenu;
+import net.mcreator.howtoownadragon.network.BDFirstPageGUIButtonMessage;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.HashMap;
 
@@ -32,6 +34,11 @@ public class BDFirstPageGUIScreen extends AbstractContainerScreen<BDFirstPageGUI
 		this.entity = container.entity;
 		this.imageWidth = 100;
 		this.imageHeight = 130;
+	}
+
+	@Override
+	public boolean isPauseScreen() {
+		return true;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/bd_first_page_gui.png");
@@ -87,10 +94,18 @@ public class BDFirstPageGUIScreen extends AbstractContainerScreen<BDFirstPageGUI
 	public void init() {
 		super.init();
 		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 2, this.topPos + 107, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new BDFirstPageGUIButtonMessage(0, x, y, z));
+				BDFirstPageGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);
 		this.addRenderableWidget(imagebutton_previous_page_arrow);
 		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 72, this.topPos + 107, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new BDFirstPageGUIButtonMessage(1, x, y, z));
+				BDFirstPageGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_next_page_mcreator_copy", imagebutton_next_page_mcreator_copy);
 		this.addRenderableWidget(imagebutton_next_page_mcreator_copy);

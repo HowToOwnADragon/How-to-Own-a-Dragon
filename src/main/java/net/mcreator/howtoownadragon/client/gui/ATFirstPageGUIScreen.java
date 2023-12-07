@@ -36,6 +36,11 @@ public class ATFirstPageGUIScreen extends AbstractContainerScreen<ATFirstPageGUI
 		this.imageHeight = 130;
 	}
 
+	@Override
+	public boolean isPauseScreen() {
+		return true;
+	}
+
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/at_first_page_gui.png");
 
 	@Override
@@ -97,6 +102,10 @@ public class ATFirstPageGUIScreen extends AbstractContainerScreen<ATFirstPageGUI
 		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);
 		this.addRenderableWidget(imagebutton_previous_page_arrow);
 		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 72, this.topPos + 107, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new ATFirstPageGUIButtonMessage(1, x, y, z));
+				ATFirstPageGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_next_page_mcreator_copy", imagebutton_next_page_mcreator_copy);
 		this.addRenderableWidget(imagebutton_next_page_mcreator_copy);

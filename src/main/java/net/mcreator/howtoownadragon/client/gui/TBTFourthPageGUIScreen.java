@@ -9,6 +9,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.TBTFourthPageGUIMenu;
+import net.mcreator.howtoownadragon.network.TBTFourthPageGUIButtonMessage;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.HashMap;
 
@@ -21,7 +23,6 @@ public class TBTFourthPageGUIScreen extends AbstractContainerScreen<TBTFourthPag
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_previous_page_arrow;
-	ImageButton imagebutton_next_page_mcreator_copy;
 
 	public TBTFourthPageGUIScreen(TBTFourthPageGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -32,6 +33,11 @@ public class TBTFourthPageGUIScreen extends AbstractContainerScreen<TBTFourthPag
 		this.entity = container.entity;
 		this.imageWidth = 100;
 		this.imageHeight = 110;
+	}
+
+	@Override
+	public boolean isPauseScreen() {
+		return true;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/tbt_fourth_page_gui.png");
@@ -86,12 +92,12 @@ public class TBTFourthPageGUIScreen extends AbstractContainerScreen<TBTFourthPag
 	public void init() {
 		super.init();
 		imagebutton_previous_page_arrow = new ImageButton(this.leftPos + 2, this.topPos + 87, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_previous_page_arrow.png"), 24, 40, e -> {
+			if (true) {
+				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new TBTFourthPageGUIButtonMessage(0, x, y, z));
+				TBTFourthPageGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_previous_page_arrow", imagebutton_previous_page_arrow);
 		this.addRenderableWidget(imagebutton_previous_page_arrow);
-		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 72, this.topPos + 87, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
-		});
-		guistate.put("button:imagebutton_next_page_mcreator_copy", imagebutton_next_page_mcreator_copy);
-		this.addRenderableWidget(imagebutton_next_page_mcreator_copy);
 	}
 }

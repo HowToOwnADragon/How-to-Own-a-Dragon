@@ -8,8 +8,23 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "doesPauseGame": false,
+    "doesPauseGame": true,
     "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_first_page",
+          "text": {
+            "fixedValue": "First Page"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 59
+        }
+      },
       {
         "type": "imagebutton",
         "data": {
@@ -29,23 +44,11 @@
           "name": "imagebutton_next_page_mcreator_copy",
           "image": "next_page_mcreator_-_copy.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "OpenATSecondPageGUI"
+          },
           "x": 236,
           "y": 162
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_first_page",
-          "text": {
-            "fixedValue": "First Page"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 187,
-          "y": 59
         }
       },
       {

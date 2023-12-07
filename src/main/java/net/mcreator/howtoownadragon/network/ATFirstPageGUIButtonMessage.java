@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.ATFirstPageGUIMenu;
 import net.mcreator.howtoownadragon.procedures.OpenAdventureTabGroupGUIProcedure;
+import net.mcreator.howtoownadragon.procedures.OpenATSecondPageGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
@@ -65,6 +66,10 @@ public class ATFirstPageGUIButtonMessage {
 		if (buttonID == 0) {
 
 			OpenAdventureTabGroupGUIProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			OpenATSecondPageGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

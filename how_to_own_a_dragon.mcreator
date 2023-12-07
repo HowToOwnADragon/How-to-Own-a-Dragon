@@ -12738,9 +12738,9 @@
       "registry_name": "progressive_achievements",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/ProgressiveAchievementsMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ProgressiveAchievementsScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/ProgressiveAchievementsButtonMessage.java"
+          "src/main/java/net/mcreator/howtoownadragon/network/ProgressiveAchievementsButtonMessage.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/ProgressiveAchievementsMenu.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI"
@@ -14406,6 +14406,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATSecondPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ATSecondPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATSecondPageGUIMenu.java"
         ]
       },
@@ -14421,6 +14422,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATThirdPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ATThirdPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATThirdPageGUIScreen.java"
         ]
       },
@@ -14435,6 +14437,7 @@
       "registry_name": "at_fourth_page_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/ATFourthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATFourthPageGUIScreen.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATFourthPageGUIMenu.java"
         ]
@@ -14450,6 +14453,7 @@
       "registry_name": "at_fifth_page_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/ATFifthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATFifthPageGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATFifthPageGUIScreen.java"
         ]
@@ -14466,7 +14470,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATSixthPageGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/ATSixthPageGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/ATSixthPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ATSixthPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime"
@@ -14517,7 +14522,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATSeventhPageGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATSeventhPageGUIMenu.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATSeventhPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ATSeventhPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime"
@@ -14532,6 +14538,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATEighthPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ATEighthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATEighthPageGUIMenu.java"
         ]
       },
@@ -14547,6 +14554,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/ATNinthPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/ATNinthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/ATNinthPageGUIMenu.java"
         ]
       },
@@ -14562,7 +14570,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDFirstPageGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDFirstPageGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDFirstPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BDFirstPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet"
@@ -14577,7 +14586,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDSecondPageGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDSecondPageGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDSecondPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BDSecondPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet"
@@ -14592,6 +14602,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDThirdPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BDThirdPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/BDThirdPageGUIScreen.java"
         ]
       },
@@ -14606,6 +14617,7 @@
       "registry_name": "bd_fourth_page_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/BDFourthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDFourthPageGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/BDFourthPageGUIScreen.java"
         ]
@@ -14622,7 +14634,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDFifthPageGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDFifthPageGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDFifthPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BDFifthPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet"
@@ -14637,6 +14650,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDSixthPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BDSixthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/BDSixthPageGUIScreen.java"
         ]
       },
@@ -14652,7 +14666,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/BDSeventhPageGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDSeventhPageGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/BDSeventhPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/BDSeventhPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet"
@@ -14703,7 +14718,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/TBTFirstPageGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/TBTFirstPageGUIMenu.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/TBTFirstPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/TBTFirstPageGUIButtonMessage.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/Two by Two"
@@ -14717,6 +14733,7 @@
       "registry_name": "tbt_second_page_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/TBTSecondPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/TBTSecondPageGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/TBTSecondPageGUIScreen.java"
         ]
@@ -14732,6 +14749,7 @@
       "registry_name": "tbt_third_page_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/network/TBTThirdPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/TBTThirdPageGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/TBTThirdPageGUIScreen.java"
         ]
@@ -14748,6 +14766,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/gui/TBTFourthPageGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/TBTFourthPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/TBTFourthPageGUIMenu.java"
         ]
       },
@@ -15128,6 +15147,618 @@
         "dependencies": []
       },
       "path": "~/Entities/Dragons/Terrible Terror"
+    },
+    {
+      "name": "OpenATSecondPageGUI",
+      "type": "procedure",
+      "sortid": 1498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_second_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATSecondPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATThirdPageGUI",
+      "type": "procedure",
+      "sortid": 1499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_third_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATThirdPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATFourthPageGUI",
+      "type": "procedure",
+      "sortid": 1500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_fourth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATFourthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATFifthPageGUI",
+      "type": "procedure",
+      "sortid": 1501,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_fifth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATFifthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATSixthPageGUI",
+      "type": "procedure",
+      "sortid": 1502,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_sixth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATSixthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATSeventhPageGUI",
+      "type": "procedure",
+      "sortid": 1503,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_seventh_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATSeventhPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATEighthPageGUI",
+      "type": "procedure",
+      "sortid": 1504,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_eighth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATEighthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenATNinthPageGUI",
+      "type": "procedure",
+      "sortid": 1505,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_at_ninth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenATNinthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/OpenATPageProcedures"
+    },
+    {
+      "name": "OpenTBTSecondPageGUI",
+      "type": "procedure",
+      "sortid": 1506,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_tbt_second_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenTBTSecondPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/Two by Two/OpenTBTPagesProcedures"
+    },
+    {
+      "name": "OpenTBTThirdPageGUI",
+      "type": "procedure",
+      "sortid": 1507,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_tbt_third_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenTBTThirdPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/Two by Two/OpenTBTPagesProcedures"
+    },
+    {
+      "name": "OpenTBTFourthPageGUI",
+      "type": "procedure",
+      "sortid": 1508,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_tbt_fourth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenTBTFourthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/Two by Two/OpenTBTPagesProcedures"
+    },
+    {
+      "name": "OpenBDSecondPageGUI",
+      "type": "procedure",
+      "sortid": 1509,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bd_second_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenBDSecondPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet/OpenBDPagesProcedures"
+    },
+    {
+      "name": "OpenBDThirdPageGUI",
+      "type": "procedure",
+      "sortid": 1510,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bd_third_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenBDThirdPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet/OpenBDPagesProcedures"
+    },
+    {
+      "name": "OpenBDFourthPageGUI",
+      "type": "procedure",
+      "sortid": 1511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bd_fourth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenBDFourthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet/OpenBDPagesProcedures"
+    },
+    {
+      "name": "OpenBDFifthPageGUI",
+      "type": "procedure",
+      "sortid": 1512,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bd_fifth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenBDFifthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet/OpenBDPagesProcedures"
+    },
+    {
+      "name": "OpenBDSixthPageGUI",
+      "type": "procedure",
+      "sortid": 1513,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bd_sixth_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenBDSixthPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet/OpenBDPagesProcedures"
+    },
+    {
+      "name": "OpenBDSeventhPageGUI",
+      "type": "procedure",
+      "sortid": 1514,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bd_seventh_page_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenBDSeventhPageGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/HusbandryTabGroupButtonGUI/BalancedDiet/OpenBDPagesProcedures"
     }
   ],
   "variable_elements": [
@@ -15142,13 +15773,13 @@
   "language_map": {
     "en_us": {
       "gui.how_to_own_a_dragon.husbandry_tab_group_gui.button_two_by_two": "Two by Two",
-      "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.bd_first_page_gui.label_carrot": "Carrot",
+      "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_soul_sand_valley": "Soul Sand Valley",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "gui.how_to_own_a_dragon.love_is_in_the_air.label_gronckle": "Gronckle",
-      "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger": "Ravenger",
+      "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas": "Basalt Deltas",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_piglin": "Piglin|",
       "entity.how_to_own_a_dragon.juvenile_tt_male": "Male Terrible Terror",
@@ -15204,8 +15835,8 @@
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_elder_gaurdian": "Elder Gaurdian",
       "gui.how_to_own_a_dragon.generic_or_advanced_config.button_advanced": "Advanced",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_evoker": "Evoker|",
-      "gui.how_to_own_a_dragon.at_third_page_gui.label_flower_forest": "Flower Forest",
       "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
+      "gui.how_to_own_a_dragon.at_third_page_gui.label_flower_forest": "Flower Forest",
       "gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean": "Cold Ocean",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombified_piglin": "Zombified Piglin",
       "gui.how_to_own_a_dragon.bd_fifth_page_gui.label_raw_cod": "Raw Cod",
@@ -15219,8 +15850,8 @@
       "gui.how_to_own_a_dragon.mh_second_page_gui.label_vex": "Vex",
       "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_phantom": "Phantom",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
-      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest": "Dark Forest",
+      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "gui.how_to_own_a_dragon.at_sixth_page_gui.label_savanna": "Savanna",
       "advancements.obtain_dragon_proof_recipe.descr": "Obtain Dragon Proof Recipe",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
@@ -15241,8 +15872,8 @@
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_guardian": "Guardian|",
       "gui.how_to_own_a_dragon.bd_first_page_gui.label_first_page": "First page",
       "item.how_to_own_a_dragon.chicken_spawn_egg": "Chicken Spawn Egg",
-      "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
       "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
+      "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_blaze": "Blaze",
       "gui.how_to_own_a_dragon.bd_fourth_page_gui.label_golden_carrot": "Golden Carrot",
       "gui.how_to_own_a_dragon.bd_sixth_page_gui.label_raw_salmon": "Raw Salmon",
@@ -15267,27 +15898,27 @@
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_cave_spider": "Cave Spider|",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
       "advancements.drinking_yaknog.title": "I don\u0027t feel so good...",
-      "entity.how_to_own_a_dragon.gronckle_female": "Female Gronckle",
       "entity.how_to_own_a_dragon.adolescent_gronckle_female": "Adolescent Female Gronckle",
+      "entity.how_to_own_a_dragon.gronckle_female": "Female Gronckle",
       "item_group.how_to_own_a_dragon.items": "Items",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zoglin": "Zoglin",
       "gui.how_to_own_a_dragon.at_first_page_gui.label_badlands": "Badlands",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_spider": "Spider|",
-      "entity.how_to_own_a_dragon.tt_female": "Female Terrible Terror",
       "gui.how_to_own_a_dragon.congrats_gui.label_congrat": "Congrulations! You have completed this advancement!",
+      "entity.how_to_own_a_dragon.tt_female": "Female Terrible Terror",
       "block.how_to_own_a_dragon.dark_stone": "Dark Stone",
       "gui.how_to_own_a_dragon.incubator_1_gui.button_hatch": "Hatch",
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_fifth_page": "Fifth Page",
       "gui.how_to_own_a_dragon.incubator_gui.label_time_leftbnbtintegertimermi": "\u003cBNBT:integer:TimerMin\u003eMin",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_inventory": "Inventory",
-      "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "gui.how_to_own_a_dragon.love_is_in_the_air.label_terrible_terror": "Terrible Terror",
+      "item.how_to_own_a_dragon.night_fury_spawn_egg": "Night Fury Spawn Egg",
       "gui.how_to_own_a_dragon.mh_third_page_gui.label_piglin_brute": "Piglin Brute",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_enderman": "Enderman|",
-      "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_inventory": "Inventory",
-      "gui.how_to_own_a_dragon.at_sixth_page_gui.label_river": "River",
       "gui.how_to_own_a_dragon.at_seventh_page_gui.label_seventh_page": "Seventh Page",
+      "gui.how_to_own_a_dragon.at_sixth_page_gui.label_river": "River",
+      "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.female_ttgui.label_inventory": "Inventory",
       "gui.how_to_own_a_dragon.adventure_tab_group_gui.label_adventure_progressive_achievemen": "Adventure Progressive Achievements",
       "gui.how_to_own_a_dragon.at_ninth_page_gui.label_windswept_savanna": "Windswept Savanna",

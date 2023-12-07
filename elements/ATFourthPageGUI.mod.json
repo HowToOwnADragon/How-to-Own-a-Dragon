@@ -8,7 +8,7 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "doesPauseGame": false,
+    "doesPauseGame": true,
     "components": [
       {
         "type": "label",
@@ -31,6 +31,9 @@
           "name": "imagebutton_previous_page_arrow",
           "image": "previous_page_arrow.png",
           "hoveredImage": "previous_page_arrow_when_hovered_over.png",
+          "onClick": {
+            "name": "OpenATThirdPageGUI"
+          },
           "x": 166,
           "y": 162
         }
@@ -41,6 +44,9 @@
           "name": "imagebutton_next_page_mcreator_copy",
           "image": "next_page_mcreator_-_copy.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "OpenATFifthPageGUI"
+          },
           "x": 236,
           "y": 162
         }
