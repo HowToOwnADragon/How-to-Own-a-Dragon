@@ -18,6 +18,9 @@
           "onClick": {
             "name": "OpenVanillaAdvancements"
           },
+          "displayCondition": {
+            "name": "Hide"
+          },
           "width": 129,
           "height": 20,
           "x": 148,

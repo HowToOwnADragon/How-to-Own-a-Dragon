@@ -6,6 +6,7 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
@@ -15,9 +16,15 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
+import net.mcreator.howtoownadragon.entity.BabyChickenEntity;
+import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
 
@@ -61,7 +68,18 @@ public class ChickenBreedingProcedure {
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
-							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"execute at @e[type=how_to_own_a_dragon:chicken, sort= nearest, limit= 1] run summon how_to_own_a_dragon:baby_chicken ~ ~ ~");
+							HowToOwnADragonMod.queueServerWork(1, () -> {
+								if (!world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+									((Entity) world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("chickencolor", (entity.getPersistentData().getString("chickencolor")));
+								}
+							});
 						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.PUMPKIN_SEEDS) {
 							if (sourceentity instanceof LivingEntity _entity) {
 								ItemStack _setstack = new ItemStack(Items.PUMPKIN_SEEDS);
@@ -74,7 +92,18 @@ public class ChickenBreedingProcedure {
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
-							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"execute at @e[type=how_to_own_a_dragon:chicken, sort= nearest, limit= 1] run summon how_to_own_a_dragon:baby_chicken ~ ~ ~");
+							HowToOwnADragonMod.queueServerWork(1, () -> {
+								if (!world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+									((Entity) world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("chickencolor", (entity.getPersistentData().getString("chickencolor")));
+								}
+							});
 						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.MELON_SEEDS) {
 							if (sourceentity instanceof LivingEntity _entity) {
 								ItemStack _setstack = new ItemStack(Items.MELON_SEEDS);
@@ -87,7 +116,18 @@ public class ChickenBreedingProcedure {
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
-							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"execute at @e[type=how_to_own_a_dragon:chicken, sort= nearest, limit= 1] run summon how_to_own_a_dragon:baby_chicken ~ ~ ~");
+							HowToOwnADragonMod.queueServerWork(1, () -> {
+								if (!world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+									((Entity) world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("chickencolor", (entity.getPersistentData().getString("chickencolor")));
+								}
+							});
 						} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BEETROOT_SEEDS) {
 							if (sourceentity instanceof LivingEntity _entity) {
 								ItemStack _setstack = new ItemStack(Items.BEETROOT_SEEDS);
@@ -100,7 +140,18 @@ public class ChickenBreedingProcedure {
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
 								_entity.addEffect(new MobEffectInstance(HowToOwnADragonModMobEffects.BREEDING_COOLDOWN.get(), 600, 1, false, false));
-							BreedingSpawnBabyChickenProcedure.execute(world, x, y, z, entity);
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"execute at @e[type=how_to_own_a_dragon:chicken, sort= nearest, limit= 1] run summon how_to_own_a_dragon:baby_chicken ~ ~ ~");
+							HowToOwnADragonMod.queueServerWork(1, () -> {
+								if (!world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+									((Entity) world.getEntitiesOfClass(BabyChickenEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+										}
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("chickencolor", (entity.getPersistentData().getString("chickencolor")));
+								}
+							});
 						}
 					}
 				}

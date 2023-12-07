@@ -14,20 +14,14 @@ public class TextureBabyChickenProcedure {
 			GrowingTickRateChickenProcedure.execute(world, x, y, z, entity);
 			if (entity instanceof BabyChickenEntity) {
 				if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
-					if (!((entity instanceof BabyChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenbrown"))) {
-						if (entity instanceof BabyChickenEntity animatable)
-							animatable.setTexture("chickenbrown");
-					}
+					if (entity instanceof BabyChickenEntity animatable)
+						animatable.setTexture("chickenbrown");
 				} else if ((entity.getPersistentData().getString("chickencolor")).equals("lightbrown")) {
-					if (!((entity instanceof BabyChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenlightbrown"))) {
-						if (entity instanceof BabyChickenEntity animatable)
-							animatable.setTexture("chickenlightbrown");
-					}
+					if (entity instanceof BabyChickenEntity animatable)
+						animatable.setTexture("chickenlightbrown");
 				} else if ((entity.getPersistentData().getString("chickencolor")).equals("white")) {
-					if (!((entity instanceof BabyChickenEntity animatable ? animatable.getTexture() : "null").equals("chickenwhite"))) {
-						if (entity instanceof BabyChickenEntity animatable)
-							animatable.setTexture("chickenwhite");
-					}
+					if (entity instanceof BabyChickenEntity animatable)
+						animatable.setTexture("chickenwhite");
 				} else {
 					RandomTextureBabyChickenProcedure.execute(world, x, y, z, entity);
 				}
