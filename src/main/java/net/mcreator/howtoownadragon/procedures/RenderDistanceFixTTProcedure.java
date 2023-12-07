@@ -29,14 +29,14 @@ import javax.annotation.Nullable;
 public class RenderDistanceFixTTProcedure {
 	@SubscribeEvent
 	public static void onEntitySpawned(EntityJoinLevelEvent event) {
-		execute(event, event.getLevel(), event.getEntity());
+		execute(event, event.getLevel(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(3, () -> {
@@ -47,130 +47,126 @@ public class RenderDistanceFixTTProcedure {
 						if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 							if (entity instanceof TTMaleEntity animatable)
 								animatable.setTexture("greentt");
-							TextureFixTTWaitProcedure.execute(world, entity);
+							TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 						} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 							if (entity instanceof TTMaleEntity animatable)
 								animatable.setTexture("pinktt");
-							TextureFixTTWaitProcedure.execute(world, entity);
+							TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 						} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 							if (entity instanceof TTMaleEntity animatable)
 								animatable.setTexture("turqtt");
-							TextureFixTTWaitProcedure.execute(world, entity);
+							TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 						} else {
-							HowToOwnADragonMod.queueServerWork(200, () -> {
-								entity.getPersistentData().putBoolean("loadedtt", false);
-								RenderDistanceFixTTProcedure.execute(world, entity);
-							});
+							RandomColorMaleTTProcedure.execute(world, x, y, z, entity);
+							TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 						}
 					} else {
 						if (entity instanceof TTFemaleEntity) {
 							if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 								if (entity instanceof TTFemaleEntity animatable)
 									animatable.setTexture("greentt");
-								TextureFixTTWaitProcedure.execute(world, entity);
+								TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 							} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 								if (entity instanceof TTFemaleEntity animatable)
 									animatable.setTexture("pinktt");
-								TextureFixTTWaitProcedure.execute(world, entity);
+								TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 							} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 								if (entity instanceof TTFemaleEntity animatable)
 									animatable.setTexture("turqtt");
-								TextureFixTTWaitProcedure.execute(world, entity);
+								TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 							} else {
-								HowToOwnADragonMod.queueServerWork(200, () -> {
-									entity.getPersistentData().putBoolean("loadedtt", false);
-									RenderDistanceFixTTProcedure.execute(world, entity);
-								});
+								RandomColorFemaleTTProcedure.execute(world, x, y, z, entity);
+								TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 							}
 						} else {
 							if (entity instanceof AdolescentTTMaleEntity) {
 								if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 									if (entity instanceof AdolescentTTMaleEntity animatable)
 										animatable.setTexture("greentt");
-									TextureFixTTWaitProcedure.execute(world, entity);
+									TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 								} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 									if (entity instanceof AdolescentTTMaleEntity animatable)
 										animatable.setTexture("pinktt");
-									TextureFixTTWaitProcedure.execute(world, entity);
+									TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 								} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 									if (entity instanceof AdolescentTTMaleEntity animatable)
 										animatable.setTexture("turqtt");
-									TextureFixTTWaitProcedure.execute(world, entity);
+									TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 								}
 							} else {
 								if (entity instanceof AdolescentTTFemaleEntity) {
 									if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 										if (entity instanceof AdolescentTTFemaleEntity animatable)
 											animatable.setTexture("greentt");
-										TextureFixTTWaitProcedure.execute(world, entity);
+										TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 									} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 										if (entity instanceof AdolescentTTFemaleEntity animatable)
 											animatable.setTexture("pinktt");
-										TextureFixTTWaitProcedure.execute(world, entity);
+										TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 									} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 										if (entity instanceof AdolescentTTFemaleEntity animatable)
 											animatable.setTexture("turqtt");
-										TextureFixTTWaitProcedure.execute(world, entity);
+										TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 									}
 								} else {
 									if (entity instanceof JuvenileTTMaleEntity) {
 										if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 											if (entity instanceof JuvenileNadderMaleEntity animatable)
 												animatable.setTexture("greentt");
-											TextureFixTTWaitProcedure.execute(world, entity);
+											TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 										} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 											if (entity instanceof JuvenileNadderMaleEntity animatable)
 												animatable.setTexture("pinktt");
-											TextureFixTTWaitProcedure.execute(world, entity);
+											TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 										} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 											if (entity instanceof JuvenileNadderMaleEntity animatable)
 												animatable.setTexture("turqtt");
-											TextureFixTTWaitProcedure.execute(world, entity);
+											TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 										}
 									} else {
 										if (entity instanceof JuvenileTTFemaleEntity) {
 											if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 												if (entity instanceof JuvenileNadderFemaleEntity animatable)
 													animatable.setTexture("greentt");
-												TextureFixTTWaitProcedure.execute(world, entity);
+												TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 											} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 												if (entity instanceof JuvenileNadderFemaleEntity animatable)
 													animatable.setTexture("pinktt");
-												TextureFixTTWaitProcedure.execute(world, entity);
+												TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 											} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 												if (entity instanceof JuvenileNadderFemaleEntity animatable)
 													animatable.setTexture("turqtt");
-												TextureFixTTWaitProcedure.execute(world, entity);
+												TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 											}
 										} else {
 											if (entity instanceof BabyTTMaleEntity) {
 												if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 													if (entity instanceof BabyTTMaleEntity animatable)
 														animatable.setTexture("greentt");
-													TextureFixTTWaitProcedure.execute(world, entity);
+													TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 												} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 													if (entity instanceof BabyTTMaleEntity animatable)
 														animatable.setTexture("pinktt");
-													TextureFixTTWaitProcedure.execute(world, entity);
+													TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 												} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 													if (entity instanceof BabyTTMaleEntity animatable)
 														animatable.setTexture("turqtt");
-													TextureFixTTWaitProcedure.execute(world, entity);
+													TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 												}
 											} else {
 												if (entity instanceof BabyTTFemaleEntity) {
 													if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
 														if (entity instanceof BabyTTFemaleEntity animatable)
 															animatable.setTexture("greentt");
-														TextureFixTTWaitProcedure.execute(world, entity);
+														TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 													} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
 														if (entity instanceof BabyTTFemaleEntity animatable)
 															animatable.setTexture("pinktt");
-														TextureFixTTWaitProcedure.execute(world, entity);
+														TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 													} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
 														if (entity instanceof BabyTTFemaleEntity animatable)
 															animatable.setTexture("turqtt");
-														TextureFixTTWaitProcedure.execute(world, entity);
+														TextureFixTTWaitProcedure.execute(world, x, y, z, entity);
 													}
 												}
 											}

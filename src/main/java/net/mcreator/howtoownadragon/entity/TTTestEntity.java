@@ -47,6 +47,7 @@ import net.mcreator.howtoownadragon.procedures.WildNightAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildDayAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildAIProcedure;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
+import net.mcreator.howtoownadragon.procedures.NadderFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.GrownTTDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
@@ -245,6 +246,7 @@ public class TTTestEntity extends Monster implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		NadderFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

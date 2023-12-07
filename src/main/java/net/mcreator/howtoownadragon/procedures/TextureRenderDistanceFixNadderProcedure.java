@@ -57,10 +57,8 @@ public class TextureRenderDistanceFixNadderProcedure {
 								TextureFixNadderWaitProcedure.execute(world, entity);
 							} else {
 								NBTDataSpawnNadderProcedure.execute(entity);
-								HowToOwnADragonMod.queueServerWork(200, () -> {
-									entity.getPersistentData().putBoolean("loadednadder", false);
-									TextureRenderDistanceFixNadderProcedure.execute(world, entity);
-								});
+								RandomColorMaleNadderProcedure.execute(entity);
+								TextureFixNadderWaitProcedure.execute(world, entity);
 							}
 						} else {
 							if (entity instanceof NadderFemaleEntity) {
@@ -78,10 +76,8 @@ public class TextureRenderDistanceFixNadderProcedure {
 									TextureFixNadderWaitProcedure.execute(world, entity);
 								} else {
 									NBTDataSpawnNadderProcedure.execute(entity);
-									HowToOwnADragonMod.queueServerWork(200, () -> {
-										entity.getPersistentData().putBoolean("loadednadder", false);
-										TextureRenderDistanceFixNadderProcedure.execute(world, entity);
-									});
+									RandomColorFemaleNadderProcedure.execute(entity);
+									TextureFixNadderWaitProcedure.execute(world, entity);
 								}
 							} else {
 								if (entity instanceof AdolescentNadderMaleEntity) {

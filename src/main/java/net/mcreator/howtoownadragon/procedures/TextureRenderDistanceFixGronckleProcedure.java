@@ -62,10 +62,7 @@ public class TextureRenderDistanceFixGronckleProcedure {
 							} else {
 								RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
 								NBTDataSpawnGronckleProcedure.execute(entity);
-								HowToOwnADragonMod.queueServerWork(200, () -> {
-									entity.getPersistentData().putBoolean("loadedgronckle", false);
-									TextureRenderDistanceFixGronckleProcedure.execute(world, x, y, z, entity);
-								});
+								TextureFixGronckleWaitProcedure.execute(world, x, y, z, entity);
 							}
 						} else {
 							if (entity instanceof GronckleFemaleEntity) {
@@ -88,10 +85,7 @@ public class TextureRenderDistanceFixGronckleProcedure {
 								} else {
 									RandomColorFemaleGronckleProcedure.execute(entity);
 									NBTDataSpawnGronckleProcedure.execute(entity);
-									HowToOwnADragonMod.queueServerWork(200, () -> {
-										entity.getPersistentData().putBoolean("loadedgronckle", false);
-										TextureRenderDistanceFixGronckleProcedure.execute(world, x, y, z, entity);
-									});
+									TextureFixGronckleWaitProcedure.execute(world, x, y, z, entity);
 								}
 							} else {
 								if (entity instanceof AdolescentGronckleMaleEntity) {

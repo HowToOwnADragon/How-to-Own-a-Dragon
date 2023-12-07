@@ -50,10 +50,7 @@ public class RenderDistanceFixChickenProcedure {
 							TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
 						} else {
 							OnInitialEntitySpawnChickenProcedure.execute(world, x, y, z, entity);
-							HowToOwnADragonMod.queueServerWork(200, () -> {
-								entity.getPersistentData().putBoolean("loadedchicken", false);
-								OnInitialEntitySpawnChickenProcedure.execute(world, x, y, z, entity);
-							});
+							TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
 						}
 					} else {
 						if (entity instanceof BabyChickenEntity) {

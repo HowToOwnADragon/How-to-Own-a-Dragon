@@ -83,10 +83,7 @@ public class RenderDistanceFixSheepProcedure {
 						TextureFixSheepWaitProcedure.execute(world, entity);
 					} else {
 						OnInitialEntitySpawnSheepProcedure.execute(world, entity);
-						HowToOwnADragonMod.queueServerWork(200, () -> {
-							entity.getPersistentData().putBoolean("loadedsheep", false);
-							RenderDistanceFixSheepProcedure.execute(world, entity);
-						});
+						TextureFixSheepWaitProcedure.execute(world, entity);
 					}
 				}
 			}
