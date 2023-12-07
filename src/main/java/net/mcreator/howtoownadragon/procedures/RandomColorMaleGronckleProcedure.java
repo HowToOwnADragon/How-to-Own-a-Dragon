@@ -12,17 +12,17 @@ public class RandomColorMaleGronckleProcedure {
 		if (entity == null)
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
+			entity.getPersistentData().putString("groncklecolor", "pink");
 			if (entity instanceof GronckleMaleEntity animatable)
 				animatable.setTexture("groncklepink");
-			entity.getPersistentData().putString("groncklecolor", "pink");
 		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
+			entity.getPersistentData().putString("groncklecolor", "orangered");
 			if (entity instanceof GronckleMaleEntity animatable)
 				animatable.setTexture("gronckleorangered");
-			entity.getPersistentData().putString("groncklecolor", "orangered");
 		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
+			entity.getPersistentData().putString("groncklecolor", "blueyellow");
 			if (entity instanceof GronckleMaleEntity animatable)
 				animatable.setTexture("gronckleblueyellow");
-			entity.getPersistentData().putString("groncklecolor", "blueyellow");
 		} else {
 			RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
 		}

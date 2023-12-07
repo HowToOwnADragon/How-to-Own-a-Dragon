@@ -88,7 +88,6 @@ import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GrownGronckleDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleFlyingTickUpdateProcedure;
-import net.mcreator.howtoownadragon.procedures.GronckleFemaleOnInitialEntitySpawnProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
@@ -340,13 +339,6 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 	public void die(DamageSource source) {
 		super.die(source);
 		GrownGronckleDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
-	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
-		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		GronckleFemaleOnInitialEntitySpawnProcedure.execute(world, this);
-		return retval;
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(1) {

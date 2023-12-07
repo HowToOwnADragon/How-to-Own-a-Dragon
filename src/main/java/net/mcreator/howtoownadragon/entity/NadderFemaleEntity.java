@@ -89,7 +89,6 @@ import net.mcreator.howtoownadragon.procedures.NadderFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GrownNadderDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
-import net.mcreator.howtoownadragon.procedures.FemaleOnInitialEntitySpawnNadderProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
@@ -340,13 +339,6 @@ public class NadderFemaleEntity extends TamableAnimal implements GeoEntity {
 	public void die(DamageSource source) {
 		super.die(source);
 		GrownNadderDiesProcedureProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
-	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
-		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		FemaleOnInitialEntitySpawnNadderProcedure.execute(world, this);
-		return retval;
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(1) {
