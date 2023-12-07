@@ -60,13 +60,13 @@ public class MaleBreedingTTProcedure {
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("ttinlove", false);
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BREAD) {
-					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
-					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
-					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
-					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
 				}
 				if (sourceentity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:breed_first_dragon"));

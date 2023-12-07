@@ -13,10 +13,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
@@ -60,33 +56,21 @@ public class MaleBreedingGronckleProcedure {
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("gronckleinlove", false);
 				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
-					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity);
-				}
-				if (sourceentity instanceof ServerPlayer _player) {
-					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("how_to_own_a_dragon:breed_first_dragon"));
-					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-					if (!_ap.isDone()) {
-						for (String criteria : _ap.getRemainingCriteria())
-							_player.getAdvancements().award(_adv, criteria);
-					}
-				}
-				if (!(sourceentity.getPersistentData().getBoolean("isgroncklebreed") == true)) {
-					sourceentity.getPersistentData().putBoolean("isgroncklebreed", true);
-					BreedingAllDragonsProcedure.execute(sourceentity);
+					MaleSpawnEggGronckleProcedure.execute(world, x, y, z, entity, sourceentity);
 				}
 			}
 		}
