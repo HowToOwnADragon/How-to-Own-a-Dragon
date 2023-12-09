@@ -9,7 +9,6 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 
 import net.mcreator.howtoownadragon.world.inventory.ProgressiveAchievementsMenu;
-import net.mcreator.howtoownadragon.procedures.HideProcedure;
 import net.mcreator.howtoownadragon.network.ProgressiveAchievementsButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -89,17 +88,11 @@ public class ProgressiveAchievementsScreen extends AbstractContainerScreen<Progr
 	public void init() {
 		super.init();
 		button_vanilla_achievements = Button.builder(Component.translatable("gui.how_to_own_a_dragon.progressive_achievements.button_vanilla_achievements"), e -> {
-			if (HideProcedure.execute()) {
+			if (true) {
 				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new ProgressiveAchievementsButtonMessage(0, x, y, z));
 				ProgressiveAchievementsButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 22, this.topPos + 28, 129, 20).build(builder -> new Button(builder) {
-			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
-				if (HideProcedure.execute())
-					super.render(ms, gx, gy, ticks);
-			}
-		});
+		}).bounds(this.leftPos + 22, this.topPos + 28, 129, 20).build();
 		guistate.put("button:button_vanilla_achievements", button_vanilla_achievements);
 		this.addRenderableWidget(button_vanilla_achievements);
 		button_htoad_advancements = Button.builder(Component.translatable("gui.how_to_own_a_dragon.progressive_achievements.button_htoad_advancements"), e -> {

@@ -122,6 +122,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "Hide"
+          },
           "x": 182,
           "y": 146
         }

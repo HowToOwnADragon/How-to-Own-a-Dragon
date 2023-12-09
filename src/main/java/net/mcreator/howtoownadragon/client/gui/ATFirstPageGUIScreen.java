@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.ATFirstPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.HideProcedure;
 import net.mcreator.howtoownadragon.network.ATFirstPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -81,7 +82,8 @@ public class ATFirstPageGUIScreen extends AbstractContainerScreen<ATFirstPageGUI
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_bamboo_jungle"), 15, 38, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_beach"), 35, 55, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_birch_forest"), 18, 73, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_cherry_grove"), 18, 91, -12829636);
+		if (HideProcedure.execute())
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_cherry_grove"), 18, 91, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean"), 23, 109, -12829636);
 	}
 
