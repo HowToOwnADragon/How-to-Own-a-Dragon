@@ -10,6 +10,11 @@ import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.ATFirstPageGUIMenu;
 import net.mcreator.howtoownadragon.procedures.HideProcedure;
+import net.mcreator.howtoownadragon.procedures.ATColdOceanReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATBirchForestReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATBeachReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATBambooJungleReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATBadlandsReturnProcedure;
 import net.mcreator.howtoownadragon.network.ATFirstPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -78,13 +83,18 @@ public class ATFirstPageGUIScreen extends AbstractContainerScreen<ATFirstPageGUI
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_first_page"), 23, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_badlands"), 28, 21, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_bamboo_jungle"), 15, 38, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_beach"), 35, 55, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_birch_forest"), 18, 73, -12829636);
+		if (ATBadlandsReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_badlands"), 28, 21, -12829636);
+		if (ATBambooJungleReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_bamboo_jungle"), 15, 38, -12829636);
+		if (ATBeachReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_beach"), 35, 55, -12829636);
+		if (ATBirchForestReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_birch_forest"), 18, 73, -12829636);
 		if (HideProcedure.execute())
 			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_cherry_grove"), 18, 91, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean"), 23, 109, -12829636);
+		if (ATColdOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean"), 23, 109, -12829636);
 	}
 
 	@Override
