@@ -9,6 +9,12 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.ATSecondPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.ATDeepOceanReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATDeepLukewarmOceanReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATDeepFrozenOceanReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATDeepDarkReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATDeepColdOceanReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATDarkForestReturnProcedure;
 import net.mcreator.howtoownadragon.network.ATSecondPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -77,12 +83,18 @@ public class ATSecondPageGUIScreen extends AbstractContainerScreen<ATSecondPageG
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_second_page"), 25, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest"), 25, 21, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_cold_ocean"), 15, 38, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_dark"), 29, 55, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_frozen_ocean"), 10, 73, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_lukewarm_ocean"), 5, 91, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_ocean"), 29, 109, -12829636);
+		if (ATDarkForestReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest"), 25, 21, -12829636);
+		if (ATDeepColdOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_cold_ocean"), 15, 38, -12829636);
+		if (ATDeepDarkReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_dark"), 29, 55, -12829636);
+		if (ATDeepFrozenOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_frozen_ocean"), 10, 73, -12829636);
+		if (ATDeepLukewarmOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_lukewarm_ocean"), 5, 91, -12829636);
+		if (ATDeepOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_second_page_gui.label_deep_ocean"), 29, 109, -12829636);
 	}
 
 	@Override

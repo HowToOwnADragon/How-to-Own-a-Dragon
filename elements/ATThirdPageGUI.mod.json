@@ -62,6 +62,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ATDesertReturn"
+          },
           "x": 196,
           "y": 76
         }
@@ -76,6 +79,9 @@
           "color": {
             "value": -12829636,
             "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ATDripstoneCavesReturn"
           },
           "x": 174,
           "y": 93
@@ -92,6 +98,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ATErodedBadlandsReturn"
+          },
           "x": 174,
           "y": 111
         }
@@ -106,6 +115,9 @@
           "color": {
             "value": -12829636,
             "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ATFlowerForestReturn"
           },
           "x": 178,
           "y": 129
@@ -122,6 +134,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ATForestReturn"
+          },
           "x": 196,
           "y": 146
         }
@@ -136,6 +151,9 @@
           "color": {
             "value": -12829636,
             "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ATFrozenOceanReturn"
           },
           "x": 182,
           "y": 164
