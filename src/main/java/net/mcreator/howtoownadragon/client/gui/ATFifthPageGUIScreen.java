@@ -9,6 +9,11 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.ATFifthPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.ATMushroomFieldsReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATMeadowReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATMangroveSwampReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATLushCavesReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATLukewarmOceanReturnProcedure;
 import net.mcreator.howtoownadragon.network.ATFifthPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -77,12 +82,18 @@ public class ATFifthPageGUIScreen extends AbstractContainerScreen<ATFifthPageGUI
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_fifth_page"), 23, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_lukewarm_ocean"), 12, 22, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_lush_caves"), 24, 39, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_meadow"), 33, 75, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_mushroom_fields"), 11, 92, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_ocean"), 37, 110, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_mangrove_swamp"), 14, 57, -12829636);
+		if (ATLukewarmOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_lukewarm_ocean"), 12, 22, -12829636);
+		if (ATLushCavesReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_lush_caves"), 24, 39, -12829636);
+		if (ATMangroveSwampReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_mangrove_swamp"), 14, 57, -12829636);
+		if (ATMeadowReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_meadow"), 33, 75, -12829636);
+		if (ATMushroomFieldsReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_mushroom_fields"), 11, 92, -12829636);
+		if (ATLukewarmOceanReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fifth_page_gui.label_ocean"), 37, 110, -12829636);
 	}
 
 	@Override

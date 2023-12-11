@@ -9,6 +9,12 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.ATFourthPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.ATJungleReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATJaggedPeaksReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATIceSpikesReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATGroveReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATFrozenRiverReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATFrozenPeaksReturnProcedure;
 import net.mcreator.howtoownadragon.network.ATFourthPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -77,12 +83,18 @@ public class ATFourthPageGUIScreen extends AbstractContainerScreen<ATFourthPageG
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_fourth_page"), 21, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_frozen_peaks"), 18, 22, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_frozen_river"), 18, 39, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_grove"), 36, 57, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_ice_spikes"), 24, 74, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_jagged_peaks"), 18, 92, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_jungle"), 34, 110, -12829636);
+		if (ATFrozenPeaksReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_frozen_peaks"), 18, 22, -12829636);
+		if (ATFrozenRiverReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_frozen_river"), 18, 39, -12829636);
+		if (ATGroveReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_grove"), 36, 57, -12829636);
+		if (ATIceSpikesReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_ice_spikes"), 24, 74, -12829636);
+		if (ATJaggedPeaksReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_jagged_peaks"), 18, 92, -12829636);
+		if (ATJungleReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_fourth_page_gui.label_jungle"), 34, 110, -12829636);
 	}
 
 	@Override

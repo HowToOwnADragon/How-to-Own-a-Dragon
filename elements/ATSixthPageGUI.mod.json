@@ -62,6 +62,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ATOldGrowthBirchForestReturn"
+          },
           "x": 153,
           "y": 77
         }
@@ -69,15 +72,18 @@
       {
         "type": "label",
         "data": {
-          "name": "label_old_growth_paine_taiga",
+          "name": "label_old_growth_pine_taiga",
           "text": {
-            "fixedValue": "Old Growth Paine Taiga"
+            "fixedValue": "Old Growth Pine Taiga"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 156,
+          "displayCondition": {
+            "name": "ATOldGrowthPineTaigaReturn"
+          },
+          "x": 159,
           "y": 94
         }
       },
@@ -91,6 +97,9 @@
           "color": {
             "value": -12829636,
             "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ATOldGrowthSpruceTaigaReturn"
           },
           "x": 153,
           "y": 111
@@ -107,6 +116,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ATPlainsReturn"
+          },
           "x": 197,
           "y": 129
         }
@@ -122,6 +134,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ATRiverReturn"
+          },
           "x": 200,
           "y": 147
         }
@@ -136,6 +151,9 @@
           "color": {
             "value": -12829636,
             "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ATSavannaReturn"
           },
           "x": 195,
           "y": 165

@@ -9,6 +9,12 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.ATSixthPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.ATSavannaReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATRiverReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATPlainsReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATOldGrowthSpruceTaigaReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATOldGrowthPineTaigaReturnProcedure;
+import net.mcreator.howtoownadragon.procedures.ATOldGrowthBirchForestReturnProcedure;
 import net.mcreator.howtoownadragon.network.ATSixthPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -77,12 +83,18 @@ public class ATSixthPageGUIScreen extends AbstractContainerScreen<ATSixthPageGUI
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_sixth_page"), 39, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_old_growth_birch_forest"), 4, 22, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_old_growth_paine_taiga"), 7, 39, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_old_growth_spruce_taiga"), 4, 56, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_plains"), 48, 74, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_river"), 51, 92, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_savanna"), 46, 110, -12829636);
+		if (ATOldGrowthBirchForestReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_old_growth_birch_forest"), 4, 22, -12829636);
+		if (ATOldGrowthPineTaigaReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_old_growth_pine_taiga"), 10, 39, -12829636);
+		if (ATOldGrowthSpruceTaigaReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_old_growth_spruce_taiga"), 4, 56, -12829636);
+		if (ATPlainsReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_plains"), 48, 74, -12829636);
+		if (ATRiverReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_river"), 51, 92, -12829636);
+		if (ATSavannaReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.at_sixth_page_gui.label_savanna"), 46, 110, -12829636);
 	}
 
 	@Override
