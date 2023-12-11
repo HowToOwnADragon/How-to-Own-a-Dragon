@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.MHFirstPageGUIMenu;
+import net.mcreator.howtoownadragon.procedures.MHZombieReturnProcedure;
 import net.mcreator.howtoownadragon.network.MHFirstPageGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -77,7 +78,8 @@ public class MHFirstPageGUIScreen extends AbstractContainerScreen<MHFirstPageGUI
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_first_page_gui.label_first_page"), 24, 4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_first_page_gui.label_zombie"), 34, 21, -12829636);
+		if (MHZombieReturnProcedure.execute(entity))
+			this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_first_page_gui.label_zombie"), 34, 21, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_first_page_gui.label_zombie_villager"), 14, 38, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_first_page_gui.label_zombified_piglin"), 13, 56, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.mh_first_page_gui.label_wither"), 36, 74, -12829636);

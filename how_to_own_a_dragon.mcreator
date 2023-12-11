@@ -14053,9 +14053,9 @@
       "registry_name": "mh_first_page_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MHFirstPageGUIMenu.java",
+          "src/main/java/net/mcreator/howtoownadragon/network/MHFirstPageGUIButtonMessage.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/MHFirstPageGUIScreen.java",
-          "src/main/java/net/mcreator/howtoownadragon/network/MHFirstPageGUIButtonMessage.java"
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MHFirstPageGUIMenu.java"
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted"
@@ -16710,6 +16710,63 @@
         ]
       },
       "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/AdventuringTime/ATTextDisplayProcedures/ATBiomeReturns/ATReturnSixthPage"
+    },
+    {
+      "name": "MHFirstPageCheck",
+      "type": "procedure",
+      "sortid": 1558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mh_first_page_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MHFirstPageCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted/MHTextDisplay/MHCheck"
+    },
+    {
+      "name": "MHZombieReturn",
+      "type": "procedure",
+      "sortid": 1559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mh_zombie_return",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/MHZombieReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Achievements/ProgressiveAchievementsGUI/VanillaAdvancements/AdventureTabGroupButtonGUI/MonstersHunted/MHTextDisplay/MHReturn/MHFirstPageReturn"
     }
   ],
   "variable_elements": [
@@ -17909,6 +17966,24 @@
                           {
                             "name": "OpenMHPagesProcedures",
                             "children": []
+                          },
+                          {
+                            "name": "MHTextDisplay",
+                            "children": [
+                              {
+                                "name": "MHCheck",
+                                "children": []
+                              },
+                              {
+                                "name": "MHReturn",
+                                "children": [
+                                  {
+                                    "name": "MHFirstPageReturn",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       },

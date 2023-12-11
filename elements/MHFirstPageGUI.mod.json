@@ -62,6 +62,9 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "MHZombieReturn"
+          },
           "x": 198,
           "y": 76
         }
