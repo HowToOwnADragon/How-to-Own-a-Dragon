@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "how_to_own_a_dragon:gronckle_iron_hoe"
+    },
+    "title": {
+      "translate": "advancements.craft_a_gronckle_tool.title"
+    },
+    "description": {
+      "translate": "advancements.craft_a_gronckle_tool.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_a_gronckle_tool": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "how_to_own_a_dragon:obtain_gronckle_iron"
+}

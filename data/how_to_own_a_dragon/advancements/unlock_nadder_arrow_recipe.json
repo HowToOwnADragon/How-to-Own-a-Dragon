@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "unlock_nadder_arrow_recipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "how_to_own_a_dragon:nadder_spine"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "how_to_own_a_dragon:nadder_arrow_recipe"
+    ]
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}

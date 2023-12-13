@@ -1,5 +1,6 @@
 {
   "display": {
+    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "how_to_own_a_dragon:dragon_symbol"
     },
@@ -18,6 +19,5 @@
     "welcome_to_the_world": {
       "trigger": "minecraft:impossible"
     }
-  },
-  "parent": "minecraft:story/root"
+  }
 }

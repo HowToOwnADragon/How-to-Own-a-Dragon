@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "obtain_deep_iron_recipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "how_to_own_a_dragon:deep_iron_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "how_to_own_a_dragon:deep_iron_ingot_recipe",
+      "how_to_own_a_dragon:deep_iron_block_recipe",
+      "how_to_own_a_dragon:deep_iron_rod_recipe_middle",
+      "how_to_own_a_dragon:deep_iron_wall_recipe_bottem",
+      "how_to_own_a_dragon:deep_iron_door_recipe_left",
+      "how_to_own_a_dragon:deep_iron_slab_recipe_bottem",
+      "how_to_own_a_dragon:deep_iron_stairs_recipe_left",
+      "how_to_own_a_dragon:deepiron_stairs_recipe_right"
+    ]
+  },
+  "parent": "how_to_own_a_dragon:welcome_to_the_world"
+}
