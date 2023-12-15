@@ -64,7 +64,7 @@ public class GronkleIronGUIMaleButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ButtonPressedGronckleIronGUIMaleProcedure.execute(world, x, y, z, entity);
+			ButtonPressedGronckleIronGUIMaleProcedure.execute(entity);
 		}
 	}
 

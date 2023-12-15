@@ -2,10 +2,10 @@
   "_fv": 43,
   "_type": "attribute",
   "definition": {
-    "description": "Gronckle Iron Cooldown",
+    "description": "Gronckle Damage",
     "minValue": 0.0,
     "maxValue": 1024.0,
-    "defaultValue": 600.0,
+    "defaultValue": 5.0,
     "isPersistent": false,
     "entities": [
       {

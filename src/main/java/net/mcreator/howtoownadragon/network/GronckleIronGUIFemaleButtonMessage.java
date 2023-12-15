@@ -64,7 +64,7 @@ public class GronckleIronGUIFemaleButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ButtonPressedGronckleIronGUIFemaleProcedure.execute(world, x, y, z, entity);
+			ButtonPressedGronckleIronGUIFemaleProcedure.execute(entity);
 		}
 	}
 
