@@ -44,40 +44,54 @@ public class TextureRenderDistanceFixGronckleProcedure {
 					if (!(entity.getPersistentData().getBoolean("groncklesaddle") == true)) {
 						if (entity instanceof GronckleMaleEntity) {
 							if ((entity.getPersistentData().getString("groncklecolor")).equals("pink")) {
-								SetGronckleMaleTexturePinkProcedure.execute(entity);
-								TextureFixGronckleWaitProcedure.execute(world, entity);
+								if (!((entity instanceof GronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("pink"))) {
+									SetGronckleMaleTexturePinkProcedure.execute(entity);
+									TextureFixGronckleWaitProcedure.execute(world, entity);
+								}
 							} else if ((entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
-								SetGronckleMaleTextureOrangeRedProcedure.execute(entity);
-								TextureFixGronckleWaitProcedure.execute(world, entity);
+								if (!((entity instanceof GronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("orangered"))) {
+									SetGronckleMaleTextureOrangeRedProcedure.execute(entity);
+									TextureFixGronckleWaitProcedure.execute(world, entity);
+								}
 							} else if ((entity.getPersistentData().getString("groncklecolor")).equals("blueyellow")) {
-								SetGronckleMaleTextureBlueYellowProcedure.execute(entity);
-								TextureFixGronckleWaitProcedure.execute(world, entity);
+								if (!((entity instanceof GronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("blueyellow"))) {
+									SetGronckleMaleTextureBlueYellowProcedure.execute(entity);
+									TextureFixGronckleWaitProcedure.execute(world, entity);
+								}
 							} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
-								SetGronckleMaleTextureMeatlugProcedure.execute(entity);
-								TextureFixGronckleWaitProcedure.execute(world, entity);
+								if (!((entity instanceof GronckleMaleEntity animatable ? animatable.getTexture() : "null").equals("meatlug"))) {
+									SetGronckleMaleTextureMeatlugProcedure.execute(entity);
+									TextureFixGronckleWaitProcedure.execute(world, entity);
+								}
 							} else {
 								RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
 								NBTDataSpawnGronckleProcedure.execute(entity);
-								TextureFixGronckleWaitProcedure.execute(world, entity);
 							}
 						} else {
 							if (entity instanceof GronckleFemaleEntity) {
 								if ((entity.getPersistentData().getString("groncklecolor")).equals("pink")) {
-									SetGronckleFemaleTexturePinkProcedure.execute(entity);
-									TextureFixGronckleWaitProcedure.execute(world, entity);
+									if (!((entity instanceof GronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("pink"))) {
+										SetGronckleFemaleTexturePinkProcedure.execute(entity);
+										TextureFixGronckleWaitProcedure.execute(world, entity);
+									}
 								} else if ((entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
-									SetGronckleFemaleTextureOrangeRedProcedure.execute(entity);
-									TextureFixGronckleWaitProcedure.execute(world, entity);
+									if (!((entity instanceof GronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("orangered"))) {
+										SetGronckleFemaleTextureOrangeRedProcedure.execute(entity);
+										TextureFixGronckleWaitProcedure.execute(world, entity);
+									}
 								} else if ((entity.getPersistentData().getString("groncklecolor")).equals("blueyellow")) {
-									SetGronckleFemaleTextureBlueYellowProcedure.execute(entity);
-									TextureFixGronckleWaitProcedure.execute(world, entity);
+									if (!((entity instanceof GronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("blueyellow"))) {
+										SetGronckleFemaleTextureBlueYellowProcedure.execute(entity);
+										TextureFixGronckleWaitProcedure.execute(world, entity);
+									}
 								} else if ((entity.getPersistentData().getString("groncklecolor")).equals("meatlug")) {
-									SetGronckleFemaleTextureMeatlugProcedure.execute(entity);
-									TextureFixGronckleWaitProcedure.execute(world, entity);
+									if (!((entity instanceof GronckleFemaleEntity animatable ? animatable.getTexture() : "null").equals("meatlug"))) {
+										SetGronckleFemaleTextureMeatlugProcedure.execute(entity);
+										TextureFixGronckleWaitProcedure.execute(world, entity);
+									}
 								} else {
-									RandomColorFemaleGronckleProcedure.execute(entity);
+									RandomColorFemaleGronckleProcedure.execute(world, x, y, z, entity);
 									NBTDataSpawnGronckleProcedure.execute(entity);
-									TextureFixGronckleWaitProcedure.execute(world, entity);
 								}
 							} else {
 								if (entity instanceof AdolescentGronckleMaleEntity) {
