@@ -15,17 +15,17 @@ public class RandomColorFemaleGronckleProcedure {
 		if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
 			entity.getPersistentData().putString("groncklecolor", "pink");
 			HowToOwnADragonMod.queueServerWork(3, () -> {
-				TextureRenderDistanceFixGronckleProcedure.execute(world, x, y, z, entity);
+				TextureRenderDistanceFixGronckleProcedure.execute();
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 			entity.getPersistentData().putString("groncklecolor", "orangered");
 			HowToOwnADragonMod.queueServerWork(3, () -> {
-				TextureRenderDistanceFixGronckleProcedure.execute(world, x, y, z, entity);
+				TextureRenderDistanceFixGronckleProcedure.execute();
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
 			entity.getPersistentData().putString("groncklecolor", "blueyellow");
 			HowToOwnADragonMod.queueServerWork(3, () -> {
-				TextureRenderDistanceFixGronckleProcedure.execute(world, x, y, z, entity);
+				TextureRenderDistanceFixGronckleProcedure.execute();
 			});
 		} else {
 			RandomColorFemaleGronckleProcedure.execute(world, x, y, z, entity);
