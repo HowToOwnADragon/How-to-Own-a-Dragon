@@ -3,12 +3,15 @@ package net.mcreator.howtoownadragon.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
+import net.mcreator.howtoownadragon.procedures.MaleGronckleRendererProcedure;
 import net.mcreator.howtoownadragon.network.MaleGronckleGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -31,8 +34,8 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 290;
+		this.imageHeight = 200;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/male_gronckle_gui.png");
@@ -42,6 +45,9 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
+		if (MaleGronckleRendererProcedure.execute(world) instanceof LivingEntity livingEntity) {
+			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + 111, this.topPos + 72, 25, 0f, 0, livingEntity);
+		}
 	}
 
 	@Override
@@ -52,11 +58,8 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/saddelrackingui.png"));
-		this.blit(ms, this.leftPos + 79, this.topPos + 40, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/man_symbol_-_copy.png"));
-		this.blit(ms, this.leftPos + 76, this.topPos + 5, 0, 0, 10, 11, 10, 11);
+		this.blit(ms, this.leftPos + 75, this.topPos + 4, 0, 0, 10, 11, 10, 11);
 
 		RenderSystem.disableBlend();
 	}
@@ -77,8 +80,20 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle"), 6, 6, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_inventory"), 7, 70, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle"), 5, 5, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_inventory"), 64, 87, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_health"), 17, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_healthvalue"), 31, 110, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_armor"), 20, 125, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_armorvalue"), 31, 135, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_damage"), 17, 150, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_damagevalue"), 31, 160, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_walk_speed"), 229, 101, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_walkspeedvalue"), 252, 111, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_fly_speed"), 232, 126, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_flyspeedvalue"), 252, 136, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swim_speed"), 229, 151, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue"), 252, 161, -12829636);
 	}
 
 	@Override
@@ -89,7 +104,7 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 146, this.topPos + 62, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
+		imagebutton_next_page_mcreator_copy = new ImageButton(this.leftPos + 262, this.topPos + 177, 24, 20, 0, 0, 20, new ResourceLocation("how_to_own_a_dragon:textures/screens/atlas/imagebutton_next_page_mcreator_copy.png"), 24, 40, e -> {
 			if (true) {
 				HowToOwnADragonMod.PACKET_HANDLER.sendToServer(new MaleGronckleGUIButtonMessage(0, x, y, z));
 				MaleGronckleGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
