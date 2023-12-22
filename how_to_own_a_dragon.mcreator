@@ -14796,30 +14796,6 @@
       "path": "~/Entities/Dragons/Deadly Nadder/Items"
     },
     {
-      "name": "TextureFixGronckleWait",
-      "type": "procedure",
-      "sortid": 1483,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "texture_fix_gronckle_wait",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureFixGronckleWaitProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick"
-    },
-    {
       "name": "TextureFixNadderWait",
       "type": "procedure",
       "sortid": 1484,
@@ -16746,7 +16722,7 @@
       "type": "attribute",
       "sortid": 1561,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gronckle_iron_cooldown",
       "metadata": {
         "files": []
@@ -16758,172 +16734,12 @@
       "type": "attribute",
       "sortid": 1562,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gronckle_damage",
       "metadata": {
         "files": []
       },
       "path": "~/Entities/Dragons/Gronckle/Entity/Stats"
-    },
-    {
-      "name": "SetGronckleMaleTexturePink",
-      "type": "procedure",
-      "sortid": 1563,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_male_texture_pink",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleMaleTexturePinkProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Male"
-    },
-    {
-      "name": "SetGronckleMaleTextureBlueYellow",
-      "type": "procedure",
-      "sortid": 1564,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_male_texture_blue_yellow",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleMaleTextureBlueYellowProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Male"
-    },
-    {
-      "name": "SetGronckleMaleTextureOrangeRed",
-      "type": "procedure",
-      "sortid": 1565,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_male_texture_orange_red",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleMaleTextureOrangeRedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Male"
-    },
-    {
-      "name": "SetGronckleMaleTextureMeatlug",
-      "type": "procedure",
-      "sortid": 1566,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_male_texture_meatlug",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleMaleTextureMeatlugProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Male"
-    },
-    {
-      "name": "SetGronckleFemaleTextureMeatlug",
-      "type": "procedure",
-      "sortid": 1567,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_female_texture_meatlug",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleFemaleTextureMeatlugProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Female"
-    },
-    {
-      "name": "SetGronckleFemaleTexturePink",
-      "type": "procedure",
-      "sortid": 1568,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_female_texture_pink",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleFemaleTexturePinkProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Female"
-    },
-    {
-      "name": "SetGronckleFemaleTextureBlueYellow",
-      "type": "procedure",
-      "sortid": 1569,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_female_texture_blue_yellow",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleFemaleTextureBlueYellowProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Female"
-    },
-    {
-      "name": "SetGronckleFemaleTextureOrangeRed",
-      "type": "procedure",
-      "sortid": 1570,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_gronckle_female_texture_orange_red",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/SetGronckleFemaleTextureOrangeRedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Female"
     },
     {
       "name": "TextureFixGroncklePinkMale",
@@ -16940,6 +16756,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -16966,6 +16794,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -16990,6 +16830,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -17007,30 +16859,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/TextureFixGronckleMeatlugMaleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tick/Male"
-    },
-    {
-      "name": "TextureFixGronckleMaleRandom",
-      "type": "procedure",
-      "sortid": 1575,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "texture_fix_gronckle_male_random",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TextureFixGronckleMaleRandomProcedure.java"
         ],
         "dependencies": [
           {
@@ -17783,6 +17611,10 @@
                             "children": []
                           }
                         ]
+                      },
+                      {
+                        "name": "Stats",
+                        "children": []
                       }
                     ]
                   },
