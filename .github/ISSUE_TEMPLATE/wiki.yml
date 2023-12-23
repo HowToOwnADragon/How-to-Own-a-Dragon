@@ -1,72 +1,28 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug"]
+name: Wiki
+description: File a issue with the Wiki/Website
+title: "[Wiki Issue]: "
+labels: ["wiki"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for making a Bug Report!
+        Thank you for making an issue!
   - type: textarea
-    id: what-happened
+    id: what-is-wrong
     attributes:
-      label: What happened?
+      label: What is wrong?
       description: |
-        Please tell us about the bug as detailed as possible.
-        Feel free to also add Media and CrashLogs!
-    validations:
-      required: true
-  - type: dropdown
-    id: minecraft-version
-    attributes:
-      label: Minecraft Version
-      description: Which version of Minecraft are you using?
-      options:
-        - "1.19.4"
+        Please tell us about the issue as detailed as possible.
+        Feel free to also add Media!
     validations:
       required: true
   - type: input
-    id: mod-version
+    id: page
     attributes:
-      label: HTOAD version
-      description: Which version of How to Own a Dragon did you use?
+      label: Page
+      description: Which page is the issue on?
     validations:
       required: true
-  - type: dropdown
-    id: other-mods
-    attributes:
-      label: Other mods
-      description: Are you using any other mod outside of How to Own a Dragon and Geckolib?
-      options:
-        - "Yes"
-        - "No"
-    validations:
-      required: true
-  - type: textarea
-    id: which-other-mods
-    attributes:
-      label: Which other mods
-      description: Please provide a screenshot or list your mod folder.
-  - type: checkboxes
-    id: related
-    attributes:
-      label: Type of Bug
-      description: What type of bug is this?
-      options:
-        - label: Items/Blocks
-        - label: Entity
-        - label: QOL
-        - label: Tools/Armor
-        - label: Structure
-        - label: Other
-  - type: checkboxes
-    id: other
-    attributes:
-      label: Other Information
-      description: Are you using a Test or Pre-Release version of How to Own a Dragon?
-      options:
-        - label: I am playing on a Test/Pre-Release version of HTOAD.
-          required: false
   - type: textarea
     id: more-information
     attributes:
