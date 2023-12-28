@@ -77,19 +77,6 @@
         }
       },
       {
-        "type": "entitymodel",
-        "data": {
-          "entityModel": {
-            "name": "MaleGronckleRenderer"
-          },
-          "scale": 25,
-          "rotationX": 0,
-          "followMouseMovement": false,
-          "x": 169,
-          "y": 71
-        }
-      },
-      {
         "type": "image",
         "data": {
           "image": "man_symbol_-_copy.png",
@@ -116,13 +103,13 @@
         "data": {
           "name": "label_health",
           "text": {
-            "fixedValue": "Health"
+            "fixedValue": "Max Health"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 86,
+          "x": 75,
           "y": 120
         }
       },
