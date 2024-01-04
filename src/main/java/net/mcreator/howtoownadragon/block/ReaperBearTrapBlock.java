@@ -26,6 +26,6 @@ public class ReaperBearTrapBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		ReaperBearTrapEntityWalksOnTheBlockProcedure.execute(entity);
+		ReaperBearTrapEntityWalksOnTheBlockProcedure.execute(world, entity);
 	}
 }

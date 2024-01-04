@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "dragon_eye_v2",
     "customModelName": "Tool",
+    "customProperties": {},
+    "states": [],
     "name": "§oDragon Eye",
     "rarity": "UNCOMMON",
     "creativeTab": {

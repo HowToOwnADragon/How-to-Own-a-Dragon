@@ -13,8 +13,6 @@
  */
 package net.mcreator.howtoownadragon;
 
-import software.bernie.geckolib.GeckoLib;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -61,13 +59,12 @@ public class HowToOwnADragonMod {
 		HowToOwnADragonModItems.REGISTRY.register(bus);
 		HowToOwnADragonModEntities.REGISTRY.register(bus);
 		HowToOwnADragonModBlockEntities.REGISTRY.register(bus);
-		HowToOwnADragonModFeatures.REGISTRY.register(bus);
 
 		HowToOwnADragonModMobEffects.REGISTRY.register(bus);
 
 		HowToOwnADragonModMenus.REGISTRY.register(bus);
+		HowToOwnADragonModFeatures.REGISTRY.register(bus);
 
-		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

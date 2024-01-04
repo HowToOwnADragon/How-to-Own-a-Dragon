@@ -21,14 +21,14 @@ import javax.annotation.Nullable;
 public class RenderDistanceFixChickenProcedure {
 	@SubscribeEvent
 	public static void onEntitySpawned(EntityJoinLevelEvent event) {
-		execute(event, event.getLevel(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+		execute(event, event.getLevel(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(3, () -> {
@@ -39,33 +39,33 @@ public class RenderDistanceFixChickenProcedure {
 						if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
 							if (entity instanceof ChickenEntity animatable)
 								animatable.setTexture("chickenbrown");
-							TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+							TextureFixChickenWaitProcedure.execute(world, entity);
 						} else if ((entity.getPersistentData().getString("chickencolor")).equals("lightbrown")) {
 							if (entity instanceof ChickenEntity animatable)
 								animatable.setTexture("chickenlightbrown");
-							TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+							TextureFixChickenWaitProcedure.execute(world, entity);
 						} else if ((entity.getPersistentData().getString("chickencolor")).equals("white")) {
 							if (entity instanceof ChickenEntity animatable)
 								animatable.setTexture("chickenwhite");
-							TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+							TextureFixChickenWaitProcedure.execute(world, entity);
 						} else {
-							OnInitialEntitySpawnChickenProcedure.execute(world, x, y, z, entity);
-							TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+							OnInitialEntitySpawnChickenProcedure.execute(entity);
+							TextureFixChickenWaitProcedure.execute(world, entity);
 						}
 					} else {
 						if (entity instanceof BabyChickenEntity) {
 							if ((entity.getPersistentData().getString("chickencolor")).equals("brown")) {
 								if (entity instanceof BabyChickenEntity animatable)
 									animatable.setTexture("chickenbrown");
-								TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+								TextureFixChickenWaitProcedure.execute(world, entity);
 							} else if ((entity.getPersistentData().getString("chickencolor")).equals("lightbrown")) {
 								if (entity instanceof BabyChickenEntity animatable)
 									animatable.setTexture("chickenlightbrown");
-								TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+								TextureFixChickenWaitProcedure.execute(world, entity);
 							} else if ((entity.getPersistentData().getString("chickencolor")).equals("white")) {
 								if (entity instanceof BabyChickenEntity animatable)
 									animatable.setTexture("chickenwhite");
-								TextureFixChickenWaitProcedure.execute(world, x, y, z, entity);
+								TextureFixChickenWaitProcedure.execute(world, entity);
 							}
 						}
 					}

@@ -13,9 +13,7 @@ import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 
 public class SpawnTTProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Mth.nextInt(RandomSource.create(), 0, 2) <= 1) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new TTFemaleEntity(HowToOwnADragonModEntities.TT_FEMALE.get(), _level);
@@ -39,7 +37,7 @@ public class SpawnTTProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else {
-			SpawnTTProcedure.execute(world, x, y, z, entity);
+			SpawnTTProcedure.execute(world, x, y, z);
 		}
 	}
 }

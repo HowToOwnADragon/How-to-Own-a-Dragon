@@ -39,6 +39,6 @@ public class ReaperSpikeTrapBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		ReaperSpikeTrapProcedureProcedure.execute(entity);
+		ReaperSpikeTrapProcedureProcedure.execute(world, entity);
 	}
 }

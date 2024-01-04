@@ -63,7 +63,7 @@ public class TextureBabySheepProcedure {
 					if (entity instanceof BabySheepEntity animatable)
 						animatable.setTexture("sheeppink");
 				} else {
-					OnInitialEntitySpawnSheepProcedure.execute(world, entity);
+					OnInitialEntitySpawnSheepProcedure.execute(entity);
 				}
 			}
 		});

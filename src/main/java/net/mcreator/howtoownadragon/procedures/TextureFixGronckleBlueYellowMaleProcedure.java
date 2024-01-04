@@ -7,14 +7,14 @@ import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class TextureFixGronckleBlueYellowMaleProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (!(entity.getPersistentData().getBoolean("groncklesaddle") == true)) {
 			if (entity instanceof GronckleFemaleEntity animatable)
 				animatable.setTexture("gronckleblueyellow");
 			HowToOwnADragonMod.queueServerWork(20, () -> {
-				TextureFixGronckleBlueYellowMaleProcedure.execute(world, x, y, z, entity);
+				TextureFixGronckleBlueYellowMaleProcedure.execute(world, entity);
 			});
 		}
 	}

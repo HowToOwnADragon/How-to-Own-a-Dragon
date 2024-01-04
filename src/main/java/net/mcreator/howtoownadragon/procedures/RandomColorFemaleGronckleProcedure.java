@@ -1,6 +1,5 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -8,7 +7,7 @@ import net.minecraft.util.Mth;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 
 public class RandomColorFemaleGronckleProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		entity.getPersistentData().putBoolean("loadedgronckle", false);
@@ -25,7 +24,7 @@ public class RandomColorFemaleGronckleProcedure {
 			if (entity instanceof GronckleFemaleEntity animatable)
 				animatable.setTexture("gronckleblueyellow");
 		} else {
-			RandomColorFemaleGronckleProcedure.execute(world, x, y, z, entity);
+			RandomColorFemaleGronckleProcedure.execute(entity);
 		}
 	}
 }

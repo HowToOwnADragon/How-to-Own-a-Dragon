@@ -18,29 +18,29 @@ import javax.annotation.Nullable;
 public class RandomColorMaleGronckleProcedure {
 	@SubscribeEvent
 	public static void onEntitySpawned(EntityJoinLevelEvent event) {
-		execute(event, event.getLevel(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+		execute(event, event.getLevel(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(2, () -> {
 			NBTDataSpawnGronckleProcedure.execute(entity);
 			if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
 				entity.getPersistentData().putString("groncklecolor", "pink");
-				TextureFixGroncklePinkMaleProcedure.execute(world, x, y, z, entity);
+				TextureFixGroncklePinkMaleProcedure.execute(world, entity);
 			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 				entity.getPersistentData().putString("groncklecolor", "orangered");
-				TextureFixGronckleOrangeRedMaleProcedure.execute(world, x, y, z, entity);
+				TextureFixGronckleOrangeRedMaleProcedure.execute(world, entity);
 			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
 				entity.getPersistentData().putString("groncklecolor", "blueyellow");
-				TextureFixGronckleBlueYellowMaleProcedure.execute(world, x, y, z, entity);
+				TextureFixGronckleBlueYellowMaleProcedure.execute(world, entity);
 			} else {
-				RandomColorMaleGronckleProcedure.execute(world, x, y, z, entity);
+				RandomColorMaleGronckleProcedure.execute(world, entity);
 			}
 		});
 	}

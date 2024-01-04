@@ -39,6 +39,6 @@ public class ReaperArrowTrapBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		ReaperArrowTrapEntityWalksOnTheBlockProcedure.execute(entity);
+		ReaperArrowTrapEntityWalksOnTheBlockProcedure.execute(world, entity);
 	}
 }

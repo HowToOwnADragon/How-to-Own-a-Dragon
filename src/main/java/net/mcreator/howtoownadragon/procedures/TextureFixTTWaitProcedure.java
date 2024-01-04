@@ -6,12 +6,12 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class TextureFixTTWaitProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		HowToOwnADragonMod.queueServerWork(200, () -> {
 			entity.getPersistentData().putBoolean("loadedtt", false);
-			RenderDistanceFixTTProcedure.execute(world, x, y, z, entity);
+			RenderDistanceFixTTProcedure.execute(world, entity);
 		});
 	}
 }

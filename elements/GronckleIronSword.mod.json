@@ -1,7 +1,8 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
     "texture": "gronckle_iron_sword",
     "customModelName": "Normal",
@@ -10,7 +11,6 @@
     "creativeTab": {
       "value": "CUSTOM:Tools"
     },
-    "toolType": "Sword",
     "harvestLevel": 3,
     "efficiency": 10.0,
     "attackSpeed": 1.6,

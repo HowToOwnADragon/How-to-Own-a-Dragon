@@ -1195,6 +1195,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1283,6 +1287,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1642,6 +1650,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5568,86 +5580,6 @@
       "path": "~/Entities/Dragons/Terrible Terror/Tag"
     },
     {
-      "name": "OpenMaleGUITT",
-      "type": "procedure",
-      "sortid": 938,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_male_guitt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenMaleGUITTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Terrible Terror/GUI"
-    },
-    {
-      "name": "OpenFemaleGUITT",
-      "type": "procedure",
-      "sortid": 939,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_female_guitt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenFemaleGUITTProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Terrible Terror/GUI"
-    },
-    {
       "name": "FemaleTT",
       "type": "tag",
       "sortid": 970,
@@ -7005,10 +6937,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -7705,86 +7633,6 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/world/inventory/NotGrownMaleNadderGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/NotGrownMaleNadderGUIScreen.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
-    },
-    {
-      "name": "OpenNotGrownFemaleNadderGUI",
-      "type": "procedure",
-      "sortid": 1079,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_not_grown_female_nadder_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownFemaleNadderGUIProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Deadly Nadder/GUI"
-    },
-    {
-      "name": "OpenNotGrownMaleNadderGUI",
-      "type": "procedure",
-      "sortid": 1080,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_not_grown_male_nadder_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownMaleNadderGUIProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Entities/Dragons/Deadly Nadder/GUI"
@@ -8809,22 +8657,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -9047,22 +8879,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -9909,10 +9725,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -10032,10 +9844,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -10843,22 +10651,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -10879,18 +10671,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -11519,22 +11299,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -11555,22 +11319,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -13527,18 +13275,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -13585,18 +13321,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -14786,18 +14510,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -14820,18 +14532,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -16668,30 +16368,6 @@
       "path": "~/Entities/Dragons/Gronckle/Entity/Stats"
     },
     {
-      "name": "GronckleIronCooldown",
-      "type": "attribute",
-      "sortid": 1561,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "gronckle_iron_cooldown",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Stats"
-    },
-    {
-      "name": "GronckleDamage",
-      "type": "attribute",
-      "sortid": 1562,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "gronckle_damage",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Stats"
-    },
-    {
       "name": "TextureFixGroncklePinkMale",
       "type": "procedure",
       "sortid": 1571,
@@ -16706,18 +16382,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -16744,18 +16408,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -16780,18 +16432,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -16814,18 +16454,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -16869,13 +16497,13 @@
   "language_map": {
     "en_us": {
       "gui.how_to_own_a_dragon.husbandry_tab_group_gui.button_two_by_two": "Two by Two",
-      "gui.how_to_own_a_dragon.bd_first_page_gui.label_carrot": "Carrot",
       "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
+      "gui.how_to_own_a_dragon.bd_first_page_gui.label_carrot": "Carrot",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_soul_sand_valley": "Soul Sand Valley",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "gui.how_to_own_a_dragon.love_is_in_the_air.label_gronckle": "Gronckle",
-      "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ravenger": "Ravenger",
+      "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas": "Basalt Deltas",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_piglin": "Piglin|",
       "entity.how_to_own_a_dragon.juvenile_tt_male": "Male Terrible Terror",
@@ -16909,9 +16537,9 @@
       "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
       "gui.how_to_own_a_dragon.tbt_second_page_gui.label_fox": "Fox",
       "entity.how_to_own_a_dragon.test_gronckle": "Test Gronckle",
-      "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
-      "item.how_to_own_a_dragon.tt_test_spawn_egg": "Male Terrible Terror Spawn Egg",
       "item_group.how_to_own_a_dragon.tools": "Tools",
+      "item.how_to_own_a_dragon.tt_test_spawn_egg": "Male Terrible Terror Spawn Egg",
+      "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
       "gui.how_to_own_a_dragon.bd_fifth_page_gui.label_raw_chicken": "Raw Chicken",
       "entity.how_to_own_a_dragon.adolescent_tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.htoad_advancements.button_gotta_catch_em_all": "Gotta Catch \u0027Em All",
@@ -16932,8 +16560,8 @@
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_elder_gaurdian": "Elder Gaurdian",
       "gui.how_to_own_a_dragon.generic_or_advanced_config.button_advanced": "Advanced",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_evoker": "Evoker|",
-      "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
       "gui.how_to_own_a_dragon.at_third_page_gui.label_flower_forest": "Flower Forest",
+      "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
       "gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean": "Cold Ocean",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue": "0",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombified_piglin": "Zombified Piglin",
@@ -16948,8 +16576,8 @@
       "gui.how_to_own_a_dragon.mh_second_page_gui.label_vex": "Vex",
       "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_phantom": "Phantom",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
-      "gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest": "Dark Forest",
       "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
+      "gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest": "Dark Forest",
       "gui.how_to_own_a_dragon.at_sixth_page_gui.label_savanna": "Savanna",
       "advancements.obtain_dragon_proof_recipe.descr": "Obtain Dragon Proof Recipe",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
@@ -16971,8 +16599,8 @@
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_guardian": "Guardian|",
       "gui.how_to_own_a_dragon.bd_first_page_gui.label_first_page": "First page",
       "item.how_to_own_a_dragon.chicken_spawn_egg": "Chicken Spawn Egg",
-      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
+      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_blaze": "Blaze",
       "gui.how_to_own_a_dragon.bd_fourth_page_gui.label_golden_carrot": "Golden Carrot",
       "gui.how_to_own_a_dragon.bd_sixth_page_gui.label_raw_salmon": "Raw Salmon",
@@ -16986,8 +16614,8 @@
       "block.how_to_own_a_dragon.deep_iron_wall": "Deep Iron Wall",
       "gui.how_to_own_a_dragon.at_second_page_gui.label_deep_dark": "Deep Dark",
       "entity.how_to_own_a_dragon.tt_test": "Male Terrible Terror",
-      "advancements.unlock_gronckle_saddle_recipe.title": "Unlock Gronckle Saddle Recipe",
       "gui.how_to_own_a_dragon.at_fourth_page_gui.label_jagged_peaks": "Jagged Peaks",
+      "advancements.unlock_gronckle_saddle_recipe.title": "Unlock Gronckle Saddle Recipe",
       "gui.how_to_own_a_dragon.bd_sixth_page_gui.label_sixth_page": "Sixth Page",
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "gui.how_to_own_a_dragon.bd_seventh_page_gui.label_suspicious_stew": "Suspicious Stew",
@@ -16998,8 +16626,8 @@
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_cave_spider": "Cave Spider|",
       "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
       "advancements.drinking_yaknog.title": "I don\u0027t feel so good...",
-      "entity.how_to_own_a_dragon.adolescent_gronckle_female": "Adolescent Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_female": "Female Gronckle",
+      "entity.how_to_own_a_dragon.adolescent_gronckle_female": "Adolescent Female Gronckle",
       "item_group.how_to_own_a_dragon.items": "Items",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_male_gronckle": "Male Gronckle",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zoglin": "Zoglin",
@@ -18401,5 +18029,5 @@
     "modElementsPackage": "net.mcreator.howtoownadragon",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300224119
+  "mcreatorVersion": 202300336712
 }

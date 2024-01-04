@@ -82,7 +82,7 @@ public class RenderDistanceFixSheepProcedure {
 							animatable.setTexture("sheeppink");
 						TextureFixSheepWaitProcedure.execute(world, entity);
 					} else {
-						OnInitialEntitySpawnSheepProcedure.execute(world, entity);
+						OnInitialEntitySpawnSheepProcedure.execute(entity);
 						TextureFixSheepWaitProcedure.execute(world, entity);
 					}
 				}

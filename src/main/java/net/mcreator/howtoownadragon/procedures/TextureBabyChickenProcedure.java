@@ -23,7 +23,7 @@ public class TextureBabyChickenProcedure {
 					if (entity instanceof BabyChickenEntity animatable)
 						animatable.setTexture("chickenwhite");
 				} else {
-					RandomTextureBabyChickenProcedure.execute(world, x, y, z, entity);
+					RandomTextureBabyChickenProcedure.execute(entity);
 				}
 			}
 		});

@@ -1,10 +1,12 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "yakmeat",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Raw Yak Meat",
     "rarity": "COMMON",
     "creativeTab": {

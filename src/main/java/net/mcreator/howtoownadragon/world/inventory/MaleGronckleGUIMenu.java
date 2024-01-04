@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -30,9 +31,13 @@ public class MaleGronckleGUIMenu extends AbstractContainerMenu implements Suppli
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
+	private ContainerLevelAccess access = ContainerLevelAccess.NULL;
 	private IItemHandler internal;
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
+	private Supplier<Boolean> boundItemMatcher = null;
+	private Entity boundEntity = null;
+	private BlockEntity boundBlockEntity = null;
 
 	public MaleGronckleGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(HowToOwnADragonModMenus.MALE_GRONCKLE_GUI.get(), id);
@@ -45,84 +50,104 @@ public class MaleGronckleGUIMenu extends AbstractContainerMenu implements Suppli
 			this.x = pos.getX();
 			this.y = pos.getY();
 			this.z = pos.getZ();
+			access = ContainerLevelAccess.create(world, pos);
 		}
 		if (pos != null) {
 			if (extraData.readableBytes() == 1) { // bound to item
 				byte hand = extraData.readByte();
-				ItemStack itemstack;
-				if (hand == 0)
-					itemstack = this.entity.getMainHandItem();
-				else
-					itemstack = this.entity.getOffhandItem();
+				ItemStack itemstack = hand == 0 ? this.entity.getMainHandItem() : this.entity.getOffhandItem();
+				this.boundItemMatcher = () -> itemstack == (hand == 0 ? this.entity.getMainHandItem() : this.entity.getOffhandItem());
 				itemstack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					this.internal = capability;
 					this.bound = true;
 				});
-			} else if (extraData.readableBytes() > 1) {
+			} else if (extraData.readableBytes() > 1) { // bound to entity
 				extraData.readByte(); // drop padding
-				Entity entity = world.getEntity(extraData.readVarInt());
-				if (entity != null)
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+				boundEntity = world.getEntity(extraData.readVarInt());
+				if (boundEntity != null)
+					boundEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
-				if (ent != null) {
-					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+				boundBlockEntity = this.world.getBlockEntity(pos);
+				if (boundBlockEntity != null)
+					boundBlockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
 						this.bound = true;
 					});
-				}
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 15, 24) {
+			private final int slot = 0;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return HowToOwnADragonModItems.SADDLE_RACK.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 15, 50) {
+			private final int slot = 1;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 264, 10) {
+			private final int slot = 2;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 246, 10) {
+			private final int slot = 3;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 228, 10) {
+			private final int slot = 4;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 210, 10) {
+			private final int slot = 5;
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 192, 10) {
+			private final int slot = 6;
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 264, 28) {
+			private final int slot = 7;
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 246, 28) {
+			private final int slot = 8;
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 228, 28) {
+			private final int slot = 9;
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 210, 28) {
+			private final int slot = 10;
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 192, 28) {
+			private final int slot = 11;
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 264, 46) {
+			private final int slot = 12;
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 246, 46) {
+			private final int slot = 13;
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 228, 46) {
+			private final int slot = 14;
 		}));
 		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 210, 46) {
+			private final int slot = 15;
 		}));
 		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 192, 46) {
+			private final int slot = 16;
 		}));
 		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 264, 64) {
+			private final int slot = 17;
 		}));
 		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 246, 64) {
+			private final int slot = 18;
 		}));
 		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 228, 64) {
+			private final int slot = 19;
 		}));
 		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 210, 64) {
+			private final int slot = 20;
 		}));
 		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 192, 64) {
+			private final int slot = 21;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -133,6 +158,14 @@ public class MaleGronckleGUIMenu extends AbstractContainerMenu implements Suppli
 
 	@Override
 	public boolean stillValid(Player player) {
+		if (this.bound) {
+			if (this.boundItemMatcher != null)
+				return this.boundItemMatcher.get();
+			else if (this.boundBlockEntity != null)
+				return AbstractContainerMenu.stillValid(this.access, player, this.boundBlockEntity.getBlockState().getBlock());
+			else if (this.boundEntity != null)
+				return this.boundEntity.isAlive();
+		}
 		return true;
 	}
 

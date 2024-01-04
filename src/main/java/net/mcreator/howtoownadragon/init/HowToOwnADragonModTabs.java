@@ -22,9 +22,6 @@ public class HowToOwnADragonModTabs {
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(HowToOwnADragonModItems.YAK_SPAWN_EGG.get());
 		}
-
-		if (tabData.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-		}
 	}
 
 	@SubscribeEvent

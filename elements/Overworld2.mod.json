@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -267,6 +267,7 @@
     },
     "enableIgniter": true,
     "igniterName": "Overworld 2 Portal Igniter",
+    "specialInfo": [],
     "igniterTab": {
       "value": "TOOLS"
     },

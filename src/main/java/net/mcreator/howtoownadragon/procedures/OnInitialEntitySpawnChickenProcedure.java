@@ -1,6 +1,5 @@
 package net.mcreator.howtoownadragon.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -8,7 +7,7 @@ import net.minecraft.util.Mth;
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
 
 public class OnInitialEntitySpawnChickenProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
@@ -24,7 +23,7 @@ public class OnInitialEntitySpawnChickenProcedure {
 			if (entity instanceof ChickenEntity animatable)
 				animatable.setTexture("chickenwhite");
 		} else {
-			OnInitialEntitySpawnChickenProcedure.execute(world, x, y, z, entity);
+			OnInitialEntitySpawnChickenProcedure.execute(entity);
 		}
 	}
 }

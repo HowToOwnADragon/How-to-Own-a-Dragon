@@ -17,7 +17,7 @@ public class SpawnProcedureTTProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SPAWN_EGG_TT.get()) {
-			SpawnTTProcedure.execute(world, x, y, z, entity);
+			SpawnTTProcedure.execute(world, x, y, z);
 			if (new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {

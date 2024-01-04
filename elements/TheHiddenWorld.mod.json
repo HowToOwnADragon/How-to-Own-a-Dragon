@@ -1,5 +1,5 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -36,6 +36,7 @@
     },
     "enableIgniter": true,
     "igniterName": "The Hidden World Portal Igniter",
+    "specialInfo": [],
     "igniterTab": {
       "value": "TOOLS"
     },
