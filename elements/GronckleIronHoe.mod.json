@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "gronckle_iron_hoe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Gronckle Iron Hoe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Tools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 4.0,
     "usageCount": 2000,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:GronckleIron"

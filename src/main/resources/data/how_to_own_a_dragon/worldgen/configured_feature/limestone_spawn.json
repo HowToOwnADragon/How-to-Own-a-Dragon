@@ -1,5 +1,5 @@
 {
-  "type": "how_to_own_a_dragon:limestone_spawn",
+  "type": "minecraft:ore",
   "config": {
     "size": 20,
     "discard_chance_on_air_exposure": 0,

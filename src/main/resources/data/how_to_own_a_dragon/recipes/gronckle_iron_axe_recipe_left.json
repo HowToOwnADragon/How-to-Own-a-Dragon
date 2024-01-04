@@ -3,24 +3,15 @@
   "group": "gronckle_iron_axe",
   "category": "equipment",
   "pattern": [
-    "01",
-    "23",
-    " 5"
+    "aa",
+    "ab",
+    " b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "how_to_own_a_dragon:gronckle_iron"
     },
-    "1": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "2": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "3": {
-      "item": "minecraft:stick"
-    },
-    "5": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

@@ -2,37 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "bcb",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:stone"
     },
-    "1": {
+    "b": {
       "item": "minecraft:deepslate"
     },
-    "2": {
-      "item": "minecraft:stone"
-    },
-    "3": {
-      "item": "minecraft:deepslate"
-    },
-    "4": {
+    "c": {
       "item": "minecraft:bucket"
-    },
-    "5": {
-      "item": "minecraft:deepslate"
-    },
-    "6": {
-      "item": "minecraft:stone"
-    },
-    "7": {
-      "item": "minecraft:deepslate"
-    },
-    "8": {
-      "item": "minecraft:stone"
     }
   },
   "result": {

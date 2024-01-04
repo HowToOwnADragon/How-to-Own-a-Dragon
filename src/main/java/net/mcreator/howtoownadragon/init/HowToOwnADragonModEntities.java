@@ -39,7 +39,7 @@ import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
-import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
+import net.mcreator.howtoownadragon.entity.GronckleAttackProjectileEntity;
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
 import net.mcreator.howtoownadragon.entity.BabyYakEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
@@ -64,8 +64,6 @@ public class HowToOwnADragonModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, HowToOwnADragonMod.MODID);
 	public static final RegistryObject<EntityType<NightFuryEntity>> NIGHT_FURY = register("night_fury", EntityType.Builder.<NightFuryEntity>of(NightFuryEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(NightFuryEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<GronckleAttackEntity>> GRONCKLE_ATTACK = register("projectile_gronckle_attack",
-			EntityType.Builder.<GronckleAttackEntity>of(GronckleAttackEntity::new, MobCategory.MISC).setCustomClientFactory(GronckleAttackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GronckleMaleEntity>> GRONCKLE_MALE = register("gronckle_male", EntityType.Builder.<GronckleMaleEntity>of(GronckleMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleMaleEntity::new).fireImmune().sized(2f, 2f));
 	public static final RegistryObject<EntityType<GronckleFemaleEntity>> GRONCKLE_FEMALE = register("gronckle_female", EntityType.Builder.<GronckleFemaleEntity>of(GronckleFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
@@ -180,6 +178,9 @@ public class HowToOwnADragonModEntities {
 			EntityType.Builder.<AEntity>of(AEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GronckleAttackProjectileEntity>> GRONCKLE_ATTACK_PROJECTILE = register("projectile_gronckle_attack_projectile",
+			EntityType.Builder.<GronckleAttackProjectileEntity>of(GronckleAttackProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(GronckleAttackProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

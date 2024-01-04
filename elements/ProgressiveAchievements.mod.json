@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,6 +15,7 @@
         "data": {
           "name": "button_vanilla_achievements",
           "text": "Vanilla Advancements",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenVanillaAdvancements"
           },
@@ -29,6 +30,7 @@
         "data": {
           "name": "button_htoad_advancements",
           "text": "HTOAD Advancements",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenHTOADAdvancements"
           },

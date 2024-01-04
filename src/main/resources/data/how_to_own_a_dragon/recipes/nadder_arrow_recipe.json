@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "b",
+    "c"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "how_to_own_a_dragon:nadder_spine"
     },
-    "1": {
+    "b": {
       "item": "minecraft:stick"
     },
-    "2": {
+    "c": {
       "item": "minecraft:feather"
     }
   },

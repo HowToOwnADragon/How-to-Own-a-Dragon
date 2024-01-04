@@ -84,7 +84,6 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> REAPER_SPAWN_BLOCK = block(HowToOwnADragonModBlocks.REAPER_SPAWN_BLOCK);
 	public static final RegistryObject<Item> LIMESTONE = block(HowToOwnADragonModBlocks.LIMESTONE);
 	public static final RegistryObject<Item> LENS_DRAGON_INFO = REGISTRY.register("lens_dragon_info", () -> new LensDragonInfoItem());
-	public static final RegistryObject<Item> GRONCKLE_ATTACK = REGISTRY.register("gronckle_attack", () -> new GronckleAttackItem());
 	public static final RegistryObject<Item> GRONCKLE_SADDLE = REGISTRY.register("gronckle_saddle", () -> new GronckleSaddleItem());
 	public static final RegistryObject<Item> SADDLE_RACK = REGISTRY.register("saddle_rack", () -> new SaddleRackItem());
 	public static final RegistryObject<Item> PLAINS_GRASS_BLOCK = block(HowToOwnADragonModBlocks.PLAINS_GRASS_BLOCK);
@@ -107,6 +106,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> COOKED_YAK_MEAT = REGISTRY.register("cooked_yak_meat", () -> new CookedYakMeatItem());
 	public static final RegistryObject<Item> YAK_MILK = REGISTRY.register("yak_milk", () -> new YakMilkItem());
 	public static final RegistryObject<Item> YAK_NOG_BOWL = REGISTRY.register("yak_nog_bowl", () -> new YakNogBowlItem());
+	public static final RegistryObject<Item> GRONCKLE_ATTACK = REGISTRY.register("gronckle_attack", () -> new GronckleAttackItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -2,30 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    " 7 "
+    "aaa",
+    "bcb",
+    " d "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "how_to_own_a_dragon:yak_milk"
     },
-    "1": {
-      "item": "how_to_own_a_dragon:yak_milk"
-    },
-    "2": {
-      "item": "how_to_own_a_dragon:yak_milk"
-    },
-    "3": {
+    "b": {
       "item": "minecraft:sugar"
     },
-    "4": {
+    "c": {
       "item": "minecraft:egg"
     },
-    "5": {
-      "item": "minecraft:sugar"
-    },
-    "7": {
+    "d": {
       "item": "minecraft:bowl"
     }
   },

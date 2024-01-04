@@ -8,3 +8,4 @@ dependencies {
   implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19.4:4.1.3')
 }
 
+

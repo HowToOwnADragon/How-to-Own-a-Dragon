@@ -3,27 +3,12 @@
   "group": "deep_iron_stairs",
   "category": "building",
   "pattern": [
-    "  2",
-    " 45",
-    "678"
+    "  a",
+    " aa",
+    "aaa"
   ],
   "key": {
-    "2": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "4": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "5": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "6": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "7": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "8": {
+    "a": {
       "item": "how_to_own_a_dragon:deep_iron_ingot"
     }
   },

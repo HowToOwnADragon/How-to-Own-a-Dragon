@@ -3,19 +3,16 @@
   "group": "valkas_staff",
   "category": "equipment",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "b",
+    "a"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:bone"
     },
-    "1": {
+    "b": {
       "tag": "how_to_own_a_dragon:dragon_scale"
-    },
-    "2": {
-      "item": "minecraft:bone"
     }
   },
   "result": {

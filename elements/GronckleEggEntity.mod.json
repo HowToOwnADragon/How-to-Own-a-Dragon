@@ -1,15 +1,15 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Gronckle Egg",
     "mobLabel": "",
     "mobModelName": "ModelGronckleEggItemImprovedentity",
     "mobModelTexture": "gronckletextureimprovedentity.png",
-    "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": true
     },
+    "modelLayers": [],
     "modelWidth": 0.6,
     "modelHeight": 0.8,
     "modelShadowSize": 0.5,
@@ -60,6 +60,9 @@
     "health": 10,
     "xpAmount": 0,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -96,6 +99,7 @@
     "stepSound": {
       "value": ""
     },
+    "entityDataEntries": [],
     "whenMobIsHurt": {
       "name": "GronckleEntityIsHurt"
     },

@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Functions",
@@ -8,6 +8,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "load",
     "namespace": "minecraft"
   }

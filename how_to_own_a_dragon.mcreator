@@ -163,23 +163,6 @@
       "path": "~/Items/Scales"
     },
     {
-      "name": "Entranceinhw",
-      "type": "structure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "entranceinhw",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/features/EntranceinhwFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw.json",
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entranceinhw_biome_modifier.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entranceinhw.json"
-        ]
-      },
-      "path": "~/The Hidden World"
-    },
-    {
       "name": "FireRealm",
       "type": "biome",
       "sortid": 14,
@@ -1701,23 +1684,6 @@
       "path": "~/Structures/ReaperShip"
     },
     {
-      "name": "ReaperInsidePrototype2",
-      "type": "structure",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reaper_inside_prototype_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/reaper_inside_prototype_2_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/world/features/ReaperInsidePrototype2Feature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/reaper_inside_prototype_2.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/reaper_inside_prototype_2.json"
-        ]
-      },
-      "path": "~/Structures/ReaperShip"
-    },
-    {
       "name": "GrantWelcome",
       "type": "procedure",
       "sortid": 132,
@@ -1832,23 +1798,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
-    },
-    {
-      "name": "EmptyReaper",
-      "type": "structure",
-      "sortid": 141,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_reaper",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/empty_reaper_biome_modifier.json",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/empty_reaper.json",
-          "src/main/java/net/mcreator/howtoownadragon/world/features/EmptyReaperFeature.java",
-          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/empty_reaper.json"
         ]
       },
       "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
@@ -2215,23 +2164,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
-    },
-    {
-      "name": "GronckleAttack",
-      "type": "rangeditem",
-      "sortid": 447,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "gronckle_attack",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleAttackEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/item/GronckleAttackItem.java",
-          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_attack.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleAttackRenderer.java"
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/Ability/Ball"
@@ -14590,7 +14522,6 @@
       "registry_name": "limestone_spawn",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/features/LimestoneSpawnFeature.java",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/limestone_spawn.json",
           "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/limestone_spawn.json",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/limestone_spawn_biome_modifier.json"
@@ -16483,6 +16414,82 @@
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/GUI/Renderer"
+    },
+    {
+      "name": "EntranceinhwFeature",
+      "type": "feature",
+      "sortid": 1576,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entranceinhw_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/entranceinhw_feature.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/entranceinhw_feature_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/entranceinhw_feature.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "ReaperInsidePrototype2Feature",
+      "type": "feature",
+      "sortid": 1577,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_inside_prototype_2_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/reaper_inside_prototype_2_feature.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/reaper_inside_prototype_2_feature.json",
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/reaper_inside_prototype_2_feature_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "EmptyReaperFeature",
+      "type": "feature",
+      "sortid": 1578,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_reaper_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/empty_reaper_feature_biome_modifier.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/configured_feature/empty_reaper_feature.json",
+          "src/main/resources/data/how_to_own_a_dragon/worldgen/placed_feature/empty_reaper_feature.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "GronckleAttackProjectile",
+      "type": "projectile",
+      "sortid": 1580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_attack_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/GronckleAttackProjectileEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/GronckleAttackProjectileRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "GronckleAttack",
+      "type": "item",
+      "sortid": 1579,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/item/GronckleAttackItem.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/gronckle_attack.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -18029,5 +18036,5 @@
     "modElementsPackage": "net.mcreator.howtoownadragon",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300336712
+  "mcreatorVersion": 202300452316
 }

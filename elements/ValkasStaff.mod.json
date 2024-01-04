@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
     "renderType": 1,
+    "blockingRenderType": 0,
     "texture": "staff",
     "customModelName": "valkastaff:default",
+    "blockingModelName": "Normal blocking",
     "name": "Valka Staff",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Tools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 0.0,
     "usageCount": 3000,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

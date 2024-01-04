@@ -52,7 +52,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.1.0'
+    minecraft 'net.minecraftforge:forge:1.19.4-45.2.0'
 }
 
 tasks.withType(JavaCompile).configureEach {

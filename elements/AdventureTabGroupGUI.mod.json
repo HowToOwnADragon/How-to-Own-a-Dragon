@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -43,6 +43,7 @@
         "data": {
           "name": "button_monsters_hunted",
           "text": "Monsters Hunted",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenMHFirstPageGUI"
           },
@@ -57,6 +58,7 @@
         "data": {
           "name": "button_adventuring_time",
           "text": "Adventuring Time",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenATFirstPageGUI"
           },

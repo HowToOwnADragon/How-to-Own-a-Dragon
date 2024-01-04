@@ -2,10 +2,10 @@
   "type": "forge:add_features",
   "biomes": [
     "deep_cold_ocean",
+    "deep_frozen_ocean",
     "deep_lukewarm_ocean",
-    "deep_ocean",
-    "deep_frozen_ocean"
+    "deep_ocean"
   ],
-  "features": "how_to_own_a_dragon:empty_reaper",
+  "features": "how_to_own_a_dragon:empty_reaper_feature",
   "step": "surface_structures"
 }

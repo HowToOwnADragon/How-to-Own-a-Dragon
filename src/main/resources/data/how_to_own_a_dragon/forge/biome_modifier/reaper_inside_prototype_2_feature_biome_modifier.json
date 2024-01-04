@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "plains",
+  "features": "how_to_own_a_dragon:reaper_inside_prototype_2_feature",
+  "step": "surface_structures"
+}

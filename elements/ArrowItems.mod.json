@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Items",
@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "arrows",
     "namespace": "minecraft"
   }

@@ -36,7 +36,7 @@ public class ReplaceChickenProcedure {
 			return;
 		HowToOwnADragonMod.queueServerWork(1, () -> {
 			if (entity instanceof Chicken) {
-				if (entity instanceof LivingEntity _livEnt ? _livEnt.isBaby() : false) {
+				if (entity instanceof LivingEntity _livEnt1 && _livEnt1.isBaby()) {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if (world instanceof ServerLevel _level) {
@@ -49,7 +49,7 @@ public class ReplaceChickenProcedure {
 							_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						_level.addFreshEntity(entityToSpawn);
 					}
-				} else if (!(entity instanceof LivingEntity _livEnt ? _livEnt.isBaby() : false)) {
+				} else if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.isBaby())) {
 					if (!entity.level.isClientSide())
 						entity.discard();
 					if (world instanceof ServerLevel _level) {

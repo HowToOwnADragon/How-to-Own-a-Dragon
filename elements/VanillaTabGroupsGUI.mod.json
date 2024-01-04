@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_minecraft",
           "text": "Minecraft",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenNothingsHere"
           },
@@ -44,6 +45,7 @@
         "data": {
           "name": "button_nether",
           "text": "Nether",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenNetherTabGroupGUI"
           },
@@ -58,6 +60,7 @@
         "data": {
           "name": "button_end",
           "text": "End",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenNothingsHere"
           },
@@ -72,6 +75,7 @@
         "data": {
           "name": "button_adventure",
           "text": "Adventure",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenAdventureTabGroupGUI"
           },
@@ -86,6 +90,7 @@
         "data": {
           "name": "button_husbandry",
           "text": "Husbandry",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenHusbandryTabGroupGUI"
           },

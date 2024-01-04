@@ -1,0 +1,7 @@
+{
+  "type": "how_to_own_a_dragon:structure_feature",
+  "config": {
+    "structure": "how_to_own_a_dragon:reaper_inside_prototype_5",
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

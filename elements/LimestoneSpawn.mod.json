@@ -1,11 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "feature",
   "definition": {
     "generationStep": "TOP_LAYER_MODIFICATION",
-    "restrictionDimensions": [
-      "Surface"
-    ],
     "restrictionBiomes": [
       {
         "value": "stone_beach"

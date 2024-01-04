@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -26,16 +26,22 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "§8§o§kddd§r§8§oWhat could this be used for?§r§8§o§kddd"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "§8§o§kddd§r§8§oWhat could this be used for?§r§8§o§kddd"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "DragonEyeInput",
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "onItemInUseTick": {
       "name": "DragonEyeItemInHandTick"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

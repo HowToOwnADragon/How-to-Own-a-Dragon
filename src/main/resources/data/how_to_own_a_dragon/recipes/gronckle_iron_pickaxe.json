@@ -2,24 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "012",
-    " 4 ",
-    " 7 "
+    "aaa",
+    " b ",
+    " b "
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "how_to_own_a_dragon:gronckle_iron"
     },
-    "1": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "2": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "4": {
-      "item": "minecraft:stick"
-    },
-    "7": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

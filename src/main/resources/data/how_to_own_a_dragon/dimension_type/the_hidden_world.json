@@ -15,5 +15,5 @@
   "height": 256,
   "monster_spawn_light_level": 11,
   "monster_spawn_block_light_limit": 15,
-  "effects": "minecraft:overworld"
+  "effects": "how_to_own_a_dragon:the_hidden_world"
 }

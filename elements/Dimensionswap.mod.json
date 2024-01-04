@@ -1,8 +1,9 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "command",
   "definition": {
     "commandName": "dimensionswap",
+    "type": "STANDARD",
     "permissionLevel": "4",
     "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">Overworld</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">TpToVanillaOverworld</field></block></statement><next><block type=\"literal\"><field name=\"name\">Overworld2</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">TpToOverworld2</field></block></statement><next><block type=\"literal\"><field name=\"name\">Nether</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">TpToNether</field></block></statement><next><block type=\"literal\"><field name=\"name\">End</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">TpToEnd</field></block></statement><next><block type=\"literal\"><field name=\"name\">Hidden_World</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">TpToHw</field></block></statement></block></next></block></next></block></next></block></next></block></next></block></xml>"
   }

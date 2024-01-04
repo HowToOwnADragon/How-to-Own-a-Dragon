@@ -9,7 +9,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.GronckleAttackEntity;
+import net.mcreator.howtoownadragon.entity.GronckleAttackProjectileEntity;
 
 public class GronckleAttackProcedureProcedure {
 	public static void execute(Entity entity) {
@@ -23,7 +23,7 @@ public class GronckleAttackProcedureProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new GronckleAttackEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), level);
+								AbstractArrow entityToSpawn = new GronckleAttackProjectileEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
@@ -48,7 +48,7 @@ public class GronckleAttackProcedureProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new GronckleAttackEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), level);
+								AbstractArrow entityToSpawn = new GronckleAttackProjectileEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
@@ -71,7 +71,7 @@ public class GronckleAttackProcedureProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new GronckleAttackEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), level);
+								AbstractArrow entityToSpawn = new GronckleAttackProjectileEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
@@ -94,7 +94,7 @@ public class GronckleAttackProcedureProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new GronckleAttackEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), level);
+								AbstractArrow entityToSpawn = new GronckleAttackProjectileEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
@@ -117,7 +117,7 @@ public class GronckleAttackProcedureProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new GronckleAttackEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), level);
+								AbstractArrow entityToSpawn = new GronckleAttackProjectileEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);
@@ -140,7 +140,7 @@ public class GronckleAttackProcedureProcedure {
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = new Object() {
 							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new GronckleAttackEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK.get(), level);
+								AbstractArrow entityToSpawn = new GronckleAttackProjectileEntity(HowToOwnADragonModEntities.GRONCKLE_ATTACK_PROJECTILE.get(), level);
 								entityToSpawn.setOwner(shooter);
 								entityToSpawn.setBaseDamage(damage);
 								entityToSpawn.setKnockback(knockback);

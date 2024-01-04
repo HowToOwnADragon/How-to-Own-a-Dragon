@@ -1,8 +1,9 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "command",
   "definition": {
     "commandName": "config",
+    "type": "STANDARD",
     "permissionLevel": "4",
     "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"call_procedure\"><field name=\"procedure\">OpenGenericOrAdvancedConfig</field></block></next></block></xml>"
   }

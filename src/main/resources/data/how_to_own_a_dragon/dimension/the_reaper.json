@@ -23,9 +23,9 @@
       "name": "how_to_own_a_dragon:the_reaper",
       "sea_level": 63,
       "legacy_random_source": false,
-      "disable_mob_generation": true,
-      "aquifers_enabled": false,
-      "ore_veins_enabled": false,
+      "disable_mob_generation": false,
+      "aquifers_enabled": true,
+      "ore_veins_enabled": true,
       "default_block": {
         "Name": "minecraft:air"
       },
@@ -442,7 +442,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:air"
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }

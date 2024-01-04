@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.ARROW"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelgronckleattack",
+    "customModelTexture": "gronckleattack.png",
+    "onHitsBlock": {
+      "name": "GronckleExplodeAtBlock"
+    },
+    "onHitsEntity": {
+      "name": "GronckleAttackProjectileHitsLivingEntity"
+    }
+  }
+}

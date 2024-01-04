@@ -3,18 +3,12 @@
   "group": "deep_iron_rod",
   "category": "building",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "a",
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "1": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "2": {
+    "a": {
       "item": "how_to_own_a_dragon:deep_iron_ingot"
     }
   },

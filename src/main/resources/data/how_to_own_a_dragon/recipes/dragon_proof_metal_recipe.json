@@ -2,36 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "abc",
+    "ccc"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "how_to_own_a_dragon:deep_iron_ingot"
     },
-    "1": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "2": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "3": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:copper_block"
     },
-    "5": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "6": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "7": {
-      "item": "how_to_own_a_dragon:gronckle_iron"
-    },
-    "8": {
+    "c": {
       "item": "how_to_own_a_dragon:gronckle_iron"
     }
   },

@@ -3,16 +3,10 @@
   "group": "deep_iron_slab",
   "category": "building",
   "pattern": [
-    "012"
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "1": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "2": {
+    "a": {
       "item": "how_to_own_a_dragon:deep_iron_ingot"
     }
   },

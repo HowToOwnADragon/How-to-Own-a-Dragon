@@ -22,21 +22,19 @@ public class OpenBDSecondPageGUIProcedure {
 		if (entity == null)
 			return;
 		double previousRecipe = 0;
-		{
-			if (entity instanceof ServerPlayer _ent) {
-				BlockPos _bpos = BlockPos.containing(x, y, z);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("BDSecondPageGUI");
-					}
+		if (entity instanceof ServerPlayer _ent) {
+			BlockPos _bpos = BlockPos.containing(x, y, z);
+			NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("BDSecondPageGUI");
+				}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new BDSecondPageGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
-			}
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new BDSecondPageGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+				}
+			}, _bpos);
 		}
 	}
 }

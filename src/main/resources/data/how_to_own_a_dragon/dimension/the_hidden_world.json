@@ -24,8 +24,8 @@
       "sea_level": 32,
       "legacy_random_source": true,
       "disable_mob_generation": false,
-      "aquifers_enabled": true,
-      "ore_veins_enabled": true,
+      "aquifers_enabled": false,
+      "ore_veins_enabled": false,
       "default_block": {
         "Name": "how_to_own_a_dragon:dark_stone"
       },

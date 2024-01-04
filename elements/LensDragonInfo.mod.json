@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -26,13 +26,16 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "§8Dragon Data"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "§8Dragon Data"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

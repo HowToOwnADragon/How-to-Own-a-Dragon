@@ -25,7 +25,7 @@ public class TheHiddenWorldDimension {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public static void registerDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
-			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(128, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
+			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(DimensionSpecialEffects.OverworldEffects.CLOUD_LEVEL, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
 					return color.multiply(sunHeight * 0.94 + 0.06, sunHeight * 0.94 + 0.06, sunHeight * 0.91 + 0.09);
@@ -48,7 +48,6 @@ public class TheHiddenWorldDimension {
 		double y = entity.getY();
 		double z = entity.getZ();
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("how_to_own_a_dragon:the_hidden_world"))) {
-
 			TheHiddenWorldPlayerEntersDimensionProcedure.execute(world, x, y, z, entity);
 		}
 	}

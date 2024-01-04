@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -43,6 +43,7 @@
         "data": {
           "name": "button_two_by_two",
           "text": "Two by Two",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenTBTFirstPageGUI"
           },
@@ -57,6 +58,7 @@
         "data": {
           "name": "button_a_complete_catalog",
           "text": "A Complete Catalog",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenNOTFINISHED"
           },
@@ -71,6 +73,7 @@
         "data": {
           "name": "button_a_balanced_diet",
           "text": "A Balanced Diet",
+          "isUndecorated": false,
           "onClick": {
             "name": "OpenBDFirstPageGUI"
           },

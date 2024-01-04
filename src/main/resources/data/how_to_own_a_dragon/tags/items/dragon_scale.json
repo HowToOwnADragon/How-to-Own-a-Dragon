@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
+    "how_to_own_a_dragon:night_fury_scale",
     "how_to_own_a_dragon:gronckle_scale",
     "how_to_own_a_dragon:tt_scale",
-    "how_to_own_a_dragon:nadder_scale",
-    "how_to_own_a_dragon:night_fury_scale"
+    "how_to_own_a_dragon:nadder_scale"
   ]
 }

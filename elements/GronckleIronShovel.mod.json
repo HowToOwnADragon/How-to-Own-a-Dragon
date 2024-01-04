@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "grockle_iron_shovel",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Gronckle Iron Shovel",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Tools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 4.0,
     "usageCount": 2000,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:GronckleIron"

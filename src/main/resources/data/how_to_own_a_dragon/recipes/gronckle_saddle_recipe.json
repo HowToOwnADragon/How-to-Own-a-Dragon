@@ -2,37 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "bcb",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "how_to_own_a_dragon:gronckle_scale"
     },
-    "1": {
+    "b": {
       "item": "minecraft:leather"
     },
-    "2": {
-      "item": "how_to_own_a_dragon:gronckle_scale"
-    },
-    "3": {
-      "item": "minecraft:leather"
-    },
-    "4": {
+    "c": {
       "item": "minecraft:saddle"
-    },
-    "5": {
-      "item": "minecraft:leather"
-    },
-    "6": {
-      "item": "how_to_own_a_dragon:gronckle_scale"
-    },
-    "7": {
-      "item": "minecraft:leather"
-    },
-    "8": {
-      "item": "how_to_own_a_dragon:gronckle_scale"
     }
   },
   "result": {

@@ -3,26 +3,11 @@
   "group": "deep_iron_wall",
   "category": "building",
   "pattern": [
-    "012",
-    "345"
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "1": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "2": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "3": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "4": {
-      "item": "how_to_own_a_dragon:deep_iron_ingot"
-    },
-    "5": {
+    "a": {
       "item": "how_to_own_a_dragon:deep_iron_ingot"
     }
   },

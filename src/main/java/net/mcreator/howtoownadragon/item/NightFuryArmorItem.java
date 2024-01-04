@@ -1,7 +1,9 @@
 
 package net.mcreator.howtoownadragon.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -10,8 +12,11 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
+
+import java.util.List;
 
 public abstract class NightFuryArmorItem extends ArmorItem {
 	public NightFuryArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -64,6 +69,11 @@ public abstract class NightFuryArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "how_to_own_a_dragon:textures/models/armor/nightfury_layer_1_layer_1.png";
 		}
@@ -72,6 +82,11 @@ public abstract class NightFuryArmorItem extends ArmorItem {
 	public static class Chestplate extends NightFuryArmorItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override
@@ -86,6 +101,11 @@ public abstract class NightFuryArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "how_to_own_a_dragon:textures/models/armor/nightfury_layer_1_layer_2.png";
 		}
@@ -94,6 +114,11 @@ public abstract class NightFuryArmorItem extends ArmorItem {
 	public static class Boots extends NightFuryArmorItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override

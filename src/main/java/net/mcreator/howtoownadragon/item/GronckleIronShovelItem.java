@@ -1,13 +1,18 @@
 
 package net.mcreator.howtoownadragon.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
+
+import java.util.List;
 
 public class GronckleIronShovelItem extends ShovelItem {
 	public GronckleIronShovelItem() {
@@ -36,5 +41,10 @@ public class GronckleIronShovelItem extends ShovelItem {
 				return Ingredient.of(new ItemStack(HowToOwnADragonModItems.GRONCKLE_IRON.get()));
 			}
 		}, 1, -2.9f, new Item.Properties());
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 }

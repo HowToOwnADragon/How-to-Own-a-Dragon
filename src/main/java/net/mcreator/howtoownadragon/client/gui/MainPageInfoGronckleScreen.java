@@ -58,7 +58,7 @@ public class MainPageInfoGronckleScreen extends AbstractContainerScreen<MainPage
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/ehhhhhh.png"));
-		this.blit(ms, this.leftPos + 0, this.topPos + -1, 0, 0, -1, -1, -1, -1);
+		this.blit(ms, this.leftPos + -1, this.topPos + -1, 0, 0, -1, -1, -1, -1);
 
 		RenderSystem.disableBlend();
 	}

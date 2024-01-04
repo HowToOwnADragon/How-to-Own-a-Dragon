@@ -29,10 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.howtoownadragon.world.features.StructureFeature;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMobEffects;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModMenus;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
-import net.mcreator.howtoownadragon.init.HowToOwnADragonModFeatures;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlocks;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModBlockEntities;
@@ -63,7 +63,8 @@ public class HowToOwnADragonMod {
 		HowToOwnADragonModMobEffects.REGISTRY.register(bus);
 
 		HowToOwnADragonModMenus.REGISTRY.register(bus);
-		HowToOwnADragonModFeatures.REGISTRY.register(bus);
+
+		StructureFeature.REGISTRY.register(bus);
 
 	}
 
