@@ -24,9 +24,9 @@ public class TameNonGrownGronckleProcedure {
 				_toTame.tame(_owner);
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 1);
-			GrowingTickGronckleProcedure.execute(world, entity);
+			GrowingTickGronckleProcedure.execute(world, x, y, z, entity);
 		} else {
-			GrowingTickGronckleProcedure.execute(world, entity);
+			GrowingTickGronckleProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

@@ -8,13 +8,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
+import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class GronckleEntityIsHurtProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem() && entity instanceof GronckleEggEntityEntity) {
 			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_EGG_ITEM.get());
 				_setstack.setCount(1);
@@ -22,11 +23,11 @@ public class GronckleEntityIsHurtProcedure {
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
-			if (!entity.level.isClientSide())
-				entity.discard();
 			HowToOwnADragonMod.queueServerWork(1, () -> {
 				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
 			});
+			if (!entity.level.isClientSide())
+				entity.discard();
 		}
 	}
 }
