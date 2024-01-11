@@ -118,7 +118,8 @@
         "data": {
           "name": "label_healthvalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayHealthAttribute"
           },
           "color": {
             "value": -12829636,
@@ -148,7 +149,8 @@
         "data": {
           "name": "label_armorvalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayArmorAttribute"
           },
           "color": {
             "value": -12829636,
@@ -208,7 +210,8 @@
         "data": {
           "name": "label_walkspeedvalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayWalkSpeedAttribute"
           },
           "color": {
             "value": -12829636,
@@ -238,7 +241,8 @@
         "data": {
           "name": "label_flyspeedvalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayFlySpeedAttribute"
           },
           "color": {
             "value": -12829636,
