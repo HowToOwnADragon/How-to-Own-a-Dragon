@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 176,
+    "width": 290,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -21,8 +21,8 @@
             "value": -13421773,
             "falpha": 0.0
           },
-          "x": 132,
-          "y": 43
+          "x": 74,
+          "y": 42
         }
       },
       {
@@ -45,8 +45,224 @@
         "data": {
           "image": "man_symbol_-_copy.png",
           "use1Xscale": true,
-          "x": 237,
-          "y": 43
+          "x": 181,
+          "y": 41
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 83,
+          "y": 59
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 83,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_health",
+          "text": {
+            "fixedValue": "Max Health"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 76,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_healthvalue",
+          "text": {
+            "fixedValue": "DisplayHealthAttribute"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 100,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_armor",
+          "text": {
+            "fixedValue": "Armor"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 89,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_armorvalue",
+          "text": {
+            "fixedValue": "DisplayArmorAttribute"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 100,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_damage",
+          "text": {
+            "fixedValue": "Damage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 86,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_damagevalue",
+          "text": {
+            "fixedValue": "0"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 100,
+          "y": 180
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_walk_speed",
+          "text": {
+            "fixedValue": "Walk Speed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 299,
+          "y": 121
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_walkspeedvalue",
+          "text": {
+            "fixedValue": "DisplayWalkSpeedAttribute"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fly_speed",
+          "text": {
+            "fixedValue": "Fly Speed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 301,
+          "y": 146
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_flyspeedvalue",
+          "text": {
+            "fixedValue": "DisplayFlySpeedAttribute"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_swim_speed",
+          "text": {
+            "fixedValue": "Swim Speed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 299,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_swimspeedvalue",
+          "text": {
+            "fixedValue": "0"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 322,
+          "y": 181
         }
       }
     ],

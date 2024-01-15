@@ -27,8 +27,8 @@ public class MaleNadderGUIScreen extends AbstractContainerScreen<MaleNadderGUIMe
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 290;
+		this.imageHeight = 200;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("how_to_own_a_dragon:textures/screens/male_nadder_gui.png");
@@ -48,11 +48,8 @@ public class MaleNadderGUIScreen extends AbstractContainerScreen<MaleNadderGUIMe
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/saddelrackingui.png"));
-		this.blit(ms, this.leftPos + 79, this.topPos + 40, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.setShaderTexture(0, new ResourceLocation("how_to_own_a_dragon:textures/screens/man_symbol_-_copy.png"));
-		this.blit(ms, this.leftPos + 101, this.topPos + 6, 0, 0, 10, 11, 10, 11);
+		this.blit(ms, this.leftPos + 101, this.topPos + 4, 0, 0, 10, 11, 10, 11);
 
 		RenderSystem.disableBlend();
 	}
@@ -73,8 +70,20 @@ public class MaleNadderGUIScreen extends AbstractContainerScreen<MaleNadderGUIMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle"), 6, 6, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_inventory"), 7, 70, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_male_gronckle"), 5, 5, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_inventory"), 64, 87, -13421773);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_health"), 7, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_healthvalue"), 31, 110, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_armor"), 20, 125, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_armorvalue"), 31, 135, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_damage"), 17, 150, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_damagevalue"), 31, 160, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_walk_speed"), 230, 101, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_walkspeedvalue"), 252, 111, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_fly_speed"), 232, 126, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_flyspeedvalue"), 252, 136, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_swim_speed"), 230, 151, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_nadder_gui.label_swimspeedvalue"), 253, 161, -12829636);
 	}
 
 	@Override

@@ -80,7 +80,7 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_male_gronckle"), 5, 5, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_inventory"), 64, 87, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_health"), 6, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_health"), 7, 100, -12829636);
 		this.font.draw(poseStack,
 
 				DisplayHealthAttributeProcedure.execute(entity), 31, 110, -12829636);
@@ -90,7 +90,7 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 				DisplayArmorAttributeProcedure.execute(entity), 31, 135, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_damage"), 17, 150, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_damagevalue"), 31, 160, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_walk_speed"), 229, 101, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_walk_speed"), 230, 101, -12829636);
 		this.font.draw(poseStack,
 
 				DisplayWalkSpeedAttributeProcedure.execute(entity), 252, 111, -12829636);
@@ -98,8 +98,8 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 		this.font.draw(poseStack,
 
 				DisplayFlySpeedAttributeProcedure.execute(entity), 252, 136, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swim_speed"), 229, 151, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue"), 252, 161, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swim_speed"), 230, 151, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue"), 253, 161, -12829636);
 	}
 
 	@Override

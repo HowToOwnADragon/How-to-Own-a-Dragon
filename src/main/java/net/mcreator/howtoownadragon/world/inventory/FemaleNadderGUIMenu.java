@@ -43,7 +43,7 @@ public class FemaleNadderGUIMenu extends AbstractContainerMenu implements Suppli
 		super(HowToOwnADragonModMenus.FEMALE_NADDER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(12);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,7 +78,7 @@ public class FemaleNadderGUIMenu extends AbstractContainerMenu implements Suppli
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 40) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 15, 24) {
 			private final int slot = 0;
 
 			@Override
@@ -86,11 +86,44 @@ public class FemaleNadderGUIMenu extends AbstractContainerMenu implements Suppli
 				return HowToOwnADragonModItems.SADDLE_RACK.get() == stack.getItem();
 			}
 		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 15, 50) {
+			private final int slot = 1;
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 264, 28) {
+			private final int slot = 2;
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 246, 28) {
+			private final int slot = 3;
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 228, 28) {
+			private final int slot = 4;
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 210, 28) {
+			private final int slot = 5;
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 192, 28) {
+			private final int slot = 6;
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 264, 46) {
+			private final int slot = 7;
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 246, 46) {
+			private final int slot = 8;
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 228, 46) {
+			private final int slot = 9;
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 210, 46) {
+			private final int slot = 10;
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 192, 46) {
+			private final int slot = 11;
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 57 + 8 + sj * 18, 17 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 57 + 8 + si * 18, 17 + 142));
 	}
 
 	@Override
@@ -113,16 +146,16 @@ public class FemaleNadderGUIMenu extends AbstractContainerMenu implements Suppli
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 12) {
+				if (!this.moveItemStackTo(itemstack1, 12, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 12, false)) {
+				if (index < 12 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 12 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 12, 12 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
