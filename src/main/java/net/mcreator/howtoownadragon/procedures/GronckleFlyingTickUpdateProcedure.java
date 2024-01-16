@@ -18,6 +18,9 @@ public class GronckleFlyingTickUpdateProcedure {
 			} else {
 				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.1), (entity.getDeltaMovement().z())));
 			}
+			if (entity.getPersistentData().getDouble("Age") <= 600) {
+				entity.getPersistentData().putDouble("Age", (entity.getPersistentData().getDouble("Age") + 1));
+			}
 		}
 	}
 }

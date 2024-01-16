@@ -1,6 +1,6 @@
 package net.mcreator.howtoownadragon.procedures;
 
-public class DisplayDamageAttributeProcedure {
+public class DisplaySwimSpeedAttributeProcedure {
 	public static String execute() {
 		return "0";
 	}

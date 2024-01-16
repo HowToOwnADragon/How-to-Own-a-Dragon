@@ -12,6 +12,7 @@ import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.procedures.DisplayWalkSpeedAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayHealthAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayFlySpeedAttributeProcedure;
+import net.mcreator.howtoownadragon.procedures.DisplayDamageAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayArmorAttributeProcedure;
 import net.mcreator.howtoownadragon.network.MaleGronckleGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -89,7 +90,9 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 
 				DisplayArmorAttributeProcedure.execute(entity), 31, 135, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_damage"), 17, 150, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_damagevalue"), 31, 160, -12829636);
+		this.font.draw(poseStack,
+
+				DisplayDamageAttributeProcedure.execute(), 31, 160, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_walk_speed"), 230, 101, -12829636);
 		this.font.draw(poseStack,
 
@@ -99,7 +102,9 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 
 				DisplayFlySpeedAttributeProcedure.execute(entity), 252, 136, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swim_speed"), 230, 151, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue"), 253, 161, -12829636);
+		this.font.draw(poseStack,
+
+				DisplayDamageAttributeProcedure.execute(), 253, 161, -12829636);
 	}
 
 	@Override

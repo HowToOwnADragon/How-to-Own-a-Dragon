@@ -180,7 +180,8 @@
         "data": {
           "name": "label_damagevalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayDamageAttribute"
           },
           "color": {
             "value": -12829636,
@@ -272,7 +273,8 @@
         "data": {
           "name": "label_swimspeedvalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayDamageAttribute"
           },
           "color": {
             "value": -12829636,

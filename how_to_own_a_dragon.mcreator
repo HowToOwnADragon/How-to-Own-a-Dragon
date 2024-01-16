@@ -2945,8 +2945,8 @@
       "registry_name": "male_gronckle_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleGronckleGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleGronckleGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleGronckleGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/network/MaleGronckleGUIButtonMessage.java"
         ]
       },
@@ -16606,6 +16606,7 @@
       "locked_code": false,
       "registry_name": "display_damage_attribute",
       "metadata": {
+        "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/procedures/DisplayDamageAttributeProcedure.java"
         ],
@@ -16632,6 +16633,38 @@
         ]
       },
       "path": "~/Entities/Attributes"
+    },
+    {
+      "name": "DisplaySwimSpeedAttribute",
+      "type": "procedure",
+      "sortid": 1589,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_swim_speed_attribute",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/DisplaySwimSpeedAttributeProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Entities/Attributes"
+    },
+    {
+      "name": "DragonSizeFactor",
+      "type": "procedure",
+      "sortid": 1590,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_size_factor",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/DragonSizeFactorProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Entities/Dragons/Gronckle/Entity"
     }
   ],
   "variable_elements": [

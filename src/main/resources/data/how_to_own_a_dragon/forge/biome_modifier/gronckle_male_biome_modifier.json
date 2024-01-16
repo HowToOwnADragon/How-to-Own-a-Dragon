@@ -1,15 +1,11 @@
 {
   "type": "forge:add_spawns",
   "biomes": [
+    "plains",
+    "snowy_plains",
     "sunflower_plains",
     "stony_shore",
-    "snowy_plains",
-    "windswept_hills",
-    "taiga",
-    "plains",
-    "stony_peaks",
-    "windswept_gravelly_hills",
-    "snowy_taiga"
+    "stony_peaks"
   ],
   "spawners": {
     "type": "how_to_own_a_dragon:gronckle_male",
