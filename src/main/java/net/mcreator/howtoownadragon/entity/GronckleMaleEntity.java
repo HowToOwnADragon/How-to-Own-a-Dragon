@@ -494,7 +494,7 @@ public class GronckleMaleEntity extends TamableAnimal implements GeoEntity {
 		double x = this.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		return super.getDimensions(p_33597_).scale((float) DragonSizeFactorProcedure.execute());
+		return super.getDimensions(p_33597_).scale((float) DragonSizeFactorProcedure.execute(entity));
 	}
 
 	@Override

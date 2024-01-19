@@ -35,7 +35,7 @@ public class GronckleMaleRenderer extends GeoEntityRenderer<GronckleMaleEntity> 
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		float scale = (float) DragonSizeFactorProcedure.execute();
+		float scale = (float) DragonSizeFactorProcedure.execute(entity);
 		this.scaleHeight = scale;
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
