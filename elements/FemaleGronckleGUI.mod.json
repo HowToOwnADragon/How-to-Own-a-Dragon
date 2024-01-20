@@ -109,7 +109,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 75,
+          "x": 77,
           "y": 120
         }
       },
@@ -125,7 +125,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 100,
+          "x": 95,
           "y": 130
         }
       },
@@ -156,7 +156,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 100,
+          "x": 96,
           "y": 155
         }
       },
@@ -180,15 +180,14 @@
         "data": {
           "name": "label_label_damagevalue",
           "text": {
-            "fixedValue": "0",
-            "name": "DisplayDamageAttribute"
+            "fixedValue": "0"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 100,
-          "y": 180
+          "x": 99,
+          "y": 179
         }
       },
       {
@@ -211,14 +210,13 @@
         "data": {
           "name": "label_label_walkspeedvalue",
           "text": {
-            "fixedValue": "0",
-            "name": "DisplayWalkSpeedAttribute"
+            "fixedValue": "0.4"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 321,
+          "x": 317,
           "y": 131
         }
       },
@@ -242,14 +240,13 @@
         "data": {
           "name": "label_label_flyspeedvalue",
           "text": {
-            "fixedValue": "0",
-            "name": "DisplayFlySpeedAttribute"
+            "fixedValue": "0.4"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 321,
+          "x": 317,
           "y": 156
         }
       },
@@ -273,8 +270,7 @@
         "data": {
           "name": "label_label_swimspeedvalue",
           "text": {
-            "fixedValue": "0",
-            "name": "DisplaySwimSpeedAttribute"
+            "fixedValue": "1"
           },
           "color": {
             "value": -12829636,

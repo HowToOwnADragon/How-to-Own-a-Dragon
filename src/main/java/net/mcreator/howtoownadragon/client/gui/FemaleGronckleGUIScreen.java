@@ -9,11 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
-import net.mcreator.howtoownadragon.procedures.DisplayWalkSpeedAttributeProcedure;
-import net.mcreator.howtoownadragon.procedures.DisplaySwimSpeedAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayHealthAttributeProcedure;
-import net.mcreator.howtoownadragon.procedures.DisplayFlySpeedAttributeProcedure;
-import net.mcreator.howtoownadragon.procedures.DisplayDamageAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayArmorAttributeProcedure;
 import net.mcreator.howtoownadragon.network.FemaleGronckleGUIButtonMessage;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
@@ -82,30 +78,22 @@ public class FemaleGronckleGUIScreen extends AbstractContainerScreen<FemaleGronc
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_male_gronckle"), 5, 5, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_inventory"), 64, 87, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_health"), 6, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_health"), 8, 100, -12829636);
 		this.font.draw(poseStack,
 
-				DisplayHealthAttributeProcedure.execute(entity), 31, 110, -12829636);
+				DisplayHealthAttributeProcedure.execute(entity), 26, 110, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_armor"), 20, 125, -12829636);
 		this.font.draw(poseStack,
 
-				DisplayArmorAttributeProcedure.execute(entity), 31, 135, -12829636);
+				DisplayArmorAttributeProcedure.execute(entity), 27, 135, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_damage"), 17, 150, -12829636);
-		this.font.draw(poseStack,
-
-				DisplayDamageAttributeProcedure.execute(), 31, 160, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_damagevalue"), 30, 159, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_walk_speed"), 230, 101, -12829636);
-		this.font.draw(poseStack,
-
-				DisplayWalkSpeedAttributeProcedure.execute(entity), 252, 111, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_walkspeedvalue"), 248, 111, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_fly_speed"), 232, 126, -12829636);
-		this.font.draw(poseStack,
-
-				DisplayFlySpeedAttributeProcedure.execute(entity), 252, 136, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_flyspeedvalue"), 248, 136, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_swim_speed"), 230, 151, -12829636);
-		this.font.draw(poseStack,
-
-				DisplaySwimSpeedAttributeProcedure.execute(), 253, 161, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_gronckle_gui.label_label_swimspeedvalue"), 253, 161, -12829636);
 	}
 
 	@Override
