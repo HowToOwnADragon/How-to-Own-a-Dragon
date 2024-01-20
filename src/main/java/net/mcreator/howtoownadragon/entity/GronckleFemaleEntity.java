@@ -25,7 +25,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.SpawnEggItem;
@@ -50,12 +49,10 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
@@ -65,7 +62,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
@@ -89,6 +85,7 @@ import net.mcreator.howtoownadragon.procedures.LookAtNightDontFollowMeProcedure;
 import net.mcreator.howtoownadragon.procedures.GrownGronckleDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.GronckleFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.FlyAtDayFollowMeTriggerProcedure;
+import net.mcreator.howtoownadragon.procedures.DragonSizeFactorProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
@@ -371,6 +368,7 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.put("InventoryCustom", inventory.serializeNBT());
+		compound.putString("Texture", this.getTexture());
 	}
 
 	@Override
@@ -379,35 +377,34 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 		Tag inventoryCustom = compound.get("InventoryCustom");
 		if (inventoryCustom instanceof CompoundTag inventoryTag)
 			inventory.deserializeNBT(inventoryTag);
+		if (compound.contains("Texture"))
+			this.setTexture(compound.getString("Texture"));
 	}
 
 	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-		if (sourceentity.isSecondaryUseActive()) {	
-			if (sourceentity instanceof ServerPlayer serverPlayer) {
-				NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("Female Gronckle");
-					}
-	
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
-						packetBuffer.writeBlockPos(sourceentity.blockPosition());
-						packetBuffer.writeByte(0);
-						packetBuffer.writeVarInt(GronckleFemaleEntity.this.getId());
-						return new FemaleGronckleGUIMenu(id, inventory, packetBuffer);
-					}
-				}, buf -> {
-					buf.writeBlockPos(sourceentity.blockPosition());
-					buf.writeByte(0);
-					buf.writeVarInt(this.getId());
-				});
-			}
-			return InteractionResult.sidedSuccess(this.level.isClientSide());
+		if (sourceentity instanceof ServerPlayer serverPlayer) {
+			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("Female Gronckle");
+				}
+
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
+					packetBuffer.writeBlockPos(sourceentity.blockPosition());
+					packetBuffer.writeByte(0);
+					packetBuffer.writeVarInt(GronckleFemaleEntity.this.getId());
+					return new FemaleGronckleGUIMenu(id, inventory, packetBuffer);
+				}
+			}, buf -> {
+				buf.writeBlockPos(sourceentity.blockPosition());
+				buf.writeByte(0);
+				buf.writeVarInt(this.getId());
+			});
 		}
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
@@ -455,40 +452,14 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 		this.refreshDimensions();
 	}
 
-		@Override
-	public void travel(Vec3 dir) {
-		Entity entity = this.getPassengers().isEmpty() ? null : (Entity) this.getPassengers().get(0);
-		if (this.isVehicle()) {
-			this.setYRot(entity.getYRot());
-			this.yRotO = this.getYRot();
-			this.setXRot(entity.getXRot() * 0.5F);
-			this.setRot(this.getYRot(), this.getXRot());
-			this.yBodyRot = entity.getYRot();
-			this.yHeadRot = entity.getYRot();
-			this.maxUpStep = 1.0F;
-			if (entity instanceof LivingEntity passenger) {
-				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
-				float forward = passenger.zza;
-				float strafe = passenger.xxa;
-				super.travel(new Vec3(strafe, 0, forward));
-			}
-			double d1 = this.getX() - this.xo;
-			double d0 = this.getZ() - this.zo;
-			float f1 = (float) Math.sqrt(d1 * d1 + d0 * d0) * 4;
-			if (f1 > 1.0F)
-				f1 = 1.0F;
-			this.walkAnimation.setSpeed(this.walkAnimation.speed() + (f1 - this.walkAnimation.speed()) * 0.4F);
-			this.walkAnimation.position(this.walkAnimation.position() + this.walkAnimation.speed());
-			this.calculateEntityAnimation(true);
-			return;
-		}
-		this.maxUpStep = 0.5F;
-		super.travel(dir);
-	}
-
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level;
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) DragonSizeFactorProcedure.execute(entity));
 	}
 
 	@Override
@@ -579,29 +550,14 @@ public class GronckleFemaleEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	private PlayState procedurePredicate(AnimationState event) {
-		Entity entity = this;
-		Level world = entity.level;
-		boolean loop = false;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		if (!loop && this.lastloop) {
-			this.lastloop = false;
+		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
-			event.getController().forceAnimationReset();
-			return PlayState.STOP;
-		}
-		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
-			if (!loop) {
-				event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
-				if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
-					this.animationprocedure = "empty";
-					event.getController().forceAnimationReset();
-				}
-			} else {
-				event.getController().setAnimation(RawAnimation.begin().thenLoop(this.animationprocedure));
-				this.lastloop = true;
+			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+				this.animationprocedure = "empty";
+				event.getController().forceAnimationReset();
 			}
+		} else if (animationprocedure.equals("empty")) {
+			return PlayState.STOP;
 		}
 		return PlayState.CONTINUE;
 	}

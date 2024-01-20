@@ -7,11 +7,14 @@
     "mobModelTexture": "meatlug.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "DragonSizeFactor"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "DragonSizeFactor"
     },
+    "entityDataEntries": [],
     "modelWidth": 2.0,
     "modelHeight": 2.0,
     "modelShadowSize": 1.0,
@@ -104,9 +107,6 @@
     },
     "onMobTickUpdate": {
       "name": "GronckleFlyingTickUpdate"
-    },
-    "onInitialSpawn": {
-      "name": "GronckleFemaleOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

@@ -28,7 +28,10 @@ public class RandomColorMaleGronckleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		HowToOwnADragonMod.queueServerWork(2, () -> {
+		if (!(entity.getPersistentData().getDouble("Age") >= 0)) {
+			entity.getPersistentData().putDouble("Age", 100);
+		}
+		HowToOwnADragonMod.queueServerWork(1, () -> {
 			NBTDataSpawnGronckleProcedure.execute(world, x, y, z, entity);
 			if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
 				entity.getPersistentData().putString("groncklecolor", "pink");

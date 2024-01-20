@@ -18,10 +18,9 @@ public class NBTDataSpawnGronckleProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle_full_grown")))) {
+		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle")))) {
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				entity.getPersistentData().putBoolean("groncklesaddle", false);
-				entity.getPersistentData().putDouble("Age", 1200);
+				entity.getPersistentData().putBoolean("Saddle", false);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("attribute " + entity.getStringUUID() + " minecraft:generic.max_health base set 60"));

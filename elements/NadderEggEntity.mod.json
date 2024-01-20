@@ -15,6 +15,7 @@
     "solidBoundingBox": {
       "name": "AlwaysTrue"
     },
+    "entityDataEntries": [],
     "modelWidth": 0.6,
     "modelHeight": 0.8,
     "modelShadowSize": 0.4,

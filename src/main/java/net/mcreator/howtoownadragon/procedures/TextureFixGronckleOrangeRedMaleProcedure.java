@@ -10,7 +10,7 @@ public class TextureFixGronckleOrangeRedMaleProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity.getPersistentData().getBoolean("groncklesaddle") == true)) {
+		if (!(entity.getPersistentData().getBoolean("Saddle") == true)) {
 			if (entity instanceof GronckleMaleEntity animatable)
 				animatable.setTexture("gronckleorangered");
 			HowToOwnADragonMod.queueServerWork(20, () -> {

@@ -118,7 +118,8 @@
         "data": {
           "name": "label_label_healthvalue",
           "text": {
-            "fixedValue": "DisplayHealthAttribute"
+            "fixedValue": "0",
+            "name": "DisplayHealthAttribute"
           },
           "color": {
             "value": -12829636,
@@ -148,7 +149,8 @@
         "data": {
           "name": "label_label_armorvalue",
           "text": {
-            "fixedValue": "DisplayArmorAttribute"
+            "fixedValue": "0",
+            "name": "DisplayArmorAttribute"
           },
           "color": {
             "value": -12829636,
@@ -178,7 +180,8 @@
         "data": {
           "name": "label_label_damagevalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplayDamageAttribute"
           },
           "color": {
             "value": -12829636,
@@ -208,7 +211,8 @@
         "data": {
           "name": "label_label_walkspeedvalue",
           "text": {
-            "fixedValue": "DisplayWalkSpeedAttribute"
+            "fixedValue": "0",
+            "name": "DisplayWalkSpeedAttribute"
           },
           "color": {
             "value": -12829636,
@@ -238,7 +242,8 @@
         "data": {
           "name": "label_label_flyspeedvalue",
           "text": {
-            "fixedValue": "DisplayFlySpeedAttribute"
+            "fixedValue": "0",
+            "name": "DisplayFlySpeedAttribute"
           },
           "color": {
             "value": -12829636,
@@ -268,7 +273,8 @@
         "data": {
           "name": "label_label_swimspeedvalue",
           "text": {
-            "fixedValue": "0"
+            "fixedValue": "0",
+            "name": "DisplaySwimSpeedAttribute"
           },
           "color": {
             "value": -12829636,

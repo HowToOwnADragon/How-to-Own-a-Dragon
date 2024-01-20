@@ -8,7 +8,7 @@ public class GronckleFlyingTickUpdateProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getPersistentData().getDouble("Age") < 6000) {
+		if (entity.getPersistentData().getDouble("Age") < 800) {
 			entity.getPersistentData().putDouble("Age", (entity.getPersistentData().getDouble("Age") + 1));
 		}
 		if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {

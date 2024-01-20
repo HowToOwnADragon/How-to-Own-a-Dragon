@@ -8,21 +8,15 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:AdolescentGronckleFemale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleFemale"
-      },
-      {
         "value": "CUSTOM:GronckleFemale"
       },
       {
-        "value": "CUSTOM:JuvenileGronckleFemale"
+        "value": "CUSTOM:GronckleMale"
       }
     ],
     "biomes": [],
     "damageTypes": [],
-    "name": "female_gronckle",
+    "name": "gronckle",
     "namespace": "mod"
   }
 }

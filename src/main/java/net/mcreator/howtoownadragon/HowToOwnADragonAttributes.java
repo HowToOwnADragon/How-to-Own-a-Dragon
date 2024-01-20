@@ -31,19 +31,7 @@ public class HowToOwnADragonAttributes {
     public static void addAttributes(EntityAttributeModificationEvent event) {
         event.add(HowToOwnADragonModEntities.GRONCKLE_MALE.get(), GRONCKLEIRONCOOLDOWN.get());
         event.add(HowToOwnADragonModEntities.GRONCKLE_FEMALE.get(), GRONCKLEIRONCOOLDOWN.get());
-        event.add(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_MALE.get(), GRONCKLEIRONCOOLDOWN.get());
-        event.add(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_FEMALE.get(), GRONCKLEIRONCOOLDOWN.get());
-        event.add(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_MALE.get(), GRONCKLEIRONCOOLDOWN.get());
-        event.add(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_FEMALE.get(), GRONCKLEIRONCOOLDOWN.get());
-        event.add(HowToOwnADragonModEntities.BABY_GRONCKLE_MALE.get(), GRONCKLEIRONCOOLDOWN.get());
-        event.add(HowToOwnADragonModEntities.BABY_GRONCKLE_FEMALE.get(), GRONCKLEIRONCOOLDOWN.get());
         event.add(HowToOwnADragonModEntities.GRONCKLE_MALE.get(), GRONCKLEDAMAGE.get());
         event.add(HowToOwnADragonModEntities.GRONCKLE_FEMALE.get(), GRONCKLEDAMAGE.get());
-        event.add(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_MALE.get(), GRONCKLEDAMAGE.get());
-        event.add(HowToOwnADragonModEntities.ADOLESCENT_GRONCKLE_FEMALE.get(), GRONCKLEDAMAGE.get());
-        event.add(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_MALE.get(), GRONCKLEDAMAGE.get());
-        event.add(HowToOwnADragonModEntities.JUVENILE_GRONCKLE_FEMALE.get(), GRONCKLEDAMAGE.get());
-        event.add(HowToOwnADragonModEntities.BABY_GRONCKLE_MALE.get(), GRONCKLEDAMAGE.get());
-        event.add(HowToOwnADragonModEntities.BABY_GRONCKLE_FEMALE.get(), GRONCKLEDAMAGE.get());
     }
 }

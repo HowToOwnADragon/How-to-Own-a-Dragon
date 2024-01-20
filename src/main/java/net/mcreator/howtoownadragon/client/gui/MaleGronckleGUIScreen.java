@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.howtoownadragon.world.inventory.MaleGronckleGUIMenu;
 import net.mcreator.howtoownadragon.procedures.DisplayWalkSpeedAttributeProcedure;
+import net.mcreator.howtoownadragon.procedures.DisplaySwimSpeedAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayHealthAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayFlySpeedAttributeProcedure;
 import net.mcreator.howtoownadragon.procedures.DisplayDamageAttributeProcedure;
@@ -104,7 +105,7 @@ public class MaleGronckleGUIScreen extends AbstractContainerScreen<MaleGronckleG
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.male_gronckle_gui.label_swim_speed"), 230, 151, -12829636);
 		this.font.draw(poseStack,
 
-				DisplayDamageAttributeProcedure.execute(), 253, 161, -12829636);
+				DisplaySwimSpeedAttributeProcedure.execute(), 253, 161, -12829636);
 	}
 
 	@Override

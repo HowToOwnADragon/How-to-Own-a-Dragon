@@ -8,28 +8,10 @@
     "functions": [],
     "entities": [
       {
-        "value": "CUSTOM:AdolescentGronckleFemale"
-      },
-      {
-        "value": "CUSTOM:AdolescentGronckleMale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleFemale"
-      },
-      {
-        "value": "CUSTOM:BabyGronckleMale"
-      },
-      {
         "value": "CUSTOM:GronckleFemale"
       },
       {
         "value": "CUSTOM:GronckleMale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGronckleFemale"
-      },
-      {
-        "value": "CUSTOM:JuvenileGronckleMale"
       },
       {
         "value": "CUSTOM:NightFury"

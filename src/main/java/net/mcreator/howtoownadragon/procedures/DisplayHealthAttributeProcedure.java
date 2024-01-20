@@ -12,7 +12,7 @@ public class DisplayHealthAttributeProcedure {
             return "0";
         if (GetUUIDAttributeProcedure.EntityUUID != null && GetUUIDAttributeProcedure.EntityUUID instanceof LivingEntity) {
             LivingEntity livingEntityUUID = (LivingEntity) GetUUIDAttributeProcedure.EntityUUID;
-            return "" + livingEntityUUID.getHealth();
+            return "" + livingEntityUUID.getMaxHealth();
         }
 
         return "0";

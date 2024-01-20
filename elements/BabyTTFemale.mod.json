@@ -12,6 +12,7 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
+    "entityDataEntries": [],
     "modelWidth": 0.15,
     "modelHeight": 0.2,
     "modelShadowSize": 0.1,

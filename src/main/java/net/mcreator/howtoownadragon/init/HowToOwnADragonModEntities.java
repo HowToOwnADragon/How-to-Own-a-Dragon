@@ -34,8 +34,6 @@ import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleEggEntityEntity;
@@ -47,15 +45,11 @@ import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabySheepEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyChickenEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentGronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
@@ -68,21 +62,6 @@ public class HowToOwnADragonModEntities {
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleMaleEntity::new).fireImmune().sized(2f, 2f));
 	public static final RegistryObject<EntityType<GronckleFemaleEntity>> GRONCKLE_FEMALE = register("gronckle_female", EntityType.Builder.<GronckleFemaleEntity>of(GronckleFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleFemaleEntity::new).fireImmune().sized(2f, 2f));
-	public static final RegistryObject<EntityType<AdolescentGronckleMaleEntity>> ADOLESCENT_GRONCKLE_MALE = register("adolescent_gronckle_male",
-			EntityType.Builder.<AdolescentGronckleMaleEntity>of(AdolescentGronckleMaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(AdolescentGronckleMaleEntity::new).fireImmune().sized(1.5f, 1.5f));
-	public static final RegistryObject<EntityType<AdolescentGronckleFemaleEntity>> ADOLESCENT_GRONCKLE_FEMALE = register("adolescent_gronckle_female",
-			EntityType.Builder.<AdolescentGronckleFemaleEntity>of(AdolescentGronckleFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(AdolescentGronckleFemaleEntity::new).fireImmune().sized(1.5f, 1.5f));
-	public static final RegistryObject<EntityType<JuvenileGronckleMaleEntity>> JUVENILE_GRONCKLE_MALE = register("juvenile_gronckle_male", EntityType.Builder.<JuvenileGronckleMaleEntity>of(JuvenileGronckleMaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JuvenileGronckleMaleEntity::new).fireImmune().sized(1f, 1f));
-	public static final RegistryObject<EntityType<JuvenileGronckleFemaleEntity>> JUVENILE_GRONCKLE_FEMALE = register("juvenile_gronckle_female",
-			EntityType.Builder.<JuvenileGronckleFemaleEntity>of(JuvenileGronckleFemaleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(JuvenileGronckleFemaleEntity::new).fireImmune().sized(1f, 1f));
-	public static final RegistryObject<EntityType<BabyGronckleMaleEntity>> BABY_GRONCKLE_MALE = register("baby_gronckle_male", EntityType.Builder.<BabyGronckleMaleEntity>of(BabyGronckleMaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyGronckleMaleEntity::new).fireImmune().sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<BabyGronckleFemaleEntity>> BABY_GRONCKLE_FEMALE = register("baby_gronckle_female", EntityType.Builder.<BabyGronckleFemaleEntity>of(BabyGronckleFemaleEntity::new, MobCategory.CREATURE)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyGronckleFemaleEntity::new).fireImmune().sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<GronckleEggEntityEntity>> GRONCKLE_EGG_ENTITY = register("gronckle_egg_entity", EntityType.Builder.<GronckleEggEntityEntity>of(GronckleEggEntityEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronckleEggEntityEntity::new).fireImmune().sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<TTMaleEntity>> TT_MALE = register("tt_male",
@@ -192,12 +171,6 @@ public class HowToOwnADragonModEntities {
 			NightFuryEntity.init();
 			GronckleMaleEntity.init();
 			GronckleFemaleEntity.init();
-			AdolescentGronckleMaleEntity.init();
-			AdolescentGronckleFemaleEntity.init();
-			JuvenileGronckleMaleEntity.init();
-			JuvenileGronckleFemaleEntity.init();
-			BabyGronckleMaleEntity.init();
-			BabyGronckleFemaleEntity.init();
 			GronckleEggEntityEntity.init();
 			TTMaleEntity.init();
 			TestGronckleEntity.init();
@@ -235,12 +208,6 @@ public class HowToOwnADragonModEntities {
 		event.put(NIGHT_FURY.get(), NightFuryEntity.createAttributes().build());
 		event.put(GRONCKLE_MALE.get(), GronckleMaleEntity.createAttributes().build());
 		event.put(GRONCKLE_FEMALE.get(), GronckleFemaleEntity.createAttributes().build());
-		event.put(ADOLESCENT_GRONCKLE_MALE.get(), AdolescentGronckleMaleEntity.createAttributes().build());
-		event.put(ADOLESCENT_GRONCKLE_FEMALE.get(), AdolescentGronckleFemaleEntity.createAttributes().build());
-		event.put(JUVENILE_GRONCKLE_MALE.get(), JuvenileGronckleMaleEntity.createAttributes().build());
-		event.put(JUVENILE_GRONCKLE_FEMALE.get(), JuvenileGronckleFemaleEntity.createAttributes().build());
-		event.put(BABY_GRONCKLE_MALE.get(), BabyGronckleMaleEntity.createAttributes().build());
-		event.put(BABY_GRONCKLE_FEMALE.get(), BabyGronckleFemaleEntity.createAttributes().build());
 		event.put(GRONCKLE_EGG_ENTITY.get(), GronckleEggEntityEntity.createAttributes().build());
 		event.put(TT_MALE.get(), TTMaleEntity.createAttributes().build());
 		event.put(TEST_GRONCKLE.get(), TestGronckleEntity.createAttributes().build());

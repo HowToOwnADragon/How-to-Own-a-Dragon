@@ -34,7 +34,7 @@ public class OrangeRedSaddleFemaleGronckleProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof GronckleFemaleEntity && (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get() && entity.getPersistentData().getBoolean("groncklesaddle") == false
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.GRONCKLE_SADDLE.get() && entity.getPersistentData().getBoolean("Saddle") == false
 					&& (entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
 				if (sourceentity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SADDLE_RACK.get());
@@ -45,8 +45,8 @@ public class OrangeRedSaddleFemaleGronckleProcedure {
 				}
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("gronckleorangeredsaddle");
-				entity.getPersistentData().putBoolean("groncklesaddle", true);
-			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get() && entity.getPersistentData().getBoolean("groncklesaddle") == true
+				entity.getPersistentData().putBoolean("Saddle", true);
+			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == HowToOwnADragonModItems.SADDLE_RACK.get() && entity.getPersistentData().getBoolean("Saddle") == true
 					&& (entity.getPersistentData().getString("groncklecolor")).equals("orangered")) {
 				if (sourceentity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.GRONCKLE_SADDLE.get());
@@ -57,7 +57,7 @@ public class OrangeRedSaddleFemaleGronckleProcedure {
 				}
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("gronckleorangered");
-				entity.getPersistentData().putBoolean("groncklesaddle", false);
+				entity.getPersistentData().putBoolean("Saddle", false);
 			}
 		}
 	}

@@ -44,7 +44,7 @@ public class GronckleCodTameProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckles"))) && !(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && new Object() {
+		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("how_to_own_a_dragon:gronckle"))) && !(entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;

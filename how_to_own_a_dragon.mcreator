@@ -1708,20 +1708,6 @@
       "path": "~/Achievements/Welcome To The World"
     },
     {
-      "name": "Gronckles",
-      "type": "tag",
-      "sortid": 137,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckles",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckles.json"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tag"
-    },
-    {
       "name": "ReaperSpawnBlockUpdateTick",
       "type": "procedure",
       "sortid": 138,
@@ -1801,46 +1787,6 @@
         ]
       },
       "path": "~/Structures/ReaperShip/REAPERSPAWNINGMECHANISM"
-    },
-    {
-      "name": "GronckleSpawningEggRightclickedEntity",
-      "type": "procedure",
-      "sortid": 160,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_spawning_egg_rightclicked_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleSpawningEggRightclickedEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
       "name": "IncubatorRecipe",
@@ -1983,20 +1929,6 @@
         ]
       },
       "path": "~/Items/Incubator"
-    },
-    {
-      "name": "GronckleFullGrown",
-      "type": "tag",
-      "sortid": 378,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_full_grown",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_full_grown.json"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tag"
     },
     {
       "name": "AllFollowMe",
@@ -2680,102 +2612,6 @@
       "path": "~/Entities/Dragons/Gronckle/Entity/Female"
     },
     {
-      "name": "AdolescentGronckleMale",
-      "type": "animatedentity",
-      "sortid": 650,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_gronckle_male",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleMaleRenderer.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
-    },
-    {
-      "name": "AdolescentGronckleFemale",
-      "type": "animatedentity",
-      "sortid": 651,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_gronckle_female",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/AdolescentGronckleFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/AdolescentGronckleFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/AdolescentGronckleFemaleModel.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
-    },
-    {
-      "name": "JuvenileGronckleMale",
-      "type": "animatedentity",
-      "sortid": 652,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_gronckle_male",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleMaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleMaleModel.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
-    },
-    {
-      "name": "JuvenileGronckleFemale",
-      "type": "animatedentity",
-      "sortid": 653,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_gronckle_female",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/JuvenileGronckleFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/JuvenileGronckleFemaleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/JuvenileGronckleFemaleModel.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
-    },
-    {
-      "name": "BabyGronckleMale",
-      "type": "animatedentity",
-      "sortid": 654,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_gronckle_male",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleMaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleMaleRenderer.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Male"
-    },
-    {
-      "name": "BabyGronckleFemale",
-      "type": "animatedentity",
-      "sortid": 655,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_gronckle_female",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/BabyGronckleFemaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/BabyGronckleFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/BabyGronckleFemaleRenderer.java"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/Female"
-    },
-    {
       "name": "GronckleEggEntity",
       "type": "livingentity",
       "sortid": 657,
@@ -2885,42 +2721,6 @@
       "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
     },
     {
-      "name": "GronckleSpawnBabyProcedure",
-      "type": "procedure",
-      "sortid": 668,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_spawn_baby_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GronckleSpawnBabyProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/SpawnEgg"
-    },
-    {
       "name": "FemaleGronckleGUI",
       "type": "gui",
       "sortid": 670,
@@ -2929,8 +2729,8 @@
       "registry_name": "female_gronckle_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleGronckleGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/client/gui/FemaleGronckleGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/FemaleGronckleGUIMenu.java",
           "src/main/java/net/mcreator/howtoownadragon/network/FemaleGronckleGUIButtonMessage.java"
         ]
       },
@@ -2980,262 +2780,6 @@
         ]
       },
       "path": "~/Commands/DragonSpawn"
-    },
-    {
-      "name": "BabyPinkMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 747,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_pink_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPinkMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Baby"
-    },
-    {
-      "name": "AdolescentMeatlugMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 748,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_meatlug_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentMeatlugMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Adolescent"
-    },
-    {
-      "name": "AdolescentPinkMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 750,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_pink_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentPinkMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Adolescent"
-    },
-    {
-      "name": "AdolescentOrangeRedMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 751,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_orange_red_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentOrangeRedMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Adolescent"
-    },
-    {
-      "name": "AdolescentBlueYellowMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 752,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_blue_yellow_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentBlueYellowMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Adolescent"
-    },
-    {
-      "name": "BabyMeatlugMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 753,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_meatlug_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyMeatlugMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Baby"
-    },
-    {
-      "name": "BabyOrangeRedMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 754,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_orange_red_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyOrangeRedMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Baby"
-    },
-    {
-      "name": "BabyBlueYellowMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 755,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_blue_yellow_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyBlueYellowMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Baby"
     },
     {
       "name": "PinkSaddleMaleGronckle",
@@ -3832,20 +3376,6 @@
       "path": "~/Entities/Dragons/Gronckle/Tick"
     },
     {
-      "name": "GronckleNotGrown",
-      "type": "tag",
-      "sortid": 826,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronckle_not_grown",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle_not_grown.json"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tag"
-    },
-    {
       "name": "DragonScale",
       "type": "tag",
       "sortid": 827,
@@ -3872,134 +3402,6 @@
         ]
       },
       "path": "~/Items/Valka Staff/Recipe"
-    },
-    {
-      "name": "JuvenileMeatlugMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 834,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_meatlug_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileMeatlugMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
-    },
-    {
-      "name": "JuvenileGroncklePinkMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 835,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_gronckle_pink_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGroncklePinkMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
-    },
-    {
-      "name": "JuvenileGronckleBlueYellowMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 836,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_gronckle_blue_yellow_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGronckleBlueYellowMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
-    },
-    {
-      "name": "JuvenileGronckleOrangeRedMaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 837,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_gronckle_orange_red_male_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileGronckleOrangeRedMaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Male/Juvenile"
     },
     {
       "name": "GronckleOrangeRedMaleGronckleSpawnDragonCommand",
@@ -4130,198 +3532,6 @@
       "path": "~/Commands/DragonSpawn/Gronckle/Male/Grown"
     },
     {
-      "name": "BabyPinkFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 842,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_pink_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyPinkFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
-    },
-    {
-      "name": "BabyMeatlugFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 843,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_meatlug_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyMeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
-    },
-    {
-      "name": "BabyBlueYellowFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 844,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_blue_yellow_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyBlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
-    },
-    {
-      "name": "BabyOrangeRedFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 845,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_orange_red_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyOrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Baby"
-    },
-    {
-      "name": "JuvenileMeatlugFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 846,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_meatlug_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileMeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
-    },
-    {
-      "name": "AdolescentMeatlugFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 847,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_meatlug_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentMeatlugFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
-    },
-    {
       "name": "MeatlugFemaleGronckleSpawnDragonCommand",
       "type": "procedure",
       "sortid": 848,
@@ -4352,198 +3562,6 @@
         ]
       },
       "path": "~/Commands/DragonSpawn/Gronckle/Female/Grown"
-    },
-    {
-      "name": "JuvenilePinkFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 849,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_pink_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenilePinkFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
-    },
-    {
-      "name": "JuvenileOrangeRedFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 850,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_orange_red_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileOrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
-    },
-    {
-      "name": "JuvenileBlueYellowFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 851,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_blue_yellow_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileBlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Juvenile"
-    },
-    {
-      "name": "AdolescentPinkFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 852,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_pink_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentPinkFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
-    },
-    {
-      "name": "AdolescentOrangeRedFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 853,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_orange_red_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentOrangeRedFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
-    },
-    {
-      "name": "AdolescentBlueYellowFemaleGronckleSpawnDragonCommand",
-      "type": "procedure",
-      "sortid": 854,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_blue_yellow_female_gronckle_spawn_dragon_command",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentBlueYellowFemaleGronckleSpawnDragonCommandProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/DragonSpawn/Gronckle/Female/Adolescent"
     },
     {
       "name": "PinkFemaleGronckleSpawnDragonCommand",
@@ -5306,8 +4324,8 @@
       "registry_name": "male_ttgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleTTGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleTTGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleTTGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleTTGUIMenu.java"
         ]
       },
       "path": "~/Entities/Dragons/Terrible Terror/GUI"
@@ -6484,64 +5502,6 @@
       "path": "~/Entities/Dragons/Gronckle/Dies"
     },
     {
-      "name": "MaleGronckle",
-      "type": "tag",
-      "sortid": 1011,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "male_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/male_gronckle.json"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tag"
-    },
-    {
-      "name": "OpenNotGrownMaleGronckleGUI",
-      "type": "procedure",
-      "sortid": 1012,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_not_grown_male_gronckle_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownMaleGronckleGUIProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Entities/Dragons/Gronckle/GUI"
-    },
-    {
-      "name": "OpenNotGrownFemaleGronckleGUI",
-      "type": "procedure",
-      "sortid": 1013,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_not_grown_female_gronckle_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/OpenNotGrownFemaleGronckleGUIProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Entities/Dragons/Gronckle/GUI"
-    },
-    {
-      "name": "FemaleGronckle",
-      "type": "tag",
-      "sortid": 1014,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "female_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/female_gronckle.json"
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Tag"
-    },
-    {
       "name": "NadderMale",
       "type": "animatedentity",
       "sortid": 1015,
@@ -7525,8 +6485,8 @@
       "registry_name": "male_nadder_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleNadderGUIMenu.java",
-          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleNadderGUIScreen.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/gui/MaleNadderGUIScreen.java",
+          "src/main/java/net/mcreator/howtoownadragon/world/inventory/MaleNadderGUIMenu.java"
         ]
       },
       "path": "~/Entities/Dragons/Deadly Nadder/GUI"
@@ -10575,6 +9535,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -10615,210 +9591,6 @@
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/Entity/Male"
-    },
-    {
-      "name": "BabyColorSpawnGronckle",
-      "type": "procedure",
-      "sortid": 1318,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baby_color_spawn_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/BabyColorSpawnGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/ColorSpawnNonGrown"
-    },
-    {
-      "name": "GrowingTickGronckle",
-      "type": "procedure",
-      "sortid": 1319,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "growing_tick_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowingTickGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Growing"
-    },
-    {
-      "name": "GrowUpMessageGronckle",
-      "type": "procedure",
-      "sortid": 1320,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grow_up_message_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpMessageGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Growing"
-    },
-    {
-      "name": "ItemCheckForGrowUpGronckle",
-      "type": "procedure",
-      "sortid": 1321,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "item_check_for_grow_up_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/ItemCheckForGrowUpGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Growing"
-    },
-    {
-      "name": "JuvenileColorSpawnGronckle",
-      "type": "procedure",
-      "sortid": 1322,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juvenile_color_spawn_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/JuvenileColorSpawnGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/ColorSpawnNonGrown"
-    },
-    {
-      "name": "AdolescentColorSpawnGronckle",
-      "type": "procedure",
-      "sortid": 1323,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "adolescent_color_spawn_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/AdolescentColorSpawnGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Entity/ColorSpawnNonGrown"
     },
     {
       "name": "RandomColorMaleNadder",
@@ -10895,42 +9667,6 @@
         ]
       },
       "path": "~/Entities/Dragons/Deadly Nadder/Entity/ColorSpawnNonGrown"
-    },
-    {
-      "name": "TameNonGrownGronckle",
-      "type": "procedure",
-      "sortid": 1329,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tame_non_grown_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/TameNonGrownGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "TameNonGrownNadder",
@@ -11123,42 +9859,6 @@
         ]
       },
       "path": "~/Entities/Dragons/Deadly Nadder/Growing"
-    },
-    {
-      "name": "GrowUpGronckle",
-      "type": "procedure",
-      "sortid": 1336,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grow_up_gronckle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/GrowUpGronckleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Entities/Dragons/Gronckle/Growing"
     },
     {
       "name": "GrowUpNadder",
@@ -16540,7 +15240,7 @@
       "type": "procedure",
       "sortid": 1584,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "display_armor_attribute",
       "metadata": {
         "return_type": "string",
@@ -16582,17 +15282,26 @@
       "type": "procedure",
       "sortid": 1586,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "display_fly_speed_attribute",
       "metadata": {
         "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/DisplayFlySpeedAttributeProcedure.java"
-        ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -16670,6 +15379,20 @@
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/Entity"
+    },
+    {
+      "name": "Gronckle",
+      "type": "tag",
+      "sortid": 1591,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/how_to_own_a_dragon/tags/entity_types/gronckle.json"
+        ]
+      },
+      "path": "~/Entities/Dragons/Gronckle/Tag"
     }
   ],
   "variable_elements": [
@@ -16684,14 +15407,14 @@
   "language_map": {
     "en_us": {
       "gui.how_to_own_a_dragon.husbandry_tab_group_gui.button_two_by_two": "Two by Two",
-      "gui.how_to_own_a_dragon.bd_first_page_gui.label_carrot": "Carrot",
       "item.how_to_own_a_dragon.baby_nadder_female_spawn_egg": "Baby Female Deadly Nadder Spawn Egg",
+      "gui.how_to_own_a_dragon.bd_first_page_gui.label_carrot": "Carrot",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_soul_sand_valley": "Soul Sand Valley",
       "advancements.picking_up_dragon_eye.descr": "This, changes, everything!",
       "gui.how_to_own_a_dragon.love_is_in_the_air.label_gronckle": "Gronckle",
-      "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger": "Ravenger",
-      "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_walk_speed": "Walk Speed",
+      "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ravenger": "Ravenger",
+      "gui.how_to_own_a_dragon.mh_fourth_page_gui.label_ravenger": "Ravenger",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_basalt_deltas": "Basalt Deltas",
       "gui.how_to_own_a_dragon.male_ttgui.label_walkspeedvalue": "DisplayWalkSpeedAttribute",
       "gui.how_to_own_a_dragon.female_ttgui.label_armorvalue": "DisplayArmorAttribute",
@@ -16700,8 +15423,8 @@
       "gui.how_to_own_a_dragon.progressive_achievements.button_htoad_advancements": "HTOAD Advancements",
       "block.how_to_own_a_dragon.incubator_1": "Incubator",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_walkspeedvalue": "0",
-      "gui.how_to_own_a_dragon.adventure_tab_group_gui.button_monsters_hunted": "Monsters Hunted",
       "gui.how_to_own_a_dragon.male_ttgui.label_damagevalue": "0",
+      "gui.how_to_own_a_dragon.adventure_tab_group_gui.button_monsters_hunted": "Monsters Hunted",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_enderman": "Enderman",
       "block.how_to_own_a_dragon.deep_iron_block": "Deep Iron Block",
       "effect.how_to_own_a_dragon.breeding_cooldown": "BreedingCooldown",
@@ -16721,13 +15444,12 @@
       "gui.how_to_own_a_dragon.tbt_first_page_gui.label_cow": "Cow",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_slime": "Slime|",
       "advancements.drinking_yaknog.descr": "Drink Yaknog",
-      "item.how_to_own_a_dragon.baby_gronckle_female_spawn_egg": "Baby Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.male_ttgui.label_healthvalue": "DisplayHealthAttribute",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle",
       "advancements.obtain_gronckle_iron.title": "Gronckle Smith.",
-      "entity.how_to_own_a_dragon.nadder_egg_entity": "Deadly Nadder Egg",
-      "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
       "gui.how_to_own_a_dragon.tbt_second_page_gui.label_fox": "Fox",
+      "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
+      "entity.how_to_own_a_dragon.nadder_egg_entity": "Deadly Nadder Egg",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_flyspeedvalue": "DisplayFlySpeedAttribute",
       "entity.how_to_own_a_dragon.test_gronckle": "Test Gronckle",
       "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_male_gronckle": "Male Deadly Nadder",
@@ -16749,24 +15471,24 @@
       "gui.how_to_own_a_dragon.female_ttgui.label_damagevalue": "0",
       "gui.how_to_own_a_dragon.gronckle_iron_gui_female.label_gronckle_iron": "Gronckle iron",
       "advancements.first_tamed_dragon.descr": "Tame your first dragon",
-      "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_armorvalue": "DisplayArmorAttribute",
       "gui.how_to_own_a_dragon.female_ttgui.label_swim_speed": "Swim Speed",
+      "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_armorvalue": "DisplayArmorAttribute",
       "gui.how_to_own_a_dragon.at_sixth_page_gui.label_plains": "Plains",
       "gui.how_to_own_a_dragon.bd_third_page_gui.label_cooked_salmon": "Cooked Salmon",
       "item.how_to_own_a_dragon.spawn_egg_nadder": "Deadly Nadder",
       "gui.how_to_own_a_dragon.mh_third_page_gui.label_skeleton": "Skeleton",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_elder_gaurdian": "Elder Gaurdian",
-      "gui.how_to_own_a_dragon.generic_or_advanced_config.button_advanced": "Advanced",
       "gui.how_to_own_a_dragon.male_ttgui.label_swimspeedvalue": "0",
+      "gui.how_to_own_a_dragon.generic_or_advanced_config.button_advanced": "Advanced",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_evoker": "Evoker|",
-      "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
       "gui.how_to_own_a_dragon.at_third_page_gui.label_flower_forest": "Flower Forest",
+      "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
       "gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean": "Cold Ocean",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue": "0",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombified_piglin": "Zombified Piglin",
       "gui.how_to_own_a_dragon.bd_fifth_page_gui.label_raw_cod": "Raw Cod",
-      "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_damagevalue": "0",
+      "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
       "gui.how_to_own_a_dragon.bd_second_page_gui.label_cooked_mutton": "Cooked Mutton",
       "gui.how_to_own_a_dragon.male_nadder_gui.label_healthvalue": "DisplayHealthAttribute",
       "gui.how_to_own_a_dragon.at_first_page_gui.label_first_page": "First Page",
@@ -16779,9 +15501,9 @@
       "gui.how_to_own_a_dragon.female_ttgui.label_armor": "Armor",
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "gui.how_to_own_a_dragon.female_ttgui.label_flyspeedvalue": "DisplayFlySpeedAttribute",
-      "gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest": "Dark Forest",
-      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "gui.how_to_own_a_dragon.female_nadder_gui.label_healthvalue": "DisplayHealthAttribute",
+      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
+      "gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest": "Dark Forest",
       "gui.how_to_own_a_dragon.at_sixth_page_gui.label_savanna": "Savanna",
       "advancements.obtain_dragon_proof_recipe.descr": "Obtain Dragon Proof Recipe",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
@@ -16806,8 +15528,8 @@
       "gui.how_to_own_a_dragon.bd_first_page_gui.label_first_page": "First page",
       "item.how_to_own_a_dragon.chicken_spawn_egg": "Chicken Spawn Egg",
       "gui.how_to_own_a_dragon.male_ttgui.label_flyspeedvalue": "DisplayFlySpeedAttribute",
-      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "entity.how_to_own_a_dragon.adolescent_tt_female": "Female Terrible Terror",
+      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_blaze": "Blaze",
       "gui.how_to_own_a_dragon.bd_fourth_page_gui.label_golden_carrot": "Golden Carrot",
       "gui.how_to_own_a_dragon.bd_sixth_page_gui.label_raw_salmon": "Raw Salmon",
@@ -16828,14 +15550,11 @@
       "entity.how_to_own_a_dragon.night_fury": "Night Fury",
       "gui.how_to_own_a_dragon.bd_seventh_page_gui.label_suspicious_stew": "Suspicious Stew",
       "gui.how_to_own_a_dragon.female_ttgui.label_walk_speed": "Walk Speed",
-      "entity.how_to_own_a_dragon.baby_gronckle_male": "Baby Male Gronckle",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_wither": "Wither",
       "gui.how_to_own_a_dragon.at_second_page_gui.label_second_page": "Second Page",
       "entity.how_to_own_a_dragon.baby_nadder_female": "Baby Female Deadly Nadder",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_cave_spider": "Cave Spider|",
-      "item.how_to_own_a_dragon.juvenile_gronckle_female_spawn_egg": "Juvenile Female Gronckle Spawn Egg",
       "advancements.drinking_yaknog.title": "I don\u0027t feel so good...",
-      "entity.how_to_own_a_dragon.adolescent_gronckle_female": "Adolescent Female Gronckle",
       "entity.how_to_own_a_dragon.gronckle_female": "Female Gronckle",
       "item_group.how_to_own_a_dragon.items": "Items",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_male_gronckle": "Male Gronckle",
@@ -16982,13 +15701,11 @@
       "advancements.obtain_deep_iron_recipe.title": "Obtain Deep Iron Recipe",
       "entity.how_to_own_a_dragon.adolescent_nadder_female": "Adolescent Female Deadly Nadder",
       "gui.how_to_own_a_dragon.nether_biomes_gui.label_all_nether_biomes": "All Nether Biomes",
-      "entity.how_to_own_a_dragon.juvenile_gronckle_male": "Juvenile Male Gronckle",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_wither_skeleton": "Wither Skeleton",
       "item.how_to_own_a_dragon.baby_tt_female_spawn_egg": "Female Terrible Terror Spawn Egg",
       "entity.how_to_own_a_dragon.nadder_male": "Male Deadly Nadder",
       "item.how_to_own_a_dragon.dragon_eye": "§oDragon Eye",
       "gui.how_to_own_a_dragon.tbt_second_page_gui.label_goat": "Goat",
-      "entity.how_to_own_a_dragon.baby_gronckle_female": "Baby Female Gronckle",
       "gui.how_to_own_a_dragon.mh_third_page_gui.label_pillager": "Pillager",
       "gui.how_to_own_a_dragon.gotta_catch_em_all.label_dragons": "All Tamable Dragons",
       "advancements.craft_a_gronckle_tool.descr": "Craft Any Gronckle Tool",
@@ -17008,7 +15725,6 @@
       "gui.how_to_own_a_dragon.gotta_catch_em_all.label_terrible_terror": "Terrible Terror",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_fifth_page": "Fifth Page",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombie": "Zombie",
-      "entity.how_to_own_a_dragon.juvenile_gronckle_female": "Juvenile Female Gronckle",
       "item.how_to_own_a_dragon.nadder_male_spawn_egg": "Male Deadly Nadder Spawn Egg",
       "advancements.unlock_gronckle_saddle_recipe.descr": "Unlock Gronckle Saddle Recipe",
       "item.how_to_own_a_dragon.adolescent_nadder_male_spawn_egg": "Adolescent Male Deadly Nadder Spawn Egg",
@@ -17020,7 +15736,6 @@
       "gui.how_to_own_a_dragon.bd_seventh_page_gui.label_seventh_page": "Seventh Page",
       "item.how_to_own_a_dragon.valkas_staff": "Valka Staff",
       "gui.how_to_own_a_dragon.at_fifth_page_gui.label_mushroom_fields": "Mushroom Fields",
-      "item.how_to_own_a_dragon.adolescent_gronckle_female_spawn_egg": "Adolescent Female Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_damage": "Damage",
       "gui.how_to_own_a_dragon.bd_seventh_page_gui.label_sweet_berries": "Sweet Berries",
       "gui.how_to_own_a_dragon.at_third_page_gui.label_frozen_ocean": "Frozen Ocean",
@@ -17064,7 +15779,6 @@
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_drowned": "Drowned|",
       "item.how_to_own_a_dragon.test_gronckle_spawn_egg": "Test Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.tbt_second_page_gui.label_frog": "Frog",
-      "entity.how_to_own_a_dragon.adolescent_gronckle_male": "Adolescent Male Gronckle",
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_gaurdian": "Gaurdian",
       "item.how_to_own_a_dragon.tt_egg_entity_spawn_egg": "Terrible Terror Egg Spawn Egg",
       "item.how_to_own_a_dragon.nadder_spine": "Deadly Nadder Spine",
@@ -17082,7 +15796,6 @@
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_hoglin": "Hoglin",
       "block.how_to_own_a_dragon.deep_iron_door": "Deep Iron Door",
       "gui.how_to_own_a_dragon.at_third_page_gui.label_third_page": "Third Page",
-      "item.how_to_own_a_dragon.adolescent_gronckle_male_spawn_egg": "Adolescent Male Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_armor": "Armor",
       "death.attack.gronckleattack": "",
       "advancements.first_tamed_dragon.title": "We, have dragons",
@@ -17150,7 +15863,6 @@
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_magma_cube": "Magma Cube",
       "block.how_to_own_a_dragon.dragon_proof_metal_bars": "Dragon Proof Metal Bars",
       "key.how_to_own_a_dragon.use_ability": "Activate Ability",
-      "item.how_to_own_a_dragon.baby_gronckle_male_spawn_egg": "Baby Male Gronckle Spawn Egg",
       "advancements.tame_all_dragons.descr": "Tame all dragons",
       "gui.how_to_own_a_dragon.bd_third_page_gui.label_glow_berries": "Glow Berries",
       "item.how_to_own_a_dragon.test_nadder_spawn_egg": "Male Deadly Nadder Spawn Egg",
@@ -17208,7 +15920,6 @@
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_husk": "Husk|",
       "gui.how_to_own_a_dragon.bd_third_page_gui.label_cookie": "Cookie",
       "advancements.obtain_dragon_proof_recipe.title": "Obtain Dragon Proof Recipe",
-      "item.how_to_own_a_dragon.juvenile_gronckle_male_spawn_egg": "Juvenile Male Gronckle Spawn Egg",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_phantom": "Phantom|",
       "gui.how_to_own_a_dragon.mh_fifth_page_gui.label_ghast": "Ghast",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_damage": "Damage",
@@ -17409,10 +16120,6 @@
                       {
                         "name": "Male",
                         "children": []
-                      },
-                      {
-                        "name": "Female",
-                        "children": []
                       }
                     ]
                   },
@@ -17471,10 +16178,6 @@
                         ]
                       },
                       {
-                        "name": "Stats",
-                        "children": []
-                      },
-                      {
                         "name": "Renderer",
                         "children": []
                       }
@@ -17484,25 +16187,17 @@
                     "name": "Entity",
                     "children": [
                       {
-                        "name": "ColorSpawnNonGrown",
+                        "name": "Male",
                         "children": []
                       },
                       {
                         "name": "Female",
-                        "children": []
-                      },
-                      {
-                        "name": "Male",
                         "children": []
                       }
                     ]
                   },
                   {
                     "name": "Taming",
-                    "children": []
-                  },
-                  {
-                    "name": "Growing",
                     "children": []
                   },
                   {
@@ -18110,18 +16805,6 @@
                     "name": "Male",
                     "children": [
                       {
-                        "name": "Baby",
-                        "children": []
-                      },
-                      {
-                        "name": "Adolescent",
-                        "children": []
-                      },
-                      {
-                        "name": "Juvenile",
-                        "children": []
-                      },
-                      {
                         "name": "Grown",
                         "children": []
                       }
@@ -18130,18 +16813,6 @@
                   {
                     "name": "Female",
                     "children": [
-                      {
-                        "name": "Juvenile",
-                        "children": []
-                      },
-                      {
-                        "name": "Adolescent",
-                        "children": []
-                      },
-                      {
-                        "name": "Baby",
-                        "children": []
-                      },
                       {
                         "name": "Grown",
                         "children": []

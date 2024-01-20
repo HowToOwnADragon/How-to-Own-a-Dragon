@@ -274,7 +274,7 @@
           "name": "label_swimspeedvalue",
           "text": {
             "fixedValue": "0",
-            "name": "DisplayDamageAttribute"
+            "name": "DisplaySwimSpeedAttribute"
           },
           "color": {
             "value": -12829636,
