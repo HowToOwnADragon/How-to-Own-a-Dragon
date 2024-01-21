@@ -9,6 +9,8 @@
 ### This Mod will add Dragons from How to Train Your Dragon to your World. You can tame, ride and breed them to explore the World of Dragons which includes new biomes, items and even a new dimension called The Hidden World. 
 <br>
 
+![Banner](.github/images/MakoPinkBanner.png)
+
 ### Our mod focuses completely on being as accurate as possible to the shows!!!
 
 # Versions:
