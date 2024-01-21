@@ -39,8 +39,7 @@ import net.mcreator.howtoownadragon.client.gui.LoveIsInTheAirScreen;
 import net.mcreator.howtoownadragon.client.gui.Incubator1GUIScreen;
 import net.mcreator.howtoownadragon.client.gui.HusbandryTabGroupGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.HTOADAdvancementsScreen;
-import net.mcreator.howtoownadragon.client.gui.GronkleIronGUIMaleScreen;
-import net.mcreator.howtoownadragon.client.gui.GronckleIronGUIFemaleScreen;
+import net.mcreator.howtoownadragon.client.gui.GronckleIronGUIScreen;
 import net.mcreator.howtoownadragon.client.gui.GottaCatchEmAllScreen;
 import net.mcreator.howtoownadragon.client.gui.GenericOrAdvancedConfigScreen;
 import net.mcreator.howtoownadragon.client.gui.FoodPage1InfoGronckleScreen;
@@ -76,8 +75,6 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.INCUBATOR_1_GUI.get(), Incubator1GUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.FEMALE_GRONCKLE_GUI.get(), FemaleGronckleGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MALE_GRONCKLE_GUI.get(), MaleGronckleGUIScreen::new);
-			MenuScreens.register(HowToOwnADragonModMenus.GRONKLE_IRON_GUI_MALE.get(), GronkleIronGUIMaleScreen::new);
-			MenuScreens.register(HowToOwnADragonModMenus.GRONCKLE_IRON_GUI_FEMALE.get(), GronckleIronGUIFemaleScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.MAIN_PAGE_INFO_GRONCKLE.get(), MainPageInfoGronckleScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_MALE_GRONCKLE_GUI.get(), NotGrownMaleGronckleGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.NOT_GROWN_FEMALE_GRONCKLE_GUI.get(), NotGrownFemaleGronckleGUIScreen::new);
@@ -127,6 +124,7 @@ public class HowToOwnADragonModScreens {
 			MenuScreens.register(HowToOwnADragonModMenus.TBT_SECOND_PAGE_GUI.get(), TBTSecondPageGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.TBT_THIRD_PAGE_GUI.get(), TBTThirdPageGUIScreen::new);
 			MenuScreens.register(HowToOwnADragonModMenus.TBT_FOURTH_PAGE_GUI.get(), TBTFourthPageGUIScreen::new);
+			MenuScreens.register(HowToOwnADragonModMenus.GRONCKLE_IRON_GUI.get(), GronckleIronGUIScreen::new);
 		});
 	}
 }

@@ -24,7 +24,7 @@ public class GronckleEntityIsHurtProcedure {
 					_player.getInventory().setChanged();
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("groncklecolor", (entity.getPersistentData().getString("groncklecolor")));
+				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("Color", (entity.getPersistentData().getString("Color")));
 			});
 			if (!entity.level.isClientSide())
 				entity.discard();

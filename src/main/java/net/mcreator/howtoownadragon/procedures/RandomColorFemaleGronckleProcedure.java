@@ -13,20 +13,20 @@ public class RandomColorFemaleGronckleProcedure {
 		if (entity == null)
 			return;
 		if (!(entity.getPersistentData().getDouble("Age") >= 0)) {
-			entity.getPersistentData().putDouble("Age", 100);
+			entity.getPersistentData().putDouble("Age", 640);
 		}
 		HowToOwnADragonMod.queueServerWork(1, () -> {
 			NBTDataSpawnGronckleProcedure.execute(world, x, y, z, entity);
 			if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
-				entity.getPersistentData().putString("groncklecolor", "pink");
+				entity.getPersistentData().putString("Color", "pink");
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("groncklepink");
 			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
-				entity.getPersistentData().putString("groncklecolor", "orangered");
+				entity.getPersistentData().putString("Color", "orangered");
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("gronckleorangered");
 			} else if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
-				entity.getPersistentData().putString("groncklecolor", "blueyellow");
+				entity.getPersistentData().putString("Color", "blueyellow");
 				if (entity instanceof GronckleFemaleEntity animatable)
 					animatable.setTexture("gronckleblueyellow");
 			} else {

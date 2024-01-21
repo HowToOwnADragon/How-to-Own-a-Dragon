@@ -12,7 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.world.inventory.FemaleGronckleGUIMenu;
-import net.mcreator.howtoownadragon.procedures.OpenGronckleIronGUIFemaleProcedure;
+import net.mcreator.howtoownadragon.procedures.OpenGronckleIronGUIProcedure;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.function.Supplier;
@@ -64,7 +64,7 @@ public class FemaleGronckleGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			OpenGronckleIronGUIFemaleProcedure.execute(world, x, y, z, entity);
+			OpenGronckleIronGUIProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

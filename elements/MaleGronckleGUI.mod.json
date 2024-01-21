@@ -92,7 +92,7 @@
           "image": "next_page_mcreator_-_copy.png",
           "hoveredImage": "next_page_mcreator_-_copy.png",
           "onClick": {
-            "name": "OpenGronckleIronGUIMale"
+            "name": "OpenGronckleIronGUI"
           },
           "x": 331,
           "y": 197
