@@ -72,7 +72,7 @@ public class FemaleNadderGUIScreen extends AbstractContainerScreen<FemaleNadderG
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_male_gronckle"), 5, 5, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_inventory"), 64, 87, -13421773);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_health"), 7, 100, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_health"), 8, 100, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_healthvalue"), 31, 110, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_armor"), 20, 125, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.female_nadder_gui.label_armorvalue"), 31, 135, -12829636);
