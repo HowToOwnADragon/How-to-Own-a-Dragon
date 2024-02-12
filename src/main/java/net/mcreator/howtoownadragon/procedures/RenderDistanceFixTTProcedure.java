@@ -15,8 +15,6 @@ import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
@@ -110,34 +108,10 @@ public class RenderDistanceFixTTProcedure {
 									}
 								} else {
 									if (entity instanceof JuvenileTTMaleEntity) {
-										if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-											if (entity instanceof JuvenileNadderMaleEntity animatable)
-												animatable.setTexture("greentt");
-											TextureFixTTWaitProcedure.execute(world, entity);
-										} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-											if (entity instanceof JuvenileNadderMaleEntity animatable)
-												animatable.setTexture("pinktt");
-											TextureFixTTWaitProcedure.execute(world, entity);
-										} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-											if (entity instanceof JuvenileNadderMaleEntity animatable)
-												animatable.setTexture("turqtt");
-											TextureFixTTWaitProcedure.execute(world, entity);
-										}
+										TextureFixTTWaitProcedure.execute(world, entity);
 									} else {
 										if (entity instanceof JuvenileTTFemaleEntity) {
-											if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-												if (entity instanceof JuvenileNadderFemaleEntity animatable)
-													animatable.setTexture("greentt");
-												TextureFixTTWaitProcedure.execute(world, entity);
-											} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-												if (entity instanceof JuvenileNadderFemaleEntity animatable)
-													animatable.setTexture("pinktt");
-												TextureFixTTWaitProcedure.execute(world, entity);
-											} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-												if (entity instanceof JuvenileNadderFemaleEntity animatable)
-													animatable.setTexture("turqtt");
-												TextureFixTTWaitProcedure.execute(world, entity);
-											}
+											TextureFixTTWaitProcedure.execute(world, entity);
 										} else {
 											if (entity instanceof BabyTTMaleEntity) {
 												if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {

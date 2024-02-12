@@ -18,8 +18,6 @@ import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.NadderEggEntityEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.ChickenEntity;
@@ -27,13 +25,9 @@ import net.mcreator.howtoownadragon.entity.BabyYakEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabySheepEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyChickenEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -153,48 +147,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof NadderFemaleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof BabyNadderFemaleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof BabyNadderMaleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof JuvenileNadderMaleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof JuvenileNadderFemaleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof AdolescentNadderFemaleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof AdolescentNadderMaleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

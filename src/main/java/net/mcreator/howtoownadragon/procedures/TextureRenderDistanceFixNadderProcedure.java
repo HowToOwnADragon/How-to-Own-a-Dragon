@@ -13,12 +13,6 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
 import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentNadderFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
@@ -78,102 +72,6 @@ public class TextureRenderDistanceFixNadderProcedure {
 									NBTDataSpawnNadderProcedure.execute(entity);
 									RandomColorFemaleNadderProcedure.execute(entity);
 									TextureFixNadderWaitProcedure.execute(world, entity);
-								}
-							} else {
-								if (entity instanceof AdolescentNadderMaleEntity) {
-									if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-										if (entity instanceof AdolescentNadderMaleEntity animatable)
-											animatable.setTexture("rednadder");
-										TextureFixNadderWaitProcedure.execute(world, entity);
-									} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-										if (entity instanceof AdolescentNadderMaleEntity animatable)
-											animatable.setTexture("purplenadder");
-										TextureFixNadderWaitProcedure.execute(world, entity);
-									} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-										if (entity instanceof AdolescentNadderMaleEntity animatable)
-											animatable.setTexture("stormfly");
-										TextureFixNadderWaitProcedure.execute(world, entity);
-									}
-								} else {
-									if (entity instanceof AdolescentNadderFemaleEntity) {
-										if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-											if (entity instanceof AdolescentNadderFemaleEntity animatable)
-												animatable.setTexture("rednadder");
-											TextureFixNadderWaitProcedure.execute(world, entity);
-										} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-											if (entity instanceof AdolescentNadderFemaleEntity animatable)
-												animatable.setTexture("purplenadder");
-											TextureFixNadderWaitProcedure.execute(world, entity);
-										} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-											if (entity instanceof AdolescentNadderFemaleEntity animatable)
-												animatable.setTexture("stormfly");
-											TextureFixNadderWaitProcedure.execute(world, entity);
-										}
-									} else {
-										if (entity instanceof JuvenileNadderMaleEntity) {
-											if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-												if (entity instanceof JuvenileNadderMaleEntity animatable)
-													animatable.setTexture("rednadder");
-												TextureFixNadderWaitProcedure.execute(world, entity);
-											} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-												if (entity instanceof JuvenileNadderMaleEntity animatable)
-													animatable.setTexture("purplenadder");
-												TextureFixNadderWaitProcedure.execute(world, entity);
-											} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-												if (entity instanceof JuvenileNadderMaleEntity animatable)
-													animatable.setTexture("stormfly");
-												TextureFixNadderWaitProcedure.execute(world, entity);
-											}
-										} else {
-											if (entity instanceof JuvenileNadderFemaleEntity) {
-												if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-													if (entity instanceof JuvenileNadderFemaleEntity animatable)
-														animatable.setTexture("rednadder");
-													TextureFixNadderWaitProcedure.execute(world, entity);
-												} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-													if (entity instanceof JuvenileNadderFemaleEntity animatable)
-														animatable.setTexture("purplenadder");
-													TextureFixNadderWaitProcedure.execute(world, entity);
-												} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-													if (entity instanceof JuvenileNadderFemaleEntity animatable)
-														animatable.setTexture("stormfly");
-													TextureFixNadderWaitProcedure.execute(world, entity);
-												}
-											} else {
-												if (entity instanceof BabyNadderMaleEntity) {
-													if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-														if (entity instanceof BabyNadderMaleEntity animatable)
-															animatable.setTexture("rednadder");
-														TextureFixNadderWaitProcedure.execute(world, entity);
-													} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-														if (entity instanceof BabyNadderMaleEntity animatable)
-															animatable.setTexture("purplenadder");
-														TextureFixNadderWaitProcedure.execute(world, entity);
-													} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-														if (entity instanceof BabyNadderMaleEntity animatable)
-															animatable.setTexture("stormfly");
-														TextureFixNadderWaitProcedure.execute(world, entity);
-													}
-												} else {
-													if (entity instanceof BabyNadderFemaleEntity) {
-														if ((entity.getPersistentData().getString("naddercolor")).equals("red")) {
-															if (entity instanceof BabyNadderFemaleEntity animatable)
-																animatable.setTexture("rednadder");
-															TextureFixNadderWaitProcedure.execute(world, entity);
-														} else if ((entity.getPersistentData().getString("naddercolor")).equals("purple")) {
-															if (entity instanceof BabyNadderFemaleEntity animatable)
-																animatable.setTexture("purplenadder");
-															TextureFixNadderWaitProcedure.execute(world, entity);
-														} else if ((entity.getPersistentData().getString("naddercolor")).equals("stormfly")) {
-															if (entity instanceof BabyNadderFemaleEntity animatable)
-																animatable.setTexture("stormfly");
-															TextureFixNadderWaitProcedure.execute(world, entity);
-														}
-													}
-												}
-											}
-										}
-									}
 								}
 							}
 						}
