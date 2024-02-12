@@ -27,12 +27,6 @@ import net.mcreator.howtoownadragon.procedures.PinkFemaleSpawnDragonCommandTTPro
 import net.mcreator.howtoownadragon.procedures.PinkFemaleGronckleSpawnDragonCommandProcedure;
 import net.mcreator.howtoownadragon.procedures.OrangeRedFemaleGronckleSpawnDragonCommandProcedure;
 import net.mcreator.howtoownadragon.procedures.MeatlugFemaleGronckleSpawnDragonCommandProcedure;
-import net.mcreator.howtoownadragon.procedures.JuviStormflyMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.JuviStormflyFemaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.JuviRedMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.JuviRedFemaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.JuviPurpleMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.JuviPurpleFemaleSpawnDragonCommandNadderProcedure;
 import net.mcreator.howtoownadragon.procedures.JuvenileTurqMaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.JuvenileTurqFemaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.JuvenilePinkMaleSpawnDragonCommandTTProcedure;
@@ -48,12 +42,6 @@ import net.mcreator.howtoownadragon.procedures.GreenFemaleSpawnDragonCommandTTPr
 import net.mcreator.howtoownadragon.procedures.BlueYellowFemaleGronckleSpawnDragonCommandProcedure;
 import net.mcreator.howtoownadragon.procedures.BabyTurqMaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.BabyTurqFemaleSpawnDragonCommandTTProcedure;
-import net.mcreator.howtoownadragon.procedures.BabyStormflyMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.BabyStormflyFemaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.BabyRedMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.BabyRedFemaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.BabyPurpleMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.BabyPurpleFemaleSpawnDragonCommandNadderProcedure;
 import net.mcreator.howtoownadragon.procedures.BabyPinkMaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.BabyPinkFemaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.BabyGreenMaleSpawnDragonCommandTTProcedure;
@@ -64,12 +52,6 @@ import net.mcreator.howtoownadragon.procedures.AdolescentPinkMaleSpawnDragonComm
 import net.mcreator.howtoownadragon.procedures.AdolescentPinkFemaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.AdolescentGreenMaleSpawnDragonCommandTTProcedure;
 import net.mcreator.howtoownadragon.procedures.AdolescentGreenFemaleSpawnDragonCommandTTProcedure;
-import net.mcreator.howtoownadragon.procedures.AdoStormflyMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.AdoStormflyFemaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.AdoRedMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.AdoRedFemaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.AdoPurpleMaleSpawnDragonCommandNadderProcedure;
-import net.mcreator.howtoownadragon.procedures.AdoPurpleFemaleSpawnDragonCommandNadderProcedure;
 
 @Mod.EventBusSubscriber
 public class SpawnDragonCommand {
@@ -188,7 +170,91 @@ public class SpawnDragonCommand {
 
 					BlueYellowFemaleGronckleSpawnDragonCommandProcedure.execute(world, x, y, z);
 					return 0;
-				}))))).then(Commands.literal("Terrible").then(Commands.literal("Terror").then(Commands.literal("male").then(Commands.literal("baby").then(Commands.literal("pink").executes(arguments -> {
+				}))))).then(Commands.literal("Deadly").then(Commands.literal("Nadder").then(Commands.literal("male").then(Commands.literal("grown").then(Commands.literal("stormfly").executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
+
+					StormflyMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
+					return 0;
+				})).then(Commands.literal("red").executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
+
+					RedMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
+					return 0;
+				})).then(Commands.literal("purple").executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
+
+					PurpleMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
+					return 0;
+				})))).then(Commands.literal("female").then(Commands.literal("grown").then(Commands.literal("stormfly").executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
+
+					StormflyFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
+					return 0;
+				})).then(Commands.literal("red").executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
+
+					RedFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
+					return 0;
+				})).then(Commands.literal("purple").executes(arguments -> {
+					Level world = arguments.getSource().getUnsidedLevel();
+					double x = arguments.getSource().getPosition().x();
+					double y = arguments.getSource().getPosition().y();
+					double z = arguments.getSource().getPosition().z();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null && world instanceof ServerLevel _servLevel)
+						entity = FakePlayerFactory.getMinecraft(_servLevel);
+					Direction direction = Direction.DOWN;
+					if (entity != null)
+						direction = entity.getDirection();
+
+					PurpleFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
+					return 0;
+				})))))).then(Commands.literal("Terrible").then(Commands.literal("Terror").then(Commands.literal("male").then(Commands.literal("baby").then(Commands.literal("pink").executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();
@@ -523,342 +589,6 @@ public class SpawnDragonCommand {
 						direction = entity.getDirection();
 
 					TurqFemaleSpawnDragonCommandTTProcedure.execute(world, x, y, z);
-					return 0;
-				})))))).then(Commands.literal("Deadly").then(Commands.literal("Nadder").then(Commands.literal("male").then(Commands.literal("baby").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					BabyStormflyMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					BabyRedMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					BabyPurpleMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				}))).then(Commands.literal("juvenile").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					JuviStormflyMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					JuviRedMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					JuviPurpleMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				}))).then(Commands.literal("adolescent").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					AdoStormflyMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					AdoRedMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					AdoPurpleMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				}))).then(Commands.literal("grown").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					StormflyMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					RedMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					PurpleMaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})))).then(Commands.literal("female").then(Commands.literal("baby").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					BabyStormflyFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					BabyRedFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					BabyPurpleFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				}))).then(Commands.literal("juvenile").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					JuviStormflyFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					JuviRedFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					JuviPurpleFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				}))).then(Commands.literal("adolescent").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					AdoStormflyFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					AdoRedFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					AdoPurpleFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				}))).then(Commands.literal("grown").then(Commands.literal("stormfly").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					StormflyFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("red").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					RedFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
-					return 0;
-				})).then(Commands.literal("purple").executes(arguments -> {
-					Level world = arguments.getSource().getUnsidedLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null && world instanceof ServerLevel _servLevel)
-						entity = FakePlayerFactory.getMinecraft(_servLevel);
-					Direction direction = Direction.DOWN;
-					if (entity != null)
-						direction = entity.getDirection();
-
-					PurpleFemaleSpawnDragonCommandNadderProcedure.execute(world, x, y, z);
 					return 0;
 				})))))));
 	}

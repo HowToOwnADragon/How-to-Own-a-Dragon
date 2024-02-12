@@ -11,16 +11,13 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -71,10 +68,6 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE);
@@ -82,10 +75,6 @@ public class FeedGronckleProcedure {
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
-					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
@@ -95,10 +84,6 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Blocks.COBBLED_DEEPSLATE);
@@ -106,10 +91,6 @@ public class FeedGronckleProcedure {
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
-					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
@@ -119,10 +100,6 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Blocks.DIORITE);
@@ -130,10 +107,6 @@ public class FeedGronckleProcedure {
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
-					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
@@ -143,10 +116,6 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Blocks.SANDSTONE);
@@ -154,10 +123,6 @@ public class FeedGronckleProcedure {
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
-					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT) {
 					if (sourceentity instanceof LivingEntity _entity) {
@@ -167,10 +132,6 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.BUCKET);
@@ -178,10 +139,6 @@ public class FeedGronckleProcedure {
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
-					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
 					if (sourceentity instanceof LivingEntity _entity) {
@@ -191,10 +148,6 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
 					if (sourceentity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(Items.SALMON);
@@ -203,39 +156,21 @@ public class FeedGronckleProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
 				}
-			} else if (new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-					} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-					}
-					return false;
-				}
-			}.checkGamemode(entity)) {
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD
-						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
-					if (entity instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.HEART, x, y, z, 30, 3, 3, 3, 0.5);
-					}
-				}
+			}
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.STONE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLESTONE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DEEPSLATE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.COBBLED_DEEPSLATE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.ANDESITE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.GRANITE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.DIORITE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.SANDSTONE.asItem()
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_INGOT
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
+				TamedHeartParticlesProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

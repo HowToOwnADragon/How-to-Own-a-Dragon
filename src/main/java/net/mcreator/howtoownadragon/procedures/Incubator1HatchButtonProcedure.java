@@ -19,12 +19,12 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
+import net.mcreator.howtoownadragon.entity.NadderMaleEntity;
+import net.mcreator.howtoownadragon.entity.NadderFemaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleMaleEntity;
 import net.mcreator.howtoownadragon.entity.GronckleFemaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
 import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyNadderFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.concurrent.atomic.AtomicReference;
@@ -321,7 +321,7 @@ public class Incubator1HatchButtonProcedure {
 		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.FLINT) {
 			if (Mth.nextInt(RandomSource.create(), 1, 2) <= 1) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyNadderMaleEntity(HowToOwnADragonModEntities.BABY_NADDER_MALE.get(), _level);
+					Entity entityToSpawn = new NadderMaleEntity(HowToOwnADragonModEntities.NADDER_MALE.get(), _level);
 					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -331,12 +331,12 @@ public class Incubator1HatchButtonProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 				HowToOwnADragonMod.queueServerWork(1, () -> {
-					if (!world.getEntitiesOfClass(BabyNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-						((Entity) world.getEntitiesOfClass(BabyNadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					if (!world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+						((Entity) world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", ((new Object() {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color", ((new Object() {
 							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
@@ -344,7 +344,12 @@ public class Incubator1HatchButtonProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getOrCreateTag().getString("naddercolor")));
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getOrCreateTag().getString("Color")));
+						((Entity) world.getEntitiesOfClass(NadderMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putDouble("Age", 100);
 					}
 					{
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -377,7 +382,7 @@ public class Incubator1HatchButtonProcedure {
 				});
 			} else if (Mth.nextInt(RandomSource.create(), 1, 2) > 1) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = new BabyNadderFemaleEntity(HowToOwnADragonModEntities.BABY_NADDER_FEMALE.get(), _level);
+					Entity entityToSpawn = new NadderFemaleEntity(HowToOwnADragonModEntities.NADDER_FEMALE.get(), _level);
 					entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
@@ -387,12 +392,12 @@ public class Incubator1HatchButtonProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 				HowToOwnADragonMod.queueServerWork(1, () -> {
-					if (!world.getEntitiesOfClass(BabyNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-						((Entity) world.getEntitiesOfClass(BabyNadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+					if (!world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+						((Entity) world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", ((new Object() {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color", ((new Object() {
 							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 								BlockEntity _ent = world.getBlockEntity(pos);
@@ -400,7 +405,12 @@ public class Incubator1HatchButtonProcedure {
 									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 								return _retval.get();
 							}
-						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getOrCreateTag().getString("naddercolor")));
+						}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getOrCreateTag().getString("Color")));
+						((Entity) world.getEntitiesOfClass(NadderFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putDouble("Age", 100);
 					}
 					{
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
