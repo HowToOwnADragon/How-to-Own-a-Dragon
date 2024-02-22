@@ -1,14 +1,11 @@
 {
   "type": "forge:add_spawns",
   "biomes": [
-    "old_growth_birch_forest",
-    "forest",
-    "windswept_hills",
-    "dark_forest",
-    "taiga",
     "birch_forest",
-    "windswept_gravelly_hills",
-    "snowy_taiga"
+    "plains",
+    "dark_forest",
+    "forest",
+    "old_growth_birch_forest"
   ],
   "spawners": {
     "type": "how_to_own_a_dragon:nadder_female",

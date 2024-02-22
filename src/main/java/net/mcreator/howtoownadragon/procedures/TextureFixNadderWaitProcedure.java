@@ -11,7 +11,7 @@ public class TextureFixNadderWaitProcedure {
 			return;
 		HowToOwnADragonMod.queueServerWork(200, () -> {
 			entity.getPersistentData().putBoolean("loadednadder", false);
-			TextureRenderDistanceFixNadderProcedure.execute(world, entity);
+			TextureRenderDistanceFixNadderProcedure.execute();
 		});
 	}
 }

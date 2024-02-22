@@ -7,10 +7,12 @@
     "mobModelTexture": "stormfly.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "DragonSizeFactor"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "DragonSizeFactor"
     },
     "entityDataEntries": [],
     "modelWidth": 1.2000000000000002,
@@ -105,9 +107,6 @@
     },
     "onMobTickUpdate": {
       "name": "NadderFlyingTickUpdate"
-    },
-    "onInitialSpawn": {
-      "name": "MaleOnInitialEntitySpawnNadder"
     },
     "hasAI": true,
     "aiBase": "(none)",

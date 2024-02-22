@@ -8,13 +8,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModItems;
+import net.mcreator.howtoownadragon.entity.NadderEggEntityEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class NadderEggEntityIsHurtProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem() && entity instanceof NadderEggEntityEntity) {
 			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.NADDER_EGG_ITEM.get());
 				_setstack.setCount(1);
@@ -23,7 +24,7 @@ public class NadderEggEntityIsHurtProcedure {
 					_player.getInventory().setChanged();
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("naddercolor", (entity.getPersistentData().getString("naddercolor")));
+				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("Color", (entity.getPersistentData().getString("Color")));
 			});
 			if (!entity.level.isClientSide())
 				entity.discard();

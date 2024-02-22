@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.howtoownadragon.procedures.SpawnProcedureNadderProcedure;
+import net.mcreator.howtoownadragon.procedures.NadderSpawnProcedureProcedure;
 
 import java.util.List;
 
@@ -27,7 +27,7 @@ public class SpawnEggNadderItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		SpawnProcedureNadderProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
+		NadderSpawnProcedureProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
 		return InteractionResult.SUCCESS;
 	}
 }

@@ -59,7 +59,7 @@ public class NadderEggItemRihtClickedOnBlockProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("naddercolor", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("naddercolor")));
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color", ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("Color")));
 					if (entity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.NADDER_EGG_ITEM.get());
 						_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
