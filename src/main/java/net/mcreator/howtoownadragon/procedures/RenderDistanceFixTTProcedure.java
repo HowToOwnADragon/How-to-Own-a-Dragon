@@ -13,12 +13,6 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.JuvenileTTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.AdolescentTTFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import javax.annotation.Nullable;
@@ -75,78 +69,6 @@ public class RenderDistanceFixTTProcedure {
 							} else {
 								RandomColorFemaleTTProcedure.execute(entity);
 								TextureFixTTWaitProcedure.execute(world, entity);
-							}
-						} else {
-							if (entity instanceof AdolescentTTMaleEntity) {
-								if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-									if (entity instanceof AdolescentTTMaleEntity animatable)
-										animatable.setTexture("greentt");
-									TextureFixTTWaitProcedure.execute(world, entity);
-								} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-									if (entity instanceof AdolescentTTMaleEntity animatable)
-										animatable.setTexture("pinktt");
-									TextureFixTTWaitProcedure.execute(world, entity);
-								} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-									if (entity instanceof AdolescentTTMaleEntity animatable)
-										animatable.setTexture("turqtt");
-									TextureFixTTWaitProcedure.execute(world, entity);
-								}
-							} else {
-								if (entity instanceof AdolescentTTFemaleEntity) {
-									if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-										if (entity instanceof AdolescentTTFemaleEntity animatable)
-											animatable.setTexture("greentt");
-										TextureFixTTWaitProcedure.execute(world, entity);
-									} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-										if (entity instanceof AdolescentTTFemaleEntity animatable)
-											animatable.setTexture("pinktt");
-										TextureFixTTWaitProcedure.execute(world, entity);
-									} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-										if (entity instanceof AdolescentTTFemaleEntity animatable)
-											animatable.setTexture("turqtt");
-										TextureFixTTWaitProcedure.execute(world, entity);
-									}
-								} else {
-									if (entity instanceof JuvenileTTMaleEntity) {
-										TextureFixTTWaitProcedure.execute(world, entity);
-									} else {
-										if (entity instanceof JuvenileTTFemaleEntity) {
-											TextureFixTTWaitProcedure.execute(world, entity);
-										} else {
-											if (entity instanceof BabyTTMaleEntity) {
-												if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-													if (entity instanceof BabyTTMaleEntity animatable)
-														animatable.setTexture("greentt");
-													TextureFixTTWaitProcedure.execute(world, entity);
-												} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-													if (entity instanceof BabyTTMaleEntity animatable)
-														animatable.setTexture("pinktt");
-													TextureFixTTWaitProcedure.execute(world, entity);
-												} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-													if (entity instanceof BabyTTMaleEntity animatable)
-														animatable.setTexture("turqtt");
-													TextureFixTTWaitProcedure.execute(world, entity);
-												}
-											} else {
-												if (entity instanceof BabyTTFemaleEntity) {
-													if ((entity.getPersistentData().getString("ttcolor")).equals("green")) {
-														if (entity instanceof BabyTTFemaleEntity animatable)
-															animatable.setTexture("greentt");
-														TextureFixTTWaitProcedure.execute(world, entity);
-													} else if ((entity.getPersistentData().getString("ttcolor")).equals("pink")) {
-														if (entity instanceof BabyTTFemaleEntity animatable)
-															animatable.setTexture("pinktt");
-														TextureFixTTWaitProcedure.execute(world, entity);
-													} else if ((entity.getPersistentData().getString("ttcolor")).equals("turq")) {
-														if (entity instanceof BabyTTFemaleEntity animatable)
-															animatable.setTexture("turqtt");
-														TextureFixTTWaitProcedure.execute(world, entity);
-													}
-												}
-											}
-										}
-									}
-								}
 							}
 						}
 					}

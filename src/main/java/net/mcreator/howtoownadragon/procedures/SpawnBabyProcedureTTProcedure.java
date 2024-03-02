@@ -11,8 +11,8 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.howtoownadragon.init.HowToOwnADragonModEntities;
-import net.mcreator.howtoownadragon.entity.BabyTTMaleEntity;
-import net.mcreator.howtoownadragon.entity.BabyTTFemaleEntity;
+import net.mcreator.howtoownadragon.entity.TTMaleEntity;
+import net.mcreator.howtoownadragon.entity.TTFemaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 import java.util.Comparator;
@@ -23,7 +23,7 @@ public class SpawnBabyProcedureTTProcedure {
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new BabyTTMaleEntity(HowToOwnADragonModEntities.BABY_TT_MALE.get(), _level);
+				Entity entityToSpawn = new TTMaleEntity(HowToOwnADragonModEntities.TT_MALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -33,17 +33,17 @@ public class SpawnBabyProcedureTTProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				if (!world.getEntitiesOfClass(BabyTTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-					((Entity) world.getEntitiesOfClass(BabyTTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				if (!world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", (entity.getPersistentData().getString("ttcolor")));
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color", (entity.getPersistentData().getString("Color")));
 				}
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new BabyTTFemaleEntity(HowToOwnADragonModEntities.BABY_TT_FEMALE.get(), _level);
+				Entity entityToSpawn = new TTFemaleEntity(HowToOwnADragonModEntities.TT_FEMALE.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
@@ -53,12 +53,12 @@ public class SpawnBabyProcedureTTProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 			HowToOwnADragonMod.queueServerWork(1, () -> {
-				if (!world.getEntitiesOfClass(BabyTTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
-					((Entity) world.getEntitiesOfClass(BabyTTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
+				if (!world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					((Entity) world.getEntitiesOfClass(TTFemaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", (entity.getPersistentData().getString("ttcolor")));
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color", (entity.getPersistentData().getString("Color")));
 				}
 			});
 		} else {
