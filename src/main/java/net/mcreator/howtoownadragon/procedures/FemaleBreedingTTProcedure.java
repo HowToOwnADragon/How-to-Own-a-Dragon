@@ -45,19 +45,16 @@ public class FemaleBreedingTTProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getBoolean("ttinlove") == true) {
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getBoolean("Love") == true) {
 				((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("ttinlove", false);
-				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BREAD) {
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD) {
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON) {
-					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
-				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putBoolean("Love", false);
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BREAD
+						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COD
+						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SALMON
+						|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.COOKED_CHICKEN) {
 					FemaleSpawnEggTTProcedure.execute(world, x, y, z, entity, sourceentity);
 				}
 			}

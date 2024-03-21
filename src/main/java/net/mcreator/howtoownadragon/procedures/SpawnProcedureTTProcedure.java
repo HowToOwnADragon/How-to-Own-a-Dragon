@@ -28,6 +28,16 @@ public class SpawnProcedureTTProcedure {
 					}
 					return false;
 				}
+			}.checkGamemode(entity) && new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
+					} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
+					}
+					return false;
+				}
 			}.checkGamemode(entity)) {
 				if (entity instanceof LivingEntity _entity) {
 					ItemStack _setstack = new ItemStack(HowToOwnADragonModItems.SPAWN_EGG_TT.get());

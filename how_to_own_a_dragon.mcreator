@@ -3048,10 +3048,10 @@
       "registry_name": "tt_male",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/howtoownadragon/entity/TTMaleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTMaleModel.java",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_male_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java"
+          "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTMaleRenderer.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTMaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTMaleModel.java"
         ]
       },
       "path": "~/Entities/Dragons/Terrible Terror/Entity/Male"
@@ -3097,8 +3097,8 @@
         "files": [
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TTFemaleRenderer.java",
           "src/main/resources/data/how_to_own_a_dragon/forge/biome_modifier/tt_female_biome_modifier.json",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTFemaleModel.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/TTFemaleEntity.java",
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TTFemaleModel.java"
         ]
       },
       "path": "~/Entities/Dragons/Terrible Terror/Entity/Female"
@@ -7159,6 +7159,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -7179,6 +7183,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8654,9 +8662,6 @@
       "locked_code": false,
       "registry_name": "render_distance_fix_tt",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/howtoownadragon/procedures/RenderDistanceFixTTProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -12597,6 +12602,26 @@
         ]
       },
       "path": "~/Entities/Dragons/Terrible Terror"
+    },
+    {
+      "name": "TTFlyingTickUpdate",
+      "type": "procedure",
+      "sortid": 1611,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tt_flying_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/TTFlyingTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Terrible Terror/Tick"
     }
   ],
   "variable_elements": [
@@ -12653,12 +12678,12 @@
       "gui.how_to_own_a_dragon.male_ttgui.label_healthvalue": "DisplayHealthAttribute",
       "item.how_to_own_a_dragon.gronckle_spawn_egg": "Gronckle",
       "advancements.obtain_gronckle_iron.title": "Gronckle Smith.",
-      "gui.how_to_own_a_dragon.tbt_second_page_gui.label_fox": "Fox",
-      "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
       "entity.how_to_own_a_dragon.nadder_egg_entity": "Deadly Nadder Egg",
+      "item.how_to_own_a_dragon.saddle_rack": "Saddle Rack",
+      "gui.how_to_own_a_dragon.tbt_second_page_gui.label_fox": "Fox",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_flyspeedvalue": "0.4",
-      "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_armor": "Armor",
       "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_fly_speed": "Fly Speed",
+      "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_armor": "Armor",
       "entity.how_to_own_a_dragon.test_gronckle": "Test Gronckle",
       "gui.how_to_own_a_dragon.not_grown_female_nadder_gui.label_swimspeedvalue": "0",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_armor": "Armor",
@@ -12680,26 +12705,26 @@
       "item.how_to_own_a_dragon.gronckle_egg_item": "Gronckle Egg",
       "gui.how_to_own_a_dragon.female_ttgui.label_damagevalue": "0",
       "advancements.first_tamed_dragon.descr": "Tame your first dragon",
-      "gui.how_to_own_a_dragon.not_grown_female_nadder_gui.label_health": "Max Health",
-      "gui.how_to_own_a_dragon.female_ttgui.label_swim_speed": "Swim Speed",
       "gui.how_to_own_a_dragon.female_gronckle_gui.label_label_armorvalue": "DisplayArmorAttribute",
+      "gui.how_to_own_a_dragon.female_ttgui.label_swim_speed": "Swim Speed",
+      "gui.how_to_own_a_dragon.not_grown_female_nadder_gui.label_health": "Max Health",
       "gui.how_to_own_a_dragon.at_sixth_page_gui.label_plains": "Plains",
       "gui.how_to_own_a_dragon.bd_third_page_gui.label_cooked_salmon": "Cooked Salmon",
       "item.how_to_own_a_dragon.spawn_egg_nadder": "Deadly Nadder",
       "gui.how_to_own_a_dragon.mh_third_page_gui.label_skeleton": "Skeleton",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_elder_gaurdian": "Elder Gaurdian",
-      "gui.how_to_own_a_dragon.male_ttgui.label_swimspeedvalue": "0",
       "gui.how_to_own_a_dragon.generic_or_advanced_config.button_advanced": "Advanced",
+      "gui.how_to_own_a_dragon.male_ttgui.label_swimspeedvalue": "0",
       "gui.how_to_own_a_dragon.monsters_hunted_gui.label_evoker": "Evoker|",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_swim_speed": "Swim Speed",
-      "gui.how_to_own_a_dragon.at_third_page_gui.label_flower_forest": "Flower Forest",
       "entity.how_to_own_a_dragon.baby_yak": "Baby Yak",
+      "gui.how_to_own_a_dragon.at_third_page_gui.label_flower_forest": "Flower Forest",
       "gui.how_to_own_a_dragon.at_first_page_gui.label_cold_ocean": "Cold Ocean",
       "gui.how_to_own_a_dragon.male_gronckle_gui.label_swimspeedvalue": "1",
       "gui.how_to_own_a_dragon.mh_first_page_gui.label_zombified_piglin": "Zombified Piglin",
       "gui.how_to_own_a_dragon.bd_fifth_page_gui.label_raw_cod": "Raw Cod",
-      "gui.how_to_own_a_dragon.female_nadder_gui.label_damagevalue": "0",
       "entity.how_to_own_a_dragon.tt_male": "Male Terrible Terror",
+      "gui.how_to_own_a_dragon.female_nadder_gui.label_damagevalue": "0",
       "gui.how_to_own_a_dragon.bd_second_page_gui.label_cooked_mutton": "Cooked Mutton",
       "gui.how_to_own_a_dragon.not_grown_female_nadder_gui.label_damage": "Damage",
       "gui.how_to_own_a_dragon.male_nadder_gui.label_healthvalue": "DisplayHealthAttribute",
@@ -12714,9 +12739,9 @@
       "block.how_to_own_a_dragon.portal_block": "Portal Block",
       "gui.how_to_own_a_dragon.female_ttgui.label_flyspeedvalue": "DisplayFlySpeedAttribute",
       "gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_damagevalue": "0",
-      "gui.how_to_own_a_dragon.female_nadder_gui.label_healthvalue": "DisplayHealthAttribute",
-      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
       "gui.how_to_own_a_dragon.at_second_page_gui.label_dark_forest": "Dark Forest",
+      "gui.how_to_own_a_dragon.dragon_eye_input.label_dragon_eye": "Dragon Eye",
+      "gui.how_to_own_a_dragon.female_nadder_gui.label_healthvalue": "DisplayHealthAttribute",
       "gui.how_to_own_a_dragon.at_sixth_page_gui.label_savanna": "Savanna",
       "advancements.obtain_dragon_proof_recipe.descr": "Obtain Dragon Proof Recipe",
       "item.how_to_own_a_dragon.night_fury_armor_boots": "Night Fury Scale Boots",
@@ -12741,8 +12766,8 @@
       "item.how_to_own_a_dragon.chicken_spawn_egg": "Chicken Spawn Egg",
       "gui.how_to_own_a_dragon.not_grown_female_gronckle_gui.label_flyspeedvalue": "0.4",
       "gui.how_to_own_a_dragon.male_ttgui.label_flyspeedvalue": "DisplayFlySpeedAttribute",
-      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "gui.how_to_own_a_dragon.not_grown_male_nadder_gui.label_swimspeedvalue": "0",
+      "item.how_to_own_a_dragon.yak_spawn_egg": "Yak Spawn Egg",
       "gui.how_to_own_a_dragon.mh_sixth_page_gui.label_blaze": "Blaze",
       "gui.how_to_own_a_dragon.bd_fourth_page_gui.label_golden_carrot": "Golden Carrot",
       "gui.how_to_own_a_dragon.bd_sixth_page_gui.label_raw_salmon": "Raw Salmon",
@@ -13458,10 +13483,6 @@
                         "children": []
                       }
                     ]
-                  },
-                  {
-                    "name": "Feeding",
-                    "children": []
                   },
                   {
                     "name": "Dies",

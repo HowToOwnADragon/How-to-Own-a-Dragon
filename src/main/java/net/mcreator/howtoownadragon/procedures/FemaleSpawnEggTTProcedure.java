@@ -49,7 +49,7 @@ public class FemaleSpawnEggTTProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor", (entity.getPersistentData().getString("ttcolor")));
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color", (entity.getPersistentData().getString("Color")));
 				}
 			});
 		} else if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
@@ -64,12 +64,12 @@ public class FemaleSpawnEggTTProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("ttcolor",
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().putString("Color",
 							(((Entity) world.getEntitiesOfClass(TTMaleEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("ttcolor")));
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)).getPersistentData().getString("Color")));
 				}
 			});
 		} else {

@@ -60,6 +60,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.mcreator.howtoownadragon.procedures.WildNightAIProcedure;
 import net.mcreator.howtoownadragon.procedures.WildDayAIProcedure;
 import net.mcreator.howtoownadragon.procedures.ValkaFollowMeTriggerProcedure;
+import net.mcreator.howtoownadragon.procedures.TTFlyingTickUpdateProcedure;
 import net.mcreator.howtoownadragon.procedures.GrownTTDiesProcedureProcedure;
 import net.mcreator.howtoownadragon.procedures.DontAllFollowMeTriggerProcedure;
 import net.mcreator.howtoownadragon.procedures.AllFollowMeTriggerProcedure;
@@ -314,6 +315,7 @@ public class TTFemaleEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		TTFlyingTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

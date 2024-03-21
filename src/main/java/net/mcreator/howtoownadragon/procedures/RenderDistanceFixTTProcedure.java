@@ -49,7 +49,7 @@ public class RenderDistanceFixTTProcedure {
 								animatable.setTexture("turqtt");
 							TextureFixTTWaitProcedure.execute(world, entity);
 						} else {
-							RandomColorMaleTTProcedure.execute(entity);
+							RandomColorMaleTTProcedure.execute(world, entity);
 							TextureFixTTWaitProcedure.execute(world, entity);
 						}
 					} else {
@@ -67,7 +67,7 @@ public class RenderDistanceFixTTProcedure {
 									animatable.setTexture("turqtt");
 								TextureFixTTWaitProcedure.execute(world, entity);
 							} else {
-								RandomColorFemaleTTProcedure.execute(entity);
+								RandomColorFemaleTTProcedure.execute(world, entity);
 								TextureFixTTWaitProcedure.execute(world, entity);
 							}
 						}
