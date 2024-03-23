@@ -8,6 +8,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 
 import net.mcreator.howtoownadragon.world.inventory.NotGrownMaleGronckleGUIMenu;
+import net.mcreator.howtoownadragon.procedures.DisplayHealthAttributeProcedure;
+import net.mcreator.howtoownadragon.procedures.DisplayArmorAttributeProcedure;
 
 import java.util.HashMap;
 
@@ -73,9 +75,13 @@ public class NotGrownMaleGronckleGUIScreen extends AbstractContainerScreen<NotGr
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_male_gronckle"), 5, 5, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_inventory"), 64, 70, -13421773);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_health"), 8, 83, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_healthvalue"), 26, 93, -12829636);
+		this.font.draw(poseStack,
+
+				DisplayHealthAttributeProcedure.execute(entity), 26, 93, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_armor"), 20, 108, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_armorvalue"), 27, 118, -12829636);
+		this.font.draw(poseStack,
+
+				DisplayArmorAttributeProcedure.execute(entity), 27, 118, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_damage"), 17, 133, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_damagevalue"), 30, 142, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.how_to_own_a_dragon.not_grown_male_gronckle_gui.label_walk_speed"), 230, 84, -12829636);

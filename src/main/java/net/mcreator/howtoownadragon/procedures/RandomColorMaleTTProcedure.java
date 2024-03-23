@@ -9,13 +9,14 @@ import net.mcreator.howtoownadragon.entity.TTMaleEntity;
 import net.mcreator.howtoownadragon.HowToOwnADragonMod;
 
 public class RandomColorMaleTTProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (!(entity.getPersistentData().getDouble("Age") >= 0)) {
 			entity.getPersistentData().putDouble("Age", 640);
 		}
 		HowToOwnADragonMod.queueServerWork(1, () -> {
+			NBTDataSpawnTTProcedure.execute(world, x, y, z, entity);
 			if (Mth.nextInt(RandomSource.create(), 1, 3) == 1) {
 				if (entity instanceof TTMaleEntity animatable)
 					animatable.setTexture("greentt");
@@ -29,7 +30,7 @@ public class RandomColorMaleTTProcedure {
 					animatable.setTexture("turqtt");
 				entity.getPersistentData().putString("Color", "turq");
 			} else {
-				RandomColorMaleTTProcedure.execute(world, entity);
+				RandomColorMaleTTProcedure.execute(world, x, y, z, entity);
 			}
 		});
 	}

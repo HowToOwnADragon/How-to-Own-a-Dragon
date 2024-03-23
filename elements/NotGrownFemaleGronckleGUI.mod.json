@@ -69,7 +69,8 @@
         "data": {
           "name": "label_healthvalue",
           "text": {
-            "fixedValue": "DisplayHealthAttribute"
+            "fixedValue": "DisplayHealthAttribute",
+            "name": "DisplayHealthAttribute"
           },
           "color": {
             "value": -12829636,
@@ -99,7 +100,8 @@
         "data": {
           "name": "label_armorvalue",
           "text": {
-            "fixedValue": "DisplayArmorAttribute"
+            "fixedValue": "DisplayArmorAttribute",
+            "name": "DisplayArmorAttribute"
           },
           "color": {
             "value": -12829636,
