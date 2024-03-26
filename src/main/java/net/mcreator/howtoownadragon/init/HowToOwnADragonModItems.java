@@ -92,6 +92,7 @@ public class HowToOwnADragonModItems {
 	public static final RegistryObject<Item> GRONCKLE_EGG_ITEM = REGISTRY.register("gronckle_egg_item", () -> new GronckleEggItemItem());
 	public static final RegistryObject<Item> GRONCKLE_SPAWN_EGG = REGISTRY.register("gronckle_spawn_egg", () -> new GronckleSpawnEggItem());
 	public static final RegistryObject<Item> VALKAS_STAFF = REGISTRY.register("valkas_staff", () -> new ValkasStaffItem());
+	public static final RegistryObject<Item> TEST_GRONCKLE_SPAWN_EGG = REGISTRY.register("test_gronckle_spawn_egg", () -> new ForgeSpawnEggItem(HowToOwnADragonModEntities.TEST_GRONCKLE, -6999808, -7986432, new Item.Properties()));
 	public static final RegistryObject<Item> SPAWN_EGG_TT = REGISTRY.register("spawn_egg_tt", () -> new SpawnEggTTItem());
 	public static final RegistryObject<Item> TT_SCALE = REGISTRY.register("tt_scale", () -> new TTScaleItem());
 	public static final RegistryObject<Item> TT_EGG_ITEM = REGISTRY.register("tt_egg_item", () -> new TTEggItemItem());

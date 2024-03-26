@@ -17,7 +17,7 @@
     "modelHeight": 2.0,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.3,
-    "hasSpawnEgg": false,
+    "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -6999808,
       "falpha": 0.0
@@ -27,7 +27,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Dragons"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -105,6 +105,9 @@
     },
     "onMobTickUpdate": {
       "name": "GronckleFlyingTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "RandomColorTestGronckle"
     },
     "hasAI": true,
     "aiBase": "(none)",

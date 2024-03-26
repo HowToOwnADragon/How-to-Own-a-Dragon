@@ -12,6 +12,9 @@
       },
       {
         "value": "CUSTOM:GronckleMale"
+      },
+      {
+        "value": "CUSTOM:TestGronckle"
       }
     ],
     "biomes": [],

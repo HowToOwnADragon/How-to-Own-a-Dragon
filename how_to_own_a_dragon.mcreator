@@ -3065,9 +3065,10 @@
       "registry_name": "test_gronckle",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java",
+          "src/main/resources/assets/how_to_own_a_dragon/models/item/test_gronckle_spawn_egg.json",
           "src/main/java/net/mcreator/howtoownadragon/client/renderer/TestGronckleRenderer.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java",
-          "src/main/java/net/mcreator/howtoownadragon/entity/model/TestGronckleModel.java"
+          "src/main/java/net/mcreator/howtoownadragon/entity/TestGronckleEntity.java"
         ]
       },
       "path": "~/Entities/Dragons/Gronckle/Entity"
@@ -12746,6 +12747,42 @@
         ]
       },
       "path": "~/Entities/Dragons/Terrible Terror/Entity"
+    },
+    {
+      "name": "RandomColorTestGronckle",
+      "type": "procedure",
+      "sortid": 1614,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_color_test_gronckle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/howtoownadragon/procedures/RandomColorTestGronckleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Dragons/Gronckle/Entity"
     }
   ],
   "variable_elements": [

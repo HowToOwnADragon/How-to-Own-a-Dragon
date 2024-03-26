@@ -60,6 +60,7 @@ public class HowToOwnADragonModTabs {
 				builder -> builder.title(Component.translatable("item_group.how_to_own_a_dragon.dragons")).icon(() -> new ItemStack(Items.ENDERMAN_SPAWN_EGG)).displayItems((parameters, tabData) -> {
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SCALE.get());
 					tabData.accept(HowToOwnADragonModItems.GRONCKLE_SPAWN_EGG.get());
+					tabData.accept(HowToOwnADragonModItems.TEST_GRONCKLE_SPAWN_EGG.get());
 					tabData.accept(HowToOwnADragonModItems.SPAWN_EGG_TT.get());
 					tabData.accept(HowToOwnADragonModItems.TT_SCALE.get());
 					tabData.accept(HowToOwnADragonModItems.SPAWN_EGG_NADDER.get());
